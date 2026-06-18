@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Announcing Pre-Orders For Dr. K's Book - How to Raise a Healthy Gamer</title>
+<link rel="stylesheet" href="style.css">
+<script>
+try {
+  if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
+  if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
+  document.documentElement.setAttribute('data-view', localStorage.getItem('pubview') || 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
+</script>
+</head>
+<body>
+<div class="wrap">
+  <nav class="topnav">
+    <a href="index.html">← public library (test)</a>
+    <button class="theme-toggle" aria-label="Toggle dark mode"></button>
+    <span class="font-toggle" role="group" aria-label="Reading font">
+      <button data-font="serif">Serif</button>
+      <button data-font="sans">Sans</button>
+    </span>
+  </nav>
+
+  <h1>Announcing Pre-Orders For Dr. K's Book - How to Raise a Healthy Gamer</h1>
+
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">231w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">240w</span></button>
+    
+  </div>
+
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#medium-summary">Summary</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="medium-summary">Summary</h2>
+<p><strong>TL;DR — This is a short promotional announcement for Dr. K's book, <em>How to Raise a Healthy Gamer</em>, not a teaching talk.</strong> There is not enough substantive content in this transcript to produce a meaningful lesson summary of 1,500–2,500 words without inventing claims that aren't present.</p>
+<p>Producing a full-length lesson from this material would require fabricating arguments, frameworks, research details, and advice that do not appear in the transcript. That would violate the core requirement of faithfulness to the actual content.</p>
+<p><strong>What the announcement does convey, briefly:</strong></p>
+<ul>
+<li>The book is aimed at parents who want to help their kids develop a healthier relationship with video games — without constant conflict.</li>
+<li>The central idea is that gaming becomes a problem when it starts substituting for real life: once psychological needs get met primarily through a game, addiction can take hold.</li>
+<li>The book is framed as evidence-based, drawing on neuroscience research and clinical practice, with the goal of helping kids build lives full enough that gaming returns to its natural role — fun and recreation, not a replacement for living.</li>
+<li>It's positioned for both parents dealing with an existing problem and those who want to prevent one.</li>
+</ul>
+<p>If you have a transcript from an actual teaching talk — a podcast episode, a stream, a lecture — I'm glad to turn that into a full lesson summary.</p>
+</section></article>
+    </div>
+  </div>
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc"><ul><li><a href="#transcript-0-dr-k-s-background-and-book-introduction">Dr. K&#x27;s Background and Book Introduction</a></li><li><a href="#transcript-1-gaming-addiction-and-the-book-s-approach">Gaming Addiction and the Book&#x27;s Approach</a></li></ul></div></nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="transcript-0-dr-k-s-background-and-book-introduction">Dr. K&#x27;s Background and Book Introduction</h2>
+<p>Hi, I&#x27;m Alok Kanojia, but the internet knows me as Dr K. I&#x27;m a former gaming addict, turned Harvard trained psychiatrist. I started an organization, healthy gamer, that has now helped millions of Gamers develop healthy relationships with technology. As healthy gamer grew, parents started reaching out asking for help. Hey, Dr K, how do I get my kid to put down the game without it being a fight every single time? So I wrote a book about it. How to raise a healthy gamer combines the latest in Neuroscience research along with a decade of clinical practice- and, by the way, I&#x27;m also the parent of two amazing kids who love video games.</p>
+</section>
+<section class="sec sec-b">
+<h2 id="transcript-1-gaming-addiction-and-the-book-s-approach">Gaming Addiction and the Book&#x27;s Approach</h2>
+<p>The problem with gaming is that it tricks our brain into being a substitute for Life. Once we start to get our psychological needs met through the game, that&#x27;s when we become addicted. How to raise a healthy gamer offers a stepbystep approach that is evidence-based to raise a healthy gamer, to help your child create a life that is worth living, that is full with all of its ups and downs, so that gaming can be what it&#x27;s supposed to be: a source of fun and Recreation. So, whether you&#x27;re dealing with a kid who has a full-blown video game addiction or you&#x27;re trying to prevent one in the future, how to raise a healthy gamer can help check it out anywhere books are sold.</p>
+</section></article>
+    </div>
+  </div>
+  
+
+  <p class="meta">Medium summary · claude-sonnet-4-6 (no extended thinking)</p>
+</div>
+
+<script>
+(function () {
+  var root = document.documentElement;
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'medium');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
+  function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
+  var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
+  tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
+  var fb=document.querySelectorAll('.font-toggle button');
+  function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
+  var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
+  fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+})();
+</script>
+</body>
+</html>

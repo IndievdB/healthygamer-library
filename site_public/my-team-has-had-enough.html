@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My Team Has Had Enough</title>
+<link rel="stylesheet" href="style.css">
+<script>
+try {
+  if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
+  if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
+  document.documentElement.setAttribute('data-view', localStorage.getItem('pubview') || 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
+</script>
+</head>
+<body>
+<div class="wrap">
+  <nav class="topnav">
+    <a href="index.html">← public library (test)</a>
+    <button class="theme-toggle" aria-label="Toggle dark mode"></button>
+    <span class="font-toggle" role="group" aria-label="Reading font">
+      <button data-font="serif">Serif</button>
+      <button data-font="sans">Sans</button>
+    </span>
+  </nav>
+
+  <h1>My Team Has Had Enough</h1>
+
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">179w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">498w</span></button>
+    
+  </div>
+
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#medium-summary">Summary</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="medium-summary">Summary</h2>
+<p><strong>TL;DR — This transcript is a behind-the-scenes blooper reel of a promotional shoot, not a mental health lecture.</strong> There is no teachable psychological content here.</p>
+<p>The recording captures a frustrated production team trying to film a short promotional video for Dr. K's Guide to Mental Health. What unfolds is a series of miscommunications — Dr. K defaults to his clinical comfort zone (the skill tree), a producer tries to redirect him to a new interface, emails go unread, and the team muddles through to an acceptable take. It's candid and humanizing, but it contains no mental health instruction, frameworks, or actionable insights worth summarizing.</p>
+<p>Because the source material has no substantive content to teach, a faithful lesson summary cannot be written from this transcript. Producing one would require inventing ideas not present in the talk — which is not something I'm able to do responsibly.</p>
+<p>If you have a different transcript you'd like turned into a lesson — one from an actual Dr. K lecture or stream — paste it in and I'll get to work.</p>
+</section></article>
+    </div>
+  </div>
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc"><ul><li><a href="#transcript-0-introducing-dr-k-s-guide-and-module-overview">Introducing Dr K&#x27;s Guide and Module Overview</a></li><li><a href="#transcript-1-new-interface-learning-paths-and-personalized-playlists">New Interface: Learning Paths and Personalized Playlists</a></li><li><a href="#transcript-2-meditation-index-worksheets-and-skill-tree-navigation">Meditation Index, Worksheets, and Skill Tree Navigation</a></li></ul></div></nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="transcript-0-introducing-dr-k-s-guide-and-module-overview">Introducing Dr K&#x27;s Guide and Module Overview</h2>
+<p>All right, Dr K, you ready? Hey, yeah, man, short and sweet, just a few quick points about the guide and focus on the new features. Yeah, okay, got it and action. All right, guys. This is Dr K&#x27;s guide to mental health, and what I really love about this is it reflects the way that I work with patients in my office. So I know this is a lot, but this is like, literally, I go through this red path, right, we go through all of this and now that we touched on blue and red, we can go right into anxiety, which is purple, and We&#x27;re looping back. We&#x27;re going through thought Loops, right. So then We&#x27;re looping back over here and the ADHD path can actually to the path of trauma and yellow and red.</p>
+<p>MaKe, stop. The skill tree is too chaotic. I need you to show the new interface- too chaotic. What new interface? Oh my God, we, we talked about this, remember, dude. If something is important, please send it to me in an email. Oh my god, look, I did. I sent you like a hundred emails on this already, bro. You know I don&#x27;t read my emails, and why are we filming this? Start again this time. Just say welcome to Dr K&#x27;s guide to mental health and don&#x27;t get caught up in the skill tree. Fine, welcome to Dr K&#x27;s guide to mental health. We have five modules for you guys: depression, anxiety, meditation, ADHD and Trauma- and we&#x27;re always looking to add more to the guide.</p>
+</section>
+<section class="sec sec-b">
+<h2 id="transcript-1-new-interface-learning-paths-and-personalized-playlists">New Interface: Learning Paths and Personalized Playlists</h2>
+<p>Nice, see, that wasn&#x27;t too bad. The guide brings together psychology, Neuroscience, clinical medicine and Eastern wisdom on body and mind to bring you a holistic approach to tackling your mental health. Let&#x27;s go, Dr K, and it&#x27;s all laid out in this awesome skill tree so you can choose your own invention. Not the skill tree, Dr K, the personalized playlist. Look, here we have the learning paths and personalized playlist that include recommended videos that are based off a short quiz. When you take the quiz, you let us know what you&#x27;re hoping to get out of the guide and then we can tailor the experience to your liking.</p>
+</section>
+<section class="sec sec-a">
+<h2 id="transcript-2-meditation-index-worksheets-and-skill-tree-navigation">Meditation Index, Worksheets, and Skill Tree Navigation</h2>
+<p>Come a little closer. And then the meditation index also categorizes all the meditation videos there are in the guide so you can easily find and go back to the ones that suit your needs. The further references and worksheets are included on almost every video that we have, and that way you have a clear next step on what you can do and what to work on after every lesson and if you really like Dr K&#x27;s approach better and want to go back to the skill tree or map view. You can get there with a click of a button. There it is the Epic skill tree. Wow, okay, I think we got it. This will have to work.</p>
+</section></article>
+    </div>
+  </div>
+  
+
+  <p class="meta">Medium summary · claude-sonnet-4-6 (no extended thinking)</p>
+</div>
+
+<script>
+(function () {
+  var root = document.documentElement;
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'medium');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
+  function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
+  var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
+  tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
+  var fb=document.querySelectorAll('.font-toggle button');
+  function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
+  var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
+  fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Happy Birthday Dr. K!</title>
+<link rel="stylesheet" href="style.css">
+<script>
+try {
+  if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
+  if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
+  document.documentElement.setAttribute('data-view', localStorage.getItem('pubview') || 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
+</script>
+</head>
+<body>
+<div class="wrap">
+  <nav class="topnav">
+    <a href="index.html">← public library (test)</a>
+    <button class="theme-toggle" aria-label="Toggle dark mode"></button>
+    <span class="font-toggle" role="group" aria-label="Reading font">
+      <button data-font="serif">Serif</button>
+      <button data-font="sans">Sans</button>
+    </span>
+  </nav>
+
+  <h1>Happy Birthday Dr. K!</h1>
+
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">164w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">464w</span></button>
+    
+  </div>
+
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#medium-summary">Summary</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="medium-summary">Summary</h2>
+<p><strong>TL;DR — This is a birthday tribute video, not a teaching talk.</strong> Community members from various Healthy Gamer streams and coaching groups sent short video messages wishing Dr. K a happy birthday and sharing what his work has meant to them.</p>
+<p>There is no lecture, framework, or lesson content in this video. It consists entirely of brief, personal thank-you messages from viewers and coaching participants — people who identified themselves as coming from streams on topics like gifted kids burnout, addiction, life after a cult, and falling behind in life.</p>
+<p>Because there is no instructional content to summarize, a faithful lesson summary cannot be written for this particular video. Publishing one would require inventing material that isn't there, which would violate the core commitment to accuracy.</p>
+<p>If you have a different Dr. K talk you'd like summarized — on topics like motivation, ADHD, anxiety, self-compassion, addiction, or relationships — feel free to share the transcript and I'll give it the full treatment.</p>
+</section></article>
+    </div>
+  </div>
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc"><ul><li><a href="#transcript-0-community-birthday-wishes-for-dr-k">Community Birthday Wishes for Dr. K</a></li><li><a href="#transcript-1-community-members-share-gratitude-and-growth">Community Members Share Gratitude and Growth</a></li></ul></div></nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="transcript-0-community-birthday-wishes-for-dr-k">Community Birthday Wishes for Dr. K</h2>
+<p>Happy birthday, dr k. Hey, dr k. Hey, dr k. Happy birthday, dr k. Happy birthday, dr k. Hi, dr k. Hey, dr kate, I wanted to wish my favorite boomer happy birthday. I just want to wish you a happy birthday. Hi, dr k. Happy birthday. Happy escape from vagina day. It&#x27;s StarSleeves. I was on one of your community streams. It&#x27;s Sol from the former gifted kids interview. It&#x27;s Bob Knofat stream. Hi, it&#x27;s zach, I&#x27;m sad. From the gifted kid stream. It&#x27;s slow. It&#x27;s provided from the lsf stream. Hey, this is b from the burnt out kitchen kids group. Hey, it&#x27;s jt from the falling behind stream. My name is zoryan from life after a cult.</p>
+</section>
+<section class="sec sec-b">
+<h2 id="transcript-1-community-members-share-gratitude-and-growth">Community Members Share Gratitude and Growth</h2>
+<p>I just wanted to say thank you for everything that you do. After that stream and after a few months in coaching, I actually came back to college and it&#x27;s all your fault. So thanks. I hope you&#x27;re having a wonderful birthday at the international ls. I just want to say thank you to you and to all the wonderful people working at healthy gamer. You are all truly making the world a happier place to be. It&#x27;s incredible to see how far a healthy gamer has come and comforting to know that it comes from a genuine place to everyone in the community. Keep being awesome, keeping unique and keep supporting each other.</p>
+<p>People love you. Help give me clarity about how to understand my addictions. Thanks a lot, man. Happy birthday. Thank you for making me realize that I need help and also for being one of the people who provided that help to me. Every time I watch stream, I feel like I get a little better at talking to myself when I feel guilty. Thanks so much for that. Thank you so much for encouraging me to bring more mindfulness into my me, to bring more mindfulness into my life. Life and uh, it really meant a lot to me when you said that I was good just the way I am. So, yeah, thank you. A lot of the knowledge you&#x27;ve shared has definitely stuck with me when it comes to my day-to-day.</p>
+<p>So, thank you. Thank you for cultivating this incredible community. I think I speak for a lot of people when I say you&#x27;ve really helped me get through this past year and a half. Thank you for teaching me to be more compassionate towards myself. See you. When I see you, my life really has changed for the better thanks to your input. So thank you for all that you do and you helped me accept myself without condition. Thank you so [ __ ] without condition. Thank you so [ __ ] much [Music] you.</p>
+</section></article>
+    </div>
+  </div>
+  
+
+  <p class="meta">Medium summary · claude-sonnet-4-6 (no extended thinking)</p>
+</div>
+
+<script>
+(function () {
+  var root = document.documentElement;
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'medium');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
+  function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
+  var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
+  tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
+  var fb=document.querySelectorAll('.font-toggle button');
+  function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
+  var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
+  fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+})();
+</script>
+</body>
+</html>
