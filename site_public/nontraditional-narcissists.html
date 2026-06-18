@@ -277,5 +277,24 @@ try {
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
 })();
 </script>
+<script>
+(function () {
+  var SVG = '<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>';
+  document.querySelectorAll('.summary h2[id], .summary h3[id]').forEach(function (h) {
+    var a = document.createElement('a');
+    a.className = 'anchor-link'; a.href = '#' + h.id; a.innerHTML = SVG;
+    a.setAttribute('aria-label', 'Copy link to this section');
+    a.addEventListener('click', function (e) {
+      e.preventDefault();
+      var url = location.href.split('#')[0] + '#' + h.id;
+      try { history.replaceState(null, '', '#' + h.id); } catch (err) {}
+      function done(){ a.classList.add('copied'); setTimeout(function(){ a.classList.remove('copied'); }, 1400); }
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(url).then(done, done);
+      else done();
+    });
+    h.appendChild(a);
+  });
+})();
+</script>
 </body>
 </html>

@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ask the Teachings — Healthy Gamer</title>
+<link rel="stylesheet" href="style.css">
+<script>
+try {
+  if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
+  if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
+} catch (e) {}
+</script>
+</head>
+<body>
+<div class="wrap">
+  <nav class="topnav">
+    <a href="index.html">← library</a>
+    <button class="theme-toggle" aria-label="Toggle dark mode"></button>
+    <span class="font-toggle" role="group" aria-label="Reading font">
+      <button data-font="serif">Serif</button>
+      <button data-font="sans">Sans</button>
+    </span>
+  </nav>
+
+  <h1>Ask the Teachings</h1>
+  <p class="subtitle">Answers are grounded in Dr. K's talks via retrieval, with citations linking back to the source.</p>
+
+  <div class="ask-controls">
+    <span class="view-toggle" role="group" aria-label="Backend">
+      <button data-backend="claude">Claude</button>
+      <button data-backend="local">Local</button>
+    </span>
+    <select id="model" class="model-select" hidden></select>
+    <span id="backend-hint" class="backend-hint"></span>
+  </div>
+
+  <form id="ask-form">
+    <textarea id="q" class="ask-input" rows="2" placeholder="e.g. What is the ego, and how do you stop it from running you?"></textarea>
+    <button id="ask-btn" class="ask-btn" type="submit">Ask</button>
+  </form>
+
+  <div id="answer-wrap" hidden>
+    <div class="doc">
+      <section class="sec sec-a">
+        <article id="answer" class="summary answer"></article>
+      </section>
+    </div>
+    <div id="sources" class="sources" hidden>
+      <p class="toc-title">Sources</p>
+      <ol id="sources-list"></ol>
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  var root = document.documentElement;
+  // theme + font toggles (shared behavior)
+  var tb = document.querySelector('.theme-toggle');
+  function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
+  var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
+  tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
+  var fb=document.querySelectorAll('.font-toggle button');
+  function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
+  var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
+  fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+
+  // backend toggle + availability
+  var backend = 'claude';
+  var bbtns = document.querySelectorAll('.ask-controls button[data-backend]');
+  var modelSel = document.getElementById('model');
+  var hint = document.getElementById('backend-hint');
+  var health = {claude:false, ollama:false, ollama_models:[], claude_model:'claude-sonnet-4-6'};
+
+  function setBackend(b) {
+    if (b === 'claude' && !health.claude) return;
+    if (b === 'local' && !health.ollama) return;
+    backend = b;
+    bbtns.forEach(function(x){ x.setAttribute('aria-pressed', x.dataset.backend===b?'true':'false'); });
+    modelSel.hidden = (b !== 'local');
+    hint.textContent = b === 'claude' ? health.claude_model
+      : (health.ollama_models.length ? '' : 'no local models — run: ollama pull llama3.1:8b');
+    try { localStorage.setItem('askBackend', b); } catch(e) {}
+  }
+
+  fetch('/api/health').then(function(r){return r.json();}).then(function(h){
+    health = h;
+    bbtns.forEach(function(x){
+      var ok = x.dataset.backend==='claude' ? h.claude : h.ollama;
+      x.disabled = !ok;
+      x.title = ok ? '' : (x.dataset.backend==='claude' ? 'No ANTHROPIC_API_KEY' : 'Ollama not running on :11434');
+    });
+    (h.ollama_models||[]).forEach(function(m){ var o=document.createElement('option'); o.value=m; o.textContent=m; modelSel.appendChild(o); });
+    var saved='claude'; try{ saved=localStorage.getItem('askBackend')||'claude'; }catch(e){}
+    if (saved==='local' && h.ollama) setBackend('local');
+    else if (h.claude) setBackend('claude');
+    else if (h.ollama) setBackend('local');
+    else hint.textContent = 'No backend available: set ANTHROPIC_API_KEY or start Ollama.';
+  });
+  bbtns.forEach(function(x){ x.addEventListener('click', function(){ setBackend(x.dataset.backend); }); });
+
+  // very small markdown -> html (bold, italics, inline code, paragraphs, [n] kept as text)
+  function esc(s){ return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+  function mdLight(s){
+    var h = esc(s)
+      .replace(/\*\*([^*]+)\*\*/g,'<strong>$1</strong>')
+      .replace(/(^|[^*])\*([^*]+)\*/g,'$1<em>$2</em>')
+      .replace(/`([^`]+)`/g,'<code>$1</code>');
+    return h.split(/\n\n+/).map(function(p){ return '<p>'+p.replace(/\n/g,'<br>')+'</p>'; }).join('');
+  }
+
+  var form = document.getElementById('ask-form');
+  var qEl = document.getElementById('q');
+  var btn = document.getElementById('ask-btn');
+  var wrap = document.getElementById('answer-wrap');
+  var ansEl = document.getElementById('answer');
+  var srcWrap = document.getElementById('sources');
+  var srcList = document.getElementById('sources-list');
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var q = qEl.value.trim();
+    if (!q) return;
+    btn.disabled = true; btn.textContent = 'Thinking…';
+    wrap.hidden = false; srcWrap.hidden = true; srcList.innerHTML = '';
+    ansEl.textContent = '';
+    var raw = '';
+
+    fetch('/api/ask', {method:'POST', headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({question:q, backend:backend, model: modelSel.value})})
+    .then(function(resp){
+      var reader = resp.body.getReader(), dec = new TextDecoder(), buf='';
+      function pump(){
+        return reader.read().then(function(res){
+          if (res.done) return finish();
+          buf += dec.decode(res.value, {stream:true});
+          var lines = buf.split('\n'); buf = lines.pop();
+          lines.forEach(function(line){
+            if (!line.trim()) return;
+            var ev = JSON.parse(line);
+            if (ev.type==='token'){ raw += ev.text; ansEl.innerHTML = mdLight(raw); }
+            else if (ev.type==='citations'){ renderSources(ev.items); }
+            else if (ev.type==='error'){ ansEl.innerHTML = '<p class="err">Error: '+esc(ev.message)+'</p>'; }
+          });
+          return pump();
+        });
+      }
+      return pump();
+    }).catch(function(err){ ansEl.innerHTML = '<p class="err">Request failed: '+esc(String(err))+'</p>'; })
+      .finally(finish);
+
+    function finish(){ btn.disabled=false; btn.textContent='Ask'; }
+    function renderSources(items){
+      if (!items || !items.length) return;
+      srcWrap.hidden = false;
+      items.forEach(function(it){
+        var li=document.createElement('li');
+        li.innerHTML = '<a href="'+it.href+'">'+esc(it.title)+'</a> <span class="src-ch">— '+esc(it.chapter)+'</span>';
+        srcList.appendChild(li);
+      });
+    }
+  });
+})();
+</script>
+</body>
+</html>

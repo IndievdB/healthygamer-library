@@ -30,7 +30,7 @@ try {
   <div class="view-toggle" role="group" aria-label="Length">
     <button data-view="short">Short<span class="wc">976w</span></button>
     <button data-view="medium">Medium<span class="wc">2,465w</span></button>
-    <button data-view="large">Large<span class="wc">3,614w</span></button>
+    <button data-view="large">Large<span class="wc">3,612w</span></button>
     <button data-view="transcript">Transcript<span class="wc">21,120w</span></button>
     
   </div>
@@ -345,7 +345,6 @@ try {
 - <strong>Incubation:</strong> your subconscious does the assembly if you give it substrate and time.
 - <strong>Expression:</strong> the unglamorous 10,000-hour grind that turns an idea into a real thing.
 - <strong>A spiritual layer:</strong> stripping away conditioning, and surrendering ego, to perceive things freshly.</p>
-<hr />
 
 </section>
 <section class="sec sec-b">
@@ -481,7 +480,6 @@ try {
 <h2 id="large-manifestation-concept-energy-shiva-and-shakti">Manifestation: Concept + Energy (Shiva and Shakti)</h2>
 <p>To make anything real, you need two things: a <strong>concept</strong> (blueprint, plan — "Shiva") and an <strong>energy/material</strong> (action, fuel — "Shakti"). A house needs both an architect's plan and builders.</p>
 <p>Most failure isn't a shortage of energy — you're tired at the end of every single day. It's that <strong>your energy isn't concentrated into a sustained concept.</strong> You spend yourself on scattered, random directions: work today, AFK tomorrow; family today, not tomorrow. Energy expended rarely correlates with anything manifested, because it has no focused vector. Fix the <em>concept</em>, and your existing energy starts producing results.</p>
-<hr />
 
 </section>
 <section class="sec sec-a">
@@ -910,6 +908,25 @@ try {
       setFont(b.dataset.font);
       try { localStorage.setItem('readingFont', b.dataset.font); } catch (e) {}
     });
+  });
+})();
+</script>
+<script>
+(function () {
+  var SVG = '<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>';
+  document.querySelectorAll('.summary h2[id], .summary h3[id]').forEach(function (h) {
+    var a = document.createElement('a');
+    a.className = 'anchor-link'; a.href = '#' + h.id; a.innerHTML = SVG;
+    a.setAttribute('aria-label', 'Copy link to this section');
+    a.addEventListener('click', function (e) {
+      e.preventDefault();
+      var url = location.href.split('#')[0] + '#' + h.id;
+      try { history.replaceState(null, '', '#' + h.id); } catch (err) {}
+      function done(){ a.classList.add('copied'); setTimeout(function(){ a.classList.remove('copied'); }, 1400); }
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(url).then(done, done);
+      else done();
+    });
+    h.appendChild(a);
   });
 })();
 </script>
