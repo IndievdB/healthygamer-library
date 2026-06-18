@@ -289,6 +289,7 @@ nav.toc li { margin: 0.25rem 0; font-family: var(--font-sans); font-size: 0.92re
   letter-spacing: 0.03em; text-transform: uppercase; color: var(--accent);
   background: var(--accent-soft); padding: 0.2rem 0.55rem; border-radius: 999px;
 }
+.badge-live { color: var(--muted); background: transparent; border: 1px solid var(--line); }
 
 /* "Watch on YouTube" link under public page titles */
 .watch { margin: -0.5rem 0 1.5rem; font-family: var(--font-sans); font-size: 0.92rem; }
@@ -339,6 +340,13 @@ nav.toc li { margin: 0.25rem 0; font-family: var(--font-sans); font-size: 0.92re
 .sources ol { margin: 0.4rem 0 0; padding-left: 1.4rem; }
 .sources li { font-family: var(--font-sans); font-size: 0.9rem; margin: 0.3rem 0; }
 .sources .src-ch { color: var(--muted); }
+/* inline [n] citation references in the answer */
+.cite-ref { font-weight: 600; text-decoration: none; color: var(--accent); }
+.cite-ref:hover { text-decoration: underline; }
+
+/* livestream transcript: speaker labels + "speakers detected" note */
+.transcript .speaker { font-family: var(--font-sans); font-weight: 700; color: var(--accent); }
+.speakers-note { font-family: var(--font-sans); font-size: 0.82rem; color: var(--muted); margin-left: 0.75rem; }
 
 .section-title {
   font-family: var(--font-sans);
