@@ -883,6 +883,16 @@ try {
       try { localStorage.setItem('readingFont', b.dataset.font); } catch (e) {}
     });
   });
+  // deep-link to a heading in any view: switch to that view, then scroll to it
+  function navigateTo(id) {
+    var el = id && document.getElementById(id);
+    if (!el) return;
+    var v = el.closest('.view');
+    if (v) setView(v.getAttribute('data-view'));
+    el.scrollIntoView();
+  }
+  window.addEventListener('hashchange', function () { navigateTo(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash) navigateTo(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>
 <script>
