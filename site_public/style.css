@@ -262,6 +262,38 @@ nav.toc li { margin: 0.25rem 0; font-family: var(--font-sans); font-size: 0.92re
 }
 .cards .card .label { font-weight: 600; font-size: 1.02rem; }
 
+/* combined index: member/public sections, filter chips, source badge */
+.section-head {
+  font-size: 1.7rem;
+  margin: 2.5rem 0 0.5rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid var(--accent-soft);
+}
+.section-head .count {
+  font-family: var(--font-sans); font-size: 0.85rem; font-weight: 500;
+  color: var(--muted); margin-left: 0.5rem;
+}
+.lib[data-source="member"] .group-title { font-size: 1.15rem; }
+.filter { display: inline-flex; gap: 0; border: 1px solid var(--line); border-radius: 999px; overflow: hidden; margin-bottom: 0.5rem; }
+.filter button {
+  font-family: var(--font-sans); font-size: 0.85rem; padding: 0.4rem 0.95rem;
+  border: 0; background: transparent; color: var(--muted); cursor: pointer;
+  border-left: 1px solid var(--line);
+}
+.filter button:first-child { border-left: 0; }
+.filter button[aria-pressed="true"] { background: var(--accent); color: #fff; }
+.filter button .n { opacity: 0.65; font-size: 0.78rem; margin-left: 0.3rem; }
+.lib .card { display: flex; justify-content: space-between; align-items: center; gap: 0.75rem; }
+.badge {
+  flex: none; font-family: var(--font-sans); font-size: 0.68rem; font-weight: 600;
+  letter-spacing: 0.03em; text-transform: uppercase; color: var(--accent);
+  background: var(--accent-soft); padding: 0.2rem 0.55rem; border-radius: 999px;
+}
+
+/* "Watch on YouTube" link under public page titles */
+.watch { margin: -0.5rem 0 1.5rem; font-family: var(--font-sans); font-size: 0.92rem; }
+.watch a { font-weight: 600; }
+
 /* Ask page */
 .ask-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; margin: 1.25rem 0 1rem; }
 .model-select {
