@@ -290,6 +290,14 @@ nav.toc li { margin: 0.25rem 0; font-family: var(--font-sans); font-size: 0.92re
   background: var(--accent-soft); padding: 0.2rem 0.55rem; border-radius: 999px;
 }
 .badge-live { color: var(--muted); background: transparent; border: 1px solid var(--line); }
+.badge-show {
+  text-transform: none; letter-spacing: 0; font-weight: 500; font-size: 0.7rem;
+  color: var(--accent); background: var(--accent-soft); max-width: 45%;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.section-note { color: var(--muted); font-style: italic; margin: 0 0 1rem; font-size: 0.92rem; }
+.show-line { margin: -0.4rem 0 0.6rem; font-family: var(--font-sans); color: var(--muted); font-size: 0.95rem; }
+.show-line strong { color: var(--ink); }
 
 /* "Watch on YouTube" link under public page titles */
 .watch { margin: -0.5rem 0 1.5rem; font-family: var(--font-sans); font-size: 0.92rem; }
