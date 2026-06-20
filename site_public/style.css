@@ -356,3 +356,66 @@ nav.toc li { margin: 0.25rem 0; font-family: var(--font-sans); font-size: 0.92re
   color: var(--muted);
   margin: 2.5rem 0 0.25rem;
 }
+
+/* --- glossary ----------------------------------------------------------- */
+.az {
+  display: flex; flex-wrap: wrap; gap: 0.35rem;
+  margin: 0 0 2rem; padding-bottom: 1rem;
+  border-bottom: 1px solid var(--accent-soft);
+}
+.az a {
+  display: inline-block; min-width: 1.6rem; text-align: center;
+  padding: 0.2rem 0.4rem; border-radius: 6px;
+  font-weight: 600; text-decoration: none; color: var(--accent);
+}
+.az a:hover { background: var(--accent-soft); }
+.az-letter {
+  font-size: 1.9rem; color: var(--accent);
+  margin: 0 0 1rem; padding-bottom: 0.2rem; opacity: 0.55;
+}
+.gloss-term { margin: 0 0 2rem; }
+.gloss-term h3 { margin: 0 0 0.3rem; scroll-margin-top: 1rem; }
+.aliases { color: var(--muted); font-style: italic; font-size: 0.9rem; margin: 0 0 0.5rem; }
+.gloss-term .sources, .gloss-term .related {
+  font-size: 0.85rem; color: var(--muted); margin: 0.6rem 0 0; line-height: 1.5;
+}
+.gloss-term .related { margin-top: 0.25rem; }
+sup.cite { font-size: 0.7em; }
+sup.cite a { text-decoration: none; color: var(--accent); }
+
+/* --- in-page glossary term tooltips ------------------------------------- */
+.gl {
+  position: relative;
+  border-bottom: 1px dotted var(--accent);
+  cursor: help;
+}
+.gl-pop {
+  display: none;
+  position: fixed;          /* escapes the .doc overflow:hidden clip; placed by gl.js */
+  left: 0; top: 0;
+  z-index: 60;
+  width: max-content; max-width: min(340px, 92vw);
+  padding: 0.7rem 0.85rem;
+  background: var(--panel);
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  box-shadow: 0 12px 34px rgba(0, 0, 0, 0.28), 0 2px 8px rgba(0, 0, 0, 0.14);
+  font: 400 0.85rem/1.55 var(--font-sans);
+  font-style: normal;
+  text-align: left;
+  white-space: normal;
+}
+.gl:hover .gl-pop,
+.gl:focus-within .gl-pop { display: block; }
+/* transparent bridges so the pointer can travel term → popup without dropping */
+.gl-pop::before, .gl-pop::after { content: ""; position: absolute; left: 0; right: 0; height: 10px; }
+.gl-pop::before { top: -10px; }
+.gl-pop::after { bottom: -10px; }
+.gl-pop .gl-def { display: block; color: var(--ink); }
+.gl-pop .gl-more {
+  display: inline-block; margin-top: 0.55rem;
+  font-size: 0.78rem; font-weight: 600;
+  color: var(--accent); text-decoration: none;
+}
+.gl-pop .gl-more:hover { text-decoration: underline; }
