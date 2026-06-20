@@ -9,7 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-} catch (e) {}
+  document.documentElement.setAttribute('data-view', localStorage.getItem('pubview') || 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -24,16 +25,167 @@ try {
   </nav>
 
   <h1>Dr. K explains Willpower, Confidence and more!</h1>
-  <p class="watch">
-    <a href="https://www.youtube.com/watch?v=BSrymhSn6I8" target="_blank" rel="noopener">▶ Watch on YouTube</a>
-    <span class="speakers-note">Speakers (auto-detected): Dr. K</span>
-  </p>
+  <p class="watch"><a href="https://www.youtube.com/watch?v=BSrymhSn6I8" target="_blank" rel="noopener">▶ Watch on YouTube</a></p>
 
-  <div class="doc">
-    <nav class="toc"><p class="toc-title">Chapters</p><ul><li><a href="#transcript-0-stream-intro-and-book-announcement">Stream Intro and Book Announcement</a></li><li><a href="#transcript-1-how-to-raise-a-healthy-gamer-book-details">How to Raise a Healthy Gamer Book Details</a></li><li><a href="#transcript-2-community-wins-and-membership-features">Community Wins and Membership Features</a></li><li><a href="#transcript-3-membership-deep-dives-and-yogic-concepts-preview">Membership Deep Dives and Yogic Concepts Preview</a></li><li><a href="#transcript-4-willpower-as-finite-resource-vs-trainable-muscle">Willpower as Finite Resource vs. Trainable Muscle</a></li><li><a href="#transcript-5-the-yogic-solution-shrinking-desires-instead-of-fighting-them">The Yogic Solution: Shrinking Desires Instead of Fighting Them</a></li><li><a href="#transcript-6-doing-nothing-separating-action-from-motivation">Doing Nothing: Separating Action from Motivation</a></li><li><a href="#transcript-7-understanding-confidence-and-adverse-childhood-experiences">Understanding Confidence and Adverse Childhood Experiences</a></li><li><a href="#transcript-8-perceptual-bias-and-the-root-of-low-self-esteem">Perceptual Bias and the Root of Low Self-Esteem</a></li><li><a href="#transcript-9-dating-as-a-skill-game-vs-human-connection">Dating as a Skill Game vs. Human Connection</a></li><li><a href="#transcript-10-working-on-yourself-self-love-and-partner-selection">Working on Yourself, Self-Love, and Partner Selection</a></li><li><a href="#transcript-11-relationship-rules-are-not-like-chess-or-poker">Relationship Rules Are Not Like Chess or Poker</a></li><li><a href="#transcript-12-self-improvement-dilemma-will-they-love-the-real-you">Self-Improvement Dilemma: Will They Love the Real You</a></li><li><a href="#transcript-13-overcoming-fear-of-annoying-others-in-relationships">Overcoming Fear of Annoying Others in Relationships</a></li><li><a href="#transcript-14-sharing-responsibility-and-open-ended-communication">Sharing Responsibility and Open-Ended Communication</a></li></ul></nav>
-    <article class="summary transcript"><section class="sec sec-a">
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">2,239w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">21,879w</span></button>
+    
+  </div>
+
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#medium-summary">Summary</a></li>
+<li><a href="#medium-the-five-sources-of-human-action">The Five Sources of Human Action</a></li>
+<li><a href="#medium-willpower-battery-not-magic">Willpower: Battery, Not Magic</a></li>
+<li><a href="#medium-the-yogic-solution-shrink-what-youre-fighting">The Yogic Solution: Shrink What You're Fighting</a></li>
+<li><a href="#medium-why-finding-motivation-is-the-wrong-goal">Why "Finding Motivation" Is the Wrong Goal</a></li>
+<li><a href="#medium-how-confidence-gets-destroyed-and-rebuilt">How Confidence Gets Destroyed (and Rebuilt)</a></li>
+<li><a href="#medium-relationships-arent-chess">Relationships Aren't Chess</a></li>
+<li><a href="#medium-stop-calculating-relationships-alone">Stop Calculating Relationships Alone</a></li>
+<li><a href="#medium-common-pitfalls">Common Pitfalls</a></li>
+<li><a href="#medium-action-items-exercises">Action Items &amp; Exercises</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="medium-summary">Summary</h2>
+<p><strong>TL;DR — Willpower is a finite but trainable resource, and the real path to self-control is reducing what you need to control in the first place.</strong> This talk covers four interconnected topics: the mechanics of willpower and why it burns out, how to break free from being a slave to your own desires, how confidence is destroyed and rebuilt through perception, and how to stop carrying the full social weight of a relationship by yourself.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-the-five-sources-of-human-action">The Five Sources of Human Action</h2>
+<p>Before you can understand willpower, you need a map of what willpower is actually fighting against. Human behavior has five distinct sources:</p>
+<ol>
+<li><strong>Desire (sensory-driven)</strong> — You smell food, see an ad, feel a craving. Your sensory organs fire a want.</li>
+<li><strong>Internal motivation (serotonergic)</strong> — A deeper pull toward things like fulfillment, security, and ambition. This is distinct from pleasure-seeking.</li>
+<li><strong>Emotion</strong> — The amygdala generates fear, excitement, or anger, and those emotions push you to act.</li>
+<li><strong>Habit</strong> — Automatic behavior wired by the endocannabinoid system. You add sugar to coffee before you even decide to.</li>
+<li><strong>Willpower</strong> — The frontal lobes overriding the other four.</li>
+</ol>
+<p>The neuroscience matters here: the <strong>dopaminergic system</strong> (nucleus accumbens) drives pleasure-seeking. The <strong>serotonergic system</strong> drives contentment and fulfillment. These two systems are practically inverse — loading up on dopamine (gaming, porn, junk food) tends to leave you feeling empty, while serotonin-activating activities (exercise, meaningful work, learning) leave you feeling satisfied. Most people are trying to use willpower to fight their dopamine system while their serotonin system starves.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-willpower-battery-not-magic">Willpower: Battery, Not Magic</h2>
+<p>Willpower is <strong>both</strong> a finite resource and a trainable capacity — and understanding both sides of this resolves a lot of confusion.</p>
+<p>It's finite because the frontal lobes fatigue. The "cookie and beet" experiment illustrates this cleanly: people who had to resist a plate of chocolate chip cookies while waiting gave up on an unsolvable puzzle faster than people sitting next to boiled beets. Resisting the cookies spent willpower; there was nothing to resist about the beets. You know this from your own life — it's easier to eat well in the morning than at 10 p.m. after a hard day.</p>
+<p>It's trainable because you can expand the battery's capacity. Meditation, emotional regulation practice, and deliberate restraint exercises all build the frontal lobe's endurance. But here's the trap:</p>
+<blockquote>
+<p>"If you are using willpower every single day to restrain your desires, restrain your ambitions, restrain your habits, and restrain your emotions, you will burn out."</p>
+</blockquote>
+<p>Bigger battery, same daily war. This is why so many people burn out even after they "get disciplined." The battle is won, the war is lost.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-the-yogic-solution-shrink-what-youre-fighting">The Yogic Solution: Shrink What You're Fighting</h2>
+<p>The yogic insight isn't "get stronger willpower." It's: <strong>make the opposing forces smaller so less willpower is needed at all.</strong></p>
+<p>Think of it mathematically. If your desire is enormous, you need enormous willpower to restrain it. If the desire is small, a little willpower handles it easily. A professional swimmer interviewed during the talk said that after 20 years, he still hates how cold the water is — but that's five seconds of willpower for a full workout. The rest is effortless because the habit is deep and the internal resistance is minimal.</p>
+<p>The practical implication: instead of trying to override your desires, <strong>work on the desires themselves</strong>. This means:
+- Sublimating and reducing cravings rather than white-knuckling through them
+- Digesting the emotional source of your reactions rather than just suppressing the reaction
+- Rewiring habits at their root rather than blocking them each time
+- Replacing ambition with something more stable (in yogic terms, replacing ego-driven goals with Dharma)</p>
+<blockquote>
+<p>"The real solution is to stop wanting to move in the wrong direction in the first place."</p>
+</blockquote>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-why-finding-motivation-is-the-wrong-goal">Why "Finding Motivation" Is the Wrong Goal</h2>
+<p>A subtle but important idea: <strong>trying to find or generate motivation keeps you a slave to your desires, just hopefully pointed in the right direction.</strong></p>
+<p>If you only exercise when you feel motivated to exercise, your entire fitness depends on waking up with the right feeling. That's not control — it's luck. This is the rubber band mechanic in real life: you run hard in a positive direction, the rubber band snaps, you're back at the tree.</p>
+<p>The counterintuitive fix is to <strong>practice restraint in the positive direction too</strong>. If you feel enormously motivated to work eight hours, do four. If you want to do ten things at the gym, do five. This sounds absurd, but the point is to separate action from desire entirely — to act because you decide to, not because something inside tells you to.</p>
+<p>The ultimate training exercise is <strong>doing something completely worthless</strong>. Pick up a cup of pens, put them back, one at a time. Sit facing a blank wall for thirty minutes. Do nothing that benefits you. Watch how aggressively your mind objects.</p>
+<blockquote>
+<p>"The more worthless things you do, the more of truly nothing that you do, the better you will be in life."</p>
+</blockquote>
+<p>This isn't nihilism — it's freedom. If you can act without any reward, any dopamine, any external justification, then you are in control of your actions rather than your desires being in control of you.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-how-confidence-gets-destroyed-and-rebuilt">How Confidence Gets Destroyed (and Rebuilt)</h2>
+<p>Confidence is the ability to face uncertainty — to believe the unknown is manageable rather than dangerous.</p>
+<p>Whether or not you developed that belief largely traces back to early childhood. Secure attachment gives you a repair mechanism: when the world damages you, someone helps you heal. When that's absent, you can't afford to take risks, because there's no recovery from taking damage. As one framing puts it: imagine playing your favorite game on a zero-Estus, zero-healing run. Every fight is existential. Of course you play cautiously.</p>
+<p>But here's the more actionable insight: <strong>the world is largely the same for everyone — it's your perception of it that differs</strong>.</p>
+<p>People who lack confidence run a predictable cognitive pattern:
+- Positive information gets a "but" appended to it and discounted
+- Negative information passes through unfiltered</p>
+<p>This is exactly the pattern in the example post discussed: <em>"I'm rather good-looking, </em><em>but</em><em> everyone's moms say that."</em> <em>"I want to change for the better and live a normal life, </em><em>but</em><em> I don't see how that could happen."</em> No corresponding "but" appears after any negative statement. The mind is running propaganda: amplify bad, minimize good.</p>
+<blockquote>
+<p>"You don't need to gain confidence. You just need to stop sabotaging it. It'll grow on its own."</p>
+</blockquote>
+<p>A two-year-old is naturally confident. Insecurity is learned. Which means the task isn't to build something new — it's to stop dismantling something that's already trying to exist.</p>
+<p><strong>Practical starting point:</strong> Don't try to fix the bias yet. Just notice it. Every time something good happens, watch for the "but." Every time something bad happens, notice there isn't one. That observation alone begins to loosen the pattern.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-relationships-arent-chess">Relationships Aren't Chess</h2>
+<p>A long section takes on the idea that dating is purely a skill game like poker or chess. The disagreement isn't that skills don't matter — it's that chess has a fixed rule set and one clear winner. Relationships don't.</p>
+<p>The same behavior (being assertive) will be experienced as confident by one person and misogynistic by another. There's no universal optimal strategy because the game is being invented cooperatively with another human being. A better analogy: Dungeons &amp; Dragons, where there's some tension and push-pull, but the goal is to create something together.</p>
+<p>On the specific claim that "you have to reduce the importance of dating to get better at it" — this one actually holds up under scrutiny, but for a reason that's often left unexplained. When dating matters too much, you retreat into your own head. You start running internal dialogues about your hair, your income, whether they like you. In that state, you are literally interacting with yourself, not with the person in front of you. You stop receiving the signals they're sending. Caring less isn't the goal — <strong>being present</strong> is the goal. Reducing the stakes is just one way some people get there.</p>
+<p>On "if you don't love yourself, no one else will" — the insight is more specific than the cliché suggests. What you believe you deserve is what you'll accept from others. People who were abused often end up in relationships with people who abuse them — not because they're broken, but because conditional or cruel treatment feels familiar and safe in a strange way, while genuine affection can feel threatening. The shoe is always about to drop. So yes, self-love matters — not as a prerequisite to finding a partner, but because without it, you'll unconsciously select for people who confirm your low self-assessment.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-stop-calculating-relationships-alone">Stop Calculating Relationships Alone</h2>
+<p>The final topic is about social anxiety — specifically, the paralysis of <em>"I want to reach out, but I don't want to annoy them."</em></p>
+<p>The problem with this conflict is that both sides of it are about you. "I want to talk to you" is your desire. "I don't want to annoy you" is still your desire (to feel like a good person who doesn't impose). Neither involves the other person at all. You're running a simulation of a relationship entirely inside your own head, and then wondering why you can't solve it.</p>
+<p>The answer is to let the other person into the equation. Ask open-ended questions: <em>"How often do you enjoy hanging out?"</em> rather than <em>"Can we hang out sometime?"</em> Yes/no questions invite polite deflection. Open questions get real information.</p>
+<p>And crucially — <strong>you are not responsible for being a telepathic mind-reader</strong>. If you make reasonable effort to ask and be present, and someone is too polite to tell you they're annoyed, that's their work to do, not yours. Socially anxious people often take on 100% of the responsibility for a relationship's comfort level. That's exhausting, it produces no useful answers, and it robs the other person of their half of the relationship.</p>
+<blockquote>
+<p>"It takes two to lift a relationship. If you're lifting it solo, the time is ticking."</p>
+</blockquote>
+<p>Do your 50%. Maybe 60%. Not 100.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-common-pitfalls">Common Pitfalls</h2>
+<ul>
+<li><strong>Treating willpower as the primary tool.</strong> Most people either dismiss it entirely or try to maximize it. The real answer is to minimize how often it's needed.</li>
+<li><strong>Trying to generate better desires instead of transcending desire.</strong> Hoping you wake up motivated is just hoping your internal compass points the right way today. That's not control.</li>
+<li><strong>Doing "positive" things as a virtue bypass.</strong> Your mind will convince you that any impulse it has is actually good for you. Practicing restraint only on bad impulses means you never practice restraint at all.</li>
+<li><strong>Interpreting confidence as something that has to be earned or built.</strong> It's closer to something that has to stop being destroyed. The work is noticing how you dismantle it, not constructing it from scratch.</li>
+<li><strong>Treating dating as a purely strategic game with fixed rules.</strong> The "I just need better tactics" frame tends to produce a higher rejection rate because it bypasses empathy and organic connection.</li>
+<li><strong>Carrying all the relational responsibility yourself.</strong> Over-functioning socially doesn't produce good relationships — it produces burnout and one-sided dynamics.</li>
+</ul>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-action-items-exercises">Action Items &amp; Exercises</h2>
+<ol>
+<li>
+<p><strong>Do 30 minutes of nothing.</strong> Sit facing a blank wall. Don't meditate, don't daydream — just sit. When your mind pulls you toward productivity, entertainment, or anything else, don't follow it. Start here before trying anything else. Increase toward an hour over time.</p>
+</li>
+<li>
+<p><strong>Practice restraint in the positive direction.</strong> Next time you feel a surge of good motivation — to work, exercise, socialize, eat well — deliberately do 50% of what you feel like doing. Stop at the 45-minute gym mark even if you want more. This is practicing the actual skill of self-governance rather than desire-following.</p>
+</li>
+<li>
+<p><strong>Track the "but."</strong> For one week, every time you notice something positive about yourself or your situation, write it down and look for whether your mind automatically attaches a "but" or a qualification. Also note negative things and whether a "but" is conspicuously absent. Don't try to fix it yet — just observe the pattern.</p>
+</li>
+<li>
+<p><strong>Ask open-ended questions instead of yes/no questions.</strong> In your next few social interactions where you'd normally ask "would you like to hang out?" or "am I bothering you?", replace it with "how often do you like catching up with people?" or "what's a good Cadence for you when it comes to hanging out?" Notice what actual information you get versus polite deflection.</p>
+</li>
+<li>
+<p><strong>Identify which of the four non-willpower sources is running your life right now.</strong> Is it a habit you keep giving into? An emotion that keeps short-circuiting you? A sensory desire? An ambition that creates pressure? Pick the one that's consuming the most willpower daily, and — rather than fighting it with more willpower — start asking: what is the actual source of this, and what would it take to reduce the desire rather than override it?</p>
+</li>
+<li>
+<p><strong>Share 50% of social responsibility.</strong> In a relationship or friendship where you've been doing most of the calculation, explicitly ask the other person a question that gives them room to state their preference. Then let their answer actually inform your behavior instead of second-guessing it. Practice trusting data from the outside over the simulation inside your head.</p>
+</li>
+</ol>
+</section></article>
+    </div>
+  </div>
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc"><ul><li><a href="#transcript-0-stream-intro-and-book-announcement">Stream Intro and Book Announcement</a></li><li><a href="#transcript-1-how-to-raise-a-healthy-gamer-book-details">How to Raise a Healthy Gamer Book Details</a></li><li><a href="#transcript-2-community-wins-and-membership-features">Community Wins and Membership Features</a></li><li><a href="#transcript-3-membership-deep-dives-and-yogic-concepts-preview">Membership Deep Dives and Yogic Concepts Preview</a></li><li><a href="#transcript-4-willpower-as-finite-resource-vs-trainable-muscle">Willpower as Finite Resource vs. Trainable Muscle</a></li><li><a href="#transcript-5-the-yogic-solution-shrinking-desires-instead-of-fighting-them">The Yogic Solution: Shrinking Desires Instead of Fighting Them</a></li><li><a href="#transcript-6-doing-nothing-separating-action-from-motivation">Doing Nothing: Separating Action from Motivation</a></li><li><a href="#transcript-7-understanding-confidence-and-adverse-childhood-experiences">Understanding Confidence and Adverse Childhood Experiences</a></li><li><a href="#transcript-8-perceptual-bias-and-the-root-of-low-self-esteem">Perceptual Bias and the Root of Low Self-Esteem</a></li><li><a href="#transcript-9-dating-as-a-skill-game-vs-human-connection">Dating as a Skill Game vs. Human Connection</a></li><li><a href="#transcript-10-working-on-yourself-self-love-and-partner-selection">Working on Yourself, Self-Love, and Partner Selection</a></li><li><a href="#transcript-11-relationship-rules-are-not-like-chess-or-poker">Relationship Rules Are Not Like Chess or Poker</a></li><li><a href="#transcript-12-self-improvement-dilemma-will-they-love-the-real-you">Self-Improvement Dilemma: Will They Love the Real You</a></li><li><a href="#transcript-13-overcoming-fear-of-annoying-others-in-relationships">Overcoming Fear of Annoying Others in Relationships</a></li><li><a href="#transcript-14-sharing-responsibility-and-open-ended-communication">Sharing Responsibility and Open-Ended Communication</a></li></ul></div></nav>
+      <article class="summary"><section class="sec sec-a">
 <h2 id="transcript-0-stream-intro-and-book-announcement">Stream Intro and Book Announcement</h2>
-<p><span class="speaker">Dr. K:</span> [Music]: oh, [Music], oh, oh [Music]. [Music]. M m [Music] [Applause] [Music]. Oh, [Music]. O [Music]. All righty chat. Ah, hell guy there. Welcome to another healthy gamer GG stream. My name is Dr. Oh, oh, we lagging. My name is Dr Al kenoa. Just a reminder that, although I am a psychiatrist, nothing we discuss on stream today is intended to be taken as medical advice. Everything is for educational or entertainment purposes only. If you all have a concern or question, please go see a licensed professional. Okay, so happy Tuesday everybody. Um, sorry, we had to reschedule stream yesterday. I uh was on a podcast on Saturday and I the podcast lasted 5 hours and my voice was completely shot, so I needed a day to kind of recover.</p>
+<p>[Music]: oh, [Music], oh, oh [Music]. [Music]. M m [Music] [Applause] [Music]. Oh, [Music]. O [Music]. All righty chat. Ah, hell guy there. Welcome to another healthy gamer GG stream. My name is Dr. Oh, oh, we lagging. My name is Dr Al kenoa. Just a reminder that, although I am a psychiatrist, nothing we discuss on stream today is intended to be taken as medical advice. Everything is for educational or entertainment purposes only. If you all have a concern or question, please go see a licensed professional. Okay, so happy Tuesday everybody. Um, sorry, we had to reschedule stream yesterday. I uh was on a podcast on Saturday and I the podcast lasted 5 hours and my voice was completely shot, so I needed a day to kind of recover.</p>
 </section>
 <section class="sec sec-b">
 <h2 id="transcript-1-how-to-raise-a-healthy-gamer-book-details">How to Raise a Healthy Gamer Book Details</h2>
@@ -252,15 +404,21 @@ try {
 <p>It&#x27;s. It&#x27;s great, right, it&#x27;s okay. You can let people know and then, on the flip side, you should also let other people know where you&#x27;re coming from. Okay, all right, that&#x27;s time for today. I think we are done chat. So thank you all so much for coming. We have a tantra stream tomorrow, uh, for members. And then last thing is that if you guys really like these communication stuff in this relationship crap, definitely check out our book, because this is where we try to teach the most fundamentals and like start from zero and go to Hero when it turn comes to communicating. So if yall are having difficulty with certain conversations, the other really good thing about this is if yall have hard conversations that you need to have in a productive way.</p>
 <p>That&#x27;s what this book really lays out: how to listen, how to get people to understand your side of the story. Okay, so check it out now. Pre-orders are available. Comes out in a week, all right, so take care everybody, we will see y&#x27;all. Uh, I think our next general stream may be Thursday. So, chat Lords, we will see yall Thursday, unless y&#x27;all are coming to the tantra membership thing tomorrow.</p>
 </section></article>
+    </div>
   </div>
+  
 
-  <p class="meta">Auto-transcribed livestream · chapters &amp; speaker labels are a best-effort approximation (claude-sonnet-4-6).</p>
+  <p class="meta">Medium summary · claude-sonnet-4-6 (no extended thinking)</p>
 </div>
 
 <script>
 (function () {
   var root = document.documentElement;
-  var tb = document.querySelector('.theme-toggle');
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'medium');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
   var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
   tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
@@ -268,6 +426,16 @@ try {
   function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
   var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+  // deep-link to a heading in any view: switch to that view, then scroll to it
+  function navigateTo(id){
+    var el = id && document.getElementById(id);
+    if (!el) return;
+    var v = el.closest('.view');
+    if (v) setView(v.getAttribute('data-view'));
+    el.scrollIntoView();
+  }
+  window.addEventListener('hashchange', function(){ navigateTo(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash) navigateTo(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>
 <script>

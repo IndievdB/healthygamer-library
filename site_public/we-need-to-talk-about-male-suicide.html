@@ -9,7 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-} catch (e) {}
+  document.documentElement.setAttribute('data-view', localStorage.getItem('pubview') || 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -24,16 +25,155 @@ try {
   </nav>
 
   <h1>We need to talk about male suicide.</h1>
-  <p class="watch">
-    <a href="https://www.youtube.com/watch?v=kt6UmH1EflY" target="_blank" rel="noopener">▶ Watch on YouTube</a>
-    <span class="speakers-note">Speakers (auto-detected): Dr. K</span>
-  </p>
+  <p class="watch"><a href="https://www.youtube.com/watch?v=kt6UmH1EflY" target="_blank" rel="noopener">▶ Watch on YouTube</a></p>
 
-  <div class="doc">
-    <nav class="toc"><p class="toc-title">Chapters</p><ul><li><a href="#transcript-0-stream-introduction-and-topic-setup">Stream Introduction and Topic Setup</a></li><li><a href="#transcript-1-diary-of-a-ceo-clip-men-suicide-and-mental-illness">Diary of a CEO Clip: Men, Suicide, and Mental Illness</a></li><li><a href="#transcript-2-reactions-and-misinterpretations-online">Reactions and Misinterpretations Online</a></li><li><a href="#transcript-3-objective-vs-subjective-life-quality-in-suicidality">Objective vs. Subjective Life Quality in Suicidality</a></li><li><a href="#transcript-4-sls-and-diseases-of-despair">SLS and Diseases of Despair</a></li><li><a href="#transcript-5-research-on-suicide-without-mental-illness-diagnosis">Research on Suicide Without Mental Illness Diagnosis</a></li><li><a href="#transcript-6-interpreting-the-data-mental-illness-vs-life-circumstances">Interpreting the Data: Mental Illness vs. Life Circumstances</a></li><li><a href="#transcript-7-thwarted-belongingness-and-perceived-burdensomeness">Thwarted Belongingness and Perceived Burdensomeness</a></li><li><a href="#transcript-8-masculine-norms-emotional-expression-and-help-seeking">Masculine Norms, Emotional Expression, and Help-Seeking</a></li><li><a href="#transcript-9-toxic-masculinity-ostracism-and-radicalization">Toxic Masculinity, Ostracism, and Radicalization</a></li><li><a href="#transcript-10-how-to-ask-for-help-and-instrumental-support">How to Ask for Help and Instrumental Support</a></li><li><a href="#transcript-11-diseases-of-despair-data-and-trends">Diseases of Despair: Data and Trends</a></li><li><a href="#transcript-12-therapy-as-last-line-of-defense">Therapy as Last Line of Defense</a></li><li><a href="#transcript-13-steps-forward-stay-alive-get-help-process-emotions">Steps Forward: Stay Alive, Get Help, Process Emotions</a></li><li><a href="#transcript-14-awareness-cognitive-distortions-and-self-understanding">Awareness, Cognitive Distortions, and Self-Understanding</a></li><li><a href="#transcript-15-society-responsibility-and-peer-support-for-suicidality">Society, Responsibility, and Peer Support for Suicidality</a></li></ul></nav>
-    <article class="summary transcript"><section class="sec sec-a">
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">2,310w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">22,327w</span></button>
+    
+  </div>
+
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#medium-summary">Summary</a></li>
+<li><a href="#medium-what-no-mental-illness-actually-means">What "No Mental Illness" Actually Means</a></li>
+<li><a href="#medium-the-diseases-of-despair-framework">The Diseases of Despair Framework</a></li>
+<li><a href="#medium-how-a-man-actually-becomes-suicidal">How a Man Actually Becomes Suicidal</a></li>
+<li><a href="#medium-the-limits-of-therapy-and-why-you-still-need-it">The Limits of Therapy — and Why You Still Need It</a></li>
+<li><a href="#medium-what-your-mind-adds-to-the-equation">What Your Mind Adds to the Equation</a></li>
+<li><a href="#medium-common-pitfalls">Common Pitfalls</a></li>
+<li><a href="#medium-action-items-exercises">Action Items &amp; Exercises</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="medium-summary">Summary</h2>
+<p><strong>TL;DR — Male suicide is not simply a mental illness problem: a significant portion of men who die by suicide show no prior psychiatric diagnosis, and understanding <em>why</em> requires looking at the real conditions of their lives, not just their brain chemistry.</strong></p>
+<p>This talk addresses a viral clip in which a psychiatrist stated that many suicidal men are not mentally ill — their minds aren't malfunctioning, they are accurately assessing lives that genuinely lack opportunity, connection, and hope. That statement drew both support and sharp criticism online. The talk is a response: clarifying what was meant, walking through the actual research, and then building a practical picture of how male suicidality develops and what to do about it.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-what-no-mental-illness-actually-means">What "No Mental Illness" Actually Means</h2>
+<p>The controversial claim rests on real data. A systematic review of psychological autopsy studies found that up to 66.7% of suicide cases carried no psychiatric diagnosis when researchers only examined acute (Axis I) disorders. When personality disorders were added to the analysis, roughly 37% still had no diagnosable psychiatric condition. A separate study published in the <em>American Journal of Preventive Medicine</em> found that most male suicide decedents had no <em>known</em> mental health conditions, and that those without diagnoses more frequently died by firearm and had relationship problems, arguments, or a personal crisis as the precipitating circumstance — not symptoms of a mental disorder.</p>
+<p>A valid counter-argument, raised in the talk through Destiny's reaction, is that this simply reflects undiagnosed illness. That's worth taking seriously. Rates of undiagnosed mental illness are real. But even generous estimates of under-diagnosis don't close the gap: if you double the detection rate, there is still a large portion of the population dying by suicide without a mental health condition driving it. More importantly, the precipitating-circumstances data gives us something affirmative to work with — these men had identifiable life problems, not just invisible pathology.</p>
+<p>This distinction matters enormously in practice. If you assume the cause is always a malfunctioning mind, you focus on treating the malfunction and ignore everything else. If a significant share of suicidal men have minds that are working exactly as designed — correctly reading a life that offers very little — then telling them "your thinking is distorted, you actually have a lot to live for" is not just unhelpful; it is a form of dismissal.</p>
+<blockquote>
+<p>"I say: I hear you. I still don't think suicide is the right answer. Let me help you build a life that is worth living."</p>
+</blockquote>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-the-diseases-of-despair-framework">The Diseases of Despair Framework</h2>
+<p>Researchers began noticing clusters of deaths that didn't fit neatly into conventional psychiatric categories. They called the pattern <strong>diseases of despair</strong> — a grouping of suicide, alcohol-related mortality, and drug-related mortality that tends to appear together in communities experiencing economic collapse and social disintegration.</p>
+<p>One U.S. study tracking over 15,000 males from 2009 to 2018 found:
+- Alcohol-related diagnoses increased <strong>37%</strong>
+- Substance-related diagnoses increased <strong>94%</strong>
+- Suicide-related diagnoses increased <strong>170%</strong>
+- Among those under 18, suicide-related diagnoses increased <strong>287%</strong>
+- Men were 1.49 times as likely as women to receive these diagnoses</p>
+<p>The shared root isn't a brain disease. It's despair — a collapse of the conditions that make life feel worth sustaining. When the economy of a fishing village collapses and young men are raised to believe their worth is tied to providing, and there is nothing left to provide, they don't develop clinical depression the way a textbook describes it. They turn to substances or they stop living. The diagnosis comes after the despair, not before.</p>
+<p>Addiction, viewed through this lens, is often <strong>slow-motion suicidality</strong>. When life has nothing to offer, numbing yourself with alcohol, pornography, or video games is a way of extracting whatever sensation is available from a life you've already given up on. The behavior isn't a disease that appeared from nowhere — it's a rational response to emptiness.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-how-a-man-actually-becomes-suicidal">How a Man Actually Becomes Suicidal</h2>
+<p>Suicidality research has identified two variables that are especially predictive of suicide risk, above and beyond psychiatric diagnosis:</p>
+<p><strong>Perceived burdensomeness</strong> — the belief that you contribute nothing, that you are a net cost to the people around you rather than a net benefit.</p>
+<p><strong>Thwarted belongingness</strong> — you try to connect with other people and you are rejected, excluded, or ignored. You experience being unwanted not as a temporary setback but as a stable feature of the social world.</p>
+<p>Both of these are worsened by conditions that disproportionately affect men today:</p>
+<ul>
+<li><strong>Alexithymia</strong>: Men are trained to suppress emotional awareness, which cuts off access to the information and motivational fuel that emotions provide. Suppressing emotions doesn't eliminate them — it drains willpower and leaves the underlying pain untouched.</li>
+<li><strong>Masculine norms around independence</strong>: Being raised to be self-sufficient means you don't know how to ask for help. The only emotion men are reliably permitted to express is anger, and that anger is increasingly pathologized, leaving men with no sanctioned outlet.</li>
+<li><strong>Tolerance for pain</strong>: One hypothesis for why men die by suicide at four times the rate of women is that men are conditioned to endure physical and emotional pain — which removes one of the most common protective factors against completing suicide (fear of the pain of dying).</li>
+<li><strong>The creep label</strong>: Men who lack social skills, often because they never had the environment to develop them, get socially ostracized. The word "creep" is applied — not because they did something wrong, but because they make others uncomfortable. There's no clear remediation for this label, which deepens isolation.</li>
+<li><strong>Radicalization by default</strong>: When men struggling with isolation reach out and are rejected by mainstream social spaces, they find communities that do accept them — often red-pill, incel, or related online spaces. Those communities reinforce beliefs that make it even harder to connect. The cycle is self-reinforcing. Criticizing those communities without creating better alternatives doesn't solve the underlying problem.</li>
+</ul>
+<blockquote>
+<p>"Anytime you ostracize a group of people, they're going to form their own community. If you have a problem with toxic masculinity, how about being nicer to dudes so they don't have to shut themselves out and then congregate and radicalize."</p>
+</blockquote>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-the-limits-of-therapy-and-why-you-still-need-it">The Limits of Therapy — and Why You Still Need It</h2>
+<p>Therapists are described here as the <strong>King's Guard</strong> — an elite, highly trained last line of defense. The problem is that there are no other soldiers in front of them. The macro-level forces — economic stagnation, social isolation, the collapse of community, social media, pornography, the loneliness epidemic — are battering people constantly, and by the time someone reaches a therapist's office, they have already been through enormous damage.</p>
+<p>Therapy is still the right first step. It has the best evidence base. But it has real limitations for men:</p>
+<ul>
+<li>Most therapeutic training emphasizes <strong>emotional support</strong> — empathy, reflection, validation. Many men don't want that as the primary mode of help. They want <strong>instrumental support</strong>: practical help solving actual problems in their lives.</li>
+<li>Therapy has largely abdicated responsibility for life outcomes. Therapists will measure PHQ-9 scores but won't help you get a job, a relationship, or a sense of purpose — even though those are the things actually making life feel unlivable.</li>
+<li>Fit matters. If the approach doesn't match what you need, it won't work. Try at least three therapists before concluding therapy doesn't help.</li>
+</ul>
+<blockquote>
+<p>"I can help you with your cognitive distortions. I cannot make up for the deficiency of hugs from the last ten years of your life."</p>
+</blockquote>
+<p>The other missing piece is <strong>peer support</strong>. Alcoholism recovery has AA. Suicidality does not have an equivalent — in part because the people who survive it rarely identify themselves publicly. There is genuine need for people who have come through suicidal despair and rebuilt their lives to be visible, because peer experience is irreplaceable in a way that professional training is not.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-what-your-mind-adds-to-the-equation">What Your Mind Adds to the Equation</h2>
+<p>One of the most practical and underappreciated points in the talk: <strong>pay attention to what your mind adds to any situation that it did not put there</strong>.</p>
+<p>The person who assumed the viral clip was "pandering to a social media audience" was not interpreting facts — they were adding an interpretation. That's not a criticism; the mind does this automatically, constantly, and often below awareness. The problem is when those additions foreclose action.</p>
+<p>Watch for conclusions your mind offers that:
+- Are not testable
+- Are not actionable
+- Conveniently justify giving up</p>
+<blockquote>
+<p>"The man who says 'I can' and the man who says 'I can't' are both right."</p>
+</blockquote>
+<p>The mind's additions are not random. They reflect your history, your conditioning, and the cognitive distortions that develop when you live a hard life long enough. The goal isn't to invalidate what the mind says — it's to notice it, question whether it's the whole picture, and ask whether there is any action left open.</p>
+<p>A specific example: someone in chat typed "I have big goals but no talent." That statement, accepted at face value, makes action impossible. But what does "talent" actually mean? How do you measure it? The structure of the thought is: <em>I want something + I lack a required thing + therefore don't try</em>. Any time your mind produces that pattern, treat it as a signal to look more carefully, not as a conclusion.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-common-pitfalls">Common Pitfalls</h2>
+<p><strong>Assuming acknowledgment equals endorsement.</strong> Saying "your life is genuinely hard" is not the same as saying "therefore suicide is the answer." Meeting someone where they are — taking seriously that their suffering is real and proportionate to their circumstances — is the <em>starting point</em> for help, not the endpoint.</p>
+<p><strong>Treating all suicidality as clinical depression.</strong> This leads to treating the wrong thing. Medicating someone whose problem is structural isolation and economic hopelessness without addressing those underlying conditions is like applying a bandage to a wound that's still open.</p>
+<p><strong>Assuming the 37–66% undiagnosed figure is just missed diagnosis.</strong> It may partly be. But the precipitating-circumstances data shows real-world problems (relationship crises, arguments, loss) as drivers — which means the absence of diagnosis is tracking something real about the absence of pathology, not just the absence of clinicians.</p>
+<p><strong>Jumping straight to instrumental problem-solving without processing emotions first.</strong> You can't sustainably fix your external life while your emotional system is suppressed, drained, and working against you. The internal work has to happen alongside or before the external work.</p>
+<p><strong>Giving up because you've tried many times.</strong> This is the most understandable mistake. If you've tried to improve your life many times and failed, the pattern-recognition conclusion is: improvement is impossible. But the flaw in the study is not the result — it's that the attempts were made without the right help. The experiment has not actually been run correctly yet.</p>
+<p><strong>Assuming the three percent who don't improve are hopeless.</strong> When someone doesn't get better, it means that particular clinician, at that moment, was not the right fit. It doesn't mean the person is incurable.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-action-items-exercises">Action Items &amp; Exercises</h2>
+<ol>
+<li>
+<p><strong>Stay alive.</strong> This is the prerequisite for everything else. If you are in immediate danger, call emergency services (911 in the US, 112 in many other countries). Nothing else on this list is available to you if you're not here.</p>
+</li>
+<li>
+<p><strong>Get professional help — and try at least three therapists.</strong> The first one may not be the right fit. Therapeutic fit is a real variable. When you go, tell the therapist directly: <em>"I want to understand what's inside me that prevents me from doing what I want, and I'd like help actually improving my life — not just reducing symptoms."</em></p>
+</li>
+<li>
+<p><strong>Learn to ask for help using a three-part structure.</strong> Name a specific deficiency you have. Name the goal you're working toward. Ask for help bridging the gap. Example: <em>"I notice I'm not good at building friendships. I want to be more connected to people around me. Can you help me with that?"</em> This is a learnable skill, not a personality trait.</p>
+</li>
+<li>
+<p><strong>Build emotional awareness.</strong> Start noticing what you're feeling, when, and what triggered it — without immediately trying to make the feeling go away. Journaling, meditation, or simply sitting quietly without a podcast or phone works. Emotions are information and motivational fuel; suppressing them doesn't remove them, it just hides the fuel and drains your willpower.</p>
+</li>
+<li>
+<p><strong>Audit your mind's additions.</strong> For one week, whenever you reach a conclusion about your life or a situation, ask: <em>Is this a fact, or did my mind add this?</em> Then ask: <em>Does this conclusion leave me with any action I can take, or does it make action impossible?</em> Be especially suspicious of conclusions that conveniently justify not trying.</p>
+</li>
+<li>
+<p><strong>Seek instrumental support, not just emotional support.</strong> Look for a therapist, coach, mentor, or community that helps you solve concrete problems — career, relationships, skills — not just one that helps you feel understood. Both matter, but men in particular often need the instrumental side and find it harder to locate.</p>
+</li>
+<li>
+<p><strong>Find or create peer community.</strong> You need other people who know what it's like to struggle and who have found a way forward. This doesn't require a formal program — a Discord server, a regular meetup, a gym buddy who knows what you're going through. The evidence base for peer support in recovery is strong. Don't wait for a professional to provide what peers can provide.</p>
+</li>
+<li>
+<p><strong>If you're not ready for therapy yet, borrow someone else's hope.</strong> One specific offer: <em>"I will carry the hope for both of us. All I ask is that you show up and try for three months."</em> If no one is offering you that, consider this text doing it. The 97-out-of-100 statistic is real. You don't have to believe it will work for you right now — you just have to not close the door.</p>
+</li>
+</ol>
+</section></article>
+    </div>
+  </div>
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc"><ul><li><a href="#transcript-0-stream-introduction-and-topic-setup">Stream Introduction and Topic Setup</a></li><li><a href="#transcript-1-diary-of-a-ceo-clip-men-suicide-and-mental-illness">Diary of a CEO Clip: Men, Suicide, and Mental Illness</a></li><li><a href="#transcript-2-reactions-and-misinterpretations-online">Reactions and Misinterpretations Online</a></li><li><a href="#transcript-3-objective-vs-subjective-life-quality-in-suicidality">Objective vs. Subjective Life Quality in Suicidality</a></li><li><a href="#transcript-4-sls-and-diseases-of-despair">SLS and Diseases of Despair</a></li><li><a href="#transcript-5-research-on-suicide-without-mental-illness-diagnosis">Research on Suicide Without Mental Illness Diagnosis</a></li><li><a href="#transcript-6-interpreting-the-data-mental-illness-vs-life-circumstances">Interpreting the Data: Mental Illness vs. Life Circumstances</a></li><li><a href="#transcript-7-thwarted-belongingness-and-perceived-burdensomeness">Thwarted Belongingness and Perceived Burdensomeness</a></li><li><a href="#transcript-8-masculine-norms-emotional-expression-and-help-seeking">Masculine Norms, Emotional Expression, and Help-Seeking</a></li><li><a href="#transcript-9-toxic-masculinity-ostracism-and-radicalization">Toxic Masculinity, Ostracism, and Radicalization</a></li><li><a href="#transcript-10-how-to-ask-for-help-and-instrumental-support">How to Ask for Help and Instrumental Support</a></li><li><a href="#transcript-11-diseases-of-despair-data-and-trends">Diseases of Despair: Data and Trends</a></li><li><a href="#transcript-12-therapy-as-last-line-of-defense">Therapy as Last Line of Defense</a></li><li><a href="#transcript-13-steps-forward-stay-alive-get-help-process-emotions">Steps Forward: Stay Alive, Get Help, Process Emotions</a></li><li><a href="#transcript-14-awareness-cognitive-distortions-and-self-understanding">Awareness, Cognitive Distortions, and Self-Understanding</a></li><li><a href="#transcript-15-society-responsibility-and-peer-support-for-suicidality">Society, Responsibility, and Peer Support for Suicidality</a></li></ul></div></nav>
+      <article class="summary"><section class="sec sec-a">
 <h2 id="transcript-0-stream-introduction-and-topic-setup">Stream Introduction and Topic Setup</h2>
-<p><span class="speaker">Dr. K:</span> [Applause] [Music]. [Music] oh, oh, oh, [Music]. [Music], [Music]. Do [Music], [Music]: oh, oh, oh [Music]. [Applause] [Music], [Music]. Oh, [Music]. [Music] for [Music] m, m [Music], [Music] [Music] [Applause] [Applause], [Applause], [Laughter], [Laughter], [Laughter] [Applause], [Applause] oh, [Music]. [Music]. O [Music] [Music] [Applause] [Applause], [Applause] [Music], [Music] [Music] [Applause], [Applause]. All righty chat, let&#x27;s get started. So my hair is a little bit messed up today. Welcome to another healthy gamer G stream. My name is all kosia. Just a reminder: uhoh, do we have lag? Okay, we&#x27;re, we&#x27;ll deal with it.</p>
+<p>[Applause] [Music]. [Music] oh, oh, oh, [Music]. [Music], [Music]. Do [Music], [Music]: oh, oh, oh [Music]. [Applause] [Music], [Music]. Oh, [Music]. [Music] for [Music] m, m [Music], [Music] [Music] [Applause] [Applause], [Applause], [Laughter], [Laughter], [Laughter] [Applause], [Applause] oh, [Music]. [Music]. O [Music] [Music] [Applause] [Applause], [Applause] [Music], [Music] [Music] [Applause], [Applause]. All righty chat, let&#x27;s get started. So my hair is a little bit messed up today. Welcome to another healthy gamer G stream. My name is all kosia. Just a reminder: uhoh, do we have lag? Okay, we&#x27;re, we&#x27;ll deal with it.</p>
 <p>Just a reminder that, although I&#x27;m a psychiatrist, nothing we discuss on stream today is intended to be taken as medical advice. Everything is for educational and entertainment purposes only. If yall have a medical concern or question, please go see a concern or question. Please go see a licensed, licensed professional. That&#x27;s very true, especially about what we&#x27;re going to talk about today, because we are going to talk about suicide, and specifically in men, and I&#x27;m going to try to clarify a couple of things that I said. Um, I wish I could say they were taken out of context, but honestly, I think there was some amount of fair context there, and then we&#x27;re also going to do something.</p>
 <p>So so we&#x27;re, and, and then we&#x27;re going to talk about that because I did this thing where I showed up on the internet and I was recently on a podcast called Diary of a CEO. This podcast has gotten a lot of views. People started posting clips about it and then, my favorite thing, my favorite thing- happened on the internet. People, people- started reacting to it, and so I&#x27;m new to this kind of thing, um, but now what I&#x27;m going to do- because I understand this is how things happen- is I&#x27;m going to react to some of the reactions and what I&#x27;d love to do is clarify a little bit about what I was saying, um, but then also continue to talk about this, because I think this is, like, really important to understand, and I think some people on the internet like seem to I I don&#x27;t- I don&#x27;t want to say that- they misinterpreted what I I was going to say, because I think, technically, that&#x27;s not what happened.</p>
 <p>I think they made some assumptions about things that I was saying which I don&#x27;t think are correct, and so I&#x27;d like to talk a little bit about that, and then then, what I&#x27;d really like to do is I&#x27;m going to show youall like a bucket of research about why I believe what I believe, what this means for you and then, hopefully at the end, I will share with y&#x27;all what I think we should do in some way about male suicide. I haven&#x27;t really fleshed that part out yet, but I think I feel like ranting a little bit, so we&#x27;ll see where it goes, okay, so a couple of other things just to keep in mind. So sometimes when I talk about things- so today I&#x27;m going to be talking a little bit about some of my clinical experiences- um, a couple of other things to keep in mind.</p>
@@ -256,15 +396,21 @@ try {
 <p>Maybe you can go to Mars in your lifetime, like that&#x27;s pretty cool. Just give it a shot, don&#x27;t give up. And we need your help because we can&#x27;t do without you. I can&#x27;t do it without you, right? We, you, I can&#x27;t do it without you, right? We need, need you. So thank you all very much for you. So thank you all very much for coming, coming today. And uh, yeah, I I&#x27;ll say just to clarify, because I think some people on Twitter didn&#x27;t understand: I, I am not for suicide, I am for living and trying to put your life together and I sincerely believe that you can have a life that is worth living, and if you haven&#x27;t been able to make one, that&#x27;s okay.</p>
 <p>And also like: try to find someone to help you, right. That doesn&#x27;t doesn&#x27;t mean like, even if you feel some shame, have your therapist work through that with you, all right, take care guys.</p>
 </section></article>
+    </div>
   </div>
+  
 
-  <p class="meta">Auto-transcribed livestream · chapters &amp; speaker labels are a best-effort approximation (claude-sonnet-4-6).</p>
+  <p class="meta">Medium summary · claude-sonnet-4-6 (no extended thinking)</p>
 </div>
 
 <script>
 (function () {
   var root = document.documentElement;
-  var tb = document.querySelector('.theme-toggle');
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'medium');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
   var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
   tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
@@ -272,6 +418,16 @@ try {
   function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
   var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+  // deep-link to a heading in any view: switch to that view, then scroll to it
+  function navigateTo(id){
+    var el = id && document.getElementById(id);
+    if (!el) return;
+    var v = el.closest('.view');
+    if (v) setView(v.getAttribute('data-view'));
+    el.scrollIntoView();
+  }
+  window.addEventListener('hashchange', function(){ navigateTo(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash) navigateTo(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>
 <script>

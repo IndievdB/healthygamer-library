@@ -3,13 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Watch Party: Decision Making Pt. 1</title>
+<title>Watch Party： Decision Making Pt. 1</title>
 <link rel="stylesheet" href="style.css">
 <script>
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-} catch (e) {}
+  document.documentElement.setAttribute('data-view', localStorage.getItem('pubview') || 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -23,17 +24,171 @@ try {
     </span>
   </nav>
 
-  <h1>Watch Party: Decision Making Pt. 1</h1>
-  <p class="watch">
-    <a href="https://www.youtube.com/watch?v=YE1X2_Jrum8" target="_blank" rel="noopener">▶ Watch on YouTube</a>
-    <span class="speakers-note">Speakers (auto-detected): Dr. K</span>
-  </p>
+  <h1>Watch Party： Decision Making Pt. 1</h1>
+  <p class="watch"><a href="https://www.youtube.com/watch?v=YE1X2_Jrum8" target="_blank" rel="noopener">▶ Watch on YouTube</a></p>
 
-  <div class="doc">
-    <nav class="toc"><p class="toc-title">Chapters</p><ul><li><a href="#transcript-0-stream-introduction-and-platform-feedback">Stream Introduction and Platform Feedback</a></li><li><a href="#transcript-1-circles-vs-youtube-platform-migration-discussion">Circles vs YouTube: Platform Migration Discussion</a></li><li><a href="#transcript-2-overview-of-today-s-decision-making-lecture">Overview of Today&#x27;s Decision-Making Lecture</a></li><li><a href="#transcript-3-brain-circuits-involved-in-decision-making">Brain Circuits Involved in Decision-Making</a></li><li><a href="#transcript-4-role-of-emotions-and-motivation-in-decisions">Role of Emotions and Motivation in Decisions</a></li><li><a href="#transcript-5-expectations-placebo-and-nocebo-effects">Expectations, Placebo, and Nocebo Effects</a></li><li><a href="#transcript-6-anticipation-anxiety-and-prediction-errors">Anticipation, Anxiety, and Prediction Errors</a></li><li><a href="#transcript-7-dopamine-addiction-and-underestimating-costs">Dopamine, Addiction, and Underestimating Costs</a></li><li><a href="#transcript-8-ego-self-perception-and-expected-value">Ego, Self-Perception, and Expected Value</a></li><li><a href="#transcript-9-understanding-analysis-paralysis">Understanding Analysis Paralysis</a></li><li><a href="#transcript-10-how-to-dismantle-analysis-paralysis">How to Dismantle Analysis Paralysis</a></li><li><a href="#transcript-11-step-by-step-guide-to-better-decision-making">Step-by-Step Guide to Better Decision-Making</a></li><li><a href="#transcript-12-dharma-as-attitude-not-action">Dharma as Attitude, Not Action</a></li><li><a href="#transcript-13-dharma-self-compassion-and-ego-dissolution">Dharma, Self-Compassion, and Ego Dissolution</a></li><li><a href="#transcript-14-collaborative-decision-making-and-free-will">Collaborative Decision-Making and Free Will</a></li><li><a href="#transcript-15-consciousness-biology-and-the-non-material-dimension">Consciousness, Biology, and the Non-Material Dimension</a></li><li><a href="#transcript-16-fear-of-silence-and-the-mental-hoarding-analogy">Fear of Silence and the Mental Hoarding Analogy</a></li><li><a href="#transcript-17-closing-remarks-and-q-a-preview">Closing Remarks and Q&amp;A Preview</a></li></ul></nav>
-    <article class="summary transcript"><section class="sec sec-a">
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">2,545w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">20,950w</span></button>
+    
+  </div>
+
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#medium-summary">Summary</a></li>
+<li><a href="#medium-how-the-brain-actually-makes-decisions">How the Brain Actually Makes Decisions</a></li>
+<li><a href="#medium-the-pain-pleasure-asymmetry-and-prediction-errors">The Pain-Pleasure Asymmetry and Prediction Errors</a></li>
+<li><a href="#medium-analysis-paralysis-is-an-emotional-problem-not-a-logical-one">Analysis Paralysis Is an Emotional Problem, Not a Logical One</a></li>
+<li><a href="#medium-the-step-by-step-guide-to-better-decisions">The Step-by-Step Guide to Better Decisions</a></li>
+<li><a href="#medium-dharma-as-an-internal-compass">Dharma as an Internal Compass</a></li>
+<li><a href="#medium-common-pitfalls">Common Pitfalls</a></li>
+<li><a href="#medium-action-items-exercises">Action Items &amp; Exercises</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="medium-summary">Summary</h2>
+<p><strong>TL;DR — Your brain's decision-making is shaped by at least five distinct systems (reward, emotion, sensory availability, expectation, and ego), and fixing broken decisions means targeting each of those systems rather than just "thinking harder." Analysis paralysis is an emotional phenomenon driven by anxiety, not a reasoning problem, and dharma — as an internal attitude rather than a life mission — is the deepest tool for making decisions with clarity and consistency.</strong></p>
+<p>Decision-making feels personal and mysterious, but it follows patterns the brain runs every time. Once you understand those patterns, most of the common traps — analysis paralysis, chronic indecision, low motivation, avoidance — become predictable and, more importantly, solvable. This talk walks through the neuroscience of how decisions get made, why they so often go wrong, and what to actually do about it, ending with a surprisingly practical take on the Indian concept of dharma.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-how-the-brain-actually-makes-decisions">How the Brain Actually Makes Decisions</h2>
+<p>The <strong>orbital frontal cortex</strong> (part of the frontal lobes) is the brain's master decision-maker. Think of it as running a constant calculation:</p>
+<blockquote>
+<p>A + B + C + D = decision</p>
+</blockquote>
+<p>The inputs feeding into that equation come from several distinct systems:</p>
+<p><strong>1. The nucleus accumbens</strong> (reward circuitry)
+This gives you pleasure, craving, and behavioral reinforcement. It calculates the <em>benefit</em> side of any cost-benefit analysis. When this system is hyperactive — as it is with certain substances or even early romantic love — it suppresses the parts of the brain that calculate consequences. This is why people in love make reckless choices, and why a young man at a frat party thought jumping off a second-floor balcony into a pool was a great idea.</p>
+<p><strong>2. The limbic system</strong> (emotions)
+Emotions are not noise in the decision-making process — they are fuel for it. Motivation doesn't come from pure logic; it comes from emotional drives. Even emotions that seem counterproductive (like sadness making you not want to do anything) serve a function: sadness discourages wasted effort and facilitates separation from something that isn't working.</p>
+<p><strong>3. Sensory availability</strong>
+What's physically near you shapes what you choose. This is why McDonald's puts golden arches on every corner, why two Starbucks exist across the street from each other, and why people trying to avoid substances shouldn't go to bars. Availability is a powerful decision input that bypasses deliberate reasoning.</p>
+<p><strong>4. Expectations</strong>
+Expectations don't just predict outcomes — they <em>shape</em> them. They color perception, drive learning, generate emotional responses, and create cognitive biases. The placebo and nocebo effects are the clearest proof: what a person believes will happen changes what actually happens, including measurable physiological outcomes. When someone walks into psychiatric treatment believing it won't work, the expectation itself reduces the chance of it working.</p>
+<p><strong>5. Ego (self-concept)</strong>
+Your sense of who you are functions as a filter on expected gain and expected cost. If someone believes "I am a loser," the expected value of almost every positive action collapses. Why ask someone out if they would never like someone like me? Why apply for the job if someone like me wouldn't get it? Ego doesn't need to be grandiose to distort decisions — a deeply negative self-concept is equally distorting, just in the opposite direction.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-the-pain-pleasure-asymmetry-and-prediction-errors">The Pain-Pleasure Asymmetry and Prediction Errors</h2>
+<p>One of the most consequential features of this system is that <strong>pain is weighted approximately two to three times more heavily than equivalent pleasure</strong> in the brain's calculations. The formula is something like:</p>
+<blockquote>
+<p>(Gain × 1) − (Pain × 2.5) = expected value</p>
+</blockquote>
+<p>This produces <strong>prediction errors</strong> — systematic miscalculations of how difficult, painful, or costly an action will be. For most people struggling with avoidance and analysis paralysis, the brain <em>over</em>estimates the cost and <em>under</em>estimates the gain.</p>
+<p>There's also an asymmetry in how the brain handles anticipation. When you're thinking about a future event:
+- The <em>pain</em> of anticipation can be experienced right now, in the body, as real suffering (anxiety, nausea, tension)
+- The <em>pleasure</em> of anticipation is comparatively muted — the nucleus accumbens doesn't fully light up for hypothetical rewards the same way it does for real ones</p>
+<p>This is what makes anxiety so debilitating for decision-making: the feared outcome creates genuine suffering in the present even though nothing has happened yet.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-analysis-paralysis-is-an-emotional-problem-not-a-logical-one">Analysis Paralysis Is an Emotional Problem, Not a Logical One</h2>
+<p>Analysis paralysis looks like a thinking problem from the outside. It isn't. It's an <strong>anxiety-driven loop</strong>.</p>
+<p>The structure of analysis paralysis works like this:
+1. You face a decision with an uncertain or potentially negative outcome
+2. Anxiety activates — you want to avoid the bad outcome
+3. You analyze to find a solution that <em>guarantees</em> a good outcome and eliminates any chance of pain
+4. No such solution exists, so the analysis produces no clear answer
+5. The failure to find an answer <em>increases</em> your anxiety
+6. Increased anxiety sends you back through the loop — same options, same dead ends, slightly more desperation</p>
+<blockquote>
+<p>"You're trying to thread the needle so that the outcome will be good, the outcome will be guaranteed, and the outcome will be pain-free."</p>
+</blockquote>
+<p>The more you spin, the worse the traction gets. Like a tire stuck in mud, more spinning just digs you deeper.</p>
+<p><strong>Five ways to dissolve analysis paralysis:</strong></p>
+<p><strong>1. Notice when you're looping.</strong> Thinking something through once or twice is productive. Repeating yourself is not. The moment you catch yourself covering the same ground again, you've left analysis and entered paralysis.</p>
+<p><strong>2. Accept the negative consequence you're trying to avoid.</strong> This is the most powerful intervention. The entire engine of analysis paralysis is the attempt to avoid a bad outcome. The moment you genuinely accept that the bad outcome is <em>possible</em>, the loop loses its power. You shift from "how do I guarantee a good result" to "which possible bad result am I most willing to accept" — and that is a solvable question.</p>
+<p><strong>3. Regulate emotions first, analyze second.</strong> Trying to think your way out of an anxiety-fueled loop doesn't work because the anxiety keeps refueling the loop. Sleep on it. Go for a run. Meditate. Journal. There's an old Russian saying worth keeping: <em>morning is wiser than evening.</em> The subconscious processes what the conscious mind can't. Insight often arrives after rest, not after more analysis.</p>
+<p><strong>4. Collect data through action instead of substituting analysis for data.</strong> When you don't have enough information to make a decision, more thinking doesn't help — more <em>doing</em> does. Analysis is a substitute for data only when you're avoiding the action that would generate real data. "Browsing things on the internet is not data." The people who recommend "putting yourself out there" do so because they've already experienced what happens when you feed your brain real-world input instead of hypotheticals.</p>
+<p><strong>5. Change the time horizon.</strong> Analysis paralysis often treats one decision as final and permanent ("what should I major in" = "what will my entire life look like"). Almost no single decision actually works that way. Break the decision into smaller subdecisions spread across time. A four-year degree has eight or nine semester-by-semester choice points. You don't have to solve the whole thing at once. You only have to decide what happens next.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-the-step-by-step-guide-to-better-decisions">The Step-by-Step Guide to Better Decisions</h2>
+<p>Going back to the brain's equation (A + B + C + D = decision), there are specific levers to work on when decisions feel impossible:</p>
+<p><strong>Step 1: Regulate emotions.</strong>
+Don't suppress them — suppressing an emotion turns it into an unknown variable the brain can't calculate with. Process emotions: journal, walk, breathe, talk it through. Awareness is the starting point.</p>
+<p><strong>Step 2: Examine and reduce expectations.</strong>
+Expectations shape everything downstream: perception, motivation, interpretation of outcomes. The more expectations you're carrying into a decision, the harder it becomes to act clearly. Focus on <em>actions</em> rather than <em>outcomes</em>. Ask what you can do, not what you hope will result. Even if the outcome you're working toward doesn't happen, the actions you took in pursuit of it have value of their own.</p>
+<p><strong>Step 3: Address ego.</strong>
+Ego isn't inherently bad — it's a tool that tells you where you stand. The problem is ego running unchecked in either direction (grandiose or self-defeating). When ego says "I am a loser," every item on the list of problems feels permanent and final. Most of them aren't. The person who fixes things and the person who doesn't are often separated not by ability but by self-concept.</p>
+<p><strong>Step 4: Improve executive function by breaking decisions into smaller ones.</strong>
+Don't procrastinate (which is delaying with no action), but do <em>buy yourself time through action</em>. Take classes in three things you're considering before committing to one. Have a conversation before deciding whether to end the relationship. The goal is to delay the final decision while acting continuously along the way.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-dharma-as-an-internal-compass">Dharma as an Internal Compass</h2>
+<p>Dharma is often described as "life purpose" or "finding your calling" — a specific population to serve or a grand mission to discover. That framing creates its own paralysis.</p>
+<p>A more useful way to think about it: <strong>dharma is not an action, it's an attitude.</strong> What matters isn't <em>what</em> you do but <em>why</em> you do it, and <em>what's in your heart</em> when you do it.</p>
+<p>There are two scales of dharma:
+- <strong>Dharma with a big D</strong>: making the world a better place, your grand purpose
+- <strong>Dharma with a small d</strong>: doing the things that are wrong in your immediate life and fixing them</p>
+<p>The small-d work has to come first. Until you've done that, the bigger dharma tends not to show up — not because it doesn't exist, but because you're not ready for it. Do the thing that's in front of you.</p>
+<blockquote>
+<p>"Do the work that is in front of you."</p>
+</blockquote>
+<p>When it comes to decision-making, dharma matters because it gives you an <strong>internal compass that cuts through analysis</strong>. Instead of asking "what will go well," you ask "what is the right thing to do" — and those two questions often have very different answers. The first question is outcome-oriented and opens the door to paralysis. The second cuts through it.</p>
+<p>Some concrete things dharma clears up:
+- The difference between a <strong>nice guy and a good guy</strong>: nice guys behave well to get something in return. Good guys behave well because it's right. This distinction is invisible on the surface and everything underneath.
+- <strong>Helping that hurts</strong>: parents who infantilize their kids often do so not out of love but to avoid the guilt of watching their child struggle. The action looks helpful; the motivation is self-protective. That's adharma.
+- <strong>Self-compassion as action</strong>: instead of trying to convince yourself you're not a loser, pick one concrete thing to fix. Not because you "deserve" it in an entitled sense, but as an act of genuine care for the person who will wake up tomorrow in your body. You don't even have to do it for yourself — do it for that future person.</p>
+<blockquote>
+<p>"You don't need discipline when you have love."</p>
+</blockquote>
+<p>When you act from genuine care — for others or for yourself — motivation becomes less of a struggle. Energy is finite when you're drawing on willpower. It's much harder to exhaust when you're drawing on compassion.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-common-pitfalls">Common Pitfalls</h2>
+<p><strong>Treating analysis paralysis as a reasoning failure.</strong> More analysis doesn't fix it — emotional regulation and data collection do. If you've been going around the same loop for more than two cycles, stop analyzing and start doing something small.</p>
+<p><strong>Believing prediction errors run in only one direction.</strong> The people prone to analysis paralysis tend to <em>overestimate</em> costs. The people prone to reckless action tend to <em>underestimate</em> them. If you're stuck in analysis paralysis, your brain is almost certainly making the future look worse than it will be.</p>
+<p><strong>Confusing outcome-focus with caring about quality.</strong> Focusing on outcomes feels responsible. It usually isn't. Outcomes are largely outside your control. Actions aren't. The residency candidate who obsesses over whether they'll be selected as chief resident is burning energy they could put into the work itself.</p>
+<p><strong>Looking for dharma as an external object.</strong> "How do I find my people?" is the wrong question. The right question is "what attitude am I bringing to the person in front of me right now?" Your dharma reveals itself through consistent right action, not through discovery.</p>
+<p><strong>Thinking self-compassion means positive self-talk.</strong> Telling yourself you're not a loser when you believe you are doesn't work. Doing one concrete thing that treats yourself as someone worth caring for does.</p>
+<p><strong>Collaborative decisions fought at the wrong level.</strong> When making decisions with other people, fighting over the specific options (this city vs. that city) usually misses the underlying values that are actually in conflict. Go higher first: what matters to each person, and why? Agreement at the values level makes the concrete choice much easier.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-action-items-exercises">Action Items &amp; Exercises</h2>
+<ol>
+<li>
+<p><strong>Identify your current analysis loop.</strong> If there's a decision you've been turning over repeatedly, write down every option you've already considered. If you see the same options appearing more than twice, you're in a loop. Name the negative consequence you're trying to avoid — write it down explicitly.</p>
+</li>
+<li>
+<p><strong>Accept the negative consequence on paper.</strong> Write out: "If I choose X, [bad outcome] might happen. If that happens, here is what I will do." Planning the damage-control response to the feared outcome is often enough to dissolve the paralysis entirely. Shift from "how do I avoid this" to "what will I do if this happens."</p>
+</li>
+<li>
+<p><strong>Regulate before you analyze.</strong> Before returning to any difficult decision, do at least one emotion-clearing activity: sleep on it, go for a walk without a podcast, do 10 minutes of breathing or meditation, or journal about how you're feeling — not about the decision, just about the feeling. Then revisit the decision.</p>
+</li>
+<li>
+<p><strong>Break the decision into the smallest possible subdecisions.</strong> Write down the big decision at the top of a page. Then ask: what is the smallest next action I could take that would give me real data? Do only that. Commit to a review date (one week, one month) rather than trying to resolve everything now.</p>
+</li>
+<li>
+<p><strong>Audit one expectation.</strong> Pick a situation you're dreading or avoiding. Write down every expectation you have about how it will go. For each one, ask: is this a fact, or a hypothesis? What would I need to do to actually test it?</p>
+</li>
+<li>
+<p><strong>The 5–30 minute dharma practice.</strong> Find one task in your immediate environment that needs doing — something that takes between five and thirty minutes. Before starting, consciously set the intention: <em>why</em> are you doing this? Do it as an act of care for yourself or someone else, not as obligation or self-improvement performance. Notice how that framing changes the experience of doing the task.</p>
+</li>
+<li>
+<p><strong>Track your self-concept's effect on expected value.</strong> The next time you hesitate before an action (sending a message, applying for something, speaking up), pause and write down: "What do I believe about myself that makes me think this won't work?" That belief is the variable distorting your calculation. You don't have to fix it immediately — just seeing it clearly is the first step.</p>
+</li>
+</ol>
+</section></article>
+    </div>
+  </div>
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc"><ul><li><a href="#transcript-0-stream-introduction-and-platform-feedback">Stream Introduction and Platform Feedback</a></li><li><a href="#transcript-1-circles-vs-youtube-platform-migration-discussion">Circles vs YouTube: Platform Migration Discussion</a></li><li><a href="#transcript-2-overview-of-today-s-decision-making-lecture">Overview of Today&#x27;s Decision-Making Lecture</a></li><li><a href="#transcript-3-brain-circuits-involved-in-decision-making">Brain Circuits Involved in Decision-Making</a></li><li><a href="#transcript-4-role-of-emotions-and-motivation-in-decisions">Role of Emotions and Motivation in Decisions</a></li><li><a href="#transcript-5-expectations-placebo-and-nocebo-effects">Expectations, Placebo, and Nocebo Effects</a></li><li><a href="#transcript-6-anticipation-anxiety-and-prediction-errors">Anticipation, Anxiety, and Prediction Errors</a></li><li><a href="#transcript-7-dopamine-addiction-and-underestimating-costs">Dopamine, Addiction, and Underestimating Costs</a></li><li><a href="#transcript-8-ego-self-perception-and-expected-value">Ego, Self-Perception, and Expected Value</a></li><li><a href="#transcript-9-understanding-analysis-paralysis">Understanding Analysis Paralysis</a></li><li><a href="#transcript-10-how-to-dismantle-analysis-paralysis">How to Dismantle Analysis Paralysis</a></li><li><a href="#transcript-11-step-by-step-guide-to-better-decision-making">Step-by-Step Guide to Better Decision-Making</a></li><li><a href="#transcript-12-dharma-as-attitude-not-action">Dharma as Attitude, Not Action</a></li><li><a href="#transcript-13-dharma-self-compassion-and-ego-dissolution">Dharma, Self-Compassion, and Ego Dissolution</a></li><li><a href="#transcript-14-collaborative-decision-making-and-free-will">Collaborative Decision-Making and Free Will</a></li><li><a href="#transcript-15-consciousness-biology-and-the-non-material-dimension">Consciousness, Biology, and the Non-Material Dimension</a></li><li><a href="#transcript-16-fear-of-silence-and-the-mental-hoarding-analogy">Fear of Silence and the Mental Hoarding Analogy</a></li><li><a href="#transcript-17-closing-remarks-and-q-a-preview">Closing Remarks and Q&amp;A Preview</a></li></ul></div></nav>
+      <article class="summary"><section class="sec sec-a">
 <h2 id="transcript-0-stream-introduction-and-platform-feedback">Stream Introduction and Platform Feedback</h2>
-<p><span class="speaker">Dr. K:</span> [Applause] [Music] Ooh. Ooh. [Music] [Music] I [Music] want you to do it. [Music] [Applause] [Music] Doo doo doo doo doo. [Music] [Music] [Applause] [Applause] [Applause] [Laughter] [Laughter] [Laughter] [Applause] [Applause] [Music] [Music] [Applause] [Applause] [Applause] [Music] [Music] [Music] [Applause] [Music] [Music] [Applause] [Music] you. You you. You [Music] [Applause] [Applause] [Music] [Music] [Music] [Applause] [Music] Alrighty, chat, let&#x27;s get started. Okay, so I&#x27;m in the middle of reorganizing, but let&#x27;s get started. So, welcome to another Healthy Gamer GG stream. My name is Dr. Alok Kanojia.</p>
+<p>[Applause] [Music] Ooh. Ooh. [Music] [Music] I [Music] want you to do it. [Music] [Applause] [Music] Doo doo doo doo doo. [Music] [Music] [Applause] [Applause] [Applause] [Laughter] [Laughter] [Laughter] [Applause] [Applause] [Music] [Music] [Applause] [Applause] [Applause] [Music] [Music] [Music] [Applause] [Music] [Music] [Applause] [Music] you. You you. You [Music] [Applause] [Applause] [Music] [Music] [Music] [Applause] [Music] Alrighty, chat, let&#x27;s get started. Okay, so I&#x27;m in the middle of reorganizing, but let&#x27;s get started. So, welcome to another Healthy Gamer GG stream. My name is Dr. Alok Kanojia.</p>
 </section>
 <section class="sec sec-b">
 <h2 id="transcript-1-circles-vs-youtube-platform-migration-discussion">Circles vs YouTube: Platform Migration Discussion</h2>
@@ -197,15 +352,21 @@ try {
 <p>You cover it with a little bit of foil. Delicious. Doesn&#x27;t have to be fancy. So clean out your mind. Question becomes how? Simple thing that you can do is reduce your technology usage. This is where like if you want to go hike hiking on the Appalachian Trail for a week and you do it in a safe way, I think it&#x27;s a beautiful way to clean out your mind. Spend time with yourself, go to an ashram. Go for it. Okay. Okay. We are at our time for the day. I see that there&#x27;s a question about C CC student doing research for three IVs while taking a full course load. I have ADHD and get paralyzed by all the decisions I have to make in a day.</p>
 <p>Um any advice? So I see if that&#x27;s your question. We&#x27;ll get to it next time. So we have Q&amp;amp;A exactly for reasons like we have Q&amp;amp;A exactly for reasons like this. And then why do you deserve anything like I deserve to clean my room? Yeah, we&#x27;ll talk about both of those. Hopefully we&#x27;ll get to those next time. Okay. All right. So, we&#x27;ll see you all. Um I think we we have a regular stream this Friday and then I think we&#x27;ve got a stream on self-esteem and then we&#x27;ll do Q&amp;amp;A after that. Okay. So, thank you all very much for coming today. Just a reminder that YouTube ain&#x27;t going anywhere anytime soon. So, we heard your feedback and keep it coming. And um we&#x27;re we&#x27;ll have to figure out how to integrate a good live streams uh and VOD experience with the organizational needs that we&#x27;re developing through this whole memberships experience. So, we&#x27;ll be actively working on that. Thank you all very much for your patience and your feedback. Take care, everybody.</p>
 </section></article>
+    </div>
   </div>
+  
 
-  <p class="meta">Auto-transcribed livestream · chapters &amp; speaker labels are a best-effort approximation (claude-sonnet-4-6).</p>
+  <p class="meta">Medium summary · claude-sonnet-4-6 (no extended thinking)</p>
 </div>
 
 <script>
 (function () {
   var root = document.documentElement;
-  var tb = document.querySelector('.theme-toggle');
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'medium');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
   var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
   tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
@@ -213,6 +374,16 @@ try {
   function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
   var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+  // deep-link to a heading in any view: switch to that view, then scroll to it
+  function navigateTo(id){
+    var el = id && document.getElementById(id);
+    if (!el) return;
+    var v = el.closest('.view');
+    if (v) setView(v.getAttribute('data-view'));
+    el.scrollIntoView();
+  }
+  window.addEventListener('hashchange', function(){ navigateTo(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash) navigateTo(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>
 <script>

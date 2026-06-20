@@ -9,7 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-} catch (e) {}
+  document.documentElement.setAttribute('data-view', localStorage.getItem('pubview') || 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -24,16 +25,172 @@ try {
   </nav>
 
   <h1>Dr. K Reacts To Mental Health Hot Takes (April Fools Edititon)</h1>
-  <p class="watch">
-    <a href="https://www.youtube.com/watch?v=OLSl6Y9uJto" target="_blank" rel="noopener">▶ Watch on YouTube</a>
-    <span class="speakers-note">Speakers (auto-detected): Dr. K</span>
-  </p>
+  <p class="watch"><a href="https://www.youtube.com/watch?v=OLSl6Y9uJto" target="_blank" rel="noopener">▶ Watch on YouTube</a></p>
 
-  <div class="doc">
-    <nav class="toc"><p class="toc-title">Chapters</p><ul><li><a href="#transcript-0-april-fools-social-media-detox-doesn-t-work">April Fools: Social Media Detox Doesn&#x27;t Work</a></li><li><a href="#transcript-1-why-detox-fails-addiction-psychiatry-perspective">Why Detox Fails: Addiction Psychiatry Perspective</a></li><li><a href="#transcript-2-how-to-actually-balance-technology-use">How to Actually Balance Technology Use</a></li><li><a href="#transcript-3-dopamine-effort-and-real-world-rewards">Dopamine, Effort, and Real-World Rewards</a></li><li><a href="#transcript-4-mental-illness-in-families-that-don-t-believe-in-it">Mental Illness in Families That Don&#x27;t Believe in It</a></li><li><a href="#transcript-5-personality-disorders-and-family-dynamics">Personality Disorders and Family Dynamics</a></li><li><a href="#transcript-6-dysthymia-chronic-depression-and-the-dominant-other">Dysthymia: Chronic Depression and the Dominant Other</a></li><li><a href="#transcript-7-how-trauma-shapes-different-mental-illnesses">How Trauma Shapes Different Mental Illnesses</a></li><li><a href="#transcript-8-depression-as-energy-conservation-and-learned-behavior">Depression as Energy Conservation and Learned Behavior</a></li><li><a href="#transcript-9-weed-substances-and-karmic-cost">Weed, Substances, and Karmic Cost</a></li><li><a href="#transcript-10-gi-health-digestion-and-ayurvedic-food-combining">GI Health, Digestion, and Ayurvedic Food Combining</a></li><li><a href="#transcript-11-parenting-phone-removal-and-depression">Parenting, Phone Removal, and Depression</a></li><li><a href="#transcript-12-how-clinicians-avoid-absorbing-patients-depression">How Clinicians Avoid Absorbing Patients&#x27; Depression</a></li><li><a href="#transcript-13-why-positivity-hurts-when-you-re-depressed">Why Positivity Hurts When You&#x27;re Depressed</a></li><li><a href="#transcript-14-resentment-the-past-and-taking-action-today">Resentment, the Past, and Taking Action Today</a></li><li><a href="#transcript-15-closing-thoughts-and-monster-hunter-weapons-discussion">Closing Thoughts and Monster Hunter Weapons Discussion</a></li></ul></nav>
-    <article class="summary transcript"><section class="sec sec-a">
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">2,330w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">19,714w</span></button>
+    
+  </div>
+
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#medium-summary">Summary</a></li>
+<li><a href="#medium-why-social-media-detoxes-dont-work-and-what-the-research-actually-shows">Why Social Media Detoxes Don't Work (And What the Research Actually Shows)</a></li>
+<li><a href="#medium-why-technology-hooks-us-so-deeply">Why Technology Hooks Us So Deeply</a></li>
+<li><a href="#medium-how-to-actually-build-balance-with-technology">How to Actually Build Balance With Technology</a></li>
+<li><a href="#medium-dysthymia-when-low-mood-becomes-the-baseline">Dysthymia: When Low Mood Becomes the Baseline</a></li>
+<li><a href="#medium-how-trauma-becomes-different-illnesses">How Trauma Becomes Different Illnesses</a></li>
+<li><a href="#medium-why-positivity-hurts-when-youre-depressed">Why Positivity Hurts When You're Depressed</a></li>
+<li><a href="#medium-common-pitfalls">Common Pitfalls</a></li>
+<li><a href="#medium-action-items-exercises">Action Items &amp; Exercises</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="medium-summary">Summary</h2>
+<p><strong>TL;DR — Social media detoxes don't actually improve your mental health, and the reason why reveals something important about how dopamine, addiction, and behavioral change really work.</strong> This wide-ranging conversation also covers how to build genuine balance with technology, the psychology of depression and dysthymia, how trauma becomes different mental illnesses depending on genetics and circumstance, and why positive feelings can hurt when you're depressed.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-why-social-media-detoxes-dont-work-and-what-the-research-actually-shows">Why Social Media Detoxes Don't Work (And What the Research Actually Shows)</h2>
+<p>A meta-analysis combining multiple studies on social media abstinence — with break durations ranging from one day to twenty-eight days — found no significant effects on positive affect, negative affect, or life satisfaction. One study even found that taking a break <em>increased</em> negative emotion. The effect crossed the statistical midline in almost every direction, meaning there was essentially no reliable signal.</p>
+<p>Here's why: in addiction medicine, detox is never the endpoint — it's the beginning. When a patient is detoxed from alcohol in a hospital setting, the goal isn't "now go back to drinking." Detox manages the acute withdrawal phase so that a person can begin building healthier long-term habits. The same logic applies to social media.</p>
+<p>When you abruptly stop using something your brain has become dependent on, the first thing that happens isn't relief — it's <strong>withdrawal</strong>. The platforms have been soothing certain circuits in your brain. Remove that soothing stimulus and you feel worse, not better. Your positive affect drops because you've become dependent on social media to generate it. So the data makes sense once you understand the neuroscience.</p>
+<p>The deeper problem is psychological: the idea of a detox is attractive to the part of your brain that doesn't want to make hard, lasting changes.</p>
+<blockquote>
+<p>"The addict in your brain loves the idea of, oh, I can take a break for a week and then go back to using. I don't actually have to make sustainable difficult changes in my life."</p>
+</blockquote>
+<p>Taking a break lets you feel virtuous — you did something for your health — while leaving your underlying usage patterns completely intact. When the detox ends and you return to the same habits, you're back to square one. You can detox off alcohol, but if you pick it back up at the same pace, nothing has changed.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-why-technology-hooks-us-so-deeply">Why Technology Hooks Us So Deeply</h2>
+<p>The brain is a survival instrument. It rewards behaviors that historically improved survival chances. Calorie-dense foods, social belonging, achievement, creativity, control over your environment — all of these feel rewarding because, over evolutionary time, they increased the odds of staying alive.</p>
+<p>Technology designers — not necessarily through malice, but through incentive — figured out which circuits these are and built the lowest-friction possible way to activate them:</p>
+<ul>
+<li><strong>Achievement and difficulty</strong>: Video games create artificial obstacles because the brain rewards overcoming hard things. Beating a tough boss in Dark Souls activates the same circuitry as genuinely difficult real-world accomplishment. The dopamine hit scales with the effort invested, which is why you keep trying after 200 wipes.</li>
+<li><strong>Autonomy and control</strong>: Minecraft is addictive partly because it gives children control over their environment in a way real life rarely does. A pillow fort gets torn down; a Minecraft world keeps building.</li>
+<li><strong>Social validation</strong>: Getting 75 likes when you used to get 50 trains your brain to raise its baseline. Now 75 feels insufficient. The progression mechanic is identical to leveling up.</li>
+<li><strong>Community and belonging</strong>: Social media posts that attack an out-group while rallying in-group members function like an SOS flare in a co-op game — calling allies to help slay a shared enemy.</li>
+</ul>
+<p>The more parents, culture, or your own ambition instill a drive to achieve, the more vulnerable you become to these systems, because the game arrives and says what your environment never did: <em>"Good job. You accomplished something today."</em></p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-how-to-actually-build-balance-with-technology">How to Actually Build Balance With Technology</h2>
+<p>Balance isn't a comfortable or easy state — it's the deliberate choice to pursue less efficient, lower-signal rewards in the real world.</p>
+<p>The core principle: <strong>figure out what need the technology is meeting, then try to meet that need offline.</strong></p>
+<p>This is genuinely hard. The dopamine signal from a real-world equivalent is lower and requires far more effort. Climbing an actual social hierarchy takes years. Defeating a video game boss takes hours. Your brain will naturally gravitate toward the easier option — that's not a character flaw, it's how dopamine-depleted systems behave. Research on dopamine-deficient animals shows they reliably choose low-effort, low-reward options over high-effort, high-reward ones. Technology depletes your dopamine and then makes the effortful real-world options feel impossible.</p>
+<p>The practical intervention is <strong>sequencing</strong>:</p>
+<ol>
+<li><strong>Keep the first one to four hours of your morning completely device-free.</strong> Dopamine stores replenish overnight. Whatever you do first thing in the morning gets the full benefit of that fresh supply — meaning it will feel more rewarding and, crucially, will create behavioral reinforcement so you crave it again tomorrow.</li>
+<li><strong>Don't burn your dopamine currency on passive scrolling first thing.</strong> Once you exhaust it early, there's nothing left to make healthy behaviors feel rewarding.</li>
+<li><strong>Stick with real-world alternatives long enough for the reinforcement loop to build.</strong> The initial return will feel worse than the digital equivalent. That's normal. It takes time for the behavioral momentum to shift.</li>
+</ol>
+<blockquote>
+<p>"You have a choice between things that are easy or things that are balanced. If you want balance, you're going to have to pay for it."</p>
+</blockquote>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-dysthymia-when-low-mood-becomes-the-baseline">Dysthymia: When Low Mood Becomes the Baseline</h2>
+<p><strong>Dysthymia</strong> (now called persistent depressive disorder) isn't the episodic lows of major depression — it's a chronic, constricted mood state that sits persistently below the normal range. Imagine compressing the full range of human emotion and sliding it downward. The highs barely reach neutral; the lows remain fully accessible.</p>
+<p>Because it's been their entire experience, people with dysthymia often don't recognize it as a disorder. It's just how life feels. And because most antidepressant research targets major depressive disorder, dysthymia is harder to treat pharmacologically.</p>
+<p>A key concept in understanding dysthymia is the <strong>dominant other</strong>: a force outside yourself that controls whether you get to be happy. This doesn't require an abusive household. A parent with a serious chronic illness — lupus, for example — can create the same dynamic unintentionally. If your birthday party gets cancelled because mom had a flare, you learn, over and over, that your happiness is not something you can reliably pursue. It is granted or denied by circumstance.</p>
+<p>Neuroscience supports this: place a mouse in an environment of uncontrollable randomness — it can't build a nest, can't hoard food, can't predict outcomes — and it becomes amotivated. Chaos disrupts motivation more powerfully than almost anything else. The same happens in humans raised in environments where effort didn't reliably lead to outcomes.</p>
+<p><strong>Signs you may be in a dysthymic family:</strong>
+- Family members have their own private vocabulary for episodic mood states ("she gets like this," "he's in one of his moods") — the word "episodic" is embedded in that phrasing
+- You are routinely told to "take the high road" around one family member's behavior, because everyone else has adapted to accommodate that person
+- A parent consistently encourages low expectations and perseverance rather than ambition and joy — because surviving is all they've known</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-how-trauma-becomes-different-illnesses">How Trauma Becomes Different Illnesses</h2>
+<p>Trauma is a stressor, and like any stressor applied to a complex system, where it breaks depends on two things: the nature of the stressor and the structure's weakest point.</p>
+<p><strong>Your genetics</strong> determine which system in you is most vulnerable. A family history of anxiety disorders, mood disorders, or personality disorders predisposes you toward that pathway under stress.</p>
+<p><strong>The nature and timing of the trauma</strong> determines the form it takes:</p>
+<ul>
+<li>Short-term, acute trauma → more likely to produce <strong>PTSD</strong></li>
+<li>Chronic, long-term trauma → more likely to produce <strong>CPTSD, BPD, or NPD</strong></li>
+<li>Trauma experienced in childhood → shapes the developing brain, making <strong>GAD or MDD</strong> more likely outcomes</li>
+<li>Trauma experienced in adulthood → rewires an already-formed brain, producing <strong>PTSD</strong> more typically</li>
+</ul>
+<p>The <em>type</em> of adaptation the trauma demands also matters. If a stressor teaches your brain that expending energy is dangerous — getting punished for standing out, getting bullied after achieving something — your brain learns to go small. It induces fatigue as a signal, not just a physiological state. Tiredness can be an emotion: your body telling you that effort in this direction isn't safe.</p>
+<blockquote>
+<p>"When you wake up and you've had a full night's sleep and you feel tired at the thought of going to work — that tiredness is actually an emotion."</p>
+</blockquote>
+<p>Depression, from this angle, is the mind working very hard to keep you invisible and still. The constant stream of self-critical thought ("I'm a loser, I'm hopeless, nothing will improve") isn't evidence of truth — it's evidence of effort. When something is genuinely true, the mind doesn't need to repeat it. The repetition is the suppression.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-why-positivity-hurts-when-youre-depressed">Why Positivity Hurts When You're Depressed</h2>
+<p>One of the least-discussed features of depression is that positive emotion — being praised, seeing happy people, receiving a genuine compliment — doesn't feel good. It hurts.</p>
+<p>The mechanism: surviving depression requires numbing. You shut down hope because hope means you can be disappointed. When you give up hope entirely, at least the floor is predictable. You can survive it.</p>
+<p>When numbness begins to lift, the first sensation isn't warmth — it's pins and needles. Pain signals returning circulation. The removal of numbness almost always begins with discomfort.</p>
+<p>But there's another layer. Seeing someone happy and feeling a flash of anger or resentment isn't really about <em>them</em> — it's about recognizing your own potential in them. You don't resent what you're incapable of. You resent what you chose not to pursue. And that recognition comes with an enormous weight of self-blame.</p>
+<blockquote>
+<p>"What we resent in other people is not what we're incapable of — it's what we're capable of and chose not to do."</p>
+</blockquote>
+<p>The trap is then spending enormous mental energy trying to fix a past that cannot be changed, while neglecting a present that can be. The antidote isn't suppressing the resentment — it's building something today that leaves you with less to resent tomorrow. Resentment has nothing to grab onto when you're living a life you can be proud of.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-common-pitfalls">Common Pitfalls</h2>
+<ul>
+<li><strong>Confusing the detox with the recovery.</strong> Taking a week off social media and then returning to the exact same patterns will not improve your mental health. The detox was never the goal — changing the underlying behavior is.</li>
+<li><strong>Treating depression like a behavior problem.</strong> Taking away a depressed person's phone because they're on it too much addresses a symptom, not a root cause. If the depression resolves on its own timeline anyway, you'll falsely credit the intervention and repeat it.</li>
+<li><strong>Assuming tiredness is purely physiological.</strong> Chronic fatigue in the absence of medical causes (anemia, sleep apnea, etc.) is often the brain's way of signaling that something in your life needs to change.</li>
+<li><strong>Expecting real-world activities to feel as good as digital ones immediately.</strong> They won't. The dopamine return is lower and slower. This is normal and temporary, not evidence that you're broken or that the strategy isn't working.</li>
+<li><strong>Thinking one family member's enabling undoes everyone else's progress.</strong> A personality-disordered person only needs one person willing to accommodate them. If nine people hold the line and one doesn't, the behavior persists.</li>
+<li><strong>Interpreting the discomfort of positivity as evidence you don't deserve it.</strong> Pins and needles aren't injury — they're the return of sensation.</li>
+</ul>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-action-items-exercises">Action Items &amp; Exercises</h2>
+<ol>
+<li>
+<p><strong>Audit your digital habits honestly.</strong> Rather than planning a detox, track your actual daily usage for one week. Note what you're doing, when, and how you feel before and after. Look for patterns — what need is being met?</p>
+</li>
+<li>
+<p><strong>Identify your dominant need.</strong> Ask yourself: what do I love most about the time I spend on social media or games? Achievement? Social connection? Escape? Autonomy? That's the target to replicate offline.</p>
+</li>
+<li>
+<p><strong>Design a one-hour device-free morning.</strong> For the next two weeks, do not pick up your phone for the first hour after waking. Use that time for anything — a walk, stretching, cooking, reading on paper. Notice how the rest of the day feels compared to mornings when you scroll first.</p>
+</li>
+<li>
+<p><strong>Extend the window gradually.</strong> Once one hour feels manageable, push toward two, then four. If you need to check work email, wake up earlier rather than shortening the device-free window.</p>
+</li>
+<li>
+<p><strong>Start a small real-world equivalent of your digital reward.</strong> If you love competitive gaming, find one competitive activity IRL — chess, a rec sports league, a trivia night — and commit to it for at least six weeks before evaluating whether it's "worth it." The initial low returns are expected.</p>
+</li>
+<li>
+<p><strong>Watch for the family vocabulary test.</strong> If people in your family have private phrases for a relative's recurring emotional states ("she gets like this"), treat that as a flag worth examining. Consider whether that pattern has shaped your own baseline expectations of life.</p>
+</li>
+<li>
+<p><strong>If you're struggling with hopelessness, try the resentment reframe.</strong> Write down one thing about your past you deeply resent. Then write one concrete action you can take today that directly addresses the root of it. Do the action. Notice whether the resentment loosens even slightly.</p>
+</li>
+<li>
+<p><strong>If positive feedback hurts, sit with it for ten seconds before deflecting.</strong> Don't argue with the compliment, don't minimize it, don't change the subject. Just let it land and observe the discomfort without immediately escaping it. This is the beginning of unnumbing.</p>
+</li>
+<li>
+<p><strong>Check in with a professional if relevant.</strong> If the descriptions of dysthymia, CPTSD, or persistent low motivation resonate strongly, that's worth bringing to a mental health professional — not as a diagnosis, but as a starting point for conversation.</p>
+</li>
+</ol>
+</section></article>
+    </div>
+  </div>
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc"><ul><li><a href="#transcript-0-april-fools-social-media-detox-doesn-t-work">April Fools: Social Media Detox Doesn&#x27;t Work</a></li><li><a href="#transcript-1-why-detox-fails-addiction-psychiatry-perspective">Why Detox Fails: Addiction Psychiatry Perspective</a></li><li><a href="#transcript-2-how-to-actually-balance-technology-use">How to Actually Balance Technology Use</a></li><li><a href="#transcript-3-dopamine-effort-and-real-world-rewards">Dopamine, Effort, and Real-World Rewards</a></li><li><a href="#transcript-4-mental-illness-in-families-that-don-t-believe-in-it">Mental Illness in Families That Don&#x27;t Believe in It</a></li><li><a href="#transcript-5-personality-disorders-and-family-dynamics">Personality Disorders and Family Dynamics</a></li><li><a href="#transcript-6-dysthymia-chronic-depression-and-the-dominant-other">Dysthymia: Chronic Depression and the Dominant Other</a></li><li><a href="#transcript-7-how-trauma-shapes-different-mental-illnesses">How Trauma Shapes Different Mental Illnesses</a></li><li><a href="#transcript-8-depression-as-energy-conservation-and-learned-behavior">Depression as Energy Conservation and Learned Behavior</a></li><li><a href="#transcript-9-weed-substances-and-karmic-cost">Weed, Substances, and Karmic Cost</a></li><li><a href="#transcript-10-gi-health-digestion-and-ayurvedic-food-combining">GI Health, Digestion, and Ayurvedic Food Combining</a></li><li><a href="#transcript-11-parenting-phone-removal-and-depression">Parenting, Phone Removal, and Depression</a></li><li><a href="#transcript-12-how-clinicians-avoid-absorbing-patients-depression">How Clinicians Avoid Absorbing Patients&#x27; Depression</a></li><li><a href="#transcript-13-why-positivity-hurts-when-you-re-depressed">Why Positivity Hurts When You&#x27;re Depressed</a></li><li><a href="#transcript-14-resentment-the-past-and-taking-action-today">Resentment, the Past, and Taking Action Today</a></li><li><a href="#transcript-15-closing-thoughts-and-monster-hunter-weapons-discussion">Closing Thoughts and Monster Hunter Weapons Discussion</a></li></ul></div></nav>
+      <article class="summary"><section class="sec sec-a">
 <h2 id="transcript-0-april-fools-social-media-detox-doesn-t-work">April Fools: Social Media Detox Doesn&#x27;t Work</h2>
-<p><span class="speaker">Dr. K:</span> and see if this works. Okay, let&#x27;s see. Come on, YouTube. You can do it. Yeah, I am. Am I live now? Let&#x27;s see. I don&#x27;t see myself streaming, but I&#x27;m on YouTube. Loading. All right, whatever. We&#x27;ll see. Okay, it&#x27;s live. All right, we&#x27;re good. I&#x27;m going to just I don&#x27;t see chat box, but whatever. Um I guess it&#x27;s going to be exclusively Twitch chat. Can you send me the chat link? Um Okay, I have something fun to tell. Okay, so now that we&#x27;re live on YouTube, let&#x27;s just do our disclaimer real quick. Okay, welcome to another Healthy Gamer GG stream. My name is Alo Kenoja. I&#x27;m a psychiatrist. Although I&#x27;m a psychiatrist, nothing we discuss on stream today is intended to be taken as medical advice. Everything is for educational purposes only or entertainment if y&#x27;all happen to like that sort of thing. Um, and so if y&#x27;all have a medical concern or question, please go see a licensed professional. So today is April Fool&#x27;s Day. So, I have an April Fool&#x27;s joke to share with you. Y&#x27;all ready for it? The effects of social media abstinence on affective well-being and life satisfaction is systematic review and meta analysis.</p>
+<p>and see if this works. Okay, let&#x27;s see. Come on, YouTube. You can do it. Yeah, I am. Am I live now? Let&#x27;s see. I don&#x27;t see myself streaming, but I&#x27;m on YouTube. Loading. All right, whatever. We&#x27;ll see. Okay, it&#x27;s live. All right, we&#x27;re good. I&#x27;m going to just I don&#x27;t see chat box, but whatever. Um I guess it&#x27;s going to be exclusively Twitch chat. Can you send me the chat link? Um Okay, I have something fun to tell. Okay, so now that we&#x27;re live on YouTube, let&#x27;s just do our disclaimer real quick. Okay, welcome to another Healthy Gamer GG stream. My name is Alo Kenoja. I&#x27;m a psychiatrist. Although I&#x27;m a psychiatrist, nothing we discuss on stream today is intended to be taken as medical advice. Everything is for educational purposes only or entertainment if y&#x27;all happen to like that sort of thing. Um, and so if y&#x27;all have a medical concern or question, please go see a licensed professional. So today is April Fool&#x27;s Day. So, I have an April Fool&#x27;s joke to share with you. Y&#x27;all ready for it? The effects of social media abstinence on affective well-being and life satisfaction is systematic review and meta analysis.</p>
 <p>So, the analyses revealed no significant effects of social media abstinence interventions on positive affect, negative affect or life satisfaction. Y&#x27;all ready for the April Fool&#x27;s joke? The April Fool&#x27;s joke is social media detoxes and dopamine detoxes do not work. That is April Fools. For the last two or three years, everyone has been talking about dopamine detox. Social media detox. You should detox. Take a break from your social media, man. It&#x27;ll be good for your mental health. Turns out doesn&#x27;t do anything. So, here&#x27;s how I understand this. Okay, so I did a little bit of something called addiction psychiatry for a little while. And in addiction psychiatry, we learned a really important lesson. If you take a two-week break from heroin and then start using heroin again every day, turns out doesn&#x27;t do much for your mental health.</p>
 <p>So, let&#x27;s take a look in more detail at what is going on. That&#x27;s the TLDDR chat. April fools, jokes on you. Um, first, let&#x27;s look at this. I want to show you all something cool. Let&#x27;s rotate clockwise. Okay. So, here&#x27;s the first thing. So, when we&#x27;re taking a break, duration of social media abstinence, 28 days, 7 days, 7 days, 1 day, 7 days. These are all the studies. A meta analysis is when we put together a lot of different studies to try to synthesize the data. Okay. Second thing um here are here is the decrease in positive a effect and here is the increases positive a effect. So this is makes you feel better or reduces the amount of goodness that you feel. This is important to understand that&#x27;s not the same as makes you feel worse. Okay?</p>
 <p>Reduces your positive feelings or increases your positive feelings. If it crosses the midline that means that there is no statistically significant effect. So one study even found that it made people experience less experience less joy. joy. Okay. Next thing negative a effect increases negative affect makes you feel worse makes you feel less worse. So one study found that it made you feel less worse. one study made made it more recently made it seem like you actually get worse when you take when you do a detox. Um and then life satisfaction basically it&#x27;s across the midline. So what does this mean? How is this possible? Everyone for a long time has been talking about the benefits of detox. So here&#x27;s what happens. Okay, we have to understand this from a neuroscience understand this from a neuroscience perspective.</p>
@@ -190,15 +347,21 @@ try {
 <p>Um yeah. So we we&#x27;ll see. Okay. Thank you so much. So, I guess I&#x27;ll play around a little bit with the fade slash and R2 R2 and R2 R2 R2. R2. Um, and then uh yeah, dude, I can&#x27;t handle vertical movement. Like, I&#x27;m still trying to master the horizontal dimension. I tried hammer. So, hammer kind of feels good, but the range is so low, right? Charge your LS. You need Yeah. So, I I I know. So, I think the problem with the charge attack is that, you know, you have to like sit there and not move for a little while. Okay. I&#x27;ll I&#x27;ll check out Gaijin Hunters. Yeah. I&#x27;m going to learn how to use the long sword, the ultimate weeb weapon, from a a channel called Gajjun weapon, from a a channel called Gaijin Hunter.</p>
 <p>chat. Come on, man. Okay, I&#x27;ll check it out. All right, thank you guys very much. Um, I&#x27;m gonna do some eat something and then maybe I&#x27;ll play some games later today, but I&#x27;ve got a lot of work to do. So, y&#x27;all take care. It was great seeing y&#x27;all. Happy April Fools. And we&#x27;ll see y&#x27;all when we see y&#x27;all hopefully Friday. Take care y&#x27;all hopefully Friday. Take care everybody.</p>
 </section></article>
+    </div>
   </div>
+  
 
-  <p class="meta">Auto-transcribed livestream · chapters &amp; speaker labels are a best-effort approximation (claude-sonnet-4-6).</p>
+  <p class="meta">Medium summary · claude-sonnet-4-6 (no extended thinking)</p>
 </div>
 
 <script>
 (function () {
   var root = document.documentElement;
-  var tb = document.querySelector('.theme-toggle');
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'medium');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
   var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
   tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
@@ -206,6 +369,16 @@ try {
   function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
   var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+  // deep-link to a heading in any view: switch to that view, then scroll to it
+  function navigateTo(id){
+    var el = id && document.getElementById(id);
+    if (!el) return;
+    var v = el.closest('.view');
+    if (v) setView(v.getAttribute('data-view'));
+    el.scrollIntoView();
+  }
+  window.addEventListener('hashchange', function(){ navigateTo(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash) navigateTo(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>
 <script>

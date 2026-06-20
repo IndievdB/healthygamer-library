@@ -9,7 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-} catch (e) {}
+  document.documentElement.setAttribute('data-view', localStorage.getItem('pubview') || 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -24,16 +25,137 @@ try {
   </nav>
 
   <h1>Your Problems Aren't A Personality</h1>
-  <p class="watch">
-    <a href="https://www.youtube.com/watch?v=TsPPYtM6-RE" target="_blank" rel="noopener">▶ Watch on YouTube</a>
-    <span class="speakers-note">Speakers (auto-detected): Dr. K</span>
-  </p>
+  <p class="watch"><a href="https://www.youtube.com/watch?v=TsPPYtM6-RE" target="_blank" rel="noopener">▶ Watch on YouTube</a></p>
 
-  <div class="doc">
-    <nav class="toc"><p class="toc-title">Chapters</p><ul><li><a href="#transcript-0-male-suicide-belonging-and-origins-of-thought">Male Suicide, Belonging, and Origins of Thought</a></li><li><a href="#transcript-1-harry-potter-character-diagnoses">Harry Potter Character Diagnoses</a></li><li><a href="#transcript-2-narcissism-origins-and-conditional-love">Narcissism Origins and Conditional Love</a></li><li><a href="#transcript-3-chatgpt-in-schools-and-institutional-values">ChatGPT in Schools and Institutional Values</a></li><li><a href="#transcript-4-stream-introduction-and-today-s-topics">Stream Introduction and Today&#x27;s Topics</a></li><li><a href="#transcript-5-problems-becoming-personality-research-overview">Problems Becoming Personality: Research Overview</a></li><li><a href="#transcript-6-rumination-trauma-and-identity-formation">Rumination, Trauma, and Identity Formation</a></li><li><a href="#transcript-7-victimhood-as-a-stable-personality-construct">Victimhood as a Stable Personality Construct</a></li><li><a href="#transcript-8-double-depression-and-dysthymia-as-identity">Double Depression and Dysthymia as Identity</a></li><li><a href="#transcript-9-hero-victim-identity-and-martyr-complex">Hero-Victim Identity and Martyr Complex</a></li><li><a href="#transcript-10-overcoming-victim-identity-through-personal-responsibility">Overcoming Victim Identity Through Personal Responsibility</a></li><li><a href="#transcript-11-handling-compliments-gracefully">Handling Compliments Gracefully</a></li><li><a href="#transcript-12-adhd-guide-promotion-and-topic-poll">ADHD Guide Promotion and Topic Poll</a></li><li><a href="#transcript-13-stagnation-action-crises-and-willpower-backfiring">Stagnation, Action Crises, and Willpower Backfiring</a></li><li><a href="#transcript-14-autonomous-vs-controlled-motivation">Autonomous vs Controlled Motivation</a></li><li><a href="#transcript-15-habit-building-limits-and-cultivating-internal-drive">Habit Building Limits and Cultivating Internal Drive</a></li><li><a href="#transcript-16-action-vs-state-orientation-and-coaching-approach">Action vs State Orientation and Coaching Approach</a></li><li><a href="#transcript-17-why-students-cheat-systemic-and-societal-analysis">Why Students Cheat: Systemic and Societal Analysis</a></li><li><a href="#transcript-18-smart-sociopaths-and-flying-under-the-radar">Smart Sociopaths and Flying Under the Radar</a></li><li><a href="#transcript-19-handling-criticism-without-defensiveness">Handling Criticism Without Defensiveness</a></li><li><a href="#transcript-20-separating-identity-from-mistakes-in-conflict">Separating Identity from Mistakes in Conflict</a></li><li><a href="#transcript-21-corrective-behavior-and-neurodiversity-in-social-interactions">Corrective Behavior and Neurodiversity in Social Interactions</a></li><li><a href="#transcript-22-closing-remarks-and-adhd-bundle-promotion">Closing Remarks and ADHD Bundle Promotion</a></li></ul></nav>
-    <article class="summary transcript"><section class="sec sec-a">
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">2,123w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">20,822w</span></button>
+    
+  </div>
+
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#medium-summary">Summary</a></li>
+<li><a href="#medium-how-suffering-becomes-a-personality">How Suffering Becomes a Personality</a></li>
+<li><a href="#medium-the-hero-victim-trap">The Hero-Victim Trap</a></li>
+<li><a href="#medium-why-willpower-makes-stagnation-worse">Why Willpower Makes Stagnation Worse</a></li>
+<li><a href="#medium-receiving-criticism-without-triggering-your-identity">Receiving Criticism Without Triggering Your Identity</a></li>
+<li><a href="#medium-common-pitfalls">Common Pitfalls</a></li>
+<li><a href="#medium-action-items-exercises">Action Items &amp; Exercises</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="medium-summary">Summary</h2>
+<p><strong>TL;DR — Your suffering can become your personality, and that fusion is one of the hardest psychological traps to escape. But understanding how it happens — and why willpower alone makes things worse — gives you a real path out.</strong></p>
+<p>This talk covers three interlocking ideas: how traumatic or chronic negative experiences solidify into a victim identity, why that identity becomes self-reinforcing through a hero-victim dynamic, and how the standard prescription (discipline, willpower, habits) actually deepens stagnation rather than resolving it. Along the way there's a sharp detour into defensiveness and how to receive criticism without it triggering your identity, plus an honest look at why people cheat — and what that reveals about systems rather than individual character.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-how-suffering-becomes-a-personality">How Suffering Becomes a Personality</h2>
+<p>There's a research construct called the <strong>tendency for interpersonal victimhood (TIV)</strong> — a stable, measurable personality trait defined as an enduring sense of being a victim across many different kinds of relationships. The surprising finding is that this isn't a character flaw. It's a normal human mechanism. Suffering turning into identity is something the mind does naturally, and under certain circumstances it's even adaptive.</p>
+<p>Here's the mechanism. When you keep attending to a negative experience — when you ruminate, when people repeatedly ask you how you're feeling about it, when you process it socially — the experience grows. There's research suggesting that the more times ICU nurses ask patients to rate their pain, the more pain those patients actually report. Attention amplifies. Rumination exacerbates.</p>
+<p>After trauma specifically, identity gets destabilized. You used to be a certain kind of person; now you don't know who you are. The mind naturally begins constructing a new identity from whatever material is available. If the reconstruction process isn't steered deliberately, the identity you're left with is simply <em>someone who has been through bad things</em>. That becomes your answer to "who am I?"</p>
+<blockquote>
+<p>"We've become too articulate about our suffering and too inarticulate about our strength. The more elegantly we describe our wounds, the harder it becomes to leave them behind. When a struggle becomes part of your identity, overcoming it feels like a betrayal of who you are."</p>
+</blockquote>
+<p>This is especially visible in <strong>double depression</strong> — when someone has dysthymia (a persistent, low-grade depressive state lasting years) layered under episodic major depression. The chronic depression becomes the explanation for everything: the stalled career, the failed relationships, the weight. And here's the genuinely tricky part: it is a real cause. Depression really does make everything harder. But once it becomes your identity — once it is <em>why you are a failure</em> — it also becomes something your mind is reluctant to release. Because if the depression goes away, then what explains the failures? Personal responsibility floods back in.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-the-hero-victim-trap">The Hero-Victim Trap</h2>
+<p>Being a victim doesn't just feel bad. It also opens a door to feeling heroic, and that's where things get psychologically sticky.</p>
+<p>Think about breast cancer. Getting diagnosed makes you a victim — something terrible happened, through no fault of your own. But it also immediately grants you the possibility of being a <em>survivor</em>, a fighter, someone with a story of resilience. This reconstruction from victim to hero is not just normal, it's genuinely healthy when done well.</p>
+<p>The problem is the word "when done well." If your heroism gets <em>rooted in</em> your victimhood — if the only way you can feel like a good, admirable person is by continuing to suffer — you've built what's sometimes called a <strong>martyr complex</strong>. Your positive self-image now depends on the suffering being there.</p>
+<p>This is what the research on rural Chinese elders going through historical trauma illustrated: a <strong>hero-victim identity</strong> where the heroism and the victimhood are fused. You can't have one without the other.</p>
+<p>Practically, it produces a recognizable pattern: wherever this person goes — work, Thanksgiving, new relationships — they end up as the victim. Not because the world is conspiring against them, but because being victimized is the mechanism through which they get to feel like a hero. Every new slight is an opportunity. Every obstacle is evidence. The identity needs feeding.</p>
+<blockquote>
+<p>"Every time I'm a victim, I'm a hero. And when I go to work, I want to be a hero. So instead of actually doing the job and excelling, what I'm going to do is adopt this victim-hero complex."</p>
+</blockquote>
+<p>The exit from this trap requires building a positive identity that isn't anchored in suffering — one rooted in actual accomplishments, actual responsibility, actual choices. That feels much harder because it requires accepting that some portion of your situation is your fault. But it also means that portion is <em>within your control</em>.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-why-willpower-makes-stagnation-worse">Why Willpower Makes Stagnation Worse</h2>
+<p>A lot of people who are stuck assume the solution is to push harder — more discipline, more habits, more forcing themselves out of bed. Research on <strong>action crises</strong> (moments of stagnation and paralysis in goal pursuit) suggests the opposite.</p>
+<p>The key distinction is between <strong>autonomous motivation</strong> (wanting to do something because it genuinely aligns with your values and interests) and <strong>controlled motivation</strong> (forcing yourself to do something through willpower, obligation, or fear of punishment).</p>
+<p>Studies show that controlled motivation at the moment of a decision — when you measure it right there — can look high. People feel determined, disciplined. But two and four weeks later? It doesn't translate into actual sustained effort. Worse: <strong>controlled motivation is an independent risk factor for developing an action crisis</strong>. Forcing yourself to do something today statistically predicts having to force yourself again tomorrow, and the willpower required tends to increase over time, not decrease.</p>
+<blockquote>
+<p>"Using willpower today buys you using willpower tomorrow."</p>
+</blockquote>
+<p>The reason this happens is that willpower suppresses your natural wants without transforming them. Your intrinsic motivation never gets supported or developed. You're essentially running on a debt that compounds.</p>
+<p>There's an important nuance here: <strong>habit-building</strong> is often offered as the solution to the willpower problem, and habits do help. But habits only raise the floor of behavior — they get you to 50. They guarantee the minimum. They never get you to 100, or 150. The people who genuinely excel in something aren't running on habits for that extra edge. They're running on intrinsic motivation, on actually wanting it.</p>
+<p>A separate but related concept is the difference between <strong>action-oriented thinking</strong> and <strong>state-oriented thinking</strong>. State-oriented people organize their lives around feelings: how much do I have to endure before I can relax? How long until I feel at peace? When the chase of a state becomes compulsive, it turns into addiction. Action-oriented people focus on what they're going to <em>do</em>, not what they're trying to feel. Cultivating that orientation makes it easier to engage with goals consistently, without burning out.</p>
+<p>There's also a concept called <strong>introjected motivation</strong> — motivation that feels like yours but was absorbed from the outside world. Your parents' vision of who you should become, your culture's definition of success, the grade system that taught you to optimize for credentials rather than learning. These feel like your own drives, but when you chase them, you hit that familiar wall: "I don't want to do this." That wall is informative. It's telling you the motivation isn't actually yours.</p>
+<p>The coaching approach, in contrast, starts by asking: what do you actually want? Why does it matter to you? That sounds soft and touchy-feely, but the research backs it up — autonomous goals are linked to sustained effort, reduced ambivalence, better obstacle management, and higher attainment. When you genuinely want something and you make a plan, the plan works. When you don't want it and you make a plan, the plan is theater.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-receiving-criticism-without-triggering-your-identity">Receiving Criticism Without Triggering Your Identity</h2>
+<p>A separate but thematically connected section covers defensiveness — specifically for people who are neurodiverse (ADHD, autism spectrum), though the principles apply broadly.</p>
+<p>The trigger for intense defensiveness is almost always <strong>identity threat</strong>. It's not the criticism itself, it's what your mind does with the criticism. "You oversalted this food" becomes "I am a terrible cook." "You forgot to send the file" becomes "I am unreliable and incompetent." Once a mistake becomes an identity conclusion, the defensive response escalates dramatically because now there's something existential at stake.</p>
+<p>The sequence that works:</p>
+<ol>
+<li><strong>Decouple the criticism from your identity.</strong> A smart person can make a mistake. The mistake doesn't make you stupid.</li>
+<li><strong>Receive the complaint before defending yourself.</strong> When someone sends a signal and it isn't received, they increase the volume. Defensiveness causes escalation, not de-escalation.</li>
+<li><strong>Ask them to say more.</strong> "Can you tell me a little bit more about that?" disarms the attack better than countering it, because conflict requires both ends pulling.</li>
+<li><strong>Own what's yours.</strong> This is the step that most defensive people skip, and skipping it means the mistake probably recurs.</li>
+<li><strong>Then — and only then — offer context and corrective behavior.</strong> Not as an excuse, but as a forward-looking plan. "Here's what I'll do differently next time." That's what actually calms people down.</li>
+<li><strong>If there's shared responsibility, raise it after owning yours.</strong> Not before. Sequence matters.</li>
+</ol>
+<p>The opposite failure mode — accepting all blame reflexively — is also a trap, especially for people who grew up being told they were the problem. Over-accepting blame trains people around you to assign their mistakes to you.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-common-pitfalls">Common Pitfalls</h2>
+<ul>
+<li><strong>Confusing explanation with advocacy for the victim identity.</strong> Recognizing that this is a normal psychological mechanism doesn't mean the identity is healthy or worth keeping. Understanding it is the first step to changing it.</li>
+<li><strong>Treating willpower as a solution rather than a stopgap.</strong> Willpower has its place, but treating it as the primary tool virtually guarantees burnout and cyclical paralysis.</li>
+<li><strong>Mistaking the floor for the ceiling.</strong> Habits are valuable, but people often stop there and wonder why they never reach their potential. The ceiling requires intrinsic motivation, not just behavioral automation.</li>
+<li><strong>Assuming the goal is to eliminate the negative past.</strong> The problem isn't having been a victim. The problem is building your whole positive identity <em>on top of</em> the victimhood. You can acknowledge the past without requiring it to define you.</li>
+<li><strong>Conflating "it's a real cause" with "it's the complete explanation."</strong> Depression, ADHD, BPD — these are real contributors to real struggles. But they don't explain 100% of the outcomes. Some percentage is personal responsibility, and that percentage is also where your agency lives.</li>
+<li><strong>Swinging too far toward self-blame.</strong> Accepting all criticism without pushback doesn't build confidence; it trains others to keep assigning you blame and keeps self-esteem flat.</li>
+</ul>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-action-items-exercises">Action Items &amp; Exercises</h2>
+<ol>
+<li>
+<p><strong>Map your identity to your suffering.</strong> Write down your major struggles, then ask: has this become part of how I describe myself? "I'm someone who has never been able to hold down a job." "I'm someone who always gets hurt in relationships." If so, note it explicitly — awareness is the prerequisite for change.</p>
+</li>
+<li>
+<p><strong>Separate the cause from the identity.</strong> For any chronic difficulty (depression, ADHD, a rough upbringing), ask: what percentage of this outcome is genuinely caused by that factor, and what percentage remains within my control? Even if the answer is 80/20, the 20% is yours to work with.</p>
+</li>
+<li>
+<p><strong>Audit your motivations for introjection.</strong> Pick a major goal you're currently pursuing. Ask: do I actually want this, or did someone else want this for me? If you can't clearly answer why <em>you</em> want it in terms of your own values, treat that as a signal to dig deeper before continuing.</p>
+</li>
+<li>
+<p><strong>Practice autonomous goal framing.</strong> Instead of "I should work out," find the version you actually want: "I want to feel less wrecked climbing stairs." Spend time with the want before you build a plan. The plan only works if the want is real.</p>
+</li>
+<li>
+<p><strong>Try the compliment receipt script.</strong> Next time someone compliments you and you feel the urge to deflect, say: <em>"It's nice to be appreciated for [the specific thing they mentioned]."</em> Say it whether you believe it or not. Notice what happens to the interaction.</p>
+</li>
+<li>
+<p><strong>Use the criticism sequence.</strong> Next time you're criticized and feel defensive, practice in order: receive it → ask for more → own what's true → offer corrective action → optionally share context. Don't skip to step four.</p>
+</li>
+<li>
+<p><strong>Set a target, then reframe the morning question.</strong> Define what you want to build or accomplish. When you wake up and don't feel like it, don't ask "do I feel like it?" Ask: <em>"Do I want to be someone who does what they feel like, or someone who does what they intend?"</em> That's not the same as forcing yourself — it's connecting action to identity in a healthy direction.</p>
+</li>
+</ol>
+</section></article>
+    </div>
+  </div>
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc"><ul><li><a href="#transcript-0-male-suicide-belonging-and-origins-of-thought">Male Suicide, Belonging, and Origins of Thought</a></li><li><a href="#transcript-1-harry-potter-character-diagnoses">Harry Potter Character Diagnoses</a></li><li><a href="#transcript-2-narcissism-origins-and-conditional-love">Narcissism Origins and Conditional Love</a></li><li><a href="#transcript-3-chatgpt-in-schools-and-institutional-values">ChatGPT in Schools and Institutional Values</a></li><li><a href="#transcript-4-stream-introduction-and-today-s-topics">Stream Introduction and Today&#x27;s Topics</a></li><li><a href="#transcript-5-problems-becoming-personality-research-overview">Problems Becoming Personality: Research Overview</a></li><li><a href="#transcript-6-rumination-trauma-and-identity-formation">Rumination, Trauma, and Identity Formation</a></li><li><a href="#transcript-7-victimhood-as-a-stable-personality-construct">Victimhood as a Stable Personality Construct</a></li><li><a href="#transcript-8-double-depression-and-dysthymia-as-identity">Double Depression and Dysthymia as Identity</a></li><li><a href="#transcript-9-hero-victim-identity-and-martyr-complex">Hero-Victim Identity and Martyr Complex</a></li><li><a href="#transcript-10-overcoming-victim-identity-through-personal-responsibility">Overcoming Victim Identity Through Personal Responsibility</a></li><li><a href="#transcript-11-handling-compliments-gracefully">Handling Compliments Gracefully</a></li><li><a href="#transcript-12-adhd-guide-promotion-and-topic-poll">ADHD Guide Promotion and Topic Poll</a></li><li><a href="#transcript-13-stagnation-action-crises-and-willpower-backfiring">Stagnation, Action Crises, and Willpower Backfiring</a></li><li><a href="#transcript-14-autonomous-vs-controlled-motivation">Autonomous vs Controlled Motivation</a></li><li><a href="#transcript-15-habit-building-limits-and-cultivating-internal-drive">Habit Building Limits and Cultivating Internal Drive</a></li><li><a href="#transcript-16-action-vs-state-orientation-and-coaching-approach">Action vs State Orientation and Coaching Approach</a></li><li><a href="#transcript-17-why-students-cheat-systemic-and-societal-analysis">Why Students Cheat: Systemic and Societal Analysis</a></li><li><a href="#transcript-18-smart-sociopaths-and-flying-under-the-radar">Smart Sociopaths and Flying Under the Radar</a></li><li><a href="#transcript-19-handling-criticism-without-defensiveness">Handling Criticism Without Defensiveness</a></li><li><a href="#transcript-20-separating-identity-from-mistakes-in-conflict">Separating Identity from Mistakes in Conflict</a></li><li><a href="#transcript-21-corrective-behavior-and-neurodiversity-in-social-interactions">Corrective Behavior and Neurodiversity in Social Interactions</a></li><li><a href="#transcript-22-closing-remarks-and-adhd-bundle-promotion">Closing Remarks and ADHD Bundle Promotion</a></li></ul></div></nav>
+      <article class="summary"><section class="sec sec-a">
 <h2 id="transcript-0-male-suicide-belonging-and-origins-of-thought">Male Suicide, Belonging, and Origins of Thought</h2>
-<p><span class="speaker">Dr. K:</span> work it. Be autonomous. So, set a target that encompasses the life that you want to live. Then, when you wake up in the morning, you&#x27;re not going to feel like doing it. And then, ask yourself one question. Do I want to be a person who does what they feel like or does what they intend? And in that moment, you can make that choice. It&#x27;s as simple as that. Not saying it&#x27;s easy, it&#x27;s a simple. So, the number one thing that correlates with male suicide is not depression. This is super scary. There&#x27;s one study I saw recently that suggests that 50% of men who kill themselves have no history or evidence of mental illness. I believe this statistic in in my clinical practice because I know what depression looks like, I know what bipolar disorder looks like, and half the men that I work with, at least, are not actually mentally ill. See, mental illness means a pathology of the mind, which means that the mind is malfunctioning. Most of the suicidal men that I work with, their mind isn&#x27;t malfunctioning. They genuinely have a life that is no longer worth living.</p>
+<p>work it. Be autonomous. So, set a target that encompasses the life that you want to live. Then, when you wake up in the morning, you&#x27;re not going to feel like doing it. And then, ask yourself one question. Do I want to be a person who does what they feel like or does what they intend? And in that moment, you can make that choice. It&#x27;s as simple as that. Not saying it&#x27;s easy, it&#x27;s a simple. So, the number one thing that correlates with male suicide is not depression. This is super scary. There&#x27;s one study I saw recently that suggests that 50% of men who kill themselves have no history or evidence of mental illness. I believe this statistic in in my clinical practice because I know what depression looks like, I know what bipolar disorder looks like, and half the men that I work with, at least, are not actually mentally ill. See, mental illness means a pathology of the mind, which means that the mind is malfunctioning. Most of the suicidal men that I work with, their mind isn&#x27;t malfunctioning. They genuinely have a life that is no longer worth living.</p>
 <p>They&#x27;re looking at things and objectively realizing that there&#x27;s no way out of the situation. So, they turn to suicide. So, I know it&#x27;s kind of like a very controversial statement, but I think that&#x27;s what my clinical practice has shown, and there&#x27;s some research to even back that up. So, if we sort of look at what&#x27;s going on with men, we&#x27;re sort of they have nowhere to turn to, and the number one thing that correlates with it is not mental illness, but is a sense of thwarted belongingness. But, basically, what happens is what causes people to kill themselves is they try to connect with others and they get rejected. Where do the thoughts in your mind come from? I don&#x27;t know if I have the answer to that. What do you think?</p>
 <p>Neurons, blood flow, firing, creating action potentials. Okay. So, neurons, blood flow, firing, creating action potentials are all the same, right? &amp;gt;&amp;gt; Mhm. Okay, so. You having a thought right now? Yeah. Where is that thought coming from? My brain. Okay. But, is there any other thing in the causal chain that is creating that thought? &amp;gt;&amp;gt; Is there anything else in the causal chain creating the thought? Sensation, receptors, etc. &amp;gt;&amp;gt; So, the simple idea. So, one of the places that thoughts in our brain come from, this is based on the yogic concept. So, sure, it&#x27;s translated through the brain, but we know that our sense organs are a source of thoughts.</p>
 </section>
@@ -259,15 +381,21 @@ try {
 <p>now, just a quick heads-up. Um the ADHD guide and doing stuff bundle. So, we teach a lot of the executive function skills and stuff like that, if you guys are curious about you guys are curious about um um you know, some of this stuff around ADHD, depression, self-esteem. Some of this stuff is in there. And we also have a planner and a meditation journal, and you guys will get access to meditation tracks. So, if y&#x27;all are interested in this stuff and and want more concrete things to do, um definitely check this out. So, it&#x27;s kind of like all organized into like, you know, what you do. Um and generally speaking, so about 20,000 people have used the guide so 20,000 people have used the guide so far.</p>
 <p>far. And I I think people tend to like it. I think it&#x27;s pretty helpful. There&#x27;s a lot of content in there. So, I think it&#x27;s um yeah, it&#x27;s 40 plus videos. Right? So, there&#x27;s a lot of content, a lot of exercises, things like that. So, if you guys are looking to work through something in a more consistent way, definitely check it out. And then, uh I think I think I&#x27;m I&#x27;m wiped, y&#x27;all. I don&#x27;t know if it was the rant or what. I know we there were two others that we wanted to one more that we wanted to get to. This is the one that I been wanting to do for a couple weeks, but we&#x27;ll we&#x27;ll get around to it. So, happy Friday, everybody. Thanks for coming, and</p>
 </section></article>
+    </div>
   </div>
+  
 
-  <p class="meta">Auto-transcribed livestream · chapters &amp; speaker labels are a best-effort approximation (claude-sonnet-4-6).</p>
+  <p class="meta">Medium summary · claude-sonnet-4-6 (no extended thinking)</p>
 </div>
 
 <script>
 (function () {
   var root = document.documentElement;
-  var tb = document.querySelector('.theme-toggle');
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'medium');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
   var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
   tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
@@ -275,6 +403,16 @@ try {
   function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
   var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+  // deep-link to a heading in any view: switch to that view, then scroll to it
+  function navigateTo(id){
+    var el = id && document.getElementById(id);
+    if (!el) return;
+    var v = el.closest('.view');
+    if (v) setView(v.getAttribute('data-view'));
+    el.scrollIntoView();
+  }
+  window.addEventListener('hashchange', function(){ navigateTo(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash) navigateTo(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>
 <script>

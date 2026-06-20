@@ -9,7 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-} catch (e) {}
+  document.documentElement.setAttribute('data-view', localStorage.getItem('pubview') || 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -24,16 +25,155 @@ try {
   </nav>
 
   <h1>Why Some Men Never Grow Up</h1>
-  <p class="watch">
-    <a href="https://www.youtube.com/watch?v=bMa9dAYdTE0" target="_blank" rel="noopener">▶ Watch on YouTube</a>
-    <span class="speakers-note">Speakers (auto-detected): Dr. K, Brandon</span>
-  </p>
+  <p class="watch"><a href="https://www.youtube.com/watch?v=bMa9dAYdTE0" target="_blank" rel="noopener">▶ Watch on YouTube</a></p>
 
-  <div class="doc">
-    <nav class="toc"><p class="toc-title">Chapters</p><ul><li><a href="#transcript-0-stream-introduction-and-announcements">Stream Introduction and Announcements</a></li><li><a href="#transcript-1-introducing-the-puer-aeternus-concept">Introducing the Puer Aeternus Concept</a></li><li><a href="#transcript-2-characteristics-of-the-puer-aeternus">Characteristics of the Puer Aeternus</a></li><li><a href="#transcript-3-the-cherished-fantasy-life-and-reality-gap">The Cherished Fantasy Life and Reality Gap</a></li><li><a href="#transcript-4-the-cycle-of-paralysis-and-marginal-life">The Cycle of Paralysis and Marginal Life</a></li><li><a href="#transcript-5-failure-to-commit-and-the-pluripotent-stem-cell">Failure to Commit and the Pluripotent Stem Cell</a></li><li><a href="#transcript-6-blame-fragility-and-defensive-arrogance">Blame, Fragility, and Defensive Arrogance</a></li><li><a href="#transcript-7-technology-incelism-and-the-growing-epidemic">Technology, Incelism, and the Growing Epidemic</a></li><li><a href="#transcript-8-the-one-cure-work-and-making-sacrifices">The One Cure: Work and Making Sacrifices</a></li><li><a href="#transcript-9-red-pill-fantasy-and-puella-aeterna">Red Pill Fantasy and Puella Aeterna</a></li><li><a href="#transcript-10-dating-apps-relationships-and-personal-responsibility">Dating Apps, Relationships, and Personal Responsibility</a></li><li><a href="#transcript-11-isekai-the-inner-child-and-subclasses-of-puer">Isekai, the Inner Child, and Subclasses of Puer</a></li><li><a href="#transcript-12-society-initiation-and-loss-of-rites-of-passage">Society, Initiation, and Loss of Rites of Passage</a></li><li><a href="#transcript-13-q-a-how-to-break-free-from-the-complex">Q&amp;A: How to Break Free from the Complex</a></li><li><a href="#transcript-14-confrontation-helping-others-and-applying-the-lecture">Confrontation, Helping Others, and Applying the Lecture</a></li><li><a href="#transcript-15-meditation-feature-demo-and-healthy-gamer-growth">Meditation Feature Demo and Healthy Gamer Growth</a></li><li><a href="#transcript-16-closing-reflections-on-closing-doors">Closing Reflections on Closing Doors</a></li></ul></nav>
-    <article class="summary transcript"><section class="sec sec-a">
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">2,285w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">22,736w</span></button>
+    
+  </div>
+
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#medium-summary">Summary</a></li>
+<li><a href="#medium-the-puers-calling-card-charming-brilliant-and-unable-to-follow-through">The Puer's Calling Card: Charming, Brilliant, and Unable to Follow Through</a></li>
+<li><a href="#medium-the-fantasy-gap-why-reality-always-disappoints">The Fantasy Gap: Why Reality Always Disappoints</a></li>
+<li><a href="#medium-the-pluripotent-stem-cell-why-commitment-feels-like-death">The Pluripotent Stem Cell: Why Commitment Feels Like Death</a></li>
+<li><a href="#medium-the-cycle-of-paralysis">The Cycle of Paralysis</a></li>
+<li><a href="#medium-the-arrogance-the-fragility-and-the-hero-complex">The Arrogance, the Fragility, and the Hero Complex</a></li>
+<li><a href="#medium-why-society-is-making-this-worse">Why Society Is Making This Worse</a></li>
+<li><a href="#medium-common-pitfalls">Common Pitfalls</a></li>
+<li><a href="#medium-action-items-exercises">Action Items &amp; Exercises</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="medium-summary">Summary</h2>
+<p><strong>TL;DR — The <em>puer aeternus</em> (eternal child) is an archetype that explains why intelligent, promising people get trapped in a cycle of fantasy, avoidance, and unrealized potential — and the exit requires doing the one thing they hate most: closing doors.</strong></p>
+<p>Carl Jung described a personality pattern he called the <em>puer aeternus</em> — Latin for "eternal child" — to capture people who, despite real intelligence and charm, remain psychologically stuck in adolescence indefinitely. This pattern connects a surprising number of modern struggles: failure to launch, gifted-kid underachievement, gaming addiction, pornography use, incelism, and the broader epidemic of young adults who seem to live on the edge of a life they never quite start. Technology has made the underlying vulnerabilities dramatically worse, which is why what Jung described over a century ago maps so precisely onto what's happening right now.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-the-puers-calling-card-charming-brilliant-and-unable-to-follow-through">The Puer's Calling Card: Charming, Brilliant, and Unable to Follow Through</h2>
+<p>When you first meet someone in the <em>puer aeternus</em> pattern, you're impressed. They're quick-witted, funny, charismatic in their group, full of big ideas. They ask deep questions, hate small talk, and radiate potential. People around them consistently think: <em>this person is going places.</em></p>
+<p>Then, inevitably, they don't.</p>
+<p>The defining feature isn't a lack of intelligence or even a lack of effort — it's a specific failure to sustain. Marie-Louise von Franz, a Jungian analyst who wrote the definitive book on this archetype, described it well:</p>
+<blockquote>
+<p>"The puer aeternus can work 24 hours at a stretch, or even longer, until he breaks down. But what he cannot do is work on a dreary rainy morning when work is boring and one has to kick oneself into it."</p>
+</blockquote>
+<p>They can sprint. They cannot walk. Give them a fascinating new project and they'll pour themselves into it with a ferocity that stuns everyone around them. Let the novelty wear off — let the first real obstacle appear, or let the work become routine — and they're gone.</p>
+<p>This also shows up physically. Von Franz tells the story of a young man who did serious mountaineering but hated carrying a rucksack so much that he trained himself to sleep outdoors in the rain using yogic breathing techniques and went without food entirely — just to avoid the indignity of packing like everyone else. He was capable of remarkable self-discipline. What he could not tolerate was ordinary inconvenience.</p>
+<blockquote>
+<p>"The one thing he absolutely refuses is responsibility for anything, or to carry the weight of a situation."</p>
+</blockquote>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-the-fantasy-gap-why-reality-always-disappoints">The Fantasy Gap: Why Reality Always Disappoints</h2>
+<p>At the core of the <em>puer</em> pattern is a rich, protected inner fantasy life. The puer doesn't just dream; they live in their dreams. And that creates a structural problem: every real-world experience gets compared to an idealized internal version of it, and reality almost always loses.</p>
+<p>They imagine writing a novel, building a game, launching a company, falling in love — and the vision is magnificent. The moment they actually start, something deflates. The coding is tedious. The blank page is hostile. The person they're dating turns out to be a full, complicated human being with flaws.</p>
+<p>Von Franz describes the romantic version:</p>
+<blockquote>
+<p>"The image of the perfect woman who will give everything to a man and who is without any shortcomings is sought in every woman. Each time he is fascinated by a woman, he has later to discover that she is an ordinary human being. Once he has been intimate with her, the whole fascination vanishes and he turns away disappointed, only to project the image anew onto one woman after another."</p>
+</blockquote>
+<p>But this isn't really about women — that's the mistake people make when they try to fix this problem. They put <em>life</em> on a pedestal. The perfect relationship is just one instance of the perfect job, the perfect city, the perfect creative project. The mechanism is identical in every domain.</p>
+<p>Modern technology has handed this pattern a weapon. Pornography delivers a simulation of intimacy with no friction, no ordinariness, no morning breath. Video games offer a world where effort translates cleanly and immediately into visible progress, where you can be exceptional without ever being mediocre first. These aren't causes of the <em>puer</em> complex — they're critical hits against an existing vulnerability.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-the-pluripotent-stem-cell-why-commitment-feels-like-death">The Pluripotent Stem Cell: Why Commitment Feels Like Death</h2>
+<p>Here's the psychological knot that holds everything together.</p>
+<p>A pluripotent stem cell can become any kind of cell in the body — neuron, heart muscle, liver cell, anything. The moment it differentiates into one thing, it loses the potential to become everything else. The <em>puer</em> is psychologically identical to that undifferentiated cell.</p>
+<p>Every major life commitment — a career path, a relationship, a city, a creative focus — closes off other possibilities. For most people that's simply the cost of building a life. For the puer, it is catastrophic. Choosing wrong feels worse than not choosing at all, so they don't choose. They swim in what analysts call a <strong>provisional life</strong>:</p>
+<blockquote>
+<p>"The strange attitude and feeling that one is not yet in real life. For the time being one is doing this or that, but whether it is a woman or a job, it is not yet what is really wanted. And there is always the fantasy that sometime in the future the real thing will come about."</p>
+</blockquote>
+<p>This creates what is called a <strong>failure to constellate</strong>. A constellation is a collection of individual stars arranged into a coherent picture. The puer has plenty of stars — interests, bursts of effort, half-finished projects, promising starts. They just never arrange into anything. The result is a <strong>marginal life</strong>: not a failure, exactly, but not a life either. An airport departure lounge where you wander between a hundred gates and never board a plane.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-the-cycle-of-paralysis">The Cycle of Paralysis</h2>
+<p>The pattern runs like this, and once you see it you'll recognize it everywhere:</p>
+<ol>
+<li><strong>Fantasy</strong> — a vivid, exciting vision of what could be</li>
+<li><strong>Engagement</strong> — actual contact with reality</li>
+<li><strong>Disappointment</strong> — reality falls short of the vision; motivation collapses</li>
+<li><strong>Retreat</strong> — back to the fantasy world (games, social media, daydreams)</li>
+<li><strong>Forced choice</strong> — life eventually compels some decision (a job, a situation) without genuine commitment</li>
+<li><strong>Half-assing</strong> — they show up but hold back, because this isn't <em>the thing</em></li>
+<li><strong>Blame</strong> — when it doesn't work out, they blame circumstances, other people, or crucially, <em>former them</em></li>
+</ol>
+<p>That last move deserves attention. Blaming past-you looks like accountability. It isn't. Real accountability changes behavior today. Blaming past-you is actually a way to excuse present-you from the drab, grinding work of catching up — because "it's too late now anyway." The impossibility of the situation becomes a comfortable blanket. Now there's no need to act.</p>
+<p>Meanwhile, they hold tightly to the belief that <em>in the right circumstances</em>, their greatness will emerge. They've seen evidence of it: they did work incredibly hard that one time, when everything aligned. So the project becomes hunting for those circumstances again rather than developing the capacity to work without them.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-the-arrogance-the-fragility-and-the-hero-complex">The Arrogance, the Fragility, and the Hero Complex</h2>
+<p>The <em>puer</em> often carries what looks like arrogance but is actually a <strong>defensive ego</strong> layered over a deep inferiority complex. They need to feel superior to the ordinary — to the "plebs" who just carry the rucksack, take the entry-level job, date the imperfect person. This isn't genuine confidence. Von Franz calls it:</p>
+<blockquote>
+<p>"An arrogant attitude toward other people due to both an inferiority complex and false feelings of superiority."</p>
+</blockquote>
+<p>There is also a strategic <strong>fragility</strong> — a physical ailment, a mental health condition, a past trauma that functions as the reason why the ordinary rules don't apply. These conditions are sometimes completely real and genuinely difficult. What the puer does is use them as permanent exemptions from the work of recovery.</p>
+<p>And then there's the <strong>hero complex</strong>, which is arguably the most dangerous feature because it can masquerade as growth. The puer will tolerate enormous hardship — just not ordinary hardship. They'll do a psychedelic retreat; they won't go to three AA meetings a week. They'll launch a startup; they won't take an entry-level role. They'll spend a year learning the most obscure possible mastery technique; they won't just practice the basics daily.</p>
+<p>This is why you have to be careful: if you hear "accept the drabness of life" and immediately think <em>ah, this is my heroic journey into ordinariness</em>, you've been hijacked. The hero complex will make you do it intensely for two weeks, decide it's not working fast enough, and go back to playing video games.</p>
+<p>The red pill/blue pill framing from online male communities is a perfect example of this inversion: the people claiming to take the "hard red pill" of harsh reality are often the most deeply committed to a fantasy — one where they are exceptional, where ordinary women are beneath them, where the right circumstance will validate everything they've suspected about themselves.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-why-society-is-making-this-worse">Why Society Is Making This Worse</h2>
+<p>The <em>puer</em> archetype has always existed. It is becoming a majority condition.</p>
+<p>Several forces are converging. Meaningful <strong>rites of passage</strong> — the events and structures that formally move a person from child to adult — have been systematically dismantled or hollowed out. Education used to end; now people go back for more. Spiritual initiation used to be central to religious traditions; it's largely gone. Military service, trade apprenticeships, arranged marriage, fraternal rituals — the mechanisms by which society once forced differentiation have eroded.</p>
+<p>At the same time, technology delivers frictionless alternatives to reality at scale. You can be exceptional in a game without the years of work that real-world exceptionalism requires. Dating apps sell the premise that you just haven't found the right person yet, which is exactly the fantasy a puer needs to hear — and exactly the wrong premise. Successful relationships aren't found; they're built. Successful careers aren't found; they're built. Partner selection is nearly irrelevant compared to what you do once you have a partner.</p>
+<p>The entire ecosystem of <strong>alpha male content, biohacking, optimization culture, and entrepreneurship gurus</strong> exists to monetize this complex. They sell exactly what the puer craves: a secret, exceptional shortcut that separates you from the normies, delivered without the drab ordinary work. They thrive because there are now more puers than ever.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-common-pitfalls">Common Pitfalls</h2>
+<p><strong>Mistaking self-blame for accountability.</strong> Feeling terrible about past-you and taking responsibility for present-you are completely different things. If you're catastrophizing about lost time without actually changing today's behavior, you're doing the former.</p>
+<p><strong>Heroizing the cure.</strong> The fix involves becoming ordinary, not becoming extraordinarily ordinary. If doing the dishes starts to feel like a profound spiritual discipline you're crushing harder than anyone else, the complex is running you.</p>
+<p><strong>Thinking "just force yourself to do boring work" is sufficient.</strong> It's not. The mind will find six different angles of attack — it'll generate a fantasy that makes the work feel unworthy, it'll tell you the timing is wrong, it'll make you compare your current progress to what could have been. You need to understand the mechanism, not just white-knuckle through it.</p>
+<p><strong>Confusing circumstances for causes.</strong> Yes, society has fewer rites of passage. Yes, things are objectively harder. Yes, technology is weaponized against your psychology. All of that is true and none of it changes what you have to do. The better question is never "is this my fault?" but "what am I going to do about it?"</p>
+<p><strong>Killing the puer entirely.</strong> Swinging to the opposite extreme — pure grind, no play, no joy, no inner child — is its own failure. The goal is integration, not destruction.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-action-items-exercises">Action Items &amp; Exercises</h2>
+<ol>
+<li>
+<p><strong>Map your fantasy gap.</strong> Pick one domain where you keep starting and stopping (creative project, career direction, relationship). Write down what you imagined it would be like versus what it actually was. Sit with that gap without trying to fix it. Understanding why the gap deflates you is the first step.</p>
+</li>
+<li>
+<p><strong>Practice closing one small door this week.</strong> Choose one minor open option you've been keeping alive "just in case" and deliberately let it go. Tell someone you're doing it. The discomfort you feel is the thing you need to practice tolerating.</p>
+</li>
+<li>
+<p><strong>Do something wasteful and boring.</strong> Not productive-boring — actually wasteful in a way your mind resists. Clean something that doesn't need cleaning. Show up somewhere you don't have to show up. The goal is to practice paying a cost without a guaranteed return.</p>
+</li>
+<li>
+<p><strong>Ask yourself the right question about commitment.</strong> When you feel paralyzed by a choice, don't ask "what if I pick wrong?" Ask: "If I give up everything except this one option, what am I left with?" You'll usually find you're left with something you genuinely like — and the terror of that reveals the actual problem.</p>
+</li>
+<li>
+<p><strong>Interrogate the fantasy, not the obstacle.</strong> Next time you abandon something, don't ask what went wrong with the project. Ask: "What did I imagine this would be like? What did I find instead? Why was the real version insufficient?" Write it out in detail.</p>
+</li>
+<li>
+<p><strong>Focus on the cost, not the upside.</strong> When you're considering starting something, deliberately spend more time thinking about what it will require and what you'll have to give up than on what you'll gain. This is counterintuitive but it's what the puer most needs.</p>
+</li>
+<li>
+<p><strong>If you can't stop consuming self-improvement content without acting on it</strong>, notice that the content is scratching the itch of progress without requiring the work of progress. Set a rule: before watching another lecture, write one paragraph about what you actually did with the last one.</p>
+</li>
+</ol>
+</section></article>
+    </div>
+  </div>
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc"><ul><li><a href="#transcript-0-stream-introduction-and-announcements">Stream Introduction and Announcements</a></li><li><a href="#transcript-1-introducing-the-puer-aeternus-concept">Introducing the Puer Aeternus Concept</a></li><li><a href="#transcript-2-characteristics-of-the-puer-aeternus">Characteristics of the Puer Aeternus</a></li><li><a href="#transcript-3-the-cherished-fantasy-life-and-reality-gap">The Cherished Fantasy Life and Reality Gap</a></li><li><a href="#transcript-4-the-cycle-of-paralysis-and-marginal-life">The Cycle of Paralysis and Marginal Life</a></li><li><a href="#transcript-5-failure-to-commit-and-the-pluripotent-stem-cell">Failure to Commit and the Pluripotent Stem Cell</a></li><li><a href="#transcript-6-blame-fragility-and-defensive-arrogance">Blame, Fragility, and Defensive Arrogance</a></li><li><a href="#transcript-7-technology-incelism-and-the-growing-epidemic">Technology, Incelism, and the Growing Epidemic</a></li><li><a href="#transcript-8-the-one-cure-work-and-making-sacrifices">The One Cure: Work and Making Sacrifices</a></li><li><a href="#transcript-9-red-pill-fantasy-and-puella-aeterna">Red Pill Fantasy and Puella Aeterna</a></li><li><a href="#transcript-10-dating-apps-relationships-and-personal-responsibility">Dating Apps, Relationships, and Personal Responsibility</a></li><li><a href="#transcript-11-isekai-the-inner-child-and-subclasses-of-puer">Isekai, the Inner Child, and Subclasses of Puer</a></li><li><a href="#transcript-12-society-initiation-and-loss-of-rites-of-passage">Society, Initiation, and Loss of Rites of Passage</a></li><li><a href="#transcript-13-q-a-how-to-break-free-from-the-complex">Q&amp;A: How to Break Free from the Complex</a></li><li><a href="#transcript-14-confrontation-helping-others-and-applying-the-lecture">Confrontation, Helping Others, and Applying the Lecture</a></li><li><a href="#transcript-15-meditation-feature-demo-and-healthy-gamer-growth">Meditation Feature Demo and Healthy Gamer Growth</a></li><li><a href="#transcript-16-closing-reflections-on-closing-doors">Closing Reflections on Closing Doors</a></li></ul></div></nav>
+      <article class="summary"><section class="sec sec-a">
 <h2 id="transcript-0-stream-introduction-and-announcements">Stream Introduction and Announcements</h2>
-<p><span class="speaker">Dr. K:</span> Heat. Heat. [Music] Heat. Heat. Heat. Heat. [Music] la. [Music] Heat. Heat. Heat. Heat. [Music] [Music] and a lot of people out there will struggle to pull themselves out of it. Move in the right direction. Take one step forward and let go of what&#x27;s going to happen. to happen. [Music] [Music] [Music] Heat. Heat. Heat. Heat. Heat. Heat. [Music] [Music] [Music] Heat. Heat. Heat. [Music] One, 2, 3, 4. [Music] [Music] Hey, Hey, Hey, [Music] [Music] [Music] [Applause] [Applause] [Applause] [Music] [Music] [Music] hey, hey. [Applause] [Applause] [Music] [Music] [Music] Hey, [Music] [Music] hey, hey.</p>
+<p>Heat. Heat. [Music] Heat. Heat. Heat. Heat. [Music] la. [Music] Heat. Heat. Heat. Heat. [Music] [Music] and a lot of people out there will struggle to pull themselves out of it. Move in the right direction. Take one step forward and let go of what&#x27;s going to happen. to happen. [Music] [Music] [Music] Heat. Heat. Heat. Heat. Heat. Heat. [Music] [Music] [Music] Heat. Heat. Heat. [Music] One, 2, 3, 4. [Music] [Music] Hey, Hey, Hey, [Music] [Music] [Music] [Applause] [Applause] [Applause] [Music] [Music] [Music] hey, hey. [Applause] [Applause] [Music] [Music] [Music] Hey, [Music] [Music] hey, hey.</p>
 <p>[Music] [Music] Hey, [Music] hey, hey. hey, hey. Heat. Heat. Heat. [Music] [Music] [Music] Heat. [Music] [Music] [Applause] [Applause] [Applause] [Music] [Music] [Music] Hey, [Applause] hey, hey. [Music] Hey, hey, hey. [Music] Hey, hey, hey. Hey, hey, hey. [Music] Yeah. [Music] [Music] Hey. Hey. Oh, Oh, [Music] [Music] A lot of people out there will struggle to pull themselves out of it. Move in the right direction. Take one step forward and let go of what&#x27;s going to happen. Heat. Heat. N. to happen. Heat. Heat. N. [Music] Heat. Heat. Heat. [Music] All righty, chat. Let&#x27;s get started. Welcome to another Healthy Gamer GG stream. My name is Dr. Alok Kanojia. Just a reminder that although I am a psychiatrist, nothing we discuss on stream today is intended to be taken as medical advice. Everything is for educational or entertainment purposes only. If y&#x27;all have a medical concern or question, please go see a licensed professional. Okay, chat, we&#x27;ve got a couple of Oh, I I see I have this vampire thing going today. Um, okay. So, I uh we&#x27;ve got a couple of quick announcements and then we&#x27;re going to hop into a lecture which is going to be great. Um, so couple of announcements. One, one is this Monday, uh, the 16th of June, we are actually doing a stream over on the membership site. Let me see if I can find chat.</p>
 <p>Just realized I did not pull up chat. Just realized I did not pull up chat. Um, Um, there&#x27;s the chat link. There we go. Hello, chat. I have missed There we go. Hello, chat. I have missed thee. thee. I feel lonely without you, chat. And then let&#x27;s open up all of the chats. We don&#x27;t want to just open up one chat. We need all of them. We need all of them. Dude, Dude, Dude, stream. stream. Why am I so bad at streaming? This is ridiculous, man. Okay. Pop out. There we go. Okay. All right. Hello. Okay. This feels so much better that I can see y&#x27;all and talk to y&#x27;all and hear y&#x27;all presumably. Okay. All right. So, a couple of quick announcements before we jump into today&#x27;s lecture. Um, so Monday the 16th, we&#x27;re having a very special guest and that is Akash Kanojia.</p>
 <p>My older brother uh is going to be coming over to the membership side to talk about money and finance. He is uh honestly the superior brother. He is smarter than I am. He has more degrees than I have. He also at Harvard and is is actually you guys are getting the the rejected internet den Kanojia brother. So he&#x27;s really a cool guy. So, he&#x27;s like was a triple major in college, started uh started college at the age of 16, went to law school, went to Harvard for a public policy degree, was a a consultant for McKinsey, was working for the Fed, managed like trillions of dollars of money, and then he also like went to India and then uh um like just helps regular people with their like financial issues and especially takes like a um like an emotional approach. So like why is like personal finance so hard for people?</p>
@@ -203,12 +343,12 @@ try {
 <section class="sec sec-b">
 <h2 id="transcript-15-meditation-feature-demo-and-healthy-gamer-growth">Meditation Feature Demo and Healthy Gamer Growth</h2>
 <p>So, this is one of the reasons, by the way, we made like coaching. And actually, maybe now is a good time to show y&#x27;all something else that we&#x27;re building. So, for those of y&#x27;all that watch a lot of stuff but don&#x27;t actually apply things, right? So, we talk a lot about meditation. So, we talk a lot about meditation. Um uh um I I want to show you all something. Okay, go. Hold on. I got to do this. Um, so we recognize, so this is what we&#x27;re trying to build. Okay, there&#x27;s a bunch of people on the internet who watch a lot of our stuff, especially things like meditation stuff. Oh god. And then they don&#x27;t actually um they don&#x27;t actually do it. So we&#x27;re instead of asking you to take responsibility for your life, we&#x27;re doing it for you. Go ahead, Brandon.</p>
-<p><span class="speaker">Brandon:</span> doing it for you. Go ahead, Brandon. Oh, Oh, testing. Hello. Can you hear me? Oh yeah, you&#x27;re super loud. Hold on a yeah, you&#x27;re super loud. Hold on a second. second. Um, someone start a call. Here we go. Turn you down, bro. Bro, user volume down. Okay, count to 10 for me. 1 2 3 4 5 6 7 8 9 10. Okay, should be good enough. Okay, so what you got for us? All right, so this is our feature or new feature that&#x27;ll be coming out soon in the next couple weeks. Um, we&#x27;ll probably preview it next week. Um, but this is meditation tracks. So, this is built for essentially users and people who want to learn to meditate but struggle to start and maintain a consistent meditation practice. Um, whether or not because you&#x27;re overwhelmed, you kind of like lack confidence in technique, you don&#x27;t know how to progress from beginners to an advanced meditation or how to like use meditation to accomplish specific goals.</p>
+<p>doing it for you. Go ahead, Brandon. Oh, Oh, testing. Hello. Can you hear me? Oh yeah, you&#x27;re super loud. Hold on a yeah, you&#x27;re super loud. Hold on a second. second. Um, someone start a call. Here we go. Turn you down, bro. Bro, user volume down. Okay, count to 10 for me. 1 2 3 4 5 6 7 8 9 10. Okay, should be good enough. Okay, so what you got for us? All right, so this is our feature or new feature that&#x27;ll be coming out soon in the next couple weeks. Um, we&#x27;ll probably preview it next week. Um, but this is meditation tracks. So, this is built for essentially users and people who want to learn to meditate but struggle to start and maintain a consistent meditation practice. Um, whether or not because you&#x27;re overwhelmed, you kind of like lack confidence in technique, you don&#x27;t know how to progress from beginners to an advanced meditation or how to like use meditation to accomplish specific goals.</p>
 <p>This is kind of like a guided practice and a guided method of like how do you get from being a complete noob in meditation to really utilizing it daily and understanding, you know, how do I use it and apply it in my daily life? Okay. So, what do I click? Can I click on this? Yeah, you can click on anything in here. Um, beginner track all the way through. I think they&#x27;ll all go to the right meditations. Um, I think it&#x27;s extreme delay. I&#x27;m not sure what you&#x27;re clicking on yet right now. Yeah. So, so since so I I I clicked on the intermediate track. So the way that this is divided is there&#x27;s like beginner stuff, there&#x27;s intermediate stuff and there&#x27;s advance advanced stuff, right?</p>
 <p>And then there&#x27;s also topic focused stuff. So as we build this out right now the it happens that the emotional processing stuff has more advanced techniques. The focus and impulse control stuff is like intermediate. So there&#x27;s day one, day two. So it&#x27;s kind of like a meditation program. Does it track what I&#x27;ve done, Trinian? Yes. So this does do some tracking. It&#x27;ll track weekly progress. It&#x27;ll track number of sessions you do in a week. It&#x27;ll track amount of time that you meditate. Um so really it&#x27;s supposed to help make sure you have the tools to understand, you know, what are you doing week to week, dayto day, um in order to achieve this goal. And then also it&#x27;ll track just like overall like how much are you meditating. This is cool. I think all the tracks for the in beginner track are implemented. So if you want to just like go on a beginner track page through those meditations there there&#x27;s a scientific reference here on Strathclyde and cognitive function. That&#x27;s cool.</p>
-<p><span class="speaker">Dr. K:</span> Yeah, it was it was cited by you. I think you approved the citation. I don&#x27;t remember that but okay. So the beginner track you said works, right? Yes. Okay, cool. Yeah. So for those of y&#x27;all like we just got a question. The reason I called you kind of abruptly is because we got a question in chat by someone who&#x27;s like, &quot;I watch all your videos, but I never do anything.&quot; And so we&#x27;re focused on, and I think we realize that because we&#x27;re we&#x27;re you chat. We&#x27;re we&#x27;re also degenerates who, you know, end up playing video games instead of doing things like meditating. Um, anything else that you kind of want to anything else that you kind of want to mention?</p>
-<p><span class="speaker">Brandon:</span> mention? Um really so this feature is going to be uh available to all users who either own the guide so the Dr. kids guide to mental health or meditation track there and then also it is will be available to tier 2 members on circle. Okay. So our community members there. Um really like the goal is just to get you like people into meditation just like how do you start building a meditation routine? Like it starts very simple just one meditation for like 3 to 5 minutes a day and it just keeps building on to that every single day until you&#x27;re doing upwards of 15 to 20 minutes of meditation at the end of the week or five weeks.</p>
-<p><span class="speaker">Dr. K:</span> So one month you can you can really build a meditation practice and get things started. Cool man. Thank you so much for coming. Yeah, thanks for having me on. So, um, Trinian has been with us like from year one of HG and I think he was one of the first five people on our team. He&#x27;s still with with us and um we&#x27;re trying to build stuff, right? So, I think like right now there&#x27;s a problem. So, we&#x27;re going to continue making lectures and stuff and hopefully that&#x27;ll help, right? It does help. But as someone in chat pointed out like I don&#x27;t actually do anything sometimes. So for those of y&#x27;all that are like so you know if you struggle with any of the problems that we&#x27;ve talked about today basically like meditation is effective for all of it but meditating is hard right? So meditating consistently is hard. That&#x27;s why we build stuff like this because we&#x27;re sort of recognizing there are a couple of like challenges in our community which 5 years in, let me just show you all something. Um show you all something. Um like like 5 years in let&#x27;s say Uh yeah, so like five years in like some people are making progress. So I saw this post.</p>
+<p>Yeah, it was it was cited by you. I think you approved the citation. I don&#x27;t remember that but okay. So the beginner track you said works, right? Yes. Okay, cool. Yeah. So for those of y&#x27;all like we just got a question. The reason I called you kind of abruptly is because we got a question in chat by someone who&#x27;s like, &quot;I watch all your videos, but I never do anything.&quot; And so we&#x27;re focused on, and I think we realize that because we&#x27;re we&#x27;re you chat. We&#x27;re we&#x27;re also degenerates who, you know, end up playing video games instead of doing things like meditating. Um, anything else that you kind of want to anything else that you kind of want to mention?</p>
+<p>mention? Um really so this feature is going to be uh available to all users who either own the guide so the Dr. kids guide to mental health or meditation track there and then also it is will be available to tier 2 members on circle. Okay. So our community members there. Um really like the goal is just to get you like people into meditation just like how do you start building a meditation routine? Like it starts very simple just one meditation for like 3 to 5 minutes a day and it just keeps building on to that every single day until you&#x27;re doing upwards of 15 to 20 minutes of meditation at the end of the week or five weeks.</p>
+<p>So one month you can you can really build a meditation practice and get things started. Cool man. Thank you so much for coming. Yeah, thanks for having me on. So, um, Trinian has been with us like from year one of HG and I think he was one of the first five people on our team. He&#x27;s still with with us and um we&#x27;re trying to build stuff, right? So, I think like right now there&#x27;s a problem. So, we&#x27;re going to continue making lectures and stuff and hopefully that&#x27;ll help, right? It does help. But as someone in chat pointed out like I don&#x27;t actually do anything sometimes. So for those of y&#x27;all that are like so you know if you struggle with any of the problems that we&#x27;ve talked about today basically like meditation is effective for all of it but meditating is hard right? So meditating consistently is hard. That&#x27;s why we build stuff like this because we&#x27;re sort of recognizing there are a couple of like challenges in our community which 5 years in, let me just show you all something. Um show you all something. Um like like 5 years in let&#x27;s say Uh yeah, so like five years in like some people are making progress. So I saw this post.</p>
 <p>I spoke with Dr. K. 3 years ago and now I&#x27;m considering a career in mental health and it&#x27;s like I did very well in undergrad. What? Right. Right. So, like this person, I guess we talked when they were 20 and in university and like now they they&#x27;re like considering a career in medicine and so they&#x27;re still looking for guidance and stuff, but like some for guidance and stuff, but like some people, people, you know, really do change their lives, which is great. And so, we&#x27;re going to continue offering stuff like that. But some people struggle to make more some people struggle to make more change.</p>
 <p>change. And so this is where we are trying to figure out how we can help y&#x27;all better. So what can we do to help y&#x27;all actually stick with a plan, create a plan? We&#x27;re running into other problems because our resources are now so vast. And I don&#x27;t say that out of ego. I mean like literally we have over a thousand videos on our YouTube channel. So, it&#x27;s like if you&#x27;re finding information, we also rolled out an interesting thing um like an alpha pilot of an AI over on the membership side that is not like a coach and will not talk to you about your feelings, but will scan our content if you have a question and direct you to the appropriate timestamp in video.</p>
 <p>So, we&#x27;re trying to build resources like that because there&#x27;s a lot of good stuff like I think this stream is a great example where there are a lot of excellent questions. There&#x27;s one question that was not related to puer aeternus at all, which is how do I deal with confrontation, but that lives on a stream somewhere and then disappears into the ether and no one knows how to find it. But it was the reason it I answered the question is because it&#x27;s the most upvoted question. So over the last five years of streaming, almost six years of streaming, I&#x27;ve answered all kinds of random questions that are in all kinds of random places that may be helpful to you. So, we&#x27;re trying to build these kinds of tools that will help y&#x27;all get more and hopefully improve your life get more and hopefully improve your life more.</p>
@@ -225,15 +365,21 @@ try {
 <p>And we started off like this is this little baby Dr. K. This is Puer Aeternus Dr. K. And then we made decisions and closed a lot of doors and I quit my job and stopped being faculty at Harvard Medical School. Closed a big door and left School. Closed a big door and left academia. Was going to start working at Harvard Business School too. Closed that door. So life is about closing doors and giving [ __ ] up. But even as you do that, thankfully when I did that, y&#x27;all had my back. And we have done our best to have your back. And when that happens, instead of living in a fantasy, we create a reality that is worth living.</p>
 <p>So, from the bottom of my heart, thank you very much. And we will see y&#x27;all on Monday over on the membership side with I know it&#x27;s great. We&#x27;ve accomplished so much here at Healthy Gamer. Wait till you all see the more successful Kanojia.</p>
 </section></article>
+    </div>
   </div>
+  
 
-  <p class="meta">Auto-transcribed livestream · chapters &amp; speaker labels are a best-effort approximation (claude-sonnet-4-6).</p>
+  <p class="meta">Medium summary · claude-sonnet-4-6 (no extended thinking)</p>
 </div>
 
 <script>
 (function () {
   var root = document.documentElement;
-  var tb = document.querySelector('.theme-toggle');
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'medium');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
   var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
   tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
@@ -241,6 +387,16 @@ try {
   function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
   var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+  // deep-link to a heading in any view: switch to that view, then scroll to it
+  function navigateTo(id){
+    var el = id && document.getElementById(id);
+    if (!el) return;
+    var v = el.closest('.view');
+    if (v) setView(v.getAttribute('data-view'));
+    el.scrollIntoView();
+  }
+  window.addEventListener('hashchange', function(){ navigateTo(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash) navigateTo(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>
 <script>

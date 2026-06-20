@@ -9,7 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-} catch (e) {}
+  document.documentElement.setAttribute('data-view', localStorage.getItem('pubview') || 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -24,16 +25,152 @@ try {
   </nav>
 
   <h1>Just Vibin' & Reacting To Collargate</h1>
-  <p class="watch">
-    <a href="https://www.youtube.com/watch?v=F5vq_OM5xF4" target="_blank" rel="noopener">▶ Watch on YouTube</a>
-    <span class="speakers-note">Speakers (auto-detected): Dr. K</span>
-  </p>
+  <p class="watch"><a href="https://www.youtube.com/watch?v=F5vq_OM5xF4" target="_blank" rel="noopener">▶ Watch on YouTube</a></p>
 
-  <div class="doc">
-    <nav class="toc"><p class="toc-title">Chapters</p><ul><li><a href="#transcript-0-autonomous-action-vs-emotion-driven-behavior">Autonomous Action vs. Emotion-Driven Behavior</a></li><li><a href="#transcript-1-institutional-collapse-schools-wages-and-student-disengagement">Institutional Collapse: Schools, Wages, and Student Disengagement</a></li><li><a href="#transcript-2-male-suicide-belonging-and-the-limits-of-mental-illness">Male Suicide, Belonging, and the Limits of Mental Illness</a></li><li><a href="#transcript-3-stream-introduction-and-callergate-overview">Stream Introduction and Callergate Overview</a></li><li><a href="#transcript-4-healthy-gamer-institute-and-digital-wellness-ce">Healthy Gamer Institute and Digital Wellness CE</a></li><li><a href="#transcript-5-what-is-callergate-and-why-it-matters">What Is Callergate and Why It Matters</a></li><li><a href="#transcript-6-online-radicalization-and-the-failure-of-dialogue">Online Radicalization and the Failure of Dialogue</a></li><li><a href="#transcript-7-mentalization-understanding-others-psychological-drivers">Mentalization: Understanding Others&#x27; Psychological Drivers</a></li><li><a href="#transcript-8-evidence-narrative-bias-and-differential-diagnosis">Evidence, Narrative Bias, and Differential Diagnosis</a></li><li><a href="#transcript-9-displacement-projection-and-pent-up-resentment">Displacement, Projection, and Pent-Up Resentment</a></li><li><a href="#transcript-10-proportionality-accountability-and-faith-in-people">Proportionality, Accountability, and Faith in People</a></li><li><a href="#transcript-11-why-both-sides-dislike-dr-k-narrative-filtering">Why Both Sides Dislike Dr. K: Narrative Filtering</a></li><li><a href="#transcript-12-introduction-to-nighttime-anxiety">Introduction to Nighttime Anxiety</a></li><li><a href="#transcript-13-circadian-rhythm-cortisol-and-the-amygdala-at-night">Circadian Rhythm, Cortisol, and the Amygdala at Night</a></li><li><a href="#transcript-14-frontal-lobe-suppression-and-distraction-worsening-anxiety">Frontal Lobe Suppression and Distraction Worsening Anxiety</a></li><li><a href="#transcript-15-default-mode-network-and-melatonin-s-role">Default Mode Network and Melatonin&#x27;s Role</a></li><li><a href="#transcript-16-practical-solutions-sleep-window-breathing-and-pro-sleep-signals">Practical Solutions: Sleep Window, Breathing, and Pro-Sleep Signals</a></li><li><a href="#transcript-17-emotional-processing-what-it-means-and-why-it-matters">Emotional Processing: What It Means and Why It Matters</a></li><li><a href="#transcript-18-catatonia-kindling-and-brain-architecture">Catatonia, Kindling, and Brain Architecture</a></li><li><a href="#transcript-19-training-away-emotional-reactivity-tranquility-and-the-two-arrows">Training Away Emotional Reactivity: Tranquility and the Two Arrows</a></li><li><a href="#transcript-20-detaching-from-pleasure-and-pain-the-buddha-s-teaching">Detaching from Pleasure and Pain: The Buddha&#x27;s Teaching</a></li><li><a href="#transcript-21-closing-questions-and-stream-wrap-up">Closing Questions and Stream Wrap-Up</a></li></ul></nav>
-    <article class="summary transcript"><section class="sec sec-a">
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">2,764w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">31,520w</span></button>
+    
+  </div>
+
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#medium-summary">Summary</a></li>
+<li><a href="#medium-the-machinery-behind-internet-outrage">The Machinery Behind Internet Outrage</a></li>
+<li><a href="#medium-what-mentalization-actually-is-and-why-were-bad-at-it">What Mentalization Actually Is — And Why We're Bad at It</a></li>
+<li><a href="#medium-displaced-resentment-and-the-psychology-of-mob-anger">Displaced Resentment and the Psychology of Mob Anger</a></li>
+<li><a href="#medium-why-your-anxiety-gets-so-much-worse-at-night">Why Your Anxiety Gets So Much Worse at Night</a></li>
+<li><a href="#medium-what-emotional-processing-actually-means">What Emotional Processing Actually Means</a></li>
+<li><a href="#medium-on-becoming-genuinely-tranquil-rather-than-regulated">On Becoming Genuinely Tranquil (Rather Than Regulated)</a></li>
+<li><a href="#medium-common-pitfalls">Common Pitfalls</a></li>
+<li><a href="#medium-action-items-exercises">Action Items &amp; Exercises</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="medium-summary">Summary</h2>
+<p><strong>TL;DR —</strong> When the internet explodes over a controversy, the explosion itself reveals something more important than the controversy. This stream covers three interlocking ideas: why internet mobs form and what psychological forces drive them, why anxiety gets dramatically worse at night and what actually helps, and how to stop needing emotional regulation in the first place by cultivating genuine tranquility.</p>
+<p>The "Collargate" incident — a 37-second clip of a streamer appearing to discipline his dog — serves as a live case study in mentalization failure, online radicalization, narrative bias, and displaced resentment. The anxiety lecture that follows turns out to be about much more than sleep: it's about what happens when you spend a lifetime distracting yourself from feelings you were never taught to face. And the final thread, on emotional processing and tranquility, connects both halves of the stream into a coherent picture of what it means to move through the world without getting permanently altered by it.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-the-machinery-behind-internet-outrage">The Machinery Behind Internet Outrage</h2>
+<p>The Collargate controversy wasn't really about a dog collar. What made it worth examining is a pattern that repeats everywhere — in politics, in workplace conflicts, in marriages falling apart — and understanding that pattern is more useful than reaching a verdict on any particular person.</p>
+<p>The first mechanism is <strong>sensitivity to change (delta)</strong>. Human brains are wired to notice novelty and contrast. Research going back to 1938 confirms that the eye (and by extension, the whole perceptual system) is far more sensitive to changes in its environment than to steady states. On the internet, this translates directly: when someone who is perceived as a champion of the underdog appears to harm a vulnerable creature, that contrast is electrifying. The gap between the expected persona and the apparent behavior is what creates the viral energy — not the act itself.</p>
+<p>The second mechanism is <strong>emotion-driven belief formation</strong>. When a clip activates your emotions, whatever thoughts your brain produces in that moment feel true. This isn't a character flaw; it's a consistent feature of how cognition works under arousal. The research on this is extensive. In the context of Collargate: funny, entertaining defendants feel more credible (see: Johnny Depp's demeanor during his trial). Memes depicting a person in a villainous role — even ones you "know are just jokes" — measurably shift your beliefs about that person. There is no neutral consumption.</p>
+<p>The third mechanism is <strong>online radicalization and the collapse of dialogue</strong>. The more time you spend inside any ideological bubble, the more your thinking is shaped by that bubble. Two communities can start at similar points, stop talking to each other, and end up so far apart that they appear to be living in literally different realities. The tragedy is that each side then frames the other's divergent reality as evidence of dishonesty rather than as evidence of a different epistemic environment. This is why even direct conversations between critics and defenders of the same person talk <em>past</em> each other rather than <em>to</em> each other.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-what-mentalization-actually-is-and-why-were-bad-at-it">What Mentalization Actually Is — And Why We're Bad at It</h2>
+<p><strong>Mentalization</strong> is the practice of asking, when a human being does something: what are the psychological drivers actually producing that behavior? This includes understanding your own behavior from the inside.</p>
+<p>The failure mode looks like this: someone's BFF loses weight before the wedding. The insecure bride's mind immediately produces the hypothesis "she did this to make me look bad." That hypothesis feels true. The bride never pauses to consider the hundreds of other reasons a person might lose weight, most of which have nothing to do with her. The mind produces a narrative, emotions confirm it, and then the narrative drives behavior — all without any genuine inquiry.</p>
+<p>In the Collargate case, mentalization means being willing to sit with a genuinely uncomfortable question: if the accused person is actually innocent, what exactly could they do? Is there any conceivable action they could take that disbelievers would accept as exculpatory? If the answer is "no," that tells you something important — not necessarily about the accused person, but about the state of your own reasoning.</p>
+<blockquote>
+<p>"What would it take for you to change your mind? We do not ask ourselves this question enough."</p>
+</blockquote>
+<p>This question matters because we rationalize incrementally. You don't end up at a radicalized position in one step. You start at zero, rationalize a small thing, rationalize the next small thing, and end up at a hundred without ever experiencing a moment where you consciously decided to go that far. Asking "what would change my mind?" ahead of time is the only real protection against that drift.</p>
+<p><strong>Selection bias</strong> compounds everything. When a negative narrative forms, positive evidence gets buried and negative clips surface. This doesn't mean the negative clips are false — it means the sample of evidence reaching you is no longer representative. The people inside a situation who have spent years observing it hold information that a 37-second clip cannot convey, and discounting their testimony as coordinated cover-up is the lazy default, not the critical-thinking response.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-displaced-resentment-and-the-psychology-of-mob-anger">Displaced Resentment and the Psychology of Mob Anger</h2>
+<p>There's something else underneath the viral outrage, something harder to name. When you sit with the question "why does this particular incident generate this particular level of intensity?" you start to notice a list of grievances that extends well beyond one streamer and one dog:</p>
+<ul>
+<li>People escaping accountability for far larger harms</li>
+<li>Hypocrisy in people with large platforms</li>
+<li>Double standards in who gets punished for what</li>
+<li>Gaslighting, deflection, and "whataboutism"</li>
+<li>A general sense that the systems that are supposed to provide justice… don't</li>
+</ul>
+<p>None of these grievances have a clear, actionable target. You can't personally hold a corporation accountable. You can't personally expose every hypocrite. The resentment accumulates with nowhere to go.</p>
+<p>And then someone fitting the description shows up in a context where, for once, the crowd <em>can</em> act. The mob doesn't distinguish between the resentment that is legitimately about this person and the resentment that has been building from a hundred other sources. It all lands in the same place.</p>
+<blockquote>
+<p>"We've got one guy and when the mob gets angry and it's angry at fifteen people and one person fitting the description of the other fourteen shows up, they tear him apart."</p>
+</blockquote>
+<p>This is displacement and projection operating at scale. Calling it out doesn't mean the person at the center is innocent — it means the intensity of the reaction is partially a function of how much pent-up emotional energy has accumulated and how few other outlets exist. An appropriate level of accountability applied to what actually happened is different from a mob dumping years of generalized frustration onto a single available target.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-why-your-anxiety-gets-so-much-worse-at-night">Why Your Anxiety Gets So Much Worse at Night</h2>
+<p>Four distinct mechanisms converge to make nighttime anxiety worse — and understanding them matters because some of the most common coping strategies actively worsen the problem.</p>
+<p><strong>1. Cortisol follows a circadian curve.</strong> Cortisol peaks in the morning, drops throughout the day, and bottoms out around midnight. People with anxiety disorders tend to show a flattened cortisol curve — without the sharp morning peak and the clear evening trough, the hormonal scaffolding that normally makes winding down feel natural is disrupted.</p>
+<p><strong>2. The amygdala becomes hyperactive at night by design.</strong> The amygdala is the brain's threat-detection and negative-emotion center. When you go to sleep, amygdala activity naturally increases. This is not a bug — it's adaptive. You become more sensitive to sounds and threats precisely because you're vulnerable during sleep. This same hyperactivity is what drives emotionally intense dreams and nightmares, which are how the brain processes emotions during sleep. But if you already have anxiety, this natural amplification makes everything worse.</p>
+<p><strong>3. The frontal lobe shuts down.</strong> The frontal lobe suppresses the amygdala during waking hours. It's the source of willpower, focus, and emotional restraint. But it's also a finite resource that depletes over the course of a day. As you go to sleep, the frontal lobe reduces its activity — which is necessary for sleep to happen at all. The double effect: the part of your brain that generates anxiety turns up, and the part that damps anxiety turns off. Nighttime anxiety isn't a coincidence.</p>
+<p><strong>4. Distraction-based coping creates a dependency that breaks at bedtime.</strong> This is the most actionable piece. If your primary method of managing anxiety during the day is keeping busy, staying distracted, and pushing thoughts aside, you are training your brain to regulate anxiety using external stimuli. When you go to sleep, the external stimuli disappear — and your brain has no internal skill to fall back on. The anxiety that was being suppressed all day doesn't vanish; it's been accumulating, and now it floods the space.</p>
+<blockquote>
+<p>"If distraction is my method of regulating anxiety and I go to sleep, there's a problem — because when I sleep, there is a sensory deprivation."</p>
+</blockquote>
+<p>A fifth factor: the <strong>default mode network</strong> — the brain's self-referential processing system — also increases activity at night. This is why the anxious mind naturally turns to replaying conversations, imagining worst-case scenarios, and ruminating on regrets. It's designed to do a little self-review at the end of the day. But for someone with anxiety or depression, that system can spiral badly.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-what-emotional-processing-actually-means">What Emotional Processing Actually Means</h2>
+<p>The brain is not like cement — it's like clay. Every time you activate an emotional circuit without processing it, you change the architecture of the brain in whatever direction the raw emotion points. Suppression doesn't stop this; it just makes you unaware of it while the rewiring continues underground.</p>
+<p><strong>Emotional processing</strong> is the act of allowing an emotion to exist and then dissipating it <em>without</em> letting it permanently reshape your neural wiring. The goal is not to feel nothing — it's to move through an emotion and come out the other side essentially the same person you were before it hit.</p>
+<p>When emotions are not processed, resentment builds. The person who has spent years accumulating unprocessed emotional responses becomes genuinely different from who they were — not metaphorically, but neurologically. Their triggers are more sensitive (a phenomenon called <strong>kindling</strong> in neurology), their reactions more extreme, and their baseline further from neutral.</p>
+<p>Rumination is a specific trap here. Anxiety would naturally expire on its own — the amygdala fires, the homeostatic system kicks in, and the feeling subsides. But rumination creates a new anxious thought just as the previous one is fading, feeding the spiral. The anxiety doesn't compound because homeostasis doesn't work; it compounds because you keep generating new inputs.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-on-becoming-genuinely-tranquil-rather-than-regulated">On Becoming Genuinely Tranquil (Rather Than Regulated)</h2>
+<p>There's a level beyond emotional regulation: training yourself so that you don't need to regulate in the first place. This is what experience and attitude can produce — not the absence of perception, but a different relationship to what you perceive.</p>
+<p>The Buddha's two-arrow teaching is relevant here. The first arrow is what life shoots at you — pain, loss, rejection, failure. You cannot prevent the first arrow. The second arrow is what you shoot at yourself in response — the story you attach, the identity claim you make, the meaning you assign. <em>Getting dumped doesn't make you unlovable. That's the story you add on top.</em></p>
+<p>What's rarely taught is that this applies equally to positive events. If praise, success, or good fortune becomes attached to your identity — <em>I am a winner</em> — then the wiring is the same as when failure becomes <em>I am a loser.</em> The connection between event and self is the problem, in both directions. Detaching from positive outcomes is actually easier to practice first, and it's the precondition for not being devastated by negative ones.</p>
+<p>The two practical paths to tranquility:</p>
+<ol>
+<li><strong>Cultivate the right attitude toward events.</strong> The way you interpret what happens to you determines the bulk of your emotional response. "I failed" versus "I discovered a gap in my knowledge" are not spin — they activate different neural responses, form different memories, and create different futures.</li>
+<li><strong>Practice tranquility directly.</strong> Put yourself in situations that activate discomfort and stay still in them. Physical stillness for five minutes. The ten-foot diving board. Volunteering somewhere uncomfortable. The research on volunteering and depression is unambiguous — helping someone else is one of the most effective interventions available.</li>
+</ol>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-common-pitfalls">Common Pitfalls</h2>
+<p><strong>Believing your emotional reactions are logical.</strong> When you're emotionally activated, the thoughts your brain produces feel true. They aren't necessarily. This is not a personal failing — it's how cognition under emotional arousal works. The solution is not to distrust all your thoughts, but to build in a delay and a diagnostic: <em>what would change my mind about this?</em></p>
+<p><strong>Confusing distraction with coping.</strong> Staying busy, pushing thoughts aside, keeping the TV on — these suppress anxiety rather than processing it. They feel like they work during the day because the frontal lobe is still online to help. At night, the bill comes due.</p>
+<p><strong>Thinking that defending someone means dismissing evidence, or that criticizing them means you've cracked the case.</strong> In medicine there's a concept called differential diagnosis: even when the evidence looks damning, you hold multiple hypotheses simultaneously. Internet culture skips this step entirely.</p>
+<p><strong>Thinking that accountability and displaced resentment are mutually exclusive.</strong> Pointing out that a reaction is disproportionate is not the same as saying the target deserves no accountability. It's saying: give the appropriate amount of accountability for what actually happened. Dumping accumulated rage from fifteen different unresolved situations onto one available person is not justice — it's relief seeking.</p>
+<p><strong>Missing your sleep window.</strong> The assumption that more tired equals easier to fall asleep is incorrect. Falling asleep requires willpower from the frontal lobe. If you blow past your natural sleep window (roughly 14–16 hours after waking), the frontal lobe is too depleted to shut the system down. You overshoot into a second-wind state where only exhaustion severe enough to cause passing out will put you under — and you'll feel worse tomorrow even after a full night.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-action-items-exercises">Action Items &amp; Exercises</h2>
+<ol>
+<li>
+<p><strong>Practice the "what would change my mind?" test.</strong> Pick one belief you hold about a person, group, or situation. Ask yourself honestly: what piece of evidence, if true, would cause me to update this belief? If you can't think of anything, that's important information about how radicalized your position has become.</p>
+</li>
+<li>
+<p><strong>Do less distraction-as-coping.</strong> For one hour per day — ideally a walk, ideally outside — let anxious thoughts be present without reaching for your phone, music, or any external input. Notice what happens. The anxiety will rise and then, if you don't feed it with rumination, it will subside. This is the homeostatic mechanism working.</p>
+</li>
+<li>
+<p><strong>Catch rumination in progress.</strong> When you notice an anxious thought spiraling, recognize that it's not one continuous anxiety — it's a sequence of newly generated thoughts, each of which restarts the cycle. Name the pattern ("I'm ruminating") and redirect rather than trying to argue with the content of the thoughts.</p>
+</li>
+<li>
+<p><strong>Respect your sleep window.</strong> Identify when you naturally start to feel sleepy (not exhausted — sleepy) and treat that as your window. Go to bed before you feel fully ready. Use that remaining frontal-lobe energy to resist the phone, keep the lights low, and stay in bed. Going to sleep is an active process that requires willpower.</p>
+</li>
+<li>
+<p><strong>Practice mentalization on a low-stakes situation.</strong> Find someone in your life whose behavior recently annoyed or confused you. Generate three alternative explanations for why they might have done what they did — explanations that have nothing to do with their intentions toward you. This is not about excusing behavior; it's about training the habit of holding multiple hypotheses before committing to one.</p>
+</li>
+<li>
+<p><strong>Try to detach from a positive event this week.</strong> When something good happens — a compliment, a success, a lucky break — consciously resist the urge to integrate it into your identity. Notice the accomplishment, feel the moment, and then let it pass without making it mean something about who you are. This is harder than it sounds and considerably easier than trying to detach from pain first.</p>
+</li>
+<li>
+<p><strong>Direct your resentment toward actionable targets.</strong> If you notice you're intensely invested in seeing a particular person "held accountable" online, ask yourself honestly whether there are more proximate sources of that feeling in your own life. Then do something concrete there — set a boundary, have a conversation, take an action — rather than channeling it into online drama.</p>
+</li>
+</ol>
+</section></article>
+    </div>
+  </div>
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc"><ul><li><a href="#transcript-0-autonomous-action-vs-emotion-driven-behavior">Autonomous Action vs. Emotion-Driven Behavior</a></li><li><a href="#transcript-1-institutional-collapse-schools-wages-and-student-disengagement">Institutional Collapse: Schools, Wages, and Student Disengagement</a></li><li><a href="#transcript-2-male-suicide-belonging-and-the-limits-of-mental-illness">Male Suicide, Belonging, and the Limits of Mental Illness</a></li><li><a href="#transcript-3-stream-introduction-and-callergate-overview">Stream Introduction and Callergate Overview</a></li><li><a href="#transcript-4-healthy-gamer-institute-and-digital-wellness-ce">Healthy Gamer Institute and Digital Wellness CE</a></li><li><a href="#transcript-5-what-is-callergate-and-why-it-matters">What Is Callergate and Why It Matters</a></li><li><a href="#transcript-6-online-radicalization-and-the-failure-of-dialogue">Online Radicalization and the Failure of Dialogue</a></li><li><a href="#transcript-7-mentalization-understanding-others-psychological-drivers">Mentalization: Understanding Others&#x27; Psychological Drivers</a></li><li><a href="#transcript-8-evidence-narrative-bias-and-differential-diagnosis">Evidence, Narrative Bias, and Differential Diagnosis</a></li><li><a href="#transcript-9-displacement-projection-and-pent-up-resentment">Displacement, Projection, and Pent-Up Resentment</a></li><li><a href="#transcript-10-proportionality-accountability-and-faith-in-people">Proportionality, Accountability, and Faith in People</a></li><li><a href="#transcript-11-why-both-sides-dislike-dr-k-narrative-filtering">Why Both Sides Dislike Dr. K: Narrative Filtering</a></li><li><a href="#transcript-12-introduction-to-nighttime-anxiety">Introduction to Nighttime Anxiety</a></li><li><a href="#transcript-13-circadian-rhythm-cortisol-and-the-amygdala-at-night">Circadian Rhythm, Cortisol, and the Amygdala at Night</a></li><li><a href="#transcript-14-frontal-lobe-suppression-and-distraction-worsening-anxiety">Frontal Lobe Suppression and Distraction Worsening Anxiety</a></li><li><a href="#transcript-15-default-mode-network-and-melatonin-s-role">Default Mode Network and Melatonin&#x27;s Role</a></li><li><a href="#transcript-16-practical-solutions-sleep-window-breathing-and-pro-sleep-signals">Practical Solutions: Sleep Window, Breathing, and Pro-Sleep Signals</a></li><li><a href="#transcript-17-emotional-processing-what-it-means-and-why-it-matters">Emotional Processing: What It Means and Why It Matters</a></li><li><a href="#transcript-18-catatonia-kindling-and-brain-architecture">Catatonia, Kindling, and Brain Architecture</a></li><li><a href="#transcript-19-training-away-emotional-reactivity-tranquility-and-the-two-arrows">Training Away Emotional Reactivity: Tranquility and the Two Arrows</a></li><li><a href="#transcript-20-detaching-from-pleasure-and-pain-the-buddha-s-teaching">Detaching from Pleasure and Pain: The Buddha&#x27;s Teaching</a></li><li><a href="#transcript-21-closing-questions-and-stream-wrap-up">Closing Questions and Stream Wrap-Up</a></li></ul></div></nav>
+      <article class="summary"><section class="sec sec-a">
 <h2 id="transcript-0-autonomous-action-vs-emotion-driven-behavior">Autonomous Action vs. Emotion-Driven Behavior</h2>
-<p><span class="speaker">Dr. K:</span> decide for yourself how are you going to live the next day of your life, the next week of your life, the next month of your life and move in that direction. Even if you fall short, so as you fall short, you&#x27;ll notice negative emotions will crop up. Right? If you if you set a target for yourself and you fell short, negative emotions crop up, you feel ashamed. If you give into that shame, if you try to get rid of the shame, then you&#x27;re still externally motivated. And then if you feel ashamed, you&#x27;ll act. And if you don&#x27;t feel ashamed, you won&#x27;t act. It&#x27;s a terrible way to live life. To require shame as the fuel of your action is like a lose-lose situation. So we need to disable the whole circuit. Be autonomous. So set a target that encompasses the life that you want to live. Then when you wake up in the morning, you&#x27;re not going to feel like doing it. And then ask yourself one question. Do I want to be a person who does what they feel like or does what they intend? And in that moment, you can make that choice. It&#x27;s as simple as that. Not saying it&#x27;s easy. It&#x27;s as simple. There are some people whose life is dictated by their feelings. They are propelled to action based on how they feel. If I am curious about something, I will look into it. If I am excited about playing this video game, I will play it.</p>
+<p>decide for yourself how are you going to live the next day of your life, the next week of your life, the next month of your life and move in that direction. Even if you fall short, so as you fall short, you&#x27;ll notice negative emotions will crop up. Right? If you if you set a target for yourself and you fell short, negative emotions crop up, you feel ashamed. If you give into that shame, if you try to get rid of the shame, then you&#x27;re still externally motivated. And then if you feel ashamed, you&#x27;ll act. And if you don&#x27;t feel ashamed, you won&#x27;t act. It&#x27;s a terrible way to live life. To require shame as the fuel of your action is like a lose-lose situation. So we need to disable the whole circuit. Be autonomous. So set a target that encompasses the life that you want to live. Then when you wake up in the morning, you&#x27;re not going to feel like doing it. And then ask yourself one question. Do I want to be a person who does what they feel like or does what they intend? And in that moment, you can make that choice. It&#x27;s as simple as that. Not saying it&#x27;s easy. It&#x27;s as simple. There are some people whose life is dictated by their feelings. They are propelled to action based on how they feel. If I am curious about something, I will look into it. If I am excited about playing this video game, I will play it.</p>
 <p>These people who have their actions tied to their feelings also engage in a lot of avoidance. This is the number one sign. If you are living a life of avoidance, this means that your actions are controlled by your emotions. So, I&#x27;m not going to do this because I feel embarrassed. Although, you may not even realize that. You&#x27;ll find that you seem stuck. You don&#x27;t do much, right? And you&#x27;re like, I don&#x27;t know why I do much. And then this is a very good experiment that you can do. Go and try to do something and notice what happens within you. What you will find is if you go and try to take some action, some kind of very strong discomfort will arise. And then what ends up happening, why do you avoid? Because if you engage in that action, it creates a negative feeling.</p>
 </section>
 <section class="sec sec-b">
@@ -304,15 +441,21 @@ try {
 <p>Um, how do I tell a narcissistic person to shut up without them getting angry at to shut up without them getting angry at me? me? Last thing. So in life, we can choose to act or we can choose to avoid consequences. We can&#x27;t choose both. If you&#x27;re going to tell someone to shut up, you got to deal with the consequences. Or you can keep silent and then they won&#x27;t be angry with you. So so many people live life because they&#x27;re trying to do something without the emotional consequence. Doesn&#x27;t work that way. The moment that you accept the emotional consequence, the action will be easy to do. they&#x27;re going to be angry. So be it.</p>
 <p>Right? You get one. You get the emotion or you get the action. You get you get to be free from one of those two. Okay. Thank you all very much for coming today. Um hopefully nothing I said today was out of line. But if y&#x27;all really do feel like I spoke out of turn with all this Callergate stuff, please let me know. I&#x27;m I&#x27;m genuinely open to feedback about it. I also genuinely hope that nothing I said today creates [ __ ] for Hassan or anybody else, XQC, whatever. I I don&#x27;t wish any bit of ill upon them. And also, if people from their community, I know we had some Hassan supporters in chat today that seem pretty positive with what we were saying. You know, if y&#x27;all are members of some of these communities and you still think that we&#x27;re out of line or not still, you think we&#x27;re out of line, like, please let us know. Right? So, this is where I&#x27;m open to dialogue about it. And thank you all for coming today.</p>
 </section></article>
+    </div>
   </div>
+  
 
-  <p class="meta">Auto-transcribed livestream · chapters &amp; speaker labels are a best-effort approximation (claude-sonnet-4-6).</p>
+  <p class="meta">Medium summary · claude-sonnet-4-6 (no extended thinking)</p>
 </div>
 
 <script>
 (function () {
   var root = document.documentElement;
-  var tb = document.querySelector('.theme-toggle');
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'medium');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
   var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
   tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
@@ -320,6 +463,16 @@ try {
   function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
   var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+  // deep-link to a heading in any view: switch to that view, then scroll to it
+  function navigateTo(id){
+    var el = id && document.getElementById(id);
+    if (!el) return;
+    var v = el.closest('.view');
+    if (v) setView(v.getAttribute('data-view'));
+    el.scrollIntoView();
+  }
+  window.addEventListener('hashchange', function(){ navigateTo(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash) navigateTo(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>
 <script>

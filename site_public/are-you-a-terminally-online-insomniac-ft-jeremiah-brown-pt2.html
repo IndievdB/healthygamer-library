@@ -9,7 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-} catch (e) {}
+  document.documentElement.setAttribute('data-view', localStorage.getItem('pubview') || 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -24,35 +25,172 @@ try {
   </nav>
 
   <h1>Are You A Terminally Online Insomniac ft. Jeremiah Brown pt2</h1>
-  <p class="watch">
-    <a href="https://www.youtube.com/watch?v=B05belFSkTI" target="_blank" rel="noopener">▶ Watch on YouTube</a>
-    <span class="speakers-note">Speakers (auto-detected): Dr. K, Guest</span>
-  </p>
+  <p class="watch"><a href="https://www.youtube.com/watch?v=B05belFSkTI" target="_blank" rel="noopener">▶ Watch on YouTube</a></p>
 
-  <div class="doc">
-    <nav class="toc"><p class="toc-title">Chapters</p><ul><li><a href="#transcript-0-technical-difficulties-and-reconnecting">Technical Difficulties and Reconnecting</a></li><li><a href="#transcript-1-ego-identity-and-suffering">Ego, Identity, and Suffering</a></li><li><a href="#transcript-2-overthinking-vs-thoughts-book-discussion">Overthinking vs. Thoughts: Book Discussion</a></li></ul></nav>
-    <article class="summary transcript"><section class="sec sec-a">
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">2,575w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">495w</span></button>
+    
+  </div>
+
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#medium-summary">Summary</a></li>
+<li><a href="#medium-ego-attachment-is-the-engine-of-suffering">Ego Attachment Is the Engine of Suffering</a></li>
+<li><a href="#medium-thoughts-arent-the-problem-thinking-is">Thoughts Aren't the Problem — Thinking Is</a></li>
+<li><a href="#medium-why-sleep-isnt-optional-and-why-you-keep-skipping-it">Why Sleep Isn't Optional — And Why You Keep Skipping It</a></li>
+<li><a href="#medium-the-terminally-online-trap">The Terminally Online Trap</a></li>
+<li><a href="#medium-the-physiology-youre-working-against">The Physiology You're Working Against</a></li>
+<li><a href="#medium-overthinking-at-night-is-a-specific-problem">Overthinking at Night Is a Specific Problem</a></li>
+<li><a href="#medium-common-pitfalls">Common Pitfalls</a></li>
+<li><a href="#medium-action-items-exercises">Action Items &amp; Exercises</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="medium-summary">Summary</h2>
+<p><strong>TL;DR — Being terminally online, chronically sleep-deprived, and overly identified with a fixed self-image are three interlocking traps that quietly drain your life. Understanding how they connect gives you a path out.</strong></p>
+<p>This conversation goes deep on several overlapping themes: how ego and identity attachment create suffering, why overthinking (not thoughts themselves) is the real enemy, the neuroscience of sleep and why you can't hack your way out of it, and how being perpetually online subtly rewires your relationship with yourself and reality. These aren't abstract ideas — they show up in the daily texture of feeling stuck, anxious, exhausted, and unable to just <em>be</em>.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-ego-attachment-is-the-engine-of-suffering">Ego Attachment Is the Engine of Suffering</h2>
+<p>There's a crucial distinction between having an identity and being <em>fused</em> to one. Everyone has a sense of self — that's normal and necessary. The problem starts when that identity becomes something you have to <em>defend</em>.</p>
+<p>When you attach to a particular self-image — "I'm the smart one," "I'm successful," "I'm a good person" — and something happens that threatens that image, the suffering that follows isn't really about the external event. It's about the threat to the story you're telling about yourself. The event is the trigger; the ego is the fuel.</p>
+<p>This is worth sitting with, because it reframes a lot of ordinary frustration and anxiety. The reason criticism from a stranger can ruin your whole day isn't because they said something objectively devastating — it's because something in what they said brushed up against an identity you're protecting. The more rigid and defended that identity, the more surface area there is for the world to wound you.</p>
+<p>The flip side of this is that loosening your grip on a fixed self-concept doesn't make you a pushover or leave you with no sense of self. It actually does the opposite — it gives you more stability, because you're no longer dependent on the world constantly confirming your story about who you are.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-thoughts-arent-the-problem-thinking-is">Thoughts Aren't the Problem — Thinking Is</h2>
+<p>There's a book called <em>How to Stop Overthinking</em> by Joseph Noen that draws a sharp and useful line: <strong>thoughts</strong> are not the source of suffering. <strong>Thinking</strong> is.</p>
+<p>The difference matters. A thought arrives — <em>"I might lose my job tomorrow."</em> That thought, by itself, is just a blip. It passes through. The suffering begins when you grab that thought and start <em>working it</em> — when you follow it down the chain: <em>if I lose my job, then this happens, then that happens, then my whole life unravels.</em> An hour later you're lying awake, heart pounding, having constructed an elaborate catastrophe out of something that hasn't happened and may never happen.</p>
+<blockquote>
+<p>"Think about the five best moments of your life and the five worst moments of your life. How much were you thinking — or in your head — during the five worst moments? And how much were you thinking during the five best?"</p>
+</blockquote>
+<p>That question is almost self-answering. The best moments — real connection, flow, awe, joy — tend to be the ones where the internal narrator went quiet. The worst moments, by contrast, are often ones where your mind wouldn't stop running.</p>
+<p>This reframe is practically useful because it changes where you aim your effort. Trying to <em>stop having thoughts</em> is a losing battle — thoughts arise automatically, that's just what minds do. But you <em>can</em> learn to notice when you've crossed from "a thought arrived" into "I'm now thinking <em>with</em> this thought," and that's the moment you can do something different. You don't have to follow every thought to its conclusion.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-why-sleep-isnt-optional-and-why-you-keep-skipping-it">Why Sleep Isn't Optional — And Why You Keep Skipping It</h2>
+<p>Sleep is not a productivity variable you can optimize around. It is the baseline biological process on which every other cognitive and emotional function depends. When it breaks down, everything else starts to crack with it.</p>
+<p>The relationship between screen time and sleep is not just about blue light, though blue light is real. The deeper mechanism is <strong>cortisol</strong>. Light — especially the short-wavelength light that screens emit — triggers cortisol release. Cortisol is a wakefulness and alertness hormone. When you're bathing your eyes in screen light late at night, you're essentially telling your nervous system: it's daytime, stay alert. Melatonin, which is supposed to start rising in the evening to cue sleep, gets suppressed.</p>
+<p>The cascade that follows isn't just that you fall asleep later. Sleep architecture gets disrupted. The specific stages of sleep — particularly the deeper stages — are when the brain does its maintenance work: consolidating memories, clearing metabolic waste, regulating emotional tone for the next day. Cutting that short or fragmenting it doesn't just leave you tired; it leaves you cognitively slower, emotionally more reactive, and less able to handle stress.</p>
+<p>There's also a <strong>feedback loop</strong> that makes this self-reinforcing. Poor sleep impairs your judgment about how impaired you are. Studies on sleep deprivation consistently find that people who are significantly sleep-deprived rate their own functioning as "fine" or "pretty good," while objective measures show serious deficits. You lose the ability to accurately assess how badly you need sleep, precisely <em>because</em> you need sleep. This is one of the reasons the "I'll sleep when I'm dead" mentality is so durable — it feels true from the inside.</p>
+<p>The chronic version of this — not one bad night but weeks and months of insufficient sleep — is associated with increases in anxiety, depressive symptoms, impaired immune function, and longer-term cognitive decline. It's not dramatic in the short term, which is why it's easy to ignore. The damage accumulates slowly, below the threshold of daily awareness.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-the-terminally-online-trap">The Terminally Online Trap</h2>
+<p>Being "terminally online" isn't just a funny phrase for people who spend too much time on Twitter. It describes a specific psychological state: one where your primary sensory and social input comes through a screen, where the pace and emotional register of online discourse sets your baseline nervous system state, and where the boundary between what's happening <em>to you</em> and what's happening <em>near a screen</em> starts to blur.</p>
+<p>A few things happen when you live a significant portion of your life online:</p>
+<ul>
+<li>
+<p><strong>Your threat-detection system gets misfired constantly.</strong> Social media platforms are architecturally designed to surface outrage, controversy, and high-emotion content because that's what drives engagement. Your nervous system doesn't distinguish between "a genuinely threatening thing is happening to me" and "I'm reading about a threatening thing happening to someone I'll never meet." You get the cortisol spike either way. Do that hundreds of times a day and your baseline stress level quietly rises.</p>
+</li>
+<li>
+<p><strong>The comparison trap becomes inescapable.</strong> Online environments, particularly social media, present a curated and skewed sample of human life — the highlight reels, the achievements, the performances. Exposure to this isn't neutral; it warps your reference points for what's normal, what's achievable, and where you stand relative to others. This feeds directly into the ego and identity issues described above, because your self-concept is constantly being benchmarked against an unrealistic standard.</p>
+</li>
+<li>
+<p><strong>Solitude becomes uncomfortable.</strong> When you're used to having a constant feed of stimulation available the moment any inner discomfort arises, the muscle for sitting quietly with yourself atrophies. Boredom, which is actually a psychologically important state that precedes creativity and self-reflection, becomes intolerable. So the phone comes out. Which means the discomfort never gets processed, just deferred.</p>
+</li>
+<li>
+<p><strong>Sleep gets stolen from both ends.</strong> You stay up too late because the feed is always there and always offering something new. And you reach for the phone first thing in the morning before you've had any time to just exist without input. This compresses the window of genuine rest and recovery.</p>
+</li>
+</ul>
+<p>The insomnia and the terminally online pattern aren't separate problems — they're the same problem. The phone is what keeps you up, and the exhaustion makes you more impulsive about reaching for the phone. Each one makes the other worse.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-the-physiology-youre-working-against">The Physiology You're Working Against</h2>
+<p>Understanding what's actually happening in your body makes it easier to stop blaming yourself for poor sleep and start addressing the actual mechanisms.</p>
+<p><strong>Melatonin and the circadian rhythm</strong> operate on light cues. Your brain's suprachiasmatic nucleus — the internal clock — uses light exposure to calibrate when to release melatonin (sleep signal) and when to suppress it. Evolutionarily, this worked cleanly: sun goes down, light dims, melatonin rises, you get sleepy. But artificial light, and especially screen light, confuses this system. Your brain interprets the light as a signal that it's still daytime.</p>
+<p><strong>Adenosine</strong> is a chemical that builds up in the brain throughout the day the longer you're awake — it's the biological substrate of "sleep pressure," that heavy feeling that accumulates and eventually makes you need to sleep. Caffeine works by blocking adenosine receptors, which is why it makes you feel temporarily alert. But the adenosine doesn't disappear — it just piles up behind the block. When the caffeine wears off, the drowsiness hits hard. Using caffeine late in the day doesn't just shift alertness; it actively degrades sleep quality even if you can fall asleep, because it interferes with the depth of the sleep you get.</p>
+<p>The body's ability to fall asleep also depends on <strong>core temperature dropping</strong>. A cool environment, or a warm shower before bed (counterintuitively, this accelerates the subsequent temperature drop), helps facilitate the transition. Being amped up from stimulating content, anxious from doomscrolling, or physically hot all work against this.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-overthinking-at-night-is-a-specific-problem">Overthinking at Night Is a Specific Problem</h2>
+<p>There's a particular flavor of overthinking that targets the pre-sleep window, and it's worth treating as its own thing rather than just "general anxiety."</p>
+<p>When you lie down to sleep, for many people it's the first moment of genuine stillness in the entire day. There's no more input coming in, no tasks to perform, no notifications. And in that silence, the mind — which has been running on stimulus all day — doesn't know what to do with the quiet. So it generates its own content. It replays conversations, rehearses future scenarios, worries, plans, ruminates.</p>
+<p>The irony is that this is partly a consequence of how you spent the rest of your day. If you never practiced being in low-stimulation states during the day — if every moment of boredom or discomfort was immediately met with a phone — then when you lie down at night your nervous system has essentially lost the ability to downshift. The sleep state becomes hard to enter because the gears only know how to run fast.</p>
+<p>The thought-versus-thinking distinction becomes most practically relevant here. A thought arrives: <em>"Did I say the wrong thing in that meeting?"</em> That thought is neutral. What happens next is the choice point. If you follow it — <em>"Yeah, I probably did, and my boss noticed, and she's probably thinking about managing me out, and then I'd have to tell my parents, and—"</em> — you've now been awake for another hour constructing a catastrophe. The practice is to notice the thought, not evaluate whether it's true or false, and gently return attention to the present moment — the breath, the body, the sounds in the room.</p>
+<p>This doesn't require meditation experience, though meditation builds the muscle. It just requires noticing that you've started <em>thinking</em> rather than just receiving a thought, and choosing not to keep pulling the thread.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-common-pitfalls">Common Pitfalls</h2>
+<p><strong>Thinking the solution is willpower.</strong> "I just need to stop scrolling before bed" or "I just need to stop overthinking" treats these as failures of discipline. They're not. They're failures of <em>environment and habit structure</em>. Willpower is a finite resource, and it depletes over the course of the day exactly when you need it most — late at night, tired, when the phone is right there.</p>
+<p><strong>Treating exhaustion as normal.</strong> One of the most insidious effects of chronic sleep deprivation is that you stop remembering what it feels like not to be tired. Your impaired state becomes your baseline. You mistake "I can function like this" for "this is fine." It isn't fine; you've just recalibrated.</p>
+<p><strong>Confusing thought suppression with thought management.</strong> Trying not to think about something is famously counterproductive — it keeps the thought in active working memory. The goal is not to suppress thoughts but to change your <em>relationship</em> to them: notice them, don't follow them.</p>
+<p><strong>Using the phone as a sleep aid.</strong> Watching something "relaxing" on a screen before bed feels like it winds you down, but the light and the engagement are still working against sleep architecture. What feels like relaxation is often just distraction — you're not actually calming the nervous system, you're just redirecting attention until your body forces sleep anyway.</p>
+<p><strong>Assuming online disconnection has to be total.</strong> People hear "be less terminally online" and immediately imagine deleting all social media, which sounds impossible and so they do nothing. The actual leverage points are much more targeted — the first 30 minutes in the morning and the last 30–60 minutes before bed. Protecting those windows has disproportionate impact relative to the effort.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-action-items-exercises">Action Items &amp; Exercises</h2>
+<ol>
+<li>
+<p><strong>Do the five moments exercise.</strong> Call to mind five of the best moments in your life and five of the worst. Without forcing any conclusion, just notice — where was your mind in each set? How much were you thinking, narrating, analyzing? What does that pattern tell you about the relationship between thinking and your experience of life?</p>
+</li>
+<li>
+<p><strong>Practice thought-catching at the fork.</strong> For one week, try to notice the moment a thought arrives versus the moment you start <em>thinking with</em> it. You don't need to judge the thought or resolve it. Just notice: "A thought arrived. Am I about to follow it?" That noticing itself creates a small but real gap.</p>
+</li>
+<li>
+<p><strong>Build a hard screen cutoff 30–60 minutes before bed.</strong> Not because you're bad for being on your phone, but because of the cortisol and melatonin mechanics described above. Put the phone in another room if you can. This is an environmental intervention, not a willpower intervention — the difference matters.</p>
+</li>
+<li>
+<p><strong>Audit your caffeine timing.</strong> If you're drinking coffee or caffeine in the afternoon, try cutting it off before noon for two weeks and notice whether your sleep depth changes. Caffeine has a half-life of roughly 5–7 hours; what you drink at 3pm is still half-present in your system at 8pm.</p>
+</li>
+<li>
+<p><strong>Create a low-stimulation wind-down ritual.</strong> This doesn't have to be elaborate. Ten to twenty minutes of something non-screen — reading a physical book, light stretching, just lying in dim light — gives your nervous system a transition ramp. You're teaching your body that this sequence of behaviors precedes sleep.</p>
+</li>
+<li>
+<p><strong>Notice ego friction during the day.</strong> When you feel a sudden spike of defensiveness, irritation, or anxiety in response to something someone said or did, pause and ask: <em>"What identity is being threatened right now?"</em> You don't need to resolve it. Just naming it often diffuses some of the charge.</p>
+</li>
+<li>
+<p><strong>Protect the first 30 minutes of your morning from the feed.</strong> Before you open any app, give your mind a few minutes of unmediated existence — just you, the room, maybe some water. The reason this matters is that what you expose yourself to first thing sets the emotional and cognitive tone for the hours that follow. Starting the day in someone else's urgency and outrage is a choice, even if it doesn't feel like one.</p>
+</li>
+</ol>
+</section></article>
+    </div>
+  </div>
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc"><ul><li><a href="#transcript-0-technical-difficulties-and-reconnecting">Technical Difficulties and Reconnecting</a></li><li><a href="#transcript-1-ego-identity-and-suffering">Ego, Identity, and Suffering</a></li><li><a href="#transcript-2-overthinking-vs-thoughts-book-discussion">Overthinking vs. Thoughts: Book Discussion</a></li></ul></div></nav>
+      <article class="summary"><section class="sec sec-a">
 <h2 id="transcript-0-technical-difficulties-and-reconnecting">Technical Difficulties and Reconnecting</h2>
-<p><span class="speaker">Dr. K:</span> All right. So, then let me see if I can All right. So, then let me see if I can call. call. Let&#x27;s try this again. I think it&#x27;s it&#x27;s me. &amp;gt;&amp;gt; Yeah, I&#x27;m I&#x27;m live. &amp;gt;&amp;gt; Yeah, I&#x27;m I&#x27;m live. &amp;gt;&amp;gt; Shut up. &amp;gt;&amp;gt; Shut up. &amp;gt;&amp;gt; Shut up. &amp;gt;&amp;gt; Okay. &amp;gt;&amp;gt; Okay. &amp;gt;&amp;gt; Atomic Habits is fire. &amp;gt;&amp;gt; I I think I think I&#x27;m back. &amp;gt;&amp;gt; I&#x27;m hanging up. Okay. &amp;gt;&amp;gt; Oh, wait. I can hear you. How you doing? &amp;gt;&amp;gt; Okay. Yo, dude, that that was that was &amp;gt;&amp;gt; Okay. Yo, dude, that that was that was crazy. crazy. &amp;gt;&amp;gt; The timing is actually insane. Um, why? &amp;gt;&amp;gt; Because you said they&#x27;re investigating me and then they went off.</p>
+<p>All right. So, then let me see if I can All right. So, then let me see if I can call. call. Let&#x27;s try this again. I think it&#x27;s it&#x27;s me. &amp;gt;&amp;gt; Yeah, I&#x27;m I&#x27;m live. &amp;gt;&amp;gt; Yeah, I&#x27;m I&#x27;m live. &amp;gt;&amp;gt; Shut up. &amp;gt;&amp;gt; Shut up. &amp;gt;&amp;gt; Shut up. &amp;gt;&amp;gt; Okay. &amp;gt;&amp;gt; Okay. &amp;gt;&amp;gt; Atomic Habits is fire. &amp;gt;&amp;gt; I I think I think I&#x27;m back. &amp;gt;&amp;gt; I&#x27;m hanging up. Okay. &amp;gt;&amp;gt; Oh, wait. I can hear you. How you doing? &amp;gt;&amp;gt; Okay. Yo, dude, that that was that was &amp;gt;&amp;gt; Okay. Yo, dude, that that was that was crazy. crazy. &amp;gt;&amp;gt; The timing is actually insane. Um, why? &amp;gt;&amp;gt; Because you said they&#x27;re investigating me and then they went off.</p>
 </section>
 <section class="sec sec-b">
 <h2 id="transcript-1-ego-identity-and-suffering">Ego, Identity, and Suffering</h2>
-<p><span class="speaker">Guest:</span> &amp;gt;&amp;gt; That&#x27;s funny. &amp;gt;&amp;gt; They got him. &amp;gt;&amp;gt; Yeah. Uh, give me one second. I think I I think I fixed this. Um, I think I fixed this. Um, &amp;gt;&amp;gt; fire. &amp;gt;&amp;gt; fire. &amp;gt;&amp;gt; Yeah, they were investigation is overall as well. Um, but let me do this and let me do this and let me do this. &amp;gt;&amp;gt; And then let me do this. That is crazy, huh? &amp;gt;&amp;gt; Yeah, they actually got you. &amp;gt;&amp;gt; All right. And then let&#x27;s do this. And then let&#x27;s do this. And then let&#x27;s do this. And I think we&#x27;re good. All right. We&#x27;re back. Sorry. We&#x27;re back. &amp;gt;&amp;gt; Yeah. So, I was just say saying uh we were talking about ego and um Yeah. So, so spot on that I think when we attach ourselves to a particular identity and then we that identity gets threatened, there&#x27;s a ton of suffering.</p>
+<p>&amp;gt;&amp;gt; That&#x27;s funny. &amp;gt;&amp;gt; They got him. &amp;gt;&amp;gt; Yeah. Uh, give me one second. I think I I think I fixed this. Um, I think I fixed this. Um, &amp;gt;&amp;gt; fire. &amp;gt;&amp;gt; fire. &amp;gt;&amp;gt; Yeah, they were investigation is overall as well. Um, but let me do this and let me do this and let me do this. &amp;gt;&amp;gt; And then let me do this. That is crazy, huh? &amp;gt;&amp;gt; Yeah, they actually got you. &amp;gt;&amp;gt; All right. And then let&#x27;s do this. And then let&#x27;s do this. And then let&#x27;s do this. And I think we&#x27;re good. All right. We&#x27;re back. Sorry. We&#x27;re back. &amp;gt;&amp;gt; Yeah. So, I was just say saying uh we were talking about ego and um Yeah. So, so spot on that I think when we attach ourselves to a particular identity and then we that identity gets threatened, there&#x27;s a ton of suffering.</p>
 </section>
 <section class="sec sec-a">
 <h2 id="transcript-2-overthinking-vs-thoughts-book-discussion">Overthinking vs. Thoughts: Book Discussion</h2>
 <p>&amp;gt;&amp;gt; Um but &amp;gt;&amp;gt; have you heard of the book? Oh, sorry. &amp;gt;&amp;gt; Yeah, go ahead. &amp;gt;&amp;gt; I was going to say um there&#x27;s a book I read right before I went to the villa. Um I think it&#x27;s How to Stop Over Thinking by Joseph Nguyen. It was like a random Tik Tok book I got and it was basically saying like thoughts aren&#x27;t the problem but thinking is like for example like you get a thought and it&#x27;s like oh I might lose my job tomorrow and it it depends like what you do with that thought that if you suffer or not cuz like you could go down that rabbit hole and think for an hour um like oh I might lose my job then this will happen then this will happen then this will happen instead of just like like stopping at the thought you thinking is what caused our suffering not things that happen to us or thoughts. It&#x27;s the actual thinking. And it was like the quote that stuck with me was like, &quot;Think about the five best moments of your life and think about the five worst moments of your life.&quot; How much were you thinking or in your head during the five worst moments?</p>
 <p>And how much were you thinking or in your head during the</p>
 </section></article>
+    </div>
   </div>
+  
 
-  <p class="meta">Auto-transcribed livestream · chapters &amp; speaker labels are a best-effort approximation (claude-sonnet-4-6).</p>
+  <p class="meta">Medium summary · claude-sonnet-4-6 (no extended thinking)</p>
 </div>
 
 <script>
 (function () {
   var root = document.documentElement;
-  var tb = document.querySelector('.theme-toggle');
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'medium');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
   var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
   tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
@@ -60,6 +198,16 @@ try {
   function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
   var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+  // deep-link to a heading in any view: switch to that view, then scroll to it
+  function navigateTo(id){
+    var el = id && document.getElementById(id);
+    if (!el) return;
+    var v = el.closest('.view');
+    if (v) setView(v.getAttribute('data-view'));
+    el.scrollIntoView();
+  }
+  window.addEventListener('hashchange', function(){ navigateTo(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash) navigateTo(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>
 <script>

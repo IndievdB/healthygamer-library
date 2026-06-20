@@ -9,7 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-} catch (e) {}
+  document.documentElement.setAttribute('data-view', localStorage.getItem('pubview') || 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -24,16 +25,163 @@ try {
   </nav>
 
   <h1>The Shame of ADHD</h1>
-  <p class="watch">
-    <a href="https://www.youtube.com/watch?v=LK05AGW0JBE" target="_blank" rel="noopener">▶ Watch on YouTube</a>
-    <span class="speakers-note">Speakers (auto-detected): Dr. K, Dr. K's Wife</span>
-  </p>
+  <p class="watch"><a href="https://www.youtube.com/watch?v=LK05AGW0JBE" target="_blank" rel="noopener">▶ Watch on YouTube</a></p>
 
-  <div class="doc">
-    <nav class="toc"><p class="toc-title">Chapters</p><ul><li><a href="#transcript-0-guided-meditation-and-stream-introduction">Guided Meditation and Stream Introduction</a></li><li><a href="#transcript-1-adhd-diagnosis-rates-and-overview">ADHD Diagnosis Rates and Overview</a></li><li><a href="#transcript-2-hg-community-events-hackathon-and-creative-jam">HG Community Events: Hackathon and Creative Jam</a></li><li><a href="#transcript-3-dr-k-s-guide-to-trauma-two-year-development">Dr. K&#x27;s Guide to Trauma: Two-Year Development</a></li><li><a href="#transcript-4-communication-skills-and-street-fighter-analogy">Communication Skills and Street Fighter Analogy</a></li><li><a href="#transcript-5-adhd-shame-complex-and-the-self-blame-cycle">ADHD Shame Complex and the Self-Blame Cycle</a></li><li><a href="#transcript-6-adhd-and-depression-the-comorbidity-connection">ADHD and Depression: The Comorbidity Connection</a></li><li><a href="#transcript-7-adhd-in-girls-underdiagnosis-and-medication-differences">ADHD in Girls: Underdiagnosis and Medication Differences</a></li><li><a href="#transcript-8-why-kids-with-adhd-learn-to-blame-themselves">Why Kids with ADHD Learn to Blame Themselves</a></li><li><a href="#transcript-9-time-blindness-and-working-memory-deficits-in-adhd">Time Blindness and Working Memory Deficits in ADHD</a></li><li><a href="#transcript-10-procrastination-laziness-and-time-perception-research">Procrastination, Laziness, and Time Perception Research</a></li><li><a href="#transcript-11-verbal-working-memory-and-the-power-of-articulation">Verbal Working Memory and the Power of Articulation</a></li><li><a href="#transcript-12-building-a-prosthetic-brain-external-tools-and-compensation">Building a Prosthetic Brain: External Tools and Compensation</a></li><li><a href="#transcript-13-why-so-many-people-identify-with-adhd-today">Why So Many People Identify with ADHD Today</a></li><li><a href="#transcript-14-technology-brain-development-and-adhd-like-symptoms">Technology, Brain Development, and ADHD-Like Symptoms</a></li><li><a href="#transcript-15-laziness-reframed-through-neuroscience">Laziness Reframed Through Neuroscience</a></li><li><a href="#transcript-16-wrap-up-empowering-understanding-over-diagnosis">Wrap-Up: Empowering Understanding Over Diagnosis</a></li><li><a href="#transcript-17-behind-the-scenes-trauma-guide-production-and-hg-operations">Behind the Scenes: Trauma Guide Production and HG Operations</a></li><li><a href="#transcript-18-healthy-gamer-team-pricing-and-community-q-a">Healthy Gamer Team, Pricing, and Community Q&amp;A</a></li><li><a href="#transcript-19-stream-handoff-and-closing-remarks">Stream Handoff and Closing Remarks</a></li></ul></nav>
-    <article class="summary transcript"><section class="sec sec-a">
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">2,541w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">28,192w</span></button>
+    
+  </div>
+
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#medium-summary">Summary</a></li>
+<li><a href="#medium-why-people-with-adhd-dont-believe-they-have-adhd">Why People With ADHD Don't Believe They Have ADHD</a></li>
+<li><a href="#medium-why-girls-and-women-are-especially-likely-to-be-missed">Why Girls and Women Are Especially Likely to Be Missed</a></li>
+<li><a href="#medium-the-neuroscience-of-ill-do-it-tomorrow">The Neuroscience of "I'll Do It Tomorrow"</a></li>
+<li><a href="#medium-why-laziness-is-a-useless-and-misleading-concept">Why "Laziness" Is a Useless and Misleading Concept</a></li>
+<li><a href="#medium-verbal-articulation-as-a-treatment-not-just-communication">Verbal Articulation as a Treatment, Not Just Communication</a></li>
+<li><a href="#medium-building-a-prosthetic-brain">Building a Prosthetic Brain</a></li>
+<li><a href="#medium-common-pitfalls">Common Pitfalls</a></li>
+<li><a href="#medium-action-items-exercises">Action Items &amp; Exercises</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="medium-summary">Summary</h2>
+<p><strong>TL;DR — ADHD isn't a character flaw or a laziness problem; it's a specific set of neurological deficits — primarily in working memory and time perception — that predictably produce shame, depression, and the feeling that you're fundamentally broken.</strong></p>
+<p>This talk covers the psychological and neuroscientific underpinnings of ADHD in a way most clinical settings never get to. The core topics are: why people with ADHD are trained to blame themselves rather than their neurology; how working memory deficits drive time blindness and the "I'll do it tomorrow" loop; why the diagnosis skews heavily male while women suffer silently; how verbal articulation is itself a treatment mechanism; and what a realistic "prosthetic brain" toolkit looks like for day-to-day functioning.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-why-people-with-adhd-dont-believe-they-have-adhd">Why People With ADHD Don't Believe They Have ADHD</h2>
+<p>There's a particular thought that almost every person with ADHD has had:</p>
+<blockquote>
+<p>"What if I don't really have ADHD? What if I just have a complex series of personal flaws that map onto ADHD experiences — and every failing in my life is entirely and unequivocally my fault?"</p>
+</blockquote>
+<p>This isn't humility or clear-eyed self-assessment. It's the <em>predictable psychological output</em> of growing up with an undiagnosed neurological difference in a world that evaluated you by neurotypical standards.</p>
+<p>Here's the mechanics of how it happens. As a child, you can tell roughly how smart the other kids are — and you can tell that you're in the same ballpark. But then the grades come back: they get As and Bs; you get Fs. The obvious mathematical conclusion your developing mind reaches is: <em>my IQ is the same as theirs, but my output is far lower, so there must be a large negative variable inside me</em>. Something is fundamentally broken.</p>
+<p>What makes this especially damaging is that no one corrects the equation. Instead, teachers, parents, and coaches look at the same data and diagnose an <strong>effort problem</strong>: try harder, apply yourself, live up to your potential. When you're actually doing everything correctly and the adults in your life tell you you're doing it completely wrong, something deeply disorienting happens — your brain learns that the right answer is the wrong answer. This is learned helplessness baked in at the neural level during childhood.</p>
+<p>The logical endpoint is a <strong>shame complex</strong>: a core belief that there is something permanently, secretly defective about you — not your neurology, but <em>you as a person</em>. This shame complex is itself what drives the depression that so frequently co-occurs with ADHD. One study found that when you look at people who have both ADHD and depression, the ADHD precedes the depression at a dramatically higher rate than the reverse — suggesting the depression is often a downstream consequence of years of self-blame for neurological deficits nobody named.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-why-girls-and-women-are-especially-likely-to-be-missed">Why Girls and Women Are Especially Likely to Be Missed</h2>
+<p>The clinical diagnosis rate for ADHD is roughly 3:1 boys to girls in childhood — but roughly 1:1 men to women in adulthood. That gap is not a coincidence; it reflects systematic underdiagnosis of girls, driven by several converging factors.</p>
+<p>First, the <strong>primary diagnostic trigger</strong> has historically been hyperactivity — the kid who can't sit still, who runs around, who disrupts class. Girls with ADHD are significantly less likely to present with hyperactivity; they're more likely to be inattentive and internal, which reads as daydreaming or spaciness, not disorder.</p>
+<p>Second, girls' frontal lobes develop approximately one year ahead of boys' at the same chronological age, which means their ADHD-related deficits are partially masked by that developmental advantage during the childhood years when diagnoses are most commonly made.</p>
+<p>Third, puberty introduces a surge of estrogen that alters dopaminergic circuitry — which is precisely the circuitry implicated in ADHD. This is part of why symptoms often intensify or become newly visible in girls at adolescence.</p>
+<p>The medication picture is also more complicated for women. ADHD pharmacotherapy was developed primarily against the symptom of hyperactivity, and the evidence base reflects that. Several studies suggest that standard stimulant dosing — typically a single daily dose of methylphenidate — may not be optimal for girls and women, and that other medications may be more promising. The practical implication: if you're a woman and your ADHD medication feels like it's not quite working the way it's supposed to, that's a real and documented phenomenon, not a personal failure.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-the-neuroscience-of-ill-do-it-tomorrow">The Neuroscience of "I'll Do It Tomorrow"</h2>
+<p>The meme of unmanaged ADHD is: <em>tomorrow will be the day I finally get up, do what needs to be done, and start living my life to its fullest</em> — and you believe it every time, until you look up one day and you're 30.</p>
+<p>This isn't a motivational problem in the colloquial sense. It's the intersection of two specific neurological deficits.</p>
+<p><strong>Nonverbal working memory</strong> is essentially your brain's RAM — the amount of information you can hold and manipulate simultaneously. A neurotypical brain can hold a larger array of active variables; an ADHD brain holds far fewer. This is why:</p>
+<ul>
+<li>Multi-step tasks (move out, apply for jobs, file taxes) feel overwhelming — your brain can't hold all the steps in view at once</li>
+<li>You cut people off mid-sentence — not because you're rude, but because the early part of what they said is already decaying from your limited RAM by the time they finish</li>
+<li>You can hyperfocus on a video game for eight hours — because the game creates a closed, structured environment where <em>you don't have to hold anything in working memory yourself</em>; the game manages it for you</li>
+</ul>
+<p><strong>Time perception</strong> is the other major deficit. Research consistently shows that people with ADHD have difficulty with time estimation — predicting how long something will take, perceiving how much time has passed, and orienting behavior within a time horizon. An analogy: imagine going to a restaurant with no prices on the menu. You order, you eat, and only at the end do you discover the meal cost sixteen times what you expected. That's what living with ADHD and time blindness is like with every task on your daily list.</p>
+<p>These two deficits compound each other. When you can't hold the future in mind (working memory) <em>and</em> you can't perceive time passing (time perception), the result is what looks like procrastination and laziness from the outside — but is actually something much more specific: an inability to organize behavior across time.</p>
+<blockquote>
+<p>"Tomorrow will be the day. Tomorrow rolls around and you say tomorrow will be the day. How can you wake up and realize you're 30? It's because there is a problem with the perception of time."</p>
+</blockquote>
+<p>And because your hindsight is also impaired by the same working memory deficit, you don't even learn from the repeated failure of the "tomorrow" strategy. Your brain can't hold the pattern.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-why-laziness-is-a-useless-and-misleading-concept">Why "Laziness" Is a Useless and Misleading Concept</h2>
+<p>When someone says they're "extremely lazy," they're using an umbrella term that collapses a hundred distinct neurological mechanisms into one morally loaded word. There is no laziness center in the brain. There is no willpower deficit that explains procrastination.</p>
+<p>What actually underlies what we call laziness includes:
+- <strong>Behavioral inflexibility</strong> — difficulty stopping what you're currently doing
+- <strong>Poor arousal self-regulation</strong> — inability to get yourself into the motivated state a task requires
+- <strong>Affective dysregulation</strong> — emotional states that are harder to modulate and that actively interfere with goal-directed action
+- <strong>Time blindness</strong> — inability to perceive the cost-benefit of acting now vs. later
+- <strong>Diminished goal-directed persistence</strong> — the capacity to sustain effort toward a goal across time is itself impaired</p>
+<p>One study on conscientiousness and academic performance makes this concrete: high conscientiousness (the personality trait most associated with "not being lazy") only predicts academic success when it's <em>mediated</em> by time management strategies and effort regulation strategies. Conscientiousness in isolation isn't enough. This is why someone with ADHD can grind for ten hours in a video game — demonstrating genuine capacity for sustained effort — but struggle to study for an hour. The game provides the time management and effort regulation scaffolding. Real-world tasks don't.</p>
+<p>Calling yourself lazy is a lazy diagnosis. A better question is: which specific mechanisms are failing, and what are the targeted interventions?</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-verbal-articulation-as-a-treatment-not-just-communication">Verbal Articulation as a Treatment, Not Just Communication</h2>
+<p>One of the more surprising insights in this talk is about <strong>verbal working memory</strong> and what improving it actually does.</p>
+<p>People with ADHD (and people with trauma histories, which frequently overlap) often can't describe what's happening inside them. When asked "how does that make you feel?" the genuine answer is "I don't know" — not as deflection, but because the brain's verbal/language centers aren't well-connected to its emotional processing centers. The pathway between left hemisphere (language) and right hemisphere (emotion) is underactive.</p>
+<p>What research on trauma processing has revealed is that <em>the act of forming language about an experience builds the neural connection needed to process and regulate that experience</em>. When you articulate what's happening — when you put it into words — your frontal lobes have to do organizational work: accessing the information, sequencing it, representing it. That work strengthens exactly the circuitry that's weakest in ADHD.</p>
+<p>The practical consequence: improving your ability to name and articulate your internal experience improves not just your self-knowledge but your actual ability to regulate your emotions and behavior. This is part of why psychotherapy works. It's not that talking fixes the problem directly; it's that articulation requires and therefore trains the neural infrastructure that supports regulation.</p>
+<blockquote>
+<p>"Unless you can articulate what is going on inside you, you can't control it. Naming a problem takes its power away."</p>
+</blockquote>
+<p>This applies directly to the ADHD shame complex. The inability to say "I think I'm experiencing shame because I was taught to interpret my ADHD as a character flaw" leaves you at the mercy of that shame. Articulating it is not merely cathartic — it's genuinely therapeutic at a neurological level.</p>
+<p>A practical starting point: use a feelings wheel. When you're sitting frozen, unable to do anything, open a feelings wheel and name what you're experiencing. Use as many words as you can. This simple exercise is leveling up the verbal working memory that underlies everything else.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-building-a-prosthetic-brain">Building a Prosthetic Brain</h2>
+<p>ADHD is neurodevelopmental, which means some of the underlying architecture isn't going to change by willpower alone. But the deficits — time blindness, working memory limitations, arousal dysregulation — all have external compensations. The goal is to build what amounts to a <strong>prosthetic brain</strong>: external tools that do for you what your frontal lobes struggle to do automatically.</p>
+<p>The most important categories of prosthetic brain tools:</p>
+<p><strong>For time blindness:</strong>
+- Timers (not just alarms, but active countdowns that make time <em>visible</em>)
+- Calendars that externalize your temporal horizon
+- Tracking systems for how long things actually take — building your own empirical database about time, since your internal estimate is unreliable</p>
+<p><strong>For emotional and arousal regulation:</strong>
+- Feelings wheels to name internal states that would otherwise remain undifferentiated and uncontrollable
+- Structured routines that reduce the number of emotional judgment calls per day</p>
+<p><strong>For sensory input management:</strong>
+- Reducing notifications and interruptions
+- Changing physical environments for different types of work — your brain's attention is heavily driven by sensory input, and controlling that input is a lever you can actually pull</p>
+<p>This is not a workaround or a consolation prize. CBT for ADHD is, in large part, the systematic construction of exactly these prosthetic supports — and its effect size is roughly comparable to medication. The two approaches work through different mechanisms and can be combined.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-common-pitfalls">Common Pitfalls</h2>
+<p><strong>Treating the shame as evidence.</strong> The shame complex created by years of misattributed ADHD deficits will make your problems feel insurmountable and make small interventions feel pointless. This is not accurate perception — it's shame filtering your analysis. A calendar and a timer seem inadequate because the shame makes the problem feel infinite. They're not inadequate; your assessment of them is distorted.</p>
+<p><strong>Self-diagnosing vs. relating.</strong> Relating to ADHD experiences doesn't confirm the diagnosis. Neither does not relating to some of them disconfirm it. Get a proper clinical evaluation if you suspect ADHD — especially because the overlap with depression, anxiety, and trauma means the picture is rarely clean.</p>
+<p><strong>Thinking medication is the whole answer (or no answer).</strong> For some people, stimulant medication produces immediate and dramatic improvement. For others, particularly women, the effect is much more variable. Medication and behavioral/cognitive interventions address different mechanisms; the evidence supports both, and they compound.</p>
+<p><strong>Waiting until you feel ready to start compensatory practices.</strong> The shame and depression that co-occur with ADHD will consistently make you underestimate the value of actions you could take. Waiting for a motivational state that feels "enough" is itself a symptom of the condition.</p>
+<p><strong>Conflating "growing out of it" with "healing the psychological damage."</strong> Some people's ADHD symptoms diminish as frontal lobe development completes (typically through the late 20s to early 30s). But the shame complex, the learned helplessness, and the depression that accumulated during undiagnosed years don't resolve through neurodevelopment alone. Those require explicit attention.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-action-items-exercises">Action Items &amp; Exercises</h2>
+<ol>
+<li>
+<p><strong>Name the shame explicitly.</strong> Write down — in full sentences — the core belief you hold about yourself as a result of your ADHD struggles. Something like: "I believe I'm lazy and fundamentally broken because I try hard and still fail." Articulating the belief is the first step to not being run by it.</p>
+</li>
+<li>
+<p><strong>Use a feelings wheel daily.</strong> When you notice yourself frozen, avoidant, or unable to start something, open a feelings wheel (freely available online) and identify as many emotions as you can. Practice expanding your emotional vocabulary. Do this before trying to solve the productivity problem.</p>
+</li>
+<li>
+<p><strong>Run a time-estimation audit.</strong> For one week, before you start any task, write down how long you think it will take. After the task, record how long it actually took. Build your own database. Over time, this external record compensates for your brain's unreliable internal clock.</p>
+</li>
+<li>
+<p><strong>Build your prosthetic brain.</strong> Identify the three most impactful external tools missing from your life right now — this might be a timer, a physical calendar visible from your desk, a daily alarm that prompts you to check your feelings wheel, or a dedicated workspace that limits sensory distraction. Implement one this week.</p>
+</li>
+<li>
+<p><strong>Practice verbal articulation of problems before trying to solve them.</strong> When you're stuck on something, resist the urge to immediately try to fix it. Instead, spend five minutes writing or speaking aloud about what the problem actually is. Use the question: "What specifically makes this hard for me <em>right now</em>?" The articulation itself will often move something.</p>
+</li>
+<li>
+<p><strong>Separate ADHD deficits from character.</strong> Make a written list of the things you've been blaming yourself for that are, in fact, named neurological deficits — time blindness, working memory limits, arousal dysregulation. When you notice self-blame, ask: "Is this a deficit I can compensate for, or a character flaw?" Almost always, it's the former.</p>
+</li>
+<li>
+<p><strong>Pursue a clinical evaluation</strong> if you haven't already — especially if you're a woman whose symptoms have been dismissed or missed. Self-identification is not diagnosis, and proper diagnosis opens access to appropriate treatment options.</p>
+</li>
+</ol>
+</section></article>
+    </div>
+  </div>
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc"><ul><li><a href="#transcript-0-guided-meditation-and-stream-introduction">Guided Meditation and Stream Introduction</a></li><li><a href="#transcript-1-adhd-diagnosis-rates-and-overview">ADHD Diagnosis Rates and Overview</a></li><li><a href="#transcript-2-hg-community-events-hackathon-and-creative-jam">HG Community Events: Hackathon and Creative Jam</a></li><li><a href="#transcript-3-dr-k-s-guide-to-trauma-two-year-development">Dr. K&#x27;s Guide to Trauma: Two-Year Development</a></li><li><a href="#transcript-4-communication-skills-and-street-fighter-analogy">Communication Skills and Street Fighter Analogy</a></li><li><a href="#transcript-5-adhd-shame-complex-and-the-self-blame-cycle">ADHD Shame Complex and the Self-Blame Cycle</a></li><li><a href="#transcript-6-adhd-and-depression-the-comorbidity-connection">ADHD and Depression: The Comorbidity Connection</a></li><li><a href="#transcript-7-adhd-in-girls-underdiagnosis-and-medication-differences">ADHD in Girls: Underdiagnosis and Medication Differences</a></li><li><a href="#transcript-8-why-kids-with-adhd-learn-to-blame-themselves">Why Kids with ADHD Learn to Blame Themselves</a></li><li><a href="#transcript-9-time-blindness-and-working-memory-deficits-in-adhd">Time Blindness and Working Memory Deficits in ADHD</a></li><li><a href="#transcript-10-procrastination-laziness-and-time-perception-research">Procrastination, Laziness, and Time Perception Research</a></li><li><a href="#transcript-11-verbal-working-memory-and-the-power-of-articulation">Verbal Working Memory and the Power of Articulation</a></li><li><a href="#transcript-12-building-a-prosthetic-brain-external-tools-and-compensation">Building a Prosthetic Brain: External Tools and Compensation</a></li><li><a href="#transcript-13-why-so-many-people-identify-with-adhd-today">Why So Many People Identify with ADHD Today</a></li><li><a href="#transcript-14-technology-brain-development-and-adhd-like-symptoms">Technology, Brain Development, and ADHD-Like Symptoms</a></li><li><a href="#transcript-15-laziness-reframed-through-neuroscience">Laziness Reframed Through Neuroscience</a></li><li><a href="#transcript-16-wrap-up-empowering-understanding-over-diagnosis">Wrap-Up: Empowering Understanding Over Diagnosis</a></li><li><a href="#transcript-17-behind-the-scenes-trauma-guide-production-and-hg-operations">Behind the Scenes: Trauma Guide Production and HG Operations</a></li><li><a href="#transcript-18-healthy-gamer-team-pricing-and-community-q-a">Healthy Gamer Team, Pricing, and Community Q&amp;A</a></li><li><a href="#transcript-19-stream-handoff-and-closing-remarks">Stream Handoff and Closing Remarks</a></li></ul></div></nav>
+      <article class="summary"><section class="sec sec-a">
 <h2 id="transcript-0-guided-meditation-and-stream-introduction">Guided Meditation and Stream Introduction</h2>
-<p><span class="speaker">Dr. K:</span> A capacity for kindness. So Close Your Eyes, take a few moments to breathe in and breathe out: [Music], oh, oh, [Music], [Music], [Music] n, [Music], [Music], [Applause], [Applause], [Applause], [Music]. But I would say, on a on a deeper level, it&#x27;s more like when, when we say work on yourself, that involves all kinds of like things about moving your life forward, and they struggle with motivation in, and they struggle with motivation in these things. It&#x27;s because when I don&#x27;t think I&#x27;m worth it, I&#x27;m not worth fixing. [Music], you, you, [Music], [Music], [Music], oh, [Music]. When you develop empathy and compassion for other people, there&#x27;s going to be room for someone else in the relationship and then this, in turn, is going to reduce the feeling of being an, going to reduce the feeling of being an object.</p>
+<p>A capacity for kindness. So Close Your Eyes, take a few moments to breathe in and breathe out: [Music], oh, oh, [Music], [Music], [Music] n, [Music], [Music], [Applause], [Applause], [Applause], [Music]. But I would say, on a on a deeper level, it&#x27;s more like when, when we say work on yourself, that involves all kinds of like things about moving your life forward, and they struggle with motivation in, and they struggle with motivation in these things. It&#x27;s because when I don&#x27;t think I&#x27;m worth it, I&#x27;m not worth fixing. [Music], you, you, [Music], [Music], [Music], oh, [Music]. When you develop empathy and compassion for other people, there&#x27;s going to be room for someone else in the relationship and then this, in turn, is going to reduce the feeling of being an, going to reduce the feeling of being an object.</p>
 <p>Now two people can connect, and now it&#x27;s not about getting your needs met in Starvation, it&#x27;s about two human beings forming a relationship. Forming a relationship [Music], you, [Music], oh, oh, [Music]. Practice wishing for the object of your met that these things happen to them. So you&#x27;ll repeat this thought: may this person be happy, may this person be free and may this person be at peace. [Music], alrighty chat, let&#x27;s get started. Welcome to another healthy gamer. G stream. My name is Alok Kanojia. Just a reminder that, although I&#x27;m a psychiatrist, nothing we discuss on stream today is intended to be taken as medical advice.</p>
 <p>Everything is for educational or entertainment purposes only. If youall have a medical concern or question, please go see a licensed professional and good luck with that. Highly recommend him. Huge fan, huge fan of licensed professionals. Um, let&#x27;s see what are we talking about today. So let&#x27;s just get chat where we can see you. I need to be able to see a chat eyes on chat today. So, uh, welcome everybody. We&#x27;re halfway through mental health awareness month, which is a huge month for us. We have a lot of cool stuff that we try to do. Um, we work really, really hard to try to get it going. So, um, yeah, I see someone saying happy Friday.</p>
 </section>
@@ -237,7 +385,7 @@ try {
 </section>
 <section class="sec sec-b">
 <h2 id="transcript-17-behind-the-scenes-trauma-guide-production-and-hg-operations">Behind the Scenes: Trauma Guide Production and HG Operations</h2>
-<p><span class="speaker">Dr. K&#x27;s Wife:</span> Five minute is up. Okay, let&#x27;s call her back. She says it&#x27;s her turn. I don&#x27;t know if it&#x27;s her turn, for what? Let us call her. Hey, I&#x27;m, I&#x27;m her. Hey, I&#x27;m, I&#x27;m ready. Okay, she said she can&#x27;t believe I&#x27;m calling her my bad. Okay, sure, yeah, put it on. Yeah, it&#x27;s big, but it&#x27;s fun. Dr KB, hyperfocusing on papers. Yeah, I&#x27;m hyperfocusing on papers today. You better believe it. Okay, are you? Am I staying? Um, I need a couple of tech help things and then you can go. Okay, what do you need help? Because we&#x27;re mostly talking about you. So, okay, I don&#x27;t need to subject you to all that. You got to be careful with the banging bud.</p>
+<p>Five minute is up. Okay, let&#x27;s call her back. She says it&#x27;s her turn. I don&#x27;t know if it&#x27;s her turn, for what? Let us call her. Hey, I&#x27;m, I&#x27;m her. Hey, I&#x27;m, I&#x27;m ready. Okay, she said she can&#x27;t believe I&#x27;m calling her my bad. Okay, sure, yeah, put it on. Yeah, it&#x27;s big, but it&#x27;s fun. Dr KB, hyperfocusing on papers. Yeah, I&#x27;m hyperfocusing on papers today. You better believe it. Okay, are you? Am I staying? Um, I need a couple of tech help things and then you can go. Okay, what do you need help? Because we&#x27;re mostly talking about you. So, okay, I don&#x27;t need to subject you to all that. You got to be careful with the banging bud.</p>
 <p>Put it over here. Okay, hey, guys, you gotta put it over here, okay, hey guys, you gotta move, move forward. Hello, okay, can I fix this? This is so awkward and uncomfortable. Is this better? Can youall hear me? Okay? No, yes, we can well, let them. No, I can talk right here. You want to be in the yellow? Okay, can? Does this go like this? That that&#x27;s better. That&#x27;s way more comfortable. Hey, does this? Is this better? Am I in the yellow? I&#x27;m in the green. Ah, I have to yell, I&#x27;m sorry. Am I blowing out ears? Yell, I&#x27;m sorry. Am I blowing out ears? Okay, okay, um, I, Kabir, linked stuff for us.</p>
 <p>Okay to play. Hey guys, it&#x27;s a good thing I wore pants today. Yeah, um, okay, I wanted to talk to you a little bit about some of the behind the scenes stuff at HG and take any questions and show you guys some fun stuff about um from the trauma guide set, okay, um, prepare to be traumatized. Yeah, that doesn&#x27;t sound good. It&#x27;s not okay, all right, so then we&#x27;re going to have to. Really, is this both chats together? Uh, no, this is one chat and this is the other chat, so I can move this kind of over here. Yeah, I want to hang out with both, but the problem is that it&#x27;s hard to um. It&#x27;s like picking a favorite kid.</p>
 <p>No comment, okay, so let&#x27;s do this. Twitch was our first born. Okay, all right, so I will help. Do you want to show this or you want to talk first? No, I want to. Okay, I can&#x27;t do anything if I can&#x27;t see, if I can&#x27;t see the chatties, okay, okay, I&#x27;ll, I&#x27;ll just, I&#x27;ll just be right here for you. Oh, no, I can&#x27;t talk about you if you&#x27;re right there. No, no, but I&#x27;m here to reveal Secrets, okay, just just when should I check back with you? For well, first play the video, for, okay, we&#x27;re going to play the video first. Okay, yeah, and it&#x27;s going to be painful for you, so you can leave. Okay, I&#x27;ll play the video and then I will come back.</p>
@@ -310,19 +458,25 @@ try {
 <section class="sec sec-b">
 <h2 id="transcript-19-stream-handoff-and-closing-remarks">Stream Handoff and Closing Remarks</h2>
 <p>If meditation is like, oh, I can&#x27;t focus or I can&#x27;t do this, I would start with something that helps you get in the habit more than something that you think is like idealistic, for I want to do that one. Happy birthday IL presento. All right. Well, it was really fun hanging out with you. Fun hanging out with you guys, guys. Um, thank you guys so much for all your court. It&#x27;s. This is our fifth year doing healthy gamer. This is our fourth mental healthy gamer. This is our fourth mental health health May. Every May is a lot of fun with you guys. It&#x27;s a lot of work, um. So I just want to shout out to all the mods, our editors, our amazing Community, the staff, all of our coaches doing such great work.</p>
-<p><span class="speaker">Dr. K:</span> Um, it&#x27;s been a really fun and very gratifying month. I&#x27;m really looking forward to the trauma guide. Um, I hope you guys love it. I hope all the content helps and it&#x27;s always great vibing with yall. For a little while. I&#x27;m going to get ol in here to help me figure out how to turn this off, um, but thank you guys so much. I&#x27;ll see you guys soon. I&#x27;ll be right back with. Yeah, I&#x27;m done. You come say bye, all right. Thanks again, chat. See y&#x27;all later. All&#x27;s gonna come turn stream off. Really appreciate y&#x27;all. Bye, good job. All right, chat. Yall have fun. Bring her back. We shall bring her back.</p>
+<p>Um, it&#x27;s been a really fun and very gratifying month. I&#x27;m really looking forward to the trauma guide. Um, I hope you guys love it. I hope all the content helps and it&#x27;s always great vibing with yall. For a little while. I&#x27;m going to get ol in here to help me figure out how to turn this off, um, but thank you guys so much. I&#x27;ll see you guys soon. I&#x27;ll be right back with. Yeah, I&#x27;m done. You come say bye, all right. Thanks again, chat. See y&#x27;all later. All&#x27;s gonna come turn stream off. Really appreciate y&#x27;all. Bye, good job. All right, chat. Yall have fun. Bring her back. We shall bring her back.</p>
 <p>Dude, there&#x27;s a reason I I married the woman. She&#x27;s great, um. So thank you all very much for coming today. I don&#x27;t know what y&#x27;all talked about, but apparently I&#x27;m not supposed to be here, which is totally fine. So, uh, I know we were all over the place today with ADHD, which is, oh the irony. But thank you all very much for coming. Have a a nice and safe weekend, um, and we&#x27;ll see yall. I think we&#x27;re streaming. When next stream Dr k? Let&#x27;s see, we are streaming, we are streaming. See, we are streaming. We are streaming Monday. Monday, probably okay, and then we are strm Wednesday, and then we are strm Thursday and then we are strm Friday.</p>
 <p>So we are in the middle of mental health awareness month, which means that we are strm a lot chat and we love y&#x27;all. Take care, um, and we will see yall on Monday, Wednesday, Thursday and Friday. Adios.</p>
 </section></article>
+    </div>
   </div>
+  
 
-  <p class="meta">Auto-transcribed livestream · chapters &amp; speaker labels are a best-effort approximation (claude-sonnet-4-6).</p>
+  <p class="meta">Medium summary · claude-sonnet-4-6 (no extended thinking)</p>
 </div>
 
 <script>
 (function () {
   var root = document.documentElement;
-  var tb = document.querySelector('.theme-toggle');
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'medium');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
   var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
   tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
@@ -330,6 +484,16 @@ try {
   function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
   var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+  // deep-link to a heading in any view: switch to that view, then scroll to it
+  function navigateTo(id){
+    var el = id && document.getElementById(id);
+    if (!el) return;
+    var v = el.closest('.view');
+    if (v) setView(v.getAttribute('data-view'));
+    el.scrollIntoView();
+  }
+  window.addEventListener('hashchange', function(){ navigateTo(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash) navigateTo(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>
 <script>

@@ -9,7 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-} catch (e) {}
+  document.documentElement.setAttribute('data-view', localStorage.getItem('pubview') || 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -24,16 +25,184 @@ try {
   </nav>
 
   <h1>DR. K SPECIAL ANNOUNCEMENT + REDDIT REVIEW STREAM</h1>
-  <p class="watch">
-    <a href="https://www.youtube.com/watch?v=QcUl1dJZkJA" target="_blank" rel="noopener">▶ Watch on YouTube</a>
-    <span class="speakers-note">Speakers (auto-detected): Dr. K</span>
-  </p>
+  <p class="watch"><a href="https://www.youtube.com/watch?v=QcUl1dJZkJA" target="_blank" rel="noopener">▶ Watch on YouTube</a></p>
 
-  <div class="doc">
-    <nav class="toc"><p class="toc-title">Chapters</p><ul><li><a href="#transcript-0-stream-intro-and-crypto-coin-joke-announcement">Stream Intro and Crypto Coin Joke Announcement</a></li><li><a href="#transcript-1-false-sense-of-wellness-from-mental-health-content">False Sense of Wellness from Mental Health Content</a></li><li><a href="#transcript-2-how-to-make-mental-health-content-actually-work-for-you">How to Make Mental Health Content Actually Work for You</a></li><li><a href="#transcript-3-information-behavioral-change-and-critical-thinking">Information, Behavioral Change, and Critical Thinking</a></li><li><a href="#transcript-4-the-problem-of-measuring-therapy-quality">The Problem of Measuring Therapy Quality</a></li><li><a href="#transcript-5-what-makes-a-good-vs-bad-therapist">What Makes a Good vs. Bad Therapist</a></li><li><a href="#transcript-6-average-looks-attraction-anxiety-and-relationship-beliefs">Average Looks, Attraction Anxiety, and Relationship Beliefs</a></li><li><a href="#transcript-7-toxic-relationship-patterns-from-insecurity">Toxic Relationship Patterns from Insecurity</a></li><li><a href="#transcript-8-finding-vs-cultivating-the-right-partner">Finding vs. Cultivating the Right Partner</a></li><li><a href="#transcript-9-valuing-others-over-yourself-and-altruistic-depression">Valuing Others Over Yourself and Altruistic Depression</a></li><li><a href="#transcript-10-emotions-as-information-and-motivation">Emotions as Information and Motivation</a></li><li><a href="#transcript-11-gaming-addiction-and-parenting-the-arms-race">Gaming Addiction and Parenting the Arms Race</a></li><li><a href="#transcript-12-autism-adhd-and-why-games-fill-a-real-need">Autism, ADHD, and Why Games Fill a Real Need</a></li><li><a href="#transcript-13-repairing-a-relationship-with-a-self-centered-parent">Repairing a Relationship with a Self-Centered Parent</a></li><li><a href="#transcript-14-book-announcement-how-to-raise-a-healthy-gamer">Book Announcement: How to Raise a Healthy Gamer</a></li></ul></nav>
-    <article class="summary transcript"><section class="sec sec-a">
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">2,863w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">26,593w</span></button>
+    
+  </div>
+
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#medium-summary">Summary</a></li>
+<li><a href="#medium-why-watching-mental-health-content-can-feel-like-progress-without-being-progress">Why Watching Mental Health Content Can Feel Like Progress Without Being Progress</a></li>
+<li><a href="#medium-what-makes-therapy-feel-like-nothing-is-happening-and-what-to-do-about-it">What Makes Therapy Feel Like Nothing Is Happening — And What to Do About It</a></li>
+<li><a href="#medium-attractiveness-anxiety-and-what-it-actually-costs-you-in-relationships">Attractiveness Anxiety and What It Actually Costs You in Relationships</a></li>
+<li><a href="#medium-why-you-can-move-mountains-for-others-but-nothing-for-yourself">Why You Can Move Mountains for Others But Nothing for Yourself</a></li>
+<li><a href="#medium-gaming-addiction-in-kids-why-restriction-escalates-the-problem">Gaming Addiction in Kids: Why Restriction Escalates the Problem</a></li>
+<li><a href="#medium-when-im-sorry-isnt-enough-to-repair-a-relationship">When "I'm Sorry" Isn't Enough to Repair a Relationship</a></li>
+<li><a href="#medium-common-pitfalls">Common Pitfalls</a></li>
+<li><a href="#medium-action-items-exercises">Action Items &amp; Exercises</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="medium-summary">Summary</h2>
+<p><strong>TL;DR —</strong> Consuming mental health content is not a substitute for doing the work; understanding how your mind uses passive consumption as a stand-in for real change is itself the first step toward making actual progress.</p>
+<p>This stream covers a wide range of topics pulled from Reddit posts: why watching mental health content can create a false sense of progress, what makes therapy feel stagnant (and what to do about it), the psychology of attractiveness anxiety in relationships, why some people can work tirelessly for others but not for themselves, how to handle gaming addiction in kids with ADHD and autism, how to repair a relationship with a parent who won't truly listen, and — at the end — an announcement about a book aimed at helping the next generation of kids avoid the struggles so many in this community have already lived through.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-why-watching-mental-health-content-can-feel-like-progress-without-being-progress">Why Watching Mental Health Content Can Feel Like Progress Without Being Progress</h2>
+<p>There's something slippery the mind does when it recognizes it needs help but doesn't want to do the hard thing of actually getting it. It looks for a loophole — something that <em>feels</em> like forward motion without requiring sacrifice, accountability, or discomfort. Watching mental health content online is an almost perfect loophole, because it feels productive and educational while requiring almost nothing of you.</p>
+<p>This is different from content being useless. There's preliminary internal data suggesting that engaging with this kind of content improves mental health outcomes by roughly 8–11% on average — though that average probably masks a wide distribution, where some people improve substantially and many improve not at all. For context, medication studies often show closer to 30–50% improvement (and likely less, once accounting for publication bias). So passive engagement isn't worthless. But it isn't enough either.</p>
+<p>The key distinction is between <em>information</em> and <em>behavioral change</em>. Information alone does not reliably produce change. There's a second ingredient: application.</p>
+<p><strong>Three things that actually make content useful:</strong></p>
+<ol>
+<li>
+<p><strong>Try the thing before watching the next video.</strong> If a video recommends a week of daily meditation, try that before moving on. The rubber meets the road in the attempt, not the watching.</p>
+</li>
+<li>
+<p><strong>Manipulate the information.</strong> This is a clinical concept drawn from capacity evaluations in psychiatry — the ability to manipulate information (challenge it, reframe it, apply it hypothetically) is a marker of genuine understanding. You don't even have to act. Ask yourself: where do I disagree, and why? Then — crucially — ask yourself how the idea <em>could</em> be right. The internet's default is reflexive dismissal. Real learning requires sitting with the other side.</p>
+</li>
+<li>
+<p><strong>Engage socially with the content.</strong> Discussing ideas in a community, posting about them, or even talking them through with a friend counts as manipulation of information and deepens understanding.</p>
+</li>
+</ol>
+<blockquote>
+<p>"Information does not necessarily create behavioral change. There is a second component — the application of the stuff in your life."</p>
+</blockquote>
+<p>The fourth point is about pacing. In addiction psychiatry, change doesn't happen overnight. Most people aren't ready to change the day they encounter an idea. Watching a few videos a week over months and years tends to produce more durable change than a binge-and-disappear cycle. Readiness builds gradually.</p>
+<p>The honest warning: if you're chain-watching content and your life isn't changing, check whether some part of your mind is using the watching <em>as a substitute</em> for changing. It's a comfortable illusion.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-what-makes-therapy-feel-like-nothing-is-happening-and-what-to-do-about-it">What Makes Therapy Feel Like Nothing Is Happening — And What to Do About It</h2>
+<p>One of the most disorienting things about therapy is that it's genuinely hard to know, from inside the experience, whether you have a bad therapist or whether you're in good therapy that just takes time. This is a real structural problem in the field.</p>
+<p>Unlike surgery, where outcomes are tracked and poor results trigger remediation (the Martini Clinic example, where even department heads get sent back to school if their numbers dip), the therapy field has no equivalent feedback mechanism. Peer supervision — therapists talking to other therapists about their cases, with no patient input and no outcome data — is the primary quality control. Nobody in that room says "I think you might be one of the worst therapists here," even though statistically, some of them are.</p>
+<p>When patients <em>do</em> tell a therapist it isn't working, therapists are professionally equipped with an arsenal of ways to rationalize that feedback away: projection, attachment issues, personality disorder, not ready for therapy. This isn't always wrong — sometimes it is those things — but the rationalizing removes accountability.</p>
+<p>From the patient side, if you've had a bad therapist, you're likely to conclude therapy doesn't work for <em>you</em> — not that the therapist was the problem. That's a tragedy, because it can write off an entire avenue of help.</p>
+<p><strong>What you can actually do:</strong></p>
+<ul>
+<li>Take the feeling of stagnation seriously. Don't assume it's always supposed to feel this way.</li>
+<li>Talk to your therapist directly about whether progress is happening. Frame it as a question, not an accusation.</li>
+<li>Recognize that fit matters enormously. Some therapists are directive; some are hands-off. Neither is universally right. If the style is deeply mismatched, finding someone else is reasonable.</li>
+<li>Also recognize that change in therapy is genuinely hard to perceive in real time. Looking at yourself daily in the mirror, you look the same as yesterday. Looking at a photo from three years ago, you've changed completely. Progress in therapy often works the same way.</li>
+</ul>
+<p>A good therapist listens and <em>adapts</em>. The mark of a less effective therapist is applying their training uniformly across every patient — making the standard sandwich with no customization. The best therapists spend most of their clinical knowledge figuring out which parts of it <em>don't apply</em> to this particular person.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-attractiveness-anxiety-and-what-it-actually-costs-you-in-relationships">Attractiveness Anxiety and What It Actually Costs You in Relationships</h2>
+<p>Feeling average-looking and worrying it disqualifies you from relationships isn't irrational — there are real advantages to being conventionally attractive. But the anxiety about it causes more damage than the attractiveness gap itself.</p>
+<p>The specific mechanism: if you're convinced you'll be replaced by someone more attractive, you'll import that anxiety into any relationship you manage to form. Your partner signals they want to be with you. You can't hear it. You need reassurance. They provide it. Then you need more. Eventually, your sense of security becomes something your partner has to <em>carry for you</em>, and that's emotionally exhausting to sustain. The relationship corrodes — not because someone more attractive came along, but because the anxiety made you unbearable to be close to.</p>
+<p>There's also a <strong>cognitive bias at work</strong> when you feel invisible in social situations. People with low confidence selectively filter out everyone who <em>is</em> paying attention to them and focus on anyone who isn't. The resulting perception — "nobody sees me" — is genuinely felt but factually distorted. Meanwhile, the person who was paying attention to you gets ignored, and eventually stops.</p>
+<blockquote>
+<p>"You don't literally become invisible. That would be the most OP power in the world."</p>
+</blockquote>
+<p>On the question of attractiveness and compatibility: attractive people accrue so many social advantages from their looks that they face less evolutionary pressure to develop other qualities. Someone averagely attractive is often <em>forced</em> to become a more interesting, resilient, and decent person. You're looking at one dimension and concluding the game is over — when you're only seeing the part of the scoreboard that favors them.</p>
+<p>The bigger relationship error is treating a partner like something to be <em>found</em> fully formed, perfect off the shelf. Good relationships are cultivated. People grow into being right for each other. Right now, a cultural message — <em>you don't have to change for anyone</em> — is being weaponized to keep people from doing the work that relationships require. Both people have to be willing to grow.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-why-you-can-move-mountains-for-others-but-nothing-for-yourself">Why You Can Move Mountains for Others But Nothing for Yourself</h2>
+<p>Some people are extraordinary workers when the beneficiary is someone else and completely inert when it comes to their own goals. The root cause is usually simple: <strong>other people feel worth more than you do.</strong></p>
+<p>When your sense of value was built on external approval — being praised for what you give, not for who you are — then sacrificing for others becomes the only reliable way to feel worthwhile. Your own goals, your own time, your own future don't have the same weight. Spending three hours to save a friend $40 feels natural. Spending an hour on your own passion project feels indulgent and somehow wrong.</p>
+<p>This can escalate into what's described in the clinical literature as <strong>altruistic depressive personality</strong> — a pattern where the depressive mood lifts only when one is actively sacrificing for others, and returns when the opportunity to do so disappears. The person unconsciously seeks out lost causes, because a fixed cause would no longer need them.</p>
+<p>The trap is recursive: when you need someone to take advantage of you in order to feel good, you've built a system where being used <em>is</em> the reward. Every time someone walks over you and you reframe it as sacrifice, you reinforce the identity.</p>
+<blockquote>
+<p>"You've created a dynamic where for you to feel better about yourself, someone has to take advantage of you."</p>
+</blockquote>
+<p>The starting point for change isn't forcing yourself to value yourself more — that instruction bounces off. Instead, ask: <em>when did I learn this?</em> Who or what taught you that others are more important than you? Trace it back. The belief often has a specific origin — a parentified childhood, a family narrative about what men or women are for, a social environment that only rewarded giving. Understanding where it came from loosens its grip.</p>
+<p>And when you start taking steps toward your own goals and feel a wave of guilt — that guilt arrived <em>first</em>, before any rational argument for why you did something wrong. The brain generates the emotion and then reverse-engineers the justification. You can feel guilty without having done anything wrong.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-gaming-addiction-in-kids-why-restriction-escalates-the-problem">Gaming Addiction in Kids: Why Restriction Escalates the Problem</h2>
+<p>When a parent sees a child's grades collapse because of video games, the instinct is to remove the game. This makes complete sense as a reflex — the same way you'd remove a cactus from a child's hands. The problem is that it doesn't work, and it often makes things worse.</p>
+<p>What actually happens when you restrict a teenager from gaming: you turn the game into the only thing of value. Every obligation the child performs is now performed <em>in service of getting the game back</em>. The game becomes their god. Meanwhile, the child — especially a teenager — is technically capable of outmaneuvering most parental restrictions. The result is an escalating arms race: parent restricts, child finds a workaround, parent restricts harder, child cuts class and goes to a library to play.</p>
+<p>For kids with ADHD and autism, the dynamic is more intense. MMORPGs in particular offer something that ordinary life often doesn't: <strong>clear rules, community, customization, challenge, and social belonging</strong>. A kid with autism is playing the game of life with the instruction manual missing. WoW has an instruction manual. Of course they prefer it.</p>
+<p>Taking the game away doesn't give them a replacement for what it provides — it just makes them more desperate for it.</p>
+<p>The goal of parenting isn't to keep the kid from failing while they're under your roof. It's to help them develop the capacity to not fail once they leave. An arms race produces compliance without buy-in, and compliance without buy-in disappears the moment the enforcement disappears (i.e., college).</p>
+<p><strong>What actually moves the needle:</strong></p>
+<ul>
+<li>Have a conversation about what the kid <em>wants</em> from their life. Not what they should want — what they actually want.</li>
+<li>Get both parents genuinely involved. The parent who games with the child has more relational leverage to set limits than the parent who only restricts.</li>
+<li>Teach restraint and independence, not just enforce compliance.</li>
+<li>Help them engage with life more broadly — which means understanding what they're getting from the game and finding ways to get some of it elsewhere, not eliminating it.</li>
+</ul>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-when-im-sorry-isnt-enough-to-repair-a-relationship">When "I'm Sorry" Isn't Enough to Repair a Relationship</h2>
+<p>A parent repeatedly saying "I'm sorry" and "I love you" while continuing the same behaviors is not apologizing — it's self-soothing. The apology is about <em>their</em> regret, <em>their</em> love, <em>their</em> feelings. It's still self-centered, just wearing the costume of contrition.</p>
+<p>The way to test whether an apology is real is to ask a simple question: <em>What are you willing to change?</em> Put the ball in their court. "I understand you regret it. What does that mean going forward? What should I expect to be different?"</p>
+<p>If they can't answer that — if "I'm sorry" turns out to mean nothing operational — then you have your answer about where things stand.</p>
+<p>When someone maintains a belief (like "video games ruined my kid") even after being confronted with evidence that it's wrong, they're often protecting themselves from a scarier conclusion: that they were the problem. Admitting the game wasn't the cause means something else becomes the cause. That something else is them. That's a hard thing to face.</p>
+<p>The practical approach: go one round, then disengage. Don't try to have ten rounds of conversation at once — it just spirals without resolution. Make one clear, calm statement. Let it land. Come back to it later. Doing your dailies over weeks builds more than grinding for ten hours in a single night.</p>
+<blockquote>
+<p>"I don't want you to say anything. I want you to listen."</p>
+</blockquote>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-common-pitfalls">Common Pitfalls</h2>
+<ul>
+<li><strong>Treating information as transformation.</strong> Knowing something and doing something are categorically different. The mind is very good at convincing you that understanding a concept is the same as applying it.</li>
+<li><strong>Binge-watching and then disappearing.</strong> A burst of engagement followed by a long absence doesn't build the gradual readiness that leads to real change.</li>
+<li><strong>Assuming a bad therapy experience means therapy doesn't work for you.</strong> It may mean that particular therapist wasn't right for you.</li>
+<li><strong>Outsourcing your sense of security to a partner.</strong> They can't carry it for you indefinitely, and the attempt to make them do so usually destroys what you're trying to protect.</li>
+<li><strong>Thinking restriction is the same as parenting.</strong> Removing a game doesn't address why the game was filling a need. Without a replacement for what it provided, the need just becomes more desperate.</li>
+<li><strong>Mistaking "I'm sorry" for repair.</strong> Genuine repair requires behavioral change, not just expressed regret.</li>
+<li><strong>Going all-in on a single confrontational conversation.</strong> Whether with a parent, a therapist, or a partner, trying to resolve everything at once usually produces circular arguments and no progress.</li>
+</ul>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-action-items-exercises">Action Items &amp; Exercises</h2>
+<ol>
+<li>
+<p><strong>Before watching the next piece of content, try the last thing you were told to try.</strong> It doesn't have to be perfect. It doesn't have to be 100%. Just attempt it and notice what happens.</p>
+</li>
+<li>
+<p><strong>Practice information manipulation on something you just learned.</strong> First, challenge it — what's wrong with it, why might it not apply to you? Then flip: steelman it — under what circumstances could this be exactly right? Do both in writing if possible.</p>
+</li>
+<li>
+<p><strong>When consuming content you reflexively disagree with, pause before dismissing it.</strong> Ask: what would have to be true for this person's view to make sense? You don't have to agree. You just have to genuinely try to understand.</p>
+</li>
+<li>
+<p><strong>If you're in therapy and it feels stagnant, say so — directly.</strong> Try: "I don't feel like I'm making progress. Can we talk about what progress would look like for me?" Note how your therapist responds. That response itself is useful information.</p>
+</li>
+<li>
+<p><strong>If you find it easy to work hard for others but not for yourself, trace the origin.</strong> Write down: when did I first learn that my own needs matter less than others'? Who taught me this? What was the situation? Don't try to argue yourself out of the belief — just locate where it came from.</p>
+</li>
+<li>
+<p><strong>The next time you feel a strong guilt or shame response, pause and sequence it.</strong> Notice that the emotion arrived before any reasoning. Ask: what is this emotion telling me? What is it driving me to do? Then ask: what do I <em>actually</em> want to do, using this feeling as fuel rather than a directive?</p>
+</li>
+<li>
+<p><strong>If you're a parent in conflict with a child over gaming, schedule a conversation that's only about what the child wants from their life</strong> — not about rules, grades, or gaming. No agenda except listening. Do this before any enforcement conversation.</p>
+</li>
+<li>
+<p><strong>If you have a relationship you're trying to repair, do one small interaction per week rather than attempting a full resolution.</strong> Think of it as doing your dailies. Small, consistent contact compounds over time. Don't speedrun it.</p>
+</li>
+<li>
+<p><strong>Pre-order or read <em>How to Raise a Healthy Gamer</em></strong> — even if you're not a parent. The sections on relationship-building, communication, and how gaming affects the brain apply to anyone trying to understand their own patterns or improve how they connect with others.</p>
+</li>
+</ol>
+</section></article>
+    </div>
+  </div>
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc"><ul><li><a href="#transcript-0-stream-intro-and-crypto-coin-joke-announcement">Stream Intro and Crypto Coin Joke Announcement</a></li><li><a href="#transcript-1-false-sense-of-wellness-from-mental-health-content">False Sense of Wellness from Mental Health Content</a></li><li><a href="#transcript-2-how-to-make-mental-health-content-actually-work-for-you">How to Make Mental Health Content Actually Work for You</a></li><li><a href="#transcript-3-information-behavioral-change-and-critical-thinking">Information, Behavioral Change, and Critical Thinking</a></li><li><a href="#transcript-4-the-problem-of-measuring-therapy-quality">The Problem of Measuring Therapy Quality</a></li><li><a href="#transcript-5-what-makes-a-good-vs-bad-therapist">What Makes a Good vs. Bad Therapist</a></li><li><a href="#transcript-6-average-looks-attraction-anxiety-and-relationship-beliefs">Average Looks, Attraction Anxiety, and Relationship Beliefs</a></li><li><a href="#transcript-7-toxic-relationship-patterns-from-insecurity">Toxic Relationship Patterns from Insecurity</a></li><li><a href="#transcript-8-finding-vs-cultivating-the-right-partner">Finding vs. Cultivating the Right Partner</a></li><li><a href="#transcript-9-valuing-others-over-yourself-and-altruistic-depression">Valuing Others Over Yourself and Altruistic Depression</a></li><li><a href="#transcript-10-emotions-as-information-and-motivation">Emotions as Information and Motivation</a></li><li><a href="#transcript-11-gaming-addiction-and-parenting-the-arms-race">Gaming Addiction and Parenting the Arms Race</a></li><li><a href="#transcript-12-autism-adhd-and-why-games-fill-a-real-need">Autism, ADHD, and Why Games Fill a Real Need</a></li><li><a href="#transcript-13-repairing-a-relationship-with-a-self-centered-parent">Repairing a Relationship with a Self-Centered Parent</a></li><li><a href="#transcript-14-book-announcement-how-to-raise-a-healthy-gamer">Book Announcement: How to Raise a Healthy Gamer</a></li></ul></div></nav>
+      <article class="summary"><section class="sec sec-a">
 <h2 id="transcript-0-stream-intro-and-crypto-coin-joke-announcement">Stream Intro and Crypto Coin Joke Announcement</h2>
-<p><span class="speaker">Dr. K:</span> [Music] m [Music] oh [Music] [Applause] [Music] to [Music] [Music] oh, oh, oh [Music] [Music] [Music] [Applause] [Applause] [Applause] [Laughter] [Laughter] [Laughter] [Applause] [Applause] [Music]. [Music] for [Music] [Music] [Applause] [Applause] [Applause] [Music] [Music] [Music] [Applause] [Music] [Applause] [Applause] d [Music]. Yo, welcome to another healthy gamer GG stream. Just a reminder that my name is Alo kenoa and just a that, although I&#x27;m a psychiatrist, nothing we discuss on stream is intended to be taken as medical advice. Everything is for educational or entertainment purposes only.</p>
+<p>[Music] m [Music] oh [Music] [Applause] [Music] to [Music] [Music] oh, oh, oh [Music] [Music] [Music] [Applause] [Applause] [Applause] [Laughter] [Laughter] [Laughter] [Applause] [Applause] [Music]. [Music] for [Music] [Music] [Applause] [Applause] [Applause] [Music] [Music] [Music] [Applause] [Music] [Applause] [Applause] d [Music]. Yo, welcome to another healthy gamer GG stream. Just a reminder that my name is Alo kenoa and just a that, although I&#x27;m a psychiatrist, nothing we discuss on stream is intended to be taken as medical advice. Everything is for educational or entertainment purposes only.</p>
 <p>Um, if youall have a concern or question, please go see a licensed professional. Hello, my friends, how&#x27;s everybody doing today? We doing good, we crushing it, yall doing well? Um, we do have a special announcement at the end of stream today and uh, unfortunately it is not that I writing a movie. I wish, um, and I think that many of you may be right about what the announcement is, but I also expect some of y&#x27;all to be disappointed. And this is just a um, yeah, just a reminder that uh, yeah, that&#x27;s, that&#x27;s life. Oh, no, people, people are aware that I am pregnant. Um, no, I, I am not pregnant. That is not the announcement.</p>
 <p>Um, yeah, so welcome everybody. Hope yall are doing well. So let me just see if we have other announcements? Um, yeah, so we, we we&#x27;ll do our announcement, probably at the end, but today we&#x27;re just going to be looking at some Reddit posts- posts from Reddit- just to discuss various things that are relevant to our community, and, yeah, we&#x27;re going to talk about it. Maybe we&#x27;ll do like a lecture or whatever, like we&#x27;ll see how that goes. Um, ah, yes, as people are saying, uh, yeah, it&#x27;s not 12 rules for life and it&#x27;s not a um, I saw some other good ones. Um, I&#x27;m not coming out as bisexual, but I love, I love these.</p>
 <p>Uh, I, I love the, but I love, I love these. Uh, I, I love the enthusiasm, enthusiasm, chat. You know, what we should do is, back before we became decent human beings, we used to be internet trolls, and so what we should do is actually, you know, what would be a great idea is if we just said, hey, we&#x27;re making a special announcement, we&#x27;re going to be announcing the thing that we should- that many of yall have said we need to do the most, and then what we should do is use some kind of like AI to scrape the comments and try to figure out what people think we&#x27;re doing, and then we should do that thing.</p>
@@ -289,15 +458,21 @@ try {
 <p>Our work is done when. Our viewer, count to zero. That&#x27;s when our work is done. That&#x27;s the goal. It&#x27;s Independence. Seriously, I want to play games, chat, like seriously, when y&#x27;all can take care of yourselves, then I get to go on vacation, I&#x27;m not kidding. I can go back to practicing clinical medicine and seeing patients and you know whatever, playing video games and maybe go back to working with Esports teams or like whatever, like that. There&#x27;s tons of stuff for me to do, but I can&#x27;t do that yet because we&#x27;re. But I can&#x27;t do that yet because we&#x27;re not not done. Okay, so with that, from the bottom of my heart, I love yall.</p>
 <p>Thank you so much for coming today and, by all means, check out how to raise healthy gamer. How to raise a healthy gamer, um, and you can pre-order it with uh- exclamation point- book. I got to bounce, but y&#x27;all take care, we&#x27;ll see y&#x27;all this week sometime, okay. Thank you all so much for coming. Thank you all so much for pre-ordering seriously, like- oh my God, gifted Subs. If you all have a choice between gifting subs and pre-ordering pre-order, okay.</p>
 </section></article>
+    </div>
   </div>
+  
 
-  <p class="meta">Auto-transcribed livestream · chapters &amp; speaker labels are a best-effort approximation (claude-sonnet-4-6).</p>
+  <p class="meta">Medium summary · claude-sonnet-4-6 (no extended thinking)</p>
 </div>
 
 <script>
 (function () {
   var root = document.documentElement;
-  var tb = document.querySelector('.theme-toggle');
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'medium');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
   var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
   tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
@@ -305,6 +480,16 @@ try {
   function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
   var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+  // deep-link to a heading in any view: switch to that view, then scroll to it
+  function navigateTo(id){
+    var el = id && document.getElementById(id);
+    if (!el) return;
+    var v = el.closest('.view');
+    if (v) setView(v.getAttribute('data-view'));
+    el.scrollIntoView();
+  }
+  window.addEventListener('hashchange', function(){ navigateTo(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash) navigateTo(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>
 <script>

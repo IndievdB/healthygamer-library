@@ -9,7 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-} catch (e) {}
+  document.documentElement.setAttribute('data-view', localStorage.getItem('pubview') || 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -24,16 +25,168 @@ try {
   </nav>
 
   <h1>Dr. K Reacts To Horrible Relationship Advice​</h1>
-  <p class="watch">
-    <a href="https://www.youtube.com/watch?v=gCsivmxpBCw" target="_blank" rel="noopener">▶ Watch on YouTube</a>
-    <span class="speakers-note">Speakers (auto-detected): Dr. K</span>
-  </p>
+  <p class="watch"><a href="https://www.youtube.com/watch?v=gCsivmxpBCw" target="_blank" rel="noopener">▶ Watch on YouTube</a></p>
 
-  <div class="doc">
-    <nav class="toc"><p class="toc-title">Chapters</p><ul><li><a href="#transcript-0-opening-music-and-stream-introduction">Opening Music and Stream Introduction</a></li><li><a href="#transcript-1-announcements-upcoming-streams-and-events">Announcements: Upcoming Streams and Events</a></li><li><a href="#transcript-2-membership-platform-and-resilience-challenge">Membership Platform and Resilience Challenge</a></li><li><a href="#transcript-3-community-survey-results-who-watches-healthy-gamer">Community Survey Results: Who Watches Healthy Gamer</a></li><li><a href="#transcript-4-vasopressin-oxytocin-and-stress-based-pair-bonding">Vasopressin, Oxytocin, and Stress-Based Pair Bonding</a></li><li><a href="#transcript-5-distress-pair-bonds-and-the-doormat-vs-asshole-spectrum">Distress Pair Bonds and the Doormat vs. Asshole Spectrum</a></li><li><a href="#transcript-6-sexual-frequency-advice-rote-sex-vs-understanding-desire">Sexual Frequency Advice: Rote Sex vs. Understanding Desire</a></li><li><a href="#transcript-7-sexual-fantasies-dead-bedrooms-and-rekindling-intimacy">Sexual Fantasies, Dead Bedrooms, and Rekindling Intimacy</a></li><li><a href="#transcript-8-men-and-women-as-friends-brahmacharya-and-emotional-maturity">Men and Women as Friends: Brahmacharya and Emotional Maturity</a></li><li><a href="#transcript-9-empty-calories-of-online-socialization-and-loneliness">Empty Calories of Online Socialization and Loneliness</a></li><li><a href="#transcript-10-social-media-absence-and-relationship-red-flags">Social Media Absence and Relationship Red Flags</a></li><li><a href="#transcript-11-playing-hard-to-get-attachment-styles-and-dating-strategies">Playing Hard to Get: Attachment Styles and Dating Strategies</a></li><li><a href="#transcript-12-negging-pickup-artistry-and-selecting-partner-types">Negging, Pickup Artistry, and Selecting Partner Types</a></li><li><a href="#transcript-13-providing-for-a-partner-and-bad-dating-advice-projection">Providing for a Partner and Bad Dating Advice Projection</a></li><li><a href="#transcript-14-masculinity-emotional-intelligence-and-taking-space">Masculinity, Emotional Intelligence, and Taking Space</a></li><li><a href="#transcript-15-why-we-can-t-break-up-comfort-price-and-paralysis">Why We Can&#x27;t Break Up: Comfort, Price, and Paralysis</a></li><li><a href="#transcript-16-jealousy-over-a-partner-s-sexual-past">Jealousy Over a Partner&#x27;s Sexual Past</a></li><li><a href="#transcript-17-evolutionary-psychology-and-the-limits-of-averages">Evolutionary Psychology and the Limits of Averages</a></li><li><a href="#transcript-18-honesty-and-openness-in-relationships">Honesty and Openness in Relationships</a></li><li><a href="#transcript-19-closing-remarks-and-viewer-questions">Closing Remarks and Viewer Questions</a></li></ul></nav>
-    <article class="summary transcript"><section class="sec sec-a">
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">2,435w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">28,977w</span></button>
+    
+  </div>
+
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#medium-summary">Summary</a></li>
+<li><a href="#medium-stress-vasopressin-and-why-make-him-work-for-it-is-half-right">Stress, Vasopressin, and Why "Make Him Work for It" Is Half Right</a></li>
+<li><a href="#medium-the-doormat-to-asshole-pendulum">The Doormat-to-Asshole Pendulum</a></li>
+<li><a href="#medium-rote-sex-three-times-a-week-vs-actually-diagnosing-the-problem">Rote Sex Three Times a Week vs. Actually Diagnosing the Problem</a></li>
+<li><a href="#medium-men-and-women-cant-be-friends-what-this-actually-reveals">Men and Women Can't Be Friends — What This Actually Reveals</a></li>
+<li><a href="#medium-playing-hard-to-get-who-it-actually-works-on">Playing Hard to Get — Who It Actually Works On</a></li>
+<li><a href="#medium-why-so-much-relationship-advice-is-projection">Why So Much Relationship Advice Is Projection</a></li>
+<li><a href="#medium-why-you-cant-break-up-even-when-you-know-you-should">Why You Can't Break Up Even When You Know You Should</a></li>
+<li><a href="#medium-common-pitfalls">Common Pitfalls</a></li>
+<li><a href="#medium-action-items-exercises">Action Items &amp; Exercises</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="medium-summary">Summary</h2>
+<p><strong>TL;DR —</strong> Most relationship advice online is projection dressed up as universal truth. Understanding the actual science — and why bad advice <em>feels</em> right — is more useful than following any single rule.</p>
+<p>This is a wide-ranging reaction and analysis of popular relationship advice clips. Rather than just debunking each one, the core thread running through everything is a consistent diagnosis: advice-givers mistake their own psychology for objective reality, cherry-pick mechanisms that are real but misapplied, and produce rules that only work on specific (often insecure) attachment styles. Along the way, genuinely useful science on bonding, desire, social media's effect on loneliness, and emotional intelligence gets unpacked.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-stress-vasopressin-and-why-make-him-work-for-it-is-half-right">Stress, Vasopressin, and Why "Make Him Work for It" Is Half Right</h2>
+<p>One clip claimed that men fall in love through vasopressin — a hormone associated with stress — and therefore women should intentionally stress men out to bond them. The hormone part is real; the advice is a misuse of it.</p>
+<p>Vasopressin is better known in medicine for regulating kidney water reabsorption. But it does play a genuine role in social behavior and pair bonding, and males of many species are more responsive to it than females. More importantly, vasopressin spikes during <strong>distress-based pair bonding</strong> — the kind of bond that forms when two people go through something hard together. Think of medical residents logging hundred-hour weeks together, or patients in a rehab unit all going through withdrawal simultaneously. That shared suffering produces real neurochemical bonding.</p>
+<p>So the mechanism is legitimate. The problem is what happens after the crisis ends.</p>
+<blockquote>
+<p>"A distressed pair bonded relationship can change drastically when the distressed period is over."</p>
+</blockquote>
+<p>More than half of these relationships fall apart when normal life resumes, because the bond was built on circumstances rather than compatibility. The ones that survive are the ones where both people successfully transition out of the distress together — which is possible, but it's not something you can engineer by playing games.</p>
+<p>More fundamentally: one of the three major factors that builds bonds, according to relationship science, is that another person <strong>makes your life less stressful and easier</strong>. Deliberately making someone's life worse works against this. The clip confuses "stress can sometimes bond people" with "you should be a source of stress." These are not the same thing.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-the-doormat-to-asshole-pendulum">The Doormat-to-Asshole Pendulum</h2>
+<p>A deeper pattern explains where advice like "stress him out" comes from. Many people have been genuinely hurt by being <em>too</em> accommodating — doing everything for a partner, never setting limits, letting their own value get eroded. Then, burned by that experience, they swing hard in the opposite direction. The lesson they learn isn't quite right.</p>
+<blockquote>
+<p>"The problem is not that you're really nice to people. The problem is that you're a doormat. That you devalue yourself. That you let other people get away with devaluing you."</p>
+</blockquote>
+<p>The correction isn't to become difficult. It's to understand your own worth, hold it consistently, and give appropriate feedback when someone violates it. There is something in the middle of the doormat–asshole spectrum. The way to find it:</p>
+<ul>
+<li><strong>A doormat</strong> never asks anyone to move toward greater responsibility</li>
+<li><strong>An asshole</strong> doesn't meet people where they are</li>
+<li><strong>The right approach</strong> is to meet people where they are <em>and then ask them to move</em> — hold their hand, but don't stay stuck</li>
+</ul>
+<p>In practical terms, this means when someone offers a reason for not taking on responsibility ("I'm too tired," "I don't know how"), that reason becomes a <strong>problem to solve</strong>, not a justification to absorb their share of the work. "Okay, you're tired — what's your plan for being less tired?" The moment excuses become reasons for inaction rather than obstacles to address, nothing changes.</p>
+<p>When they get emotionally reactive to being asked to take responsibility, the critical move is: <strong>don't match their emotional energy</strong>. Engaging their emotion pulls you into a fight, gives them ammo to dismiss you, and lets them off the hook. Acknowledge the feeling calmly and return to the question: "I'm sorry you feel that way. Which of these six things do you want to start with?"</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-rote-sex-three-times-a-week-vs-actually-diagnosing-the-problem">Rote Sex Three Times a Week vs. Actually Diagnosing the Problem</h2>
+<p>One clip advised couples to just have sex three times a week regardless of how they feel — stop acting like toddlers, just do the fundamentals. There's a kernel of truth and a significant failure mode here.</p>
+<p>The kernel: sexual intimacy <em>can</em> improve a relationship even when people aren't initially in the mood. There's even solid evidence that sexual activity relieves headaches and migraines by redistributing blood flow and triggering full-body muscular release followed by relaxation.</p>
+<p>The failure mode: <strong>the absence of desire is diagnostic information</strong>. Sex drive is primal enough that when it disappears, something is wrong — with energy, mood, connection, hormones, or sleep. The most common fix for a woman who no longer wants sex? Three more hours of sleep per week. One extra hour, three nights. That's frequently all it takes.</p>
+<p>Beyond sleep, the more useful question than "just do it" is:</p>
+<blockquote>
+<p>"What would make you feel like having sex?"</p>
+</blockquote>
+<p>This question opens the door to understanding what's actually missing — and often leads somewhere far more valuable than rote compliance. Dissatisfaction with a sex life is the first door to an honest conversation about desires, fantasies, and what would genuinely work for both people. Couples who've had a dead bedroom for years and then have this conversation properly often end up with more active, satisfying sex lives than they had when things were "working." Mechanical obligation forecloses that conversation entirely.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-men-and-women-cant-be-friends-what-this-actually-reveals">Men and Women Can't Be Friends — What This Actually Reveals</h2>
+<p>The claim that men and women can never truly be friends, that someone always catches feelings, that opposite-sex friendships are inherent relationship red flags — this is a textbook case of <strong>projection</strong>.</p>
+<p>Pay attention to the language: "You'll never <em>catch</em> me texting a guy without my husband in the group chat." We only catch criminals. The word choice reveals an implicit belief that cross-gender friendship is inherently transgressive. The conclusion that "one of you will always catch feelings" isn't a universal truth about human psychology; it's a description of how <em>this person</em> functions.</p>
+<p>The real question isn't whether feelings might arise. It's whether you're <strong>emotionally mature enough to handle them when they do</strong>. Feelings aren't permanent. Feelings don't require action. If catching feelings automatically means the friendship is over, then yes — you can't have opposite-sex friends. But that's a problem with emotional management, not a problem with cross-gender friendship.</p>
+<p>The analogy here is useful: there are monks who avoid all contact with women not because they've conquered lust, but precisely because they <em>haven't</em>. True mastery of desire means the presence of a potential attraction doesn't destabilize you. The avoidance is the tell.</p>
+<p>Practical boundaries still matter:
+- Be transparent with your partner about who you spend time with
+- Don't put yourself in genuinely high-risk situations (drinking alone with someone you could be attracted to)
+- If feelings arise, talk them out — they pass</p>
+<p>And there's a practical upside to opposite-sex friendships that's usually ignored: if your wife doesn't want to have sex with you and you have no female friends, your male friends can't help. A female friend who genuinely cares about your happiness can offer real insight into what might be going on.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-playing-hard-to-get-who-it-actually-works-on">Playing Hard to Get — Who It Actually Works On</h2>
+<p>The research on playing hard to get is mixed for an important reason: <strong>it works on specific attachment styles and not others</strong>.</p>
+<p>There's real psychological support for the scarcity principle — things that are harder to get are valued more, and effort invested increases perceived value (this is also why hazing works, mechanistically). Studies from the 1970s established these as general psychological principles.</p>
+<p>But more recent work shows that playing hard to get can also register as emotional rejection, making you less likable — not more. The determining factor is who you're playing it with:</p>
+<ul>
+<li><strong>Anxiously attached people</strong> will chase harder when you're less available</li>
+<li><strong>Avoidantly attached people</strong> may stay engaged as long as it stays casual, but will leave once emotional depth develops</li>
+<li><strong>Securely attached people</strong> (about 50% of the population) will recognize the game, interpret it as emotional immaturity, and leave</li>
+</ul>
+<p>The broader principle: <strong>the strategy you use in dating selects for a certain kind of person</strong>. If you play games, you attract people who like games, people who lack self-worth, or people who are insecurely attached. That's not random — it's the natural filter your behavior creates. Negging (insulting someone to create attraction) works, but only on people with low self-esteem who don't believe they can do better. The mechanism is sociopathic even when it's effective.</p>
+<p>If you want a partner who is emotionally available, confident in themselves, and capable of a secure relationship — that strategy will screen them out.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-why-so-much-relationship-advice-is-projection">Why So Much Relationship Advice Is Projection</h2>
+<p>This is the single most useful meta-lesson from all the clips reviewed:</p>
+<blockquote>
+<p>"Anytime you see a soothsayer giving you 'these signals mean this' — that's not what the signals mean. That shows you how their mind works."</p>
+</blockquote>
+<p>If someone blocks you, it means they're in love with you — according to one clip. What this actually means is: <em>when this person blocks someone, it's because they're in love with them</em>. It reveals nothing about the person who blocked you.</p>
+<p>Almost all of the bad advice shared a structural feature: the advisor was generalizing outward from their own experience rather than examining the data. And the advice was given with total confidence because we're wired to assume our internal experience maps to everyone else's.</p>
+<p>This compounds with another problem: <strong>short-form content has no room for differential diagnosis</strong>. The same behavior (not posting your partner on social media) could mean they're keeping their options open, that they simply don't use social media that way, that they're intensely private, or that they were hurt by posting past partners publicly. One clip = one explanation = misleading certainty.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-why-you-cant-break-up-even-when-you-know-you-should">Why You Can't Break Up Even When You Know You Should</h2>
+<p>This comes down to one thing: <strong>you haven't accepted the price</strong>.</p>
+<p>Every reason you haven't broken up yet is a reason you're staying — having to move, losing social connection, loneliness, avoiding guilt, fear of their reaction. Those aren't obstacles to breaking up. They <em>are</em> the relationship. The moment you mentally commit to paying those costs, breaking up becomes possible.</p>
+<p>The practical move isn't to try to make the breakup feel better. It's to <strong>remove the practical obstacles in advance</strong> — find the sublet, plan the logistics, build back the social infrastructure. Do the work first. Then the breakup can actually happen.</p>
+<p>This sits inside a broader pattern: as comfort has become more available in modern life, the field of action narrows to only things that don't feel bad. That's a kind of self-imposed paralysis. The path forward through almost any stuck situation — leaving a relationship, forming new ones, building an offline social life — runs through a period of feeling worse before feeling better. The brain doesn't naturally move toward disequilibrium. That's exactly why it has to be a choice.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-common-pitfalls">Common Pitfalls</h2>
+<p><strong>Confusing a real mechanism with good advice.</strong> Vasopressin and distress bonding are real. That doesn't mean deliberately stressing your partner is a good idea. Knowing that scarcity increases perceived value doesn't mean manufacturing scarcity is a healthy foundation. Real mechanisms get misapplied constantly.</p>
+<p><strong>Swinging from doormat to asshole.</strong> When being too accommodating has hurt you, the instinct is to become the opposite. The actual correction is much more specific: understand your own worth and hold it, without needing to make someone else's life harder to do it.</p>
+<p><strong>Treating population averages as individual predictions.</strong> A study showing men on average prefer X tells you nothing reliable about a specific man in front of you. Research averages wash out individual variation. The person you end up loving is usually not the person your survey answers would have predicted.</p>
+<p><strong>Engaging emotional reactivity during boundary-holding.</strong> When a partner gets upset at being asked to take on more responsibility, matching their emotional energy ends the conversation and undermines the point. Staying calm and returning to the practical question is what actually moves things forward.</p>
+<p><strong>Interpreting absence of desire as laziness.</strong> No desire for sex is diagnostic, not a character flaw. Something is off — sleep, mood, connection, hormones. Treating the symptom (just do it anyway) leaves the cause untouched.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-action-items-exercises">Action Items &amp; Exercises</h2>
+<ol>
+<li>
+<p><strong>Audit one piece of relationship advice you currently believe.</strong> Ask: is this describing a universal truth, or is it describing how this particular person (or I) experience the world? What evidence would it take to prove it wrong?</p>
+</li>
+<li>
+<p><strong>Map your own doormat–asshole range.</strong> Think of a current relationship (romantic, friendship, work) where you feel undervalued. Write down: what is your actual responsibility in this dynamic? What is theirs? Where does the 51/49 split land? What's the one specific thing you could ask them to start doing?</p>
+</li>
+<li>
+<p><strong>Try the "what would make you feel like it?" question.</strong> The next time you or your partner isn't in the mood for something — not just sex, but any area of friction — replace the push to just comply with this question. Listen to what comes back without immediately solving it.</p>
+</li>
+<li>
+<p><strong>When someone gets emotionally reactive, practice the calm return.</strong> The next time someone responds to a reasonable request with emotional whining or defensiveness, don't engage the emotion. Acknowledge it briefly ("I hear you, that's hard") and return to the question. Notice what happens.</p>
+</li>
+<li>
+<p><strong>Identify the price you haven't accepted.</strong> If there's a decision you've been avoiding — ending something, starting something, having a hard conversation — write down every reason you haven't done it yet. Those are the prices. Pick the smallest one and decide, explicitly, whether you're willing to pay it.</p>
+</li>
+<li>
+<p><strong>Decrease one form of social empty calories for two weeks.</strong> Pick one platform or behavior (doom-scrolling, parasocial content, Tinder without follow-through) and reduce it with the explicit understanding that you will feel worse before you feel better. The dissatisfaction that follows is the signal working correctly.</p>
+</li>
+<li>
+<p><strong>If a feeling arises that you'd normally bury, name it specifically.</strong> Jealousy of a partner's past? Attraction to a friend? Instead of acting on it or suppressing it, write it down and sit with it for 48 hours. Most feelings, examined and named, lose significant force on their own.</p>
+</li>
+</ol>
+</section></article>
+    </div>
+  </div>
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc"><ul><li><a href="#transcript-0-opening-music-and-stream-introduction">Opening Music and Stream Introduction</a></li><li><a href="#transcript-1-announcements-upcoming-streams-and-events">Announcements: Upcoming Streams and Events</a></li><li><a href="#transcript-2-membership-platform-and-resilience-challenge">Membership Platform and Resilience Challenge</a></li><li><a href="#transcript-3-community-survey-results-who-watches-healthy-gamer">Community Survey Results: Who Watches Healthy Gamer</a></li><li><a href="#transcript-4-vasopressin-oxytocin-and-stress-based-pair-bonding">Vasopressin, Oxytocin, and Stress-Based Pair Bonding</a></li><li><a href="#transcript-5-distress-pair-bonds-and-the-doormat-vs-asshole-spectrum">Distress Pair Bonds and the Doormat vs. Asshole Spectrum</a></li><li><a href="#transcript-6-sexual-frequency-advice-rote-sex-vs-understanding-desire">Sexual Frequency Advice: Rote Sex vs. Understanding Desire</a></li><li><a href="#transcript-7-sexual-fantasies-dead-bedrooms-and-rekindling-intimacy">Sexual Fantasies, Dead Bedrooms, and Rekindling Intimacy</a></li><li><a href="#transcript-8-men-and-women-as-friends-brahmacharya-and-emotional-maturity">Men and Women as Friends: Brahmacharya and Emotional Maturity</a></li><li><a href="#transcript-9-empty-calories-of-online-socialization-and-loneliness">Empty Calories of Online Socialization and Loneliness</a></li><li><a href="#transcript-10-social-media-absence-and-relationship-red-flags">Social Media Absence and Relationship Red Flags</a></li><li><a href="#transcript-11-playing-hard-to-get-attachment-styles-and-dating-strategies">Playing Hard to Get: Attachment Styles and Dating Strategies</a></li><li><a href="#transcript-12-negging-pickup-artistry-and-selecting-partner-types">Negging, Pickup Artistry, and Selecting Partner Types</a></li><li><a href="#transcript-13-providing-for-a-partner-and-bad-dating-advice-projection">Providing for a Partner and Bad Dating Advice Projection</a></li><li><a href="#transcript-14-masculinity-emotional-intelligence-and-taking-space">Masculinity, Emotional Intelligence, and Taking Space</a></li><li><a href="#transcript-15-why-we-can-t-break-up-comfort-price-and-paralysis">Why We Can&#x27;t Break Up: Comfort, Price, and Paralysis</a></li><li><a href="#transcript-16-jealousy-over-a-partner-s-sexual-past">Jealousy Over a Partner&#x27;s Sexual Past</a></li><li><a href="#transcript-17-evolutionary-psychology-and-the-limits-of-averages">Evolutionary Psychology and the Limits of Averages</a></li><li><a href="#transcript-18-honesty-and-openness-in-relationships">Honesty and Openness in Relationships</a></li><li><a href="#transcript-19-closing-remarks-and-viewer-questions">Closing Remarks and Viewer Questions</a></li></ul></div></nav>
+      <article class="summary"><section class="sec sec-a">
 <h2 id="transcript-0-opening-music-and-stream-introduction">Opening Music and Stream Introduction</h2>
-<p><span class="speaker">Dr. K:</span> [Music] Hello. Hello. Hello. [Music] [Music] [Applause] [Applause] A narative way with a patch isn&#x27;t light. We grew up in the suburbs and we cut all our size. Now just take a look at the super clear eyes. I&#x27;m a friend. The road depends of bits of the rice. A couple more miles and I know we&#x27;ll arrive. Rolling hills and valleys you alive. Now the people grab our feet to help me and a little bit more. We waste our lives. We got it in the dark. We took the long We got it in the dark. We took the long way way down just to find in somewhere inside this ancient town. And we talked we talked about it all night. We thought we thought we&#x27;d make it alive. And we talked we talked about it all night. We thought we thought we&#x27;d make it alive. We talked we talked about it all night at the first light. We thought we thought we&#x27;d make it alive. At least we give it a lot of give it a lot of [Music] [Music] [Music] [Applause] [Applause] time. A narrative waste patches and light. We grew up in the suburbs and we cut all our ties. Now just take a look at the super clean eyes. I will find the roads a bit to the right. The stars are left here at the beginning of days. And each step that was taken more a little away with something to say. A conversation that could last the end of the day. But we got it in the dark. We took the long way down just to find him somewhere inside this ancient town. And we talked we talked about it all night. We thought we thought we&#x27;d make it alive. And we talked we talked about it all night. We thought we thought we&#x27;d make it alive. We talked we talked about it all night to throw the planet at the first light. We thought we thought we&#x27;d make it alive. At least thought we&#x27;d make it alive. At least [Music] [Music] [Music] [Applause] [Applause] [Applause] [Music] we talked about it all night. We thought we thought we&#x27;d make it all right. We talked about it all night. We thought we thought we&#x27;d make it all right. We talked we talked about it all night. We thought we thought we&#x27;d make it all right. We talked we talked about it all night. We thought we thought we&#x27;d make night. We thought we thought we&#x27;d make it [Music] alive. Faster, faster, dear. It&#x27;s like we&#x27;re moving backwards in your rear view mirror. The road eaten up by the snow. I can feel I know you feel it too.</p>
+<p>[Music] Hello. Hello. Hello. [Music] [Music] [Applause] [Applause] A narative way with a patch isn&#x27;t light. We grew up in the suburbs and we cut all our size. Now just take a look at the super clear eyes. I&#x27;m a friend. The road depends of bits of the rice. A couple more miles and I know we&#x27;ll arrive. Rolling hills and valleys you alive. Now the people grab our feet to help me and a little bit more. We waste our lives. We got it in the dark. We took the long We got it in the dark. We took the long way way down just to find in somewhere inside this ancient town. And we talked we talked about it all night. We thought we thought we&#x27;d make it alive. And we talked we talked about it all night. We thought we thought we&#x27;d make it alive. We talked we talked about it all night at the first light. We thought we thought we&#x27;d make it alive. At least we give it a lot of give it a lot of [Music] [Music] [Music] [Applause] [Applause] time. A narrative waste patches and light. We grew up in the suburbs and we cut all our ties. Now just take a look at the super clean eyes. I will find the roads a bit to the right. The stars are left here at the beginning of days. And each step that was taken more a little away with something to say. A conversation that could last the end of the day. But we got it in the dark. We took the long way down just to find him somewhere inside this ancient town. And we talked we talked about it all night. We thought we thought we&#x27;d make it alive. And we talked we talked about it all night. We thought we thought we&#x27;d make it alive. We talked we talked about it all night to throw the planet at the first light. We thought we thought we&#x27;d make it alive. At least thought we&#x27;d make it alive. At least [Music] [Music] [Music] [Applause] [Applause] [Applause] [Music] we talked about it all night. We thought we thought we&#x27;d make it all right. We talked about it all night. We thought we thought we&#x27;d make it all right. We talked we talked about it all night. We thought we thought we&#x27;d make it all right. We talked we talked about it all night. We thought we thought we&#x27;d make night. We thought we thought we&#x27;d make it [Music] alive. Faster, faster, dear. It&#x27;s like we&#x27;re moving backwards in your rear view mirror. The road eaten up by the snow. I can feel I know you feel it too.</p>
 <p>A little flicker on the path we steer. Subtle flashing lights will go faster and faster. This time I might forget. This time I might run ahead. This time it goes faster and faster. This time I might forget. This time my mind up. This time it goes faster and faster and [Music] [Music] faster. All righty chat. Let&#x27;s get started. Welcome to another healthy gamer GG stream. My name is Dr. Alok Kanojia. Just a reminder that although I am a medical doctor, nothing we discuss on stream today is intended to be taken as medical advice. Everything is for educational or entertainment purposes only. If y&#x27;all have a medical concern or question, please go see a licensed professional. Okay, so today y&#x27;all, we&#x27;ve got something fun. Um, I am going to be apparently debunking bad relationship advice, uh, which we&#x27;ll get to in a second. So, here&#x27;s what we we did. We we found some um you know relationship advice from this place.</p>
 <p>Y&#x27;all may have heard of it. It&#x27;s called the internet. And what I&#x27;m going to be doing is basically kind of reacting to it. I&#x27;ve sort of looked at it a little bit before just getting the general sense of like what topics these people are going to talk about. And the reason that I did that is I wanted to pull up some scientific literature to see like which aspects of this are correct, which aspects of this are not correct. I actually encountered a lot of stuff that was like um surprising like I&#x27;d never heard of this stuff before but before I just sort of assuming I know it&#x27;s it&#x27;s wild just because I&#x27;ve never heard of it doesn&#x27;t mean it isn&#x27;t true. So I learned a lot by reading into this stuff a little bit and I&#x27;d love to share some of that with y&#x27;all. Oh, I need to go live. Okay, are we live now? Let me see. Um, am I live on YouTube? Let&#x27;s see.</p>
 </section>
@@ -230,15 +383,21 @@ try {
 <p>Um, oh yeah. So, here here&#x27;s um there&#x27;s uh I&#x27;ll I&#x27;ll post this here. You guys haven&#x27;t seen this. So, like sometimes we&#x27;ll do like I&#x27;ll make videos where we&#x27;re like, you know, it&#x27;s not like necessarily a super common thing. But I think this is a good like exploration of like um hold on. I think the I don&#x27;t need to hear myself speak. I&#x27;ll send y&#x27;all these hear myself speak. I&#x27;ll send y&#x27;all these two two links. And this is really like reminding me how important this Yeah, we need to figure out some way to get this stuff to y&#x27;all more easily. So, if y&#x27;all have questions, we can connect y&#x27;all with the information that y&#x27;all need. So, thank you all very much for coming today. Happy Friday. And um you know, let us know if y&#x27;all liked this, didn&#x27;t like this, if you want to see it again, don&#x27;t want to see it again. If y&#x27;all have another topic of stuff that you guys want me to like kind of explain, react to, dig into a little bit of science about, you know, do some literature searches and really understand what&#x27;s going on that&#x27;s not relationship advice, let us know. So, like post on the subreddit. Um, you know, you can just post in chat and I know there are mods in chat. Like maybe y&#x27;all can just take note and see if there&#x27;s something good that we want to do. But like we&#x27;re here for you, right? We do this to help y&#x27;all with the how we can help you. So, what we do is determine more about by what y&#x27;all want and what y&#x27;all need than it is about what we think is a good idea.</p>
 <p>Although, occasionally we&#x27;ll do that too, right? We&#x27;ll say like, &quot;Hey, we&#x27;re going to do a lecture about this even though no one cares about it. It&#x27;s important. Here&#x27;s why.</p>
 </section></article>
+    </div>
   </div>
+  
 
-  <p class="meta">Auto-transcribed livestream · chapters &amp; speaker labels are a best-effort approximation (claude-sonnet-4-6).</p>
+  <p class="meta">Medium summary · claude-sonnet-4-6 (no extended thinking)</p>
 </div>
 
 <script>
 (function () {
   var root = document.documentElement;
-  var tb = document.querySelector('.theme-toggle');
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'medium');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
   var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
   tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
@@ -246,6 +405,16 @@ try {
   function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
   var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+  // deep-link to a heading in any view: switch to that view, then scroll to it
+  function navigateTo(id){
+    var el = id && document.getElementById(id);
+    if (!el) return;
+    var v = el.closest('.view');
+    if (v) setView(v.getAttribute('data-view'));
+    el.scrollIntoView();
+  }
+  window.addEventListener('hashchange', function(){ navigateTo(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash) navigateTo(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>
 <script>

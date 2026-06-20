@@ -9,7 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-} catch (e) {}
+  document.documentElement.setAttribute('data-view', localStorage.getItem('pubview') || 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -24,16 +25,172 @@ try {
   </nav>
 
   <h1>Everything You Get Wrong About ADHD ft. Dr.Micaela</h1>
-  <p class="watch">
-    <a href="https://www.youtube.com/watch?v=JG6Bt5PFrI0" target="_blank" rel="noopener">▶ Watch on YouTube</a>
-    <span class="speakers-note">Speakers (auto-detected): Dr. Michaela</span>
-  </p>
+  <p class="watch"><a href="https://www.youtube.com/watch?v=JG6Bt5PFrI0" target="_blank" rel="noopener">▶ Watch on YouTube</a></p>
 
-  <div class="doc">
-    <nav class="toc"><p class="toc-title">Chapters</p><ul><li><a href="#transcript-0-stream-introduction-and-host-background">Stream Introduction and Host Background</a></li><li><a href="#transcript-1-sleep-and-performance-on-fewer-hours">Sleep and Performance on Fewer Hours</a></li><li><a href="#transcript-2-why-short-sleep-can-feel-better">Why Short Sleep Can Feel Better</a></li><li><a href="#transcript-3-chronic-sleep-deprivation-and-adhd-like-symptoms">Chronic Sleep Deprivation and ADHD-Like Symptoms</a></li><li><a href="#transcript-4-individual-sleep-needs-and-the-moving-target-of-wellness">Individual Sleep Needs and the Moving Target of Wellness</a></li><li><a href="#transcript-5-oversleeping-sleep-routines-and-motivation">Oversleeping, Sleep Routines, and Motivation</a></li><li><a href="#transcript-6-sleep-as-the-biggest-vulnerability-to-mental-health-relapse">Sleep as the Biggest Vulnerability to Mental Health Relapse</a></li><li><a href="#transcript-7-adhd-and-social-anxiety-the-neurobiological-link">ADHD and Social Anxiety: The Neurobiological Link</a></li><li><a href="#transcript-8-emotion-dysregulation-cycles-in-social-situations">Emotion Dysregulation Cycles in Social Situations</a></li><li><a href="#transcript-9-adhd-social-judgment-and-embracing-weaknesses">ADHD, Social Judgment, and Embracing Weaknesses</a></li><li><a href="#transcript-10-adolescent-social-wiring-and-neurodivergent-rejection">Adolescent Social Wiring and Neurodivergent Rejection</a></li><li><a href="#transcript-11-adhd-guilt-after-social-hangouts">ADHD Guilt After Social Hangouts</a></li><li><a href="#transcript-12-strategies-for-managing-post-hangout-guilt">Strategies for Managing Post-Hangout Guilt</a></li><li><a href="#transcript-13-bedtime-routines-and-sleep-hygiene-tips">Bedtime Routines and Sleep Hygiene Tips</a></li><li><a href="#transcript-14-feeling-fake-in-social-situations-and-authentic-selfhood">Feeling Fake in Social Situations and Authentic Selfhood</a></li><li><a href="#transcript-15-alternative-rebellion-and-creating-spaces-to-be-yourself">Alternative Rebellion and Creating Spaces to Be Yourself</a></li><li><a href="#transcript-16-phone-addiction-and-scrolling-eight-hours-while-anxious">Phone Addiction and Scrolling Eight Hours While Anxious</a></li><li><a href="#transcript-17-adhd-medication-beyond-studying-broader-use-cases">ADHD Medication Beyond Studying: Broader Use Cases</a></li><li><a href="#transcript-18-pros-and-cons-strategy-for-breaking-phone-habits">Pros and Cons Strategy for Breaking Phone Habits</a></li><li><a href="#transcript-19-q-a-diagnosing-autism-adhd-and-social-anxiety">Q&amp;A: Diagnosing Autism, ADHD, and Social Anxiety</a></li><li><a href="#transcript-20-q-a-recovering-from-adhd-burnout-and-boredom">Q&amp;A: Recovering from ADHD Burnout and Boredom</a></li><li><a href="#transcript-21-q-a-adhd-and-autism-social-dichotomy">Q&amp;A: ADHD and Autism Social Dichotomy</a></li><li><a href="#transcript-22-q-a-forgetting-friends-when-not-around-them">Q&amp;A: Forgetting Friends When Not Around Them</a></li><li><a href="#transcript-23-q-a-sticking-to-plans-on-adderall">Q&amp;A: Sticking to Plans on Adderall</a></li><li><a href="#transcript-24-q-a-overcoming-inertia-and-staring-at-screens">Q&amp;A: Overcoming Inertia and Staring at Screens</a></li><li><a href="#transcript-25-closing-remarks-and-farewell">Closing Remarks and Farewell</a></li></ul></nav>
-    <article class="summary transcript"><section class="sec sec-a">
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">2,791w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">20,694w</span></button>
+    
+  </div>
+
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#medium-summary">Summary</a></li>
+<li><a href="#medium-why-a-bad-night-of-sleep-can-paradoxically-feel-better">Why a Bad Night of Sleep Can Paradoxically Feel Better</a></li>
+<li><a href="#medium-how-adhd-creates-social-anxiety-from-the-inside-out">How ADHD Creates Social Anxiety From the Inside Out</a></li>
+<li><a href="#medium-the-post-hangout-guilt-spiral">The Post-Hangout Guilt Spiral</a></li>
+<li><a href="#medium-the-fake-feeling-masking-and-alternative-rebellion">The "Fake" Feeling — Masking and Alternative Rebellion</a></li>
+<li><a href="#medium-adhd-medication-youre-probably-taking-it-wrong">ADHD Medication: You're Probably Taking It Wrong</a></li>
+<li><a href="#medium-breaking-behavioral-loops-the-four-square-pros-and-cons-tool">Breaking Behavioral Loops: The Four-Square Pros and Cons Tool</a></li>
+<li><a href="#medium-common-pitfalls">Common Pitfalls</a></li>
+<li><a href="#medium-action-items-exercises">Action Items &amp; Exercises</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="medium-summary">Summary</h2>
+<p><strong>TL;DR — ADHD is not simply a focus problem; it is a whole-brain regulatory difference that shapes sleep, emotion, social life, self-image, and daily functioning in ways most people — including many clinicians — never explain clearly.</strong></p>
+<p>This talk, hosted by Dr. Micaela (licensed clinical psychologist specializing in neurodivergent youth and young adults), works through a series of real questions from the ADHD community: why poor sleep sometimes <em>helps</em>, how ADHD quietly creates social anxiety, the guilt spiral after hangouts, phone addiction and impulse control, and the practical challenge of actually getting things done. Rather than a lecture, it reads as an honest conversation — frank about what science supports, what remains uncertain, and what genuinely helps versus what just sounds good.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-why-a-bad-night-of-sleep-can-paradoxically-feel-better">Why a Bad Night of Sleep Can Paradoxically Feel Better</h2>
+<p>When you get five or six hours instead of your usual eight, your brain can briefly shift into a kind of emergency mode — it senses low energy reserves and ramps up alertness to compensate. This "patch mode" can temporarily sharpen focus and reduce the foggy, sluggish feeling of chronic under-stimulation. It only works, though, under specific conditions: it has to follow a baseline of generally adequate sleep, it cannot be sustained across multiple days in a row, and it breaks completely if sleep deprivation becomes chronic.</p>
+<p>The deeper reason this matters for ADHD specifically: after roughly four or five consecutive days of poor sleep, even a neurotypical brain begins producing deficits that are clinically indistinguishable from ADHD. Sleep deprivation strips away exactly the cognitive functions that sit at the top of the brain's priority hierarchy — planning, organizing, impulse control, understanding consequences — because those are the "cherry on top" functions that get sacrificed first when energy is scarce. The brain trims to basics.</p>
+<p>Two things most people miss about sleep:</p>
+<ul>
+<li><strong>Emotion regulation is also an executive function.</strong> The frontal lobe normally acts as a brake on the brain's emotion center. Strip out frontal activity through sleep deprivation and emotions become louder, more reactive, slower to settle — for anyone, but especially for people who already have a less-active frontal lobe from ADHD.</li>
+<li><strong>Oversleeping and undersleeping produce the same problems.</strong> Like overwatering and underwatering a plant, the feedback is frustratingly identical. Sleeping fourteen hours after a week of deprivation does not catch you up; it often leaves you just as sluggish.</li>
+</ul>
+<p>The practical upshot: every brain has its own optimal sleep architecture — duration, timing, naps or no naps — and only you can find yours through experimentation. Rather than trying to fix sleep directly (which creates anxious monitoring that makes sleep worse), it can be more effective to dial in <em>one or two other</em> wellness behaviors — physical movement, nutrition, reducing novelty stimulation at night — and let those indirectly improve sleep. Sleep quality is also the single biggest vulnerability to relapse in any mental health condition, so it is worth treating as a long-term project even when it resists short-term fixing.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-how-adhd-creates-social-anxiety-from-the-inside-out">How ADHD Creates Social Anxiety From the Inside Out</h2>
+<p><strong>Social anxiety</strong> is, at its core, a fear of negative evaluation by others. It can look like dreading public speaking, avoiding parties, being hyperconscious of physical appearance, or performing anxiously in situations where you feel judged. ADHD creates a biological pipeline directly into that experience.</p>
+<p>Here is the chain:</p>
+<ol>
+<li>A less-active frontal lobe means emotions are less regulated — more reactive, more intense, and slower to return to baseline (what clinicians call a <strong>slow return to baseline</strong>).</li>
+<li>In a social setting, any perceived negative signal (someone laughs, someone glances your way) triggers a disproportionately large emotional spike.</li>
+<li>While trying to regulate that spike, new stimuli keep arriving — a friend asks "what's wrong?", someone else laughs across the room — and each one re-triggers the spike before it has settled.</li>
+<li>Over time, the brain builds a well-worn pathway (neurons that fire together wire together) between social situations and threat response.</li>
+</ol>
+<p>Beyond the neurobiology, there is also a real social dimension: neurodivergent people are genuinely judged more often. Interrupting mid-sentence, missing the conversational lull, forgetting to follow up, arriving late — these are not imaginary social failures. They happen. The fear of negative evaluation is not purely irrational; it is grounded in actual repeated experience of being found odd or difficult.</p>
+<p>Adolescence intensifies this because the developmental task of a teenage brain is specifically to fit in with peers. Even as the acute peer-orientation fades in adulthood, the brain remains socially wired. You are never fully free of caring what others think — but you can change how much power that care has over you.</p>
+<blockquote>
+<p>"Learning to love yourself and your weaknesses can be a better game changer than sleep."</p>
+</blockquote>
+<p>The pathway out is not fixing every deficit but understanding <em>which</em> deficits are driving the anxiety, so that you can address the root rather than pulling every thread of the spiderweb. If ADHD is the structural anchor of your social anxiety, addressing ADHD — medication, self-knowledge, environmental design — can cause the anxiety to melt away on its own.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-the-post-hangout-guilt-spiral">The Post-Hangout Guilt Spiral</h2>
+<p>Almost every person with ADHD knows the pattern: you have a genuinely great time with friends, you get home, and within minutes the internal prosecutor arrives. <em>Did I interrupt too much? Did I dominate? Did I forget to ask about their thing? They probably think I'm exhausting.</em> Then you avoid reaching out for days because the shame is too loud, which makes everything worse.</p>
+<p>Several forces combine to create this:</p>
+<ul>
+<li><strong>Dopamine and distraction mask the voices during social time.</strong> Being with people you enjoy provides a genuine neurological reward. The critical internal voice gets crowded out. The moment you are alone and quiet — especially lying down to sleep — it has the floor all to itself.</li>
+<li><strong>Medication timing.</strong> Stimulant medication is typically most active during work hours. Evening social hangouts often happen precisely when that medication is wearing off, leaving emotion regulation at its most vulnerable exactly when you are most likely to ruminate.</li>
+<li><strong>Real events provide real material.</strong> People with ADHD genuinely did interrupt that story. They genuinely did forget to follow up. The inner critic is not entirely fabricating — it is catastrophizing real moments.</li>
+</ul>
+<p>A concrete strategy to interrupt this cycle:</p>
+<ol>
+<li><strong>Scheduled emotion dumping.</strong> As soon as you get home (after using the bathroom, seriously — don't skip this), set a timer for ten minutes — five if the topic is very painful. Without writing in complete sentences, handwrite every worry, guilt, and self-criticism you can generate. Force the thoughts out proactively, on your schedule, rather than letting them ambush you at 2 a.m. Handwriting specifically is more powerful because it engages more layers of brain processing.</li>
+<li><strong>Triage what you find.</strong> Skim the journal. If there is a genuine missed connection — a friend dropped something important and it got steamrolled — use that awareness to send a brief check-in. <em>Hey, I noticed I derailed your story. I want to hear it properly.</em> That is not an apology for your whole personality; it is a recovery move that actually communicates "you matter to me."</li>
+<li><strong>Destroy the rest.</strong> If no major theme demands action, physically destroy what you wrote — shred it, tear it, burn it if safe. It is no longer relevant.</li>
+<li><strong>Active transition activity.</strong> Move into something that occupies your brain enough to prevent re-entry of the thoughts. If passive activities (shower, walk) still leave mental bandwidth for rumination, you need something cognitively active: a crossword, a game, a conversation. For ADHD brains specifically, physical activity outdoors is particularly effective at resetting the system.</li>
+</ol>
+<p>The larger reframe underneath all of this: recovery from a bad social moment is not about perfection. It is about noticing, repairing what genuinely needs repair, and releasing the rest.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-the-fake-feeling-masking-and-alternative-rebellion">The "Fake" Feeling — Masking and Alternative Rebellion</h2>
+<p>Feeling fake or bland in social situations is a natural consequence of spending most of your time performing a version of yourself that conforms to what is expected. If your authentic self is someone who does not particularly want to make small talk, loves three niche topics intensely, tends to interrupt, and forgets social norms — and you spend your social energy suppressing all of that — what remains is functionally hollow.</p>
+<p>Two ideas that help:</p>
+<p><strong>First, you are allowed to simply not be a socially outgoing person.</strong> If introversion, selective socializing, or keeping your headphones in is genuinely your preference, that is a valid way to exist. The pressure to perform extroversion is not a law.</p>
+<p><strong>Second, when you <em>must</em> conform, find the most-you version of that conformity.</strong> This is called <strong>alternative rebellion</strong>: finding small ways to express your authentic self within constraints that you cannot escape. This might be fun socks under a formal suit, a brightly colored bag in an otherwise professional environment, a single piece of unconventional jewelry. The form matters less than the function: it signals to yourself that you have not been completely erased, which reduces the suffocating quality of masking.</p>
+<p>Crucially, every period of required conformity should be balanced by dedicated space where you can be entirely unfiltered — a close group chat, a specific online community, a creative outlet. The ratio of masked time to authentic time has a real cost. Keeping it balanced is maintenance, not luxury.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-adhd-medication-youre-probably-taking-it-wrong">ADHD Medication: You're Probably Taking It Wrong</h2>
+<p>The common medical framing — "take it when you need to focus, skip it on weekends" — misunderstands what ADHD medication actually does. Stimulant medication strengthens frontal lobe activity, which means it helps with:</p>
+<ul>
+<li>Sustained attention and filtering distractions</li>
+<li><strong>Impulse control</strong> (including compulsive scrolling, spontaneous spending, or any other pattern where you do a thing you don't want to do before you can stop yourself)</li>
+<li><strong>Emotion regulation</strong> — this one is almost never mentioned, but it is a direct consequence of improved frontal lobe function</li>
+<li>Executive planning and follow-through</li>
+</ul>
+<p>If you are doom-scrolling for eight hours when anxious, you are experiencing an emotion regulation and impulse control problem — both of which medication can partially address. If you are more accident-prone or distractible behind the wheel, medication applies. If your "vacation" keeps collapsing into hours of passive screen time and you cannot access the things you actually wanted to do, medication applies.</p>
+<blockquote>
+<p>"When you're thinking about when to take medication, don't just think about studying or homework. If there are other things that are going on that are problems for you that are related to ADHD, probably take the medication if you have it prescribed."</p>
+</blockquote>
+<p>Medication also does not automatically install skills. It creates neurological conditions in which skills become learnable. Learning still requires repetition, patience, and expecting to fail many times before progress becomes visible — like a baby learning to walk who stumbles thousands of times before the steps become automatic.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-breaking-behavioral-loops-the-four-square-pros-and-cons-tool">Breaking Behavioral Loops: The Four-Square Pros and Cons Tool</h2>
+<p>When a behavior you want to change (doom scrolling, staying up too late, avoiding a project) keeps reasserting itself despite your intentions, it is because the behavior is being <strong>reinforced</strong> — the pile of positive outcomes is currently outweighing the pile of negative ones, even if you consciously hate the behavior.</p>
+<p>A structured way to see this clearly:</p>
+<p>Draw four boxes. Two columns (pros and cons) and two rows: one row for the behavior you want to stop, one row for the replacement behavior.</p>
+<p>Fill in the current behavior honestly. The pros will often surprise you — scrolling avoids the anxiety of starting your thesis, provides endless content, eliminates decisions, and provides stimulation. These are real benefits. They are outweighing the cons (no sleep, no work done, sluggishness) or you would have stopped already.</p>
+<p>Then fill in the replacement behavior — and be realistic. "Work on my dissertation for eight hours" has essentially zero real pros your brain can currently perceive, because the reward (finished dissertation) is too abstract and distant to register as motivating. Replace it with something concrete and achievable: "go to a coffee shop with my laptop." That is a genuinely different choice, with its own set of pros (change of environment, mild stimulation, social presence) that can actually compete with the behavior you're trying to change.</p>
+<p>The goal of the tool is not willpower — it is <strong>environmental redesign and behavioral substitution</strong>. You are not white-knuckling against the current behavior; you are reducing its reinforcement and increasing the attractiveness of an alternative.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-common-pitfalls">Common Pitfalls</h2>
+<ul>
+<li><strong>Treating sleep as a simple fix.</strong> Knowing that sleep matters and being motivated to fix it are different things. Lying in bed trying hard to fall asleep while monitoring whether you are falling asleep is actively counterproductive. Working on adjacent wellness behaviors is often more tractable.</li>
+<li><strong>Assuming one week of a new bedtime routine is a fair test.</strong> Rewiring a sleep cue takes a minimum of two weeks, more often four to six. Quitting before that means judging before the data exists.</li>
+<li><strong>Confusing the diagnosis with the solution.</strong> A diagnosis of ADHD or autism explains a pattern; it does not automatically change the pattern. It creates a starting point for self-understanding. What matters more than the label is identifying specifically what is getting in the way and what you want to be different.</li>
+<li><strong>Using "just stop thinking about it" as a strategy.</strong> Suppression creates a vacuum, and vacuums fill with exactly what you're suppressing. You need an active replacement, not a prohibition.</li>
+<li><strong>Taking stimulant medication only for academic focus.</strong> The emotional regulation and impulse control benefits are equally real and equally important in everyday life.</li>
+<li><strong>Setting a replacement behavior that is as aversive as the problem.</strong> "I'll stop scrolling and write my whole thesis" is not a replacement behavior — it is a fantasy with no realistic motivational pathway.</li>
+<li><strong>Conflating burnout recovery with boredom.</strong> The crawling-out-of-your-skin discomfort of recovery is real and expected. Responding to it by immediately loading up on new stimulation restarts the burnout cycle. Small, slow re-engagement is the actual path.</li>
+</ul>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-action-items-exercises">Action Items &amp; Exercises</h2>
+<ol>
+<li>
+<p><strong>Map your personal sleep constellation.</strong> For two weeks, keep a simple log: hours slept, naps, wake time, and a 1–10 rating of how you feel by mid-morning. Look for patterns specific to <em>you</em>, not the general eight-hour recommendation. Then identify one non-sleep wellness behavior (physical movement, nutrition, reduced novelty before bed) that feels more tractable and start there.</p>
+</li>
+<li>
+<p><strong>Build a 20-to-30-minute bedtime routine.</strong> Include sensory transitions (change of clothes, hygiene), avoid novel or emotionally activating content (no new playlists, no books that grip you), and stick to it for at least four weeks before evaluating. The goal is to train your brain to recognize the sequence as a sleep cue.</p>
+</li>
+<li>
+<p><strong>Do a post-hangout emotion dump.</strong> After your next social outing, set a timer for ten minutes and handwrite every worry and self-criticism you can surface. Triage: identify anything worth a genuine follow-up, send it if relevant, then destroy the paper. Follow with a cognitively active transition to prevent re-entry of the thoughts.</p>
+</li>
+<li>
+<p><strong>Identify one "weakness" to stop fighting.</strong> Pick one ADHD-related trait — lateness, interrupting, topic fixation — that you currently spend significant energy hiding. Write down the specific social contexts where it causes real problems versus where it actually does not matter. Decide which low-stakes contexts you can simply stop performing around, and what you will do differently in the high-stakes contexts where you cannot opt out.</p>
+</li>
+<li>
+<p><strong>Draw the four-square pros and cons.</strong> Pick one behavior you want to change. Fill in all four boxes honestly, including all the real pros of the current behavior. Then design a replacement behavior that has genuine, <em>immediately perceptible</em> pros — not abstract future rewards. Start there.</p>
+</li>
+<li>
+<p><strong>Reassess your medication schedule with your prescriber.</strong> Come to the appointment with a specific list of non-academic situations where you notice impulse control, emotional reactivity, or executive function getting in your way. Ask explicitly whether daily use during those situations is appropriate.</p>
+</li>
+<li>
+<p><strong>Use rotating reminders to stay connected.</strong> If out-of-sight-out-of-mind disconnects you from friends, set a two-week rotating alarm (not permanent — you'll tune it out) to send one message or share one piece of content with someone. After two weeks, switch the friend and change the time. Put physical photos or small mementos from relationships somewhere you will actually see them.</p>
+</li>
+<li>
+<p><strong>Practice micro-goals for stuck tasks.</strong> When facing a task you cannot start, break it down until the first step takes under five minutes and has a visible product — three bullet points, column headers, one paragraph. Start there only. Completions build inertia; inertia builds forward movement.</p>
+</li>
+</ol>
+</section></article>
+    </div>
+  </div>
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc"><ul><li><a href="#transcript-0-stream-introduction-and-host-background">Stream Introduction and Host Background</a></li><li><a href="#transcript-1-sleep-and-performance-on-fewer-hours">Sleep and Performance on Fewer Hours</a></li><li><a href="#transcript-2-why-short-sleep-can-feel-better">Why Short Sleep Can Feel Better</a></li><li><a href="#transcript-3-chronic-sleep-deprivation-and-adhd-like-symptoms">Chronic Sleep Deprivation and ADHD-Like Symptoms</a></li><li><a href="#transcript-4-individual-sleep-needs-and-the-moving-target-of-wellness">Individual Sleep Needs and the Moving Target of Wellness</a></li><li><a href="#transcript-5-oversleeping-sleep-routines-and-motivation">Oversleeping, Sleep Routines, and Motivation</a></li><li><a href="#transcript-6-sleep-as-the-biggest-vulnerability-to-mental-health-relapse">Sleep as the Biggest Vulnerability to Mental Health Relapse</a></li><li><a href="#transcript-7-adhd-and-social-anxiety-the-neurobiological-link">ADHD and Social Anxiety: The Neurobiological Link</a></li><li><a href="#transcript-8-emotion-dysregulation-cycles-in-social-situations">Emotion Dysregulation Cycles in Social Situations</a></li><li><a href="#transcript-9-adhd-social-judgment-and-embracing-weaknesses">ADHD, Social Judgment, and Embracing Weaknesses</a></li><li><a href="#transcript-10-adolescent-social-wiring-and-neurodivergent-rejection">Adolescent Social Wiring and Neurodivergent Rejection</a></li><li><a href="#transcript-11-adhd-guilt-after-social-hangouts">ADHD Guilt After Social Hangouts</a></li><li><a href="#transcript-12-strategies-for-managing-post-hangout-guilt">Strategies for Managing Post-Hangout Guilt</a></li><li><a href="#transcript-13-bedtime-routines-and-sleep-hygiene-tips">Bedtime Routines and Sleep Hygiene Tips</a></li><li><a href="#transcript-14-feeling-fake-in-social-situations-and-authentic-selfhood">Feeling Fake in Social Situations and Authentic Selfhood</a></li><li><a href="#transcript-15-alternative-rebellion-and-creating-spaces-to-be-yourself">Alternative Rebellion and Creating Spaces to Be Yourself</a></li><li><a href="#transcript-16-phone-addiction-and-scrolling-eight-hours-while-anxious">Phone Addiction and Scrolling Eight Hours While Anxious</a></li><li><a href="#transcript-17-adhd-medication-beyond-studying-broader-use-cases">ADHD Medication Beyond Studying: Broader Use Cases</a></li><li><a href="#transcript-18-pros-and-cons-strategy-for-breaking-phone-habits">Pros and Cons Strategy for Breaking Phone Habits</a></li><li><a href="#transcript-19-q-a-diagnosing-autism-adhd-and-social-anxiety">Q&amp;A: Diagnosing Autism, ADHD, and Social Anxiety</a></li><li><a href="#transcript-20-q-a-recovering-from-adhd-burnout-and-boredom">Q&amp;A: Recovering from ADHD Burnout and Boredom</a></li><li><a href="#transcript-21-q-a-adhd-and-autism-social-dichotomy">Q&amp;A: ADHD and Autism Social Dichotomy</a></li><li><a href="#transcript-22-q-a-forgetting-friends-when-not-around-them">Q&amp;A: Forgetting Friends When Not Around Them</a></li><li><a href="#transcript-23-q-a-sticking-to-plans-on-adderall">Q&amp;A: Sticking to Plans on Adderall</a></li><li><a href="#transcript-24-q-a-overcoming-inertia-and-staring-at-screens">Q&amp;A: Overcoming Inertia and Staring at Screens</a></li><li><a href="#transcript-25-closing-remarks-and-farewell">Closing Remarks and Farewell</a></li></ul></div></nav>
+      <article class="summary"><section class="sec sec-a">
 <h2 id="transcript-0-stream-introduction-and-host-background">Stream Introduction and Host Background</h2>
-<p><span class="speaker">Dr. Michaela:</span> And we talked we talked about it all night. We thought we thought we&#x27;d make it alive. We talked we talked about it all night. We thought we thought we&#x27;d make it alive. And we talked we talked about it all night. We thought we thought we&#x27;d make it alive. [Music] A lot of people out there will struggle to pull themselves out of move in the right direction. Take one step forward and let go of what&#x27;s going to happen. to happen. [Music] [Music] One, two, three, Roger. I feel [Music] Hey. Hey. Hey. Well, hello party people. Welcome to our stream today. Um, to kick us off, I&#x27;ll start with our traditional disclaimer that nothing in our time together today is intended to be medical or um, therapeutic advice. This is informational and entertainment purposes only. And if you do feel like you need to seek professional help, I encourage you to do so. Um, that being said, I am Dr. Michaela. I am a licensed clinical psychologist and Dr. K had the audacity to take a vacation. And so, I am your um, friendly neighborhood substitute teacher coming in to hang out with y&#x27;all for a bit today and hopefully provide you with some helpful information. Um, as a licensed clinical psychologist, um, I actually specialize in working with young people. So, kids, teens, um, young adults, they they like to call those transition age youth because, um, kids are going through or folks are going through all sorts of transitions once they hit that legal age of adulthood and try to figure out what comes next in life. Um however in the course of my career I&#x27;ve also worked with adults um and not so much the older adults. So a broad range of experience and um exposure to all the things that we as humans go through. Uh because a lot of my career has focused on people who have a lot going on. So people with more complicated mental health pictures or people with more severe forms of mental health conditions. Um, I have actually seen uh a misrepresented number of neurodivergent folks in my clinical practice. And so what that means is that I do have kind of a a specialty vibe around the neurodivergent um aspect of humanity and so love to layer that on to some of the conversations that we have traditionally around mental health. That being said, um, very little of what I talk about when I&#x27;m talking about neurodivergent people is not related to all of the humans. And so if you don&#x27;t identify as neurodivergent, um, that doesn&#x27;t necessarily mean that the things that we talk about aren&#x27;t going to be helpful for you today. So that being said, we&#x27;re going to get started with our first post. Um, and let&#x27;s pull this up with bigger font.</p>
+<p>And we talked we talked about it all night. We thought we thought we&#x27;d make it alive. We talked we talked about it all night. We thought we thought we&#x27;d make it alive. And we talked we talked about it all night. We thought we thought we&#x27;d make it alive. [Music] A lot of people out there will struggle to pull themselves out of move in the right direction. Take one step forward and let go of what&#x27;s going to happen. to happen. [Music] [Music] One, two, three, Roger. I feel [Music] Hey. Hey. Hey. Well, hello party people. Welcome to our stream today. Um, to kick us off, I&#x27;ll start with our traditional disclaimer that nothing in our time together today is intended to be medical or um, therapeutic advice. This is informational and entertainment purposes only. And if you do feel like you need to seek professional help, I encourage you to do so. Um, that being said, I am Dr. Michaela. I am a licensed clinical psychologist and Dr. K had the audacity to take a vacation. And so, I am your um, friendly neighborhood substitute teacher coming in to hang out with y&#x27;all for a bit today and hopefully provide you with some helpful information. Um, as a licensed clinical psychologist, um, I actually specialize in working with young people. So, kids, teens, um, young adults, they they like to call those transition age youth because, um, kids are going through or folks are going through all sorts of transitions once they hit that legal age of adulthood and try to figure out what comes next in life. Um however in the course of my career I&#x27;ve also worked with adults um and not so much the older adults. So a broad range of experience and um exposure to all the things that we as humans go through. Uh because a lot of my career has focused on people who have a lot going on. So people with more complicated mental health pictures or people with more severe forms of mental health conditions. Um, I have actually seen uh a misrepresented number of neurodivergent folks in my clinical practice. And so what that means is that I do have kind of a a specialty vibe around the neurodivergent um aspect of humanity and so love to layer that on to some of the conversations that we have traditionally around mental health. That being said, um, very little of what I talk about when I&#x27;m talking about neurodivergent people is not related to all of the humans. And so if you don&#x27;t identify as neurodivergent, um, that doesn&#x27;t necessarily mean that the things that we talk about aren&#x27;t going to be helpful for you today. So that being said, we&#x27;re going to get started with our first post. Um, and let&#x27;s pull this up with bigger font.</p>
 </section>
 <section class="sec sec-b">
 <h2 id="transcript-1-sleep-and-performance-on-fewer-hours">Sleep and Performance on Fewer Hours</h2>
@@ -209,15 +366,21 @@ try {
 <p>If you think about any time you&#x27;ve ever done any project and including in schooling where people were like let&#x27;s brainstorm and brainstorming includes ridiculous ideas because just generating thoughts and ideas is a valuable experience that then um makes it possible to do the things that you need to do. Okay. So, with that, I&#x27;m going to um wrap up our questions. I&#x27;m going to say thank you so much for spending time um with your uh local friendly substitute person. I guess I&#x27;m not a teacher. Well, I&#x27;m kind of a teacher. Anyways, yay. Thanks for being here today. Um and hope you found at least one or two kernels of things that felt helpful um or interesting or at the very least entertaining. Um, have a wonderful rest of your day, night, evening, we hours of the morning.</p>
 <p>I don&#x27;t actually have any socials outside of my guest appearances at Healthy Gamer. Okay, so this is our final and formal goodbye and um hope to see you soon in other opportunities.</p>
 </section></article>
+    </div>
   </div>
+  
 
-  <p class="meta">Auto-transcribed livestream · chapters &amp; speaker labels are a best-effort approximation (claude-sonnet-4-6).</p>
+  <p class="meta">Medium summary · claude-sonnet-4-6 (no extended thinking)</p>
 </div>
 
 <script>
 (function () {
   var root = document.documentElement;
-  var tb = document.querySelector('.theme-toggle');
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'medium');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
   var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
   tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
@@ -225,6 +388,16 @@ try {
   function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
   var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+  // deep-link to a heading in any view: switch to that view, then scroll to it
+  function navigateTo(id){
+    var el = id && document.getElementById(id);
+    if (!el) return;
+    var v = el.closest('.view');
+    if (v) setView(v.getAttribute('data-view'));
+    el.scrollIntoView();
+  }
+  window.addEventListener('hashchange', function(){ navigateTo(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash) navigateTo(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>
 <script>

@@ -9,7 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-} catch (e) {}
+  document.documentElement.setAttribute('data-view', localStorage.getItem('pubview') || 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -24,16 +25,210 @@ try {
   </nav>
 
   <h1>This is your brain on trauma.</h1>
-  <p class="watch">
-    <a href="https://www.youtube.com/watch?v=6kJzzo7deDY" target="_blank" rel="noopener">▶ Watch on YouTube</a>
-    <span class="speakers-note">Speakers (auto-detected): Dr. K</span>
-  </p>
+  <p class="watch"><a href="https://www.youtube.com/watch?v=6kJzzo7deDY" target="_blank" rel="noopener">▶ Watch on YouTube</a></p>
 
-  <div class="doc">
-    <nav class="toc"><p class="toc-title">Chapters</p><ul><li><a href="#transcript-0-meditation-and-intro-clips-before-stream-begins">Meditation and Intro Clips Before Stream Begins</a></li><li><a href="#transcript-1-why-cptsd-matters-stream-introduction-and-housekeeping">Why CPTSD Matters: Stream Introduction and Housekeeping</a></li><li><a href="#transcript-2-community-requests-and-the-trauma-guide-overview">Community Requests and the Trauma Guide Overview</a></li><li><a href="#transcript-3-history-of-ptsd-from-shell-shock-to-complex-trauma">History of PTSD: From Shell Shock to Complex Trauma</a></li><li><a href="#transcript-4-core-features-of-ptsd-reexperiencing-avoidance-hyperarousal">Core Features of PTSD: Reexperiencing, Avoidance, Hyperarousal</a></li><li><a href="#transcript-5-what-makes-cptsd-different-chronic-trauma-and-disturbances-in-self-organization">What Makes CPTSD Different: Chronic Trauma and Disturbances in Self-Organization</a></li><li><a href="#transcript-6-dissociation-and-hemispheric-lateralization-explained">Dissociation and Hemispheric Lateralization Explained</a></li><li><a href="#transcript-7-kindling-mechanism-and-seizure-like-emotional-dysregulation">Kindling Mechanism and Seizure-Like Emotional Dysregulation</a></li><li><a href="#transcript-8-how-trauma-disrupts-identity-and-emotional-awareness">How Trauma Disrupts Identity and Emotional Awareness</a></li><li><a href="#transcript-9-relationships-bpd-and-the-unstable-sense-of-self-in-cptsd">Relationships, BPD, and the Unstable Sense of Self in CPTSD</a></li><li><a href="#transcript-10-impulsivity-paralysis-of-initiation-and-lack-of-identity">Impulsivity, Paralysis of Initiation, and Lack of Identity</a></li><li><a href="#transcript-11-neuroscience-of-emotional-numbing-and-positive-vs-negative-emotion">Neuroscience of Emotional Numbing and Positive vs Negative Emotion</a></li><li><a href="#transcript-12-treatment-rewiring-physiology-through-autonomic-stretch">Treatment: Rewiring Physiology Through Autonomic Stretch</a></li><li><a href="#transcript-13-reconnecting-with-emotions-body-awareness-and-language">Reconnecting with Emotions: Body Awareness and Language</a></li><li><a href="#transcript-14-rebuilding-identity-and-relationships-after-trauma">Rebuilding Identity and Relationships After Trauma</a></li><li><a href="#transcript-15-why-one-dimensional-treatments-fail-for-cptsd">Why One-Dimensional Treatments Fail for CPTSD</a></li><li><a href="#transcript-16-paralysis-of-initiation-guide-video-on-childhood-autonomy">Paralysis of Initiation: Guide Video on Childhood Autonomy</a></li><li><a href="#transcript-17-q-a-disagreeing-with-your-therapist-and-adhd-vs-cptsd">Q&amp;A: Disagreeing With Your Therapist and ADHD vs CPTSD</a></li><li><a href="#transcript-18-q-a-addiction-safety-therapy-tips-and-opening-up">Q&amp;A: Addiction, Safety, Therapy Tips, and Opening Up</a></li><li><a href="#transcript-19-q-a-happiness-treatment-duration-and-closing-thoughts">Q&amp;A: Happiness, Treatment Duration, and Closing Thoughts</a></li></ul></nav>
-    <article class="summary transcript"><section class="sec sec-a">
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">2,587w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">30,282w</span></button>
+    
+  </div>
+
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#medium-summary">Summary</a></li>
+<li><a href="#medium-from-shell-shock-to-complex-ptsd-a-brief-history">From Shell Shock to Complex PTSD: A Brief History</a></li>
+<li><a href="#medium-the-three-layers-what-ptsd-and-cptsd-actually-do-to-you">The Three Layers: What PTSD and CPTSD Actually Do to You</a></li>
+<li><a href="#medium-the-physiology-why-your-nervous-system-gets-stuck">The Physiology: Why Your Nervous System Gets Stuck</a></li>
+<li><a href="#medium-dissociation-when-the-brain-pulls-the-plug">Dissociation: When the Brain Pulls the Plug</a></li>
+<li><a href="#medium-the-neuroscience-of-emotional-numbness-two-different-systems">The Neuroscience of Emotional Numbness: Two Different Systems</a></li>
+<li><a href="#medium-identity-why-trauma-breaks-the-self">Identity: Why Trauma Breaks the Self</a></li>
+<li><a href="#medium-how-trauma-breaks-relationships">How Trauma Breaks Relationships</a></li>
+<li><a href="#medium-what-actually-helps-building-one-block-on-top-of-another">What Actually Helps: Building One Block on Top of Another</a></li>
+<li><a href="#medium-common-pitfalls">Common Pitfalls</a></li>
+<li><a href="#medium-action-items-exercises">Action Items &amp; Exercises</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="medium-summary">Summary</h2>
+<p><strong>TL;DR — Complex PTSD isn't just "worse PTSD." It's a rewiring of who you are — your emotions, your identity, and your ability to relate to others — and understanding the neuroscience behind it explains a surprising amount of modern suffering, even in people who've never been formally diagnosed.</strong></p>
+<p>Most people think of PTSD as something soldiers get from combat. Complex PTSD (CPTSD) is a different beast. It emerges not from a single traumatic event but from chronic, repeated trauma — often at the hands of people close to you, often early in life. While only a small fraction of the population carries a formal CPTSD diagnosis, the distinct cluster of symptoms at its core — emotional dysregulation, a fractured sense of identity, and broken relationships — appears to be spreading through the population independently of any diagnosis. Understanding the neuroscience of why this happens is the first step toward doing something about it.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-from-shell-shock-to-complex-ptsd-a-brief-history">From Shell Shock to Complex PTSD: A Brief History</h2>
+<p>The clinical understanding of trauma didn't begin with psychological insight — it began with bombs. Doctors noticed that soldiers who'd been near concussive blasts, without any visible wounds, returned home behaving strangely: foggy, emotionally volatile, unable to reintegrate. They called it <em>shell shock</em>, assuming a physical brain injury from the blast wave.</p>
+<p>Then something interesting happened: soldiers who'd never been near a blast showed the same symptoms. They'd just witnessed a friend die. The category expanded into <strong>PTSD</strong> — post-traumatic stress disorder — a recognized response to any acute, circumscribed traumatic event. Over time PTSD was extended beyond combat: sexual trauma, physical abuse, even severe bullying could produce it.</p>
+<p>Then researchers noticed another category. Some trauma patients had a <em>different flavor</em> to their symptoms — something more pervasive, more destabilizing. The key variable was chronicity. Trauma that happens once produces PTSD. Trauma that happens <em>constantly</em>, especially at the hands of someone close to you, produces something else. Psychiatrist Judith Herman coined the term <strong>complex PTSD</strong>, describing it as the psychological result of being placed in sustained captivity — whether in a literal prison camp, an abusive home, or any environment where someone else controls your life over a long stretch of time.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-the-three-layers-what-ptsd-and-cptsd-actually-do-to-you">The Three Layers: What PTSD and CPTSD Actually Do to You</h2>
+<p>Standard PTSD has three symptom clusters:
+- <strong>Reexperiencing</strong> — flashbacks, nightmares, intrusive memories
+- <strong>Avoidance</strong> — steering clear of anything that reminds you of the trauma
+- <strong>Hyperarousal</strong> — a hair-trigger nervous system, easily startled, chronically on guard</p>
+<p>CPTSD includes all of the above, but adds a third dimension called <strong>disturbances in self-organization (DSO)</strong>:
+- Emotional dysregulation
+- A disturbed sense of identity
+- Difficulty in relationships</p>
+<p>The critical difference: in PTSD, something happens <em>to</em> you. In CPTSD, the trauma becomes <em>part of you</em>. It doesn't just affect your reactions — it shapes who you are.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-the-physiology-why-your-nervous-system-gets-stuck">The Physiology: Why Your Nervous System Gets Stuck</h2>
+<p>The body responds to threat through the <strong>autonomic nervous system (ANS)</strong>, which has two branches: the sympathetic (fight-or-flight) and the parasympathetic (rest-and-digest). In a healthy nervous system, these alternate naturally — stress response on, stress response off.</p>
+<p>In trauma, the threshold for triggering the sympathetic response drops dramatically. Where a "danger level 7" might normally be required to set off a stress response, someone with trauma may fire at a "danger level 4." This is what the word <em>triggered</em> actually means in clinical terms: a disproportionate physiological response to a relatively small stimulus. It's not a personality flaw — it's a calibration problem in the nervous system.</p>
+<p>The research also points to something unsettling: repeated trauma produces changes in neural circuitry that resemble <strong>kindling</strong> — the process by which repeated sub-threshold electrical stimulation eventually produces full seizures. In trauma, the emotional memory circuits become increasingly reactive, expanding into neighboring neural circuits. The result is panic attacks, flashbacks, and emotional overwhelm that can seem to come from nowhere — because at the neural level, they operate like seizures, not like normal emotional responses.</p>
+<blockquote>
+<p>"You don't actually think that way because it's normal for you. But people outside of you look at you and they're like, I don't understand why this person just gets so upset so randomly."</p>
+</blockquote>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-dissociation-when-the-brain-pulls-the-plug">Dissociation: When the Brain Pulls the Plug</h2>
+<p>There's a ceiling to how activated the nervous system can get. When the stress response hits that ceiling, the brain does something remarkable and destructive: it <strong>dissociates</strong>.</p>
+<p>Dissociation can be understood as a circuit breaker. The emotional hemisphere (largely right-brain) is producing so much signal that the logical, language-based hemisphere (largely left-brain) cuts communication across the <strong>corpus callosum</strong> — the bridge between the two sides. This is called <strong>hemispheric lateralization</strong>.</p>
+<p>What this feels like from the inside: you can watch terrible things happen to you with no emotional connection. The logical brain narrates events calmly while the emotional experience is severed. You become an observer of your own life.</p>
+<p>This sounds like relief, but it creates enormous downstream problems, because emotions aren't optional accessories — they serve two critical functions:</p>
+<ol>
+<li><strong>Information</strong> — Your emotions are constantly telling you things about your environment and relationships that your logical brain can't access directly. When someone cancels on you for the third time and you feel a twinge of something, that's data.</li>
+<li><strong>Motivation</strong> — Drive, passion, the feeling of <em>I want this</em> — these are emotional, not logical. "I should study for this test" comes from logic. The energy to actually do it comes from emotion.</li>
+</ol>
+<p>When you dissociate chronically, you lose both. You know what you're supposed to want, but you don't feel it.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-the-neuroscience-of-emotional-numbness-two-different-systems">The Neuroscience of Emotional Numbness: Two Different Systems</h2>
+<p>Here's where it gets particularly important — and counterintuitive.</p>
+<p>Not all emotions live in the same part of the brain. Most people are familiar with the <strong>amygdala</strong>, the brain's fear and survival center. In trauma, the amygdala becomes hyperactive — fear, anxiety, and threat-detection are easy to trigger and hard to turn off.</p>
+<p>But positive emotions — joy, love, curiosity, the sense of accomplishment — live somewhere else: the <strong>dorsomedial prefrontal cortex</strong>. In CPTSD, research shows a <em>deactivation</em> of this region. The positive emotion circuitry goes quiet.</p>
+<p>The result is a cruel asymmetry:</p>
+<ul>
+<li>Negative emotions (fear, anxiety, dread) → <strong>hyperactive</strong>, easy to trigger</li>
+<li>Positive emotions (joy, love, excitement) → <strong>hypoactive</strong>, difficult to access</li>
+</ul>
+<p>This is why someone with trauma can feel crushing despair on a random Tuesday but attend their child's birthday party and feel genuinely nothing. It's not that they don't love their child. It's that the neural machinery for experiencing that love has been suppressed.</p>
+<blockquote>
+<p>"It's like a blank. I think about my kids and I feel nothing for them. I'll be sitting there feeling confused and numb, and I wonder what I'm supposed to be feeling. It's like dead space."</p>
+</blockquote>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-identity-why-trauma-breaks-the-self">Identity: Why Trauma Breaks the Self</h2>
+<p>Your sense of identity isn't built from your average days. It's built from <strong>emotionally charged moments</strong> — the time you were publicly humiliated, the day you got the call that changed your life, the relationship that broke you open. These experiences string together into a coherent narrative: <em>this is who I am, this is what I've been through, this is what I'm capable of.</em></p>
+<p>When dissociation severs you from your emotions, you lose the raw material from which identity is constructed. You're moving through your days but not <em>living</em> them — collecting no emotional landmarks, building no coherent story about yourself.</p>
+<p>This is what produces the unstable sense of self seen in CPTSD (and in borderline personality disorder, which overlaps heavily). Without a stable internal conception of who you are, your self-image becomes entirely dependent on external signals — how people are treating you right now. Treated well, you feel fine. Treated poorly, you collapse. There's no internal anchor to hold you steady.</p>
+<p>This also explains two seemingly opposite problems that often coexist in CPTSD:</p>
+<ul>
+<li><strong>Paralysis of initiation</strong> — the inability to get started on things, because drive comes from identity and emotion, neither of which is functioning well</li>
+<li><strong>Impulsivity</strong> — temporary, emotion-driven bursts of action with no follow-through, because when an emotion spikes and there's no stable self to regulate it, the emotion takes the wheel</li>
+</ul>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-how-trauma-breaks-relationships">How Trauma Breaks Relationships</h2>
+<p>The relationship difficulties in CPTSD follow directly from everything above. A relationship requires two distinct people. If your sense of self isn't well-formed, you don't bring a full person to the equation.</p>
+<p>This can look different ways depending on the person:
+- <strong>Doormat</strong> — accepting poor treatment because there's no stable self to register "I deserve better"
+- <strong>People pleaser</strong> — shaping yourself entirely around what others want because you have no strong preferences of your own
+- <strong>Chameleon</strong> — absorbing the identity of whoever you're with (more common in BPD)</p>
+<p>There's also the problem of <strong>social cognitive emotions</strong> — shame, guilt, pride — which are fundamentally different from primitive emotions like fear and anger. Reptiles can feel fear. They probably can't feel shame, because shame requires a social audience. These emotions live in different neural circuits, and those circuits are disrupted in CPTSD. This makes it hard to accept compliments, hard to tolerate being seen as good at something, hard to trust that love offered to you is real.</p>
+<blockquote>
+<p>"When someone tells me I love you, I think you're beautiful, I feel ashamed of myself. So I say no, I'm not."</p>
+</blockquote>
+<p>The sequence of recovery, then, has a logic: you can't fix your relationships until you have a sense of identity. You can't build identity until your emotions are functioning. You can't regulate emotions until your nervous system is out of chronic threat-mode. Everything rests on the layer below it.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-what-actually-helps-building-one-block-on-top-of-another">What Actually Helps: Building One Block on Top of Another</h2>
+<p>Western medicine tends to look for a diagnosis and match it to a treatment. For regular PTSD, <strong>exposure therapy</strong> is highly effective — repeatedly exposing someone to the trauma trigger in a safe environment until the amygdala recalibrates. About 90% of low-dissociation PTSD patients improve with this approach.</p>
+<p>But for people with high dissociation — which is characteristic of CPTSD — the numbers flip. About 69% of high-dissociation patients <em>still meet PTSD criteria</em> after a full course of exposure therapy. Exposure therapy doesn't work when the emotional wiring is severed, because the process of desensitization requires you to <em>feel</em> and <em>process</em> the fear, not just observe it from a distance.</p>
+<p>CPTSD requires a layered approach, roughly in this order:</p>
+<ol>
+<li>
+<p><strong>Safety first</strong> — Physical and emotional safety is a prerequisite. The stress hormones flooding a person who isn't safe (cortisol, adrenaline) actively prevent the neuroplasticity needed for healing. The brain in survival mode is not in learning mode.</p>
+</li>
+<li>
+<p><strong>Rewire the autonomic nervous system</strong> — Mind-body practices (yoga, tai chi, meditation) activate the <strong>vagus nerve</strong>, the primary parasympathetic nerve, and begin increasing autonomic flexibility. The key concept is <em>autonomic stretch</em>: alternating between sympathetic activation (exercise) and parasympathetic recovery (rest, meditation) is what actually increases flexibility — not just relaxation alone.</p>
+</li>
+<li>
+<p><strong>Reconnect with the body</strong> — You don't have to access emotions directly to start. Body awareness is a backdoor to emotional awareness. Noticing tension in your jaw, tightness in your chest, heaviness in your limbs — these physical sensations <em>are</em> parts of emotions. Starting there begins to reactivate the circuits.</p>
+</li>
+<li>
+<p><strong>Articulate emotions in language</strong> — This is where the hemispheric lateralization starts to reverse. Reaching for words to describe what you feel — even struggling and failing — is neurons on the left side of the brain extending toward the right. The progress isn't visible, but the wiring is being built. Therapy accelerates this.</p>
+</li>
+<li>
+<p><strong>Rebuild identity through narrative</strong> — As emotional experience becomes accessible again, stringing those experiences into a coherent story about who you are is a learnable skill. Negative emotional residue begins to clear; positive experiences begin to register and accumulate.</p>
+</li>
+<li>
+<p><strong>Repair relationships</strong> — This comes last, because it requires everything else to be partially functional first.</p>
+</li>
+</ol>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-common-pitfalls">Common Pitfalls</h2>
+<ul>
+<li>
+<p><strong>Expecting exposure therapy to work for CPTSD</strong> — It's the right treatment for a different problem. If you've tried it and made little progress, that's diagnostic information, not proof you're untreatable.</p>
+</li>
+<li>
+<p><strong>Confusing emotional numbness with healing</strong> — Not feeling bad doesn't mean the trauma is resolved. Numbness is often the dissociation doing its job, keeping overwhelming emotion at bay. The absence of feeling is itself a symptom.</p>
+</li>
+<li>
+<p><strong>Treating the relationship as the thing to fix</strong> — Relationship advice, communication scripts, and boundary-setting guides are largely useless if the underlying emotional and identity infrastructure isn't there. You can't install relationship skills on a broken operating system.</p>
+</li>
+<li>
+<p><strong>Interpreting "nothing's wrong" at face value</strong> — When someone with CPTSD says nothing's wrong while visibly distressed, they're usually telling the truth as they understand it. The emotional dysregulation isn't <em>about</em> anything in the moment — it's more like a seizure than a reaction.</p>
+</li>
+<li>
+<p><strong>Giving up after one treatment approach fails</strong> — Trauma affects the autonomic nervous system, multiple brain regions, identity formation, and relational capacity simultaneously. Single-axis treatment will be insufficient for many people. This is not a character flaw; it's a mismatch between problem complexity and treatment comprehensiveness.</p>
+</li>
+<li>
+<p><strong>Believing that treating the disorder will automatically produce happiness</strong> — Clinical recovery and happiness are related but distinct. CPTSD specifically impairs <em>eudaimonic</em> well-being (a sense of peace and fulfillment) even more than hedonic well-being (pleasure). Treatment improves both, but building happiness is partly its own separate project.</p>
+</li>
+</ul>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-action-items-exercises">Action Items &amp; Exercises</h2>
+<ol>
+<li>
+<p><strong>Start autonomic stretching.</strong> Pair vigorous exercise with deliberate recovery (meditation, slow breathing, yoga). Do both in the same day if possible. The goal isn't just relaxation — it's training the nervous system to oscillate, which builds flexibility over time.</p>
+</li>
+<li>
+<p><strong>Do a daily body scan.</strong> Spend five minutes with eyes closed noticing physical sensations: jaw tension, chest tightness, stomach heaviness, warmth, constriction. Don't try to label the emotion yet — just locate it in the body. This reactivates interoceptive circuits that trauma suppresses.</p>
+</li>
+<li>
+<p><strong>Practice articulating emotions out loud or in writing — even badly.</strong> When you notice a physical sensation, ask yourself: <em>what is this?</em> Try to find a word beyond "fine," "stressed," or "frustrated." If you can't, say that — "I don't know what I'm feeling, but something is here." The reaching is the exercise.</p>
+</li>
+<li>
+<p><strong>Work with a trauma-informed therapist if you can access one.</strong> Coaching and self-help are useful for motivation and skill-building, but for the core dissociative and identity-level work, clinical support is meaningfully better.</p>
+</li>
+<li>
+<p><strong>If you can't open up in therapy, go meta.</strong> You don't have to talk about the painful thing directly. Tell your therapist: <em>"There's something I want to bring up, but I feel ashamed of it."</em> Or even: <em>"I want to tell you that I'm scared to talk about something, but even saying that feels hard."</em> That's enough. It's the therapist's job to take it from there.</p>
+</li>
+<li>
+<p><strong>Notice when you defer to others and don't.</strong> If you find yourself thinking <em>"it's not my place"</em> to bring something up, ask whether that thought might itself be a symptom — a trained-in sense of not deserving space — rather than an accurate read of the situation. Then try bringing it up anyway.</p>
+</li>
+<li>
+<p><strong>Share this content with people in your life who want to understand what you're going through</strong> — rather than trying to explain it yourself. The explanation doesn't have to come from you.</p>
+</li>
+</ol>
+</section></article>
+    </div>
+  </div>
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc"><ul><li><a href="#transcript-0-meditation-and-intro-clips-before-stream-begins">Meditation and Intro Clips Before Stream Begins</a></li><li><a href="#transcript-1-why-cptsd-matters-stream-introduction-and-housekeeping">Why CPTSD Matters: Stream Introduction and Housekeeping</a></li><li><a href="#transcript-2-community-requests-and-the-trauma-guide-overview">Community Requests and the Trauma Guide Overview</a></li><li><a href="#transcript-3-history-of-ptsd-from-shell-shock-to-complex-trauma">History of PTSD: From Shell Shock to Complex Trauma</a></li><li><a href="#transcript-4-core-features-of-ptsd-reexperiencing-avoidance-hyperarousal">Core Features of PTSD: Reexperiencing, Avoidance, Hyperarousal</a></li><li><a href="#transcript-5-what-makes-cptsd-different-chronic-trauma-and-disturbances-in-self-organization">What Makes CPTSD Different: Chronic Trauma and Disturbances in Self-Organization</a></li><li><a href="#transcript-6-dissociation-and-hemispheric-lateralization-explained">Dissociation and Hemispheric Lateralization Explained</a></li><li><a href="#transcript-7-kindling-mechanism-and-seizure-like-emotional-dysregulation">Kindling Mechanism and Seizure-Like Emotional Dysregulation</a></li><li><a href="#transcript-8-how-trauma-disrupts-identity-and-emotional-awareness">How Trauma Disrupts Identity and Emotional Awareness</a></li><li><a href="#transcript-9-relationships-bpd-and-the-unstable-sense-of-self-in-cptsd">Relationships, BPD, and the Unstable Sense of Self in CPTSD</a></li><li><a href="#transcript-10-impulsivity-paralysis-of-initiation-and-lack-of-identity">Impulsivity, Paralysis of Initiation, and Lack of Identity</a></li><li><a href="#transcript-11-neuroscience-of-emotional-numbing-and-positive-vs-negative-emotion">Neuroscience of Emotional Numbing and Positive vs Negative Emotion</a></li><li><a href="#transcript-12-treatment-rewiring-physiology-through-autonomic-stretch">Treatment: Rewiring Physiology Through Autonomic Stretch</a></li><li><a href="#transcript-13-reconnecting-with-emotions-body-awareness-and-language">Reconnecting with Emotions: Body Awareness and Language</a></li><li><a href="#transcript-14-rebuilding-identity-and-relationships-after-trauma">Rebuilding Identity and Relationships After Trauma</a></li><li><a href="#transcript-15-why-one-dimensional-treatments-fail-for-cptsd">Why One-Dimensional Treatments Fail for CPTSD</a></li><li><a href="#transcript-16-paralysis-of-initiation-guide-video-on-childhood-autonomy">Paralysis of Initiation: Guide Video on Childhood Autonomy</a></li><li><a href="#transcript-17-q-a-disagreeing-with-your-therapist-and-adhd-vs-cptsd">Q&amp;A: Disagreeing With Your Therapist and ADHD vs CPTSD</a></li><li><a href="#transcript-18-q-a-addiction-safety-therapy-tips-and-opening-up">Q&amp;A: Addiction, Safety, Therapy Tips, and Opening Up</a></li><li><a href="#transcript-19-q-a-happiness-treatment-duration-and-closing-thoughts">Q&amp;A: Happiness, Treatment Duration, and Closing Thoughts</a></li></ul></div></nav>
+      <article class="summary"><section class="sec sec-a">
 <h2 id="transcript-0-meditation-and-intro-clips-before-stream-begins">Meditation and Intro Clips Before Stream Begins</h2>
-<p><span class="speaker">Dr. K:</span> [Music], I, [Music], [Music], oh, oh, oh, [Music]. Practice wishing for the object of your meta that these things happen to them. So you&#x27;ll repeat this thought. May this person be happy, may this person be free and may this person be at peace. [Music], [Music], m, m, m, [Music], [Music], [Music], oh, oh, oh, [Music]. So what we want to do is cultivate the. So what we want to do is cultivate the compa, compa, cultivate a capacity for kindness. So, Close Your Eyes, take a few moments to breathe in and breathe out. [Music], h, h, [Music], [Music], [Music] [Applause], [Applause], [Applause] [Music], [Music], [Music], w, w, w, [Music].</p>
+<p>[Music], I, [Music], [Music], oh, oh, oh, [Music]. Practice wishing for the object of your meta that these things happen to them. So you&#x27;ll repeat this thought. May this person be happy, may this person be free and may this person be at peace. [Music], [Music], m, m, m, [Music], [Music], [Music], oh, oh, oh, [Music]. So what we want to do is cultivate the. So what we want to do is cultivate the compa, compa, cultivate a capacity for kindness. So, Close Your Eyes, take a few moments to breathe in and breathe out. [Music], h, h, [Music], [Music], [Music] [Applause], [Applause], [Applause] [Music], [Music], [Music], w, w, w, [Music].</p>
 <p>But I would say on a, on a deeper level, it&#x27;s more like when, when we say work on yourself, that involves all kinds of like things about moving your life forward, and they struggle with motivation in these things, it&#x27;s because, when I don&#x27;t think I&#x27;m, it&#x27;s because when I don&#x27;t think I&#x27;m worth it, I&#x27;m not worth fixing. [Music], I, [Music], [Music], oh, oh, oh, [Music]. When you develop empathy and compassion for other people, there&#x27;s going to be room for someone else in the relationship and then this, in turn, is going to reduce the feeling of being an object. Now two people can connect and now it&#x27;s not about getting your needs met in Starvation.</p>
 </section>
 <section class="sec sec-b">
@@ -339,15 +534,21 @@ try {
 <p>So here we have some of the trauma guide Graphics, right? So some of these complicated Neuroscience things that we teach y&#x27;all, we absolutely want to teach y&#x27;all, like, we try to make it accessible, but we&#x27;re not dumbing it down, and I think that the more that yall understand the difference between dorsal, medial, prefrontal cortex emotions and amygdalar emotions, the more in control of your life you&#x27;ll be. And in order to facilitate that understanding, we have a lot of cool stuff coming down the pipeline. The trauma guide is made with a lot of love, so definitely check it out. Thank youall very much for coming here today, um.</p>
 <p>And then, you know, take care of yourselves like don&#x27;t give up, it&#x27;s not over. Like the reason it&#x27;s it&#x27;s reasonable to want to give up because you can try really hard and things don&#x27;t improve, makes a lot of sense. I hear that. But it doesn&#x27;t mean just because things have not improved does not mean that things are impossible. So take car all happy weekend.</p>
 </section></article>
+    </div>
   </div>
+  
 
-  <p class="meta">Auto-transcribed livestream · chapters &amp; speaker labels are a best-effort approximation (claude-sonnet-4-6).</p>
+  <p class="meta">Medium summary · claude-sonnet-4-6 (no extended thinking)</p>
 </div>
 
 <script>
 (function () {
   var root = document.documentElement;
-  var tb = document.querySelector('.theme-toggle');
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'medium');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
   var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
   tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
@@ -355,6 +556,16 @@ try {
   function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
   var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+  // deep-link to a heading in any view: switch to that view, then scroll to it
+  function navigateTo(id){
+    var el = id && document.getElementById(id);
+    if (!el) return;
+    var v = el.closest('.view');
+    if (v) setView(v.getAttribute('data-view'));
+    el.scrollIntoView();
+  }
+  window.addEventListener('hashchange', function(){ navigateTo(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash) navigateTo(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>
 <script>

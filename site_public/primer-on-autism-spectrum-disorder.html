@@ -9,7 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-} catch (e) {}
+  document.documentElement.setAttribute('data-view', localStorage.getItem('pubview') || 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -24,16 +25,156 @@ try {
   </nav>
 
   <h1>Primer on Autism Spectrum Disorder</h1>
-  <p class="watch">
-    <a href="https://www.youtube.com/watch?v=X-s6WeLOOck" target="_blank" rel="noopener">▶ Watch on YouTube</a>
-    <span class="speakers-note">Speakers (auto-detected): Dr. K</span>
-  </p>
+  <p class="watch"><a href="https://www.youtube.com/watch?v=X-s6WeLOOck" target="_blank" rel="noopener">▶ Watch on YouTube</a></p>
 
-  <div class="doc">
-    <nav class="toc"><p class="toc-title">Chapters</p><ul><li><a href="#transcript-0-stream-introduction-and-housekeeping-announcements">Stream Introduction and Housekeeping Announcements</a></li><li><a href="#transcript-1-deep-dive-overview-and-coaching-program-plug">Deep Dive Overview and Coaching Program Plug</a></li><li><a href="#transcript-2-autism-as-disorder-vs-neurodiversity-debate">Autism as Disorder vs. Neurodiversity Debate</a></li><li><a href="#transcript-3-severity-spectrum-and-stress-diathesis-model">Severity Spectrum and Stress-Diathesis Model</a></li><li><a href="#transcript-4-core-feature-social-emotional-reciprocity-and-theory-of-mind">Core Feature: Social Emotional Reciprocity and Theory of Mind</a></li><li><a href="#transcript-5-sensory-differences-and-arfid-in-autism">Sensory Differences and ARFID in Autism</a></li><li><a href="#transcript-6-social-challenges-creepiness-aggression-and-one-sided-relationships">Social Challenges: Creepiness, Aggression, and One-Sided Relationships</a></li><li><a href="#transcript-7-restricted-and-repetitive-behaviors-including-savant-abilities">Restricted and Repetitive Behaviors Including Savant Abilities</a></li><li><a href="#transcript-8-emotional-dysregulation-and-its-neurological-basis">Emotional Dysregulation and Its Neurological Basis</a></li><li><a href="#transcript-9-comorbidities-suicidality-and-hopelessness-in-asd">Comorbidities, Suicidality, and Hopelessness in ASD</a></li><li><a href="#transcript-10-trauma-masking-origins-and-etiology-of-autism">Trauma, Masking Origins, and Etiology of Autism</a></li><li><a href="#transcript-11-gut-microbiome-neuroinflammation-and-neurotransmitters">Gut Microbiome, Neuroinflammation, and Neurotransmitters</a></li><li><a href="#transcript-12-gender-differences-and-gender-dysphoria-in-asd">Gender Differences and Gender Dysphoria in ASD</a></li><li><a href="#transcript-13-masking-behaviors-and-the-cat-q-questionnaire">Masking Behaviors and the CAT-Q Questionnaire</a></li><li><a href="#transcript-14-self-diagnosis-concerns-and-rising-autism-rates">Self-Diagnosis Concerns and Rising Autism Rates</a></li><li><a href="#transcript-15-treatment-approaches-behavioral-pharmacological-and-clinical-philosophy">Treatment Approaches: Behavioral, Pharmacological, and Clinical Philosophy</a></li><li><a href="#transcript-16-dr-k-s-personal-treatment-framework-for-asd">Dr. K&#x27;s Personal Treatment Framework for ASD</a></li><li><a href="#transcript-17-audience-q-a-psychedelics-trauma-genius-and-closing-remarks">Audience Q&amp;A: Psychedelics, Trauma, Genius, and Closing Remarks</a></li></ul></nav>
-    <article class="summary transcript"><section class="sec sec-a">
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">2,513w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">31,253w</span></button>
+    
+  </div>
+
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#medium-summary">Summary</a></li>
+<li><a href="#medium-is-it-a-disorder-a-difference-or-both">Is It a Disorder, a Difference, or Both?</a></li>
+<li><a href="#medium-the-core-features-whats-actually-different">The Core Features: What's Actually Different</a></li>
+<li><a href="#medium-why-it-gets-missed-especially-in-women">Why It Gets Missed — Especially in Women</a></li>
+<li><a href="#medium-what-causes-it">What Causes It</a></li>
+<li><a href="#medium-the-weight-of-comorbidity-and-suicidality">The Weight of Comorbidity and Suicidality</a></li>
+<li><a href="#medium-masking-the-double-edged-adaptation">Masking: The Double-Edged Adaptation</a></li>
+<li><a href="#medium-common-pitfalls">Common Pitfalls</a></li>
+<li><a href="#medium-action-items-exercises">Action Items &amp; Exercises</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="medium-summary">Summary</h2>
+<p><strong>TL;DR —</strong> Autism Spectrum Disorder is a complex, highly variable neurological difference that shapes how people experience sensory input, emotion, and social connection. Understanding what's actually happening under the hood — not just the visible behaviors — is what allows people on the spectrum, their loved ones, and clinicians to move forward effectively.</p>
+<p>This is a comprehensive primer covering what autism actually is, its core features, why it's so frequently missed (especially in women), what causes it, the outsized burden of comorbid mental illness and trauma, and how treatment is best approached as a highly individualized process rather than a one-size-fits-all protocol.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-is-it-a-disorder-a-difference-or-both">Is It a Disorder, a Difference, or Both?</h2>
+<p>The first thing to settle — at least for yourself — is how you want to frame autism. The psychiatric establishment classifies it as a disorder under the DSM-5 because it <strong>interferes with function</strong>: relationships, work, emotional wellbeing, and in severe cases, basic self-care. That's the clinical threshold that separates any diagnosis from a normal human variation.</p>
+<p>But over the last two decades, a parallel framework has grown: <strong>neurodiversity</strong>. This view holds that an autistic brain isn't broken — it's different — and that many of the hardships autistic people face come from a world designed for neurotypical brains, not from something inherently wrong with them. Ramps exist for people who use wheelchairs. Equivalent accommodations for neurological differences are far rarer.</p>
+<p>Both framings are valid, and neither is the full picture. The more useful model is the <strong>stress-diathesis model</strong>: illness or difficulty tends to emerge from the <em>combination</em> of a particular biology and a particular environment. An autistic brain in a fully accommodating environment might produce far fewer problems. The same brain dropped into a world that punishes its natural tendencies produces enormous ones.</p>
+<p>Practically, the question "is this a disorder or neurodiversity?" matters less than you'd think when it comes to what you actually do about it. The goals shift slightly, but the tools overlap considerably. What you believe about your situation is worth examining — but don't let that question become a reason to delay getting support.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-the-core-features-whats-actually-different">The Core Features: What's Actually Different</h2>
+<p>Autism is a <strong>spectrum</strong>, which means the distance between a nonverbal child who cannot toilet independently and a high-functioning physician with excellent bedside manner is enormous. Interventions appropriate for one may be useless or harmful for the other. Keep that in mind as a frame for everything below.</p>
+<p><strong>Social-emotional reciprocity</strong> is the most commonly discussed feature. The brain's social circuits — the ones that automatically decode eye contact, tone of voice, facial expression, and body language — function differently. This isn't a choice or rudeness. Eye contact that neurotypical people barely notice can feel genuinely distressing, like nails on a chalkboard. Without comfortable eye contact, a massive stream of social information simply isn't available.</p>
+<p>A related concept is <strong>theory of mind</strong> — the ability to step outside your own perspective and model what someone else is thinking or feeling. This is the cognitive underpinning of understanding that when someone points, you're supposed to look at what they're pointing <em>at</em>, not their finger. Or that when someone says "you can call me sometime if you want," the word "sometime" is social texture, not a literal scheduling request. For many people on the spectrum, none of this is obvious. It has to be learned explicitly.</p>
+<p>This leads to <strong>scripted socialization</strong>: constructing detailed mental rule sets for interactions that neurotypical people navigate automatically. The problem is that scripts break down as soon as context shifts — and context is almost entirely what makes social behavior appropriate or inappropriate. Flirting is a clear example: it depends on ambiguity, tone, and nonverbal cues, none of which are easily captured in a script. When the script gets applied out of context, the autistic person gets labeled creepy, aggressive, or inappropriate — often without understanding why, since they were following the rules as they understood them.</p>
+<blockquote>
+<p>"This is what's incredibly traumatic about it: now you've been burned, you get a reputation as a creep, and no one gives you the benefit of the doubt."</p>
+</blockquote>
+<p><strong>Restricted and repetitive behaviors</strong> are the second major domain. This can range from deep hyperfocal interests (trains, finance, a game mechanic) to echolalia, motor behaviors like flapping, or rigid routines where any disruption produces a disproportionate emotional reaction. On the high-functioning end, intense narrow focus can produce extraordinary competence — the example from <em>The Big Short</em> of the investor who first identified the subprime mortgage collapse being a real-world illustration of this.</p>
+<p><strong>Emotional dysregulation</strong> deserves its own emphasis. Compared to neurotypical people, autistic individuals tend to experience emotions with greater <em>intensity</em>, hit emotional thresholds <em>faster</em>, and take <em>longer</em> to return to baseline. This is not behavioral immaturity — it reflects actual differences in how the brain's regulatory circuits dampen emotional responses. A situation that produces mild discomfort for a neurotypical person may feel overwhelming for someone on the spectrum.</p>
+<p><strong>Sensory differences</strong> feed into all of this. ARFID (Avoidant Restrictive Food Intake Disorder) is common. The best analogy: imagine finding a piece of eggshell in your omelet and how viscerally unpleasant that fraction of a second feels. For many autistic people, certain food textures, sounds, or environments are like someone sprinkling eggshells into every meal, every day. This isn't picky eating. It's a different neurological signal. Parents who punish children for not eating vegetables, or push eye contact because <em>they</em> feel uncomfortable with the lack of it, are inadvertently making the child's life significantly harder.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-why-it-gets-missed-especially-in-women">Why It Gets Missed — Especially in Women</h2>
+<p>Boys are diagnosed three to four times as often as girls. This almost certainly reflects diagnostic gaps rather than true prevalence differences.</p>
+<p>Boys with autism tend to externalize: temper tantrums, aggression, oppositional behavior. These cause problems for people around them, which is what prompts diagnosis. Girls tend to <strong>internalize</strong> — compacting distress inward rather than expressing it outward. They are also significantly better at masking (more on that below), partly because girls face more social correction from a young age about how to behave, making them earlier and more practiced suppressors of atypical behaviors.</p>
+<p>The result is <strong>diagnostic overshadowing</strong>: girls on the spectrum get labeled with anxiety, OCD, or depression — all of which are real — while the autism underneath goes undetected. The autism then goes untreated, meaning the root of much of the anxiety and depression never gets addressed.</p>
+<blockquote>
+<p>"Girls are way better at masking. They are much more likely to be vulnerable to diagnostic overshadowing."</p>
+</blockquote>
+<p>There's also a notable connection to <strong>gender dysphoria</strong> — autistic individuals are roughly ten times more likely than the general population to experience some degree of gender identity fluctuation. This appears to be connected to how identity forms through emotional experiences and social relationships, both of which are altered by autism.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-what-causes-it">What Causes It</h2>
+<p>The honest answer is: a lot of things, interacting. No single cause. That complexity is itself part of the argument against framing autism as one discrete broken mechanism.</p>
+<p>Known contributing factors include:
+- <strong>Genetics</strong> — having an older sibling with autism increases risk roughly sixteenfold
+- <strong>Paternal and maternal age</strong> at conception
+- <strong>Intrauterine environment</strong> — neonatal hypoxia (oxygen deprivation at birth) is associated with a tenfold increased risk; certain infections during pregnancy also elevate risk
+- <strong>Mitochondrial dysfunction</strong> — impaired cellular energy production acting as a global neurological debuff
+- <strong>Neurotransmitter alterations</strong> — particularly GABA, which normally calms neural activity; dysregulation here contributes to the hyperactive, jittery quality of emotional responses
+- <strong>Neuroinflammation and gut microbiome</strong> — this is where a lot of current research is focused</p>
+<p>The gut connection is worth understanding in some depth. For every human cell in your body, there are roughly ten bacterial cells. The bacteria that have coexisted with humans for a long time are recognized by the immune system as non-threatening. New bacteria — the ones that thrive on highly processed, simple-carbohydrate diets — trigger immune activation. That immune activation produces inflammation. Neuroinflammation makes neurons more excitable, amplifies emotional responses, and disrupts neurotransmitter production. Gut bacteria are also directly involved in synthesizing neurotransmitter precursors, including serotonin. Change the diet, change the bacteria, and you change both inflammation levels and neurotransmitter availability.</p>
+<p>This is not a cure. But it means that diet, inflammation reduction, and possibly targeted supplementation (iron supplementation is mentioned as having clinical utility, particularly for behavioral outbursts in severe cases) are legitimate levers — even if the precise mechanisms aren't fully established yet.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-the-weight-of-comorbidity-and-suicidality">The Weight of Comorbidity and Suicidality</h2>
+<p>The comorbidity numbers are striking and deserve to be taken seriously:
+- <strong>70%</strong> of autistic people have at least one other mental health diagnosis
+- <strong>40%</strong> have two or more
+- <strong>30–40%</strong> have a mood disorder
+- <strong>~25%</strong> have an anxiety disorder
+- <strong>~20%</strong> have OCD
+- <strong>~25%</strong> report suicidal ideation
+- <strong>~8%</strong> attempt suicide</p>
+<p>The elevated suicidality isn't hard to understand once you trace the logic. Autistic people who are highly intelligent often work extremely hard to address their difficulties. They research, they go to therapy, they practice. Then they go on a date, order something "odd," get mocked, and the entire effort feels futile. They arrive at a clear-eyed calculation: <em>I've tried everything. This is hopeless.</em></p>
+<p>The problem is that the features of autism stack against recovering from that conclusion:
+1. <strong>Higher emotional intensity</strong> — the hopelessness hits harder and lasts longer
+2. <strong>Difficulty with theory of mind</strong> — reassurance and empathy from others are hard to receive; emotional support requires a degree of perspective-taking that's impaired
+3. <strong>Concrete thinking</strong> — once a logical conclusion is reached, it's very hard to dislodge through abstract arguments like "it'll get better"</p>
+<p>Counterintuitively, higher intelligence makes this <em>worse</em>. A more powerful analytical mind builds a more airtight argument for hopelessness. This is not a reason to give up — it's a reason to specifically target emotional dysregulation and concrete thinking as treatment priorities.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-masking-the-double-edged-adaptation">Masking: The Double-Edged Adaptation</h2>
+<p>Masking begins early. A child learns that the way they naturally move through the world — not making eye contact, talking about trains for hours, needing things arranged a specific way — is met with correction, punishment, or social rejection. So they adapt. They suppress. They learn to perform neurotypicality.</p>
+<p>The <strong>CAT-Q (Camouflaging Autistic Traits Questionnaire)</strong> captures this: deliberately copying others' body language, developing scripts to follow, monitoring your own facial expressions, practicing what "natural" looks like, feeling like you're performing rather than being yourself.</p>
+<p>Masking works, in the short term. It reduces social friction. But it comes at a cost: it is effortful, exhausting, and separates you from yourself. Masking correlates with worsening mental health outcomes. And it often delays diagnosis — which delays support.</p>
+<blockquote>
+<p>"We start to hide who we are. We suppress our anger, our shame — but it's not just that. We also learn to suppress the positive things. I suppress my excitement. We learn to hide on the internet, where we can find the thousand other people who love trains as much as we do."</p>
+</blockquote>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-common-pitfalls">Common Pitfalls</h2>
+<p><strong>Assuming short-form content is diagnostic.</strong> Resonating with a few items on a masking questionnaire or a TikTok checklist is not a diagnosis. Autism diagnosis requires integrating a large number of clinical observations. Many of the traits associated with autism are also appearing in the broader population as social skills atrophy from reduced face-to-face interaction and time in echo chambers — that doesn't mean everyone is becoming autistic.</p>
+<p><strong>Treating the behaviors rather than the person.</strong> ABA has an evidence base, but some people experience it as traumatizing. Multiple behavioral approaches show roughly equivalent outcomes in studies. The type matters less than finding something that fits the person and doing it seriously. If ABA feels like an extended exercise in masking, other options exist.</p>
+<p><strong>Expecting pharmacology to solve it.</strong> There is no medication that treats autism. Medications can address specific symptoms — emotional dysregulation, outbursts, comorbid anxiety or depression — but standard psychiatric medications were largely developed and studied in neurotypical populations. Results in autistic individuals are less predictable.</p>
+<p><strong>Mistaking trauma for autism (or vice versa).</strong> PTSD and complex trauma can produce features that look nearly identical to autism: emotional dysregulation, relational difficulties, empathy challenges, attention problems. They are not the same, and the underlying mechanisms differ enough that treatment approaches should differ too. A professional assessment is how you begin to disentangle them.</p>
+<p><strong>Neurotypical people assuming they understand what autism feels like.</strong> Saying "I hate loud noises too" or "I'm also awkward sometimes" is not the same thing. The intensity of sensory and social experience for many autistic people is categorically different, not just quantitatively different.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-action-items-exercises">Action Items &amp; Exercises</h2>
+<ol>
+<li>
+<p><strong>Get a proper clinical assessment if you're uncertain.</strong> Before self-diagnosing from content, see a clinician who can conduct a thorough evaluation. Describe what you actually experience, not just what you've read about. A diagnosis — or ruling one out — gives you a foundation to build from.</p>
+</li>
+<li>
+<p><strong>Map your internal landscape.</strong> Separately from any diagnosis, start tracking: What are your triggers? What do you feel in response to them? What do you automatically do in response to those feelings? Externalizing this (journaling, talking with a therapist) interrupts autopilot and is useful regardless of where on the spectrum you land.</p>
+</li>
+<li>
+<p><strong>Identify what you actually want to change.</strong> Before deciding how to address difficulties, get clear on the question: Do you want to adapt yourself to fit the external world more? Or do you want the external world to accommodate you more? Most people want some of both — but being explicit about this for specific problem areas prevents working against yourself.</p>
+</li>
+<li>
+<p><strong>Address inflammation as a concrete lever.</strong> If your diet is heavily processed, that's a meaningful starting point. This doesn't require a perfect diet immediately — it means gradually introducing higher-fiber, less-processed food. For autistic individuals with significant texture sensitivities (ARFID features), this is a slow process of systematic exposure: try one new food preparation at a time, adjust textures rather than demanding wholesale change.</p>
+</li>
+<li>
+<p><strong>Prioritize emotional regulation as a skill.</strong> Meditation, exercise, and reducing baseline physiological stress (sleep, inflammation, overstimulation) all reduce the intensity and duration of emotional responses. This is foundational — other skills are harder to apply when your emotional system is running at full intensity.</p>
+</li>
+<li>
+<p><strong>For family members and partners:</strong> Stop asking the autistic person to change behaviors primarily because those behaviors make <em>you</em> uncomfortable. Identify which requests are about genuine harm or necessary function, and which are about your own neurotypical preferences. The latter category is worth examining honestly.</p>
+</li>
+<li>
+<p><strong>If you are suicidal or know someone who is:</strong> Take it seriously. The combination of high intelligence, emotional intensity, concrete thinking, and difficulty receiving empathic support makes autistic suicidality a specific clinical risk. Get professional support. The hopelessness is real but is being filtered through a brain that is, by design, more likely to experience it intensely and less likely to be reassured out of it through logic alone — which means the environment of support matters enormously.</p>
+</li>
+</ol>
+</section></article>
+    </div>
+  </div>
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc"><ul><li><a href="#transcript-0-stream-introduction-and-housekeeping-announcements">Stream Introduction and Housekeeping Announcements</a></li><li><a href="#transcript-1-deep-dive-overview-and-coaching-program-plug">Deep Dive Overview and Coaching Program Plug</a></li><li><a href="#transcript-2-autism-as-disorder-vs-neurodiversity-debate">Autism as Disorder vs. Neurodiversity Debate</a></li><li><a href="#transcript-3-severity-spectrum-and-stress-diathesis-model">Severity Spectrum and Stress-Diathesis Model</a></li><li><a href="#transcript-4-core-feature-social-emotional-reciprocity-and-theory-of-mind">Core Feature: Social Emotional Reciprocity and Theory of Mind</a></li><li><a href="#transcript-5-sensory-differences-and-arfid-in-autism">Sensory Differences and ARFID in Autism</a></li><li><a href="#transcript-6-social-challenges-creepiness-aggression-and-one-sided-relationships">Social Challenges: Creepiness, Aggression, and One-Sided Relationships</a></li><li><a href="#transcript-7-restricted-and-repetitive-behaviors-including-savant-abilities">Restricted and Repetitive Behaviors Including Savant Abilities</a></li><li><a href="#transcript-8-emotional-dysregulation-and-its-neurological-basis">Emotional Dysregulation and Its Neurological Basis</a></li><li><a href="#transcript-9-comorbidities-suicidality-and-hopelessness-in-asd">Comorbidities, Suicidality, and Hopelessness in ASD</a></li><li><a href="#transcript-10-trauma-masking-origins-and-etiology-of-autism">Trauma, Masking Origins, and Etiology of Autism</a></li><li><a href="#transcript-11-gut-microbiome-neuroinflammation-and-neurotransmitters">Gut Microbiome, Neuroinflammation, and Neurotransmitters</a></li><li><a href="#transcript-12-gender-differences-and-gender-dysphoria-in-asd">Gender Differences and Gender Dysphoria in ASD</a></li><li><a href="#transcript-13-masking-behaviors-and-the-cat-q-questionnaire">Masking Behaviors and the CAT-Q Questionnaire</a></li><li><a href="#transcript-14-self-diagnosis-concerns-and-rising-autism-rates">Self-Diagnosis Concerns and Rising Autism Rates</a></li><li><a href="#transcript-15-treatment-approaches-behavioral-pharmacological-and-clinical-philosophy">Treatment Approaches: Behavioral, Pharmacological, and Clinical Philosophy</a></li><li><a href="#transcript-16-dr-k-s-personal-treatment-framework-for-asd">Dr. K&#x27;s Personal Treatment Framework for ASD</a></li><li><a href="#transcript-17-audience-q-a-psychedelics-trauma-genius-and-closing-remarks">Audience Q&amp;A: Psychedelics, Trauma, Genius, and Closing Remarks</a></li></ul></div></nav>
+      <article class="summary"><section class="sec sec-a">
 <h2 id="transcript-0-stream-introduction-and-housekeeping-announcements">Stream Introduction and Housekeeping Announcements</h2>
-<p><span class="speaker">Dr. K:</span> Cultivate the compa, cultivate a capacity for kindness. So, Close Your Eyes, take a few moments to breathe in and breathe out. [Music] h is is [Music], [Music], [Music], [Applause], [Applause], [Applause], [Music]. But I would say on a, on a deeper level, it&#x27;s more like when, when we say work on, it&#x27;s more like when, when we say work on yourself, that involves all kinds of like things about moving your life forward, and they struggle with motivation. In these things it&#x27;s because when I don&#x27;t think I&#x27;m worth it, I&#x27;m not worth fixing. [Music], oh, oh. [Music]. D, [Music]. When you develop empathy and compassion for other people, there&#x27;s going to be room for someone else in the relationship and then this in turn is going to reduce the feeling of being an object.</p>
+<p>Cultivate the compa, cultivate a capacity for kindness. So, Close Your Eyes, take a few moments to breathe in and breathe out. [Music] h is is [Music], [Music], [Music], [Applause], [Applause], [Applause], [Music]. But I would say on a, on a deeper level, it&#x27;s more like when, when we say work on, it&#x27;s more like when, when we say work on yourself, that involves all kinds of like things about moving your life forward, and they struggle with motivation. In these things it&#x27;s because when I don&#x27;t think I&#x27;m worth it, I&#x27;m not worth fixing. [Music], oh, oh. [Music]. D, [Music]. When you develop empathy and compassion for other people, there&#x27;s going to be room for someone else in the relationship and then this in turn is going to reduce the feeling of being an object.</p>
 <p>Now two people can connect, and now it&#x27;s not about getting your needs met in Starvation, it&#x27;s about two human beings forming a relationship. Forming a relationship [Music] h, [Music]. All righty chat, let&#x27;s get started. Welcome to another healthy gamer GG stream. Just a reminder that, um hello, my name is Dr Alok Kanojia. Just a reminder that, although I&#x27;m a psychiatrist, nothing we discuss on stream today is intended to be taken as medical advice. Everything is for educational or entertainment purposes only. If yall have a medical concern or question, please go see a licensed professional. Welcome everybody.</p>
 </section>
 <section class="sec sec-b">
@@ -342,15 +483,21 @@ try {
 <p>So if yall are interested in getting outcomes in a fixed amount of time, then I&#x27;d strongly recommend youall check out coaching. Thank you all very much for coming today and next week we&#x27;re going to be talking with Ali Mattu about social anxiety. Brilliant clinician, awesome content creator in his own right. He&#x27;s going to be sharing us. He&#x27;s a specialist in anxiety, so we&#x27;re going to be getting some of his expertise. So yall take care and if you&#x27;ll say more stuff on autism, what, what is the more stuff? Give me a direction, okay. So thank you all very much. We&#x27;ll see you, um, if yall. We have two memberships: lectures on Wednesday and Friday on Deep dive into emotions and deep dive into intuition.</p>
 <p>Otherwise, we&#x27;ll see youall next week. Okay, take care everybody.</p>
 </section></article>
+    </div>
   </div>
+  
 
-  <p class="meta">Auto-transcribed livestream · chapters &amp; speaker labels are a best-effort approximation (claude-sonnet-4-6).</p>
+  <p class="meta">Medium summary · claude-sonnet-4-6 (no extended thinking)</p>
 </div>
 
 <script>
 (function () {
   var root = document.documentElement;
-  var tb = document.querySelector('.theme-toggle');
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'medium');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
   var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
   tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
@@ -358,6 +505,16 @@ try {
   function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
   var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+  // deep-link to a heading in any view: switch to that view, then scroll to it
+  function navigateTo(id){
+    var el = id && document.getElementById(id);
+    if (!el) return;
+    var v = el.closest('.view');
+    if (v) setView(v.getAttribute('data-view'));
+    el.scrollIntoView();
+  }
+  window.addEventListener('hashchange', function(){ navigateTo(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash) navigateTo(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>
 <script>

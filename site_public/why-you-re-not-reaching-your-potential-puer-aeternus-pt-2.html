@@ -9,7 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-} catch (e) {}
+  document.documentElement.setAttribute('data-view', localStorage.getItem('pubview') || 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -24,16 +25,162 @@ try {
   </nav>
 
   <h1>Why You're Not Reaching Your Potential (Puer Aeternus pt.2)</h1>
-  <p class="watch">
-    <a href="https://www.youtube.com/watch?v=aGFqdVqDhqo" target="_blank" rel="noopener">▶ Watch on YouTube</a>
-    <span class="speakers-note">Speakers (auto-detected): Dr. K</span>
-  </p>
+  <p class="watch"><a href="https://www.youtube.com/watch?v=aGFqdVqDhqo" target="_blank" rel="noopener">▶ Watch on YouTube</a></p>
 
-  <div class="doc">
-    <nav class="toc"><p class="toc-title">Chapters</p><ul><li><a href="#transcript-0-opening">Opening</a></li><li><a href="#transcript-1-stream-introduction-and-meditation-tracks-announcement">Stream Introduction and Meditation Tracks Announcement</a></li><li><a href="#transcript-2-community-reaction-to-puer-aeternus-part-one">Community Reaction to Puer Aeternus Part One</a></li><li><a href="#transcript-3-why-hard-work-alone-will-not-fix-puer">Why Hard Work Alone Will Not Fix Puer</a></li><li><a href="#transcript-4-recap-what-puer-aeternus-looks-like">Recap: What Puer Aeternus Looks Like</a></li><li><a href="#transcript-5-the-provisional-life-and-fear-of-commitment">The Provisional Life and Fear of Commitment</a></li><li><a href="#transcript-6-understanding-archetypes-and-the-collective-unconscious">Understanding Archetypes and the Collective Unconscious</a></li><li><a href="#transcript-7-the-defective-self-vs-wrong-ego-attitude">The Defective Self vs. Wrong Ego Attitude</a></li><li><a href="#transcript-8-how-the-ego-must-change-for-constellation-to-occur">How the Ego Must Change for Constellation to Occur</a></li><li><a href="#transcript-9-the-gesture-of-impatience-and-everlasting-switching">The Gesture of Impatience and Everlasting Switching</a></li><li><a href="#transcript-10-childish-illusions-and-the-sack-we-carry-into-adult-life">Childish Illusions and the Sack We Carry Into Adult Life</a></li><li><a href="#transcript-11-amputation-of-desire-and-intellectual-colonization-of-insight">Amputation of Desire and Intellectual Colonization of Insight</a></li><li><a href="#transcript-12-the-puer-s-fantasy-to-action-border-and-analytic-sham">The Puer&#x27;s Fantasy-to-Action Border and Analytic Sham</a></li><li><a href="#transcript-13-suicide-as-the-ultimate-escape-hatch">Suicide as the Ultimate Escape Hatch</a></li><li><a href="#transcript-14-transference-disillusionment-and-the-path-to-self-reliance">Transference, Disillusionment, and the Path to Self-Reliance</a></li><li><a href="#transcript-15-losing-faith-in-dr-k-as-a-necessary-step">Losing Faith in Dr. K as a Necessary Step</a></li><li><a href="#transcript-16-q-a-the-first-step-is-listening-not-doing">Q&amp;A: The First Step Is Listening, Not Doing</a></li><li><a href="#transcript-17-bee-mantras-tantra-and-purifying-the-archetype">Bee Mantras, Tantra, and Purifying the Archetype</a></li><li><a href="#transcript-18-sacrifice-backup-plans-and-the-fomo-of-potential">Sacrifice, Backup Plans, and the FOMO of Potential</a></li><li><a href="#transcript-19-the-double-aspect-of-the-child-archetype">The Double Aspect of the Child Archetype</a></li><li><a href="#transcript-20-dreams-as-radioactive-energy-harness-or-be-destroyed">Dreams as Radioactive Energy: Harness or Be Destroyed</a></li><li><a href="#transcript-21-why-no-action-will-work-and-what-must-change-instead">Why No Action Will Work and What Must Change Instead</a></li><li><a href="#transcript-22-closing-pattern-recognition-and-the-transformation-beginning">Closing: Pattern Recognition and the Transformation Beginning</a></li></ul></nav>
-    <article class="summary transcript"><section class="sec sec-a">
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">2,243w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">21,651w</span></button>
+    
+  </div>
+
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#medium-summary">Summary</a></li>
+<li><a href="#medium-what-puer-aeternus-actually-is">What Puer Aeternus Actually Is</a></li>
+<li><a href="#medium-the-archetype-the-ego-and-why-youre-not-broken">The Archetype, the Ego, and Why You're Not Broken</a></li>
+<li><a href="#medium-the-six-moves-puer-uses-against-you">The Six Moves Puer Uses Against You</a></li>
+<li><a href="#medium-why-just-work-harder-doesnt-work">Why "Just Work Harder" Doesn't Work</a></li>
+<li><a href="#medium-the-structure-of-transformation">The Structure of Transformation</a></li>
+<li><a href="#medium-common-pitfalls">Common Pitfalls</a></li>
+<li><a href="#medium-action-items-exercises">Action Items &amp; Exercises</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="medium-summary">Summary</h2>
+<p><strong>TL;DR — The puer aeternus archetype is the part of you that stays perpetually young, creative, and full of potential — but never cashes that potential in. No action will fix this directly, because the problem lives deeper than action.</strong></p>
+<p>Puer aeternus ("eternal child") is a Jungian archetype — a deep, shared psychological pattern — that shows up as a life of brilliant potential never fully realized. You can work hard, be intelligent, understand everything you're told, and still be completely stuck. This talk is a guided tour of exactly how that stuckness operates, why every standard "just do it" fix bounces off it, and what a genuine shift actually looks like. Fair warning: the whole point is that reading about it isn't enough. The transformation has to happen at a level underneath words.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-what-puer-aeternus-actually-is">What Puer Aeternus Actually Is</h2>
+<p><strong>Puer</strong> is Latin for male child; <strong>aeturnus</strong> means eternal. It's the eternal-child archetype — the part of the psyche that is creative, excited, and full of longing, but also impatient, commitment-averse, and obsessed with keeping its options open.</p>
+<p>It manifests not as laziness exactly, but as <strong>loss of control over your own motivation</strong>. You know the feeling: 72 hours of brilliant flow-state work, then day four hits and the spark is gone. Instead of pushing through the dry stretch, the puer mind immediately starts hunting for the trick that will reignite inspiration — the perfect productivity system, the biohack, the right supplement, the YouTube summary that saves you from reading the actual book.</p>
+<blockquote>
+<p>"I bottled lightning for 72 hours. I don't want to generate electricity using a treadmill. I want to learn how to consistently bottle lightning."</p>
+</blockquote>
+<p>The deeper structural problem is an inability to give up potential. Every real choice closes other doors. If you commit to this career, you can't have that one. If you marry this person, other people are off the table. For the puer, that loss of optionality is intolerable — so they never fully choose anything. They live what Marie-Louise von Franz called a <strong>provisional life</strong>: always "for the time being," always waiting for the real thing to show up.</p>
+<blockquote>
+<p>"There is always the fantasy that sometime in the future the real thing will come about."</p>
+</blockquote>
+<p>This isn't a moral failing. It's a specific psychological architecture that has to be understood on its own terms.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-the-archetype-the-ego-and-why-youre-not-broken">The Archetype, the Ego, and Why You're Not Broken</h2>
+<p>Jung's model layers consciousness roughly like this: on the surface you have conscious thoughts (crystallized, directly observable); underneath that is personality structure (things like attachment style, the Big Five traits — observable only with deeper exploration); and beneath even that are <strong>archetypes</strong> — primordial, universal patterns shared across the entire collective unconscious. Puer lives at that deepest level.</p>
+<p>This matters because a lot of people conclude they are fundamentally defective. They've tried hard work. It hasn't stuck. Therefore they must be broken at the core.</p>
+<p>Von Franz pushes back hard on this. Wherever she found what looked like a "defective self," she always found alongside it a <strong>defective ego attitude</strong> — the way the person was relating to themselves. The analogy: if you eat garbage food at irregular times and your digestion suffers, the problem isn't that you have a broken stomach. The stomach is fine. The relationship with the stomach is broken.</p>
+<p>Puer is the same. The archetype itself is not the enemy. It is the source of creativity, wonder, and genuine possibility. The problem is how it's being managed — or not managed — by the conscious ego. Nothing is wrong with you at the core. What is miscalibrated is the part of you that is supposed to shepherd these energies.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-the-six-moves-puer-uses-against-you">The Six Moves Puer Uses Against You</h2>
+<p>These are the characteristic patterns that keep the archetype in its destructive form. Knowing them doesn't automatically fix anything, but you can't begin to see through them if you don't know what you're looking for.</p>
+<p><strong>1. The gesture of impatience.</strong> When something gets hard — in the outer world (the job, the relationship, the project) or the inner world (the uncomfortable self-examination) — the puer makes a few halfhearted attempts and switches. It doesn't matter which direction you switch to. The perpetual switching is the disease, not the specific choice.</p>
+<blockquote>
+<p>"It is the everlasting switching which is the dangerous thing, not what they do."</p>
+</blockquote>
+<p><strong>2. The defective self story.</strong> Believing you are fundamentally broken is functionally useful to puer: it provides a permanent excuse to avoid the hard work. If the problem is your essence, no effort could help anyway. This belief is almost always constructed, not discovered.</p>
+<p><strong>3. The sack of childish illusions.</strong> Everyone carries childhood impressions of what the world should be — that you deserve to skip the slog, that the perfect opportunity is out there if you just find it, that someone of your caliber shouldn't have to start at entry level. These illusions are the engine of chronic dissatisfaction. They're not necessarily false about what's <em>possible</em> — the path to those things just involves sacrifice and uncertainty that the illusion conveniently leaves out.</p>
+<p><strong>4. Amputation of desire.</strong> When the illusions meet reality hard enough, instead of working through the disappointment, the puer cuts the desire off entirely. Becomes anti-work, anti-relationship, nihilistic — not because those stances were arrived at philosophically, but because they're the simplest defense against wanting something and not getting it. You lose a piece of yourself each time this happens.</p>
+<p><strong>5. Intellectual colonization.</strong> This is the most insidious move. You get the insight. It genuinely lands. And then the puer takes the insight and moves it upstairs into pure philosophy. You spend hours arguing about whether the framework is correct instead of doing the dishes. You understand everything and change nothing. The analytical relationship itself is vulnerable to this: a puer client can have a profound breakthrough every session, be enthusiastic about every framework offered, and make zero behavioral change — because the "integration" is happening entirely in their head.</p>
+<blockquote>
+<p>"The realization that they should adapt to reality is an intellectual idea to them which they fulfill in fantasy but not in reality."</p>
+</blockquote>
+<p><strong>6. The suicide/escape hatch.</strong> This doesn't necessarily mean active suicidality, though it can. It means keeping a psychological parachute: <em>if this gets too hard, I can always bail</em>. The comfort of that option means you never fully commit to anything. And without full commitment, transformation can't happen — because transformation requires giving yourself completely to the situation.</p>
+<blockquote>
+<p>"If one cuts off the wholeness of the experience, one cuts oneself into bits and remains split because of transformation."</p>
+</blockquote>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-why-just-work-harder-doesnt-work">Why "Just Work Harder" Doesn't Work</h2>
+<p>Work is the cure for puer. Von Franz says it clearly. But puer can work — it just can't work on the <em>dreary</em> thing it's supposed to work on. It will pour superhuman effort into escaping the thing it's supposed to do.</p>
+<blockquote>
+<p>"He must have escaped to some other kind of work, or he must have run away from some other kind of work."</p>
+</blockquote>
+<p>The puer will develop an elegant personal philosophy of productivity while avoiding the one boring report. It will build impressive skills in adjacent areas while the actual problem sits untouched. Hard work is necessary but not sufficient — because puer will perform hard work in the service of avoidance, and this looks from the outside (and feels from the inside) like genuine effort.</p>
+<p>The specific work that heals puer is dragging yourself out of bed on a dreary morning to do a boring task through sheer will, with no external excitement to carry you. Not once. Again and again. That's the kind of work puer hates most and avoids most cleverly.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-the-structure-of-transformation">The Structure of Transformation</h2>
+<p>Since the problem exists at the archetypal level — below action, below personality — no action taken <em>at the level of action</em> will resolve it. This is not hopelessness; it's a precise diagnosis of where to aim.</p>
+<p>What changes is your <strong>relationship to your own resistance</strong>. The transformation happens when the ego's orientation shifts from "how do I make myself do this?" to something more like: <em>I see what's happening in here. I see the move puer is making. I see the impatience. I see the intellectualization. I see myself reaching for the escape hatch.</em></p>
+<p>Seeing it — genuinely seeing it, not just naming it — is the thing. This is why the lecture keeps insisting the answer is not at the level of words. You can read every pattern described above and immediately use your new vocabulary to avoid action more elegantly. Or something can shift.</p>
+<p>The childlike creative energy that drives puer is not the enemy. That energy is the source of everything. Left unexpressed, it becomes toxic — it weighs you down, poisons your sense of self, turns aspiration into evidence of failure. Channeled, it becomes the force behind a genuinely full life. The distinction between the child pulling you forward (toward new possibility and creativity) and the child pulling you backward (toward avoidance, dependence, and fantasy) is something you have to discern in real time, in each situation.</p>
+<p>Closing doors, paradoxically, is what opens the world. Choosing one thing fully — even though it means every other thing is no longer on the table — is the only way to actually get something. The puer logic says: infinite potential is better than one actualized thing. The reality is that infinite potential and zero actualization is worth nothing. One fully committed path, walked through, turns out to connect to everything on the other side.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-common-pitfalls">Common Pitfalls</h2>
+<ul>
+<li>
+<p><strong>Treating this as a self-improvement system to execute.</strong> The lecture itself predicts this failure mode. If your takeaway is a numbered to-do list, puer has already won. The point is transformation of orientation, not optimization of behavior.</p>
+</li>
+<li>
+<p><strong>Deciding you're broken and giving up.</strong> This is a puer move, not a conclusion. It's the most convenient story because it makes trying pointless.</p>
+</li>
+<li>
+<p><strong>Intellectually integrating every insight without changing anything.</strong> You can understand this completely, agree with it passionately, tell friends about it, and remain exactly the same. Understanding and transformation are not the same thing.</p>
+</li>
+<li>
+<p><strong>Asking "what's the best/first/right step?"</strong> This question pattern is itself the puer. The conditionality — <em>tell me the optimal action and then I'll consider it</em> — is the mechanism of paralysis. Any genuine step is more valuable than the optimal theoretical step never taken.</p>
+</li>
+<li>
+<p><strong>Using "it's okay to fail as long as I try" as an escape.</strong> Sounds healthy. But puer will perform a gesture of effort, declare it a failure, and exit cleanly — having technically kept the rule while violating its spirit entirely.</p>
+</li>
+<li>
+<p><strong>Mistaking amputation for healing.</strong> Becoming cynical about dreams, love, ambition — this feels like maturity or realism. It's actually a wound that leaves you less capable of the transformation, not more.</p>
+</li>
+<li>
+<p><strong>Using backup plans as primary plans.</strong> There's nothing wrong with contingency planning. But if your backup plan is already more vivid and emotionally real than your supposed main commitment, it's not a backup. The parachute string will be pulled at the first hard moment.</p>
+</li>
+</ul>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-action-items-exercises">Action Items &amp; Exercises</h2>
+<ol>
+<li>
+<p><strong>Watch this content again — but listen differently.</strong> The instruction to "listen to the message, not the words" is not vague. Try to notice the feeling underneath the ideas, not just the ideas themselves. This is a practiced skill, not a one-time event.</p>
+</li>
+<li>
+<p><strong>Map your own move set.</strong> Go through the six patterns above and write down a specific, concrete example of each one from your own recent life. Not abstract — actual instances. Which one shows up most? Which one do you most want to argue isn't really you?</p>
+</li>
+<li>
+<p><strong>Catch the conditionality.</strong> For one week, notice every time you phrase a plan or question in conditional terms: <em>"If I knew it was the right choice..." / "Once I have more information..." / "As soon as I feel ready..."</em> Write them down without judgment. You're collecting data on puer's active pattern in your specific case.</p>
+</li>
+<li>
+<p><strong>Make one sacrifice you've been avoiding — not the optimal one.</strong> You don't need to quit your job or upend your life. Pick something you've been deferring because it means closing a door. Do it. The point is not the specific sacrifice. The point is practicing the act of sacrificing.</p>
+</li>
+<li>
+<p><strong>Notice the escape hatches.</strong> Where in your life are you keeping options open specifically so you won't have to fully commit? This includes emotional escape hatches, not just practical ones. Identify one and sit with the discomfort of imagining it closed.</p>
+</li>
+<li>
+<p><strong>Distinguish the child pulling forward from the child pulling back.</strong> When you feel an excited creative impulse, ask: is this excitement moving me toward something, or is it an excuse to avoid something harder? This distinction is the ongoing practice, not a one-time diagnosis.</p>
+</li>
+<li>
+<p><strong>Run experiments to completion.</strong> The puer accumulates a pile of aborted experiments and mistakes them for data. If you're going to try something, commit to a defined duration before evaluating. A fair experiment requires not cutting it off the moment it gets uncomfortable.</p>
+</li>
+<li>
+<p><strong>If meditation is already part of your practice</strong>, bring awareness to the moments of resistance during practice itself — the impulse to stop, check the phone, or switch techniques. That micro-scale struggle is the same one you're working on everywhere else.</p>
+</li>
+</ol>
+</section></article>
+    </div>
+  </div>
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc"><ul><li><a href="#transcript-0-opening">Opening</a></li><li><a href="#transcript-1-stream-introduction-and-meditation-tracks-announcement">Stream Introduction and Meditation Tracks Announcement</a></li><li><a href="#transcript-2-community-reaction-to-puer-aeternus-part-one">Community Reaction to Puer Aeternus Part One</a></li><li><a href="#transcript-3-why-hard-work-alone-will-not-fix-puer">Why Hard Work Alone Will Not Fix Puer</a></li><li><a href="#transcript-4-recap-what-puer-aeternus-looks-like">Recap: What Puer Aeternus Looks Like</a></li><li><a href="#transcript-5-the-provisional-life-and-fear-of-commitment">The Provisional Life and Fear of Commitment</a></li><li><a href="#transcript-6-understanding-archetypes-and-the-collective-unconscious">Understanding Archetypes and the Collective Unconscious</a></li><li><a href="#transcript-7-the-defective-self-vs-wrong-ego-attitude">The Defective Self vs. Wrong Ego Attitude</a></li><li><a href="#transcript-8-how-the-ego-must-change-for-constellation-to-occur">How the Ego Must Change for Constellation to Occur</a></li><li><a href="#transcript-9-the-gesture-of-impatience-and-everlasting-switching">The Gesture of Impatience and Everlasting Switching</a></li><li><a href="#transcript-10-childish-illusions-and-the-sack-we-carry-into-adult-life">Childish Illusions and the Sack We Carry Into Adult Life</a></li><li><a href="#transcript-11-amputation-of-desire-and-intellectual-colonization-of-insight">Amputation of Desire and Intellectual Colonization of Insight</a></li><li><a href="#transcript-12-the-puer-s-fantasy-to-action-border-and-analytic-sham">The Puer&#x27;s Fantasy-to-Action Border and Analytic Sham</a></li><li><a href="#transcript-13-suicide-as-the-ultimate-escape-hatch">Suicide as the Ultimate Escape Hatch</a></li><li><a href="#transcript-14-transference-disillusionment-and-the-path-to-self-reliance">Transference, Disillusionment, and the Path to Self-Reliance</a></li><li><a href="#transcript-15-losing-faith-in-dr-k-as-a-necessary-step">Losing Faith in Dr. K as a Necessary Step</a></li><li><a href="#transcript-16-q-a-the-first-step-is-listening-not-doing">Q&amp;A: The First Step Is Listening, Not Doing</a></li><li><a href="#transcript-17-bee-mantras-tantra-and-purifying-the-archetype">Bee Mantras, Tantra, and Purifying the Archetype</a></li><li><a href="#transcript-18-sacrifice-backup-plans-and-the-fomo-of-potential">Sacrifice, Backup Plans, and the FOMO of Potential</a></li><li><a href="#transcript-19-the-double-aspect-of-the-child-archetype">The Double Aspect of the Child Archetype</a></li><li><a href="#transcript-20-dreams-as-radioactive-energy-harness-or-be-destroyed">Dreams as Radioactive Energy: Harness or Be Destroyed</a></li><li><a href="#transcript-21-why-no-action-will-work-and-what-must-change-instead">Why No Action Will Work and What Must Change Instead</a></li><li><a href="#transcript-22-closing-pattern-recognition-and-the-transformation-beginning">Closing: Pattern Recognition and the Transformation Beginning</a></li></ul></div></nav>
+      <article class="summary"><section class="sec sec-a">
 <h2 id="transcript-0-opening">Opening</h2>
-<p><span class="speaker">Dr. K:</span> [Music] [Music] Hey, Hey, Hey, [Music] [Music] [Music] [Applause] [Applause] [Applause] [Music] [Music] [Music] hey, hey. [Applause] [Applause] [Music] Hey, hey, hey. hey. [Music] [Music] [Music] Hey, [Music] [Music] hey, [Applause] [Applause] [Music] [Music] hey. Heat. Heat. [Music] [Music] Hey, [Music] hey, hey. [Music] A lot of people out there will struggle to pull themselves out of it. Move in the right direction. Take one step forward and let go of what&#x27;s going to happen. to happen. [Music] [Music] [Music] Heat. Heat. Heat. Heat. Heat. Heat. Heat. Heat. Heat. [Music] [Music] Heat. Heat. Hey, hey, hey.</p>
+<p>[Music] [Music] Hey, Hey, Hey, [Music] [Music] [Music] [Applause] [Applause] [Applause] [Music] [Music] [Music] hey, hey. [Applause] [Applause] [Music] Hey, hey, hey. hey. [Music] [Music] [Music] Hey, [Music] [Music] hey, [Applause] [Applause] [Music] [Music] hey. Heat. Heat. [Music] [Music] Hey, [Music] hey, hey. [Music] A lot of people out there will struggle to pull themselves out of it. Move in the right direction. Take one step forward and let go of what&#x27;s going to happen. to happen. [Music] [Music] [Music] Heat. Heat. Heat. Heat. Heat. Heat. Heat. Heat. Heat. [Music] [Music] Heat. Heat. Hey, hey, hey.</p>
 <p>[Music] Heat. Hey, heat. Hey, heat. Heat. Hey, heat. Hey, heat. [Music] Falling for you. [Music] [Music] Hello. Hey. Hey. Hey. Hey. [Music] [Music] [Music] Oh, hey. [Music] as entity to you. A tangled nest of not sacrif. But the intent was there. As we set our sides on something that we thought was true. So now we sit and stare across a surface spanning the whole state. Two feet and miles apart. No speed. So we haven&#x27;t got a clue. It falls apart. It&#x27;s not a heart to be It falls apart. It&#x27;s not a heart to be there. there. It falls apart. It&#x27;s not a heart to It falls apart. It&#x27;s not a heart to have.</p>
 <p>have. It falls apart. It&#x27;s not a heart to be It falls apart. It&#x27;s not a heart to be there. there. It falls apart. There&#x27;s not a heart to have. Each word of a world all of its own. Each surrendered only in groans. The attack skips a man. Six lips. And what we&#x27;re left a growing class of language lost all kids unknown. And then I guess we slipped right through and lost our meeting on the way. We ended up a tiny face of every heart of every part of every storm of every grave. It falls apart. It&#x27;s not a heart to be It falls apart. It&#x27;s not a heart to be there. there. It falls apart. It&#x27;s not a heart to It falls apart. It&#x27;s not a heart to have.</p>
 <p>have. It falls apart. It&#x27;s not a heart to be It falls apart. It&#x27;s not a heart to be there. there. It falls aart. There&#x27;s no heart to help a tangled mess of knots. I confess but the intent was there. I swear we set our sights on something we follow through. It falls apart to be there. It falls apart. It falls apart if there&#x27;s not a heart to be there. It falls apart if there&#x27;s not a heart. If there&#x27;s not a heart to be falls not to be falls not falls not [Applause] [Applause] [Applause] fall. [Music] Give it up. Give it up. Give it away. You are barely alive day. Cut off so much remain. You knew that there was still a way. Cry again and try anyway.</p>
@@ -244,15 +391,21 @@ try {
 <p>thing. To succeed, you don&#x27;t need any of it to To succeed, you don&#x27;t need any of it to work. You can do it. You can 100% do it. Thousand% do it. You can do it. And y&#x27;all are It&#x27;s happening. The transformation is happening. The pattern recognition is happening. Right? So, I can point out the pattern, but now we&#x27;re seeing it. Now we&#x27;re seeing it. Now we&#x27;re seeing it. We&#x27;re It&#x27;s powerful, but so are we. We&#x27;re more It&#x27;s powerful, but so are we. We&#x27;re more powerful. powerful. And it&#x27;s not your enemy. It just doesn&#x27;t understand. It has become a destructive force because it cannot be a creative force. So, let it be a creative force.</p>
 <p>It will no longer be a destructive It will no longer be a destructive force. Okay. All right. Thank you all very much. Good luck.</p>
 </section></article>
+    </div>
   </div>
+  
 
-  <p class="meta">Auto-transcribed livestream · chapters &amp; speaker labels are a best-effort approximation (claude-sonnet-4-6).</p>
+  <p class="meta">Medium summary · claude-sonnet-4-6 (no extended thinking)</p>
 </div>
 
 <script>
 (function () {
   var root = document.documentElement;
-  var tb = document.querySelector('.theme-toggle');
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'medium');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
   var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
   tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
@@ -260,6 +413,16 @@ try {
   function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
   var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+  // deep-link to a heading in any view: switch to that view, then scroll to it
+  function navigateTo(id){
+    var el = id && document.getElementById(id);
+    if (!el) return;
+    var v = el.closest('.view');
+    if (v) setView(v.getAttribute('data-view'));
+    el.scrollIntoView();
+  }
+  window.addEventListener('hashchange', function(){ navigateTo(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash) navigateTo(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>
 <script>

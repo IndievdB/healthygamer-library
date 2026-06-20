@@ -27,11 +27,6 @@ try {
   <p class="subtitle">Answers are grounded in Dr. K's talks via retrieval, with citations linking back to the source.</p>
 
   <div class="ask-controls">
-    <span class="view-toggle" role="group" aria-label="Backend">
-      <button data-backend="claude">Claude</button>
-      <button data-backend="local">Local</button>
-    </span>
-    <select id="model" class="model-select" hidden></select>
     <span id="backend-hint" class="backend-hint"></span>
   </div>
 
@@ -66,48 +61,56 @@ try {
   var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
 
-  // backend toggle + availability
-  var backend = 'claude';
-  var bbtns = document.querySelectorAll('.ask-controls button[data-backend]');
-  var modelSel = document.getElementById('model');
+  // backend availability (Claude only)
   var hint = document.getElementById('backend-hint');
-  var health = {claude:false, ollama:false, ollama_models:[], claude_model:'claude-sonnet-4-6'};
-
-  function setBackend(b) {
-    if (b === 'claude' && !health.claude) return;
-    if (b === 'local' && !health.ollama) return;
-    backend = b;
-    bbtns.forEach(function(x){ x.setAttribute('aria-pressed', x.dataset.backend===b?'true':'false'); });
-    modelSel.hidden = (b !== 'local');
-    hint.textContent = b === 'claude' ? health.claude_model
-      : (health.ollama_models.length ? '' : 'no local models — run: ollama pull llama3.1:8b');
-    try { localStorage.setItem('askBackend', b); } catch(e) {}
-  }
-
   fetch('/api/health').then(function(r){return r.json();}).then(function(h){
-    health = h;
-    bbtns.forEach(function(x){
-      var ok = x.dataset.backend==='claude' ? h.claude : h.ollama;
-      x.disabled = !ok;
-      x.title = ok ? '' : (x.dataset.backend==='claude' ? 'No ANTHROPIC_API_KEY' : 'Ollama not running on :11434');
-    });
-    (h.ollama_models||[]).forEach(function(m){ var o=document.createElement('option'); o.value=m; o.textContent=m; modelSel.appendChild(o); });
-    var saved='claude'; try{ saved=localStorage.getItem('askBackend')||'claude'; }catch(e){}
-    if (saved==='local' && h.ollama) setBackend('local');
-    else if (h.claude) setBackend('claude');
-    else if (h.ollama) setBackend('local');
-    else hint.textContent = 'No backend available: set ANTHROPIC_API_KEY or start Ollama.';
+    hint.textContent = h.claude ? h.claude_model : 'No backend available: set ANTHROPIC_API_KEY.';
   });
-  bbtns.forEach(function(x){ x.addEventListener('click', function(){ setBackend(x.dataset.backend); }); });
 
-  // very small markdown -> html (bold, italics, inline code, paragraphs, [n] kept as text)
+  // small markdown -> html: headings, ordered/unordered lists, paragraphs,
+  // plus inline bold/italic/code. [n] citations are kept as text.
   function esc(s){ return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
-  function mdLight(s){
-    var h = esc(s)
+  function inline(s){
+    return esc(s)
       .replace(/\*\*([^*]+)\*\*/g,'<strong>$1</strong>')
       .replace(/(^|[^*])\*([^*]+)\*/g,'$1<em>$2</em>')
       .replace(/`([^`]+)`/g,'<code>$1</code>');
-    return h.split(/\n\n+/).map(function(p){ return '<p>'+p.replace(/\n/g,'<br>')+'</p>'; }).join('');
+  }
+  function mdLight(src){
+    var lines = src.replace(/\r/g,'').split('\n'), out = [], i = 0;
+    var UL = /^\s*[-*]\s+/, OL = /^\s*\d+\.\s+/, H = /^(#{1,4})\s+(.*)$/, BQ = /^\s*>\s?/;
+    while (i < lines.length) {
+      var ln = lines[i], m = ln.match(H);
+      if (m) { var lvl = Math.min(m[1].length + 1, 4); out.push('<h'+lvl+'>'+inline(m[2])+'</h'+lvl+'>'); i++; continue; }
+      if (BQ.test(ln)) {
+        var q = []; while (i < lines.length && BQ.test(lines[i])) { q.push(lines[i].replace(BQ,'')); i++; }
+        out.push('<blockquote>'+inline(q.join(' '))+'</blockquote>'); continue;
+      }
+      if (UL.test(ln)) {
+        var u = []; while (i < lines.length && UL.test(lines[i])) { u.push('<li>'+inline(lines[i].replace(UL,''))+'</li>'); i++; }
+        out.push('<ul>'+u.join('')+'</ul>'); continue;
+      }
+      if (OL.test(ln)) {
+        var o = []; while (i < lines.length && OL.test(lines[i])) { o.push('<li>'+inline(lines[i].replace(OL,''))+'</li>'); i++; }
+        out.push('<ol>'+o.join('')+'</ol>'); continue;
+      }
+      if (!ln.trim()) { i++; continue; }
+      var para = [];
+      while (i < lines.length && lines[i].trim() && !H.test(lines[i]) && !UL.test(lines[i]) && !OL.test(lines[i])) { para.push(lines[i]); i++; }
+      out.push('<p>'+inline(para.join(' '))+'</p>');
+    }
+    return out.join('');
+  }
+  // turn [n] / [n,m] citation refs into links straight to the cited source page
+  function linkifyRefs(html, items){
+    var byN = {}; items.forEach(function(it){ byN[it.n] = it.href; });
+    return html.replace(/\[(\d+(?:\s*,\s*\d+)*)\]/g, function(_, grp){
+      var parts = grp.split(',').map(function(s){
+        var k = s.trim();
+        return byN[k] ? '<a class="cite-ref" href="'+byN[k]+'">'+k+'</a>' : k;
+      });
+      return '[' + parts.join(', ') + ']';
+    });
   }
 
   var form = document.getElementById('ask-form');
@@ -128,7 +131,7 @@ try {
     var raw = '';
 
     fetch('/api/ask', {method:'POST', headers:{'Content-Type':'application/json'},
-      body: JSON.stringify({question:q, backend:backend, model: modelSel.value})})
+      body: JSON.stringify({question:q})})
     .then(function(resp){
       var reader = resp.body.getReader(), dec = new TextDecoder(), buf='';
       function pump(){
@@ -140,7 +143,7 @@ try {
             if (!line.trim()) return;
             var ev = JSON.parse(line);
             if (ev.type==='token'){ raw += ev.text; ansEl.innerHTML = mdLight(raw); }
-            else if (ev.type==='citations'){ renderSources(ev.items); }
+            else if (ev.type==='citations'){ renderSources(ev.items); ansEl.innerHTML = linkifyRefs(mdLight(raw), ev.items); }
             else if (ev.type==='error'){ ansEl.innerHTML = '<p class="err">Error: '+esc(ev.message)+'</p>'; }
           });
           return pump();

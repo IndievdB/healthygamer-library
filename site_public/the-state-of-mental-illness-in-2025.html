@@ -9,7 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-} catch (e) {}
+  document.documentElement.setAttribute('data-view', localStorage.getItem('pubview') || 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -24,16 +25,146 @@ try {
   </nav>
 
   <h1>The State of Mental Illness in 2025</h1>
-  <p class="watch">
-    <a href="https://www.youtube.com/watch?v=10DwOnDPUwc" target="_blank" rel="noopener">▶ Watch on YouTube</a>
-    <span class="speakers-note">Speakers (auto-detected): Dr. K</span>
-  </p>
+  <p class="watch"><a href="https://www.youtube.com/watch?v=10DwOnDPUwc" target="_blank" rel="noopener">▶ Watch on YouTube</a></p>
 
-  <div class="doc">
-    <nav class="toc"><p class="toc-title">Chapters</p><ul><li><a href="#transcript-0-stream-opening-and-hades-2-discussion">Stream Opening and Hades 2 Discussion</a></li><li><a href="#transcript-1-world-mental-health-day-and-adhd-audible-collab-announcement">World Mental Health Day and ADHD Audible Collab Announcement</a></li><li><a href="#transcript-2-adhd-as-a-neurodevelopmental-disorder-how-brain-wiring-creates-paralysis">ADHD as a Neurodevelopmental Disorder: How Brain Wiring Creates Paralysis</a></li><li><a href="#transcript-3-retraining-the-adhd-brain-through-small-actions">Retraining the ADHD Brain Through Small Actions</a></li><li><a href="#transcript-4-phantom-panic-and-activating-the-frontal-lobe">Phantom Panic and Activating the Frontal Lobe</a></li><li><a href="#transcript-5-panic-attacks-pharmacology-and-skills-training">Panic Attacks: Pharmacology and Skills Training</a></li><li><a href="#transcript-6-breaking-the-panic-cycle-through-physiology-and-breathing">Breaking the Panic Cycle Through Physiology and Breathing</a></li><li><a href="#transcript-7-deep-psychoanalytic-work-and-treating-the-root-of-panic">Deep Psychoanalytic Work and Treating the Root of Panic</a></li><li><a href="#transcript-8-can-meditation-cure-adhd">Can Meditation Cure ADHD?</a></li><li><a href="#transcript-9-restarting-your-life-and-the-fear-of-beginning-over">Restarting Your Life and the Fear of Beginning Over</a></li><li><a href="#transcript-10-brain-differences-behind-resistance-to-change">Brain Differences Behind Resistance to Change</a></li><li><a href="#transcript-11-intolerance-to-uncertainty-as-a-transdiagnostic-factor">Intolerance to Uncertainty as a Transdiagnostic Factor</a></li><li><a href="#transcript-12-why-trying-to-reduce-uncertainty-backfires">Why Trying to Reduce Uncertainty Backfires</a></li><li><a href="#transcript-13-embracing-the-unknown-through-exploration">Embracing the Unknown Through Exploration</a></li><li><a href="#transcript-14-coaching-behavioral-change-and-motivational-interviewing">Coaching, Behavioral Change, and Motivational Interviewing</a></li><li><a href="#transcript-15-high-functioning-depression-and-masculine-identity">High-Functioning Depression and Masculine Identity</a></li><li><a href="#transcript-16-sublimation-anhedonia-and-the-cycle-of-suppression">Sublimation, Anhedonia, and the Cycle of Suppression</a></li><li><a href="#transcript-17-breaking-the-cycle-addressing-feelings-directly">Breaking the Cycle: Addressing Feelings Directly</a></li><li><a href="#transcript-18-letting-go-of-identity-and-the-concept-of-too-late">Letting Go of Identity and the Concept of Too Late</a></li><li><a href="#transcript-19-involvement-happiness-as-a-skill-and-living-in-the-present">Involvement, Happiness as a Skill, and Living in the Present</a></li></ul></nav>
-    <article class="summary transcript"><section class="sec sec-a">
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">2,152w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">27,764w</span></button>
+    
+  </div>
+
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#medium-summary">Summary</a></li>
+<li><a href="#medium-why-adhd-paralysis-is-a-wiring-problem-not-a-willpower-problem">Why ADHD Paralysis Is a Wiring Problem, Not a Willpower Problem</a></li>
+<li><a href="#medium-how-panic-disorder-actually-works-and-how-to-treat-it">How Panic Disorder Actually Works (and How to Treat It)</a></li>
+<li><a href="#medium-the-uncertainty-trap-why-restarting-your-life-feels-impossible">The Uncertainty Trap: Why "Restarting Your Life" Feels Impossible</a></li>
+<li><a href="#medium-high-functioning-depression-and-the-sublimation-trap">High-Functioning Depression and the Sublimation Trap</a></li>
+<li><a href="#medium-common-pitfalls">Common Pitfalls</a></li>
+<li><a href="#medium-action-items-exercises">Action Items &amp; Exercises</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="medium-summary">Summary</h2>
+<p><strong>TL;DR — Mental health isn't getting worse because we lack knowledge; it's getting worse because we misunderstand how our brains actually work and keep reinforcing the very patterns that trap us.</strong></p>
+<p>This talk covers four interconnected topics: why ADHD creates paralysis (and how to rewire it), why uncertainty avoidance drives so much mental illness, how high-functioning depression traps people through identity and sublimation, and why the path out of all of it runs through the present moment rather than some future destination. Each section builds a neurological and psychological case for why the conventional advice ("just try harder," "plan better," "push through") not only fails but actively makes things worse.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-why-adhd-paralysis-is-a-wiring-problem-not-a-willpower-problem">Why ADHD Paralysis Is a Wiring Problem, Not a Willpower Problem</h2>
+<p>ADHD is a <strong>neurodevelopmental disorder</strong> — meaning it's about how the brain has wired itself over time, not a static, fixed defect. Understanding this distinction changes everything about how to approach it.</p>
+<p>Here's the mechanism: the brain has circuits connecting different sources of motivation to action. Three pipelines dominate in the ADHD brain:</p>
+<ul>
+<li><strong>Deadlines</strong> — action triggered by time pressure</li>
+<li><strong>Emotion</strong> — action triggered by panic, curiosity, or excitement</li>
+<li><strong>Doing things proactively</strong> — acting without an external trigger</li>
+</ul>
+<p>Every time you wait until the last minute to act, you strengthen the deadline and emotion-to-action circuits. Every time you don't act without an emotional push, the proactive circuit atrophies. After years of this pattern, the brain literally cannot initiate action through calm, quiet intention — not because of laziness, but because that neuronal connection has been starved into near-nonexistence.</p>
+<blockquote>
+<p>"You end up with this, where you got to do something and you literally can't do it. It's like you're sitting there, you know you need to do it, and there's this voice that is saying, 'Oh my god, we need to do it,' and you cannot control yourself."</p>
+</blockquote>
+<p>The habit-building circuitry (the endocannabinoid system) is actually <em>intact</em> in ADHD. The problem isn't that you can't form habits — it's that you've spent a lifetime forming the wrong ones.</p>
+<p><strong>The fix is counterintuitive:</strong> you don't train during the high-stakes moments. You train on tiny, unimportant tasks with no deadline and no emotional charge. Clean something. Put away the thing sitting on your desk. There's no deadline on it, so when you act anyway, you're building the proactive circuit without the emotional crutch.</p>
+<p>The second technique is <strong>phantom panic recognition</strong>. Many of the deadlines and panics that drive action are not real. Once those emotional and deadline circuits are over-trained, they fire even when there's nothing genuinely urgent. The antidote is asking: <em>Is this phantom panic?</em> That question alone activates the frontal lobe — the part of the brain responsible for executive function. Even asking the question without fully resolving it starts weakening the panic-to-action pathway and strengthening the reflective pathway. Going "meta" on the panic is itself the training.</p>
+<blockquote>
+<p>"Even asking the question, 'Am I phantom panicking right now?' — that question, if you ask it, comes from the frontal lobe. Now you're activating your frontal lobe."</p>
+</blockquote>
+<p>A useful frame: don't try to level up <em>during</em> the raid. Level up outside it on small encounters, then bring your upgraded skills into the hard situation.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-how-panic-disorder-actually-works-and-how-to-treat-it">How Panic Disorder Actually Works (and How to Treat It)</h2>
+<p>A panic attack is a self-amplifying biochemical loop: a thought activates the sympathetic nervous system, releasing adrenaline and cortisol through the sympathetic chain ganglia and adrenal glands. Adrenaline makes potential threats <em>feel</em> real and speeds up thought. More thoughts activate more sympathetic firing. The loop escalates.</p>
+<p>The classic paper-bag intervention works physiologically: hyperventilation blows off CO₂ faster than it raises O₂. Low CO₂ causes lightheadedness and amplifies panic symptoms. Breathing into a bag forces you to breathe more deeply to reach the remaining oxygen, which slows your respiratory rate, and the length of exhalation is directly tied to the speed of the mind.</p>
+<p>Effective treatment operates on multiple levels simultaneously:</p>
+<ol>
+<li><strong>Pharmacology</strong> (SSRIs, some SNRIs) — reduces the amplitude of panic to a level where skills can actually work. Not a permanent solution on its own, but a crucial scaffold.</li>
+<li><strong>Skills training</strong> — breaking vicious mental cycles through breathing, cognitive reframing, and stepping outside the panic state.</li>
+<li><strong>Baseline physiological recalibration</strong> — diet, exercise, and especially mind-body practices (yoga, tai chi, meditation) can shift the resting set-point of the sympathetic/parasympathetic balance, so it takes a larger stressor to tip someone into panic.</li>
+<li><strong>Deep psychological work</strong> — exploring unconscious material, emotional knots, and origin points of anxiety. Variable in duration and probability of success, but capable of producing profound breakthroughs.</li>
+</ol>
+<p>The synergy between pharmacology and skill-building is real: medication brings panic down to a manageable level, skills get practiced successfully at that reduced intensity, and the skills <em>persist</em> even after the medication stops. ADHD medication works the same way — benefits outlast the drug's presence in the system because the skills built while medicated remain.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-the-uncertainty-trap-why-restarting-your-life-feels-impossible">The Uncertainty Trap: Why "Restarting Your Life" Feels Impossible</h2>
+<p>When people hesitate to make a major life change, it's not irrationality — it's three brain systems working together against them:</p>
+<ul>
+<li>The <strong>amygdala</strong> is overestimating threat (the probability that changing will go badly)</li>
+<li>The <strong>anterior insula</strong> is generating excessive negative gut feelings</li>
+<li>The <strong>striatum</strong> is underestimating the reward from the change</li>
+</ul>
+<p>These aren't character flaws. They're a miscalibrated instrument. The calculations feel like reality, but the calculator is broken.</p>
+<p>The deeper issue is a <strong>transdiagnostic factor</strong> called <strong>intolerance to uncertainty</strong>. It underlies depression, anxiety, OCD, and much more. The brain's fundamental drive is to reduce prediction errors — when outcome is unknown, this drive goes into overdrive.</p>
+<p>The natural response to uncertainty is to collect more information, overthink, and overplan. This feels like problem-solving. The trap is that reducing uncertainty this way <em>never builds the capacity to tolerate it</em>. You solve the immediate discomfort but leave yourself more fragile next time, and the underlying skill never develops.</p>
+<blockquote>
+<p>"You are not building up your tolerance for uncertainty. You're making the problem go away."</p>
+</blockquote>
+<p>People with high tolerance for uncertainty (the ones who seem to "fall backwards into opportunities") aren't lucky — they're operating from a fundamentally different risk calculus. The unknown is where exploration happens, and exploration is the only way to discover what you actually want. Premature closure — picking a career at 18 before trying anything — produces exactly this situation: a life at 26 that technically "worked" by external metrics but feels hollow.</p>
+<p>The good news is that most people who restart their lives end up okay. The more times someone has restarted, the more likely they are to report being genuinely content. The skills and experiences from previous chapters don't disappear — they transfer as competitive advantages into whatever comes next.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-high-functioning-depression-and-the-sublimation-trap">High-Functioning Depression and the Sublimation Trap</h2>
+<p><strong>High-functioning depression (HFD)</strong> is depression in people who can still meet their obligations. There's no obvious impairment from the outside, which makes it nearly invisible and especially dangerous.</p>
+<p>The mechanism often looks like this: someone is in a situation they don't like (a career, a relationship, a family role). A healthy response would be to change the situation or set a limit. Instead, driven by a masculine identity (or any identity built on not quitting), they do the opposite — they <strong>sublimate</strong>: converting the discomfort of wanting to quit into fuel for doubling down and excelling. Going to grad school instead of leaving a career you hate. Working 80 hours instead of addressing a broken family dynamic.</p>
+<p>This produces real external results. It also produces <strong>psychic amputation</strong> — the suppression of the authentic internal signals that were saying something is wrong. The problem is you can't selectively suppress negative emotions. When you shut down the signal saying "I hate this," you also begin shutting down pleasure, curiosity, genuine excitement. This is anhedonia — and it's not a brain malfunction, it's a logical consequence of suppressing your own internal compass.</p>
+<blockquote>
+<p>"You're not depressed because your brain is busted. You're depressed because your brain is accurately assessing the life you have created."</p>
+</blockquote>
+<p>The cycle accelerates: feel bad → sublimate → get promoted/succeed → feel worse → suppress more → anhedonia deepens → pursue external markers (car, status, physique) to generate the feeling that the internal life no longer provides. Avoidant coping — which is what this is — is associated with elevated suicide risk in both men and women.</p>
+<p>The counterintuitive fix isn't to chase the identity harder or to mentally check out (both common responses). It's to lean <em>into</em> the feeling. When you look in the mirror and feel bad, the question isn't "how do I become someone who doesn't feel this way?" — that's another round of identity-chasing. The question is: "What can I do today that will make me feel genuinely better when I look in the mirror tomorrow?" One thing. Not a whole program, not a 12-point plan. One thing that addresses the actual feeling, not a thing that drowns it out.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-common-pitfalls">Common Pitfalls</h2>
+<p><strong>Trying to train the hard skills during hard moments.</strong> The time to build coping capacity is not when you're in crisis or facing a real deadline. Training during stress just reinforces panic-based action. Practice on small, low-stakes situations.</p>
+<p><strong>Confusing conditioning discomfort with burnout.</strong> When you start using a new skill or building a new habit, it feels exhausting. That's deconditioning, not burnout. Burnout worsens with continued effort; deconditioning improves. The test: are you in a better place after a week of doing it, or a worse one?</p>
+<p><strong>Collecting information to reduce uncertainty instead of tolerating it.</strong> Researching your way to a decision feels productive. It removes the immediate anxiety but doesn't build the capacity to act without certainty — which is the actual skill needed to move forward in life.</p>
+<p><strong>Treating "one thing at a time" as a race.</strong> The advice is correct. The problem is the internal reaction to it: "this is too slow, I'll be too old, it'll never be enough." That reaction lives inside the same identity-driven framework that created the problem. One thing at a time is the method; accepting that the pace is what it is, is the other half of the work.</p>
+<p><strong>Chasing motivation as if it were a trait.</strong> Motivation is a state — temporary, ungraspable. Trying to maintain it so you can act later is a way of not acting now. The only use of motivation is in the present moment.</p>
+<p><strong>Hoping within a broken system.</strong> If the framework you're using (too late / not enough / need to be this person) is the source of the suffering, then hope directed at outcomes within that framework doesn't help. The framework itself needs to dissolve.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-action-items-exercises">Action Items &amp; Exercises</h2>
+<ol>
+<li>
+<p><strong>Identify your current activation triggers.</strong> For one week, notice what actually causes you to act: deadlines, panic, curiosity, or proactive intention. Just tracking this strengthens the reflective circuit and gives you real data.</p>
+</li>
+<li>
+<p><strong>Train the proactive circuit on one tiny, uncharged task daily.</strong> Pick something with no deadline and no emotional weight — dishes, a book that's been sitting out, an unread email that doesn't matter. Do it without any urgency. This directly builds the atrophied pathway.</p>
+</li>
+<li>
+<p><strong>Practice phantom panic identification.</strong> When you feel urgency or panic, pause and ask: <em>Is this real, or phantom panic?</em> You don't have to answer correctly. The act of asking activates the frontal lobe and begins weakening the panic-to-action connection. Consider a physical anchor (a rubber band, a specific object) to snap yourself into this question mode.</p>
+</li>
+<li>
+<p><strong>When you feel like restarting your life, list what you're carrying forward.</strong> Before framing a change as "starting from zero," write down the skills, experiences, and knowledge your previous path actually gave you. These transfer. You're not at zero.</p>
+</li>
+<li>
+<p><strong>Try one thing you don't know if you'll like.</strong> Deliberately step into low-stakes uncertainty — a new food, a new activity, a short conversation with a stranger. Practice noticing that not knowing the outcome didn't kill you, and sometimes produced something good. This is the muscle that makes larger life changes possible.</p>
+</li>
+<li>
+<p><strong>For high-functioning depression: ask the mirror question.</strong> When you feel bad about yourself or your life, don't ask "how do I become someone who doesn't feel this way?" Ask instead: "What one thing could I do today that would make me feel genuinely better — not distracted, not numbed, but actually better — when I look in the mirror tomorrow?" Then do that one thing.</p>
+</li>
+<li>
+<p><strong>Use motivation now, not later.</strong> When you feel motivated or clear about something — reading this, watching a talk, having a good conversation — don't store it, don't plan how to maintain it. Take one concrete action immediately, no matter how small. The state is temporary. That's not a problem to solve; it's a condition to work with.</p>
+</li>
+</ol>
+</section></article>
+    </div>
+  </div>
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc"><ul><li><a href="#transcript-0-stream-opening-and-hades-2-discussion">Stream Opening and Hades 2 Discussion</a></li><li><a href="#transcript-1-world-mental-health-day-and-adhd-audible-collab-announcement">World Mental Health Day and ADHD Audible Collab Announcement</a></li><li><a href="#transcript-2-adhd-as-a-neurodevelopmental-disorder-how-brain-wiring-creates-paralysis">ADHD as a Neurodevelopmental Disorder: How Brain Wiring Creates Paralysis</a></li><li><a href="#transcript-3-retraining-the-adhd-brain-through-small-actions">Retraining the ADHD Brain Through Small Actions</a></li><li><a href="#transcript-4-phantom-panic-and-activating-the-frontal-lobe">Phantom Panic and Activating the Frontal Lobe</a></li><li><a href="#transcript-5-panic-attacks-pharmacology-and-skills-training">Panic Attacks: Pharmacology and Skills Training</a></li><li><a href="#transcript-6-breaking-the-panic-cycle-through-physiology-and-breathing">Breaking the Panic Cycle Through Physiology and Breathing</a></li><li><a href="#transcript-7-deep-psychoanalytic-work-and-treating-the-root-of-panic">Deep Psychoanalytic Work and Treating the Root of Panic</a></li><li><a href="#transcript-8-can-meditation-cure-adhd">Can Meditation Cure ADHD?</a></li><li><a href="#transcript-9-restarting-your-life-and-the-fear-of-beginning-over">Restarting Your Life and the Fear of Beginning Over</a></li><li><a href="#transcript-10-brain-differences-behind-resistance-to-change">Brain Differences Behind Resistance to Change</a></li><li><a href="#transcript-11-intolerance-to-uncertainty-as-a-transdiagnostic-factor">Intolerance to Uncertainty as a Transdiagnostic Factor</a></li><li><a href="#transcript-12-why-trying-to-reduce-uncertainty-backfires">Why Trying to Reduce Uncertainty Backfires</a></li><li><a href="#transcript-13-embracing-the-unknown-through-exploration">Embracing the Unknown Through Exploration</a></li><li><a href="#transcript-14-coaching-behavioral-change-and-motivational-interviewing">Coaching, Behavioral Change, and Motivational Interviewing</a></li><li><a href="#transcript-15-high-functioning-depression-and-masculine-identity">High-Functioning Depression and Masculine Identity</a></li><li><a href="#transcript-16-sublimation-anhedonia-and-the-cycle-of-suppression">Sublimation, Anhedonia, and the Cycle of Suppression</a></li><li><a href="#transcript-17-breaking-the-cycle-addressing-feelings-directly">Breaking the Cycle: Addressing Feelings Directly</a></li><li><a href="#transcript-18-letting-go-of-identity-and-the-concept-of-too-late">Letting Go of Identity and the Concept of Too Late</a></li><li><a href="#transcript-19-involvement-happiness-as-a-skill-and-living-in-the-present">Involvement, Happiness as a Skill, and Living in the Present</a></li></ul></div></nav>
+      <article class="summary"><section class="sec sec-a">
 <h2 id="transcript-0-stream-opening-and-hades-2-discussion">Stream Opening and Hades 2 Discussion</h2>
-<p><span class="speaker">Dr. K:</span> [Music] A lot of people out there will struggle to pull themselves out of it. Move in the right direction. Take one step forward and let go of what&#x27;s going to happen. [Music] One. One. Two. Two. Two. Three. Three. Three. Four. Four. Roger zero J and I feel fine. [Music] &amp;gt;&amp;gt; All righty, chat. Let&#x27;s get started. Welcome to another HealthyGamerGG stream. My name is Dr. Alok Kanojia. Just a reminder that although I am a psychiatrist, nothing we discuss on stream today is intended to be taken as medical advice. Everything is for educational or entertainment purposes only. If you all have a medical concern or question, please go see a licensed or question, please go see a licensed professional.</p>
+<p>[Music] A lot of people out there will struggle to pull themselves out of it. Move in the right direction. Take one step forward and let go of what&#x27;s going to happen. [Music] One. One. Two. Two. Two. Three. Three. Three. Four. Four. Roger zero J and I feel fine. [Music] &amp;gt;&amp;gt; All righty, chat. Let&#x27;s get started. Welcome to another HealthyGamerGG stream. My name is Dr. Alok Kanojia. Just a reminder that although I am a psychiatrist, nothing we discuss on stream today is intended to be taken as medical advice. Everything is for educational or entertainment purposes only. If you all have a medical concern or question, please go see a licensed or question, please go see a licensed professional.</p>
 <p>professional. Welcome, chat. Happy Friday, everybody. Hope you all are doing well. Um we have a couple of cool things that we&#x27;re going to be doing cool things that we&#x27;re going to be doing today. today. Hold on a second. Give me a second, chat. Sorry, I&#x27;m running a bit behind. We had some technical difficulties. As you guys know, we are trying to level up our grinding our technical difficulty skill. So, we&#x27;re inducing lots of them. Let&#x27;s go, chat. Um give me a second. Let me pull up chat Um give me a second. Let me pull up chat lords lords and chat ladies. Let me find Oh, this is integrated chat. Okay, I can see it right here.</p>
 <p>Wait, hold on. Uh okay. Let me just see. No, I have not played Mega Bonk. No, I have not played Mega Bonk. Um Um super confused about that game, though. I&#x27;ve been playing a bunch of Hades, I&#x27;ve been playing a bunch of Hades, dude. dude. Hades is like what I&#x27;m playing nowadays. Um let me do I need this. And then let me do this Uh-oh. TwitchCon San Diego. There we go, chat. Um give me just give me a second, dude. I&#x27;m trying to I&#x27;m trying to clear chat. No, I don&#x27;t want to clear clear chat. No, I don&#x27;t want to clear chat. chat. Chat highlights, no. Shield mode. Slow mode, subscribers only. Dude, where is pop out? There we go.</p>
 <p>Okay, got it, chat. Got it. Okay, I am here now. I&#x27;m I&#x27;m ready. I&#x27;m ready to chat with you all. I&#x27;m ready to chat with you all. Um Um Um okay. okay. okay. Yeah. All right. No, dude. So, that we&#x27;re we&#x27;re we got this, fam. All right. I am having a great day. So, um yeah, I&#x27;m going to scoot over a little bit cuz the chat boxes I feel crowded by the chat box. So, we&#x27;re um Yeah, so we Okay, I got to move more. Yeah, so we Okay, I got to move more. Okay. Okay. Um yeah, so I&#x27;ve not played Mega Bonk. Dude, I&#x27;ve been playing Hades, too. And that game is And that game is amazing. amazing. Like so, I I loved Hades. I thought it was an amazing game. I I am impressed by their ability to innovate so much on a formula.</p>
@@ -300,15 +431,21 @@ try {
 <p>It is not something that can be kept. It is only something that you can be aware of. It is a state. Do y&#x27;all know the difference between a state and a the difference between a state and a trait? Okay? We are looking for traits because traits are easy. Oh my god, I wish I was disciplined. I wish I had high disciplined. I wish I had high conscientiousness. Yeah, the trait is immutable for the most part. I mean, it&#x27;s not really, but state is temporary. So, here&#x27;s the thing. The moment that you start I want y&#x27;all to think about this, okay? Imagine for a moment I know this is insane that your motivation in this moment cannot be held onto. Accept that as a law.</p>
 <p>I am motivated now. There is no way to hold on. How would your life change if you truly accepted that this motivation is temporary, I don&#x27;t know when it&#x27;s going to run out, I don&#x27;t know how it&#x27;s how long it&#x27;s going to last, and there&#x27;s no way to hold on? How would you live your way to hold on? How would you live your life? life? We are so busy chasing the idea that motivation can last forever that we stop living today. Use it now. That&#x27;s the only [ __ ] shot you&#x27;ve got.</p>
 </section></article>
+    </div>
   </div>
+  
 
-  <p class="meta">Auto-transcribed livestream · chapters &amp; speaker labels are a best-effort approximation (claude-sonnet-4-6).</p>
+  <p class="meta">Medium summary · claude-sonnet-4-6 (no extended thinking)</p>
 </div>
 
 <script>
 (function () {
   var root = document.documentElement;
-  var tb = document.querySelector('.theme-toggle');
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'medium');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
   var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
   tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
@@ -316,6 +453,16 @@ try {
   function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
   var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+  // deep-link to a heading in any view: switch to that view, then scroll to it
+  function navigateTo(id){
+    var el = id && document.getElementById(id);
+    if (!el) return;
+    var v = el.closest('.view');
+    if (v) setView(v.getAttribute('data-view'));
+    el.scrollIntoView();
+  }
+  window.addEventListener('hashchange', function(){ navigateTo(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash) navigateTo(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>
 <script>

@@ -9,7 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-} catch (e) {}
+  document.documentElement.setAttribute('data-view', localStorage.getItem('pubview') || 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -24,16 +25,154 @@ try {
   </nav>
 
   <h1>Fixing Male Insecurities (AND KICKING OFF MENTAL HEALTH MAY)</h1>
-  <p class="watch">
-    <a href="https://www.youtube.com/watch?v=Z3cgPDFN7Qc" target="_blank" rel="noopener">▶ Watch on YouTube</a>
-    <span class="speakers-note">Speakers (auto-detected): Dr. K</span>
-  </p>
+  <p class="watch"><a href="https://www.youtube.com/watch?v=Z3cgPDFN7Qc" target="_blank" rel="noopener">▶ Watch on YouTube</a></p>
 
-  <div class="doc">
-    <nav class="toc"><p class="toc-title">Chapters</p><ul><li><a href="#transcript-0-stream-introduction-and-mental-health-awareness-month">Stream Introduction and Mental Health Awareness Month</a></li><li><a href="#transcript-1-make-it-may-community-event-overview">Make It May Community Event Overview</a></li><li><a href="#transcript-2-male-mental-health-resource-pack-launch">Male Mental Health Resource Pack Launch</a></li><li><a href="#transcript-3-science-of-learning-and-resource-pack-design">Science of Learning and Resource Pack Design</a></li><li><a href="#transcript-4-gender-identity-and-content-philosophy">Gender, Identity, and Content Philosophy</a></li><li><a href="#transcript-5-balding-experience-community-post-reading">Balding Experience: Community Post Reading</a></li><li><a href="#transcript-6-scientific-research-on-baldness-and-social-perception">Scientific Research on Baldness and Social Perception</a></li><li><a href="#transcript-7-defying-stereotypes-as-a-net-positive">Defying Stereotypes as a Net Positive</a></li><li><a href="#transcript-8-understanding-and-overcoming-insecurity">Understanding and Overcoming Insecurity</a></li><li><a href="#transcript-9-ego-comparison-and-the-nature-of-insecurity">Ego, Comparison, and the Nature of Insecurity</a></li><li><a href="#transcript-10-single-player-mindset-and-accepting-yourself">Single Player Mindset and Accepting Yourself</a></li><li><a href="#transcript-11-being-short-community-posts-and-male-insecurity">Being Short: Community Posts and Male Insecurity</a></li><li><a href="#transcript-12-cognitive-bias-and-distorted-perception-of-reality">Cognitive Bias and Distorted Perception of Reality</a></li><li><a href="#transcript-13-individuating-information-and-overcoming-stereotypes">Individuating Information and Overcoming Stereotypes</a></li><li><a href="#transcript-14-guided-meditation-on-atomic-nature-of-self">Guided Meditation on Atomic Nature of Self</a></li><li><a href="#transcript-15-meditation-debrief-and-ego-dissolution">Meditation Debrief and Ego Dissolution</a></li><li><a href="#transcript-16-psychedelics-ego-death-and-yogic-transcendence">Psychedelics, Ego Death, and Yogic Transcendence</a></li><li><a href="#transcript-17-closing-remarks-and-upcoming-events">Closing Remarks and Upcoming Events</a></li></ul></nav>
-    <article class="summary transcript"><section class="sec sec-a">
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">2,230w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">24,151w</span></button>
+    
+  </div>
+
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#medium-summary">Summary</a></li>
+<li><a href="#medium-the-baldness-research-that-changes-the-frame">The Baldness Research That Changes the Frame</a></li>
+<li><a href="#medium-the-difference-between-fixing-an-insecurity-and-overcoming-it">The Difference Between Fixing an Insecurity and Overcoming It</a></li>
+<li><a href="#medium-how-overcoming-insecurity-actually-works">How Overcoming Insecurity Actually Works</a></li>
+<li><a href="#medium-the-cognitive-distortion-that-closes-every-exit">The Cognitive Distortion That Closes Every Exit</a></li>
+<li><a href="#medium-the-meditation-as-a-direct-intervention">The Meditation as a Direct Intervention</a></li>
+<li><a href="#medium-common-pitfalls">Common Pitfalls</a></li>
+<li><a href="#medium-action-items-exercises">Action Items &amp; Exercises</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="medium-summary">Summary</h2>
+<p><strong>TL;DR —</strong> Male insecurities like baldness and short stature feel deterministic but aren't — the real problem is not the physical trait itself but the mental architecture of ego, comparison, and foreclosed thinking that grows around it.</p>
+<p>This talk covers three interlocking ideas: (1) a surprising finding from the research literature on baldness that reframes physical disadvantage as a potential social asset, (2) a systematic explanation of what an insecurity actually is and how to dissolve it rather than just suppress it, and (3) a guided meditation aimed at loosening ego's grip from the inside. The surface topic is male-coded insecurities — baldness, short stature — but the underlying framework applies to any insecurity anyone carries.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-the-baldness-research-that-changes-the-frame">The Baldness Research That Changes the Frame</h2>
+<p>Most people assume physical disadvantage stacks uniformly against you: you're bald, therefore people like you less, therefore your social and romantic life suffers proportionally. The data on <strong>pretty privilege</strong> (the well-documented tendency for physically attractive people to be judged as more competent, warmer, and more socially desirable) does initially seem to confirm this. Studies consistently show bald men are rated lower on physical attractiveness.</p>
+<p>But something strange happens when researchers add what the literature calls <strong>individuating information</strong> — specific personal details about a person beyond their appearance. In experiments where participants saw both a non-bald and a bald version of the same individual, the bald version with individuating information was rated <em>more</em> socially likeable than the non-bald version. Not just equal — higher.</p>
+<p>The mechanism is <strong>expectation violation</strong>. When you have low expectations of someone and they defy those expectations, they don't just return to average in your estimation — they overshoot it. This is a well-documented cognitive phenomenon. A movie you were told was terrible but found genuinely good hits differently than a movie you were told was great and found merely good. The direction of the surprise matters enormously.</p>
+<p>This means the negative stereotype working against bald men (or short men, or anyone carrying a stigmatized trait) is simultaneously the engine for a potential net positive. Every unit of social ground lost to the stereotype is recoverable — and then some — through individuating information. The ceiling isn't "back to average." It's actually above where a conventionally attractive person would land, precisely because there's no stereotype expectation to exceed for them.</p>
+<blockquote>
+<p>"The very thing that you think is holding you back is absolutely holding you back. But for every mile you lose in that direction, you can actually make it up if you defy the expectations."</p>
+</blockquote>
+<p>The practical upshot for anyone carrying an unchangeable physical trait: stop treating the trait as the final variable. It isn't. It's the starting condition. What you layer onto it — confidence, professional development, social warmth, physical fitness, personality — is where the actual game is played.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-the-difference-between-fixing-an-insecurity-and-overcoming-it">The Difference Between Fixing an Insecurity and Overcoming It</h2>
+<p>This is the conceptual core of the talk, and it's easy to get wrong.</p>
+<p><strong>Fixing a problem</strong> makes the problem go away. Getting hair plugs if you're bald. Losing weight if you're insecure about your body. Learning the dance routine before you attend the class. These all address the external condition.</p>
+<p><strong>Overcoming an insecurity</strong> is a separate operation that takes place entirely inside the mind.</p>
+<p>The clearest demonstration: celebrities. Many begin their careers with ordinary appearances, then systematically improve them through training, surgery, and professional help. And yet body dysmorphia is rampant among them. Objectively improving the situation does not reliably resolve the insecurity, because the insecurity doesn't live in the situation. It lives in the mind.</p>
+<p>An insecurity is a feature of the <strong>ego</strong> — which is itself a collection of abstractions, not a description of physical reality. "Short" and "tall" are not physical attributes. Height — a number in centimeters — is physical. Short and tall are judgments the mind makes about that number relative to something else. You cannot biopsy "loser." You cannot x-ray "attractive." These are constructions.</p>
+<blockquote>
+<p>"Ego is born of comparison. Tall can't exist without short. A comparison is necessary for an insecurity."</p>
+</blockquote>
+<p>This is the structural definition: <strong>an insecurity requires two points — where you are, and where someone else is (or where you imagine you should be).</strong> Remove either point and the insecurity collapses. The gap between those two points is not the insecurity itself; it's the measurement of it. The bigger the gap, the more crushing the feeling.</p>
+<p>This is also why fixing problems sometimes <em>reinforces</em> insecurities rather than dissolving them. If you get a wig and feel confident, and then the wig blows off in the wind, the insecurity returns — because you never actually dealt with the underlying comparison structure. You made it go dormant. Dormancy is not freedom.</p>
+<p>The difference between <strong>fearlessness</strong> and <strong>courage</strong> maps onto this exactly. Courage means having the fear and acting anyway. Fearlessness means the fear has been removed — but if it's only been removed by a crutch (alcohol before social situations, a wig, a fixed body), it will return the moment the crutch is gone.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-how-overcoming-insecurity-actually-works">How Overcoming Insecurity Actually Works</h2>
+<p>The mechanism is disabling the comparison engine, not winning the comparison.</p>
+<p>Insecurity activates in specific conditions: when other people are present, when you're being observed, when someone might judge you. Notice that you feel perfectly fine about your body when you're alone at home. Your body hasn't changed. The insecurity fluctuates not because your physical situation changes, but because the <strong>external observer</strong> enters or exits the picture.</p>
+<blockquote>
+<p>"You're still just as out of shape whether someone is looking at you or not. The insecurity comes from the external observation."</p>
+</blockquote>
+<p>This points to what actually needs to change: the degree to which other people's opinions constitute your self-assessment. The more you need external validation, the more you are at the mercy of whoever is in the room.</p>
+<p>The practical reframe is moving from a <strong>multiplayer game to a single-player game</strong>. In multiplayer, you're always ranked against others — and in any ranking system, most people are below the top. In single-player, you're measured against your previous self. The gap that felt like shame becomes something legible as progress.</p>
+<p>One subtle trap: many insecure people work on themselves <em>in secret</em>, waiting until they're already good enough before letting anyone see. This is the ego trying to preserve the illusion of effortless competence. Showing your learning process, your early awkwardness, your struggle — this is not weakness. It is actually what adds individuating information that defies the stereotype.</p>
+<p>Another trap: doing things for external validation rather than internal reasons. Behavior driven by others' observation rises when they're watching and falls when they aren't. Behavior driven by genuine internal motivation is stable across contexts. That's the only kind of improvement that compounds.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-the-cognitive-distortion-that-closes-every-exit">The Cognitive Distortion That Closes Every Exit</h2>
+<p>Both the posts on baldness and short stature share a common pattern: <strong>complete definitiveness</strong>. "This will never change." "Nothing works for me." "I've tried everything."</p>
+<p>This matters more than the insecurity itself. When someone hears a possible solution and their immediate response is to reject it, they have just closed a door. Every rejected possible solution narrows the solution space further. Over time, the mind reaches a state where it uses its understanding to filter evidence rather than letting evidence update its understanding. This is the operational definition of a <strong>closed mind</strong>, and it is the single most damaging cognitive pattern in this context.</p>
+<p>This isn't a character flaw — it's a predictable output of cognitive bias under prolonged negative emotional states. Research on depression shows that negative events get encoded with high resolution and detail, while positive events get overgeneralized and become vague. The worse you feel, the more your memory and perception skew toward confirming the worst interpretation. Your experience genuinely does feel like "it's always like this." But experience under these conditions is not a reliable sample of reality.</p>
+<blockquote>
+<p>"Your experience is not reality. I know this is unempathic to say. But most of life — 25% is good, 25% is bad, 50% is neutral — gets distorted by cognitive bias so the good becomes neutral and the neutral becomes negative."</p>
+</blockquote>
+<p>The internet amplifies this. Polarizing experiences rise to the top of any feed. The people who found a way forward as short men, as bald men, as overweight people — they are not the ones whose posts circulate. The silent majority of relatively unremarkable outcomes is invisible online. The algorithm curates for extremity, and you're building a model of reality from that.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-the-meditation-as-a-direct-intervention">The Meditation as a Direct Intervention</h2>
+<p>The guided meditation in the talk isn't decorative. It's targeting the same mechanism as the conceptual framework — the ego and the comparison engine — but from the experiential side rather than the intellectual side.</p>
+<p>The instruction was to feel a warmth just outside the physical boundary of the body, then track a coolness inward along the breath, find where they meet, and trace the warmth back to a point of origin. The goal isn't relaxation — it's <strong>ego dissolution</strong>: a direct sensory experience of the boundary between self and world softening.</p>
+<p>Research on psychedelics and depression suggests the therapeutic mechanism may be exactly this — not the hallucinations, but the ego dissolution that comes with certain experiences. Studies show a negative correlation between degree of ego dissolution and symptom severity in disorders characterized by excessive self-referential thinking (depression, anxiety, rumination). Meditation, practiced consistently, induces this without the risks.</p>
+<p>The practical relevance to insecurity: insecurity is entirely localized to the self. When you have a genuine felt experience — not an intellectual idea, but an actual sensory perception — that you are embedded in something vastly larger that is simply existing without judgment, the urgency of other people's opinions diminishes naturally. Not through willpower. Through reorientation.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-common-pitfalls">Common Pitfalls</h2>
+<ul>
+<li>
+<p><strong>Treating fixing the problem as the same as overcoming the insecurity.</strong> Going to the gym can help, but it doesn't automatically dissolve the underlying comparison structure. Someone who gets fit but stays trapped in the multiplayer frame will just find new things to be insecure about.</p>
+</li>
+<li>
+<p><strong>Interpreting the research on defying expectations as "just be confident."</strong> That's too vague to be useful. The specific mechanism is adding individuating information — personal details that don't fit the stereotype — which requires actually engaging with people rather than withdrawing in anticipation of judgment.</p>
+</li>
+<li>
+<p><strong>Using online communities as representative samples of reality.</strong> Incel forums, Reddit threads about height and baldness, and dating app data all have severe selection bias. The people who are managing well are systematically underrepresented.</p>
+</li>
+<li>
+<p><strong>Mistaking insecurity for accurate self-assessment.</strong> Insecurity feels like clear-eyed realism ("I'm just telling the truth about myself"), but the comparison structure guarantees distortion. Accurate self-assessment exists on a single-player axis; insecurity always requires a competitor.</p>
+</li>
+<li>
+<p><strong>Pursuing leg lengthening or other high-cost physical interventions without accounting for psychological outcomes.</strong> Anecdotally, such procedures often don't resolve the underlying insecurity and come with significant physical costs.</p>
+</li>
+<li>
+<p><strong>Conflating selfless behavior with healthy generosity.</strong> Some people sacrifice constantly for others not from genuine care but from guilt avoidance. Guilt-driven selflessness leaves you as a "husk" and makes you manipulable by anyone who can reliably induce guilt in you.</p>
+</li>
+</ul>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-action-items-exercises">Action Items &amp; Exercises</h2>
+<ol>
+<li>
+<p><strong>Identify one insecurity and trace it to its comparison.</strong> Write down the specific other person or standard you're comparing yourself to. Name it explicitly. Notice that the insecurity requires that second point — then ask what happens to the feeling if you remove the comparison and describe only where you are right now.</p>
+</li>
+<li>
+<p><strong>Practice the warmth-coolness meditation for 90 days, once daily.</strong> Sit with a straight spine, knees below hips. Notice warmth just outside your skin. Track coolness inward along the breath. Find where they meet. Trace warmth back to a point of origin. The goal is a felt, sensory experience — not a concept.</p>
+</li>
+<li>
+<p><strong>Add individuating information deliberately.</strong> Pick one interaction this week where you would normally withdraw because of an insecurity. Instead, reveal something specific and personal — a perspective, a skill, a story — that doesn't fit the stereotype associated with your trait. Notice how the interaction changes.</p>
+</li>
+<li>
+<p><strong>Switch from multiplayer to single-player metrics for one month.</strong> Stop tracking how you compare to others in whatever domain causes you insecurity. Track only your previous self: am I better than last week? Document this somewhere concrete.</p>
+</li>
+<li>
+<p><strong>Audit your information diet on your insecurity.</strong> If you're bald, short, or insecure about any trait, spend one week not reading any online forums or social media content about that trait. Notice what changes in your baseline mood and your sense of what's possible.</p>
+</li>
+<li>
+<p><strong>When a possible solution is offered, pause before rejecting it.</strong> Catch the moment when your mind moves to dismiss help. Ask: "Is my rejection based on evidence, or is it based on a fixed belief?" You don't have to accept every suggestion — but noticing the reflex is the first step to not letting it close every exit.</p>
+</li>
+<li>
+<p><strong>Separate what you can control from what you can't — and allocate accordingly.</strong> Make a two-column list: things about your situation you cannot change (hair, height, past) and things you can (body composition, social skills, professional development, how much you let others' comments define your day). Put your energy only in the second column.</p>
+</li>
+</ol>
+</section></article>
+    </div>
+  </div>
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc"><ul><li><a href="#transcript-0-stream-introduction-and-mental-health-awareness-month">Stream Introduction and Mental Health Awareness Month</a></li><li><a href="#transcript-1-make-it-may-community-event-overview">Make It May Community Event Overview</a></li><li><a href="#transcript-2-male-mental-health-resource-pack-launch">Male Mental Health Resource Pack Launch</a></li><li><a href="#transcript-3-science-of-learning-and-resource-pack-design">Science of Learning and Resource Pack Design</a></li><li><a href="#transcript-4-gender-identity-and-content-philosophy">Gender, Identity, and Content Philosophy</a></li><li><a href="#transcript-5-balding-experience-community-post-reading">Balding Experience: Community Post Reading</a></li><li><a href="#transcript-6-scientific-research-on-baldness-and-social-perception">Scientific Research on Baldness and Social Perception</a></li><li><a href="#transcript-7-defying-stereotypes-as-a-net-positive">Defying Stereotypes as a Net Positive</a></li><li><a href="#transcript-8-understanding-and-overcoming-insecurity">Understanding and Overcoming Insecurity</a></li><li><a href="#transcript-9-ego-comparison-and-the-nature-of-insecurity">Ego, Comparison, and the Nature of Insecurity</a></li><li><a href="#transcript-10-single-player-mindset-and-accepting-yourself">Single Player Mindset and Accepting Yourself</a></li><li><a href="#transcript-11-being-short-community-posts-and-male-insecurity">Being Short: Community Posts and Male Insecurity</a></li><li><a href="#transcript-12-cognitive-bias-and-distorted-perception-of-reality">Cognitive Bias and Distorted Perception of Reality</a></li><li><a href="#transcript-13-individuating-information-and-overcoming-stereotypes">Individuating Information and Overcoming Stereotypes</a></li><li><a href="#transcript-14-guided-meditation-on-atomic-nature-of-self">Guided Meditation on Atomic Nature of Self</a></li><li><a href="#transcript-15-meditation-debrief-and-ego-dissolution">Meditation Debrief and Ego Dissolution</a></li><li><a href="#transcript-16-psychedelics-ego-death-and-yogic-transcendence">Psychedelics, Ego Death, and Yogic Transcendence</a></li><li><a href="#transcript-17-closing-remarks-and-upcoming-events">Closing Remarks and Upcoming Events</a></li></ul></div></nav>
+      <article class="summary"><section class="sec sec-a">
 <h2 id="transcript-0-stream-introduction-and-mental-health-awareness-month">Stream Introduction and Mental Health Awareness Month</h2>
-<p><span class="speaker">Dr. K:</span> For for. [Music]. [Music]. Oh, oh, [Music]. [Music]. Oh. [Music] oh. [Music]. W oh. [Applause] [Music]. Oh, oh. [Music]. [Music]. Oh, oh. [Music] o [Applause] [Applause] [Music]. [Music]. Oh, oh, [Music]. [Music]. [Music]: a, a, a [Music]. [Music]: hello, oh, we&#x27;ve got. Is that better? There we go. No Echo, no Echo, no Echo. Welcome to another healthy gamer. G stream chat. My name is Dr. Alok Kanojia. Just a reminder that, although I&#x27;m a psychiatrist, nothing we discussed on stream today is intended to be taken as medical advice. Everything is for educational or entertainment purposes only. Oh, my God, if yall have a medical question or concern, please go see a licensed professional.</p>
+<p>For for. [Music]. [Music]. Oh, oh, [Music]. [Music]. Oh. [Music] oh. [Music]. W oh. [Applause] [Music]. Oh, oh. [Music]. [Music]. Oh, oh. [Music] o [Applause] [Applause] [Music]. [Music]. Oh, oh, [Music]. [Music]. [Music]: a, a, a [Music]. [Music]: hello, oh, we&#x27;ve got. Is that better? There we go. No Echo, no Echo, no Echo. Welcome to another healthy gamer. G stream chat. My name is Dr. Alok Kanojia. Just a reminder that, although I&#x27;m a psychiatrist, nothing we discussed on stream today is intended to be taken as medical advice. Everything is for educational or entertainment purposes only. Oh, my God, if yall have a medical question or concern, please go see a licensed professional.</p>
 <p>Um, yeah, so welcome to Mental Health Awareness Month chat. Uh, it&#x27;s nice to see everyone today. Um, we try to do a lot of stuff for mental health awareness month, so we&#x27;re going to be sharing a lot of these things with y&#x27;all today. Um, give me just one second. Let me get some of this stuff, okay, that, okay, there we go, all right. So now I&#x27;ve got chat open, pop out chat. Let&#x27;s do that. Then I don&#x27;t need to see my own back to chat. Can I pop out chat over here? Nope, okay, whatever, this is good enough. So welcome everybody. How yall doing today? How&#x27;s everybody doing? Um, yeah, so welcome to mental health awareness month.</p>
 <p>It is the the month that we work for the hardest all year long, so this is our. You know, this is what we. We try to do for yall. So we&#x27;re going to be talking about male insecurities today, um, but we&#x27;ve also got some stuff coming out for women. There&#x27;s actually an event today in the women&#x27;s space, which we&#x27;ll be talking about in a second um, so, and then we&#x27;ve got- uh, hopefully, a video about women in ADHD coming out soon. So, but today we&#x27;re going to be focusing on male insecurities and we&#x27;ll also be launching a new resource pack for male mental health. So if you all are interested in that kind of stuff, please check it out.</p>
 </section>
@@ -281,15 +420,21 @@ try {
 <p>All right, I&#x27;m going to be 9 ft tall. Hey, report back, chat. See, have all the impossibility of the things that I tell you all to do. If you&#x27;re bald, if you&#x27;re short, I think we can fix that. Can you grow foot? I don&#x27;t know, chat, I don&#x27;t know. I wish I could say I believe, but I don&#x27;t know. But that&#x27;s for you to figure out, right, you, you figure it out, you. I&#x27;. I&#x27;ve given y&#x27;all enough answers. The rest of it is you all right, chat, we go a, we got a, I gotta run. I got something in a little while. So it&#x27;s been awesome being here today. Thank you all so much for coming today. This is our 1.</p>
 <p>This is May 1st. We&#x27;re launching mental health May of 2024 here at healthy gamer. We got a lot of great stuff planned for y&#x27;all. Be sure you check check out, make it, which is our community event. Week one is going to be planning. I think we&#x27;ll have trauma guide coming out later this month, made with a lot of love, a lot of effort from our whole team, and we&#x27;ll see y&#x27;all on Friday when I think we&#x27;re going to be talking, when I think we&#x27;re going to be talking about, about dating. So love y&#x27;all, bro and and ladies, and everything in bro and and ladies and everything in between.</p>
 </section></article>
+    </div>
   </div>
+  
 
-  <p class="meta">Auto-transcribed livestream · chapters &amp; speaker labels are a best-effort approximation (claude-sonnet-4-6).</p>
+  <p class="meta">Medium summary · claude-sonnet-4-6 (no extended thinking)</p>
 </div>
 
 <script>
 (function () {
   var root = document.documentElement;
-  var tb = document.querySelector('.theme-toggle');
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'medium');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
   var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
   tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
@@ -297,6 +442,16 @@ try {
   function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
   var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+  // deep-link to a heading in any view: switch to that view, then scroll to it
+  function navigateTo(id){
+    var el = id && document.getElementById(id);
+    if (!el) return;
+    var v = el.closest('.view');
+    if (v) setView(v.getAttribute('data-view'));
+    el.scrollIntoView();
+  }
+  window.addEventListener('hashchange', function(){ navigateTo(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash) navigateTo(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>
 <script>

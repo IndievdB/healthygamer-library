@@ -9,7 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-} catch (e) {}
+  document.documentElement.setAttribute('data-view', localStorage.getItem('pubview') || 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -24,16 +25,178 @@ try {
   </nav>
 
   <h1>Why You Feel Like The World Is Falling Apart</h1>
-  <p class="watch">
-    <a href="https://www.youtube.com/watch?v=qXaXB3-d9Aw" target="_blank" rel="noopener">▶ Watch on YouTube</a>
-    <span class="speakers-note">Speakers (auto-detected): Dr. K</span>
-  </p>
+  <p class="watch"><a href="https://www.youtube.com/watch?v=qXaXB3-d9Aw" target="_blank" rel="noopener">▶ Watch on YouTube</a></p>
 
-  <div class="doc">
-    <nav class="toc"><p class="toc-title">Chapters</p><ul><li><a href="#transcript-0-music-intro-and-opening-songs">Music Intro and Opening Songs</a></li><li><a href="#transcript-1-dr-k-welcome-and-mental-health-may-overview">Dr. K Welcome and Mental Health May Overview</a></li><li><a href="#transcript-2-world-on-fire-stream-format-explained">World on Fire Stream Format Explained</a></li><li><a href="#transcript-3-mental-health-may-calendar-and-upcoming-events">Mental Health May Calendar and Upcoming Events</a></li><li><a href="#transcript-4-community-challenge-and-membership-announcements">Community Challenge and Membership Announcements</a></li><li><a href="#transcript-5-slido-results-trump-fascism-and-political-fear">Slido Results: Trump Fascism and Political Fear</a></li><li><a href="#transcript-6-perception-as-the-root-of-motivation">Perception as the Root of Motivation</a></li><li><a href="#transcript-7-political-paralysis-and-brain-s-problem-solving-loop">Political Paralysis and Brain&#x27;s Problem-Solving Loop</a></li><li><a href="#transcript-8-taking-action-beats-solving-political-engagement">Taking Action Beats Solving: Political Engagement</a></li><li><a href="#transcript-9-how-democracy-actually-works-and-civic-participation">How Democracy Actually Works and Civic Participation</a></li><li><a href="#transcript-10-current-administration-rfk-jr-and-medication-debates">Current Administration, RFK Jr., and Medication Debates</a></li><li><a href="#transcript-11-cbt-vs-stimulants-adhd-treatment-data-deep-dive">CBT vs Stimulants: ADHD Treatment Data Deep Dive</a></li><li><a href="#transcript-12-psychedelics-in-mental-health-promising-research">Psychedelics in Mental Health: Promising Research</a></li><li><a href="#transcript-13-adapting-to-the-world-level-up-despite-uncertainty">Adapting to the World: Level Up Despite Uncertainty</a></li><li><a href="#transcript-14-job-market-economy-and-standing-out-at-work">Job Market, Economy, and Standing Out at Work</a></li><li><a href="#transcript-15-professionalism-the-hidden-curriculum-of-career-success">Professionalism: The Hidden Curriculum of Career Success</a></li><li><a href="#transcript-16-networking-reliability-and-being-above-average">Networking, Reliability, and Being Above Average</a></li><li><a href="#transcript-17-climate-change-crisis-as-opportunity-and-innovation">Climate Change, Crisis as Opportunity, and Innovation</a></li><li><a href="#transcript-18-narcissism-empathy-decline-and-internet-toxicity">Narcissism, Empathy Decline, and Internet Toxicity</a></li><li><a href="#transcript-19-building-community-and-tolerating-imperfection">Building Community and Tolerating Imperfection</a></li><li><a href="#transcript-20-responsibility-entropy-and-taking-initiative">Responsibility, Entropy, and Taking Initiative</a></li><li><a href="#transcript-21-the-direction-of-thoughts-vs-their-truth">The Direction of Thoughts vs Their Truth</a></li><li><a href="#transcript-22-abide-in-that-which-is-unchanging-meditation-practice">Abide in That Which Is Unchanging: Meditation Practice</a></li><li><a href="#transcript-23-mindlessness-vs-mindfulness-managing-the-storm">Mindlessness vs Mindfulness: Managing the Storm</a></li><li><a href="#transcript-24-closing-announcements-and-ask-a-coach-event">Closing Announcements and Ask a Coach Event</a></li></ul></nav>
-    <article class="summary transcript"><section class="sec sec-a">
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">2,738w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">22,830w</span></button>
+    
+  </div>
+
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#medium-summary">Summary</a></li>
+<li><a href="#medium-the-perception-trap-how-big-problems-paralyze-you">The Perception Trap: How Big Problems Paralyze You</a></li>
+<li><a href="#medium-doing-something-is-better-than-doing-the-right-thing">Doing Something Is Better Than Doing the Right Thing</a></li>
+<li><a href="#medium-the-economy-the-job-market-and-professionalism">The Economy, the Job Market, and Professionalism</a></li>
+<li><a href="#medium-social-atomization-and-the-collapse-of-tolerance">Social Atomization and the Collapse of Tolerance</a></li>
+<li><a href="#medium-the-direction-of-your-thoughts-matters-more-than-their-truth">The Direction of Your Thoughts Matters More Than Their Truth</a></li>
+<li><a href="#medium-abiding-in-that-which-is-unchanging">Abiding in That Which Is Unchanging</a></li>
+<li><a href="#medium-common-pitfalls">Common Pitfalls</a></li>
+<li><a href="#medium-action-items-exercises">Action Items &amp; Exercises</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="medium-summary">Summary</h2>
+<p><strong>TL;DR — When the world feels like it's on fire, the trap is letting large, unsolvable problems consume the cognitive energy you need to solve the small, concrete ones right in front of you. The antidote is acting anyway, managing rather than fixing, and anchoring yourself in the one thing that never changes.</strong></p>
+<p>This is a live Q&amp;A session where viewers submitted what's falling apart in their lives — political fear, economic anxiety, the job market, social atomization, climate dread — and the responses dig into a consistent underlying pattern: the brain gets hijacked by macro-scale problems it can't solve, which paralyzes the person and makes their actual life worse, which in turn magnifies the fear. The session covers how perception drives motivation, what it really means to be professional, how to network, why our tolerance for other people has collapsed, and closes with a detailed walk-through of a meditation practice built around abiding in that which is unchanging.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-the-perception-trap-how-big-problems-paralyze-you">The Perception Trap: How Big Problems Paralyze You</h2>
+<p>The root of most motivation isn't discipline or willpower. It's <strong>perception</strong>. What you perceive determines how motivated you are to act.</p>
+<p>Here's the mechanism: whenever the brain perceives a problem, it automatically tries to solve it. That's a feature, not a bug. If your toilet is clogged, you plunge it. If you're hungry, you eat. But the brain evolved to handle <strong>ape-scale problems</strong> — the kind that exist within a small tribe, in a concrete physical environment. It was not built to process the scale of problems that a modern media diet delivers all day long.</p>
+<p>When you perceive a massive, abstract threat — political authoritarianism, economic collapse, climate change — your brain's problem-solving apparatus fires up just as it would for a clogged toilet. Except there's no plunger. You can't fix it. The brain spins trying to bite off a mountain, fails, and gets <strong>stuck in a paralysis loop</strong>:</p>
+<blockquote>
+<p>"Everywhere you look, there's this problem... How do I solve this? How do I solve this? No one knows how to solve it. And so then you just get stuck doing absolutely nothing."</p>
+</blockquote>
+<p>Here's the really dangerous part: while your cognitive energy is tied up trying to solve the unsolvable, your actual life gets worse. And as your actual life gets worse, your brain looks for an explanation — and finds the same macroscopic threat to blame. The loop tightens. You get increasingly paralyzed, increasingly certain that the big thing is the cause, and increasingly unwilling to take the small concrete actions that would actually help.</p>
+<p>This is not a failing unique to any political group. It applies equally to someone convinced that immigrants are stealing their jobs and to someone convinced that fascism is ending democracy. In both cases, cognitive energy spent on the macro-level explanation is energy not spent improving skills, building relationships, or adapting to the actual environment in front of you.</p>
+<p><strong>The fix isn't to stop caring about big problems. It's to recognize that acting on small, concrete problems in your life is the prerequisite for being capable of doing anything about the big ones.</strong></p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-doing-something-is-better-than-doing-the-right-thing">Doing Something Is Better Than Doing the Right Thing</h2>
+<p>There is a crucial psychological distinction between <em>solving</em> a problem and <em>acting toward</em> a problem.</p>
+<p>Consider a family that keeps bringing food to a dying relative. The food isn't keeping him alive. But the act of bringing food makes the family feel better — and that's not irrational. Acting toward a problem, even ineffectively, alleviates the psychological burden of that problem. The mind needs to feel like it tried.</p>
+<blockquote>
+<p>"People think that in order to fix a problem that is messing up your life, you need to solve the problem. That's technically incorrect. You don't have to solve the problem. You need to act towards the problem."</p>
+</blockquote>
+<p>Even action that seems completely unrelated helps. If you don't know how to tackle a gigantic work project, spending an hour cleaning your apartment will leave your mind noticeably calmer. The act of doing something — almost anything — breaks the paralysis loop.</p>
+<p>Applied to political fear specifically: write a letter to your congressional representative. Call their office. Congressional staffers literally compile weekly tally sheets of how many constituents called and on what issue. That number influences how the representative behaves, because people who bother to call are people who bother to vote. The single biggest political scam of recent decades has been convincing people that individual action is pointless — because the moment you believe you are powerless, you become powerless.</p>
+<p>The other dimension here is the <strong>rust principle</strong>: the human body and mind don't wear out, they rust. The more inactive you become, the harder action gets. Every time you take the elevator instead of the stairs, the stairs get harder. So even imperfect political or civic action keeps the mechanism from seizing up.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-the-economy-the-job-market-and-professionalism">The Economy, the Job Market, and Professionalism</h2>
+<p>The job market is genuinely bad. The internet scaled up competition in ways that weren't anticipated — you once dropped paper resumes at local stores; now you compete with thousands of faceless applicants globally. That is a real structural problem.</p>
+<p>But there is also a fact worth sitting with: <strong>most people at work are average</strong>. Not because they're bad people, but because they're burnt out, running on autopilot, collecting a paycheck. The person who pauses for 15 minutes before completing a task and asks "is this really the best I can do?" is already operating in a minority.</p>
+<p>The hidden curriculum — the things that determine your career trajectory that no one will ever explicitly teach you — comes down largely to one loaded, often-misunderstood word: <strong>professionalism</strong>.</p>
+<p>What professionalism actually means:
+- Responsiveness (showing up when expected, returning communication promptly)
+- Setting and honoring realistic expectations (overpromising and delivering creates unsustainable new baselines; you'll burn out and be seen as inconsistent)
+- Knowing how to set limits without drama — completing your commitment, then declining the next one cleanly, without argument
+- Separating your work quality from the emotional need to be the hero or the star</p>
+<p>What professionalism is not: conformity, bootlicking, or being a pushover. People sometimes use "unprofessional" as a cover when they simply don't like someone. That's real. But what makes it sting so much is that most people genuinely don't understand what they're being judged on.</p>
+<p>On <strong>networking</strong>: the people who are good at their jobs tend to have too many requests for their time. The people who aren't have to scrounge for a single yes. The most effective networking doesn't primarily happen at networking events — it happens through genuine engagement in things you care about. And the orientation matters enormously: networking to help other people out, not networking to get ahead. Making introductions between two people who would genuinely benefit from knowing each other is more powerful than any elevator pitch about yourself.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-social-atomization-and-the-collapse-of-tolerance">Social Atomization and the Collapse of Tolerance</h2>
+<p>People are becoming more lonely not primarily because community opportunities have disappeared, but because two things are increasing simultaneously: <strong>narcissism</strong> and <strong>intolerance of discomfort</strong>.</p>
+<p>Social media and internet culture have a narcissizing effect — everyone becomes the center of their own universe. At the same time, the threshold for dismissing another person has dropped dramatically. One red flag and the relationship is over. One awkward date comment triggers a wall of text. And unlike in a small town where being an asshole had social consequences, the internet is large enough that you can make someone's life worse and disappear with zero accountability.</p>
+<blockquote>
+<p>"There is no longer a selection pressure on shitty behavior."</p>
+</blockquote>
+<p>The person who commented "it doesn't cost me very much to show up, bash someone for five minutes, and disappear" wasn't lying. That is structurally true. Which is exactly why the behavior proliferates.</p>
+<p>What does this mean practically? <strong>Your ability to tolerate other people's imperfections is now a competitive advantage.</strong> In a world of hair-trigger dismissal, the person who offers a little patience — who gives someone a few weeks or months to move in the right direction — will access parts of people that most others never see. That's not being a doormat. The difference is trajectory: are they moving in the right direction over time? If yes, patience is connection. If no, patience is self-harm.</p>
+<p>The deeper structural issue here: the world is in the shape it's in partly because <strong>people with capacity choose not to take responsibility</strong>. "It's not my job" is often true. But the question that follows — "then whose job is it?" — tends to go unanswered. Every human system has an entropic force pulling it toward worse. The only counter to entropy is effort. Whether or not that effort is your responsibility is a separate question from whether it needs to happen.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-the-direction-of-your-thoughts-matters-more-than-their-truth">The Direction of Your Thoughts Matters More Than Their Truth</h2>
+<p>One of the subtler and more important ideas in the session is this: <strong>the truth value of a thought is not the same as its utility</strong>.</p>
+<p>Depressed people, counterintuitively, often have more accurate perceptions of reality than non-depressed people. Most people have baseline cognitive biases that make them think they're above average in ways that are statistically impossible. Depression strips those biases away and leaves a more accurate picture. But accuracy isn't the same as helpfulness.</p>
+<p>Consider: "I'm 32, I live with my parents, I've never been in a relationship, and I don't have a job." This can be an accurate road map toward finding a partner — identifying exactly what needs to change — or it can be experienced as proof that a partner is impossible. The content is the same. The direction it sends you is completely different.</p>
+<blockquote>
+<p>"We get so concerned about the truth of our thoughts that we never think about the impact of our thoughts."</p>
+</blockquote>
+<p>The skill to develop is noticing not just what you're thinking, but where that thinking is taking you. Negative thoughts that accurately describe bad situations often function as a survival reflex — they reduce motivation to go out into the world and potentially get hurt. That reflex was adaptive in some environments. In this one, it frequently keeps you stuck. The appendix once served a function; now it mostly causes sepsis.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-abiding-in-that-which-is-unchanging">Abiding in That Which Is Unchanging</h2>
+<p>When the world is in chaos, the mind becomes an untethered balloon, blown wherever the wind goes. An argument with your partner consumes the next 24 hours. A tilt in a video game destroys the next hour. Climate anxiety, inflation fear, political dread — all of it swirls. And the swirling itself is the problem, because a swirling mind cannot effectively solve problems.</p>
+<blockquote>
+<p>"Worrying about it for 10 hours before you deal with it doesn't necessarily make dealing with it easier."</p>
+</blockquote>
+<p>The solution is not to suppress the chaos but to find an anchor. The practice: <strong>abide in that which is unchanging</strong>.</p>
+<p>Here's the logic. Every experience you've ever had — pain, joy, fear, hunger, warmth — has fluctuated. Your body changes moment to moment. Your thoughts shift. Your emotions come and go. But through all of it, there has been one constant: <em>you</em> were the one experiencing it. The experiencer doesn't change, even as the content of experience changes constantly.</p>
+<p>That experiencer — the one who witnesses everything, who you can't locate in the body or in any single thought — is the anchor. To meditate in this way is to move attention away from the content (the thoughts, the sensations, the emotions) and toward the one who is noticing them.</p>
+<p>Practically:
+- Sit with eyes closed
+- When a thought arises, don't engage with it — let it pass
+- When a bodily sensation arises, let it go
+- Move attention toward the absence of sensation and thought
+- What you're looking for is the witnessing awareness itself, with no particular object</p>
+<p>This is not mindfulness in the conventional sense. Conventional "be mindful of this" actually means <em>fill your mind with one thing</em>. What this practice is after is the opposite: <strong>mindlessness</strong> — the complete quieting of mental content so that the underlying witnessing awareness can be rested in.</p>
+<p>This won't happen quickly. Expect 90 days of 5–20 minutes daily practice before the knack begins to develop. It is not something you <em>do</em>; it is something you <em>undo</em>.</p>
+<p>The practical benefit is not that problems disappear. It is that you stop getting swept away by them. From the eye of the storm, adversity becomes <strong>manageable</strong> — not necessarily solvable, not necessarily pain-free, but something you can handle. Management is not success; it is the capacity to keep functioning in difficult conditions. That capacity is resilience.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-common-pitfalls">Common Pitfalls</h2>
+<ul>
+<li>
+<p><strong>Mistaking awareness-raising for action.</strong> Sharing a post or video genuinely feels like contributing to a cause, and in the brain it registers as having done your part — which then reduces the motivation to actually donate, call, vote, or organize. These are two different tracks.</p>
+</li>
+<li>
+<p><strong>Waiting until you know your action will matter before acting.</strong> The certainty that your individual action is irrelevant is itself a form of perception manipulation. You don't know whether your action matters. Neither does anyone else. Act anyway.</p>
+</li>
+<li>
+<p><strong>Believing that working harder is the same as working better.</strong> Professionalism is not about effort volume. It's about thoughtfulness, reliability, and self-awareness about the expectations you set. Burning yourself out by over-delivering creates unsustainable expectations and leads to inconsistency, which is what actually gets you penalized.</p>
+</li>
+<li>
+<p><strong>Confusing manageable with successful.</strong> Managing a situation means handling it — not winning, not escaping pain, just staying functional and responsive. Expecting management to guarantee good outcomes is a setup for abandoning the attempt when things go badly.</p>
+</li>
+<li>
+<p><strong>Cutting people off at the first red flag.</strong> In a world where everyone has some damage, zero tolerance means guaranteed loneliness. The relevant question isn't "is this person imperfect?" It's "are they moving in the right direction over time?"</p>
+</li>
+<li>
+<p><strong>Evaluating thoughts only for their accuracy.</strong> True thoughts can be paralyzing. False thoughts can be motivating. The important question is not "is this true?" but "where does thinking this take me?"</p>
+</li>
+</ul>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-action-items-exercises">Action Items &amp; Exercises</h2>
+<ol>
+<li>
+<p><strong>Audit your perception inputs.</strong> For one week, track what media you're consuming and notice how it affects your motivation and anxiety levels. Identify one source that reliably leaves you feeling paralyzed and experiment with removing it for a week.</p>
+</li>
+<li>
+<p><strong>Take one concrete civic action.</strong> If you have a political concern, find the phone number for your congressional representative's office and call it this week. State your concern briefly. The call doesn't need to be eloquent. The point is to act toward the problem rather than just fear it.</p>
+</li>
+<li>
+<p><strong>Identify the one concrete problem closest to you.</strong> Not the macroscopic force, but the thing in your actual life — the skill you haven't built, the relationship you've been neglecting, the health habit you've been deferring. Write it down. Do one small thing toward it today.</p>
+</li>
+<li>
+<p><strong>Practice the abide meditation.</strong> Sit for 5 minutes with eyes closed. When a thought arises, let it pass without engaging. When a sensation arises, let it go. Move attention toward the witnessing awareness itself — the part of you that is noticing all of this — rather than toward any specific thought or feeling. Do this every day for 90 days before evaluating whether it "works."</p>
+</li>
+<li>
+<p><strong>Assess your professionalism baseline.</strong> Ask yourself honestly: Do I respond to messages and commitments promptly? Do I set expectations I can actually keep? When I've agreed to something and want to back out, do I do it cleanly and without drama? Identify one specific area where your behavior doesn't match your self-image here and make one concrete change.</p>
+</li>
+<li>
+<p><strong>Practice genuine networking.</strong> In your next three meaningful professional or social interactions, look for one person you could connect to another person who would benefit from knowing them. Make the introduction with no immediate self-interest. Notice what happens over the following month.</p>
+</li>
+<li>
+<p><strong>Notice the direction, not just the truth, of your thoughts.</strong> When you find yourself stuck in a negative thought loop, pause and ask: where is this line of thinking taking me? Is it a road map or a destiny? If it's functioning as a dead end, ask what a road map version of the same true information would look like.</p>
+</li>
+</ol>
+</section></article>
+    </div>
+  </div>
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc"><ul><li><a href="#transcript-0-music-intro-and-opening-songs">Music Intro and Opening Songs</a></li><li><a href="#transcript-1-dr-k-welcome-and-mental-health-may-overview">Dr. K Welcome and Mental Health May Overview</a></li><li><a href="#transcript-2-world-on-fire-stream-format-explained">World on Fire Stream Format Explained</a></li><li><a href="#transcript-3-mental-health-may-calendar-and-upcoming-events">Mental Health May Calendar and Upcoming Events</a></li><li><a href="#transcript-4-community-challenge-and-membership-announcements">Community Challenge and Membership Announcements</a></li><li><a href="#transcript-5-slido-results-trump-fascism-and-political-fear">Slido Results: Trump Fascism and Political Fear</a></li><li><a href="#transcript-6-perception-as-the-root-of-motivation">Perception as the Root of Motivation</a></li><li><a href="#transcript-7-political-paralysis-and-brain-s-problem-solving-loop">Political Paralysis and Brain&#x27;s Problem-Solving Loop</a></li><li><a href="#transcript-8-taking-action-beats-solving-political-engagement">Taking Action Beats Solving: Political Engagement</a></li><li><a href="#transcript-9-how-democracy-actually-works-and-civic-participation">How Democracy Actually Works and Civic Participation</a></li><li><a href="#transcript-10-current-administration-rfk-jr-and-medication-debates">Current Administration, RFK Jr., and Medication Debates</a></li><li><a href="#transcript-11-cbt-vs-stimulants-adhd-treatment-data-deep-dive">CBT vs Stimulants: ADHD Treatment Data Deep Dive</a></li><li><a href="#transcript-12-psychedelics-in-mental-health-promising-research">Psychedelics in Mental Health: Promising Research</a></li><li><a href="#transcript-13-adapting-to-the-world-level-up-despite-uncertainty">Adapting to the World: Level Up Despite Uncertainty</a></li><li><a href="#transcript-14-job-market-economy-and-standing-out-at-work">Job Market, Economy, and Standing Out at Work</a></li><li><a href="#transcript-15-professionalism-the-hidden-curriculum-of-career-success">Professionalism: The Hidden Curriculum of Career Success</a></li><li><a href="#transcript-16-networking-reliability-and-being-above-average">Networking, Reliability, and Being Above Average</a></li><li><a href="#transcript-17-climate-change-crisis-as-opportunity-and-innovation">Climate Change, Crisis as Opportunity, and Innovation</a></li><li><a href="#transcript-18-narcissism-empathy-decline-and-internet-toxicity">Narcissism, Empathy Decline, and Internet Toxicity</a></li><li><a href="#transcript-19-building-community-and-tolerating-imperfection">Building Community and Tolerating Imperfection</a></li><li><a href="#transcript-20-responsibility-entropy-and-taking-initiative">Responsibility, Entropy, and Taking Initiative</a></li><li><a href="#transcript-21-the-direction-of-thoughts-vs-their-truth">The Direction of Thoughts vs Their Truth</a></li><li><a href="#transcript-22-abide-in-that-which-is-unchanging-meditation-practice">Abide in That Which Is Unchanging: Meditation Practice</a></li><li><a href="#transcript-23-mindlessness-vs-mindfulness-managing-the-storm">Mindlessness vs Mindfulness: Managing the Storm</a></li><li><a href="#transcript-24-closing-announcements-and-ask-a-coach-event">Closing Announcements and Ask a Coach Event</a></li></ul></div></nav>
+      <article class="summary"><section class="sec sec-a">
 <h2 id="transcript-0-music-intro-and-opening-songs">Music Intro and Opening Songs</h2>
-<p><span class="speaker">Dr. K:</span> [Music] Heat. Heat. [Music] Give it up. Give it up. Give it away. You were barely alive if you meant that day. Cut off so much. You knew that there was still a way. Cry again and try anyway when you got them back. But then you had to f stand up still to this day. You knew that there was still a way. This is your only plan. Now this is your only now. This is your only plan. Oh, now this is yours. now this is yours. That&#x27;s That&#x27;s fine. It&#x27;s all you&#x27;ve ever known. A single state of mind. But you won&#x27;t ever let it go. When you have the answer, when you were there alone, you left the door unopened when you knew that you were one more. Give it up. Give it up. Give it away. While you were barely aware you like that day, cut off so much remain. You knew that there was still a way to show your plan. Oh, now this is your now this is your [Music] [Music] only plan on this. You&#x27;re right. You force it to yield. You&#x27;ll forge it to the lions. You let your callous be your shield. And everyone will say, &quot;Let it all was finished years ago.&quot; But you will say and you won&#x27;t ever let it go. When you had the answer and you were there alone, you left the door open. When you knew that you were one day and again you found the answer and you were there alone the door uns when you knew you was one more [Music] Heat. Heat.</p>
+<p>[Music] Heat. Heat. [Music] Give it up. Give it up. Give it away. You were barely alive if you meant that day. Cut off so much. You knew that there was still a way. Cry again and try anyway when you got them back. But then you had to f stand up still to this day. You knew that there was still a way. This is your only plan. Now this is your only now. This is your only plan. Oh, now this is yours. now this is yours. That&#x27;s That&#x27;s fine. It&#x27;s all you&#x27;ve ever known. A single state of mind. But you won&#x27;t ever let it go. When you have the answer, when you were there alone, you left the door unopened when you knew that you were one more. Give it up. Give it up. Give it away. While you were barely aware you like that day, cut off so much remain. You knew that there was still a way to show your plan. Oh, now this is your now this is your [Music] [Music] only plan on this. You&#x27;re right. You force it to yield. You&#x27;ll forge it to the lions. You let your callous be your shield. And everyone will say, &quot;Let it all was finished years ago.&quot; But you will say and you won&#x27;t ever let it go. When you had the answer and you were there alone, you left the door open. When you knew that you were one day and again you found the answer and you were there alone the door uns when you knew you was one more [Music] Heat. Heat.</p>
 <p>[Music] You wait one more day and find the answer. Then you were there alone. You left the door open when you knew that you would want [Music] more. Well, that&#x27;s my phone. 3 years back and I don&#x27;t have an actress as a matter of fact. But I guess you tried to drop me a line. Yeah, I signed out and I unsubscribed and I cut the cord. Now I&#x27;m not online, but I&#x27;ll be fine. Yeah, I guess that I&#x27;ll get by. guess that I&#x27;ll get by. [Music] Well, shaved my head and cried a beard. Now I only got I&#x27;m moving to LA. I&#x27;m writing a screenplay, but it&#x27;s not about you. We were about a new girl. You never met her. She&#x27;s just got your name and she looks exactly the same. How do you know? Tell me it&#x27;s okay that I drop right off the map and I&#x27;m falling every day.</p>
 <p>falling every day. Tell Tell me. Tell me it&#x27;s okay cuz you&#x27;ll find me me. Tell me it&#x27;s okay cuz you&#x27;ll find me [Music] anyway. Yeah. If you see me walking by, well, I guarantee it&#x27;s some other guy cuz I&#x27;m not there. Yeah, I&#x27;m always elsewhere. I shake my name. I approve it down. You won&#x27;t see it soon. I guess you see there&#x27;s not much to me. I guess for me there&#x27;s not much to see. Tell me. Tell me it&#x27;s okay that I drop right off the map and I&#x27;m falling every day. tell me tell me it&#x27;s okay cuz you&#x27;ll find me me tell me it&#x27;s okay cuz you&#x27;ll find me anyway. [Music] I know you&#x27;ll see that there&#x27;s not much left to me. Well, once I hear I&#x27;ll cross your path. I&#x27;ll hurry away. You&#x27;ll sight for a laugh. It&#x27;s not that I&#x27;m scared. You just got me unaware. Well, I know it&#x27;s been a couple of years, but still I&#x27;m surprised we ended up here. We&#x27;ll talk a bit to see what we&#x27;ve lost. Don&#x27;t stop when you see a bit better off. Tell me you know. Tell me it&#x27;s okay. I jump right off the mountain and I&#x27;m falling every day. Tell me no. Tell me it&#x27;s okay. Cuz you&#x27;ll find me anywhere. You&#x27;ll find me anywhere.</p>
 <p>[Music] as intertwined four separate lines. another point to you. A tangled nest of knots I confess, but the intent was there. I swear he&#x27;s set our sides on something that we thought was true. So now we sit and stare across a surface spanning the whole state. Two feet per miles apart. No, it&#x27;s the speed we haven&#x27;t got a clue. It falls apart. It&#x27;s not a heart to beat the hell. It falls apart. It&#x27;s not a heart hell. It falls apart. It&#x27;s not a heart to to have. It falls apart. There&#x27;s not a heart to be there. It falls apart. There&#x27;s not a heart to have. Each word a world of its own. Each surrendered only in groans.</p>
@@ -230,15 +393,21 @@ try {
 <p>Check that stuff out if you want. Um there&#x27;s also things like meditation practice and things like that by one of our meditation leads who&#x27;s great. Um so yeah, thank you all for coming today. I know things are challenging. I know we had a ton of questions we didn&#x27;t get to, but we&#x27;ll definitely keep track of those and then I&#x27;ll I&#x27;ll see if there&#x27;s something that, you know, can turn into a standalone lecture or something like that. And then I will see y&#x27;all next week. So, we&#x27;re streaming I think three days this week or next week. I think I&#x27;m doing building your social circle in 5 days and then an interview and then I&#x27;m doing something else. I forget what it is. Hold on. What am I doing? Oh, yeah.</p>
 <p>answers voicemails. So, take care everybody. Hope y&#x27;all are surviving. Hope we can help you thrive. And um yeah, have some fun. Have a good weekend. Happy Friday, everybody.</p>
 </section></article>
+    </div>
   </div>
+  
 
-  <p class="meta">Auto-transcribed livestream · chapters &amp; speaker labels are a best-effort approximation (claude-sonnet-4-6).</p>
+  <p class="meta">Medium summary · claude-sonnet-4-6 (no extended thinking)</p>
 </div>
 
 <script>
 (function () {
   var root = document.documentElement;
-  var tb = document.querySelector('.theme-toggle');
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'medium');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
   var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
   tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
@@ -246,6 +415,16 @@ try {
   function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
   var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+  // deep-link to a heading in any view: switch to that view, then scroll to it
+  function navigateTo(id){
+    var el = id && document.getElementById(id);
+    if (!el) return;
+    var v = el.closest('.view');
+    if (v) setView(v.getAttribute('data-view'));
+    el.scrollIntoView();
+  }
+  window.addEventListener('hashchange', function(){ navigateTo(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash) navigateTo(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>
 <script>

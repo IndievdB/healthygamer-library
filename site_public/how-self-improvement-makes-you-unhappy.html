@@ -9,7 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-} catch (e) {}
+  document.documentElement.setAttribute('data-view', localStorage.getItem('pubview') || 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -24,16 +25,167 @@ try {
   </nav>
 
   <h1>How Self-Improvement Makes you Unhappy</h1>
-  <p class="watch">
-    <a href="https://www.youtube.com/watch?v=5rEYnz7wIOs" target="_blank" rel="noopener">▶ Watch on YouTube</a>
-    <span class="speakers-note">Speakers (auto-detected): Dr. K</span>
-  </p>
+  <p class="watch"><a href="https://www.youtube.com/watch?v=5rEYnz7wIOs" target="_blank" rel="noopener">▶ Watch on YouTube</a></p>
 
-  <div class="doc">
-    <nav class="toc"><p class="toc-title">Chapters</p><ul><li><a href="#transcript-0-morning-routine-reactions-and-dopamine-depletion">Morning Routine Reactions and Dopamine Depletion</a></li><li><a href="#transcript-1-why-self-improvement-content-creates-an-addictive-loop">Why Self-Improvement Content Creates an Addictive Loop</a></li><li><a href="#transcript-2-emotion-as-the-driver-behind-self-help-addiction">Emotion as the Driver Behind Self-Help Addiction</a></li><li><a href="#transcript-3-how-to-actually-break-the-self-help-loop">How to Actually Break the Self-Help Loop</a></li><li><a href="#transcript-4-distress-tolerance-and-putting-yourself-out-there">Distress Tolerance and Putting Yourself Out There</a></li><li><a href="#transcript-5-breathing-vs-anxiety-the-10-second-technique">Breathing vs. Anxiety: The 10-Second Technique</a></li><li><a href="#transcript-6-why-self-improvement-advice-can-backfire-in-dating">Why Self-Improvement Advice Can Backfire in Dating</a></li><li><a href="#transcript-7-projections-and-assumptions-sabotaging-dating-life">Projections and Assumptions Sabotaging Dating Life</a></li><li><a href="#transcript-8-selection-bias-and-creating-your-own-reality">Selection Bias and Creating Your Own Reality</a></li><li><a href="#transcript-9-economic-disadvantages-facing-younger-generations">Economic Disadvantages Facing Younger Generations</a></li><li><a href="#transcript-10-tiredness-cell-phones-and-breaking-the-exhaustion-cycle">Tiredness, Cell Phones, and Breaking the Exhaustion Cycle</a></li><li><a href="#transcript-11-streaming-coaching-and-tailoring-advice-to-the-individual">Streaming, Coaching, and Tailoring Advice to the Individual</a></li><li><a href="#transcript-12-spiritual-retreats-and-neurodiversity">Spiritual Retreats and Neurodiversity</a></li><li><a href="#transcript-13-adhd-habits-compensatory-strategies-and-workshops">ADHD Habits, Compensatory Strategies, and Workshops</a></li><li><a href="#transcript-14-breathing-vs-gaming-for-managing-anxiety">Breathing vs. Gaming for Managing Anxiety</a></li><li><a href="#transcript-15-dharma-vs-emotion-as-motivational-forces">Dharma vs. Emotion as Motivational Forces</a></li><li><a href="#transcript-16-trauma-identity-and-fear-of-healing">Trauma, Identity, and Fear of Healing</a></li><li><a href="#transcript-17-ego-dissolution-and-letting-go-of-identity">Ego Dissolution and Letting Go of Identity</a></li><li><a href="#transcript-18-accepting-consequences-and-taking-action">Accepting Consequences and Taking Action</a></li><li><a href="#transcript-19-small-reductions-in-gaming-yield-large-life-gains">Small Reductions in Gaming Yield Large Life Gains</a></li></ul></nav>
-    <article class="summary transcript"><section class="sec sec-a">
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">2,483w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">24,704w</span></button>
+    
+  </div>
+
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#medium-summary">Summary</a></li>
+<li><a href="#medium-the-hidden-engine-behind-self-improvement-addiction">The Hidden Engine Behind Self-Improvement Addiction</a></li>
+<li><a href="#medium-why-the-24-year-old-improver-is-also-stuck">Why the 24-Year-Old Improver Is Also Stuck</a></li>
+<li><a href="#medium-what-put-yourself-out-there-actually-means">What "Put Yourself Out There" Actually Means</a></li>
+<li><a href="#medium-the-real-problem-in-dating">The Real Problem in Dating</a></li>
+<li><a href="#medium-tiredness-the-economy-and-what-to-do-anyway">Tiredness, the Economy, and What to Do Anyway</a></li>
+<li><a href="#medium-dharma-vs-emotional-drive-telling-the-difference">Dharma vs. Emotional Drive: Telling the Difference</a></li>
+<li><a href="#medium-identity-and-why-letting-go-is-the-point">Identity and Why Letting Go Is the Point</a></li>
+<li><a href="#medium-common-pitfalls">Common Pitfalls</a></li>
+<li><a href="#medium-action-items-exercises">Action Items &amp; Exercises</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="medium-summary">Summary</h2>
+<p><strong>TL;DR — Self-improvement content is often a drug, not a path. Understanding <em>why</em> you're improving matters more than what you're improving.</strong></p>
+<p>This talk covers why people get trapped in cycles of consuming self-help content without actually changing, why relentless self-improvement can become its own prison, how to actually "put yourself out there" (the mechanics nobody explains), what's really going wrong in modern dating, and why tiredness and emotional exhaustion are signals worth understanding rather than pushing through blindly.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-the-hidden-engine-behind-self-improvement-addiction">The Hidden Engine Behind Self-Improvement Addiction</h2>
+<p>The first thing to understand about someone who watches hours of motivational content, saves videos for later, and never acts: the problem is not laziness. The problem is that the <em>driver</em> behind their self-improvement is an emotion.</p>
+<p>Here's the mechanism. You get rejected. That creates a feeling — dejection, inadequacy, something like "I'm a loser." That feeling becomes the engine. Your brain's goal is not actually to improve. Its goal is to <em>fix the feeling</em>. And the moment you watch an inspiring video and feel motivated, the feeling is temporarily fixed. Brain satisfied. Loop complete. No improvement required.</p>
+<blockquote>
+<p>"The moment that you feel inspired by watching some kind of self-improvement video, then you have fixed the problem. I feel dejected, now I feel inspired. The whole goal is to change my internal emotional state."</p>
+</blockquote>
+<p>A hundred years ago this loop couldn't close so easily. If you felt rejected and wanted to feel better, you had to <em>do something</em> — go to the gym, learn a skill, accomplish something. Inspiration required effort. Now inspiration is available on tap, which means your brain can fix the emotional signal without any real-world action at all.</p>
+<p>The result is a loop: feel bad → watch content → feel inspired → feel bad again → watch more content. Each pass through the loop <em>reinforces</em> the behavior, exactly like any other habit. Your brain has learned: "When I feel dejected, the solution is motivational content." It works, temporarily. That's why it keeps happening.</p>
+<p>Critically, watching inspirational videos does not <em>process</em> the original feeling. It suppresses it. So when you actually go out into the world and try to interact with people, the original feeling — I'm not good enough, people will judge me — comes roaring back. The video changed nothing underneath.</p>
+<p><strong>The fix</strong>: recognize that this cycle has nothing to do with self-improvement. It's emotional regulation that has hijacked the appearance of self-improvement. The actual work is processing the original emotional wound, not accumulating more content.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-why-the-24-year-old-improver-is-also-stuck">Why the 24-Year-Old Improver Is Also Stuck</h2>
+<p>There's a second, distinct pattern: the person who genuinely does improve — reads 50 books, lifts heavy, learns languages, quits smoking — but feels empty and just... keeps going. Improvement becomes the goal itself, not a means to an end.</p>
+<p>This connects to body dysmorphia as a useful analogy. Someone with body dysmorphia links an abstract, undefinable feeling ("I'm ugly") to a measurable proxy ("thinness" or "muscle size"). They pursue the proxy relentlessly, but the proxy never touches the original wound. They get thinner. They still feel ugly.</p>
+<p>The same structure appears in men who receive constant cultural messaging that they are inadequate — not tall enough, not rich enough, not successful enough. The world gives you a thousand signals that you fall short. So you improve. But the feeling of inadequacy isn't located in your bench press number or your language skills. Improving those things gives temporary relief and then the emptiness returns, which is exactly why you go back and improve some more.</p>
+<blockquote>
+<p>"If your goal is to be better so that the future is less risky, when does that end? When do you feel accomplished? When do you feel content? When do you feel peace?"</p>
+</blockquote>
+<p>There's also a gendered tendency at work here. Men are often <strong>external problem solvers</strong> — when something feels bad internally, the instinct is to fix something outside. Change the circumstance so the environment stops sending bad signals. It feels logical. But it means the internal state never gets directly addressed.</p>
+<p>The practical question to sit with: <em>Why does improvement make you feel better, and why does that feeling go away?</em> If the feeling is always temporary, you're on a treadmill, not a path.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-what-put-yourself-out-there-actually-means">What "Put Yourself Out There" Actually Means</h2>
+<p>This is probably the most actionable section of the talk. Everyone gives this advice. Almost nobody explains the mechanics.</p>
+<p>The reason it's easy for some people and miserable for others comes down to <strong>baseline distress tolerance</strong> — how much emotional discomfort you can sit with before your nervous system tells you to flee. If your signals run hot, being told to "just put yourself out there" is like being told to "just do a cartwheel." Simple for the person saying it. Not simple for you.</p>
+<p>Here are the actual phases:</p>
+<p><strong>Phase 1: Tolerate without retreating.</strong> Enter the uncomfortable situation. Don't run away. Don't force engagement either. Just stay. Your distress will typically rise and then, if you don't flee and don't feed the anxiety with more thoughts, it will come down on its own. Like jumping into cold water — the initial shock passes as your body acclimatizes.</p>
+<p><strong>Phase 2: Engage.</strong> Once your distress has come down enough, now you try to interact. Ask a simple contextual question. Comment on something you both share. The point isn't brilliance. The point is engagement while your amygdala is no longer suppressing your dopaminergic circuits.</p>
+<p><strong>Phase 3: Let pleasure register.</strong> When anxiety drops, the capacity for enjoyment opens up. You might have a decent interaction. Your brain registers a little dopamine. That creates craving and reinforcement. Next time, you want to do it again.</p>
+<p>The critical caveat: during Phase 1, don't engage with the anxious thoughts. Anxiety chains — one thought leads to another leads to catastrophe. You have to <em>break the chain</em>. The method:</p>
+<blockquote>
+<p>"Take 60 seconds to breathe. Count to 10 as you breathe in, count to 10 as you breathe out."</p>
+</blockquote>
+<p>The reason this works where "just take a deep breath" doesn't: the 10-second count demands your cognitive attention. You have to concentrate to do it. That concentration occupies the mind that was running the anxiety spiral. It also slows your respiratory rate enough to activate the vagus nerve and shift your physiology toward calm.</p>
+<p>Gaming, by contrast, also breaks the thought chain — but it removes you from the situation entirely and requires no effort. Breathing keeps you in the situation and requires effort. One conditions you, one deconditions you.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-the-real-problem-in-dating">The Real Problem in Dating</h2>
+<p>Self-improvement advice for dating typically implies "you're not enough." But that framing misses something more fundamental: most of the damage in dating comes from <strong>operating on projections rather than reality</strong>.</p>
+<p>When you're not texting with a person — you're texting with everything that person has experienced with your gender, summarized into a template, overlaid on top of you. You start from a score of negative 1000 that you didn't earn. That's why it feels impossible.</p>
+<p>But here's the harder truth: you do this too. Everyone does. The brain draws conclusions from past interactions and uses them to predict the future. It's a survival mechanism.</p>
+<p>The practical path forward isn't a better pickup line. It's <strong>removing associations</strong>. Notice every time you attach a meaning to someone's behavior that isn't explicitly stated. Why aren't they texting back? You don't know. Your brain fills in a story. Catch the fill. Don't act on it.</p>
+<p>There's also a selection bias problem that almost nobody notices. How you carry yourself and what you signal determines who you attract and who self-selects out. If you're leading with wealth to compensate for insecurity about being loved, you select for people who are attracted to displays of wealth. The data you collect from that experience is not the data you think it is.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-tiredness-the-economy-and-what-to-do-anyway">Tiredness, the Economy, and What to Do Anyway</h2>
+<p>A recurring thread in the talk is tiredness — both the kind from gaming and phones, and the structural kind that comes from living in an economy that feels rigged.</p>
+<p>On the structural side: the previous generation grew up in a period of unusual economic mobility. 40 hours of work translated into upward trajectory. They passed on the <em>assumptions</em> of that world, not just work ethic. But the "meta" has been figured out by people with far more data and capital than any individual worker. That's not a moral failing. It's the situation.</p>
+<p>Tiredness has a neurological explanation: when your brain concludes that additional effort won't change your outcome, it conserves energy. Literally. Hibernating bears feel tired because searching for food in winter yields nothing. The subjective experience of hopelessness and the subjective experience of tiredness are deeply linked.</p>
+<p>The answer isn't motivational — it's structural and incremental:
+- Start with 15 minutes of useful work or exercise when you get home, even when exhausted
+- Reduce phone and social media use — emotional exhaustion from consuming content is physiologically indistinguishable from other emotional exhaustion
+- Gradually expand the time as your tolerance builds
+- Protect at least one full day of genuine rest</p>
+<p>The larger principle: the first hours you reclaim from passive consumption are worth the most. Going from 14 hours of gaming to 12 hours loses almost no pleasure (the last hours of any gaming session are the least enjoyable) while the two reclaimed hours can be disproportionately productive.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-dharma-vs-emotional-drive-telling-the-difference">Dharma vs. Emotional Drive: Telling the Difference</h2>
+<p>There's a useful distinction between being driven by emotion (moving <em>away</em> from something bad) versus being called by dharma/purpose (moving <em>toward</em> something meaningful).</p>
+<p>Emotional drives tend to oscillate between pain and relief. Dharma tends to move between neutrality and fulfillment. Emotions come and go quickly; the pull of dharma is more persistent and subtle.</p>
+<p>The simplest test: when your mind is genuinely quiet — not suppressing, not distracted, just peaceful — what floats to the surface? That's more likely to be your actual direction. Emotion, by contrast, tends to disappear in genuine stillness.</p>
+<p>The more precise question to ask yourself isn't "do I feel good?" but: <strong>do I feel less bad, or do I feel more good?</strong> Those are different. Dulling the pain of inadequacy and genuinely moving toward meaning feel different if you pay close enough attention.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-identity-and-why-letting-go-is-the-point">Identity and Why Letting Go Is the Point</h2>
+<p>When people ask "how do I improve without losing who I am," the uncomfortable answer is: improving <em>requires</em> losing part of who you are. That's what healing is.</p>
+<p>People who've experienced trauma often resist change not because they don't want things to be different, but because the self they've built — however painful — is a <em>proven survivor</em>. Changing means encountering uncertainty, and uncertainty is scarier than familiar danger. The devil you know.</p>
+<p>Research on the therapeutic effects of psychedelics points toward <strong>ego dissolution</strong> as a primary mechanism of healing. Hyperactivity of the default mode network (roughly, the brain's self-referential circuitry) is correlated with depression and suicidality. The identity that says "I am a loser, I don't deserve forgiveness" is not protective. It is the problem.</p>
+<blockquote>
+<p>"Losing your identity is the goal, not the thing to be avoided."</p>
+</blockquote>
+<p>When you're genuinely absorbed in an experience — enjoying coffee on a balcony, fully present with someone you care about — you're not thinking about yourself. That absence of self-referential chatter is not a loss. It's what peace actually feels like.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-common-pitfalls">Common Pitfalls</h2>
+<ul>
+<li><strong>Treating motivation as a resource to be filled.</strong> Watching content to feel inspired is filling a tank that has a hole in the bottom. The work is patching the hole, not refilling the tank.</li>
+<li><strong>Confusing relief with progress.</strong> Feeling better after watching a video is not the same as having changed anything.</li>
+<li><strong>Adding conditions to goals.</strong> "How do I improve without losing my identity while forgiving myself for past mistakes" is three separate goals dressed as one. Pick one. The conditions we place on our actions are usually what paralyze us.</li>
+<li><strong>Interpreting advice as judgment.</strong> "Go to the gym" doesn't necessarily mean "you're not enough." Your brain makes that leap automatically. Notice when it does.</li>
+<li><strong>Thinking "putting yourself out there" is about output.</strong> It's actually about <em>staying</em> in a situation long enough for your nervous system to acclimatize. The output (talking to someone) comes after.</li>
+<li><strong>Using games or content to tolerate distress long-term.</strong> Both break the anxiety chain short-term. But gaming removes you from the situation and requires no effort — it deconditions your ability to stay present under discomfort. Breathing keeps you there and makes you stronger.</li>
+</ul>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-action-items-exercises">Action Items &amp; Exercises</h2>
+<ol>
+<li>
+<p><strong>Identify your emotional driver.</strong> Ask yourself honestly: what feeling am I trying to get rid of by improving? Write it down. Is it rejection? Inadequacy? Fear of uncertainty? Understanding the origin tells you whether your improvement is building something or just managing a feeling.</p>
+</li>
+<li>
+<p><strong>Sit with the feeling directly.</strong> Schedule 15–20 minutes of intentional nothing — no phone, no content, no tasks. When feelings of inadequacy, restlessness, or anxiety arise, don't act on them and don't suppress them. Practice watching them. Use the breathing technique (10 seconds in, 10 seconds out, three cycles, 60 seconds total) when the discomfort peaks.</p>
+</li>
+<li>
+<p><strong>Practice distress tolerance in phases.</strong> For any social situation that makes you anxious: first, just stay in the environment without fleeing and without forcing interaction. Let the initial spike pass. Only after the discomfort drops do you try to engage. Don't skip to engagement before you've done the tolerating.</p>
+</li>
+<li>
+<p><strong>Break the anxiety chain with breath, not games.</strong> When anxiety starts cascading (one thought leading to another), don't open your phone or start a game. Breathe: count silently to 10 on the inhale, 10 on the exhale. Repeat three times. Notice your state before and after.</p>
+</li>
+<li>
+<p><strong>Audit your associations in dating or social situations.</strong> For one week, every time someone doesn't text back, or says something ambiguous, write down the story your brain immediately attached to it. Don't judge it. Just collect the data. Awareness of how quickly and automatically you fill gaps is the first step to operating on reality instead of projection.</p>
+</li>
+<li>
+<p><strong>Reclaim time incrementally, not dramatically.</strong> Don't swear off gaming or scrolling entirely. Instead, delay the start by one hour and use that hour for one concrete thing — a short workout, 15 minutes of a skill, a walk. The last hours of any passive activity are the least enjoyable anyway. You lose almost nothing and gain a disproportionate amount.</p>
+</li>
+<li>
+<p><strong>Ask the right quality-of-feeling question.</strong> When you feel "better" after doing something, pause and ask: am I feeling less bad, or am I feeling more good? Practice distinguishing between relief (moving away from pain) and fulfillment (moving toward something). The more you practice the distinction, the easier it becomes to orient your actions around the latter.</p>
+</li>
+</ol>
+</section></article>
+    </div>
+  </div>
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc"><ul><li><a href="#transcript-0-morning-routine-reactions-and-dopamine-depletion">Morning Routine Reactions and Dopamine Depletion</a></li><li><a href="#transcript-1-why-self-improvement-content-creates-an-addictive-loop">Why Self-Improvement Content Creates an Addictive Loop</a></li><li><a href="#transcript-2-emotion-as-the-driver-behind-self-help-addiction">Emotion as the Driver Behind Self-Help Addiction</a></li><li><a href="#transcript-3-how-to-actually-break-the-self-help-loop">How to Actually Break the Self-Help Loop</a></li><li><a href="#transcript-4-distress-tolerance-and-putting-yourself-out-there">Distress Tolerance and Putting Yourself Out There</a></li><li><a href="#transcript-5-breathing-vs-anxiety-the-10-second-technique">Breathing vs. Anxiety: The 10-Second Technique</a></li><li><a href="#transcript-6-why-self-improvement-advice-can-backfire-in-dating">Why Self-Improvement Advice Can Backfire in Dating</a></li><li><a href="#transcript-7-projections-and-assumptions-sabotaging-dating-life">Projections and Assumptions Sabotaging Dating Life</a></li><li><a href="#transcript-8-selection-bias-and-creating-your-own-reality">Selection Bias and Creating Your Own Reality</a></li><li><a href="#transcript-9-economic-disadvantages-facing-younger-generations">Economic Disadvantages Facing Younger Generations</a></li><li><a href="#transcript-10-tiredness-cell-phones-and-breaking-the-exhaustion-cycle">Tiredness, Cell Phones, and Breaking the Exhaustion Cycle</a></li><li><a href="#transcript-11-streaming-coaching-and-tailoring-advice-to-the-individual">Streaming, Coaching, and Tailoring Advice to the Individual</a></li><li><a href="#transcript-12-spiritual-retreats-and-neurodiversity">Spiritual Retreats and Neurodiversity</a></li><li><a href="#transcript-13-adhd-habits-compensatory-strategies-and-workshops">ADHD Habits, Compensatory Strategies, and Workshops</a></li><li><a href="#transcript-14-breathing-vs-gaming-for-managing-anxiety">Breathing vs. Gaming for Managing Anxiety</a></li><li><a href="#transcript-15-dharma-vs-emotion-as-motivational-forces">Dharma vs. Emotion as Motivational Forces</a></li><li><a href="#transcript-16-trauma-identity-and-fear-of-healing">Trauma, Identity, and Fear of Healing</a></li><li><a href="#transcript-17-ego-dissolution-and-letting-go-of-identity">Ego Dissolution and Letting Go of Identity</a></li><li><a href="#transcript-18-accepting-consequences-and-taking-action">Accepting Consequences and Taking Action</a></li><li><a href="#transcript-19-small-reductions-in-gaming-yield-large-life-gains">Small Reductions in Gaming Yield Large Life Gains</a></li></ul></div></nav>
+      <article class="summary"><section class="sec sec-a">
 <h2 id="transcript-0-morning-routine-reactions-and-dopamine-depletion">Morning Routine Reactions and Dopamine Depletion</h2>
-<p><span class="speaker">Dr. K:</span> [Music] So what we want to do is cultivate the So what we want to do is cultivate the compa compa cultivate a capacity for kindness. So close your eyes, take a few moments to breathe in and breathe out. [Music] Ooh. Ooh. Ooh. Ooh. [Music] [Music] [Music] [Applause] [Applause] [Applause] [Music] [Music] [Music] We We We [Music] [Applause] [Applause] [Music] [Music] are heat. are heat. [Music] [Music] Heat. Heat. [Music] All right, welcome to another Healthy Gamer GG stream. My name is Dr. Al Kenoja. Just a reminder that although I&#x27;m a psychiatrist, nothing we discuss on stream today is intended to be taken as medical advice. Everything is for educational or entertainment purposes only. If yall have a medical concern or question, please go see a licensed professional. Hello everyone, welcome. Today we are going to be welcome. Today we are going to be talking talking uh yeah, we&#x27;re going to be talking about self-improvement. And I understand that there are some fun things that I get to react to today. So, let&#x27;s dive right in.</p>
+<p>[Music] So what we want to do is cultivate the So what we want to do is cultivate the compa compa cultivate a capacity for kindness. So close your eyes, take a few moments to breathe in and breathe out. [Music] Ooh. Ooh. Ooh. Ooh. [Music] [Music] [Music] [Applause] [Applause] [Applause] [Music] [Music] [Music] We We We [Music] [Applause] [Applause] [Music] [Music] are heat. are heat. [Music] [Music] Heat. Heat. [Music] All right, welcome to another Healthy Gamer GG stream. My name is Dr. Al Kenoja. Just a reminder that although I&#x27;m a psychiatrist, nothing we discuss on stream today is intended to be taken as medical advice. Everything is for educational or entertainment purposes only. If yall have a medical concern or question, please go see a licensed professional. Hello everyone, welcome. Today we are going to be welcome. Today we are going to be talking talking uh yeah, we&#x27;re going to be talking about self-improvement. And I understand that there are some fun things that I get to react to today. So, let&#x27;s dive right in.</p>
 <p>Um, okay. Let&#x27;s see. Uh, okay. Let&#x27;s talk about self-improvement. Y&#x27;all are any improvers in chat while we are um Okay, here&#x27;s All right, let&#x27;s see. Oh, hold on. Wait, this guy&#x27;s Oh, select two objects that are the same shape. Select two objects that are the same shape. Okay. All right. So, I&#x27;m going to listen to this. I don&#x27;t know if you guys can hear this. Let&#x27;s see if y&#x27;all can hear it. Um, okay. Let&#x27;s get started. Can y&#x27;all see this? Hold on. Um, give me a second, chat. Okay, I&#x27;m going to just try playing this. Can you all hear? Okay. Oh, let&#x27;s do this. I understand now. There we go. So, let&#x27;s do this. I don&#x27;t know how loud this is going to be, so be careful, chat.</p>
 <p>Okay. Toothbrush 4 a.m. Love it. Okay. So, we&#x27;re 4 hours in. Okay, that&#x27;s kind of interesting. I wonder how y&#x27;all feel about that. Dealers in chat. So, what do y&#x27;all think about that morning routine? Oh. Oh, no. It&#x27;s autoplay. Stop it. No sound of video. Okay. Yeah. So, this seems to be like a big meme, I guess. What do y&#x27;all think? I mean, so look, I may have kind of a hot take on this. Okay, so, you know, we have all these extravagant morning routines. Like, I I think that that&#x27;s So, what people seem to be reacting to is the extravagance of it. Maybe it&#x27;s performative. I don&#x27;t know. I mean, it is recorded, right? So maybe that that&#x27;s like literally a performance. Um, but I I I think first of all, so in a sense, my morning routine is like somewhat similar. So there was a period of time where I wake up at 4:00 a.m. And if you kind of look at it like just don&#x27;t and I I imagine that the way that they&#x27;re portraying the morning routine is that it is very like glamorous, right? So, he uses, I guess, some fancy bottled water to rinse out his mouth, which is fine, I guess. I mean, if you have the money and you like the bottled water and you want to rinse with bottled water, like, go for it. Um, you know, he goes for a swim. It looks like he has a really nice balcony. Like, I I think that that&#x27;s all fine. But I I think the substance of the morning routine is like pretty good. like you wake up at 4 am. It sounds like he takes some time in the morning to really like prepare for his day before he actually gets to his day, which I think is good.</p>
 <p>Seems like he meditates, seems like he brushes his teeth. Um, you know, I I think that&#x27;s okay. And then the second thing is that I I think, you know, the key thing here is that all of the working out, it seems like his job is doing that, right? So like his so so he shows a lot of working out but that&#x27;s his job. So yeah I mean it it it has ad vibes but whatever. I think it&#x27;s okay. So I I I think the more like important thing is um you know there are a lot of people who are super focused on having a super optimal morning routine. And I think that what we can kind of like end up that what we can kind of like end up with with is I I mean, so so I&#x27;m not quite sure if this is something that people are supposed to like mimic or what. Yeah. So I I think for those of y&#x27;all that are like inspired by it, like great, you know, I think it&#x27;s not I I would not get distracted by all the glamour and all of the, you know, specific highquality stuff that he uses presumably like his shoes or whatever.</p>
@@ -211,15 +363,21 @@ try {
 <p>You&#x27;re trading in two hours of gaming in which you gain a ton, but you don&#x27;t lose much enjoyment because you&#x27;re still playing for 12 hours. Those last two hours aren&#x27;t even fun. You just can&#x27;t hours aren&#x27;t even fun. You just can&#x27;t stop. stop. And this is something that like, you know, I started doing in my own life and like hopefully like it&#x27;ll turn into a video at some point. But it&#x27;s like what I started doing is I started cutting back on my gaming and I was like instead of playing a game like instead of starting Dota at 5:00 p.m. I&#x27;m going to start at 6 p.m. I&#x27;m going to just do this one thing for 1 hour. And what I noticed is like I started going to the gym three times a week. It&#x27;s like like I can just go to the gym real quick and then come back and start Dota at 6 instead of five, right? It&#x27;s like hold on a second. Just think about this. Think about the yield. Cutting back on Dota for 3 hours a week allows me to go to the gym for three hours a week, which is like a pretty big check. And I&#x27;m not trying to say like I&#x27;m swoll. I&#x27;m not like I&#x27;m just trying not to, you know, have a heart attack at 65. Like that&#x27;s the goal. Doing basic cardiovascular exercise so I don&#x27;t die cuz I&#x27;m in my exercise so I don&#x27;t die cuz I&#x27;m in my 40s.</p>
 <p>40s. Okay. But do y&#x27;all do y&#x27;all get that? Like how much enjoyment do you give up when I&#x27;m playing Dota for 25 hours a week and I drop down to 22 and I&#x27;m like reaching my exercise goals? Like that [ __ ] is so OP. like why don&#x27;t we do that? Does that make sense? I don&#x27;t know. Anyway, so hopefully we&#x27;ll like turn that into something more formal, but I wanted to share that with y&#x27;all today. So, thank you all very much for coming. Right. It&#x27;s kind of weird. Everyone&#x27;s like so drastic. They&#x27;re like, I need to cut this thing out of my life. You don&#x27;t need to cut it. Just do life. You don&#x27;t need to cut it. Just do it less. Okay, thank you all very much everybody. I&#x27;ll see y&#x27;all when I see everybody. I&#x27;ll see y&#x27;all when I see y&#x27;all.</p>
 </section></article>
+    </div>
   </div>
+  
 
-  <p class="meta">Auto-transcribed livestream · chapters &amp; speaker labels are a best-effort approximation (claude-sonnet-4-6).</p>
+  <p class="meta">Medium summary · claude-sonnet-4-6 (no extended thinking)</p>
 </div>
 
 <script>
 (function () {
   var root = document.documentElement;
-  var tb = document.querySelector('.theme-toggle');
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'medium');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
   var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
   tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
@@ -227,6 +385,16 @@ try {
   function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
   var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+  // deep-link to a heading in any view: switch to that view, then scroll to it
+  function navigateTo(id){
+    var el = id && document.getElementById(id);
+    if (!el) return;
+    var v = el.closest('.view');
+    if (v) setView(v.getAttribute('data-view'));
+    el.scrollIntoView();
+  }
+  window.addEventListener('hashchange', function(){ navigateTo(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash) navigateTo(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>
 <script>

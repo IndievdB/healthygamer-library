@@ -9,7 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-} catch (e) {}
+  document.documentElement.setAttribute('data-view', localStorage.getItem('pubview') || 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -24,16 +25,191 @@ try {
   </nav>
 
   <h1>Tired of Work, Society, and Life...</h1>
-  <p class="watch">
-    <a href="https://www.youtube.com/watch?v=Khqwm3np9wc" target="_blank" rel="noopener">▶ Watch on YouTube</a>
-    <span class="speakers-note">Speakers (auto-detected): Dr. K</span>
-  </p>
+  <p class="watch"><a href="https://www.youtube.com/watch?v=Khqwm3np9wc" target="_blank" rel="noopener">▶ Watch on YouTube</a></p>
 
-  <div class="doc">
-    <nav class="toc"><p class="toc-title">Chapters</p><ul><li><a href="#transcript-0-opening-music-and-stream-introduction">Opening Music and Stream Introduction</a></li><li><a href="#transcript-1-medical-board-reprimand-what-happened-and-why">Medical Board Reprimand: What Happened and Why</a></li><li><a href="#transcript-2-board-findings-no-restrictions-on-license-or-content">Board Findings: No Restrictions on License or Content</a></li><li><a href="#transcript-3-hg-s-ongoing-process-improvement-and-gratitude">HG&#x27;s Ongoing Process Improvement and Gratitude</a></li><li><a href="#transcript-4-privilege-of-doing-this-work-and-mental-health-crisis">Privilege of Doing This Work and Mental Health Crisis</a></li><li><a href="#transcript-5-ariana-grande-meme-and-transition-to-posts">Ariana Grande Meme and Transition to Posts</a></li><li><a href="#transcript-6-why-this-generation-is-exhausted-of-life">Why This Generation Is Exhausted of Life</a></li><li><a href="#transcript-7-societal-expectations-as-an-impossible-game">Societal Expectations as an Impossible Game</a></li><li><a href="#transcript-8-burnout-comes-from-futile-work-not-laziness">Burnout Comes from Futile Work, Not Laziness</a></li><li><a href="#transcript-9-reconnecting-with-your-internal-compass">Reconnecting with Your Internal Compass</a></li><li><a href="#transcript-10-the-ocean-churning-myth-working-through-inner-poison">The Ocean Churning Myth: Working Through Inner Poison</a></li><li><a href="#transcript-11-internal-fortitude-and-overcoming-alcohol-withdrawal">Internal Fortitude and Overcoming Alcohol Withdrawal</a></li><li><a href="#transcript-12-how-to-overcome-dependence-on-external-validation">How to Overcome Dependence on External Validation</a></li><li><a href="#transcript-13-vasanas-the-mental-habits-that-block-progress">Vasanas: The Mental Habits That Block Progress</a></li><li><a href="#transcript-14-cycle-of-getting-and-quitting-jobs-driven-by-desperation">Cycle of Getting and Quitting Jobs: Driven by Desperation</a></li><li><a href="#transcript-15-breaking-the-desperation-cycle-with-better-motivation">Breaking the Desperation Cycle with Better Motivation</a></li><li><a href="#transcript-16-below-average-iq-and-the-nocebo-effect-on-success">Below Average IQ and the Nocebo Effect on Success</a></li><li><a href="#transcript-17-iq-is-not-destiny-eq-reliability-and-slow-progress">IQ Is Not Destiny: EQ, Reliability, and Slow Progress</a></li><li><a href="#transcript-18-avoiding-the-burnout-cycle-by-listening-to-internal-signals">Avoiding the Burnout Cycle by Listening to Internal Signals</a></li><li><a href="#transcript-19-closing-remarks-and-upcoming-streams">Closing Remarks and Upcoming Streams</a></li></ul></nav>
-    <article class="summary transcript"><section class="sec sec-a">
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">2,193w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">25,667w</span></button>
+    
+  </div>
+
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#medium-summary">Summary</a></li>
+<li><a href="#medium-why-youre-exhausted-and-its-not-work-ethic">Why You're Exhausted (And It's Not Work Ethic)</a></li>
+<li><a href="#medium-the-external-attention-problem">The External Attention Problem</a></li>
+<li><a href="#medium-the-cycle-of-desperation">The Cycle of Desperation</a></li>
+<li><a href="#medium-your-mind-turns-progress-into-failure">Your Mind Turns Progress Into Failure</a></li>
+<li><a href="#medium-reconnecting-with-yourself-and-why-its-hard">Reconnecting With Yourself (And Why It's Hard)</a></li>
+<li><a href="#medium-on-being-below-average-and-what-actually-predicts-success">On Being "Below Average" — and What Actually Predicts Success</a></li>
+<li><a href="#medium-common-pitfalls">Common Pitfalls</a></li>
+<li><a href="#medium-action-items-exercises">Action Items &amp; Exercises</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="medium-summary">Summary</h2>
+<p><strong>TL;DR —</strong> When you're exhausted by work and society, the problem isn't laziness — it's that you've lost your internal compass, you're being driven by desperation instead of genuine motivation, and your mind is quietly turning every bit of progress into evidence of failure.</p>
+<p>Modern exhaustion is real, structural, and widely misdiagnosed. The standard cultural response — "you need to work harder" or "you're a loser for being tired" — gets the diagnosis almost completely backwards. The actual culprits are futile effort, impossible societal expectations, disconnection from your own inner life, and a cycle of desperation that keeps you permanently in survival mode. Understanding those mechanisms, not just grinding harder, is what breaks the pattern.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-why-youre-exhausted-and-its-not-work-ethic">Why You're Exhausted (And It's Not Work Ethic)</h2>
+<p>A common accusation hurled at younger generations is that they lack the drive previous generations had. The data says otherwise — people today are logging more hours than ever. What's changed is the <em>return</em> on that effort.</p>
+<p>Burnout's primary driver isn't working hard. It's working <strong>futilely</strong> — pouring enormous effort into something and having nothing meaningful to show for it.</p>
+<p>Part of what makes it futile is the sheer incoherence of societal expectations. Society doesn't have one set of standards; it has thousands of competing ones, and you're being graded against all of them simultaneously:</p>
+<ul>
+<li>Work hard, but also have work-life balance</li>
+<li>Be emotionally open, but not angry</li>
+<li>Have kids, but also a career</li>
+<li>Be body-positive, but also get in shape</li>
+</ul>
+<p>You can fully satisfy one faction and still fail another. The exhausting thing isn't the effort — it's that <strong>there is no winning condition</strong>. Satisfying half of society's expectations while the other half remains disappointed is the guaranteed outcome of trying to live for external approval. And when you live up to those expectations perfectly, the payoff isn't pride. It's just relief. You never actually feel good; you only briefly stop feeling bad.</p>
+<blockquote>
+<p>"If you don't live up to societal expectations you feel disappointed in yourself, and even if you do live up to them all you feel is relief. It's a lose-lose situation."</p>
+</blockquote>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-the-external-attention-problem">The External Attention Problem</h2>
+<p>There's a deeper structural cause underneath the exhaustion: most people's attention now lives almost entirely outside themselves.</p>
+<p>For the majority of human history, large stretches of the day were spent in relative quiet — foraging, walking, doing repetitive tasks that left the mind free to turn inward. That inward time wasn't wasted; it was how people developed a sense of who they were and what they actually wanted.</p>
+<p>Today, that interior space has been colonized. Podcasts during the commute, short-form video while eating, constant information input from the moment of waking. This isn't neutral. Two compounding things happen:</p>
+<ol>
+<li><strong>Your attention is continuously outside you</strong>, so you lose contact with your own preferences, values, and drives.</li>
+<li><strong>Doom-scrolling, passive entertainment, and similar habits actively suppress internal signals</strong> — numbing the very emotions and impulses that would otherwise tell you what you care about.</li>
+</ol>
+<p>The result is a void. When that void opens up and someone asks "what do you actually want?" — many people genuinely don't know. Their language about their own desires tends to be hypothesis-shaped: <em>"This seems like a good idea," "I'd probably be a good fit for this,"</em> rather than a clear felt sense of <em>I want this.</em></p>
+<p>External forces — advertising, social pressure, algorithmic content — love that void. They fill it for you.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-the-cycle-of-desperation">The Cycle of Desperation</h2>
+<p>One of the most concrete patterns that emerges from this disconnection is the job cycle:</p>
+<p><strong>Get a job → can't stand it anymore → quit → need a job → get a job → repeat</strong></p>
+<p>Most people focus on the steps in this cycle. The steps aren't the problem. What actually <em>drives</em> the cycle is the emotional energy connecting the steps — and in this case, that energy is almost entirely <strong>desperation</strong>.</p>
+<p>Here's how it runs:</p>
+<ul>
+<li>Money runs low → desperation spikes → find the first available job (no selection, just escape)</li>
+<li>Desperation disappears the moment you're hired → you stop looking for something better</li>
+<li>The job you grabbed in panic is unsatisfying → negativity slowly accumulates</li>
+<li>Negativity reaches a threshold → desperation to <em>get out</em> spikes → quit</li>
+<li>Savings drain → desperation to <em>find something</em> spikes → repeat</li>
+</ul>
+<blockquote>
+<p>"As long as you are living a life where desperation is driving you, you will accept the bare minimum."</p>
+</blockquote>
+<p>Desperation and complacency are two sides of the same coin. When desperation is high, you act impulsively. When it's relieved, you go passive. Neither state allows you to build something deliberately.</p>
+<p>The fix isn't a single heroic decision — it's changing what fuels the cycle. Specifically: when you have a job and the desperation is temporarily low, that's exactly when to keep looking for something better. When the job is grinding you down, that's exactly when to work with someone (a therapist, coach, career counselor) to stay functional while you search — rather than quitting impulsively.</p>
+<p>Reducing desperation creates space for a different kind of motivation to emerge: genuine interest, curiosity, a sense of investment in the work.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-your-mind-turns-progress-into-failure">Your Mind Turns Progress Into Failure</h2>
+<p>Even when people take the right actions — go to the gym, apply to jobs, attempt new skills — something often goes wrong afterward. This is one of the most important and least-discussed mechanisms keeping people stuck.</p>
+<p>The action is only about 25% of the process. What your mind does <em>after</em> the action is the other 75%.</p>
+<p>The yogic concept for this is a <strong>vasana</strong> — a mental habit, a conditioned reaction that fires automatically in response to an experience. Aaron Beck arrived at essentially the same idea through cognitive behavioral therapy, calling it cognitive bias. The mechanism: you take a positive step, and your mind interprets it as evidence of inadequacy.</p>
+<p>You go to the gym → <em>"Look how out of shape I am, this is embarrassing, I'm never coming back."</em></p>
+<p>You apply to jobs → <em>"Eighty rejections, I should quit."</em></p>
+<p>A therapist says you did good work → <em>"They're just saying that because they're my therapist."</em></p>
+<p>The mind isn't finding these conclusions randomly. It's following a trained groove — usually carved by someone early in your life who taught you that you weren't worth much. Confidence is the <strong>default state</strong> for humans (watch any three-year-old). Shame is learned. Once your internal confidence is damaged, you become dependent on external sources to supply it, and even then, the vasana fires to dismiss what they offer.</p>
+<blockquote>
+<p>"What is the progress that I make that my mind thinks is a mistake? This one thing will transform so much of your life."</p>
+</blockquote>
+<p>Identifying that pattern — not just taking action — is where real change lives.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-reconnecting-with-yourself-and-why-its-hard">Reconnecting With Yourself (And Why It's Hard)</h2>
+<p>The practical antidote to all of the above is reconnecting with your internal compass. This sounds simple and is genuinely difficult, for one clear reason: when you stop numbing yourself and start paying attention inward, the first things you encounter are not peace and clarity. They're shame, fear, self-doubt, and old pain.</p>
+<p>An old story from Hindu mythology captures this well: before the nectar of immortality can be retrieved from the bottom of the ocean, the churning brings poison to the surface first. Someone has to hold the poison before the good stuff emerges. Therapy and introspective work are like this — you move through layers of difficult material before reaching the confidence and motivation underneath.</p>
+<p>This is why the process requires <strong>perseverance with introspection</strong> — not just starting, but continuing when it's uncomfortable. External validation and purchased self-improvement tools can't substitute for this, because no outside source has enough information about your specific internal life to give you a map that actually fits.</p>
+<p>Two practical starting points:</p>
+<ol>
+<li><strong>Reduce technology use for an extended period</strong> — even a weekend off-grid helps restore suppressed internal signals.</li>
+<li><strong>Pay attention to what you judge harshly in yourself</strong> — self-judgment is often a flare marking something you actually care deeply about. The person who judges themselves for loving to dance but being bad at it is telling you something important. The things we love most are sometimes the things we're most ashamed to want.</li>
+</ol>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-on-being-below-average-and-what-actually-predicts-success">On Being "Below Average" — and What Actually Predicts Success</h2>
+<p>IQ correlates with income up to a point — but the correlation weakens significantly at the very top. The highest earners are not the highest scorers. What gets someone from the 10th percentile of earners to the 1st isn't raw intelligence; it's something else.</p>
+<p>What actually matters across careers and relationships:</p>
+<ul>
+<li><strong>Reliability</strong> — showing up consistently, doing what you said</li>
+<li><strong>Likability and emotional intelligence</strong> — being genuinely easy to work with</li>
+<li><strong>Kindness and altruism</strong> — human beings are community creatures; these traits compound over time</li>
+<li><strong>Empathy</strong> — and crucially, empathy can be practiced and developed; it is not fixed at birth</li>
+</ul>
+<p>The belief that early failure predicts permanent failure is itself one of the most dangerous variables at play — the <strong>nocebo effect</strong> in action. Believing you're doomed to failure measurably increases the probability of failure, independent of other variables. The F in third grade doesn't determine the trajectory; the loss of hope that follows the F is what actually forecloses options.</p>
+<p>Development is also not linear or on a fixed schedule. A person who takes six years to finish a four-year degree is still qualified when they finish. Going slow is not failing — it's operating on your own timeline. Once you reach the finish line, you work for roughly the same number of decades as everyone else.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-common-pitfalls">Common Pitfalls</h2>
+<ul>
+<li>
+<p><strong>Blaming yourself for being exhausted.</strong> The exhaustion has structural causes — impossible expectations, futile labor, disconnection from self. Treating it as a character flaw just piles shame on an already depleted system.</p>
+</li>
+<li>
+<p><strong>Focusing on the steps of a cycle, not the energy driving it.</strong> Cycles persist because of the emotional momentum between steps, not because the steps themselves are wrong. Find what fuels the cycle and change that.</p>
+</li>
+<li>
+<p><strong>Treating action as the whole solution.</strong> Going to the gym, applying to jobs, seeing a therapist — these are 25% of the work. The mental reaction afterward is what determines whether the action compounds or collapses.</p>
+</li>
+<li>
+<p><strong>Using external motivation as a permanent solution.</strong> Crafting your environment to generate motivation is clever but fragile. If the environment changes, the motivation disappears with it. It also keeps you surrendering control to something outside yourself.</p>
+</li>
+<li>
+<p><strong>Trying to "make up for lost time."</strong> Accelerating after burnout or a setback doesn't recover lost ground — it causes new injuries. The evidence-based approach from concussion treatment applies broadly: start slow, increase gradually, accept that the time is gone.</p>
+</li>
+<li>
+<p><strong>Conflating high effort with high value.</strong> Working hard on the wrong thing, or in a direction no one around you needs, doesn't generate the recognition people expect it to. Effort needs direction, not just intensity.</p>
+</li>
+</ul>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-action-items-exercises">Action Items &amp; Exercises</h2>
+<ol>
+<li>
+<p><strong>Identify what fuels your cycle.</strong> Whatever repetitive pattern you're stuck in — jobs, relationships, habits — stop analyzing the steps and ask: what emotion is moving me from step to step? Usually it's desperation, fear, or the need for approval. Name it explicitly.</p>
+</li>
+<li>
+<p><strong>Time your job search strategically.</strong> If you're in the desperation cycle with work, make a rule: keep applying while employed, not after quitting. The window of low desperation is the only time you can be selective.</p>
+</li>
+<li>
+<p><strong>Take 48–72 hours off the grid.</strong> No phone, no content, no podcasts. The first day will likely feel uncomfortable or empty. Pay attention to what surfaces in that space — what you're drawn to think about, what you'd do if no one was watching.</p>
+</li>
+<li>
+<p><strong>Ask yourself daily: what progress did I make today that my mind tried to call a mistake?</strong> Write it down. This single question begins to surface the vasana — the automatic habit that turns forward movement into evidence of failure.</p>
+</li>
+<li>
+<p><strong>Audit your self-judgment.</strong> Over the next week, notice every time you judge an impulse or preference of your own. Don't act on everything you notice — just list it. Look for patterns. Some of what you judge most harshly may be where your genuine interests live.</p>
+</li>
+<li>
+<p><strong>Practice separating effort from emotional state.</strong> Try doing 50–70% of your normal work output on a project you normally push through. Notice whether the output actually suffers or whether you've been burning extra fuel for diminishing returns.</p>
+</li>
+<li>
+<p><strong>If you suspect you're burning out, slow down first — then accelerate.</strong> Don't compensate with harder effort. Start at half your normal load and build back up in stages. The concussion clinic model: two classes before five, not five classes to catch up.</p>
+</li>
+<li>
+<p><strong>Work with a professional.</strong> A therapist is useful for healing — processing the material that surfaces during introspection. A coach is useful for accomplishment — moving forward on specific goals once internal barriers are identified. These are different tools; knowing which one you need matters.</p>
+</li>
+</ol>
+</section></article>
+    </div>
+  </div>
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc"><ul><li><a href="#transcript-0-opening-music-and-stream-introduction">Opening Music and Stream Introduction</a></li><li><a href="#transcript-1-medical-board-reprimand-what-happened-and-why">Medical Board Reprimand: What Happened and Why</a></li><li><a href="#transcript-2-board-findings-no-restrictions-on-license-or-content">Board Findings: No Restrictions on License or Content</a></li><li><a href="#transcript-3-hg-s-ongoing-process-improvement-and-gratitude">HG&#x27;s Ongoing Process Improvement and Gratitude</a></li><li><a href="#transcript-4-privilege-of-doing-this-work-and-mental-health-crisis">Privilege of Doing This Work and Mental Health Crisis</a></li><li><a href="#transcript-5-ariana-grande-meme-and-transition-to-posts">Ariana Grande Meme and Transition to Posts</a></li><li><a href="#transcript-6-why-this-generation-is-exhausted-of-life">Why This Generation Is Exhausted of Life</a></li><li><a href="#transcript-7-societal-expectations-as-an-impossible-game">Societal Expectations as an Impossible Game</a></li><li><a href="#transcript-8-burnout-comes-from-futile-work-not-laziness">Burnout Comes from Futile Work, Not Laziness</a></li><li><a href="#transcript-9-reconnecting-with-your-internal-compass">Reconnecting with Your Internal Compass</a></li><li><a href="#transcript-10-the-ocean-churning-myth-working-through-inner-poison">The Ocean Churning Myth: Working Through Inner Poison</a></li><li><a href="#transcript-11-internal-fortitude-and-overcoming-alcohol-withdrawal">Internal Fortitude and Overcoming Alcohol Withdrawal</a></li><li><a href="#transcript-12-how-to-overcome-dependence-on-external-validation">How to Overcome Dependence on External Validation</a></li><li><a href="#transcript-13-vasanas-the-mental-habits-that-block-progress">Vasanas: The Mental Habits That Block Progress</a></li><li><a href="#transcript-14-cycle-of-getting-and-quitting-jobs-driven-by-desperation">Cycle of Getting and Quitting Jobs: Driven by Desperation</a></li><li><a href="#transcript-15-breaking-the-desperation-cycle-with-better-motivation">Breaking the Desperation Cycle with Better Motivation</a></li><li><a href="#transcript-16-below-average-iq-and-the-nocebo-effect-on-success">Below Average IQ and the Nocebo Effect on Success</a></li><li><a href="#transcript-17-iq-is-not-destiny-eq-reliability-and-slow-progress">IQ Is Not Destiny: EQ, Reliability, and Slow Progress</a></li><li><a href="#transcript-18-avoiding-the-burnout-cycle-by-listening-to-internal-signals">Avoiding the Burnout Cycle by Listening to Internal Signals</a></li><li><a href="#transcript-19-closing-remarks-and-upcoming-streams">Closing Remarks and Upcoming Streams</a></li></ul></div></nav>
+      <article class="summary"><section class="sec sec-a">
 <h2 id="transcript-0-opening-music-and-stream-introduction">Opening Music and Stream Introduction</h2>
-<p><span class="speaker">Dr. K:</span> A capacity for kindness. So Close Your Eyes, take a few moments to breathe in and breathe out. [Music], oh, oh, [Music], [Music], [Music], no, no, no, [Music], [Music], [Music], [Applause], [Applause], [Applause], [Music]. But I would say on a on a deeper level, it&#x27;s more like when, when we say work on yourself, that involves all kinds of of like things about moving your life forward, and they struggle with motivation. In these things, it&#x27;s because when I don&#x27;t think I&#x27;m worth it, I&#x27;m not worth fixing. [Music], oh, oh, [Music], [Music]. When you develop empathy and compassion for other people, there&#x27;s going to be room for someone else in the relationship and then this, in turn, is going to reduce the feeling of being an, going to reduce the feeling of being an.</p>
+<p>A capacity for kindness. So Close Your Eyes, take a few moments to breathe in and breathe out. [Music], oh, oh, [Music], [Music], [Music], no, no, no, [Music], [Music], [Music], [Applause], [Applause], [Applause], [Music]. But I would say on a on a deeper level, it&#x27;s more like when, when we say work on yourself, that involves all kinds of of like things about moving your life forward, and they struggle with motivation. In these things, it&#x27;s because when I don&#x27;t think I&#x27;m worth it, I&#x27;m not worth fixing. [Music], oh, oh, [Music], [Music]. When you develop empathy and compassion for other people, there&#x27;s going to be room for someone else in the relationship and then this, in turn, is going to reduce the feeling of being an, going to reduce the feeling of being an.</p>
 <p>H. Now two people can connect, and now it&#x27;s not about getting your needs met and starvation, it&#x27;s about two human beings forming a relationship, forming a relationship [Music] h, [Music], oh, oh, [Music]. Practice wishing for the object of your met that these things happen to them. So you&#x27;ll repeat this thought maybe. May this person be happy, may this person be free and may this person be at peace. Alrighty chat, let&#x27;s get started. Welcome to another healthy gamer GG stream. My name is Dr. Alok Kanojia. Just a reminder that, although I am a doctor, nothing we discuss on stream is intended to be taken as medical advice.</p>
 </section>
 <section class="sec sec-b">
@@ -294,15 +470,21 @@ try {
 <p>And so thank you all very much for your support over the last four or five years- crazy, this has like been going on for 5 years. Now, right, we&#x27;ll be doing it for a couple more years- a minimum, I hope. But we never know what tomorrow brings. So thank you all very much. It&#x27;s an absolute privilege to be able to do this work. It&#x27;s privilege to be able to call this work. You know it&#x27;s not always fun, but it is an absolute honor and I&#x27;m grateful to y&#x27;all. And we&#x27;ll see y&#x27;all. I don&#x27;t know when. What&#x27;s next? Um, when are we back? Okay, so we have a members Q&amp;ampA on Monday and then we have a deep dive into autism spectrum, I believe scheduled for next Friday.</p>
 <p>So we&#x27;re going to do a deep dive into autism um next week, so we hope to see yall there, thank you.</p>
 </section></article>
+    </div>
   </div>
+  
 
-  <p class="meta">Auto-transcribed livestream · chapters &amp; speaker labels are a best-effort approximation (claude-sonnet-4-6).</p>
+  <p class="meta">Medium summary · claude-sonnet-4-6 (no extended thinking)</p>
 </div>
 
 <script>
 (function () {
   var root = document.documentElement;
-  var tb = document.querySelector('.theme-toggle');
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'medium');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
   var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
   tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
@@ -310,6 +492,16 @@ try {
   function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
   var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+  // deep-link to a heading in any view: switch to that view, then scroll to it
+  function navigateTo(id){
+    var el = id && document.getElementById(id);
+    if (!el) return;
+    var v = el.closest('.view');
+    if (v) setView(v.getAttribute('data-view'));
+    el.scrollIntoView();
+  }
+  window.addEventListener('hashchange', function(){ navigateTo(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash) navigateTo(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>
 <script>

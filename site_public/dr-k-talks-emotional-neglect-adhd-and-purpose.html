@@ -9,7 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-} catch (e) {}
+  document.documentElement.setAttribute('data-view', localStorage.getItem('pubview') || 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -24,16 +25,133 @@ try {
   </nav>
 
   <h1>Dr. K talks Emotional Neglect, ADHD, and Purpose</h1>
-  <p class="watch">
-    <a href="https://www.youtube.com/watch?v=FUj3-B4yI8U" target="_blank" rel="noopener">▶ Watch on YouTube</a>
-    <span class="speakers-note">Speakers (auto-detected): Dr. K</span>
-  </p>
+  <p class="watch"><a href="https://www.youtube.com/watch?v=FUj3-B4yI8U" target="_blank" rel="noopener">▶ Watch on YouTube</a></p>
 
-  <div class="doc">
-    <nav class="toc"><p class="toc-title">Chapters</p><ul><li><a href="#transcript-0-stream-intro-and-upcoming-destiny-collab">Stream Intro and Upcoming Destiny Collab</a></li><li><a href="#transcript-1-why-life-feels-like-suffering-core-problem">Why Life Feels Like Suffering: Core Problem</a></li><li><a href="#transcript-2-survival-is-no-longer-enough-world-has-changed">Survival Is No Longer Enough: World Has Changed</a></li><li><a href="#transcript-3-spirituality-as-the-study-of-the-self">Spirituality as the Study of the Self</a></li><li><a href="#transcript-4-happiness-comes-from-within-first-principle">Happiness Comes From Within: First Principle</a></li><li><a href="#transcript-5-desires-vs-duty-second-principle-of-spirituality">Desires vs. Duty: Second Principle of Spirituality</a></li><li><a href="#transcript-6-hedonic-vs-eudaimonic-happiness-in-neuroscience">Hedonic vs. Eudaimonic Happiness in Neuroscience</a></li><li><a href="#transcript-7-choice-and-reclaiming-agency-in-life">Choice and Reclaiming Agency in Life</a></li><li><a href="#transcript-8-how-to-discover-what-you-want">How to Discover What You Want</a></li><li><a href="#transcript-9-ai-girlfriends-and-the-loneliness-epidemic">AI Girlfriends and the Loneliness Epidemic</a></li><li><a href="#transcript-10-why-men-are-lonely-societal-and-cultural-roots">Why Men Are Lonely: Societal and Cultural Roots</a></li><li><a href="#transcript-11-changing-expectations-and-gender-dynamics">Changing Expectations and Gender Dynamics</a></li><li><a href="#transcript-12-emotions-anger-and-double-standards">Emotions, Anger, and Double Standards</a></li><li><a href="#transcript-13-taking-collective-responsibility-for-male-loneliness">Taking Collective Responsibility for Male Loneliness</a></li><li><a href="#transcript-14-healthygamer-coaching-and-resources">HealthyGamer Coaching and Resources</a></li></ul></nav>
-    <article class="summary transcript"><section class="sec sec-a">
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">2,349w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">20,540w</span></button>
+    
+  </div>
+
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#medium-summary">Summary</a></li>
+<li><a href="#medium-why-life-feels-like-pointless-suffering-and-why-coping-wont-fix-it">Why Life Feels Like Pointless Suffering — and Why Coping Won't Fix It</a></li>
+<li><a href="#medium-spirituality-as-the-study-of-the-self-not-as-religion">Spirituality as the Study of the Self (Not as Religion)</a></li>
+<li><a href="#medium-why-you-dont-know-what-you-want">Why You Don't Know What You Want</a></li>
+<li><a href="#medium-the-epidemic-of-male-loneliness-a-structural-problem-not-a-personal-failing">The Epidemic of Male Loneliness — A Structural Problem, Not a Personal Failing</a></li>
+<li><a href="#medium-what-real-equality-looks-like-here">What Real Equality Looks Like Here</a></li>
+<li><a href="#medium-common-pitfalls">Common Pitfalls</a></li>
+<li><a href="#medium-action-items-exercises">Action Items &amp; Exercises</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="medium-summary">Summary</h2>
+<p><strong>TL;DR — Life feels like pointless suffering when you've never been taught how to live it. Spirituality — understood as the study of the self, not religion — is the missing curriculum, and the loneliness epidemic among men is the predictable result of a society that silenced that inner life completely.</strong></p>
+<p>This talk covers three interlocking themes: why modern life feels meaningless and what to actually do about it (the spirituality section, which is the heart of the talk), followed by a clear-eyed diagnosis of the male loneliness epidemic and why AI girlfriends are a symptom rather than the cause. The through-line is the same in every case: suffering comes not from circumstances but from disconnection — from yourself, from other people, and from any sense of genuine choice about how to live.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-why-life-feels-like-pointless-suffering-and-why-coping-wont-fix-it">Why Life Feels Like Pointless Suffering — and Why Coping Won't Fix It</h2>
+<p>The instinct to ask "why should I live if life is just suffering?" is understandable, but the framing itself is the problem. Throwing someone who can't swim into a pool and telling them to cope is not a solution — the solution is to learn how to swim.</p>
+<p>The world has changed faster than our education has. Hunter-gatherer societies worked roughly six to eight hours a day and didn't carry anxiety about mortgage payments or how a single test grade would affect their career five years later. The rate of technological change has accelerated so dramatically that a person from 1850 dropped into today would be completely lost. And yet the educational system still focuses almost entirely on external skills — math, reading, vocational knowledge — while teaching almost nothing about how to actually be a human being living a life.</p>
+<p>The result is that we are driving a car without ever having been given the owner's manual. We don't know what any of the buttons do. We're confused when we swerve.</p>
+<p>The reason survival used to be enough of a motivation is that not surviving was a real daily risk. Obesity now kills more people than starvation. We have, in a very real sense, won the game of survival — and we received the trophy of suffering as a consolation prize, because survival was the engine that made daily effort feel worth it. Without that existential pressure, something else has to give life meaning, and nobody told us what that something is.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-spirituality-as-the-study-of-the-self-not-as-religion">Spirituality as the Study of the Self (Not as Religion)</h2>
+<p>Spirituality, properly understood, has nothing to do with God. It is <strong>the discipline of understanding yourself</strong> — the personal equivalent of what psychology does at the population level. Psychology is like economics: it describes how people in general behave. Spirituality is personal finance: it's about <em>your</em> inner life, <em>your</em> reactions, <em>your</em> source of suffering and satisfaction.</p>
+<p>This is why even a committed atheist has every reason to engage in it.</p>
+<p>Three core discoveries emerge from this practice:</p>
+<p><strong>First: all experience happens inside you.</strong> You cannot enjoy anything outside of yourself. The apple doesn't carry pleasure — the pleasure is your reaction to the apple. The video game doesn't become boring; you do. This means that if all experience is generated internally, then the internal system is what you need to understand and work with. This is also why <strong>cognitive reframing</strong> is consistently the most effective coping mechanism in clinical research — it doesn't change the external situation, it changes the internal response to it. That process <em>is</em> spirituality.</p>
+<p><strong>Second: satisfying your impulses does not lead to happiness.</strong> This is the counterintuitive discovery that most people have to hit themselves. If you spend a full day doing exactly what you feel like — gaming, eating, scrolling — you will feel hollow at the end of it. If you spend four hours handling responsibilities and self-care and then game for eight hours, you will feel genuinely better. Beneath the surface-level desire to goof off lives something deeper: a sense of what you actually care about, what the yogic traditions call <strong>duty</strong> — not what someone outside you says you should do, but what <em>you</em> feel you should do. These are two very different things.</p>
+<blockquote>
+<p>"That which is hard and difficult actually makes me happy. And now the world is a different place, because when something is hard or difficult, you don't quake, you don't get depressed, you don't give up — you're like, yeah, let's go."</p>
+</blockquote>
+<p><strong>Third: choice is the foundation of wellbeing.</strong> Whether you get fired or quit, your situation is the same — you no longer have a job. But the psychological impact is completely different. In one case something happened <em>to</em> you; in the other, you made a decision. Exercising choice is not a metaphor for empowerment; it is literally how a human being experiences power. This is why people who are being driven through life — by expectations, by fear, by the need for external approval — suffer. They are a leaf on the wind. They end up wherever the current sends them, and then wonder why they aren't happy.</p>
+<p>The neuroscience backs this up. There are two entirely separate systems for wellbeing: <strong>hedonics</strong> (pleasure, governed by dopamine in the nucleus accumbens) and <strong>eudaimonics</strong> (contentment, distributed across much of the rest of the brain, including the prefrontal cortex). Long-term meditators show measurable changes in brain thickness in these areas. As the eudaimonic system strengthens, the dopamine system has <em>less</em> control over behavior — you are no longer being driven by the pursuit of pleasure or the avoidance of pain. You choose. That is the entire goal.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-why-you-dont-know-what-you-want">Why You Don't Know What You Want</h2>
+<p>Most people have no idea what they actually want, and there's a structural reason for it: we have stopped spending time with ourselves.</p>
+<p>Knowing what you want requires paying attention to yourself. The more time you spend noticing your own reactions — what lights you up, what feels hollow, what leaves you empty at the end of the day — the more clearly you understand your own desires. But we now have an almost unbroken stream of external stimulation telling us what to want. Advertising, social media, influencers, algorithmic content — all of it is specifically designed to manufacture desires and then sell you the satisfaction.</p>
+<blockquote>
+<p>"As long as you are chasing wants that emerge from outside of you, you will never be happy — because that's what got us into this problem in the first place."</p>
+</blockquote>
+<p>The last reliable opportunity most people had to spend time with themselves was boredom. Boredom is the mind's signal that it wants stimulation — but if you sit with it instead of immediately feeding it, you start to hear what's underneath. That voice is where your actual preferences live. We've colonized even the bathroom with our phones, eliminating the final pocket of solitude most people had.</p>
+<p>Sit with the discomfort of not being entertained. That is not wasted time. That is the practice.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-the-epidemic-of-male-loneliness-a-structural-problem-not-a-personal-failing">The Epidemic of Male Loneliness — A Structural Problem, Not a Personal Failing</h2>
+<p>The framing that AI girlfriends are <em>ruining</em> a generation of men gets it backwards. A market product appears when a market need exists. The ruin already happened. The AI girlfriend is the end-stage symptom, not the cause.</p>
+<p>What actually produced this situation is a stack of structural changes, none of which is the "fault" of any individual group:</p>
+<ul>
+<li><strong>The demonization of male physical and emotional contact.</strong> When homophobia peaked in the 80s and 90s, men stopped being able to touch each other, joke around physically, or be emotionally close without it being sexualized or stigmatized. Men became almost exclusively dependent on romantic relationships for physical and emotional connection — and when those relationships aren't available, they're completely isolated.</li>
+<li><strong>The disappearance of third spaces and positive male role models.</strong> Older men shaping younger men's behavior has always been the mechanism by which adolescent male aggression and aimlessness gets corrected — the data on this comes from studies of delinquent male elephant behavior as much as from human sociology. That mentoring relationship has become culturally difficult and legally fraught.</li>
+<li><strong>Expectations haven't adjusted to match a changed world.</strong> Women have rightly gained independence, careers, and the ability to set higher standards for partners. But the expectations placed on men have not updated in the other direction. Men are told they need emotional availability, financial security, and to be tall — two of those three they mostly can't control, and the emotional availability one is the cruelest demand, because we've never taught men how to access or express emotion, and then punish them socially when they try.</li>
+<li><strong>A selective acceptance of male emotion.</strong> Society has become somewhat tolerant of male sadness — a man can cry now without total shame. But male anger is labeled toxic masculinity. Male shame ("I'm a failure, I'm pathetic") is labeled emotional neediness. This means the one emotion men have historically had the most access to — anger — is the one that gets them banned, blocked, or rejected when they express it. The "silent epidemic" label is wrong: men have been screaming, and the volume has been turned down.</li>
+</ul>
+<blockquote>
+<p>"There's a big difference between silence and turning down the volume on somebody screaming."</p>
+</blockquote>
+<p>The AI girlfriend is attractive not primarily because of the explicit content — that's freely available everywhere. It's attractive because <strong>it responds</strong>. It pays attention. It adapts to what you say. For a person who has been unable to get a human being to respond, pay attention, or adapt — that is the forbidden fruit. The addiction makes complete sense.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-what-real-equality-looks-like-here">What Real Equality Looks Like Here</h2>
+<p>The lesson from the progress made on behalf of women over the last 50 years is that neglected suffering doesn't fix itself; it requires the active attention of everyone. Men supporting the civil rights movement. Allies showing up for causes that weren't personally their problem.</p>
+<p>The same principle applies now. Men's loneliness is not the fault of women. It is also not solely men's problem to solve in isolation. Any part of society that is suffering deserves the attention and help of everyone else — not because anyone is responsible for creating the problem, but because that is what functional communities do.</p>
+<p>The one group we currently exempt from this social contract — the one group we say should pull itself up without assistance — is men. And that exemption is precisely what makes the problem intractable.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-common-pitfalls">Common Pitfalls</h2>
+<p><strong>Mistaking "look within" for "do whatever you feel like."</strong> The instruction to pay attention to yourself is not an instruction to satisfy every impulse. Following your impulses blindly produces the same suffering as ignoring yourself entirely — just in different flavors. The practice is to notice, distinguish between surface cravings and deeper values, and choose accordingly.</p>
+<p><strong>Thinking spirituality requires religion — or that religion automatically provides it.</strong> Spirituality in this framework is the study of the self. Religion, when disconnected from that practice, becomes a set of behavioral rules without understanding. You can be religious without being spiritual, atheist without missing out on spiritual practice, or anything in between.</p>
+<p><strong>Treating "coping" as the goal.</strong> Coping with the feeling of not being able to swim is not the same as learning to swim. If life feels like constant suffering, the answer is not a better coping mechanism — it's understanding what is generating the suffering in the first place.</p>
+<p><strong>Blaming an outgroup for structural problems.</strong> Men blaming women for the loneliness epidemic, or women's progress being blamed for male decline — these are category errors. The world changed. Expectations for one group didn't update. That's a structural problem and it has structural solutions.</p>
+<p><strong>Mistaking boredom for wasted time.</strong> Boredom is not the enemy. It is the doorway to knowing yourself. The discomfort of having nothing to stimulate you is exactly the discomfort that leads somewhere useful.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-action-items-exercises">Action Items &amp; Exercises</h2>
+<ol>
+<li>
+<p><strong>Tolerate boredom deliberately.</strong> Pick one daily window — a commute, a meal, the first ten minutes after waking — and do not fill it with your phone or external stimulation. Notice what thoughts arise. Write them down if that helps. Do this consistently for two weeks. The question you're trying to answer is: what do I actually care about?</p>
+</li>
+<li>
+<p><strong>Track your end-of-day feeling, not your in-the-moment feeling.</strong> For the next two weeks, note how you feel at 10 PM relative to how you spent the day. Look for the pattern: which kinds of days leave you content, and which leave you hollow? This is empirical data about your own eudaimonic system.</p>
+</li>
+<li>
+<p><strong>Distinguish between desire and duty — both from the inside.</strong> When you feel pulled to do something or avoid something, ask: does this want come from outside me (social pressure, advertising, fear of judgment) or from inside me? And if it comes from inside: is this a surface craving or something I'll feel good about at day's end? You don't need to always choose the harder thing — you need to make the distinction consciously.</p>
+</li>
+<li>
+<p><strong>Practice cognitive reframing on one recurring frustration.</strong> Pick something that reliably irritates or discourages you. Write down the story your mind tells about it (e.g., "if I fail this test, my whole future is ruined"). Then write out, as specifically as possible, what is literally true versus what your mind has added. Notice the difference between the fact and the meaning you've attached to it.</p>
+</li>
+<li>
+<p><strong>If you're a man who is isolated: find one in-person context with other men.</strong> Not online. A sport, a class, a recurring activity. The goal is not deep emotional conversation immediately — it's proximity and shared activity, which is how male friendship has always worked. Start there.</p>
+</li>
+<li>
+<p><strong>If you're consuming content about why your life is hard, audit it.</strong> Ask: after I watch or read this, do I feel clearer about what to do, or do I feel more resentful and stuck? Echo chambers that validate suffering without pointing toward action are making the problem worse, not naming it helpfully.</p>
+</li>
+</ol>
+</section></article>
+    </div>
+  </div>
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc"><ul><li><a href="#transcript-0-stream-intro-and-upcoming-destiny-collab">Stream Intro and Upcoming Destiny Collab</a></li><li><a href="#transcript-1-why-life-feels-like-suffering-core-problem">Why Life Feels Like Suffering: Core Problem</a></li><li><a href="#transcript-2-survival-is-no-longer-enough-world-has-changed">Survival Is No Longer Enough: World Has Changed</a></li><li><a href="#transcript-3-spirituality-as-the-study-of-the-self">Spirituality as the Study of the Self</a></li><li><a href="#transcript-4-happiness-comes-from-within-first-principle">Happiness Comes From Within: First Principle</a></li><li><a href="#transcript-5-desires-vs-duty-second-principle-of-spirituality">Desires vs. Duty: Second Principle of Spirituality</a></li><li><a href="#transcript-6-hedonic-vs-eudaimonic-happiness-in-neuroscience">Hedonic vs. Eudaimonic Happiness in Neuroscience</a></li><li><a href="#transcript-7-choice-and-reclaiming-agency-in-life">Choice and Reclaiming Agency in Life</a></li><li><a href="#transcript-8-how-to-discover-what-you-want">How to Discover What You Want</a></li><li><a href="#transcript-9-ai-girlfriends-and-the-loneliness-epidemic">AI Girlfriends and the Loneliness Epidemic</a></li><li><a href="#transcript-10-why-men-are-lonely-societal-and-cultural-roots">Why Men Are Lonely: Societal and Cultural Roots</a></li><li><a href="#transcript-11-changing-expectations-and-gender-dynamics">Changing Expectations and Gender Dynamics</a></li><li><a href="#transcript-12-emotions-anger-and-double-standards">Emotions, Anger, and Double Standards</a></li><li><a href="#transcript-13-taking-collective-responsibility-for-male-loneliness">Taking Collective Responsibility for Male Loneliness</a></li><li><a href="#transcript-14-healthygamer-coaching-and-resources">HealthyGamer Coaching and Resources</a></li></ul></div></nav>
+      <article class="summary"><section class="sec sec-a">
 <h2 id="transcript-0-stream-intro-and-upcoming-destiny-collab">Stream Intro and Upcoming Destiny Collab</h2>
-<p><span class="speaker">Dr. K:</span> [Music] oh, [Music] the, the [Music] [Music] e, e [Music] [Applause] [Music] for [Music] o, o [Music] [Music] [Music] m, m, m [Applause] [Applause] [Applause] [Laughter] [Laughter] [Laughter] [Applause] [Applause] e, [Music] h [Music] m [Applause] [Applause] [Music] [Music] [Music] [Applause] [Music] d [Applause] [Music] do, do [Music] [Applause] [Applause] [Music] [Music] [Music] [Applause] m [Music] [Applause] m [Applause] [Music] [Music] to, to, to [Music] [Applause] [Music] [Music] [Laughter] alrighty chat. Welcome to another healthy gamer G stream. My name is allo kenoa. Just a reminder that, although I&#x27;m a psychiatrist, nothing we discussed on stream today is intended to be taken as medical advice.</p>
+<p>[Music] oh, [Music] the, the [Music] [Music] e, e [Music] [Applause] [Music] for [Music] o, o [Music] [Music] [Music] m, m, m [Applause] [Applause] [Applause] [Laughter] [Laughter] [Laughter] [Applause] [Applause] e, [Music] h [Music] m [Applause] [Applause] [Music] [Music] [Music] [Applause] [Music] d [Applause] [Music] do, do [Music] [Applause] [Applause] [Music] [Music] [Music] [Applause] m [Music] [Applause] m [Applause] [Music] [Music] to, to, to [Music] [Applause] [Music] [Music] [Laughter] alrighty chat. Welcome to another healthy gamer G stream. My name is allo kenoa. Just a reminder that, although I&#x27;m a psychiatrist, nothing we discussed on stream today is intended to be taken as medical advice.</p>
 <p>Everything is for educational and entertainment purposes only. If y&#x27;all have a medical concern or question, please go see a licensed professional. Hello everybody, welcome. So happy Thursday everybody. We&#x27;re streaming a fair amount this week. We are probably going to be streaming a little bit less next week. We are out and doing some other things, uh, but stay tuned to YouTube. We should actually be uploading videos, uh, all throughout next week and the week after that, um, so we&#x27;re going to be kind of in and out a little bit from like a live streaming standpoint, which is part of the reason we&#x27;re streaming every day.</p>
 <p>Speaking of streaming every day, tomorrow we are going to be talking with the one, the only, the destiny, um, the destiny, destiny, um, and I think we&#x27;re going to talk a little bit about cognitive enhancement stimulants, trying to understand how to approach that stuff. Uh, so tune in for that. I imagine it&#x27;ll be a fun and Lively conversation, just like all of our other conversation, just like all of our other ones. Ones, ones are are: um, yeah, so how are y&#x27;all doing today? Yeah, I see that I&#x27;m a positive male role model- excellent, I&#x27;m happy to hear that, and hopefully I&#x27;m not a negative male role model.</p>
 <p>Um, yeah, so really, looking forward to talking to Destiny tomorrow. We&#x27;ll see how that goes. Usually our conversations are pretty Meandering and, um, I don&#x27;t think we end up debating, but you know we&#x27;ll, we&#x27;ll talk and it&#x27;ll be great. I enjoy talking to Destiny a lot. I&#x27;m GNA- skip anything with Destiny not going to lie totally, totally for you, you do, you, my friend, you know. So I, I think part of the challenge of being a content creator is that we can&#x27;t make everybody happy all the time, and that&#x27;s totally fine, right? So that&#x27;s why we do different things with different people, and sometimes we&#x27;ll do lectures.</p>
@@ -240,15 +358,21 @@ try {
 <p>The best is weird. I don&#x27;t even understand what our recruiting stuff is, how we choose to accept people into a particular class, but it&#x27;s good. It&#x27;s people who get it. That&#x27;s the what we really look for. So there are people who are philosophy majors and people who are phds and people who are dropouts and people who are nurses and people who are pro Gamers. Right, we, we want to take y&#x27;all and give y&#x27;all a set of scientifically validated, evidence-based techniques so that you can help other people. All right, I know we didn&#x27;t. Get to emotional neglect, but hopefully y&#x27;all are satisfied with the spirituality and the AI girlfriend stuff and we will see you tomorrow.</p>
 <p>That&#x27;s the other reason we&#x27;re kind of sticking with our time today. We&#x27;re see you all tomorrow because we&#x27;re talking to Destiny and I got to save something to Destiny and I got to save something for that. All right, y&#x27;all take care. I don&#x27;t know. I still don&#x27;t know how to raid something on YouTube. So GG, peace out and I guess, watch our latest Youtube upload. Um, and even though we&#x27;re not going to be streaming much next week, I&#x27;m going to be like on a podcast and things like that. We&#x27;re going to have regular uploads. I have a couple of really awesome videos. I&#x27;m excited about that. I&#x27;m going to try to film over the weekend, so definitely check those out.</p>
 </section></article>
+    </div>
   </div>
+  
 
-  <p class="meta">Auto-transcribed livestream · chapters &amp; speaker labels are a best-effort approximation (claude-sonnet-4-6).</p>
+  <p class="meta">Medium summary · claude-sonnet-4-6 (no extended thinking)</p>
 </div>
 
 <script>
 (function () {
   var root = document.documentElement;
-  var tb = document.querySelector('.theme-toggle');
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'medium');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
   var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
   tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
@@ -256,6 +380,16 @@ try {
   function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
   var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+  // deep-link to a heading in any view: switch to that view, then scroll to it
+  function navigateTo(id){
+    var el = id && document.getElementById(id);
+    if (!el) return;
+    var v = el.closest('.view');
+    if (v) setView(v.getAttribute('data-view'));
+    el.scrollIntoView();
+  }
+  window.addEventListener('hashchange', function(){ navigateTo(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash) navigateTo(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>
 <script>

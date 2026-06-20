@@ -9,7 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-} catch (e) {}
+  document.documentElement.setAttribute('data-view', localStorage.getItem('pubview') || 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -24,16 +25,158 @@ try {
   </nav>
 
   <h1>Why Men Keep Losing Control</h1>
-  <p class="watch">
-    <a href="https://www.youtube.com/watch?v=YHpU8Wczxhk" target="_blank" rel="noopener">▶ Watch on YouTube</a>
-    <span class="speakers-note">Speakers (auto-detected): Dr. K</span>
-  </p>
+  <p class="watch"><a href="https://www.youtube.com/watch?v=YHpU8Wczxhk" target="_blank" rel="noopener">▶ Watch on YouTube</a></p>
 
-  <div class="doc">
-    <nav class="toc"><p class="toc-title">Chapters</p><ul><li><a href="#transcript-0-opening-music-and-stream-introduction">Opening Music and Stream Introduction</a></li><li><a href="#transcript-1-platform-upgrade-and-new-content-features">Platform Upgrade and New Content Features</a></li><li><a href="#transcript-2-social-anhedonia-and-streaming-purpose">Social Anhedonia and Streaming Purpose</a></li><li><a href="#transcript-3-using-rampage-jackson-as-an-anger-case-study">Using Rampage Jackson as an Anger Case Study</a></li><li><a href="#transcript-4-the-anger-model-perceived-value-systems-and-hurt">The Anger Model: Perceived Value Systems and Hurt</a></li><li><a href="#transcript-5-reviewing-the-rampage-jackson-clips">Reviewing the Rampage Jackson Clips</a></li><li><a href="#transcript-6-egocentricity-associations-and-the-path-to-violence">Egocentricity, Associations, and the Path to Violence</a></li><li><a href="#transcript-7-psychopaths-vs-reactively-violent-people">Psychopaths vs. Reactively Violent People</a></li><li><a href="#transcript-8-five-red-flags-for-violence-proneness">Five Red Flags for Violence Proneness</a></li><li><a href="#transcript-9-intermittent-explosive-disorder-explained">Intermittent Explosive Disorder Explained</a></li><li><a href="#transcript-10-why-abuse-victims-don-t-recognize-their-situation">Why Abuse Victims Don&#x27;t Recognize Their Situation</a></li><li><a href="#transcript-11-systemic-thinking-about-male-violence">Systemic Thinking About Male Violence</a></li><li><a href="#transcript-12-reddit-post-self-aware-anger-and-its-roots">Reddit Post: Self-Aware Anger and Its Roots</a></li><li><a href="#transcript-13-socialization-neuroatypical-brains-and-anger-scripts">Socialization, Neuroatypical Brains, and Anger Scripts</a></li><li><a href="#transcript-14-blame-takers-blame-givers-and-toxic-harmony">Blame Takers, Blame Givers, and Toxic Harmony</a></li><li><a href="#transcript-15-transmutation-of-emotions-into-anger">Transmutation of Emotions Into Anger</a></li><li><a href="#transcript-16-ego-self-loathing-and-displacement-of-anger">Ego, Self-Loathing, and Displacement of Anger</a></li><li><a href="#transcript-17-summary-steps-to-understand-and-break-the-anger-cycle">Summary: Steps to Understand and Break the Anger Cycle</a></li><li><a href="#transcript-18-calming-angry-people-mirroring-technique">Calming Angry People: Mirroring Technique</a></li><li><a href="#transcript-19-physical-exercise-as-anger-release">Physical Exercise as Anger Release</a></li><li><a href="#transcript-20-gender-hate-content-and-projecting-onto-partners">Gender Hate Content and Projecting onto Partners</a></li><li><a href="#transcript-21-healthy-anger-and-appropriate-emotional-expression">Healthy Anger and Appropriate Emotional Expression</a></li><li><a href="#transcript-22-closing-announcements-and-avatar-discussion">Closing Announcements and Avatar Discussion</a></li></ul></nav>
-    <article class="summary transcript"><section class="sec sec-a">
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">2,362w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">20,421w</span></button>
+    
+  </div>
+
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#medium-summary">Summary</a></li>
+<li><a href="#medium-the-chain-that-leads-to-violence">The Chain That Leads to Violence</a></li>
+<li><a href="#medium-two-very-different-kinds-of-violent-people">Two Very Different Kinds of Violent People</a></li>
+<li><a href="#medium-how-emotions-get-transmuted-into-anger">How Emotions Get Transmuted Into Anger</a></li>
+<li><a href="#medium-reading-the-warning-signs-in-a-person">Reading the Warning Signs in a Person</a></li>
+<li><a href="#medium-why-victims-of-abuse-dont-leave">Why Victims of Abuse Don't Leave</a></li>
+<li><a href="#medium-the-role-of-self-loathing-in-outward-anger">The Role of Self-Loathing in Outward Anger</a></li>
+<li><a href="#medium-how-to-actually-handle-an-angry-person-in-the-moment">How to Actually Handle an Angry Person in the Moment</a></li>
+<li><a href="#medium-common-pitfalls">Common Pitfalls</a></li>
+<li><a href="#medium-action-items-exercises">Action Items &amp; Exercises</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="medium-summary">Summary</h2>
+<p><strong>TL;DR — Anger isn't the core problem; it's the final symptom of a chain of hidden internal events. Understanding every link in that chain is the only reliable way to change the pattern.</strong></p>
+<p>Most people — including the person who is angry — focus on the outburst itself and try to suppress it there. That never works for long. What actually drives violent or explosive anger is a layered sequence: a personal value system, a moment of hurt, egocentric interpretation, a cascade of secondary emotions (fear, hopelessness, shame), and only then the anger that everyone sees. Each layer feeds the next automatically and at near-invisible speed. Once you can see the full chain, you can intervene much earlier — and far more effectively.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-the-chain-that-leads-to-violence">The Chain That Leads to Violence</h2>
+<p>Violence and explosive anger don't start with anger. They start with something far less dramatic.</p>
+<p><strong>Step 1: A perceived value system.</strong> Everyone moves through the world with an internal rulebook — a set of "shoulds" about respect, strength, weakness, and what certain actions mean. These rules often live completely outside conscious awareness. For one person, a tap on the shoulder is a polite way to get attention. For another, it is a sign of disrespect so profound that it demands an immediate physical response. Neither person may be able to articulate the rule, but both are running by it.</p>
+<p><strong>Step 2: Hurt.</strong> When reality violates that rulebook, the immediate emotional experience is almost always <em>hurt</em> — not anger. This is the step almost everyone misses, including the person who is angry. Research on abusers and violent offenders consistently shows high rates of prior victimization and trauma. When someone is being hostile or aggressive, they very frequently experience themselves as defending against a threat, not attacking. The hurt is real, even if the interpretation that caused it seems disproportionate to an outside observer.</p>
+<p><strong>Step 3: Egocentric interpretation.</strong> Here is where hurt becomes combustible. Egocentricity means the painful event doesn't stay isolated — it gets absorbed into identity. It isn't "you did something that hurt me." It becomes "you doing that thing means I am weak, pathetic, a pushover." The action defines the self. This is why telling someone "it's not a big deal" does nothing: to them, it is a very big deal, because what's at stake isn't the incident — it's who they are as a person.</p>
+<p><strong>Step 4: Associations that compound.</strong> The egocentric interpretation plugs into the value system and generates a cascade of other meanings. "I'm weak" quickly connects to "weak people get exploited," "weak people can't protect what matters to them," "weak people are contemptible." This manufactures <strong>anxiety</strong> (if I'm weak, the world is genuinely dangerous for me) and <strong>hopelessness</strong> (if I'm weak, nothing I try will work). These two emotions are profoundly uncomfortable and, critically, they are emotions of <em>inaction</em> — they make a person feel frozen.</p>
+<p><strong>Step 5: Anger as the solution.</strong> The brain solves the problem of anxiety and hopelessness with anger, because anger is an emotion of <em>action</em>. If I get angry, I become strong. If I become strong, the anxiety and hopelessness disappear. The anger isn't irrational — from the inside, it is solving a real problem. That's what makes it so hard to interrupt with willpower alone.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-two-very-different-kinds-of-violent-people">Two Very Different Kinds of Violent People</h2>
+<p>Not all aggression comes from the same place, and treating them the same way is both ineffective and unfair.</p>
+<p><strong>Reactive violence</strong> comes from a self-concept that is <em>vulnerable and fragile</em>. The reactively violent person sees others as hostile opposition — threats to be defended against. Their violence is fundamentally defensive, even when it looks like offense. Demonstrating genuine compassion to a reactively violent person will typically de-escalate the situation.</p>
+<p><strong>Psychopathic violence</strong> comes from a self-concept that is <em>superior and invulnerable</em>. The psychopathic person sees others as dupes or prey, not enemies. They believe they have preemptive rights that others don't. Demonstrating compassion to this person signals weakness and will invite more predatory behavior, not less.</p>
+<p>The distinction matters enormously for how you respond — both in a relationship and in a heated moment.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-how-emotions-get-transmuted-into-anger">How Emotions Get Transmuted Into Anger</h2>
+<p>A huge portion of explosive anger — especially in men — is not "pure" anger at all. It is <strong>emotional alchemy</strong>: sadness, fear, humiliation, and hopelessness converted into anger because anger feels more actionable and more acceptable.</p>
+<p>Consider the internal monologue after being rejected: <em>"Man, forget her. She didn't deserve me anyway."</em> That's not really anger. That's humiliation and hurt being repackaged because humiliation feels unbearable and anger feels like doing something.</p>
+<p>Emotions like sadness, fear, and hopelessness are evolutionarily designed as signals of <em>inaction</em> — conserve resources, call for help, don't take a dangerous risk. But if you've grown up in an environment where sadness was ignored, crying was punished, and fear was mocked, your brain learns quickly that those emotions don't work. Anger works. So it converts everything into anger.</p>
+<p>The fix isn't anger management in the narrow sense. It's learning to sit with and process the underlying emotions — the grief, the fear, the rejection — so that the only anger left is the anger that actually belongs there.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-reading-the-warning-signs-in-a-person">Reading the Warning Signs in a Person</h2>
+<p>Five cognitive patterns make someone genuinely prone to explosive anger or abusive behavior:</p>
+<ol>
+<li><strong>They take things personally.</strong> A neutral action gets attributed to an intention — "you lost weight to make me look bad." There's an automatic translation from event to meaning about themselves.</li>
+<li><strong>They are selective with information.</strong> Particularly, they filter out their own contribution to a problem. This isn't always deliberate; it can happen at a neurological level.</li>
+<li><strong>They overgeneralize.</strong> Individual events get collapsed into sweeping verdicts: always, never, everyone, no one. Context disappears.</li>
+<li><strong>They engage in persistent denial.</strong> When you point out their role in a conflict, it's rejected. This matters because without the ability to receive critical information, self-correction becomes structurally impossible. The only path to a successful relationship becomes: they stay perfect, you improve infinitely.</li>
+<li><strong>Egocentricity</strong> (overlapping with point 1): everything that happens is filtered through its implications for self-worth.</li>
+</ol>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-why-victims-of-abuse-dont-leave">Why Victims of Abuse Don't Leave</h2>
+<p>Understanding anger also means understanding why people stay in relationships with explosive, controlling, or abusive partners.</p>
+<p><strong>Gradual escalation.</strong> Abuse rarely starts at full intensity. It begins with small boundary violations, waits to see if there's pushback, then escalates incrementally. Humans are wired to respond to large changes, not gradual ones — the same mechanism that subscription services exploit when they raise prices by tiny amounts.</p>
+<p><strong>They don't see the person you see.</strong> From the outside, you see an abuser. From the inside, the victim sees <em>two</em> people: the terrifying one and the wonderful, loving one. Leaving means leaving the wonderful one, which is genuinely hard. The abuser ties their behavior to the victim's behavior ("you made me do this"), so the victim believes the wonderful person can be kept around if they just behave correctly.</p>
+<p><strong>They believe they deserve it.</strong> People with histories of childhood abuse often have normalized this treatment. Low self-esteem makes it easier to rationalize: this is familiar, I can survive it, maybe it isn't that bad.</p>
+<p>If you're trying to help someone recognize they're in this situation: don't push, don't attack the partner, don't lecture. Listen. Ask open questions. Create space. The defense mechanisms come out first; the honest acknowledgment comes later. When they start moving in the right direction, support that movement — don't shove.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-the-role-of-self-loathing-in-outward-anger">The Role of Self-Loathing in Outward Anger</h2>
+<p>There is a container analogy worth holding onto. Imagine a vessel that fills with self-directed anger — self-loathing, shame, self-criticism. When that vessel overflows, the excess spills outward onto other people as displaced rage. This is why the angriest people are often, at their core, the most self-critical.</p>
+<p>The cruel irony is that the ego steps in as a protective layer. To avoid feeling the rottenness inside, the person inflates outward — <em>I'm the best, you're nothing, how dare you</em>. But then any small slight threatens the inflation, triggering an outsized reaction. And genuine kindness from others is rejected, because the person knows on some level it's undeserved. So they push away both criticism (with rage) and warmth (with deflection), and end up completely isolated.</p>
+<p>The entry point for this kind of work isn't behavior management — it's the ego itself. <em>Who do you think you are? What are you protecting? What are you afraid people will see?</em></p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-how-to-actually-handle-an-angry-person-in-the-moment">How to Actually Handle an Angry Person in the Moment</h2>
+<p>When someone is coming at you with anger, there are things that work and things that don't.</p>
+<p><strong>What doesn't work:</strong> telling them to calm down (the single worst thing you can say), immediately getting defensive, attacking back in kind, or offering soft compassion to someone who reads compassion as weakness.</p>
+<p><strong>What works:</strong> A counterintuitive technique that is highly effective even in extreme situations — matching their energy briefly, then visibly de-escalating yourself.</p>
+<blockquote>
+<p>"Why are you yelling at me? I just got here." Then, a beat later: "Look — I'm sorry, that came out wrong. I know you're upset. I'm here to help. Can you tell me what's going on?"</p>
+</blockquote>
+<p>You are not losing control. You are <em>displaying</em> a brief, non-blaming spike of energy that meets them where they are, then modeling the de-escalation you want them to follow. This works because the human nervous system is profoundly social — people co-regulate. When you genuinely calm down in front of them, their nervous system tends to follow. The key constraints: <strong>express anger without blame</strong> (blame escalates every time), and <strong>accept some visible responsibility</strong> even if partial.</p>
+<p>For chronic anger in yourself: <strong>intense physical exercise</strong> is not a cliché — it's neurologically correct. Anger activates the sympathetic nervous system. Trying to suppress it by force is fighting the tide. Running into the activation via exercise depletes it and triggers the parasympathetic recovery response. Once you've physically discharged the arousal, <em>then</em> sit down with paper and pen and solve the actual problem. The biggest mistake is combining the angry state with the problem-solving — they require different cognitive modes.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-common-pitfalls">Common Pitfalls</h2>
+<p><strong>Trying to control the anger directly.</strong> Anger management techniques that target the outburst itself are addressing the last step in a long chain. They're like trying to stop a river by blocking its mouth. The leverage is upstream.</p>
+<p><strong>Labeling the person without understanding the type.</strong> Calling someone a sociopath or a psychopath because they're violent conflates two completely different dynamics that require opposite responses.</p>
+<p><strong>Believing "just be yourself" is good relationship advice.</strong> The person you currently are is an unplanned accumulation of trauma, coping strategies, and inherited scripts. It was not designed intentionally. Being yourself isn't a destination; <em>becoming someone</em> is.</p>
+<p><strong>Seeking a perfectly harmonious fit in a partner.</strong> When everything clicks too easily, it often means two sets of dysfunctions are interlocking. Real growth in a relationship requires productive friction.</p>
+<p><strong>Watching gender-based hate content and then trying to date.</strong> The brain fills in information gaps with the most available generalizations. Constant exposure to adversarial content about the opposite sex programs you to find confirmation of it in real, individual people — who deserve to be seen as individuals.</p>
+<p><strong>Skipping the underlying emotions and jumping straight to anger work.</strong> If you haven't processed the sadness, fear, and shame that are being converted into anger, managing the anger is a temporary patch at best.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-action-items-exercises">Action Items &amp; Exercises</h2>
+<ol>
+<li>
+<p><strong>Map your value system.</strong> Write down your personal rules — especially around respect, strength, and how other people <em>should</em> treat you. Ask yourself: where did each rule come from? Is it still serving you?</p>
+</li>
+<li>
+<p><strong>Practice the hurt-first audit.</strong> The next time you notice anger rising, stop and ask: <em>What am I hurt about right now, before I get to anger?</em> Try to name the emotion underneath — rejection, humiliation, fear, abandonment. Just naming it accurately reduces its charge.</p>
+</li>
+<li>
+<p><strong>Trace the egocentricity.</strong> When you feel hurt, ask: <em>What does this mean about me?</em> Write it down literally. Often you'll find something like "this means I'm weak" or "this means I'm not worth caring about." That belief — not the other person's behavior — is the actual problem to work on.</p>
+</li>
+<li>
+<p><strong>Do the emotional alchemy check.</strong> When you feel a burst of anger, run through: Am I actually angry, or am I scared? Sad? Ashamed? Hopeless? If you find one of those underneath, let yourself sit with it for a few minutes without converting it.</p>
+</li>
+<li>
+<p><strong>Exercise before problem-solving.</strong> When you're genuinely flooded with anger, do not attempt to resolve the conflict or figure out next steps. First: intense physical activity — gym, run, 30 push-ups, whatever is accessible. After the physical discharge, <em>then</em> take out paper and a pen and write out what the problem is and what you want to do about it.</p>
+</li>
+<li>
+<p><strong>Practice the mirror-then-descend technique.</strong> In a low-stakes conflict this week, try responding to someone's elevated energy with a brief, non-blaming spike of your own (match the energy without attacking), then visibly and audibly bring yourself down. Notice whether they follow.</p>
+</li>
+<li>
+<p><strong>Audit your media inputs.</strong> For 30 days, remove gender-adversarial content from your feeds. Pay attention to whether your default assumptions about people shift.</p>
+</li>
+<li>
+<p><strong>Identify the social script you were handed.</strong> Look at the relationships modeled for you growing up. Was one person a dictator and one subservient? Was anger tolerated or corrected? Are you re-enacting that script in your current relationships?</p>
+</li>
+<li>
+<p><strong>Sit with the self-loathing rather than projecting it.</strong> When you catch yourself blaming someone else for something, ask: <em>Is any part of this anger actually directed at myself?</em> You don't have to fix it immediately — just notice it honestly.</p>
+</li>
+<li>
+<p><strong>If you keep quitting therapy,</strong> recognize that the resistance is information, not failure. The part of you that "can't stand being told what to do" is the part that needs the most attention. Look for a practitioner focused on listening and helping you name emotions rather than giving you behavioral prescriptions — that friction point is exactly where the work is.</p>
+</li>
+</ol>
+</section></article>
+    </div>
+  </div>
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc"><ul><li><a href="#transcript-0-opening-music-and-stream-introduction">Opening Music and Stream Introduction</a></li><li><a href="#transcript-1-platform-upgrade-and-new-content-features">Platform Upgrade and New Content Features</a></li><li><a href="#transcript-2-social-anhedonia-and-streaming-purpose">Social Anhedonia and Streaming Purpose</a></li><li><a href="#transcript-3-using-rampage-jackson-as-an-anger-case-study">Using Rampage Jackson as an Anger Case Study</a></li><li><a href="#transcript-4-the-anger-model-perceived-value-systems-and-hurt">The Anger Model: Perceived Value Systems and Hurt</a></li><li><a href="#transcript-5-reviewing-the-rampage-jackson-clips">Reviewing the Rampage Jackson Clips</a></li><li><a href="#transcript-6-egocentricity-associations-and-the-path-to-violence">Egocentricity, Associations, and the Path to Violence</a></li><li><a href="#transcript-7-psychopaths-vs-reactively-violent-people">Psychopaths vs. Reactively Violent People</a></li><li><a href="#transcript-8-five-red-flags-for-violence-proneness">Five Red Flags for Violence Proneness</a></li><li><a href="#transcript-9-intermittent-explosive-disorder-explained">Intermittent Explosive Disorder Explained</a></li><li><a href="#transcript-10-why-abuse-victims-don-t-recognize-their-situation">Why Abuse Victims Don&#x27;t Recognize Their Situation</a></li><li><a href="#transcript-11-systemic-thinking-about-male-violence">Systemic Thinking About Male Violence</a></li><li><a href="#transcript-12-reddit-post-self-aware-anger-and-its-roots">Reddit Post: Self-Aware Anger and Its Roots</a></li><li><a href="#transcript-13-socialization-neuroatypical-brains-and-anger-scripts">Socialization, Neuroatypical Brains, and Anger Scripts</a></li><li><a href="#transcript-14-blame-takers-blame-givers-and-toxic-harmony">Blame Takers, Blame Givers, and Toxic Harmony</a></li><li><a href="#transcript-15-transmutation-of-emotions-into-anger">Transmutation of Emotions Into Anger</a></li><li><a href="#transcript-16-ego-self-loathing-and-displacement-of-anger">Ego, Self-Loathing, and Displacement of Anger</a></li><li><a href="#transcript-17-summary-steps-to-understand-and-break-the-anger-cycle">Summary: Steps to Understand and Break the Anger Cycle</a></li><li><a href="#transcript-18-calming-angry-people-mirroring-technique">Calming Angry People: Mirroring Technique</a></li><li><a href="#transcript-19-physical-exercise-as-anger-release">Physical Exercise as Anger Release</a></li><li><a href="#transcript-20-gender-hate-content-and-projecting-onto-partners">Gender Hate Content and Projecting onto Partners</a></li><li><a href="#transcript-21-healthy-anger-and-appropriate-emotional-expression">Healthy Anger and Appropriate Emotional Expression</a></li><li><a href="#transcript-22-closing-announcements-and-avatar-discussion">Closing Announcements and Avatar Discussion</a></li></ul></div></nav>
+      <article class="summary"><section class="sec sec-a">
 <h2 id="transcript-0-opening-music-and-stream-introduction">Opening Music and Stream Introduction</h2>
-<p><span class="speaker">Dr. K:</span> [Music] entwine draw entwine draw another another tangled nest of second but the intent was there I swear we set our sights on something that we thought was true so now we sit and stare across a surface spanning the whole Two feet and miles apart. No speed. We haven&#x27;t got a clue. It falls apart. There&#x27;s not a heart to It falls apart. There&#x27;s not a heart to beat. beat. It falls apart. There&#x27;s not a heart to It falls apart. There&#x27;s not a heart to its its not to be there. It falls apart. There&#x27;s not a heart to have. Each word a world all of its own. Each star rendered only in groans. The syntax skipped a manic slips and what were left a growing cleft of language lost tokens unknown. And then I guess we slipped right through and lost our meaning on the way. We ended up a tiny piece of every heart of every part of every stone of every grave.</p>
+<p>[Music] entwine draw entwine draw another another tangled nest of second but the intent was there I swear we set our sights on something that we thought was true so now we sit and stare across a surface spanning the whole Two feet and miles apart. No speed. We haven&#x27;t got a clue. It falls apart. There&#x27;s not a heart to It falls apart. There&#x27;s not a heart to beat. beat. It falls apart. There&#x27;s not a heart to It falls apart. There&#x27;s not a heart to its its not to be there. It falls apart. There&#x27;s not a heart to have. Each word a world all of its own. Each star rendered only in groans. The syntax skipped a manic slips and what were left a growing cleft of language lost tokens unknown. And then I guess we slipped right through and lost our meaning on the way. We ended up a tiny piece of every heart of every part of every stone of every grave.</p>
 <p>It falls apart. It&#x27;s not hard to be It falls apart. It&#x27;s not hard to be there. there. It falls apart. There&#x27;s not a heart to It falls apart. There&#x27;s not a heart to have. have. &amp;gt;&amp;gt; It falls apart. There&#x27;s not a heart to be there. It falls apart. There&#x27;s not a heart to a tangled mess of knots. I confess, but the intent was there. I swear we set our sights on something we thought was true. It falls apart. It&#x27;s not a heart to beat It falls apart. It&#x27;s not a heart to beat there. there. It falls apart if there&#x27;s not a heart to It falls apart if there&#x27;s not a heart to have. have. &amp;gt;&amp;gt; It falls apart. There&#x27;s not a heart to be there.</p>
 <p>It falls apart if there&#x27;s not a heart to If there&#x27;s not a heart to have. &amp;gt;&amp;gt; It falls apart. There&#x27;s not a heart to be there. It falls apart. There&#x27;s not a heart. It falls apart. There&#x27;s not a heart to be there. It falls apart. It falls apart. [Music] [Music] A lot of people out there will struggle to pull themselves out of move in the right direction. Take one step forward and let go of what&#x27;s going to happen. to happen. [Music] Hey, [Music] Hey, Hey, hey, hey. Oh my. Heat.</p>
 <p>[Music] Give it up. Give it up. Give it away. You were alive. But you learned that You were alive. But you learned that day. day. So much remain. You knew that there was still a way. Cry again and try anyway. When you got back, but then you had to stand up still to this day. I knew that there was still a way. This is your only plan. Oh, now this is your only now. This is your only plan. Oh, now this is yours. That&#x27;s fine. It&#x27;s all you&#x27;ve ever known. A single state of mind, but you won&#x27;t ever let it go. When you had the answer, then you were there alone. You left the door unopened. When you knew that you would want more, give it up, give it up, give it away. While you were barely aware you like that day, cut off so much remain. While you knew that there was still a way. This is your only plan. Now this is your only plan. Now this is yours.</p>
@@ -242,15 +385,21 @@ try {
 <p>So then we started watching Legend of Korra. She didn&#x27;t seem to really care for that, too. And I was trying to hype it up. I was like, &quot;Oh, look, they&#x27;re flying and now they&#x27;re using ice and like look at that. Isn&#x27;t that cool?&quot; And she was like, &quot;Whatever.&quot; So many years later, they started watching Avatar maybe about a year ago, and they&#x27;re like chain watching it. We ordered the books, they&#x27;re reading the books, and I told them, &quot;Hey, we should watch this together as a family.&quot; And now they&#x27;re watching it because I&#x27;m working. And so I will go back. I&#x27;ve promised them that I&#x27;ll watch the show. So, I will watch the show. I will watch the chakra episode. And now I will get back to y&#x27;all. I&#x27;ve heard there&#x27;s a lot of like great stuff to learn and good life lessons and it&#x27;s like fun and engaging and things like that. So, they&#x27;re in Avatar nowadays.</p>
 <p>All right, y&#x27;all. Thank you so much for coming today. And um yeah, I&#x27;m I&#x27;m working on a couple of other things. you know, if you&#x27;all want to sign up for the workshop, especially if yall are struggling to implement stuff, I&#x27;ve got some cool stuff coming down the pipeline.</p>
 </section></article>
+    </div>
   </div>
+  
 
-  <p class="meta">Auto-transcribed livestream · chapters &amp; speaker labels are a best-effort approximation (claude-sonnet-4-6).</p>
+  <p class="meta">Medium summary · claude-sonnet-4-6 (no extended thinking)</p>
 </div>
 
 <script>
 (function () {
   var root = document.documentElement;
-  var tb = document.querySelector('.theme-toggle');
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'medium');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
   var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
   tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
@@ -258,6 +407,16 @@ try {
   function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
   var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+  // deep-link to a heading in any view: switch to that view, then scroll to it
+  function navigateTo(id){
+    var el = id && document.getElementById(id);
+    if (!el) return;
+    var v = el.closest('.view');
+    if (v) setView(v.getAttribute('data-view'));
+    el.scrollIntoView();
+  }
+  window.addEventListener('hashchange', function(){ navigateTo(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash) navigateTo(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>
 <script>

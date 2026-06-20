@@ -3,13 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Are you an ADHD Doomer?</title>
+<title>Are you an ADHD Doomer？</title>
 <link rel="stylesheet" href="style.css">
 <script>
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-} catch (e) {}
+  document.documentElement.setAttribute('data-view', localStorage.getItem('pubview') || 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -23,17 +24,167 @@ try {
     </span>
   </nav>
 
-  <h1>Are you an ADHD Doomer?</h1>
-  <p class="watch">
-    <a href="https://www.youtube.com/watch?v=qbPpZCjeur8" target="_blank" rel="noopener">▶ Watch on YouTube</a>
-    <span class="speakers-note">Speakers (auto-detected): Dr. K</span>
-  </p>
+  <h1>Are you an ADHD Doomer？</h1>
+  <p class="watch"><a href="https://www.youtube.com/watch?v=qbPpZCjeur8" target="_blank" rel="noopener">▶ Watch on YouTube</a></p>
 
-  <div class="doc">
-    <nav class="toc"><p class="toc-title">Chapters</p><ul><li><a href="#transcript-0-stream-introduction-and-disclaimer">Stream Introduction and Disclaimer</a></li><li><a href="#transcript-1-community-announcements-and-sub-growth">Community Announcements and Sub Growth</a></li><li><a href="#transcript-2-clickbait-controversy-and-porn-addiction-video">Clickbait Controversy and Porn Addiction Video</a></li><li><a href="#transcript-3-research-process-and-citation-plans">Research Process and Citation Plans</a></li><li><a href="#transcript-4-trauma-guide-pre-order-announcement">Trauma Guide Pre-Order Announcement</a></li><li><a href="#transcript-5-adhd-as-a-disorder-of-attention-control">ADHD as a Disorder of Attention Control</a></li><li><a href="#transcript-6-dopamine-nucleus-accumbens-and-immediate-rewards">Dopamine, Nucleus Accumbens, and Immediate Rewards</a></li><li><a href="#transcript-7-why-effort-alone-fails-in-adhd">Why Effort Alone Fails in ADHD</a></li><li><a href="#transcript-8-adhd-depression-and-self-identity">ADHD, Depression, and Self-Identity</a></li><li><a href="#transcript-9-habit-formation-and-treatment-approaches">Habit Formation and Treatment Approaches</a></li><li><a href="#transcript-10-emotional-dysregulation-and-societal-accommodations">Emotional Dysregulation and Societal Accommodations</a></li><li><a href="#transcript-11-gender-differences-in-adhd-diagnosis-and-treatment">Gender Differences in ADHD Diagnosis and Treatment</a></li><li><a href="#transcript-12-ambivalence-and-why-decisions-don-t-stick">Ambivalence and Why Decisions Don&#x27;t Stick</a></li><li><a href="#transcript-13-overcoming-ambivalence-by-embracing-difficulty">Overcoming Ambivalence by Embracing Difficulty</a></li><li><a href="#transcript-14-intentionality-as-a-key-to-happiness">Intentionality as a Key to Happiness</a></li><li><a href="#transcript-15-service-hard-work-and-internal-freedom">Service, Hard Work, and Internal Freedom</a></li><li><a href="#transcript-16-blame-responsibility-karma-and-personal-power">Blame, Responsibility, Karma, and Personal Power</a></li><li><a href="#transcript-17-abuse-agency-and-reclaiming-power">Abuse, Agency, and Reclaiming Power</a></li><li><a href="#transcript-18-closing-remarks-and-upcoming-streams">Closing Remarks and Upcoming Streams</a></li></ul></nav>
-    <article class="summary transcript"><section class="sec sec-a">
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">2,571w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">26,396w</span></button>
+    
+  </div>
+
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#medium-summary">Summary</a></li>
+<li><a href="#medium-adhd-is-a-disorder-of-attention-not-focus">ADHD Is a Disorder of Attention, Not Focus</a></li>
+<li><a href="#medium-why-immediate-reward-isnt-optional-its-neurological">Why Immediate Reward Isn't Optional — It's Neurological</a></li>
+<li><a href="#medium-why-habits-are-hard-to-build-but-not-impossible">Why Habits Are Hard to Build (But Not Impossible)</a></li>
+<li><a href="#medium-the-try-harder-trap-and-what-it-does-to-self-esteem">The "Try Harder" Trap and What It Does to Self-Esteem</a></li>
+<li><a href="#medium-compensatory-strategies-that-backfire">Compensatory Strategies That Backfire</a></li>
+<li><a href="#medium-ambivalence-why-you-come-home-from-the-walk-and-do-nothing">Ambivalence: Why You Come Home From the Walk and Do Nothing</a></li>
+<li><a href="#medium-why-easy-lives-make-life-harder">Why Easy Lives Make Life Harder</a></li>
+<li><a href="#medium-common-pitfalls">Common Pitfalls</a></li>
+<li><a href="#medium-action-items-exercises">Action Items &amp; Exercises</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="medium-summary">Summary</h2>
+<p><strong>TL;DR — ADHD isn't a laziness problem or a focus problem; it's a dopamine timing problem. And the reason a walk feels transformative but the house stays messy is the same reason the night before a day off beats the day off itself: ambivalence and the avoidance of difficulty are running your life more than any lack of willpower.</strong></p>
+<p>This talk covers three interconnected ideas: the neuroscience behind why ADHD manifests exactly the way it does (and why so many "fixes" backfire), the psychological trap of ambivalence that keeps people cycling between big plans and zero follow-through, and the counterintuitive role difficulty plays in happiness and confidence. Together they form a coherent picture of why smart, hard-working people can feel utterly broken — and what actually helps.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-adhd-is-a-disorder-of-attention-not-focus">ADHD Is a Disorder of Attention, Not Focus</h2>
+<p>Most people assume ADHD means you can't concentrate. The reality is more precise and more disabling: it's a <strong>disorder of attention regulation</strong>. You can't direct your attention <em>toward</em> things when you need to, and you can't pull it <em>away</em> from things when you need to either.</p>
+<p>This is why the "but he can play Legos for five hours!" argument doesn't disprove ADHD — it confirms it. That's <strong>hyperfocus</strong>, the flip side of distractibility. The person isn't choosing to stay locked in; their brain won't release. Both ends of the spectrum — can't start, can't stop — come from the same underlying dysregulation.</p>
+<p>The brain structure involved here is the <strong>thalamus</strong>, which integrates sensory input and decides what gets surfaced to conscious awareness. In a well-regulated brain, it's constantly recalibrating: this deserves your attention now, that can wait. In ADHD, that arbitration is impaired, which is why someone can sit oblivious to a parent calling their name from six feet away, then be unable to start a task even when staring directly at it.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-why-immediate-reward-isnt-optional-its-neurological">Why Immediate Reward Isn't Optional — It's Neurological</h2>
+<p>The core engine of ADHD symptoms is the relationship between two brain regions:</p>
+<ul>
+<li>The <strong>nucleus accumbens</strong>: your dopamine reward circuitry, highly responsive, demands immediate payoff</li>
+<li>The <strong>frontal lobes</strong>: responsible for executive function — planning, delaying gratification, regulating impulse</li>
+</ul>
+<p>In typical development, the nucleus accumbens matures fast (it's potent in children) while the frontal lobes develop slowly, finishing somewhere between 25 and 35. In ADHD, this imbalance is more extreme. The nucleus accumbens wins the tug-of-war far more often than it should.</p>
+<p>The practical consequence, as neuropsychologist Russell Barkley describes it: a person with ADHD cannot self-motivate. This isn't a character flaw. The brain literally requires a <strong>temporally bound reward</strong> — a dopamine signal that arrives close enough in time to the action to reinforce it. </p>
+<blockquote>
+<p>"If you want to see an ADHD person fail, put him in any environment where there are no consequences, and I guarantee failure."</p>
+</blockquote>
+<p>Think about what this means for ordinary life tasks. You do homework, and nothing happens. The grade arrives weeks later. You write a reminder note, and the value of that note is in the future — no reinforcement at the moment of writing. You start exercising, and the benefits accumulate over months. Every one of these is invisible to the nucleus accumbens. The signal never arrives.</p>
+<p>Contrast this with a video game, which provides continuous, immediate, variable feedback. The brain latches on because it <em>can</em>. This isn't weakness — it's the only channel available.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-why-habits-are-hard-to-build-but-not-impossible">Why Habits Are Hard to Build (But Not Impossible)</h2>
+<p>Here's what makes ADHD particularly cruel: the <strong>habit-forming circuitry itself is intact</strong>. Once a habit is established, it's just as accessible as it would be for anyone else. The problem is the mechanism by which habits get laid down requires the nucleus accumbens — it requires that immediate dopaminergic reinforcement to pour the concrete.</p>
+<p>So people with ADHD can form habits; they just can only form habits around things that deliver immediate reward. This is why video game addiction is so prevalent in this population. Day after day the brain is reinforcing gaming because the signal is there every time. The brain pours concrete, just always in the same spot.</p>
+<p>Building a new productive habit is like digging a well:</p>
+<blockquote>
+<p>The first nine feet you dig is effort with no reward. The tenth foot and you suddenly have water — as much as you want. The last foot is worth infinite water. The first nine feet are worth zero.</p>
+</blockquote>
+<p>With ADHD, you dig one foot here, move away, dig two feet somewhere else, dig three feet somewhere else. You expend enormous effort. You get no water. And you conclude the problem is you.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-the-try-harder-trap-and-what-it-does-to-self-esteem">The "Try Harder" Trap and What It Does to Self-Esteem</h2>
+<p>Here's where it gets psychologically damaging. People with ADHD are often of average or above-average intelligence — the adults around them can sense this intuitively. So when output doesn't match apparent capability, the obvious conclusion is laziness or defiance.</p>
+<p>The electricity metaphor is apt: if there are no lights on in a house, most people will say "send more electricity." But the problem isn't electricity — there are no light bulbs. You can pour in unlimited effort and produce no light. The circuit isn't there.</p>
+<p>But here's what the child experiences. They watch peers complete a 15-minute task in 15 minutes. They spend weeks mentally preparing for the same task and still struggle. They're working harder than almost anyone around them. And yet:</p>
+<blockquote>
+<p>People with ADHD are working the hardest out of any of their peers. But they're not judged for how hard they work — they're judged for what gets completed.</p>
+</blockquote>
+<p>The only internally consistent conclusion available to them is: <em>I must be defective. I must be lazy. There's something wrong with me.</em> This isn't self-pity — it's a logical deduction from available data.</p>
+<p>This explains the ADHD-depression link. People with ADHD have roughly a 70% chance of developing depression at some point in their lives, compared to a 3% rate of ADHD developing in people initially presenting with depression. The depression isn't incidental. It grows directly from years of working hard, being called lazy, and internalizing that label until it becomes identity.</p>
+<p>Once it becomes identity, it becomes a self-fulfilling prophecy. Children become what you expect of them. Tell a kid they're lazy long enough and they'll live down to it — not because they're weak, but because that's how human social mirroring works.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-compensatory-strategies-that-backfire">Compensatory Strategies That Backfire</h2>
+<p>Because the world is built for neurotypical brains, people with ADHD develop workarounds. The problem: the only workarounds they can <em>sustain</em> are ones with immediate payoff. This is how you end up with <strong>maladaptive adaptations</strong> — solutions that work well enough in the short term but calcify into patterns that cause bigger problems later.</p>
+<p>Chugging caffeine is the clearest example. The effect is immediate and felt; the brain reinforces it. Eating a proper breakfast has a slow onset — no reinforcement. Going for a walk has delayed benefits — no reinforcement. The brain routes around all of it toward the thing with the fastest signal.</p>
+<p>Sticky note reminders are another. They seem like a sensible solution. But writing a reminder has no immediate reinforcement. You have to remember to read the reminder. You have to read it consistently enough for the habit to form. Each of these steps requires the scaffolding that ADHD undercuts. It's not that reminders are bad — it's that you have to <strong>build the system that makes the reminder work</strong>, and that system requires explicit teaching, not just a Post-it.</p>
+<p>What actually works is providing external structure that supplies the reinforcement the brain can't generate internally on its own. This is what cognitive behavioral therapy for ADHD is: brain training that installs scaffolding. Not hopeless — but it requires approaches designed specifically for ADHD brains, not solutions borrowed from neurotypical frameworks.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-ambivalence-why-you-come-home-from-the-walk-and-do-nothing">Ambivalence: Why You Come Home From the Walk and Do Nothing</h2>
+<p>The second big theme involves a completely different mechanism that overlaps with ADHD but affects far more people: <strong>ambivalence</strong>.</p>
+<p>When you're five hours into a walk, you feel unstoppable. You're going to turn everything around the moment you get home. Then you get home and the momentum evaporates. This isn't laziness and it isn't weakness — it's the predictable physics of ambivalence.</p>
+<p>Ambivalence means holding simultaneous pulls in opposite directions. The mistake most people make is trying to resolve ambivalence by making a decision. Write the pros and cons list, see which side is longer, commit. But the decision doesn't fix the ambivalence, because:</p>
+<blockquote>
+<p>The more you move toward one choice, the clearer its disadvantages become — and the more the opposite appeals.</p>
+</blockquote>
+<p>When breaking up with someone exists as an idea, you see its advantages clearly: freedom, relief, growth. The moment you actually break up, the costs become sharp and immediate — loneliness, missing what you had, regret. So you get back together. Then the reasons you broke up become sharp and immediate again. Back and forth. This isn't indecisiveness — it's physics.</p>
+<p>The solution isn't a better pros-and-cons list. The solution is accepting that whichever direction you move, <strong>things will get harder before they get easier</strong>. Not as a pessimistic framing, but as accurate preparation. The walk felt transformative because the future was abstract. Getting home makes it concrete. The disadvantages of change ambush you because you didn't plan for them.</p>
+<p>What to practice instead:
+- Before committing to any goal, ask: <em>what's going to make this hard? How will this feel when I'm actually doing it?</em>
+- Accept that the decision you make today is temporary — it's made of toilet paper. That's normal, not failure.
+- When tempted toward an easier option, <strong>play the tape forward</strong>: how will you feel in an hour, tonight, tomorrow morning?</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-why-easy-lives-make-life-harder">Why Easy Lives Make Life Harder</h2>
+<p>There's a principle that sounds wrong until you sit with it: making your life easier makes your life harder.</p>
+<p>Confidence doesn't come from success. It comes from difficulty. You don't learn what you're capable of when conditions are comfortable — you learn when you're tested. Every moment of genuine self-respect you can recall probably came from a moment when things were hard and you discovered something about yourself.</p>
+<p>The Buddhist path referenced here makes this explicit:</p>
+<blockquote>
+<p>"When working, you wish to do what is hard. When living with others, you wish to live with those who are difficult. If a task is difficult, do it without hesitation — doing so shows what we are capable of undertaking."</p>
+</blockquote>
+<p>The problem is that society is moving in the opposite direction. Every friction point gets smoothed. Every inconvenience gets an app. And the result is <strong>deconditioning</strong> — not just physical, but psychological. Easy things that were once manageable become hard, because the capacity to tolerate difficulty has atrophied.</p>
+<p>This connects directly to the "night before a day off" phenomenon. The anticipation feels so good because it represents escape from difficulty. The day itself disappoints because the absence of a negative isn't the same as the presence of a positive. Moving from -1 to 0 isn't the same as moving from 0 to +10.</p>
+<p>What actually creates a good day off isn't the absence of work — it's <strong>intentionality</strong>. Planning a day off feels like work because it is. It also makes the day far more satisfying. A LAN party is objectively worse than playing online — more effort, more logistics, worse ping. And yet it's more fun. The intentionality is the point. You decided to do this, you set it up, you made it happen. That act of agency is where the joy lives, not the content itself.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-common-pitfalls">Common Pitfalls</h2>
+<p><strong>Thinking ADHD is about effort.</strong> It's not. More effort with the wrong circuitry produces exhaustion, not results. The light-bulb problem isn't solved by more electricity.</p>
+<p><strong>Borrowing neurotypical solutions.</strong> Sticky notes, calendars, schedules — these work for people whose brains can bridge the gap between writing the reminder and acting on it later. For ADHD brains, they require an entire supporting system to function. Using the tool without the scaffold is like getting a gym membership and expecting the weight to come off.</p>
+<p><strong>Treating a decision as final.</strong> Making a decision doesn't resolve ambivalence. The conflict will resurface the moment you move toward your chosen option. Expecting the decision to stick without accounting for this is why most people cycle between the same choices for years.</p>
+<p><strong>Seeking an easier path out of difficulty.</strong> The whole framework of "find what you love and you'll never work a day in your life" is another form of ambivalence-avoidance — trying to engineer circumstances so that effort disappears. It doesn't disappear. And each attempt to avoid it further deconditions your capacity to handle it.</p>
+<p><strong>Blaming yourself for the adaptation.</strong> The maladaptive coping patterns in ADHD — the caffeine dependency, the avoidance, the last-minute panic — aren't character flaws. They're the only tools the brain had available. The work is unlearning them, which is real work, not moral improvement.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-action-items-exercises">Action Items &amp; Exercises</h2>
+<ol>
+<li>
+<p><strong>Map the delay on your rewards.</strong> Pick one thing you consistently fail to do. Identify how long it takes after the action for any meaningful reward to appear. If it's more than a few hours, your brain may simply not be connecting the behavior to the outcome. Look for ways to add a tiny, immediate signal — even something as simple as physically checking a box the moment a task is done.</p>
+</li>
+<li>
+<p><strong>Build the system, not just the tool.</strong> If you're going to use reminders, design the entire chain: Where does the reminder live? What's the trigger that makes you look at it? What happens right after you look at it? Work backwards until every step has an external prompt, not a memory requirement.</p>
+</li>
+<li>
+<p><strong>Anticipate the difficulty before you commit.</strong> Before any goal — starting a project, having a hard conversation, going to the gym — spend two minutes specifically imagining what the hard parts will feel like. Not to talk yourself out of it, but so the difficulty doesn't ambush you and feel like evidence you should stop.</p>
+</li>
+<li>
+<p><strong>Play the tape forward when tempted toward avoidance.</strong> Before choosing the easier option (opening another tab, putting off the task, saying yes to one more hour of gaming), ask yourself: how will I feel tonight? How will I feel tomorrow morning? You already know the answer. Let yourself know it consciously.</p>
+</li>
+<li>
+<p><strong>Plan one day off deliberately.</strong> Pick a coming day off and spend 15 minutes writing down what you actually want to do — not what you should do, not what's productive, but what you'd find meaningful or fun. Then do it as planned. Notice whether the day feels different from an unplanned one.</p>
+</li>
+<li>
+<p><strong>Notice where you actually have power.</strong> If you've been in circumstances where you feel powerless — a difficult relationship, a bad job, a controlling family environment — write down three things, however small, that are genuinely within your control. Not to minimize the situation, but to locate the territory you do own. Agency expands from there.</p>
+</li>
+<li>
+<p><strong>Pick one difficulty to stop engineering around.</strong> Identify something you've been using a workaround for — a supplement, a shortcut, a technology — and try doing without it for one week. Not because the shortcut is bad, but to practice tolerating the friction and discover what you're capable of without it.</p>
+</li>
+</ol>
+</section></article>
+    </div>
+  </div>
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc"><ul><li><a href="#transcript-0-stream-introduction-and-disclaimer">Stream Introduction and Disclaimer</a></li><li><a href="#transcript-1-community-announcements-and-sub-growth">Community Announcements and Sub Growth</a></li><li><a href="#transcript-2-clickbait-controversy-and-porn-addiction-video">Clickbait Controversy and Porn Addiction Video</a></li><li><a href="#transcript-3-research-process-and-citation-plans">Research Process and Citation Plans</a></li><li><a href="#transcript-4-trauma-guide-pre-order-announcement">Trauma Guide Pre-Order Announcement</a></li><li><a href="#transcript-5-adhd-as-a-disorder-of-attention-control">ADHD as a Disorder of Attention Control</a></li><li><a href="#transcript-6-dopamine-nucleus-accumbens-and-immediate-rewards">Dopamine, Nucleus Accumbens, and Immediate Rewards</a></li><li><a href="#transcript-7-why-effort-alone-fails-in-adhd">Why Effort Alone Fails in ADHD</a></li><li><a href="#transcript-8-adhd-depression-and-self-identity">ADHD, Depression, and Self-Identity</a></li><li><a href="#transcript-9-habit-formation-and-treatment-approaches">Habit Formation and Treatment Approaches</a></li><li><a href="#transcript-10-emotional-dysregulation-and-societal-accommodations">Emotional Dysregulation and Societal Accommodations</a></li><li><a href="#transcript-11-gender-differences-in-adhd-diagnosis-and-treatment">Gender Differences in ADHD Diagnosis and Treatment</a></li><li><a href="#transcript-12-ambivalence-and-why-decisions-don-t-stick">Ambivalence and Why Decisions Don&#x27;t Stick</a></li><li><a href="#transcript-13-overcoming-ambivalence-by-embracing-difficulty">Overcoming Ambivalence by Embracing Difficulty</a></li><li><a href="#transcript-14-intentionality-as-a-key-to-happiness">Intentionality as a Key to Happiness</a></li><li><a href="#transcript-15-service-hard-work-and-internal-freedom">Service, Hard Work, and Internal Freedom</a></li><li><a href="#transcript-16-blame-responsibility-karma-and-personal-power">Blame, Responsibility, Karma, and Personal Power</a></li><li><a href="#transcript-17-abuse-agency-and-reclaiming-power">Abuse, Agency, and Reclaiming Power</a></li><li><a href="#transcript-18-closing-remarks-and-upcoming-streams">Closing Remarks and Upcoming Streams</a></li></ul></div></nav>
+      <article class="summary"><section class="sec sec-a">
 <h2 id="transcript-0-stream-introduction-and-disclaimer">Stream Introduction and Disclaimer</h2>
-<p><span class="speaker">Dr. K:</span> Oh, [Music]. [Music] oh, m m [Music] [Music] [Applause] [Music] o [Music] oh, oh [Music] [Music] [Music] oh, oh, oh. [Applause] [Applause] [Applause] [Laughter] [Laughter] [Laughter] [Applause] [Music] [Music] [Applause] m [Music]. You the [Applause] [Applause] [Music] [Music] [Music] [Applause] [Music] [Applause] [Music]. All righty, chat, let&#x27;s get started chat. Welcome to another healthy gamer GG stream. Just a reminder that, although I am a psychiatrist- hi, my name is Alok Kanoja, I&#x27;m a psychiatrist. But just a reminder that although I&#x27;m a psychiatrist, nothing we discuss on stream today is intended to be taken as medical advice.</p>
+<p>Oh, [Music]. [Music] oh, m m [Music] [Music] [Applause] [Music] o [Music] oh, oh [Music] [Music] [Music] oh, oh, oh. [Applause] [Applause] [Applause] [Laughter] [Laughter] [Laughter] [Applause] [Music] [Music] [Applause] m [Music]. You the [Applause] [Applause] [Music] [Music] [Music] [Applause] [Music] [Applause] [Music]. All righty, chat, let&#x27;s get started chat. Welcome to another healthy gamer GG stream. Just a reminder that, although I am a psychiatrist- hi, my name is Alok Kanoja, I&#x27;m a psychiatrist. But just a reminder that although I&#x27;m a psychiatrist, nothing we discuss on stream today is intended to be taken as medical advice.</p>
 </section>
 <section class="sec sec-b">
 <h2 id="transcript-1-community-announcements-and-sub-growth">Community Announcements and Sub Growth</h2>
@@ -299,15 +450,21 @@ try {
 <p>So anyway, um, all right, thank you all very much. It&#x27;s been a blast. I think we&#x27;ve got, uh, our trauma guide is now available for pre-order. So a lot of what I&#x27;m talking about- about power dynamics, trauma, abuse, if you all want to understand some of these things like, there&#x27;s a lot of good info in there, including stuff on relationships. So we have a section specifically about the intersection of trauma and relationships, which I think is really, really important. Um, so definitely check that out. Uh, let me see what out. Uh, let me see what else else. Um, and schedule wise, I hope yall enjoyed, uh, the viewer interviews we had recently.</p>
 <p>It was super fun to do them for me personally, like I really enjoyed it. It&#x27;s nice to be able to talk to people again. Um, I really enjoyed vibing with y&#x27;all today chat and last thing is we&#x27;ve got um members Detachment stream part two on Wednesday and members Q&amp;ampA on Friday, so definitely check those out. We&#x27;ll continue to have regular uh video upload loads as well throughout the week. So it&#x27;s just more stuff. If you all want it. Um, take care of yall. Thank you all very um. Take care of yall. Thank you all very much.</p>
 </section></article>
+    </div>
   </div>
+  
 
-  <p class="meta">Auto-transcribed livestream · chapters &amp; speaker labels are a best-effort approximation (claude-sonnet-4-6).</p>
+  <p class="meta">Medium summary · claude-sonnet-4-6 (no extended thinking)</p>
 </div>
 
 <script>
 (function () {
   var root = document.documentElement;
-  var tb = document.querySelector('.theme-toggle');
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'medium');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
   var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
   tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
@@ -315,6 +472,16 @@ try {
   function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
   var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+  // deep-link to a heading in any view: switch to that view, then scroll to it
+  function navigateTo(id){
+    var el = id && document.getElementById(id);
+    if (!el) return;
+    var v = el.closest('.view');
+    if (v) setView(v.getAttribute('data-view'));
+    el.scrollIntoView();
+  }
+  window.addEventListener('hashchange', function(){ navigateTo(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash) navigateTo(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>
 <script>

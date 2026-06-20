@@ -9,7 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-} catch (e) {}
+  document.documentElement.setAttribute('data-view', localStorage.getItem('pubview') || 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -24,16 +25,169 @@ try {
   </nav>
 
   <h1>Dr. K Unpacks Narcissistic Parenting</h1>
-  <p class="watch">
-    <a href="https://www.youtube.com/watch?v=tLHTHSI2gv8" target="_blank" rel="noopener">▶ Watch on YouTube</a>
-    <span class="speakers-note">Speakers (auto-detected): Dr. K</span>
-  </p>
+  <p class="watch"><a href="https://www.youtube.com/watch?v=tLHTHSI2gv8" target="_blank" rel="noopener">▶ Watch on YouTube</a></p>
 
-  <div class="doc">
-    <nav class="toc"><p class="toc-title">Chapters</p><ul><li><a href="#transcript-0-stream-introduction-and-narcissistic-parenting-overview">Stream Introduction and Narcissistic Parenting Overview</a></li><li><a href="#transcript-1-announcements-voicemails-and-dr-honda-s-workshop">Announcements: Voicemails and Dr. Honda&#x27;s Workshop</a></li><li><a href="#transcript-2-workshop-workbook-and-lecture-goals">Workshop Workbook and Lecture Goals</a></li><li><a href="#transcript-3-a-common-approach-anger-vs-empathy">A Common Approach: Anger vs. Empathy</a></li><li><a href="#transcript-4-understanding-the-narcissist-s-personality-structure">Understanding the Narcissist&#x27;s Personality Structure</a></li><li><a href="#transcript-5-how-narcissists-use-children-as-identity-extensions">How Narcissists Use Children as Identity Extensions</a></li><li><a href="#transcript-6-jealousy-and-entitlement-as-core-narcissistic-drivers">Jealousy and Entitlement as Core Narcissistic Drivers</a></li><li><a href="#transcript-7-plausible-deniability-and-the-narcissist-s-guilt-cycle">Plausible Deniability and the Narcissist&#x27;s Guilt Cycle</a></li><li><a href="#transcript-8-boundary-setting-power-dynamics-and-limitations">Boundary Setting: Power Dynamics and Limitations</a></li><li><a href="#transcript-9-playing-a-game-of-symbols-not-substance">Playing a Game of Symbols, Not Substance</a></li><li><a href="#transcript-10-the-grief-of-having-a-narcissistic-parent">The Grief of Having a Narcissistic Parent</a></li><li><a href="#transcript-11-grieving-and-moving-forward-with-narcissistic-parents">Grieving and Moving Forward with Narcissistic Parents</a></li><li><a href="#transcript-12-q-a-avoiding-becoming-a-narcissistic-parent">Q&amp;A: Avoiding Becoming a Narcissistic Parent</a></li><li><a href="#transcript-13-q-a-when-parents-use-others-against-you">Q&amp;A: When Parents Use Others Against You</a></li><li><a href="#transcript-14-q-a-origins-of-narcissism">Q&amp;A: Origins of Narcissism</a></li><li><a href="#transcript-15-closing-remarks-and-upcoming-streams">Closing Remarks and Upcoming Streams</a></li></ul></nav>
-    <article class="summary transcript"><section class="sec sec-a">
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">2,430w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">18,419w</span></button>
+    
+  </div>
+
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#medium-summary">Summary</a></li>
+<li><a href="#medium-why-the-narcissists-inner-world-is-so-different-from-yours">Why the Narcissist's Inner World Is So Different From Yours</a></li>
+<li><a href="#medium-the-two-forces-driving-narcissistic-parenting">The Two Forces Driving Narcissistic Parenting</a></li>
+<li><a href="#medium-why-holding-them-accountable-doesnt-work">Why Holding Them Accountable Doesn't Work</a></li>
+<li><a href="#medium-symbols-vs-substance-playing-a-different-game">Symbols vs. Substance: Playing a Different Game</a></li>
+<li><a href="#medium-boundary-setting-is-real-but-it-requires-power">Boundary Setting Is Real, But It Requires Power</a></li>
+<li><a href="#medium-the-grief-no-one-talks-about">The Grief No One Talks About</a></li>
+<li><a href="#medium-common-pitfalls">Common Pitfalls</a></li>
+<li><a href="#medium-action-items-exercises">Action Items &amp; Exercises</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="medium-summary">Summary</h2>
+<p><strong>TL;DR — Narcissistic parents aren't trying to destroy you; they're trying to keep you as part of themselves. Understanding that distinction is the foundation of every effective strategy for dealing with them.</strong></p>
+<p>Most advice about narcissistic parenting runs on anger: <em>set hard boundaries, cut them off, never forgive them.</em> That anger is real and often necessary, but it's not the only tool available — and for many people (younger, financially dependent, from non-Western cultures) it's not even accessible. This lesson takes a different road: understanding the narcissist's inner world well enough to stop being blindsided by it, and then using that understanding to build a life of your own, with or without them in it.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-why-the-narcissists-inner-world-is-so-different-from-yours">Why the Narcissist's Inner World Is So Different From Yours</h2>
+<p>The starting point for everything else is understanding what's actually happening inside a narcissistic parent's mind.</p>
+<p>Narcissistic Personality Disorder (NPD) belongs to what psychiatrists call <strong>Cluster B</strong> personality disorders, alongside borderline personality disorder and antisocial personality disorder. What links them is a <strong>malformed or underdeveloped sense of self</strong>. Where most people carry a stable internal identity — a sense of who they are that persists even when no one is watching — people with NPD don't have reliable access to that. Their sense of self is largely <em>determined by their environment</em>.</p>
+<p>This sounds abstract, but it has a very concrete consequence: they are <strong>blind to their own internal states</strong>. When you ask someone with NPD why they did something hurtful, they genuinely cannot tell you. Not because they're lying, but because the connection between their internal drivers and their actions is simply not visible to them. A 45-minute conversation trying to get a narcissist to articulate what they were feeling when they said a cruel thing will go nowhere — they'll circle endlessly around <em>what</em> they said, not <em>why</em>.</p>
+<p>This is what <strong>mentalization</strong> refers to in therapy: the basic human capacity to understand that your actions come from internal states (hunger, fear, shame, desire), and that other people's actions come from their internal states too. People with NPD have severely impaired mentalization. They operate more like a very sophisticated language model — they can produce outputs that look like self-awareness, but there's no genuine introspection underneath.</p>
+<blockquote>
+<p>"Their capacity for self-awareness is very low. So they're like bots, and we're going to treat them like bots — not like people."</p>
+</blockquote>
+<p>This reframe is not about dehumanizing them. It's about stopping yourself from making the most painful interpretive mistake: assuming that their hurtful actions come from the same place <em>your</em> hurtful actions would come from.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-the-two-forces-driving-narcissistic-parenting">The Two Forces Driving Narcissistic Parenting</h2>
+<p>Rather than cataloguing every narcissistic behavior, two internal forces explain most of what a narcissistic parent does:</p>
+<p><strong>Jealousy.</strong> As you grow and individuate — develop interests, skills, friendships, independence — you're doing something your narcissistic parent never got to do. Their own development was stunted by conditional love, by a childhood where their worth depended entirely on performance. So when you pick up a guitar, get good at art, make friends, or prepare to leave for college, they feel a jealousy they can't name or understand. That jealousy drives them to undermine, dismiss, or destroy the things you care about.</p>
+<p><strong>Entitlement.</strong> Because their identity is built partly <em>out of you</em>, they feel that every part of your life belongs to them. Your achievements are their achievements. Your choices are their choices to approve or veto. Your wedding is also somehow their wedding. This isn't strategic — it's the natural consequence of having no stable self of their own.</p>
+<p>Understanding these two forces changes how you interpret specific incidents. The mother who throws away her daughter's art supplies after she spent months saving for them isn't primarily <em>trying to hurt</em> her. She's trying to pull her back inside the box of "belonging to me," because the moment the daughter individuates into art, the mother is left with a gap in her own identity.</p>
+<blockquote>
+<p>"They're not trying to hurt you, they're trying to make you them."</p>
+</blockquote>
+<p>This matters strategically. If you believe the goal is to hurt you, your response will be organized around fighting cruelty. If you understand the goal is to absorb you, your response can be organized around <em>strategic individuation</em> — getting out without triggering every alarm at once.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-why-holding-them-accountable-doesnt-work">Why Holding Them Accountable Doesn't Work</h2>
+<p>One of the most exhausting experiences of having a narcissistic parent is trying to get them to see what they've done. It almost never works, and understanding why saves enormous energy.</p>
+<p>Because they're blind to their internal states, narcissistic parents have what amounts to <strong>impenetrable plausible deniability</strong>. When they hurt you and you call it out, they're not pretending not to know — they genuinely don't know. They'll construct rationalizations on the spot ("I was doing you a favor," "you were being dramatic," "I'm helping you focus on real things") not because they're calculated lies but because they <em>need</em> a narrative that explains their actions without requiring any internal self-examination.</p>
+<p>Worse, when they hurt you, they do feel guilt — but that guilt is processed as a threat to their identity, not as a signal to change behavior. If they're a bad parent, they're a bad person. They cannot tolerate that. So the guilt itself triggers more defensive behavior: more justifications, more doubling down, more punishing you for being hurt.</p>
+<blockquote>
+<p>"They hurt you and instead of just admitting that you hurt me and saying sorry, they double down and make things worse and then say something like, 'I want you to focus on real things.'"</p>
+</blockquote>
+<p>This creates the maddening loop every child of a narcissist knows: you get hurt, you express the hurt, they feel guilty, and then they punish you <em>more</em> for making them feel guilty. The more clearly you articulate your pain, the more defensive the behavior becomes.</p>
+<p>Stop trying to get the apology. Stop trying to get acknowledgment. They literally do not have the internal architecture to give it to you.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-symbols-vs-substance-playing-a-different-game">Symbols vs. Substance: Playing a Different Game</h2>
+<p>Here's where the understanding becomes actionable.</p>
+<p>Most human interactions are <strong>substantive</strong> — when you do something kind, there's something real on the inside driving it. When you apologize, you actually feel remorse. When you give a gift, it represents genuine feeling.</p>
+<p>Narcissists can't operate in the world of substance. They operate exclusively in <strong>symbols</strong>. An apology from a narcissist isn't an expression of genuine remorse — it's a symbol that moves the board position back to where they want it. They've noticed, on some subconscious level, that you're pulling away. They need you close. So they produce the symbol that's worked before.</p>
+<blockquote>
+<p>"This is not an apology. It's a symbol of an apology designed to rope you back in."</p>
+</blockquote>
+<p>The actionable insight: you can play the game of symbols too, without compromising your actual life. You don't have to lie. You don't have to give them credit they don't deserve. But you can offer <em>symbolic gestures</em> that soothe the narcissistic defense mechanism without surrendering anything real.</p>
+<p>Example: "You made me the person I am today" — to you, that means one thing. To them, it sounds like gratitude and validation. Neither statement is technically false. It's workshopping language that provides the symbol they need without requiring you to believe things that aren't true.</p>
+<p>The principle: give them ownership <em>symbols</em> of your successes when you can. "Thank you for supporting me in getting this tablet." You don't mean it the way they'll hear it. But their jealousy cools, their narcissistic behavior decreases, and you've bought yourself space to live your actual life.</p>
+<p>Slow, gentle, strategic individuation — rather than sudden hard confrontation — tends to produce less collateral damage, especially when you're in a power deficit.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-boundary-setting-is-real-but-it-requires-power">Boundary Setting Is Real, But It Requires Power</h2>
+<p>Boundary setting is often treated as the universal solution to narcissistic parenting. It works — but it requires something people don't always acknowledge: <strong>power</strong>.</p>
+<p>When you set a boundary and your narcissistic parent has more power than you (financial, cultural, social), they can simply override it. A 17-year-old living at home has almost no leverage. A young adult whose inheritance is on the line has complicated leverage. Someone from a culture where refusing an elder's demands is socially catastrophic faces a completely different set of constraints than someone in an individualistic Western context where "setting boundaries on your mom" is treated as obvious and easy.</p>
+<p>Boundaries also trigger narcissistic behavior in predictable ways. When you pull back, they escalate. They'll recruit family members (indirect aggression), play the victim, guilt-trip, cut off access to resources. None of this means don't set boundaries — it means go in with realistic expectations.</p>
+<blockquote>
+<p>"Setting boundaries is wonderful, but setting boundaries requires power. And if they have more power than you do, it becomes really hard to do."</p>
+</blockquote>
+<p>The path forward for most people involves developing real-world independence first — financial, social, geographic — and then setting boundaries from a position of actual power. Until then, the game of symbols keeps you functional and moving toward that independence.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-the-grief-no-one-talks-about">The Grief No One Talks About</h2>
+<p>Having a narcissistic parent means losing a parent. Not to death, but to something stranger and harder to grieve.</p>
+<p>The analogy is a coma. When someone dies, grief has an object and a trajectory — you mourn, you integrate, you eventually move forward. When someone is in a coma, you can't grieve properly because they're not gone. They might wake up. And the child of a narcissist faces exactly this: a parent who is alive, who occasionally shows a genuine flash of warmth or self-awareness when the defenses come down, and who might — <em>might</em> — one day actually see what they've done.</p>
+<p>That glimmer is real. It's not always a manipulation. Sometimes the clouds part and there's actual substance there, not just a symbol. That's why you can't fully let go. That's why you keep trying. You want a parent, you <em>deserve</em> a parent, and occasionally you see evidence that one might be in there.</p>
+<p>This is the tangled place. You can't leave because you'd be abandoning them, and you were the one who was abandoned. You can't stay because it keeps destroying you. And the grief of what you never had, and may never have, is profound.</p>
+<p>The honest answer isn't to pretend the grief isn't there. It's to notice it, name it, and grieve the parent you deserved but didn't get — while building a life that doesn't require them to be different than they are.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-common-pitfalls">Common Pitfalls</h2>
+<ul>
+<li>
+<p><strong>Expecting an apology to mean something.</strong> The most dangerous thing a narcissist can offer you is an apology. It feels like resolution; it's almost always re-engagement bait. Don't reorganize your life around it.</p>
+</li>
+<li>
+<p><strong>Explaining your pain in detail.</strong> Saying "you hurt me" or "I'm disappointed in you" gives them nothing useful. They don't know what to do with emotional impact statements. If you need to communicate something, focus on concrete behaviors: <em>when you lead every call by pointing out that I didn't answer, it makes me less likely to answer.</em></p>
+</li>
+<li>
+<p><strong>Counting down to freedom without a strategy.</strong> Waiting for college, waiting to move out, waiting to cut contact — without understanding the underlying dynamic — just relocates the problem. A narcissistic parent doesn't stop because you've left the house.</p>
+</li>
+<li>
+<p><strong>Confusing empathy with kindness.</strong> Empathy here means understanding how they see the world — not being nice to them or accepting bad treatment. You can have deep empathy for a narcissist and still set hard limits on their access to your life.</p>
+</li>
+<li>
+<p><strong>Assuming anger is sustainable fuel.</strong> Anger works as a boundary-setting catalyst, but it comes with costs: guilt when you hurt them, grief when you think about what you've lost, and exhaustion over time. Compassion and understanding are more durable.</p>
+</li>
+<li>
+<p><strong>Trying to reform them.</strong> This isn't your job. Playing the symbols game isn't reinforcing bad behavior in a way you need to fix — it's giving yourself room to build a life. Let the psychiatrists and therapists worry about changing them.</p>
+</li>
+</ul>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-action-items-exercises">Action Items &amp; Exercises</h2>
+<ol>
+<li>
+<p><strong>Map the two core drivers.</strong> For a recent conflict with your narcissistic parent, ask yourself: which element was at play — <em>jealousy</em> (they felt threatened by your individuation) or <em>entitlement</em> (they believed they owned that part of your life)? Naming the driver helps you stop taking the behavior personally and start seeing the pattern.</p>
+</li>
+<li>
+<p><strong>Stop the accountability conversations.</strong> Make a deliberate decision to stop trying to get acknowledgment, apology, or insight from your narcissistic parent about specific past incidents. Redirect that energy toward the next exercise instead.</p>
+</li>
+<li>
+<p><strong>Workshop a few symbol sentences.</strong> Write down two or three things you could say to your parent that provide the symbolic validation they're seeking without requiring you to believe things that aren't true. "You made me who I am today" is one example. Find your own, tailored to your actual relationship.</p>
+</li>
+<li>
+<p><strong>Before the next conflict, predict it.</strong> Narcissistic behavior is patterned. Before your next interaction — a visit, a call, a holiday — write down what you expect them to do. Seeing it coming removes much of its emotional power and keeps you from reacting in ways that escalate things.</p>
+</li>
+<li>
+<p><strong>Assess your power position honestly.</strong> List the ways your narcissistic parent has leverage over you (financial, housing, family social network, cultural expectations) and the ways you're building independence. This tells you whether you're in a position to set hard limits now or whether you need to develop more independence first.</p>
+</li>
+<li>
+<p><strong>Practice mentalization on yourself.</strong> When you do something impulsive or reactive — especially toward your parent — ask: <em>what was I feeling before I did that? What need was underneath it?</em> This builds the internal self-awareness that protects against developing narcissistic patterns yourself.</p>
+</li>
+<li>
+<p><strong>Grieve what you didn't get.</strong> Set aside time — in a journal, in therapy, with a trusted friend — to explicitly acknowledge the parent you needed and didn't have. Not to perform the grief, but to stop carrying it silently. The grief of a narcissistic parent is real and it deserves actual space.</p>
+</li>
+<li>
+<p><strong>When family members get recruited, ask questions instead of defending.</strong> Rather than arguing your case, ask the family member: <em>has mom ever done this to you? How did that feel? If I don't give in, what do you think she'll do to you?</em> You'll often find an ally who's been enabling out of exhaustion, not genuine disagreement with you.</p>
+</li>
+</ol>
+</section></article>
+    </div>
+  </div>
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc"><ul><li><a href="#transcript-0-stream-introduction-and-narcissistic-parenting-overview">Stream Introduction and Narcissistic Parenting Overview</a></li><li><a href="#transcript-1-announcements-voicemails-and-dr-honda-s-workshop">Announcements: Voicemails and Dr. Honda&#x27;s Workshop</a></li><li><a href="#transcript-2-workshop-workbook-and-lecture-goals">Workshop Workbook and Lecture Goals</a></li><li><a href="#transcript-3-a-common-approach-anger-vs-empathy">A Common Approach: Anger vs. Empathy</a></li><li><a href="#transcript-4-understanding-the-narcissist-s-personality-structure">Understanding the Narcissist&#x27;s Personality Structure</a></li><li><a href="#transcript-5-how-narcissists-use-children-as-identity-extensions">How Narcissists Use Children as Identity Extensions</a></li><li><a href="#transcript-6-jealousy-and-entitlement-as-core-narcissistic-drivers">Jealousy and Entitlement as Core Narcissistic Drivers</a></li><li><a href="#transcript-7-plausible-deniability-and-the-narcissist-s-guilt-cycle">Plausible Deniability and the Narcissist&#x27;s Guilt Cycle</a></li><li><a href="#transcript-8-boundary-setting-power-dynamics-and-limitations">Boundary Setting: Power Dynamics and Limitations</a></li><li><a href="#transcript-9-playing-a-game-of-symbols-not-substance">Playing a Game of Symbols, Not Substance</a></li><li><a href="#transcript-10-the-grief-of-having-a-narcissistic-parent">The Grief of Having a Narcissistic Parent</a></li><li><a href="#transcript-11-grieving-and-moving-forward-with-narcissistic-parents">Grieving and Moving Forward with Narcissistic Parents</a></li><li><a href="#transcript-12-q-a-avoiding-becoming-a-narcissistic-parent">Q&amp;A: Avoiding Becoming a Narcissistic Parent</a></li><li><a href="#transcript-13-q-a-when-parents-use-others-against-you">Q&amp;A: When Parents Use Others Against You</a></li><li><a href="#transcript-14-q-a-origins-of-narcissism">Q&amp;A: Origins of Narcissism</a></li><li><a href="#transcript-15-closing-remarks-and-upcoming-streams">Closing Remarks and Upcoming Streams</a></li></ul></div></nav>
+      <article class="summary"><section class="sec sec-a">
 <h2 id="transcript-0-stream-introduction-and-narcissistic-parenting-overview">Stream Introduction and Narcissistic Parenting Overview</h2>
-<p><span class="speaker">Dr. K:</span> All righty, chat. Let&#x27;s get started. Welcome to another HealthyGamerGG stream. My name is Dr. Alok Kanojia. Just a reminder that everything we discuss on stream today is intended to be taken for educational and and entertainment purposes only. Nothing is intended to be taken as medical advice. So, if you all have a medical concern or question, please go see a licensed question, please go see a licensed professional. professional. Um yeah, so today we&#x27;re going to be talking about narcissistic parenting. talking about narcissistic parenting. Woo. Woo. I am super excited about today&#x27;s I am super excited about today&#x27;s lecture.</p>
+<p>All righty, chat. Let&#x27;s get started. Welcome to another HealthyGamerGG stream. My name is Dr. Alok Kanojia. Just a reminder that everything we discuss on stream today is intended to be taken for educational and and entertainment purposes only. Nothing is intended to be taken as medical advice. So, if you all have a medical concern or question, please go see a licensed question, please go see a licensed professional. professional. Um yeah, so today we&#x27;re going to be talking about narcissistic parenting. talking about narcissistic parenting. Woo. Woo. I am super excited about today&#x27;s I am super excited about today&#x27;s lecture.</p>
 <p>lecture. lecture. Mhm. Yeah. I really have a lot to share. And I really hope it will help you all. So, every now and then we you know, we So, every now and then we you know, we get get a lecture opportunity that I mean, sometimes we just like talk about stuff, but I feel like today&#x27;s is going to be really important. I guess every day is important, but today just feels really important because I think there&#x27;s a lot of healing that needs to happen. And I think a lot of the ways that we approach healing from narcissistic parenting um is not ideal for lack of a better term. And that&#x27;s okay. But I&#x27;d love to offer you all kind of my perspective on it.</p>
 </section>
 <section class="sec sec-b">
@@ -216,15 +370,21 @@ try {
 <p>advantage. Being subconsciously sensitive, being manipulative. And it&#x27;s not that these people are bad. It&#x27;s all working under the surface. That&#x27;s how people become narcissists. So, you can call it trauma, sure. Okay. Um Um my My voice is giving out, y&#x27;all, so I&#x27;m streaming tomorrow and on Friday. So, I&#x27;m going to have to call it here. Leave something in the tank for Leave something in the tank for tomorrow. tomorrow. Um we have a membership stream on building a successful career or a fulfilling career. I think it&#x27;s more about fulfilling than success. Um which goes back to this meme that we saw earlier. I don&#x27;t know if you guys saw that meme, but the empty meaningless that meme, but the empty meaningless career.</p>
 <p>career. career. Uh And then on Friday we&#x27;re doing voicemails. So, submit voicemails, y&#x27;all. Exclamation point voicemail, and we&#x27;ll see y&#x27;all hopefully tomorrow.</p>
 </section></article>
+    </div>
   </div>
+  
 
-  <p class="meta">Auto-transcribed livestream · chapters &amp; speaker labels are a best-effort approximation (claude-sonnet-4-6).</p>
+  <p class="meta">Medium summary · claude-sonnet-4-6 (no extended thinking)</p>
 </div>
 
 <script>
 (function () {
   var root = document.documentElement;
-  var tb = document.querySelector('.theme-toggle');
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'medium');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
   var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
   tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
@@ -232,6 +392,16 @@ try {
   function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
   var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+  // deep-link to a heading in any view: switch to that view, then scroll to it
+  function navigateTo(id){
+    var el = id && document.getElementById(id);
+    if (!el) return;
+    var v = el.closest('.view');
+    if (v) setView(v.getAttribute('data-view'));
+    el.scrollIntoView();
+  }
+  window.addEventListener('hashchange', function(){ navigateTo(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash) navigateTo(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>
 <script>

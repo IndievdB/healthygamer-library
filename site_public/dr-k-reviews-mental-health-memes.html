@@ -9,7 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-} catch (e) {}
+  document.documentElement.setAttribute('data-view', localStorage.getItem('pubview') || 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -24,16 +25,154 @@ try {
   </nav>
 
   <h1>Dr. K Reviews Mental Health Memes</h1>
-  <p class="watch">
-    <a href="https://www.youtube.com/watch?v=q-byTf9466Q" target="_blank" rel="noopener">▶ Watch on YouTube</a>
-    <span class="speakers-note">Speakers (auto-detected): Dr. K</span>
-  </p>
+  <p class="watch"><a href="https://www.youtube.com/watch?v=q-byTf9466Q" target="_blank" rel="noopener">▶ Watch on YouTube</a></p>
 
-  <div class="doc">
-    <nav class="toc"><p class="toc-title">Chapters</p><ul><li><a href="#transcript-0-stream-opening-and-host-introduction">Stream Opening and Host Introduction</a></li><li><a href="#transcript-1-teacher-burnout-video-and-student-behavior-crisis">Teacher Burnout Video and Student Behavior Crisis</a></li><li><a href="#transcript-2-technology-adhd-and-emotional-dysregulation-in-kids">Technology, ADHD, and Emotional Dysregulation in Kids</a></li><li><a href="#transcript-3-tiktok-algorithms-and-mental-health-diagnosis">TikTok Algorithms and Mental Health Diagnosis</a></li><li><a href="#transcript-4-generational-disillusionment-and-existential-nihilism">Generational Disillusionment and Existential Nihilism</a></li><li><a href="#transcript-5-male-loneliness-touch-starvation-and-suicide">Male Loneliness, Touch Starvation, and Suicide</a></li><li><a href="#transcript-6-homophobia-physical-touch-and-men-s-mental-health">Homophobia, Physical Touch, and Men&#x27;s Mental Health</a></li><li><a href="#transcript-7-connection-as-the-foundation-of-mental-health">Connection as the Foundation of Mental Health</a></li><li><a href="#transcript-8-thwarted-belongingness-and-male-suicide-cases">Thwarted Belongingness and Male Suicide Cases</a></li><li><a href="#transcript-9-good-cry-emotional-release-and-teaching-men-to-cry">Good Cry, Emotional Release, and Teaching Men to Cry</a></li><li><a href="#transcript-10-school-shootings-parenting-anxiety-and-gun-policy">School Shootings, Parenting Anxiety, and Gun Policy</a></li><li><a href="#transcript-11-time-as-the-source-of-suffering-and-the-present-moment">Time as the Source of Suffering and the Present Moment</a></li><li><a href="#transcript-12-living-fully-spent-vs-wasted-days">Living Fully Spent vs. Wasted Days</a></li><li><a href="#transcript-13-how-mindfulness-and-meditation-remove-temporal-suffering">How Mindfulness and Meditation Remove Temporal Suffering</a></li><li><a href="#transcript-14-impermanence-of-mind-and-how-time-heals-wounds">Impermanence of Mind and How Time Heals Wounds</a></li><li><a href="#transcript-15-limits-of-present-moment-philosophy-and-panic-attacks">Limits of Present-Moment Philosophy and Panic Attacks</a></li><li><a href="#transcript-16-principles-of-dirty-talk-and-intimate-communication">Principles of Dirty Talk and Intimate Communication</a></li><li><a href="#transcript-17-stream-wrap-up-and-closing-remarks">Stream Wrap-Up and Closing Remarks</a></li></ul></nav>
-    <article class="summary transcript"><section class="sec sec-a">
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">2,421w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">19,545w</span></button>
+    
+  </div>
+
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#medium-summary">Summary</a></li>
+<li><a href="#medium-the-classroom-is-a-window-into-what-technology-is-doing-to-kids">The Classroom Is a Window Into What Technology Is Doing to Kids</a></li>
+<li><a href="#medium-male-loneliness-is-a-public-health-emergency-that-we-keep-mislabeling">Male Loneliness Is a Public Health Emergency That We Keep Mislabeling</a></li>
+<li><a href="#medium-nihilism-isnt-weakness-its-a-rational-response-to-broken-promises">Nihilism Isn't Weakness — It's a Rational Response to Broken Promises</a></li>
+<li><a href="#medium-time-is-the-mechanism-behind-most-psychological-suffering">Time Is the Mechanism Behind Most Psychological Suffering</a></li>
+<li><a href="#medium-technology-is-replacing-human-connection-piece-by-piece">Technology Is Replacing Human Connection Piece by Piece</a></li>
+<li><a href="#medium-common-pitfalls">Common Pitfalls</a></li>
+<li><a href="#medium-action-items-exercises">Action Items &amp; Exercises</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="medium-summary">Summary</h2>
+<p><strong>TL;DR — This wide-ranging stream uses mental health memes and viral clips to work through five distinct problems: technology's grip on children's attention, the hidden crisis of male loneliness, nihilism in younger generations, time as the root of psychological suffering, and what it actually means to connect with other people.</strong></p>
+<p>The stream moves through several unrelated but complementary themes, each sparked by a meme or video. The through-line is a single idea: the systems humans built — technological, social, economic, medical — are failing to account for what minds actually need to be healthy. What follows is each theme unpacked on its own terms.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-the-classroom-is-a-window-into-what-technology-is-doing-to-kids">The Classroom Is a Window Into What Technology Is Doing to Kids</h2>
+<p>A band teacher's viral video describes a year of escalating chaos: assaults, destroyed instruments, kids who don't respond to any traditional consequence. Her diagnosis — "an emotional dysregulation problem" — is right, but the picture is actually bigger than she names.</p>
+<p>Three things are happening simultaneously in children who have grown up with smartphones and short-form video:</p>
+<ol>
+<li>
+<p><strong>Impulsivity.</strong> Technology trains the brain to act before thinking. This isn't only about kids with a formal ADHD diagnosis. There's a large subclinical population — kids who aren't quite "diagnosable" but whose impulse control is still measurably worse than it was in prior generations.</p>
+</li>
+<li>
+<p><strong>Emotional dysregulation.</strong> fMRI research shows that using technology reduces blood flow to the brain's negative-emotion circuits. In plain terms: screens are how kids (and adults) manage bad feelings. That works in the short run and backfires badly over time, because the skill of tolerating discomfort never gets built.</p>
+</li>
+<li>
+<p><strong>Temporal myopia.</strong> Heavy dopamine stimulation from devices shrinks a person's time horizon. The brain stops thinking about tomorrow and starts living in five-minute segments. This is why a 12-year-old will trash a drum kit for a laugh — there's no cognitive machinery available to project forward to consequences. Kids with clinical ADHD have this feature severely; an entire generation now has a subclinical version of it.</p>
+</li>
+</ol>
+<p>The teacher asks what the fix is. The honest answer is that government regulation of TikTok, teacher raises, and better parenting can all help at the margins, but none of them scale fast enough. Parents today are trying to set limits on technology their own parents never encountered, so there's no inherited wisdom to draw on. The only intervention that has actually been shown to work at scale is teaching people directly how their minds function — emotional literacy as a core school subject, not an elective or a counselor's side project.</p>
+<blockquote>
+<p>"The children are not in control of their minds. Their minds are in control of them."</p>
+</blockquote>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-male-loneliness-is-a-public-health-emergency-that-we-keep-mislabeling">Male Loneliness Is a Public Health Emergency That We Keep Mislabeling</h2>
+<p>Suicide is the leading cause of death for men between roughly 21 and 45, and the rate has climbed around 25% since 1990. Despite that, there is almost no public funding, and the dominant framing — that male suicide is a mental illness problem — is quietly making things worse.</p>
+<p>Studies suggest that up to 60% of men who die by suicide show no diagnosable mental illness beforehand. That number matches clinical experience: roughly half of suicidal men seen in practice don't meet criteria for any disorder. What they share instead is <strong>hopelessness</strong> and <strong>thwarted belongingness</strong> — they are trying to do what the world asks of them, cannot get traction, and are not permitted to ask for help.</p>
+<p>When we call suicidality a mental illness by default, we locate the entire problem inside the individual. We say, implicitly, that the circumstances don't matter, the world doesn't owe you anything, fix yourself. That is exactly what society already tells men. Labeling it as illness just repeats the message with clinical authority.</p>
+<p>Two case examples illustrate the range. A high-earning, physically imposing man — successful by every external measure — was approaching suicide because everyone in his life came to him for resources and no one asked how he was doing. A 19-year-old in jail for dealing drugs was suicidal because his family told him a man provides, he had no legal way to do it, and asking for help wasn't something men were supposed to do. Different circumstances, same trap.</p>
+<p>The deeper driver is <strong>touch starvation</strong>, and a surprising amount of it traces back to homophobia. When physical contact between men became culturally coded as sexual, men lost the entire category of platonic touch. The only people left who could touch them were romantic partners and, in childhood, mothers. That collapse means heterosexual women are now expected to meet not just romantic needs but every human need for physical connection a man has — an impossible load, and one that distorts relationships.</p>
+<p>Meanwhile, someone who tries to offer a hug to a stranger risks being called a creep. Men who try to express need risk being called weak. The one professional space where they are allowed to be vulnerable — therapy — has rules that prevent the therapist from saying "I love you" back when a patient, for the first time in his life, says it to another person.</p>
+<blockquote>
+<p>"We don't let men be taken care of because we expect them to take care of themselves — and even by labeling it mental illness we're reinforcing that, because now it's their responsibility."</p>
+</blockquote>
+<p>The <strong>good cry</strong> is worth naming specifically. There are two kinds of crying: the bad cry, done alone in a corner, which tends to spiral, and the good cry, which happens in the presence of someone who accepts it — and which consistently leaves people feeling better. Therapy works partly because it is a structured container for the good cry. Most men have never had access to that container and, because no one modeled it for them, don't know it's possible.</p>
+<p>Practical things that can actually help right now: ask the men in your life when they last had a good cry. Offer a hug to someone you know well enough. If you're a man, experiment with physical contact with other men — a hand on a shoulder, an arm around someone. The reason this feels strange is entirely learned, not innate.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-nihilism-isnt-weakness-its-a-rational-response-to-broken-promises">Nihilism Isn't Weakness — It's a Rational Response to Broken Promises</h2>
+<p>Millennials were handed a formula — go to college, take out loans, get the credential, succeed — and the formula didn't work. Student loan debt was carved out of bankruptcy law so it couldn't be discharged even in financial collapse, while corporate and commercial real estate debt could. The generation that followed watched that happen and, quite rationally, stopped believing that effort leads to reward.</p>
+<p>The word for that cultural condition is <strong>doomerism</strong>, and it's common enough to have earned its own name. When the structures that were supposed to give life meaning don't deliver, people look for substitutes. One of the strongest predictors of pornography addiction, for instance, is meaninglessness — not moral failure, not personality defect, but the absence of a sense that anything matters.</p>
+<p>The response to this — "buy this supplement, use this app, hack your brain, a scientist will fix climate change" — is not an answer. It's more of the same system that failed in the first place. The uncomfortable truth is that in an environment this broken, each person has to figure out individually what makes their own life worth living. There isn't a formula. Anyone selling one is selling something.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-time-is-the-mechanism-behind-most-psychological-suffering">Time Is the Mechanism Behind Most Psychological Suffering</h2>
+<p>The yogic tradition identified something useful: the mind has two directions it can move that reliably produce suffering — toward the future (anxiety, worry) and toward the past (regret, shame, guilt). The present is the only location where neither of those can operate.</p>
+<p>This sounds abstract until you test it. You cannot be anxious about the present moment — anxiety is always about a future consequence of a current action. You cannot feel regret about what you are doing right now — regret requires a past. Depression's anhedonia, the experience that food is tasteless and pleasure is inaccessible, happens not because food changed but because the mind is occupied with past and future. The same meal tastes different depending on where your mind is.</p>
+<p><strong>Temporal myopia</strong> — the technology-induced inability to think about the future — is genuinely harmful. But the solution is not to become obsessed with the future. It's to get better at the present. The dimension of time is also what makes procrastination work: if I can do it tomorrow, today doesn't matter. It's what makes gratitude hard: if I can get a better version of this later, why appreciate what I have now?</p>
+<p>There is one practical way into this. Notice that what makes studying feel miserable is almost never the content itself — it's thoughts like "I've been at this for an hour and I still have 40 pages left" (future) or "I can't remember anything from the last session" (past). Actual engagement with material — asking how does this work, why does this formula look this way — is inherently present-tense. That's why curious studying feels different from grinding studying.</p>
+<blockquote>
+<p>"Time heals all wounds. Time also causes them."</p>
+</blockquote>
+<p>The concept of being <strong>spent versus tired</strong> matters here. Tired is depletion that feels bad. Spent is depletion that feels good — the feeling after a hike, a difficult but honest conversation, a session of real work. The goal is to end more days spent and fewer days just tired. Hedonism alone doesn't produce that. Meaning does. And meaning tends to emerge after enough days of noticing that pleasure without investment leaves you feeling hollow.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-technology-is-replacing-human-connection-piece-by-piece">Technology Is Replacing Human Connection Piece by Piece</h2>
+<p>Groceries, food, entertainment, mentorship, emotional support — all of these have been progressively removed from face-to-face human interaction and routed through a screen. Each substitution is individually convenient and collectively corrosive, because the brain doesn't just need connection in general — it needs connection with other humans specifically, and increasingly, it needs physical contact with them.</p>
+<p>The one need technology has not yet been able to simulate is touch. Pets — dogs, cats, animals of all kinds — are doing measurable protective work against suicidality and depression. They are, without any formal recognition, one of the most effective mental health interventions available. When every other avenue for physical warmth has been closed off, the dog or cat on the couch is doing real clinical work.</p>
+<p>The experiment worth thinking about: if you analyzed someone's TikTok feed without their self-report, could you map their insecurities? The algorithm figures out what a person responds to emotionally faster than most clinical interviews do. That's not a comfortable observation — it means a piece of software knows something intimate about your inner life, and it's using that knowledge to keep you watching.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-common-pitfalls">Common Pitfalls</h2>
+<ul>
+<li>
+<p><strong>Assuming all suicidality is mental illness.</strong> This is the most consequential mistake in the piece. It locates the problem in the person, removes social responsibility, and reinforces the same message already telling men to fix themselves alone. Seeking mental health support is still useful even when there's no diagnosis — an external confirmation that "your reaction is appropriate to an awful situation" can itself be therapeutic.</p>
+</li>
+<li>
+<p><strong>Treating the solution to tech-driven dysregulation as primarily regulatory.</strong> Banning TikTok doesn't undo the neural patterns already established, and every other platform has already copied the short-form model. Regulation is worth pursuing and will arrive too late to be sufficient.</p>
+</li>
+<li>
+<p><strong>Confusing living in the present with hedonism.</strong> Chasing pleasure moment to moment is still time-bound thinking — you're trying to make the present feel better than the future or past. Genuine present-moment engagement is neutral, curious, and doesn't require the moment to be pleasurable.</p>
+</li>
+<li>
+<p><strong>Thinking the "good cry" is just about crying.</strong> The therapeutic component is not the crying itself — it's being accepted by another person while you cry. A cry that happens in isolation and shame is a different physiological and psychological event.</p>
+</li>
+<li>
+<p><strong>Misunderstanding dirty talk as performance.</strong> The common error is centering your own arousal or using scripted phrases. Communication requires attention to the other person's signals, gradual escalation, and the other person actively wanting to engage — not a technique applied to them.</p>
+</li>
+</ul>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-action-items-exercises">Action Items &amp; Exercises</h2>
+<ol>
+<li>
+<p><strong>Audit your relationship with time for one day.</strong> Every time you feel anxious, frustrated, or bored, ask yourself: am I thinking about the future or the past? Notice whether there is ever a moment of genuine suffering that is purely about the present second, not a consequence you're anticipating or a failure you're replaying.</p>
+</li>
+<li>
+<p><strong>Try a "spent" day instead of a "happy" day.</strong> Design a day around things that will leave you depleted in a good way — a hard physical activity, a difficult honest conversation, a creative project you've been avoiding. At the end, notice whether the tiredness feels different from how you usually feel.</p>
+</li>
+<li>
+<p><strong>Ask someone you know when they last had a good cry.</strong> You don't need to follow it up with anything elaborate. The question alone often opens something. Stay with whatever comes up rather than rushing to fix it.</p>
+</li>
+<li>
+<p><strong>Offer physical contact to someone in your life who might need it.</strong> This can be as small as a hand on a shoulder. For men specifically: make one instance of platonic physical contact with a male friend this week — a hug, a hand on the back. Notice what resistance comes up in you and where it comes from.</p>
+</li>
+<li>
+<p><strong>If you're studying or doing focused work, practice present-tense curiosity.</strong> Instead of tracking how much you have left or how long you've been at it, pick one thing in the material and ask <em>why</em> it works the way it does. Stay with the question until you actually want to know the answer.</p>
+</li>
+<li>
+<p><strong>If you're a parent, delay technology access as long as reasonably possible.</strong> The earlier a developing brain encounters dopamine-optimized platforms, the more it reshapes reward circuitry. You don't have to be perfect — but the developing brain is significantly more vulnerable than the adult brain.</p>
+</li>
+<li>
+<p><strong>If you're struggling with suicidal thoughts, see a mental health professional regardless of whether you think you're "mentally ill."</strong> You may leave with no diagnosis and with the knowledge that what you're experiencing is a reasonable response to an unreasonable situation. That reframe alone can be meaningful. The absence of a diagnosis does not mean the professional cannot help.</p>
+</li>
+</ol>
+</section></article>
+    </div>
+  </div>
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc"><ul><li><a href="#transcript-0-stream-opening-and-host-introduction">Stream Opening and Host Introduction</a></li><li><a href="#transcript-1-teacher-burnout-video-and-student-behavior-crisis">Teacher Burnout Video and Student Behavior Crisis</a></li><li><a href="#transcript-2-technology-adhd-and-emotional-dysregulation-in-kids">Technology, ADHD, and Emotional Dysregulation in Kids</a></li><li><a href="#transcript-3-tiktok-algorithms-and-mental-health-diagnosis">TikTok Algorithms and Mental Health Diagnosis</a></li><li><a href="#transcript-4-generational-disillusionment-and-existential-nihilism">Generational Disillusionment and Existential Nihilism</a></li><li><a href="#transcript-5-male-loneliness-touch-starvation-and-suicide">Male Loneliness, Touch Starvation, and Suicide</a></li><li><a href="#transcript-6-homophobia-physical-touch-and-men-s-mental-health">Homophobia, Physical Touch, and Men&#x27;s Mental Health</a></li><li><a href="#transcript-7-connection-as-the-foundation-of-mental-health">Connection as the Foundation of Mental Health</a></li><li><a href="#transcript-8-thwarted-belongingness-and-male-suicide-cases">Thwarted Belongingness and Male Suicide Cases</a></li><li><a href="#transcript-9-good-cry-emotional-release-and-teaching-men-to-cry">Good Cry, Emotional Release, and Teaching Men to Cry</a></li><li><a href="#transcript-10-school-shootings-parenting-anxiety-and-gun-policy">School Shootings, Parenting Anxiety, and Gun Policy</a></li><li><a href="#transcript-11-time-as-the-source-of-suffering-and-the-present-moment">Time as the Source of Suffering and the Present Moment</a></li><li><a href="#transcript-12-living-fully-spent-vs-wasted-days">Living Fully Spent vs. Wasted Days</a></li><li><a href="#transcript-13-how-mindfulness-and-meditation-remove-temporal-suffering">How Mindfulness and Meditation Remove Temporal Suffering</a></li><li><a href="#transcript-14-impermanence-of-mind-and-how-time-heals-wounds">Impermanence of Mind and How Time Heals Wounds</a></li><li><a href="#transcript-15-limits-of-present-moment-philosophy-and-panic-attacks">Limits of Present-Moment Philosophy and Panic Attacks</a></li><li><a href="#transcript-16-principles-of-dirty-talk-and-intimate-communication">Principles of Dirty Talk and Intimate Communication</a></li><li><a href="#transcript-17-stream-wrap-up-and-closing-remarks">Stream Wrap-Up and Closing Remarks</a></li></ul></div></nav>
+      <article class="summary"><section class="sec sec-a">
 <h2 id="transcript-0-stream-opening-and-host-introduction">Stream Opening and Host Introduction</h2>
-<p><span class="speaker">Dr. K:</span> [Music], oh, oh, [Music] [Music] [Applause] [Applause] [Music], [Music], [Music] oh, [Music] [Music] e, e, e [Music] [Applause] [Music] [Music] [Applause] [Applause] [Applause] [Music], [Music]. [Music] oh, oh, oh, [Music]. [Music], [Music] for, for, for [Music] [Music], [Music] [Applause] [Applause] [Applause] [Music] [Music], [Music] [Applause] [Applause] [Applause] [Music] the, the [Music], [Music], [Music] [Applause] [Applause] [Applause] [Music], [Music] [Music] [Applause] [Music] [Music] oh, oh, oh [Music] [Music] to [Music] [Music] oh, oh, [Music] [Music] oh, [Music] [Applause] [Applause] [Music] [Music] [Music] oh, [Music] [Music] [Applause] [Applause] [Applause] [Music]: hello chat- how y&#x27;all doing today.</p>
+<p>[Music], oh, oh, [Music] [Music] [Applause] [Applause] [Music], [Music], [Music] oh, [Music] [Music] e, e, e [Music] [Applause] [Music] [Music] [Applause] [Applause] [Applause] [Music], [Music]. [Music] oh, oh, oh, [Music]. [Music], [Music] for, for, for [Music] [Music], [Music] [Applause] [Applause] [Applause] [Music] [Music], [Music] [Applause] [Applause] [Applause] [Music] the, the [Music], [Music], [Music] [Applause] [Applause] [Applause] [Music], [Music] [Music] [Applause] [Music] [Music] oh, oh, oh [Music] [Music] to [Music] [Music] oh, oh, [Music] [Music] oh, [Music] [Applause] [Applause] [Music] [Music] [Music] oh, [Music] [Music] [Applause] [Applause] [Applause] [Music]: hello chat- how y&#x27;all doing today.</p>
 <p>We doing good chat. Meme review: absolutely how yall doing today. Welcome to another healthy gamer G stream. My name is Dr. K. Just a reminder that, although I am a doctor, nothing we discuss on stream today is intended to be taken as medical advice. Everything is for education or entertainment purposes only. So if youall have a concern or question, please go see a license therapist or mental health professional or just any kind of medical professional. Did yall know that you can just talk? So I I got this interesting question recently. They&#x27;re like: how do I find a therapist? You can just talk to any medical professional and they should be able to refer you.</p>
 <p>The legend has arrived: who? Where are they? I don&#x27;t see them. How am I doing? I&#x27;m a little bit sick today, so we&#x27;ve decided to make a call and audible on what we&#x27;re going to do. So, instead of doing our standard mental health meme, because I don&#x27;t know if I can talk for two hours today, what we&#x27;re actually going to do is two things: we&#x27;re going to do a guided meditation with the throaty voice and we&#x27;re also going to do Dr K&#x27;s guide to sexy talk- The Art of Seduction by Dr K. Step one: get viral fitis. Step two: use these words to seduce your prospective partner. Right, you start by telling them: hey, maybe one day.</p>
 <p>So you know, what&#x27;s actually funny is that when they teach you how to communicate, it actually does translate to skill in communication in other parts of your life. Right, because you&#x27;re very aware of things like body language and tone and things like that, and you&#x27;re very aware of the link between the mind and the body, and you know, honestly, most of arousal is not physical TBH, like, if you look at the science of arousal, um, it, it&#x27;s, it&#x27;s mostly mental, right, and- and this is why things like fetishes exist- because there is some sort of arguably benign stimulus that creates a physiologic stimulus that creates a physiologic reaction.</p>
@@ -242,15 +381,21 @@ try {
 <p>Actually it&#x27;s cruel, fair enough. Um, so don&#x27;t don&#x27;t do that. That&#x27;s cruel, but I thought it would be funny. Don&#x27;t do, don&#x27;t do that. Okay, I can&#x27;t figure out how to. Okay, I can&#x27;t figure out how to, uh, uh, um, redirect to anything, because I&#x27;m a Noob and that&#x27;s the price that we pay, Noob, and that&#x27;s the price that we pay, right. Right, so I&#x27;m a Noob and I&#x27;m a boomer, but what we are, uh. So if y&#x27;all are interested in stuff I don&#x27;t know, let&#x27;s see who&#x27;s live, stuff. I don&#x27;t know, let&#x27;s see who&#x27;s live right, right now. Okay, I&#x27;m live. Um, there&#x27;s some DOTA that is live. That&#x27;s everything that&#x27;s on my feed, I don&#x27;t know, um, okay, so like just to give yall a couple things.</p>
 <p>So if, if y&#x27;all just check out our Channel, we, we, I think we had a video go live, uh, a little while ago- you can check that out, I guess. Oh, yeah, so, how to gain control in today&#x27;s world. So, if yall are struggling with control in today&#x27;s world, check out our most recent video that was uploaded a day ago, in which we talk about how to get control, and we will see y&#x27;all. Um, we may actually be live streaming on Wednesday, potentially on YouTube. So stay tuned. Everybody, Take Care. Much love, go hug somebody.</p>
 </section></article>
+    </div>
   </div>
+  
 
-  <p class="meta">Auto-transcribed livestream · chapters &amp; speaker labels are a best-effort approximation (claude-sonnet-4-6).</p>
+  <p class="meta">Medium summary · claude-sonnet-4-6 (no extended thinking)</p>
 </div>
 
 <script>
 (function () {
   var root = document.documentElement;
-  var tb = document.querySelector('.theme-toggle');
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'medium');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
   var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
   tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
@@ -258,6 +403,16 @@ try {
   function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
   var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+  // deep-link to a heading in any view: switch to that view, then scroll to it
+  function navigateTo(id){
+    var el = id && document.getElementById(id);
+    if (!el) return;
+    var v = el.closest('.view');
+    if (v) setView(v.getAttribute('data-view'));
+    el.scrollIntoView();
+  }
+  window.addEventListener('hashchange', function(){ navigateTo(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash) navigateTo(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>
 <script>

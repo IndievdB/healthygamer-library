@@ -9,7 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-} catch (e) {}
+  document.documentElement.setAttribute('data-view', localStorage.getItem('pubview') || 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -24,16 +25,191 @@ try {
   </nav>
 
   <h1>Dr. K Talks Weed</h1>
-  <p class="watch">
-    <a href="https://www.youtube.com/watch?v=WdM8r6R3FfM" target="_blank" rel="noopener">▶ Watch on YouTube</a>
-    <span class="speakers-note">Speakers (auto-detected): Dr. K</span>
-  </p>
+  <p class="watch"><a href="https://www.youtube.com/watch?v=WdM8r6R3FfM" target="_blank" rel="noopener">▶ Watch on YouTube</a></p>
 
-  <div class="doc">
-    <nav class="toc"><p class="toc-title">Chapters</p><ul><li><a href="#transcript-0-stream-introduction-and-technical-setup">Stream Introduction and Technical Setup</a></li><li><a href="#transcript-1-weed-addiction-physiologic-vs-psychological-dependence">Weed Addiction: Physiologic vs Psychological Dependence</a></li><li><a href="#transcript-2-marijuana-as-a-gateway-drug-evidence-and-mechanisms">Marijuana as a Gateway Drug: Evidence and Mechanisms</a></li><li><a href="#transcript-3-safe-and-heavy-marijuana-use-what-the-data-says">Safe and Heavy Marijuana Use: What the Data Says</a></li><li><a href="#transcript-4-the-addictive-mind-rationalization-and-self-deception">The Addictive Mind: Rationalization and Self-Deception</a></li><li><a href="#transcript-5-marijuana-productivity-and-the-creativity-question">Marijuana, Productivity, and the Creativity Question</a></li><li><a href="#transcript-6-adhd-and-marijuana-use">ADHD and Marijuana Use</a></li><li><a href="#transcript-7-weed-and-psychotherapy-effectiveness">Weed and Psychotherapy Effectiveness</a></li><li><a href="#transcript-8-cannabis-for-chronic-pain-and-opioid-reduction">Cannabis for Chronic Pain and Opioid Reduction</a></li><li><a href="#transcript-9-weed-induced-psychosis-and-schizophrenia-risk">Weed-Induced Psychosis and Schizophrenia Risk</a></li><li><a href="#transcript-10-what-psychosis-actually-is-symptoms-explained">What Psychosis Actually Is: Symptoms Explained</a></li><li><a href="#transcript-11-mental-health-suicide-and-societal-factors">Mental Health, Suicide, and Societal Factors</a></li><li><a href="#transcript-12-housing-security-and-the-limits-of-therapy">Housing, Security, and the Limits of Therapy</a></li><li><a href="#transcript-13-adolescent-brain-development-and-marijuana">Adolescent Brain Development and Marijuana</a></li><li><a href="#transcript-14-weed-and-anxiety-short-term-relief-vs-long-term-harm">Weed and Anxiety: Short-Term Relief vs Long-Term Harm</a></li><li><a href="#transcript-15-closing-thoughts-and-recommendations">Closing Thoughts and Recommendations</a></li></ul></nav>
-    <article class="summary transcript"><section class="sec sec-a">
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">2,203w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">17,771w</span></button>
+    
+  </div>
+
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#medium-summary">Summary</a></li>
+<li><a href="#medium-two-kinds-of-addiction-and-why-people-argue-about-whether-weed-counts">Two Kinds of Addiction — and Why People Argue About Whether Weed "Counts"</a></li>
+<li><a href="#medium-the-gateway-drug-question-what-the-evidence-actually-says">The Gateway Drug Question — What the Evidence Actually Says</a></li>
+<li><a href="#medium-the-addictive-mind-and-how-it-tricks-you">The Addictive Mind and How It Tricks You</a></li>
+<li><a href="#medium-weed-and-productivity-the-ceiling-problem">Weed and Productivity — The Ceiling Problem</a></li>
+<li><a href="#medium-weed-and-psychosis-whats-happening-and-why-its-getting-more-common">Weed and Psychosis — What's Happening and Why It's Getting More Common</a></li>
+<li><a href="#medium-marijuana-and-the-developing-brain">Marijuana and the Developing Brain</a></li>
+<li><a href="#medium-weed-anxiety-and-depression-over-time">Weed, Anxiety, and Depression Over Time</a></li>
+<li><a href="#medium-when-youre-not-ready-to-quit">When You're Not Ready to Quit</a></li>
+<li><a href="#medium-common-pitfalls">Common Pitfalls</a></li>
+<li><a href="#medium-action-items-exercises">Action Items &amp; Exercises</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="medium-summary">Summary</h2>
+<p><strong>TL;DR — Marijuana can be addictive, acts as a gateway drug, and has real neurological risks — especially for developing brains — but the picture is more nuanced than either side of the debate typically admits.</strong></p>
+<p>This is a wide-ranging Q&amp;A on cannabis: addiction and dependence, gateway drug evidence, productivity, ADHD, psychosis, adolescent brain development, anxiety, chronic pain, and when quitting is (and isn't) the right move. The throughline is learning to read your own mind honestly — because the addictive mind is very good at rigging the game in its own favor.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-two-kinds-of-addiction-and-why-people-argue-about-whether-weed-counts">Two Kinds of Addiction — and Why People Argue About Whether Weed "Counts"</h2>
+<p>The confusion around weed addiction almost always comes down to mixing up two different things: <strong>physiologic dependence</strong> and <strong>psychological dependence</strong>.</p>
+<p><strong>Physiologic dependence</strong> means your body has adapted to a substance such that removing it causes measurable withdrawal. With alcohol or benzodiazepines (Xanax, Valium, Ativan), this can be so severe it triggers seizures. With weed, the physical withdrawal is comparatively mild — irritability, anxiety, disrupted sleep. Some people experience almost none of it. Because the body doesn't revolt dramatically, people conclude the substance isn't addictive.</p>
+<p><strong>Psychological dependence</strong> is a different animal. It means the substance has become load-bearing in your life:</p>
+<ul>
+<li>Can't fall asleep without it</li>
+<li>Can't enjoy a party without it</li>
+<li>Can't relax, create, or focus without it</li>
+<li>Life starts to feel flat or unbearable in its absence</li>
+</ul>
+<p>The clinical threshold for addiction isn't about withdrawal severity. It's this: <strong>is the substance negatively impacting your relationships, health, work, or finances — and are you unable to stop anyway?</strong> If the answer to both is yes, that's addiction, regardless of how mild the physical withdrawal is.</p>
+<p>The reason some people push back hard when others describe getting "sober" from weed is worth noticing. If someone's sobriety implicitly challenges your own use, and your reaction is fierce defensiveness rather than curiosity, that defensiveness is itself diagnostic. As the old line goes: <em>methinks he protesteth too much.</em></p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-the-gateway-drug-question-what-the-evidence-actually-says">The Gateway Drug Question — What the Evidence Actually Says</h2>
+<p>Weed is a gateway drug. Three lines of evidence support this:</p>
+<p><strong>1. Epidemiological data.</strong> Population-level surveys consistently show that people who use marijuana are more likely to use harder drugs years later than people who don't. Around 18% of Americans used marijuana in the last 12 months; addiction rates run roughly 7–9% of users.</p>
+<p><strong>2. Dopamine circuitry changes in adolescence.</strong> When marijuana is used while the brain is still developing, it alters the formation of dopamine pathways. Those altered pathways make the brain <em>more vulnerable to the addictive effects of other substances</em> later on. This is a mechanistic, not just correlational, finding.</p>
+<p><strong>3. The enhancement effect.</strong> Marijuana heightens the pleasurable effects of other substances used alongside it. The more enhanced another drug feels, the stronger the reinforcement — and the stronger the pull toward dependence.</p>
+<p>The standard counter-argument is that maybe people who use weed just have rougher home lives, more untreated anxiety, more adverse circumstances — and <em>that</em> independently drives both weed use and later drug use. That's a fair point, but the adolescent dopamine mechanism suggests there's a causative component that can't be explained away entirely.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-the-addictive-mind-and-how-it-tricks-you">The Addictive Mind and How It Tricks You</h2>
+<p>One of the more practically useful ideas in the talk is the concept of the <strong>addictive mind</strong> — the way a dependent brain shapes your thinking to protect the addiction while letting you feel like you're reasoning freely.</p>
+<p>The clearest example: <em>"I can quit anytime I want."</em></p>
+<ul>
+<li><strong>Layer one</strong>: I can quit, so I'm in control, so I don't need to quit.</li>
+<li><strong>Layer two</strong> (subtler and more dangerous): I'm going to prove I'm in control by quitting for two weeks. I succeed. <em>Now</em> I have evidence I'm not addicted. Therefore I can use every day.</li>
+</ul>
+<p>Notice what the addictive mind did: it picked "two weeks" because it already knew you could do two weeks. It didn't pick two years. The test was rigged from the start.</p>
+<p>The same dynamic shows up in questions like <em>"what's a safe amount to use?"</em> or <em>"what counts as heavy use?"</em> These can be genuine questions — but they can also be the addictive mind searching for a number it can stay under while keeping the substance in play. A useful diagnostic question to ask yourself: <strong>no matter how I reason about this, does the conclusion always turn out to be "it's okay to keep using"?</strong> If so, the game is rigged.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-weed-and-productivity-the-ceiling-problem">Weed and Productivity — The Ceiling Problem</h2>
+<p>Many people genuinely find marijuana improves their output, and in certain cases this is real, not just rationalization. Here's why it can work:</p>
+<ul>
+<li><strong>Treating an underlying condition</strong>: if anxiety, chronic pain, or insomnia is tanking your productivity, and marijuana reduces those things, it can produce a net gain — the same logic behind legitimate medication.</li>
+<li><strong>Making boring tasks enjoyable</strong>: marijuana moves activities from the "productive but tedious" category into "this is actually engaging," which lowers the activation energy needed to start and sustain them.</li>
+</ul>
+<p>But there's a ceiling effect. If your baseline productivity is already high, marijuana will push it down. If your baseline is suppressed by anxiety or pain, marijuana may bring it up — but it caps how high you can go. Addressing anxiety through therapy, CBT, sleep training, or other means can bring you <em>above</em> that ceiling in ways marijuana cannot.</p>
+<p>There's one honest exception worth acknowledging: a subset of <strong>creative people</strong> report accessing a specific kind of inspiration through weed that they haven't been able to replicate through meditation, therapy, or sobriety, even after extended clean periods. This appears to be a minority experience, and the quality of creative benefit from weed and from meditation seems to differ in kind rather than just degree — they point in somewhat different directions. That's not a recommendation to use; it's just an honest account of what some people report.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-weed-and-psychosis-whats-happening-and-why-its-getting-more-common">Weed and Psychosis — What's Happening and Why It's Getting More Common</h2>
+<p>Psychosis results from an excess of dopamine signaling in the brain. Marijuana, especially at high doses, can temporarily spike dopamine enough to induce:</p>
+<ul>
+<li><strong>Hallucinations</strong>: sensory experiences with no external source (hearing voices, seeing things)</li>
+<li><strong>Paranoia</strong>: real stimuli interpreted through a threat lens (the parked car is definitely following you)</li>
+<li><strong>Delusions</strong>: a crystallized belief system built around paranoid interpretations (the FBI has been tracking me for years)</li>
+</ul>
+<p>When the substance clears, dopamine normalizes, and the psychosis typically resolves. This is temporary — with one major exception.</p>
+<p><strong>Adolescent use and schizophrenia</strong>: In people who are genetically predisposed to schizophrenia, marijuana use — especially in adolescence — appears to <em>accelerate</em> the onset or push someone who's on the fence over the edge. Schizophrenia develops slowly, often preceded by a <strong>prodrome</strong> of very subtle symptoms (faint tinnitus-like sounds, slightly altered perceptions) years before a clinical diagnosis. Once schizophrenia develops, removing marijuana doesn't make it go away.</p>
+<p>Why is weed-induced psychosis becoming more common? Because over the past 50–60 years, selective breeding has produced strains with dramatically higher THC concentrations. More potent weed means more dopaminergic impact and a higher likelihood of psychotic episodes. Synthetic cannabinoids (K2, spice) are even more dangerous and should be avoided entirely.</p>
+<blockquote>
+<p>If you become psychotic when you use pot, don't use pot. Simple.</p>
+</blockquote>
+<p>Genetic variants like AKT1 and COMT appear to affect individual susceptibility — some people's brains are far more sensitive to these effects than others.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-marijuana-and-the-developing-brain">Marijuana and the Developing Brain</h2>
+<p>Using weed in adolescence doesn't "brick" your brain, but it doesn't do it any favors either.</p>
+<p>The brain in adolescence is more like wet concrete than hardened stone — substances encountered during development get wired in as if they're a permanent part of the environment, which can alter dopamine circuitry and increase later vulnerability to addiction.</p>
+<p>The worst studies on adolescent marijuana use suggest a loss of 4–10 IQ points, but those findings are far from definitive. Confounding factors — untreated anxiety, adverse childhood experiences, chaotic home environments — may explain much of the observed effect. And even if some IQ points were lost, a 5-point difference has little practical impact on life outcomes.</p>
+<p>The more accurate framing: if you used heavily in your teens, <strong>it's a steeper climb back to your full potential, not an impassable wall.</strong> The brain is plastic. People adapt. You can build organizational skills, seek therapy, address underlying anxiety — and recover a great deal.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-weed-anxiety-and-depression-over-time">Weed, Anxiety, and Depression Over Time</h2>
+<p>Both camps are telling the truth when one person says weed helps their anxiety and another says it makes it worse. The key is <strong>timeframe</strong>.</p>
+<p>In the short term, marijuana has a genuine anxiolytic (anti-anxiety) effect. It dials down the signal. That immediate relief is real.</p>
+<p>In the long term, chronic use tends to worsen the baseline. The brain compensates for the repeated chemical dampening by ramping up its own anxiety response. Remove the marijuana and the anxiety rebounds — often harder than before. The person who swears weed helps their anxiety is usually noticing the acute relief while missing the slow drift in baseline that's too gradual to register.</p>
+<blockquote>
+<p>Our brains are much better at noticing instant reinforcement than long-term effects. The faster something hits, the more addictive it tends to be.</p>
+</blockquote>
+<p>This same pattern — short-term relief, long-term worsening — applies to alcohol and most substances. The relief is real. The cost is paid on a delay, which makes it easy to miss.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-when-youre-not-ready-to-quit">When You're Not Ready to Quit</h2>
+<p>Not being ready to quit is a legitimate place to be, and it doesn't require judgment.</p>
+<p>People don't get addicted to things that make their lives worse — they get addicted to things that <em>fix</em> problems. The substance is solving something real: pain, anxiety, boredom, a home life that's intolerable. Until there's something else that solves those problems, quitting has a high cost with no replacement.</p>
+<blockquote>
+<p>You have to want to quit. No psychiatrist or therapist can want it for you.</p>
+</blockquote>
+<p>If you're not there yet, the useful questions are: <em>What would I need to be ready? What problem is the weed actually solving? What else could solve it?</em> Moving toward readiness is progress, even if quitting isn't happening today.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-common-pitfalls">Common Pitfalls</h2>
+<ul>
+<li>
+<p><strong>Treating physiologic withdrawal as the only standard for addiction.</strong> Because weed withdrawal isn't dramatic, people use that as proof it isn't addictive. Psychological dependence is just as real.</p>
+</li>
+<li>
+<p><strong>Using research to find permission.</strong> Asking "how much is safe?" or "is once-a-day really chronic?" can be genuine curiosity — or the addictive mind hunting for a number to hide under. Notice which one it is.</p>
+</li>
+<li>
+<p><strong>Mistaking short-term relief for long-term benefit.</strong> The mood lift from weed is real. The slow erosion of your baseline is also real but nearly invisible in real time.</p>
+</li>
+<li>
+<p><strong>Thinking two weeks clean proves you're in control.</strong> The addictive mind picks the test it knows you can pass.</p>
+</li>
+<li>
+<p><strong>Assuming adolescent use is either fine or catastrophic.</strong> It's neither. It makes the climb steeper without making it impossible.</p>
+</li>
+<li>
+<p><strong>Conflating "it helps me function" with "it's helping me."</strong> If the substance is making normal life possible, the question is whether you want to stay dependent on it or address whatever it's compensating for.</p>
+</li>
+</ul>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-action-items-exercises">Action Items &amp; Exercises</h2>
+<ol>
+<li>
+<p><strong>Do the "conclusion test."</strong> Think through your reasoning about your own use. Does every line of reasoning — no matter the starting point — always end with "it's okay to keep using"? If yes, the addictive mind is running the analysis. Write down what a conclusion that went the other way would actually look like.</p>
+</li>
+<li>
+<p><strong>Pick a real abstinence period — not a strategic one.</strong> Don't pick two weeks because you know you can do two weeks. If you want to test your relationship with weed, try 90 days minimum. Notice what happens to your sleep, mood, and anxiety over weeks 2–8, not just the first few days.</p>
+</li>
+<li>
+<p><strong>Map what weed is solving.</strong> Write down the specific situations where you reach for it. Anxiety before social events? Trouble sleeping? Boredom? Pain? Each of those has non-weed interventions — CBT for anxiety, sleep hygiene training, physical activity, chronic pain management. Identify one and pursue it.</p>
+</li>
+<li>
+<p><strong>Track baseline mood over time, not acute effects.</strong> Rate your anxiety or mood (1–10) each morning <em>before</em> any use. Do this for a month. Look at the trend, not the single-day fluctuations. This is how you detect slow baseline drift.</p>
+</li>
+<li>
+<p><strong>If you're under 25, take the brain development risk seriously.</strong> The window for dopamine circuitry formation hasn't fully closed. Even cutting back significantly during this window matters more than it will later.</p>
+</li>
+<li>
+<p><strong>If you're experiencing anything that sounds like a prodrome</strong> — faint sounds with no source, unusual sensory experiences, persistent unfounded suspicion — get a psychiatric evaluation before continuing use. Don't diagnose yourself; just get checked.</p>
+</li>
+<li>
+<p><strong>If you're trying to do therapy while using daily, consider the order of operations.</strong> The mind that enters therapy largely determines how much you get out of it. A period of sobriety before intensive therapy work tends to improve outcomes.</p>
+</li>
+</ol>
+</section></article>
+    </div>
+  </div>
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc"><ul><li><a href="#transcript-0-stream-introduction-and-technical-setup">Stream Introduction and Technical Setup</a></li><li><a href="#transcript-1-weed-addiction-physiologic-vs-psychological-dependence">Weed Addiction: Physiologic vs Psychological Dependence</a></li><li><a href="#transcript-2-marijuana-as-a-gateway-drug-evidence-and-mechanisms">Marijuana as a Gateway Drug: Evidence and Mechanisms</a></li><li><a href="#transcript-3-safe-and-heavy-marijuana-use-what-the-data-says">Safe and Heavy Marijuana Use: What the Data Says</a></li><li><a href="#transcript-4-the-addictive-mind-rationalization-and-self-deception">The Addictive Mind: Rationalization and Self-Deception</a></li><li><a href="#transcript-5-marijuana-productivity-and-the-creativity-question">Marijuana, Productivity, and the Creativity Question</a></li><li><a href="#transcript-6-adhd-and-marijuana-use">ADHD and Marijuana Use</a></li><li><a href="#transcript-7-weed-and-psychotherapy-effectiveness">Weed and Psychotherapy Effectiveness</a></li><li><a href="#transcript-8-cannabis-for-chronic-pain-and-opioid-reduction">Cannabis for Chronic Pain and Opioid Reduction</a></li><li><a href="#transcript-9-weed-induced-psychosis-and-schizophrenia-risk">Weed-Induced Psychosis and Schizophrenia Risk</a></li><li><a href="#transcript-10-what-psychosis-actually-is-symptoms-explained">What Psychosis Actually Is: Symptoms Explained</a></li><li><a href="#transcript-11-mental-health-suicide-and-societal-factors">Mental Health, Suicide, and Societal Factors</a></li><li><a href="#transcript-12-housing-security-and-the-limits-of-therapy">Housing, Security, and the Limits of Therapy</a></li><li><a href="#transcript-13-adolescent-brain-development-and-marijuana">Adolescent Brain Development and Marijuana</a></li><li><a href="#transcript-14-weed-and-anxiety-short-term-relief-vs-long-term-harm">Weed and Anxiety: Short-Term Relief vs Long-Term Harm</a></li><li><a href="#transcript-15-closing-thoughts-and-recommendations">Closing Thoughts and Recommendations</a></li></ul></div></nav>
+      <article class="summary"><section class="sec sec-a">
 <h2 id="transcript-0-stream-introduction-and-technical-setup">Stream Introduction and Technical Setup</h2>
-<p><span class="speaker">Dr. K:</span> Thank you. Thank you. [Music]. [Music]. [Music] [Applause] foreign. Foreign [Music] foreign. [Music] [Music] [Applause] [Applause] [Applause] [Music] [Music]. [Music] [Applause] [Music]: thank you. [Music] [Applause] [Applause] [Music]. [Music] thank you. Thank you. [Music] [Music] [Applause] [Music]: thank you. [Music] foreign. Foreign [Music] [Music] [Music] [Applause] [Applause] [Applause] [Music] foreign. Foreign [Applause] [Applause] [Applause] [Music]. Does that work? Say something? Say something, nope, nope. Chat box is busted. Okay, hold on, wait a minute. All right, whatever. Welcome to another healthy gamer GG stream.</p>
+<p>Thank you. Thank you. [Music]. [Music]. [Music] [Applause] foreign. Foreign [Music] foreign. [Music] [Music] [Applause] [Applause] [Applause] [Music] [Music]. [Music] [Applause] [Music]: thank you. [Music] [Applause] [Applause] [Music]. [Music] thank you. Thank you. [Music] [Music] [Applause] [Music]: thank you. [Music] foreign. Foreign [Music] [Music] [Music] [Applause] [Applause] [Applause] [Music] foreign. Foreign [Applause] [Applause] [Applause] [Music]. Does that work? Say something? Say something, nope, nope. Chat box is busted. Okay, hold on, wait a minute. All right, whatever. Welcome to another healthy gamer GG stream.</p>
 <p>My name is Alok Kanojia. Just a reminder that, although I&#x27;m a psychiatrist, nothing we discussed on stream today is intended to be taken as medical advice. Everything is for educational or entertainment purposes- educational or entertainment purposes only, only and um. So I know that we oftentimes stream on Twitch. Today we&#x27;re streaming on YouTube because we&#x27;ve done a couple of different weed streams on Twitch and today we figure we&#x27;d talk to y&#x27;all over at YouTube. So hope you all are doing well, welcome everybody. We&#x27;ve got like tons of everybody. We&#x27;ve got like tons of questions, questions, questions, so, so, um, how you all doing today?</p>
 <p>Y&#x27;all doing good, it&#x27;s fully legal and and, yeah, we&#x27;re live streaming today, so we&#x27;re going to talk to your questions about stream. I mean about weed. Uh, so we&#x27;ve got some questions that we people have like, tweeted at us, some really common questions that people have. So we&#x27;re going to take a look at some of those. But if you all have questions and stuff, but if you all have questions and stuff, um, um, uh, you know, feel free to ask them. Do I need to smoke to watch this? Probably not, you know. That&#x27;s. That&#x27;s a good question, good question, good question, um, um. And you know someone saying I&#x27;m high right now.</p>
 <p>I&#x27;m not surprised some people use marijuana. That is, that is correct, y&#x27;all are correct. Good morning doing great. Y&#x27;all, y&#x27;all doing good, great y&#x27;all, y&#x27;all doing good. Okay, okay, um. So y&#x27;all want to hang for a little bit. You all want to dive right into the bit. You all want to dive right into the questions. What do y&#x27;all think? Let me see. Let me see um um. Are you Dr Kush? I don&#x27;t think so, but you know, someone did recently. It&#x27;s kind of funny. Someone sent me a link when, when they found out that I was streaming about weed. Apparently there is a Dr K stream of weed, there&#x27;s a stream, there&#x27;s a strain of weed called Dr k um, it&#x27;s called Dr K OG and it it has nothing to do with us, but apparently the K and Dr kog stands for Dr Kevorkian- and I was just really surprised because I was like: wait, what is this?</p>
@@ -223,15 +399,21 @@ try {
 <p>Someone who&#x27;s saying I&#x27;m watching this. Someone who&#x27;s saying I&#x27;m watching this high, high. Well, like, would it be better if you watched it? Would it be better if you watched it sober? Sober, maybe less fun, let&#x27;s be honest, but the truth of the matter is that at least you watched it, right? So this is where, like, people will be so judgmental if you use weed. They&#x27;re like you should stop and you should stop, but like, hey, at least you watch this and you educated yourself, you may have moved one step forward towards sobriety. And if you decide that that&#x27;s not what I do, it&#x27;s your life, all I can do is try to equip y&#x27;all with the information of what the pros and cons are, and it&#x27;s up to you to decide whether you want to do it and whether it&#x27;s worth it.</p>
 <p>The real tragedy that I see in the real conclusion that I&#x27;ve come to doing a lot of addiction psychiatrists. It&#x27;s usually not worth it. All right, so you all take care. Much love, much love and and um, thank you very much for being here. Adios, everybody.</p>
 </section></article>
+    </div>
   </div>
+  
 
-  <p class="meta">Auto-transcribed livestream · chapters &amp; speaker labels are a best-effort approximation (claude-sonnet-4-6).</p>
+  <p class="meta">Medium summary · claude-sonnet-4-6 (no extended thinking)</p>
 </div>
 
 <script>
 (function () {
   var root = document.documentElement;
-  var tb = document.querySelector('.theme-toggle');
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'medium');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
   var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
   tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
@@ -239,6 +421,16 @@ try {
   function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
   var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+  // deep-link to a heading in any view: switch to that view, then scroll to it
+  function navigateTo(id){
+    var el = id && document.getElementById(id);
+    if (!el) return;
+    var v = el.closest('.view');
+    if (v) setView(v.getAttribute('data-view'));
+    el.scrollIntoView();
+  }
+  window.addEventListener('hashchange', function(){ navigateTo(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash) navigateTo(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>
 <script>

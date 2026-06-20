@@ -9,7 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-} catch (e) {}
+  document.documentElement.setAttribute('data-view', localStorage.getItem('pubview') || 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -24,16 +25,163 @@ try {
   </nav>
 
   <h1>Dr. K Answers Your Difficult Voicemails</h1>
-  <p class="watch">
-    <a href="https://www.youtube.com/watch?v=vt584zeZh9Q" target="_blank" rel="noopener">▶ Watch on YouTube</a>
-    <span class="speakers-note">Speakers (auto-detected): Dr. K</span>
-  </p>
+  <p class="watch"><a href="https://www.youtube.com/watch?v=vt584zeZh9Q" target="_blank" rel="noopener">▶ Watch on YouTube</a></p>
 
-  <div class="doc">
-    <nav class="toc"><p class="toc-title">Chapters</p><ul><li><a href="#transcript-0-opening-music-and-introduction-to-stream">Opening Music and Introduction to Stream</a></li><li><a href="#transcript-1-monthly-schedule-and-community-announcements">Monthly Schedule and Community Announcements</a></li><li><a href="#transcript-2-may-resilience-challenge-and-promotions">May Resilience Challenge and Promotions</a></li><li><a href="#transcript-3-voicemail-format-explained">Voicemail Format Explained</a></li><li><a href="#transcript-4-cherry-s-story-rebuilding-life-and-self-sabotage">Cherry&#x27;s Story: Rebuilding Life and Self-Sabotage</a></li><li><a href="#transcript-5-why-hikokomori-behaviors-persist-after-recovery">Why Hikokomori Behaviors Persist After Recovery</a></li><li><a href="#transcript-6-neurological-extinction-of-avoidant-behaviors">Neurological Extinction of Avoidant Behaviors</a></li><li><a href="#transcript-7-internalized-racism-and-self-referential-processing">Internalized Racism and Self-Referential Processing</a></li><li><a href="#transcript-8-cognitive-bias-self-worth-and-finding-the-root">Cognitive Bias, Self-Worth, and Finding the Root</a></li><li><a href="#transcript-9-overthinking-without-direction-leads-to-paralysis">Overthinking Without Direction Leads to Paralysis</a></li><li><a href="#transcript-10-finding-internal-direction-through-silence-and-purpose">Finding Internal Direction Through Silence and Purpose</a></li><li><a href="#transcript-11-ambition-ego-and-detachment-from-outcomes">Ambition, Ego, and Detachment from Outcomes</a></li><li><a href="#transcript-12-chronic-singlehood-female-friendships-and-dating">Chronic Singlehood, Female Friendships, and Dating</a></li><li><a href="#transcript-13-why-men-struggle-to-form-emotional-bonds">Why Men Struggle to Form Emotional Bonds</a></li><li><a href="#transcript-14-burnout-vs-loss-of-external-motivation">Burnout vs. Loss of External Motivation</a></li><li><a href="#transcript-15-intrinsic-vs-extrinsic-motivation-the-neuroscience">Intrinsic vs. Extrinsic Motivation: The Neuroscience</a></li><li><a href="#transcript-16-autonomy-as-the-key-to-internal-motivation">Autonomy as the Key to Internal Motivation</a></li><li><a href="#transcript-17-community-progress-coaching-and-closing-thoughts">Community Progress, Coaching, and Closing Thoughts</a></li></ul></nav>
-    <article class="summary transcript"><section class="sec sec-a">
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">2,990w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">28,897w</span></button>
+    
+  </div>
+
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#medium-summary">Summary</a></li>
+<li><a href="#medium-why-your-old-patterns-dont-just-go-away">Why Your Old Patterns Don't Just Go Away</a></li>
+<li><a href="#medium-how-internalized-racism-and-low-self-worth-actually-works">How Internalized Racism (and Low Self-Worth) Actually Works</a></li>
+<li><a href="#medium-overthinking-is-a-car-not-a-map">Overthinking Is a Car, Not a Map</a></li>
+<li><a href="#medium-ambition-vs-intention-a-crucial-distinction">Ambition vs. Intention: A Crucial Distinction</a></li>
+<li><a href="#medium-motivation-is-not-what-you-think-it-is">Motivation Is Not What You Think It Is</a></li>
+<li><a href="#medium-practical-notes-on-dating-when-the-normal-systems-have-broken-down">Practical Notes on Dating When the Normal Systems Have Broken Down</a></li>
+<li><a href="#medium-common-pitfalls">Common Pitfalls</a></li>
+<li><a href="#medium-action-items-exercises">Action Items &amp; Exercises</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="medium-summary">Summary</h2>
+<p><strong>TL;DR —</strong> Your past coping strategies don't disappear when your life improves — they decay slowly, and every time you give in to them, they grow stronger. Understanding <em>where</em> your motivation, ambition, and self-worth actually come from is the key to changing them.</p>
+<p>This is a Q&amp;A session built around voicemails submitted by the community. Five distinct problems get addressed in depth: recovering from a shut-in past and self-sabotage; internalized racism and low self-worth; overthinking without direction; reconciling ambition with non-attachment; and the difference between burnout and a lack of internal motivation. Each answer pulls from neuroscience, psychology, and practical philosophy — and the through-line across all of them is the same idea: most of the battles you're fighting aren't against the world. They're against patterns your own brain learned to protect you.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-why-your-old-patterns-dont-just-go-away">Why Your Old Patterns Don't Just Go Away</h2>
+<p>When you've spent years as a shut-in, an addict, or someone who coped by disappearing, your brain doesn't reset when your circumstances improve. It learned something. Specifically, it learned that avoidance works. Every time you stayed home instead of facing shame, every time you numbed out instead of dealing with pain, your neurons reinforced that path.</p>
+<p>Here's the reframe that matters: <strong>anything a human being does is a solution, not a problem.</strong> Even self-injurious behavior — which looks from the outside like pure destruction — is the brain's way of regulating an unbearable emotional state. People who cut often do so at the surface of the skin, maximizing nerve endings while minimizing tissue damage. They're trying to create a localized physical sensation to escape a mental storm. The brain doesn't do things to ruin your life. It does things to fix what hurts right now.</p>
+<p>The problem is that many solutions create worse problems downstream.</p>
+<p>So when you've rebuilt your life but still feel that pull back toward isolation, substances, or numbness — that's not a moral failing. It's your brain's expert-level skill set trying to do its job. You became an expert at avoidance. Experts don't just forget their expertise.</p>
+<p>The good news from neuroscience: <strong>any behavior that you stop reinforcing will extinguish over time.</strong> The craving gets weaker every time you don't give in, and stronger every time you do. Patients in recovery from alcohol addiction commonly report that five or six years out, they barely think about drinking at all. The extinction is real — it just takes patience and consistency, not willpower heroics.</p>
+<blockquote>
+<p>"Every moment in your life, you are signing yourself up for a future problem or a future easy life. Every decision you make today is going to inform the life you inherit tomorrow."</p>
+</blockquote>
+<p>The karmic framing and the neurological one say the same thing: what you feed grows. What you starve dies. The only variable you control is what you feed.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-how-internalized-racism-and-low-self-worth-actually-works">How Internalized Racism (and Low Self-Worth) Actually Works</h2>
+<p>If you're a person of color in a predominantly white country and you've absorbed the message that you don't fit the beauty standard, something specific and well-documented happens in your mind — and it's not simply "racism in your head."</p>
+<p>First, the external reality is real. Pretty privilege exists. Racist beauty standards exist. There is genuine, empirically supported evidence that some people will treat you differently based on your appearance or race. Acknowledging this isn't the same as being defeated by it.</p>
+<p>Here's what happens next, and this is where the psychology gets important: <strong>negative information outweighs positive information in a deeply asymmetric way.</strong> If three people interact with you and two are warm while one is cold, you don't walk away thinking "two-thirds of people are fine with me." The one negative encounter outweighs both positive ones. This is called <strong>negative cognitive bias</strong>, and it means the internal wound grows independently of the actual distribution of experiences in the world.</p>
+<p>The second mechanism is <strong>self-referential processing.</strong> When another person looks at you, you don't see yourself through their eyes. You see yourself through your own eyes. What their gaze triggers in your brain is your own self-image. This is why you can walk through a whole party with spinach in your teeth and feel totally fine — until you catch your own reflection. No one else's perception changed. Only your self-referential loop activated.</p>
+<p>Put these two together and you get a self-reinforcing cycle:
+- Low self-worth → negative cognitive bias → filter out positive evidence → lower self-worth → stronger bias</p>
+<p>What breaks this cycle isn't arguing yourself out of it. It's doing the unglamorous work of <strong>critical examination</strong> — going back through interactions and actively hunting for contrary evidence. Not because racism isn't real, but because your brain is systematically discarding evidence that doesn't confirm what it already believes.</p>
+<p>The third obstacle is <strong>cognitive dissonance</strong>. Even when positive evidence shows up, the brain resists it. The brain values certainty over good news. A known-bad quantity feels safer than an unknown-good quantity. Research on borderline personality disorder illustrates the timescale: it takes roughly two years of a committed, non-abandoning relationship before 50% of people with fear of abandonment improve. The contrary evidence has to accumulate over years before the brain updates its model.</p>
+<blockquote>
+<p>"Most human beings do not use evidence to form their view. They use their view to shape the evidence."</p>
+</blockquote>
+<p>The practical implication: find the <em>root</em> of the low self-worth, which is often not where you think it is. In clinical work, the origin usually isn't in how strangers treated you — it's in your own household. A parent who called you dark-skinned like it was a flaw. A sibling who got the praise you didn't. The broader society provides fertilizer for a seed that was often planted at home. Fix it at the root.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-overthinking-is-a-car-not-a-map">Overthinking Is a Car, Not a Map</h2>
+<p>Overthinkers often believe that if they just think hard enough, they'll arrive at the right answer — and the right answer will motivate them to act. This is one of the most common and most counterproductive beliefs in human psychology.</p>
+<blockquote>
+<p>"There is no stupider thought in the history of humanity: to think that if you find the right answer, you will act."</p>
+</blockquote>
+<p>Everyone already knows the right answers to most of their problems. Everyone knows they should exercise, sleep on time, eat vegetables, and work hard. Knowledge is not the bottleneck. Action is.</p>
+<p><strong>Thought is a tool, not a direction.</strong> It's a car, not a GPS. A car with no destination will just burn fuel driving in circles. This is why overthinkers often end up paralyzed — they can construct compelling arguments for every available option, which leaves them with "there's no right answer," which paradoxically makes them <em>less</em> able to act rather than more free to act.</p>
+<p>The overthinker's mind is like a husky locked in an apartment with nothing to do — it will tear the place apart. Not out of malice, but out of energy with nowhere to go. Thoughts spiral into more thoughts. Pros-and-cons lists fail to produce decisions because logic doesn't generate motivation.</p>
+<p>What actually provides direction? <strong>Emotion. Purpose. Something from the inside.</strong> Not desire — desire is just the brain responding to sensory input from the outside world (ads, social media, what other people have). Genuine internal direction is quieter and harder to find. It requires something that almost no one does voluntarily: <strong>sitting in silence long enough for the noise of external wanting to die down.</strong></p>
+<p>When you sit quietly, you'll notice a cascade of wants — to move, to check your phone, to do anything but sit. Those are all sensory-driven, externally-originated impulses. They're not your direction. Your actual direction — what some traditions call <em>dharma</em> — shows up only after the noise settles. This is why meditation and silence practices aren't just stress relief. They're the mechanism by which you discover what you actually want, separate from what you've been told to want.</p>
+<p>Once you have that internal direction, the overthinking becomes useful. The car finally has a destination, and a powerful engine becomes an asset rather than a liability.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-ambition-vs-intention-a-crucial-distinction">Ambition vs. Intention: A Crucial Distinction</h2>
+<p>Having ambitions — wanting to be a successful content creator, wanting to help a million people, wanting to build something great — feels virtuous. But ambition has a hidden structure worth examining.</p>
+<p>Most ambition is built on this logic: <em>I am deficient → if I achieve X → I am no longer deficient.</em> You can substitute any X: getting laid, getting rich, getting famous, being helpful. The external goal is tied to an internal verdict about your worth. As long as that structure exists, you cannot reconcile ambition with the very real possibility of failure — because failure doesn't just mean you didn't achieve the goal. It means you remain deficient. Forever.</p>
+<p>This is why "detach from outcomes" advice feels impossible to people with genuine ambitions. It's not a matter of willpower. The logic itself makes detachment irrational.</p>
+<p>The fix isn't to abandon the goal. It's to <strong>sever the connection between the goal and your self-worth.</strong> When you can genuinely afford to fail — when your sense of yourself as a worthwhile person doesn't depend on the outcome — you can pursue ambitious things freely. And paradoxically, this is usually when people do their best work.</p>
+<blockquote>
+<p>"The more you let go of the ambition, the better you do."</p>
+</blockquote>
+<p>The practical distinction is between <strong>ambition</strong> and <strong>intention</strong>. Ambition starts at the destination and reaches back toward you. Intention starts where you are and moves forward. Ambition asks: did I achieve the goal? Intention asks: am I showing up fully right now, with what I have?</p>
+<p>One useful check: if you discovered your stream wasn't live and no one had heard any of it — would you be devastated, or would you just go have a good weekend? The answer tells you something about what's actually driving you.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-motivation-is-not-what-you-think-it-is">Motivation Is Not What You Think It Is</h2>
+<p>There's a widespread assumption that if you're not doing what you need to do, you need more motivation. And that getting more motivated means connecting more strongly to why you want the thing, visualizing the outcome, or generating emotional urgency. This is almost entirely backwards.</p>
+<p>Research on <strong>intrinsic vs. extrinsic motivation</strong> shows something counterintuitive: extrinsic and intrinsic motivation don't come from different parts of the brain. They come from the same part — the amygdala. <strong>When the amygdala is activated, motivation is extrinsic. When the amygdala is deactivated, motivation is intrinsic.</strong></p>
+<p>This means that emotions — including the ones that feel internal, like shame, anxiety, loneliness, and fear — are neurologically <em>extrinsic</em> motivators. They are your brain's response to circumstances. Fear of disapproval, shame about where you are in life, anxiety about an upcoming deadline — these are all the amygdala firing in response to environmental inputs. You are being moved by your circumstances.</p>
+<p>If you were pushed to perform by strict parents growing up, you were conditioned to use externalized fear as fuel. When that external pressure disappears — new country, supportive partner, no deadlines — the engine cuts out. This isn't burnout. It's freedom from a system that ran on threat. The problem is you were never given an alternative system.</p>
+<p><strong>Intrinsic motivation</strong>, according to the research, comes from three things: <strong>novelty, interest, and autonomy</strong>. Not rewards, not emotions, not outcomes — autonomy. The more you feel like you are choosing and directing your own life, the more naturally motivated you become.</p>
+<p>The practical implication is to stop asking "what do I have to do?" and start asking "what kind of person do I want to be today? What can I do right now that I would feel genuinely proud of?" Not proud because someone approved of you — proud because you lived according to your own direction.</p>
+<p>When you fall short, the shame that arises is still the amygdala firing. If you use that shame as fuel to act, you're still in the extrinsic system. The goal is to make your motivation independent of whether you feel ashamed or not — otherwise you need shame to function, which is a losing setup.</p>
+<blockquote>
+<p>"Do I want to be a person who does what they feel like, or does what they intend? In that moment, you can make that choice."</p>
+</blockquote>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-practical-notes-on-dating-when-the-normal-systems-have-broken-down">Practical Notes on Dating When the Normal Systems Have Broken Down</h2>
+<p>This one comes with an honest admission: the dating landscape has genuinely changed in ways that don't have clean solutions. The social infrastructure that used to facilitate meeting people — third spaces, clear social scripts, shared community institutions — has deteriorated. Neither approaching nor not approaching feels right anymore. Dating apps generate burnout. This is a real structural problem, not a personal failure.</p>
+<p>That said, a few things seem to work:</p>
+<p><strong>Female platonic friendships are underrated and underleveraged by most men.</strong> They do several things simultaneously:
+- Exposure therapy: normalizes being around women so you stop treating the presence of a woman as a high-stakes event
+- Social proof: women having male friends they trust signals to other women that you're non-threatening, which is currently a significant green flag
+- Introduction potential: women are far more likely than men to actively try to set people up</p>
+<p>The catch is real: men often develop romantic feelings for female friends because men typically don't form deep emotional bonds without also forming romantic or sexual ones — not because of some inherent character flaw, but because cultural homophobia has systematically destroyed the infrastructure for emotionally intimate male-male friendship. When you've never learned to have emotional closeness without sexuality attached, every emotional bond defaults to that framing.</p>
+<p>The second practical angle: <strong>expand your hobbies beyond traditional gamer-coded spaces.</strong> Not because gamer hobbies are wrong, but because the probability of meeting a potential partner increases in spaces where more potential partners exist. Art, sports, cooking classes, community events — gender-neutral activities that create casual repeated contact with a broader range of people.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-common-pitfalls">Common Pitfalls</h2>
+<p><strong>Mistaking the fertilizer for the root.</strong> If you grew up in a racist environment or a household where you were made to feel ugly or insufficient, it's easy to locate the cause entirely outside yourself. The external conditions are real. But the root of low self-worth is almost always in the earliest relationships — family, caretakers — not in society at large. Treating society as the root keeps you stuck because you can't change it. Treating the root as the root gives you somewhere to actually work.</p>
+<p><strong>Believing logic produces action.</strong> It doesn't. Action produces logic — you decide something and then your brain finds reasons to support it. Waiting until you "figure it out" before you act is waiting for something that will never come in the form you're expecting.</p>
+<p><strong>Confusing emotional urgency with internal motivation.</strong> Shame, fear, anxiety, loneliness — these all feel like they're coming from inside you, so they feel like intrinsic motivators. Neurologically, they're not. They're the amygdala responding to circumstances. Building a life around emotional urgency means you'll only act when things feel bad enough — which is a terrible operating system.</p>
+<p><strong>Thinking recovery means the old patterns disappear.</strong> They don't. They decay slowly. Expecting them to be gone — and treating their reappearance as evidence of failure — leads to unnecessary shame spirals. Expect the pull. Don't feed it.</p>
+<p><strong>Treating ambitions as the same as intentions.</strong> Ambitions are measured by outcomes you can't control. Intentions are measured by how you showed up. Conflating them sets you up to feel like a failure even when you did everything right.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-action-items-exercises">Action Items &amp; Exercises</h2>
+<ol>
+<li>
+<p><strong>Track the evidence — against the grain.</strong> At the end of each day, write down one interaction where you were treated <em>better</em> than you expected. Don't write about the bad ones. Your brain is already recording those. The exercise is specifically to surface the data your cognitive bias is filtering out.</p>
+</li>
+<li>
+<p><strong>Don't feed the old pattern — just once.</strong> The next time you feel the pull toward your old avoidant behavior (isolation, numbing, disappearing), don't fight it dramatically. Just don't act on it this one time. Track it. Notice that the craving doesn't kill you and that it weakens slightly. Repeat.</p>
+</li>
+<li>
+<p><strong>Sit in silence until something comes from the inside.</strong> Not for productivity. Not with a timer. Just sit somewhere quiet with no input — no phone, no music, no task — and observe the wanting. Let the sensory desires arise and pass without acting on them. Do this regularly. The internal direction, if it exists, only becomes audible when the external noise stops.</p>
+</li>
+<li>
+<p><strong>Separate the ambition from the self-verdict.</strong> Write down your biggest ambition. Then write down what it would mean about you if you failed to achieve it. That second sentence is the actual problem. Work on that sentence directly — through therapy, through contrary evidence, through examining where it came from — rather than chasing the ambition harder.</p>
+</li>
+<li>
+<p><strong>Replace "what do I have to do today" with "what kind of person do I want to be today."</strong> Set a concrete behavioral target that reflects how you want to live — not what outcome you want to achieve. At the end of the day, assess: did you live that way? If yes, that's a win regardless of results.</p>
+</li>
+<li>
+<p><strong>For men struggling to date: build one genuine female friendship with zero romantic agenda.</strong> Not as a strategy to get dates, but as an end in itself. Notice how your baseline comfort around women changes. Notice how your whole conversational register shifts when you're not performing.</p>
+</li>
+<li>
+<p><strong>Audit your motivational system.</strong> Ask: when in my life was I most productive? What external pressure existed then? What happened to that pressure? If your answer involves parents, deadlines, or fear of consequences, you're running on an extrinsic system. The awareness alone is the first step toward building an autonomous one.</p>
+</li>
+</ol>
+</section></article>
+    </div>
+  </div>
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc"><ul><li><a href="#transcript-0-opening-music-and-introduction-to-stream">Opening Music and Introduction to Stream</a></li><li><a href="#transcript-1-monthly-schedule-and-community-announcements">Monthly Schedule and Community Announcements</a></li><li><a href="#transcript-2-may-resilience-challenge-and-promotions">May Resilience Challenge and Promotions</a></li><li><a href="#transcript-3-voicemail-format-explained">Voicemail Format Explained</a></li><li><a href="#transcript-4-cherry-s-story-rebuilding-life-and-self-sabotage">Cherry&#x27;s Story: Rebuilding Life and Self-Sabotage</a></li><li><a href="#transcript-5-why-hikokomori-behaviors-persist-after-recovery">Why Hikokomori Behaviors Persist After Recovery</a></li><li><a href="#transcript-6-neurological-extinction-of-avoidant-behaviors">Neurological Extinction of Avoidant Behaviors</a></li><li><a href="#transcript-7-internalized-racism-and-self-referential-processing">Internalized Racism and Self-Referential Processing</a></li><li><a href="#transcript-8-cognitive-bias-self-worth-and-finding-the-root">Cognitive Bias, Self-Worth, and Finding the Root</a></li><li><a href="#transcript-9-overthinking-without-direction-leads-to-paralysis">Overthinking Without Direction Leads to Paralysis</a></li><li><a href="#transcript-10-finding-internal-direction-through-silence-and-purpose">Finding Internal Direction Through Silence and Purpose</a></li><li><a href="#transcript-11-ambition-ego-and-detachment-from-outcomes">Ambition, Ego, and Detachment from Outcomes</a></li><li><a href="#transcript-12-chronic-singlehood-female-friendships-and-dating">Chronic Singlehood, Female Friendships, and Dating</a></li><li><a href="#transcript-13-why-men-struggle-to-form-emotional-bonds">Why Men Struggle to Form Emotional Bonds</a></li><li><a href="#transcript-14-burnout-vs-loss-of-external-motivation">Burnout vs. Loss of External Motivation</a></li><li><a href="#transcript-15-intrinsic-vs-extrinsic-motivation-the-neuroscience">Intrinsic vs. Extrinsic Motivation: The Neuroscience</a></li><li><a href="#transcript-16-autonomy-as-the-key-to-internal-motivation">Autonomy as the Key to Internal Motivation</a></li><li><a href="#transcript-17-community-progress-coaching-and-closing-thoughts">Community Progress, Coaching, and Closing Thoughts</a></li></ul></div></nav>
+      <article class="summary"><section class="sec sec-a">
 <h2 id="transcript-0-opening-music-and-introduction-to-stream">Opening Music and Introduction to Stream</h2>
-<p><span class="speaker">Dr. K:</span> Move in the right direction. Take one step forward and let go of what&#x27;s going step forward and let go of what&#x27;s going to [Music] happen. Heat. Heat. N. [Music] Heat. Heat. [Music] Give it up. Give it up. Give it away. While you were barely alive and you meant that day cut off so much remain you knew that there was still a way. Cry again and try anyway when you got them back but then you had to pay stand up but I still to this day you knew that there was still a way. This is your only plan. Oh now this is your only now this is your only plan. Oh now this is yours. That&#x27;s fine. It&#x27;s all you&#x27;ve ever known. in a single state of mind. But you won&#x27;t ever let it go. When you have the answer, then you were there alone. You left the door unopened when you knew that you were one more. Give it up. Give it up. Give it away. While you were barely aware you left that day, cut off so much remain. You knew that there was still a way. This is your only plan.</p>
+<p>Move in the right direction. Take one step forward and let go of what&#x27;s going step forward and let go of what&#x27;s going to [Music] happen. Heat. Heat. N. [Music] Heat. Heat. [Music] Give it up. Give it up. Give it away. While you were barely alive and you meant that day cut off so much remain you knew that there was still a way. Cry again and try anyway when you got them back but then you had to pay stand up but I still to this day you knew that there was still a way. This is your only plan. Oh now this is your only now this is your only plan. Oh now this is yours. That&#x27;s fine. It&#x27;s all you&#x27;ve ever known. in a single state of mind. But you won&#x27;t ever let it go. When you have the answer, then you were there alone. You left the door unopened when you knew that you were one more. Give it up. Give it up. Give it away. While you were barely aware you left that day, cut off so much remain. You knew that there was still a way. This is your only plan.</p>
 <p>Now this is your Now this is your [Music] [Music] only plan on how this is yours. You&#x27;re right. You force it to yield. You&#x27;ll forge it to the lines. You let your be your shield and everyone will say that it all was finished years ago. But you will say and you won&#x27;t ever let it go. When you had the answer and you were there alone, you left the door un opened when you knew that you were one more thing again. You found the answer and you were there alone. the door unsat. the door unsat. [Music] [Music] You had the answer. Then you were there alone. You left the door open. When you knew that you were one more there, then you were there alone. You left the door unopened when you knew that you would want more.</p>
 <p>[Music] Well, as my fault maybe 3 years back and I don&#x27;t have an address, it&#x27;s a matter of fact. But I guess you tried to drop me a line. Yeah, I signed out and I unsubscribed and I cut the cord. Now I&#x27;m not online, but I&#x27;ll be fine. Yeah, I guess that I&#x27;ll get by. guess that I&#x27;ll get by. [Music] Well, I shaved my head and cried a beard and now I only fad. I always like steer. I&#x27;m moving to LA. I&#x27;m writing a screenplay, but it&#x27;s not about you or what we were. It&#x27;s about a new girl. You never met her. She&#x27;s just got your name and she looks exactly the same. Tell me you know. Tell me it&#x27;s okay that I drop right off the map and I&#x27;m falling every day.</p>
 <p>Tell me no. Tell me it&#x27;s okay cuz you&#x27;ll find me find me [Music] anyway. Yeah. If you see me walking by, well, I guarantee it&#x27;s some other guy cuz I&#x27;m not there and I&#x27;m always elsewhere. I check my name. I approve. They wrote it down. You won&#x27;t see it soon. I guess you see there&#x27;s not much to me. I guess for me there&#x27;s not much to me. I guess for me there&#x27;s not much to to see. Tell me. Tell me it&#x27;s okay. that I dropped right off the map and I&#x27;m falling every day. Tell me tell me it&#x27;s okay cuz you&#x27;ll find me me tell me it&#x27;s okay cuz you&#x27;ll find me anyway. [Music] You know, you&#x27;ll see that there&#x27;s not much left of me. Well, once I hear I&#x27;ll cross your path. I&#x27;ll hurry away. You&#x27;ll sip for a laugh. It&#x27;s not that I&#x27;m scared. You just caught me unaware. Well, I know it&#x27;s been a couple of years, but still I&#x27;m surprised we ended up here. We&#x27;ll talk a bit to see what we&#x27;ve lost. You&#x27;ll stop when you what we&#x27;ve lost. You&#x27;ll stop when you see.</p>
@@ -238,15 +386,21 @@ try {
 <p>Don&#x27;t think about goals. And then that has some downsides which is like what&#x27;s happening at healthy gamer this year. No happening at healthy gamer this year. No one knows, right? And it&#x27;s like you like we we practice what we preach. Okay. At least at least we&#x27;re good there. And some of y&#x27;all are understandably frustrated because that&#x27;s not the how the rest of the world works. The rest of the world is like we are going to get 14% market share from 11% market share. And we want to continue to increase profits by 8%. We increased profits by 8% last year. We&#x27;re going to increase by nine this year. The stockholders will like it. Therefore, we are going to put ads in the ad free program. Now people are paying for money and we&#x27;ll put ads in the ad free program because then we can gen we can charge $20 a month for adree and we can generate ad revenue. We don&#x27;t [ __ ] work like that. And that comes with some pluses and some minuses.</p>
 <p>So yeah, take care y&#x27;all. Thanks for coming.</p>
 </section></article>
+    </div>
   </div>
+  
 
-  <p class="meta">Auto-transcribed livestream · chapters &amp; speaker labels are a best-effort approximation (claude-sonnet-4-6).</p>
+  <p class="meta">Medium summary · claude-sonnet-4-6 (no extended thinking)</p>
 </div>
 
 <script>
 (function () {
   var root = document.documentElement;
-  var tb = document.querySelector('.theme-toggle');
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'medium');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
   var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
   tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
@@ -254,6 +408,16 @@ try {
   function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
   var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+  // deep-link to a heading in any view: switch to that view, then scroll to it
+  function navigateTo(id){
+    var el = id && document.getElementById(id);
+    if (!el) return;
+    var v = el.closest('.view');
+    if (v) setView(v.getAttribute('data-view'));
+    el.scrollIntoView();
+  }
+  window.addEventListener('hashchange', function(){ navigateTo(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash) navigateTo(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>
 <script>

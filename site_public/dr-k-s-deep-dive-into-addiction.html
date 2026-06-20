@@ -9,7 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-} catch (e) {}
+  document.documentElement.setAttribute('data-view', localStorage.getItem('pubview') || 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -24,16 +25,148 @@ try {
   </nav>
 
   <h1>Dr. K's Deep Dive into Addiction</h1>
-  <p class="watch">
-    <a href="https://www.youtube.com/watch?v=WuKeZKIs9_A" target="_blank" rel="noopener">▶ Watch on YouTube</a>
-    <span class="speakers-note">Speakers (auto-detected): Dr. K</span>
-  </p>
+  <p class="watch"><a href="https://www.youtube.com/watch?v=WuKeZKIs9_A" target="_blank" rel="noopener">▶ Watch on YouTube</a></p>
 
-  <div class="doc">
-    <nav class="toc"><p class="toc-title">Chapters</p><ul><li><a href="#transcript-0-opening-disclaimer-and-stream-introduction">Opening Disclaimer and Stream Introduction</a></li><li><a href="#transcript-1-defining-addiction-impairment-and-key-features">Defining Addiction: Impairment and Key Features</a></li><li><a href="#transcript-2-origins-of-addiction-the-stress-diathesis-model">Origins of Addiction: The Stress-Diathesis Model</a></li><li><a href="#transcript-3-environmental-factors-and-the-vietnam-war-example">Environmental Factors and the Vietnam War Example</a></li><li><a href="#transcript-4-college-drinking-and-environmental-propagation">College Drinking and Environmental Propagation</a></li><li><a href="#transcript-5-brain-circuits-in-addiction-thalamus-and-sensory-gateway">Brain Circuits in Addiction: Thalamus and Sensory Gateway</a></li><li><a href="#transcript-6-the-amygdala-pain-suppression-and-emotional-hijacking">The Amygdala: Pain Suppression and Emotional Hijacking</a></li><li><a href="#transcript-7-nucleus-accumbens-dopamine-pleasure-and-craving">Nucleus Accumbens: Dopamine, Pleasure, and Craving</a></li><li><a href="#transcript-8-frontal-lobes-executive-function-and-prediction-errors">Frontal Lobes: Executive Function and Prediction Errors</a></li><li><a href="#transcript-9-tolerance-withdrawal-and-dopamine-homeostasis">Tolerance, Withdrawal, and Dopamine Homeostasis</a></li><li><a href="#transcript-10-stages-of-addiction-and-baseline-shift">Stages of Addiction and Baseline Shift</a></li><li><a href="#transcript-11-q-a-baseline-recovery-food-and-antidepressants">Q&amp;A: Baseline Recovery, Food, and Antidepressants</a></li><li><a href="#transcript-12-overcoming-addiction-changing-environment-and-thalamic-input">Overcoming Addiction: Changing Environment and Thalamic Input</a></li><li><a href="#transcript-13-emotional-regulation-present-and-dormant-emotions">Emotional Regulation: Present and Dormant Emotions</a></li><li><a href="#transcript-14-purpose-as-the-ultimate-override-for-addiction">Purpose as the Ultimate Override for Addiction</a></li><li><a href="#transcript-15-relapse-triggers-halt-cognitive-traps-and-the-weakness-trap">Relapse Triggers: HALT, Cognitive Traps, and the Weakness Trap</a></li><li><a href="#transcript-16-post-acute-withdrawal-syndrome-and-the-sense-of-foreverness">Post-Acute Withdrawal Syndrome and the Sense of Foreverness</a></li><li><a href="#transcript-17-rules-of-recovery-honesty-help-self-care-and-unbending-rules">Rules of Recovery: Honesty, Help, Self-Care, and Unbending Rules</a></li><li><a href="#transcript-18-workshop-announcement-and-closing-q-a">Workshop Announcement and Closing Q&amp;A</a></li></ul></nav>
-    <article class="summary transcript"><section class="sec sec-a">
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">2,289w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">24,337w</span></button>
+    
+  </div>
+
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#medium-summary">Summary</a></li>
+<li><a href="#medium-what-addiction-actually-is">What Addiction Actually Is</a></li>
+<li><a href="#medium-where-addiction-comes-from-genetics-environment">Where Addiction Comes From: Genetics + Environment</a></li>
+<li><a href="#medium-the-brain-circuits-behind-addiction">The Brain Circuits Behind Addiction</a></li>
+<li><a href="#medium-the-three-stages-of-addiction">The Three Stages of Addiction</a></li>
+<li><a href="#medium-why-attempts-to-quit-keep-failing">Why Attempts to Quit Keep Failing</a></li>
+<li><a href="#medium-common-pitfalls">Common Pitfalls</a></li>
+<li><a href="#medium-action-items-exercises">Action Items &amp; Exercises</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="medium-summary">Summary</h2>
+<p><strong>TL;DR — Addiction is not a willpower failure; it's a multi-system brain problem with environmental roots, and overcoming it requires changing your life, not just your behavior.</strong></p>
+<p>Addiction touches nearly everyone, either directly or through someone they love. Understanding what is actually happening in the brain and body when someone gets addicted — and why it is so hard to stop — is the single most useful thing you can do before trying to recover. This is a clinician's-eye view of the whole picture: how addiction starts, what it does to the brain, why the usual attempts to quit fail, and what actually works.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-what-addiction-actually-is">What Addiction Actually Is</h2>
+<p>The defining feature of addiction is not how much you use or how dramatic your habit looks from the outside. It is whether the behavior is causing <strong>impairment</strong> — in your work, your relationships, your physical health, or your mental health. Someone can lose $200,000 gambling and not be an addict if their life is genuinely unaffected. Someone else can drink far less and be severely addicted.</p>
+<p>Beyond impairment, three things mark an addiction:</p>
+<ol>
+<li><strong>Compulsive thinking</strong> — you cannot get the substance or behavior out of your mind even when you try.</li>
+<li><strong>Continued engagement despite negative consequences</strong> — you keep going even after you can see the damage.</li>
+<li><strong>Denial</strong> — the impairment is often invisible to the person experiencing it. "Functional" addicts can hold jobs, maintain marriages, and still be deeply addicted.</li>
+</ol>
+<p>There are two broad categories: <strong>substance use disorders</strong> (alcohol, opioids, stimulants) and <strong>behavioral addictions</strong> (gambling, pornography, video games, social media). They share the same underlying circuits but are not identical.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-where-addiction-comes-from-genetics-environment">Where Addiction Comes From: Genetics + Environment</h2>
+<p>Addiction is partially heritable. Some people's brains respond to alcohol, for example, so powerfully the first time they try it that it feels like "nectar of the gods." That is a real genetic difference in receptor sensitivity.</p>
+<p>But genetics is never the whole story. The <strong>stress-diathesis model</strong> says addiction = genetic predisposition + environmental activation. The evidence for the environmental half is striking:</p>
+<ul>
+<li>Soldiers in Vietnam used opiates and stimulants heavily every day. When they came home, the majority simply stopped — because the environment that fed the addiction disappeared.</li>
+<li>Large numbers of college students meet clinical criteria for alcohol use disorder. Most stop after graduation, when the binge-drinking environment dissolves.</li>
+</ul>
+<p>This is both encouraging and uncomfortable. Encouraging because you are not locked in by your genes. Uncomfortable because <strong>if the environment stays the same, the addiction usually stays too</strong>. Most people who want to quit want their existing life minus the addiction. That is genuinely hard to achieve.</p>
+<p>A note on self-recovery: epidemiological data shows that most people who have overcome addiction did so without formal treatment. That is true. It does not mean going it alone is the best strategy. It may just mean that the people who recovered on their own had milder cases. If you have already tried on your own and failed, that is useful data — you may be on the more severe end of the spectrum, and a more intensive approach is warranted.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-the-brain-circuits-behind-addiction">The Brain Circuits Behind Addiction</h2>
+<p>Four systems are central to understanding addiction — and to fixing it.</p>
+<p><strong>The thalamus</strong> is the brain's sensory gateway. It decides which incoming signals reach conscious awareness. Addiction rewires the thalamus to be hypersensitive to cues associated with the substance or behavior: the smell of a barbecue, the sight of a bottle, a Discord notification. You do not choose to notice these things — they force themselves through. This is why environment matters so much. Controlling what enters your senses is not a lifestyle preference; it is neurological damage control.</p>
+<p><strong>The amygdala</strong> is the brain's fear and survival center. Every addiction does two things: it activates pleasure circuits <em>and</em> it suppresses the amygdala. This is the deeper hook. Alcohol doesn't just feel good — it makes the anxious version of you disappear. Weed doesn't just give pleasure — it makes the dread go away. Video games don't just entertain — they make the shame about your unfinished paper irrelevant for twelve hours. The brain notices this. It learns a shortcut: negative emotion → use substance → negative emotion gone. This short-circuits your <strong>motivational circuitry</strong>, because negative emotions exist precisely to drive corrective action. Suppress them chemically and the motivation to fix the underlying problem evaporates.</p>
+<p><strong>The nucleus accumbens</strong> is the dopamine center. It packages pleasure, anticipation, and behavioral reinforcement together — you cannot get the pleasure without also getting the craving and the drive to repeat. The key physiological trap is <strong>tolerance</strong>: the brain adapts to repeated dopamine flooding by removing receptors. Eventually you are using the substance not to feel good but just to reach neutral. Meanwhile, ordinary pleasures — books, conversation, a walk — produce almost no signal because there is almost nowhere for that small amount of dopamine to land. This is <strong>anhedonia</strong>, and it is common in anyone who has been using heavily for a long time.</p>
+<p>The amygdala undergoes the same adaptation in reverse: suppress it repeatedly, and it compensates by becoming <em>more</em> sensitive. You are borrowing peace from the future. The more you suppress anxiety today, the more anxiety is waiting for you tomorrow.</p>
+<p><strong>The frontal lobes</strong> govern planning, prediction, impulse control, and working memory. Addiction measurably impairs all of these. People who are addicted show genuinely worse <strong>prediction error processing</strong> — the part of the brain that calculates "if I do this, here is what will happen" is functionally degraded. This is not stupidity. It is the neuroscience reason why addicts keep doing things that seem obviously self-destructive from the outside. They are not calculating outcomes the way a non-addicted brain does. And strong emotion makes this worse: amygdala activation actively suppresses frontal lobe function. When cravings are high and emotion is running hot, the brain's planning and prediction capacity is at its lowest.</p>
+<blockquote>
+<p>"You are not monolithic. You are like ten thousand people. The nucleus accumbens doesn't care what shame you feel — its job is to get dopamine."</p>
+</blockquote>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-the-three-stages-of-addiction">The Three Stages of Addiction</h2>
+<p>Addiction follows a predictable arc:</p>
+<ol>
+<li><strong>Pleasure</strong> — the substance or behavior produces a genuine spike of positive feeling. This is the hook.</li>
+<li><strong>Pain removal</strong> — tolerance erodes the positive spike. Now the main function is suppressing negative emotion: anxiety, shame, loneliness, boredom.</li>
+<li><strong>Dependence</strong> — the brain's baseline shifts downward. You are no longer using to feel good or even to feel neutral. You are using because without it, you feel <em>worse than baseline</em>. People playing video games twelve hours a day and not enjoying them, people drinking to avoid the physical and psychological pain of withdrawal — this is late-stage addiction.</li>
+</ol>
+<p>Recovery is possible at every stage. The receptor changes are homeostatic — the brain built them and can reverse them. Even after years of heavy use, the receptors are not destroyed; they have been removed from the membrane and can return. The process takes longer the longer the addiction has gone on, but it is always recoverable.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-why-attempts-to-quit-keep-failing">Why Attempts to Quit Keep Failing</h2>
+<p><strong>Emotional risk factors</strong>: The biggest driver of relapse is unaddressed emotion, both present and dormant. Present emotions are what your environment generates today. Dormant emotions are the accumulated shame, guilt, grief, and trauma that have been suppressed for months or years. These do not go away. On a quiet day, with no external stressor at all, the dormant emotions surface and the craving follows. The feeling of being constantly <em>tired</em> — not sleepy, but existentially exhausted — is often dormant emotions showing up in disguise.</p>
+<p><strong>HALT</strong>: Hunger, Anger, Loneliness, and Tiredness each independently impair frontal lobe function. Being tired is particularly dangerous because it destroys exactly the willpower needed to resist cravings. If you find yourself saying yes to risk more often when you're exhausted, that is not weakness — that is biology.</p>
+<p><strong>Cognitive traps</strong>:
+- <strong>Denial and deal-making</strong>: "It'll be a problem when X happens." "I'll stop after this one last time." The test: if you can swap the reward for something unrelated to the addiction and be genuinely fine with it, the deal is honest. If you always argue back to the substance, the addiction is doing the negotiating.
+- <strong>Perception of control</strong>: Believing you are managing the addiction when the addiction is actually managing you.
+- <strong>The weakness trap</strong>: Framing recovery as a test of personal strength. This is insidious because it sounds motivating but leads people to refuse therapy, skip meetings, and avoid changing their environment — all the things that actually work. The addiction co-opts the desire for self-reliance.
+- <strong>Post-acute withdrawal syndrome (PAWS)</strong>: After the acute physical withdrawal, a psychological and neurological recovery period can last six months to a year. Everything feels hard. Life feels gray and joyless. The brain, noticing how bad this feels and projecting it forward indefinitely, concludes: <em>I cannot do this forever.</em> And it is right — but the critical thing is that this period does not last forever. It just feels eternal while you are in it.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="medium-common-pitfalls">Common Pitfalls</h2>
+<p><strong>Wanting the same life minus the addiction.</strong> Almost everyone who starts recovery wants this. It is almost never achievable. The environment that supported the addiction usually needs to change — sometimes including friends, sometimes location, sometimes career. The good news: the new life is nearly always better. But the transition is hard, and denying that it needs to happen is one of the main reasons people fail.</p>
+<p><strong>Treating it as a willpower battle.</strong> Willpower is real but it is also a finite, biologically constrained resource that is depleted by hunger, tiredness, stress, and emotional load. Trying to brute-force sobriety without changing the environment, without addressing dormant emotions, and without support is like trying to win a war with one soldier who hasn't slept in three days.</p>
+<p><strong>Waiting until you feel ready.</strong> You will never feel ready. Pick a date and spend the weeks before it preparing — improving sleep, starting meditation, lining up support, planning responses to high-risk situations. Quitting cold turkey can work, but the failure rate is much lower when you are prepared than when you just decide today is the day.</p>
+<p><strong>Relying on intelligence.</strong> Counterintuitively, high intelligence can make addiction worse. A sophisticated brain is better at rationalizing, finding loopholes, and constructing justifications for why "my situation is different." The rules of recovery need to be simple and unbendable precisely because a smart addicted brain will find any wiggle room and use it.</p>
+<p><strong>Ignoring positive associations.</strong> Addiction is a solution, not just a problem. You genuinely liked something about it. Failing to honestly acknowledge what the addiction was doing for you — social bonding, anxiety relief, a sense of identity — means those needs remain unaddressed and keep pulling you back.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="medium-action-items-exercises">Action Items &amp; Exercises</h2>
+<ol>
+<li>
+<p><strong>Audit your environment.</strong> List every sensory cue that reliably triggers cravings: people, places, objects, times of day, platforms, social contexts. Remove or avoid what you can. This is not optional — it directly reduces the load on every other recovery effort.</p>
+</li>
+<li>
+<p><strong>Identify your dormant emotions.</strong> Set aside 20–30 minutes with a journal. Write down the things you feel shame or guilt about that cannot be fixed by any action you take today. These are likely being suppressed by the addiction. Acknowledge them on paper. This begins the process of processing them rather than avoiding them.</p>
+</li>
+<li>
+<p><strong>Build a recovery circle.</strong> Start with one person you can be completely honest with about the addiction — a therapist, a sponsor, a trusted friend. Practice telling the truth about your use to that person before expanding. Secrecy feeds addiction; honesty starves it.</p>
+</li>
+<li>
+<p><strong>Practice HALT daily.</strong> Check in with yourself each day: Am I hungry? Angry? Lonely? Tired? Treat these as early warning indicators, not personality failures. High-risk situations become much more dangerous when two or more are present simultaneously.</p>
+</li>
+<li>
+<p><strong>Develop exit strategies in advance.</strong> Write down the three most common situations in which you have relapsed or come close. For each one, script your exact response before the situation arises. Your prediction error processing will be impaired in the moment — the script substitutes for it.</p>
+</li>
+<li>
+<p><strong>Find a purpose that outweighs the addiction.</strong> Ask yourself: what is worth tolerating withdrawal for? The answer needs to be emotionally real, not intellectually convincing. Work with a therapist or trusted person to draw this out if you cannot find it alone. Without a compelling answer, the brain will not sustain the suffering that early recovery requires.</p>
+</li>
+<li>
+<p><strong>Establish non-negotiable daily self-care.</strong> Sleep, food, and some form of physical or mindfulness practice (walking, meditation, yoga) are not rewards for good recovery days — they are the infrastructure that makes recovery possible. Treat them like medication.</p>
+</li>
+<li>
+<p><strong>Set a quit date and prepare for it.</strong> Do not quit impulsively. Spend two to four weeks building the habits above, reducing environmental triggers, and lining up support. Then commit to the date as a hard deadline.</p>
+</li>
+<li>
+<p><strong>Do not bend the rules.</strong> Choose your rules before you need them. "No means no" is more useful than "I'll see how I feel." Every exception the addiction negotiates out of you is a crack it will widen. Rigidity here is not a flaw — it is a feature that compensates for impaired frontal lobe function.</p>
+</li>
+<li>
+<p><strong>Seek professional support if you have been trying alone and failing.</strong> A psychiatrist, therapist, or peer support group (AA, NA, or their virtual equivalents) does not replace your effort — it amplifies it. Use help the way a spotter helps at the gym: you still lift the weight, but you can lift more, and safely.</p>
+</li>
+</ol>
+</section></article>
+    </div>
+  </div>
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc"><ul><li><a href="#transcript-0-opening-disclaimer-and-stream-introduction">Opening Disclaimer and Stream Introduction</a></li><li><a href="#transcript-1-defining-addiction-impairment-and-key-features">Defining Addiction: Impairment and Key Features</a></li><li><a href="#transcript-2-origins-of-addiction-the-stress-diathesis-model">Origins of Addiction: The Stress-Diathesis Model</a></li><li><a href="#transcript-3-environmental-factors-and-the-vietnam-war-example">Environmental Factors and the Vietnam War Example</a></li><li><a href="#transcript-4-college-drinking-and-environmental-propagation">College Drinking and Environmental Propagation</a></li><li><a href="#transcript-5-brain-circuits-in-addiction-thalamus-and-sensory-gateway">Brain Circuits in Addiction: Thalamus and Sensory Gateway</a></li><li><a href="#transcript-6-the-amygdala-pain-suppression-and-emotional-hijacking">The Amygdala: Pain Suppression and Emotional Hijacking</a></li><li><a href="#transcript-7-nucleus-accumbens-dopamine-pleasure-and-craving">Nucleus Accumbens: Dopamine, Pleasure, and Craving</a></li><li><a href="#transcript-8-frontal-lobes-executive-function-and-prediction-errors">Frontal Lobes: Executive Function and Prediction Errors</a></li><li><a href="#transcript-9-tolerance-withdrawal-and-dopamine-homeostasis">Tolerance, Withdrawal, and Dopamine Homeostasis</a></li><li><a href="#transcript-10-stages-of-addiction-and-baseline-shift">Stages of Addiction and Baseline Shift</a></li><li><a href="#transcript-11-q-a-baseline-recovery-food-and-antidepressants">Q&amp;A: Baseline Recovery, Food, and Antidepressants</a></li><li><a href="#transcript-12-overcoming-addiction-changing-environment-and-thalamic-input">Overcoming Addiction: Changing Environment and Thalamic Input</a></li><li><a href="#transcript-13-emotional-regulation-present-and-dormant-emotions">Emotional Regulation: Present and Dormant Emotions</a></li><li><a href="#transcript-14-purpose-as-the-ultimate-override-for-addiction">Purpose as the Ultimate Override for Addiction</a></li><li><a href="#transcript-15-relapse-triggers-halt-cognitive-traps-and-the-weakness-trap">Relapse Triggers: HALT, Cognitive Traps, and the Weakness Trap</a></li><li><a href="#transcript-16-post-acute-withdrawal-syndrome-and-the-sense-of-foreverness">Post-Acute Withdrawal Syndrome and the Sense of Foreverness</a></li><li><a href="#transcript-17-rules-of-recovery-honesty-help-self-care-and-unbending-rules">Rules of Recovery: Honesty, Help, Self-Care, and Unbending Rules</a></li><li><a href="#transcript-18-workshop-announcement-and-closing-q-a">Workshop Announcement and Closing Q&amp;A</a></li></ul></div></nav>
+      <article class="summary"><section class="sec sec-a">
 <h2 id="transcript-0-opening-disclaimer-and-stream-introduction">Opening Disclaimer and Stream Introduction</h2>
-<p><span class="speaker">Dr. K:</span> Cultivate the compa, cultivate a capacity for kindness. So, Close Your Eyes, take a few moments to breathe in and breathe out. [Music], oh is is. [Music], [Music], [Music], [Applause], [Applause], [Applause], [Music]. But I would say, on a, on a deeper level, it&#x27;s more like when, when we say work on, it&#x27;s more like when, when we say work on yourself, that involves all kinds of like things about moving your life forward, and they struggle with motivation in these things. It&#x27;s because when I don&#x27;t think I&#x27;m worth it, I&#x27;m not worth fixing. [Music], [Music], h, [Music], [Music], you, you, you, [Music].</p>
+<p>Cultivate the compa, cultivate a capacity for kindness. So, Close Your Eyes, take a few moments to breathe in and breathe out. [Music], oh is is. [Music], [Music], [Music], [Applause], [Applause], [Applause], [Music]. But I would say, on a, on a deeper level, it&#x27;s more like when, when we say work on, it&#x27;s more like when, when we say work on yourself, that involves all kinds of like things about moving your life forward, and they struggle with motivation in these things. It&#x27;s because when I don&#x27;t think I&#x27;m worth it, I&#x27;m not worth fixing. [Music], [Music], h, [Music], [Music], you, you, you, [Music].</p>
 <p>When you develop empathy and compassion for other people, there&#x27;s all righty chat. Let&#x27;s get started. Welcome to another healthy gamer GG stream. Just a reminder that, although I&#x27;m a psychiatrist, nothing we discussed on stream today is intended to be taken as medical advice. Everything is for educational or entertainment purposes only. So if you all have a medical concern or question, please go see a concern or question, please go see a licensed, licensed professional. Um, I know that&#x27;s. You know, we offer that disclaimer every single stream, which is fair enough, um, but today we are going to be talking about a more clinical topic.</p>
 <p>So today we&#x27;re going to be doing a deep dive into addiction and um, just to be super clear about this. So, like I, you know, I&#x27;ve been doing some addiction Psychiatry work for several years now. I got interested in technology addiction back in 2015. I know it sounds crazy to think about it so long ago, but, um, and so I&#x27;m going to sort of be sharing with y&#x27;all today like my take on addiction, right? So, as a psychiatrist who&#x27;s worked in rehabs and things like that, is someone who&#x27;s been interested in technology addiction and treating it in some form for about n years- how do I understand addiction?</p>
 <p>Um, so how does addiction work, where does it come from, what are the different layers to it, and then also how to understand recovery from addiction. So this is not meant to be a substitute for clinical care. We&#x27;re going to talk- I mean, this is a little bit closer to um- you know, if I was teaching a two-hour lecture to Psychiatry residents about an overview of addiction, this is basically the lecture that I would give um. So that&#x27;s really how to take that and understand that this is not meant to be a substitute for actual addiction treatment and hopefully, by the end of this, we&#x27;ll make a strong case for those of yall that are struggling with addictions to really consider seeking treatment for it, um, and because it&#x27;s hard to do on your own, which will&#x27;ll get to, but also most people do it very successfully on their own, which is kind of interesting, um, okay, so before we dive in, a couple of uh, quick announcements: so we&#x27;ve got coaching spots that are open, um, so we have, uh, just a few personal and career spots left.</p>
@@ -288,15 +421,21 @@ try {
 <p>It&#x27;s going to be missing certain things, and even as someone who&#x27;s a degenerate gamer addict, who&#x27;s gaming in recovery, I miss some of the stuff too. Like going hard in gaming is its own special pleasure. There&#x27;s there&#x27;s own special pleasure of real, just debauchery, right when some expansion drops and like I&#x27;m going to stay up, I&#x27;m going to skip all my classes for a week and I&#x27;m going to grind to 60. There&#x27;s something that&#x27;s fun about that. I gave that up, and I think the challenge with addiction is that you are giving things up. I think the good news is that you only have to give them up for a while and then you really don&#x27;t want them anymore.</p>
 <p>You really start to appreciate what you have. So good luck, y&#x27;all take care.</p>
 </section></article>
+    </div>
   </div>
+  
 
-  <p class="meta">Auto-transcribed livestream · chapters &amp; speaker labels are a best-effort approximation (claude-sonnet-4-6).</p>
+  <p class="meta">Medium summary · claude-sonnet-4-6 (no extended thinking)</p>
 </div>
 
 <script>
 (function () {
   var root = document.documentElement;
-  var tb = document.querySelector('.theme-toggle');
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'medium');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
   var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
   tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
@@ -304,6 +443,16 @@ try {
   function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
   var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+  // deep-link to a heading in any view: switch to that view, then scroll to it
+  function navigateTo(id){
+    var el = id && document.getElementById(id);
+    if (!el) return;
+    var v = el.closest('.view');
+    if (v) setView(v.getAttribute('data-view'));
+    el.scrollIntoView();
+  }
+  window.addEventListener('hashchange', function(){ navigateTo(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash) navigateTo(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>
 <script>
