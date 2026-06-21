@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Understanding Modern Love — Dr. K's Guide</title>
+<link rel="stylesheet" href="style.css">
+<script>
+try {
+  if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
+  if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
+} catch (e) {}
+</script>
+</head>
+<body>
+<div class="wrap">
+  <nav class="topnav">
+    <a href="../index.html">← Library</a>
+    <button class="theme-toggle" aria-label="Toggle dark mode"></button>
+    <span class="font-toggle" role="group" aria-label="Reading font">
+      <button data-font="serif">Serif</button>
+      <button data-font="sans">Sans</button>
+    </span>
+  </nav>
+
+  <p class="show-line">Dr. K's Guide · <strong>Love, Sex & Relationships</strong> › Why Dating Feels So Hard Today</p>
+  <h1>Understanding Modern Love</h1>
+  <p class="subtitle">Welcome to Dr. K's Guide to Love, Sex, and Relationships. Things are harder than ever. People are behind screens, texting instead of connecting IRL, and no one seems to have time for other human beings. This guide is designed to help you no matter where you are on your journey, whether you've never been on a date, can manage a few dates but get ghosted, or have been in a relationship for years and are struggling to keep the spark alive. We'll teach you the basics of how human beings connect, how to develop a healthy physical and sexual relationship, how to communicate, and how to navigate problems.</p>
+  <p class="watch">
+    <a href="https://coaching.healthygamer.gg/guide/lessons/understanding-modern-love" target="_blank" rel="noopener">▶ Watch on Healthy Gamer</a>
+    <span class="speakers-note">1:40 min</span>
+  </p>
+
+  <div class="doc">
+    
+    <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
+<p>Welcome to Dr. K&#x27;s Guide to Love, Sex, and Relationships. Things are harder than ever. I want to say 20 or 25 years ago, people just used to care about each other more. Nowadays, everyone is behind a screen for work. We&#x27;re texting and DMing instead of connecting IRL. And no one seems to have time for other human beings. We&#x27;re also being brainwashed by social media, using excessive amounts of pornography. And so this is a guide to help you adapt to these modern circumstances. This guide is designed to help you no matter where you are on your journey. Whether it&#x27;s I&#x27;ve never been on a single date in my life, I&#x27;ve never had sex, or I can manage to get one or two dates, but then get ghosted. Or even people who have had significant relationships but have trouble finding the one or making it work. And this is also for people who have been in a relationship for 10 or 15 years and are struggling to keep the spark alive. We&#x27;re going to teach you the basics, how human beings connect, how to develop a healthy physical and sexual relationship, how to communicate and how to navigate problems. So many of the people that I work with are struggling with a sense of having fallen behind, or they feel hopeless. So this guide is also designed to help you catch up by teaching you about all of these phases all at once. So let&#x27;s dive in.</p>
+</section></article>
+  </div>
+
+  <p class="meta">Transcript of a Dr. K's Guide lesson (Love, Sex & Relationships → Why Dating Feels So Hard Today). Captions auto-generated.</p>
+</div>
+
+<script>
+(function () {
+  var root = document.documentElement;
+  var tb = document.querySelector('.theme-toggle');
+  function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
+  var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
+  tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
+  var fb=document.querySelectorAll('.font-toggle button');
+  function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
+  var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
+  fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+})();
+</script>
+<script>
+(function () {
+  var SVG = '<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>';
+  document.querySelectorAll('.summary h2[id], .summary h3[id]').forEach(function (h) {
+    var a = document.createElement('a');
+    a.className = 'anchor-link'; a.href = '#' + h.id; a.innerHTML = SVG;
+    a.setAttribute('aria-label', 'Copy link to this section');
+    a.addEventListener('click', function (e) {
+      e.preventDefault();
+      var url = location.href.split('#')[0] + '#' + h.id;
+      try { history.replaceState(null, '', '#' + h.id); } catch (err) {}
+      function done(){ a.classList.add('copied'); setTimeout(function(){ a.classList.remove('copied'); }, 1400); }
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(url).then(done, done);
+      else done();
+    });
+    h.appendChild(a);
+  });
+})();
+</script>
+</body>
+</html>
