@@ -9,8 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-  document.documentElement.setAttribute('data-view', localStorage.getItem('pubview') || 'summary');
-} catch (e) { document.documentElement.setAttribute('data-view', 'summary'); }
+  document.documentElement.setAttribute('data-view', localStorage.getItem('pubview') || 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -32,13 +32,13 @@ try {
   </p>
 
   <div class="view-toggle" role="group" aria-label="View">
-    <button data-view="summary">Summary<span class="wc">2,188w</span></button>
+    <button data-view="medium">Summary<span class="wc">2,188w</span></button>
     <button data-view="transcript">Transcript<span class="wc">19,804w</span></button>
     
   </div>
 
   
-  <div class="view" data-view="summary">
+  <div class="view" data-view="medium">
     <div class="doc">
       <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
 <ul>
@@ -351,7 +351,7 @@ try {
   var root = document.documentElement;
   function setView(v){ root.setAttribute('data-view', v);
     document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
-  setView(root.getAttribute('data-view') || 'summary');
+  setView(root.getAttribute('data-view') || 'medium');
   document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
   var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
