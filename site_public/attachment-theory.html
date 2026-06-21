@@ -9,7 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-} catch (e) {}
+  document.documentElement.setAttribute('data-view', 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -31,9 +32,131 @@ try {
     <span class="speakers-note">32:08 min</span>
   </p>
 
-  <div class="doc">
+  
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">1,689w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">5,856w</span></button>
     
-    <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
+  </div>
+  
+
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#summary-summary">Summary</a></li>
+<li><a href="#summary-how-it-all-started-bowlbys-observation-and-ainsworths-experiment">How It All Started: Bowlby's Observation and Ainsworth's Experiment</a></li>
+<li><a href="#summary-the-four-attachment-styles">The Four Attachment Styles</a></li>
+<li><a href="#summary-common-pitfalls">Common Pitfalls</a></li>
+<li><a href="#summary-action-items-exercises">Action Items &amp; Exercises</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="summary-summary">Summary</h2>
+<p><strong>TL;DR — The way your caregivers responded to you as a child wired your brain for how you experience relationships as an adult. Understanding which pattern you inherited is the first step to changing it.</strong></p>
+<p><span class="gl" tabindex="0">Attachment theory<span class="gl-pop" role="tooltip"><span class="gl-def">A neurobiologically grounded framework explaining how humans develop the capacity to form bonds with others — and how the quality of those early bonds shapes the way you relate to people for the rest of your life.</span><a class="gl-more" href="../glossary.html#glossary-attachment-theory">Full definition →</a></span></span> is arguably the most research-backed framework for understanding why humans relate to each other the way they do. It started with a simple observation — kids in a park behave differently — and grew into a body of work that explains why some people are comfortable with intimacy, some cling desperately, some shut everyone out, and some feel like their inner life is total chaos. The core finding: the consistency and quality of care you received early in life shapes your nervous system, your <span class="gl" tabindex="0">emotional regulation<span class="gl-pop" role="tooltip"><span class="gl-def">The ability to identify and modify emotional states in ways that support adaptive, goal-directed behavior.</span><a class="gl-more" href="../glossary.html#glossary-emotional-regulation">Full definition →</a></span></span>, and your fundamental assumptions about whether other people can be trusted.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-how-it-all-started-bowlbys-observation-and-ainsworths-experiment">How It All Started: Bowlby's Observation and Ainsworth's Experiment</h2>
+<p>John Bowlby, a British psychologist, started by watching kids play in parks. He noticed some children were clingy and stayed close to their caregivers, while others explored freely and made new friends easily. When he dug into the histories of the clingy kids, he found that 17 out of 44 had experienced some kind of sustained separation from a caregiver early in life — a parent who traveled, an illness, something that broke the continuity of care. Among the healthy, exploratory kids, only 2 had experienced any separation. That's roughly an eightfold difference. Physical separation from a caregiver, early in life, dramatically increased the odds of struggling to form relationships.</p>
+<p>Mary Ainsworth, building on Bowlby's work, designed a now-famous experiment called the <strong>Strange Situation</strong>. The setup:</p>
+<ol>
+<li>A parent and child enter a room with toys.</li>
+<li>A stranger enters the room.</li>
+<li>The parent leaves, leaving the child alone with the stranger.</li>
+<li>The parent returns.</li>
+</ol>
+<p>How the child behaved at each stage — whether they explored freely, whether they checked the parent's face when the stranger arrived, how hard they cried when the parent left, and crucially, how fast they calmed down when the parent returned — revealed their underlying <span class="gl" tabindex="0">attachment<span class="gl-pop" role="tooltip"><span class="gl-def">A neurobiologically grounded framework explaining how humans develop the capacity to form bonds with others — and how the quality of those early bonds shapes the way you relate to people for the rest of your life.</span><a class="gl-more" href="../glossary.html#glossary-attachment-theory">Full definition →</a></span></span> pattern. This experiment is the foundation everything else is built on.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-the-four-attachment-styles">The Four Attachment Styles</h2>
+<p>Terms vary across the research literature, and the categories have subtypes, but there are four major camps.</p>
+<h3 id="summary-secure-attachment">Secure Attachment</h3>
+<p>Securely attached children explore the room confidently while their parent is present. When a stranger enters, they glance at the parent to read the situation — if the parent seems calm, they stay calm. When the parent leaves, they cry. But when the parent returns, <strong>they calm down within seconds</strong>. They go back to playing.</p>
+<p>This rapid return to baseline is the key marker. Securely attached people have nervous systems that can activate in response to a threat and then <em>come back down</em> quickly once the threat passes. The <span class="gl" tabindex="0">amygdala<span class="gl-pop" role="tooltip"><span class="gl-def">The brain&#x27;s negative emotional center — the region that generates fear, anxiety, and survival responses.</span><a class="gl-more" href="../glossary.html#glossary-amygdala">Full definition →</a></span></span> fires, but it doesn't stay fired.</p>
+<p>This happens because these children grew up learning one fundamental truth: <em>if something bad happens, someone will show up</em>. The parent consistently mirrored their emotions and was reliably there. So the world became a safe place — not a place without danger, but a place where danger is survivable.</p>
+<p>In adulthood, secure <span class="gl" tabindex="0">attachment<span class="gl-pop" role="tooltip"><span class="gl-def">A neurobiologically grounded framework explaining how humans develop the capacity to form bonds with others — and how the quality of those early bonds shapes the way you relate to people for the rest of your life.</span><a class="gl-more" href="../glossary.html#glossary-attachment-theory">Full definition →</a></span></span> looks like:
+- Comfortable with both intimacy and independence
+- Not panicking if a partner doesn't text back for a day
+- Able to bounce back after a breakup without treating it as proof of personal worthlessness
+- Emotionally self-regulating — you lean on others, but don't <em>depend</em> on them to manage your inner state</p>
+<p>About 50% of people fall here.</p>
+<h3 id="summary-anxious-attachment">Anxious Attachment</h3>
+<p>Anxiously attached children struggle to explore even before anything goes wrong. They cling to the parent in the room. When the stranger arrives, they run back. When the parent leaves, they become highly dysregulated. And when the parent returns — this is the telling part — <strong>they cannot calm down</strong>. They cling, they cry, and they may even hit the parent in a storm of "I want you but I'm furious at you for leaving."</p>
+<p>The root cause is <strong>inconsistent caregiving</strong>. Not cruel, not absent — inconsistent. Sometimes the parent was warm and attentive. Other times a checked-out babysitter was there, or a parent struggling with <span class="gl" tabindex="0">addiction<span class="gl-pop" role="tooltip"><span class="gl-def">The use of a chemical (alcohol, opioids, cannabis, caffeine, etc.) that produces neurological effects your brain then adapts to — leading to tolerance, withdrawal, and, potentially, addiction.</span><a class="gl-more" href="../glossary.html#glossary-substance-use">Full definition →</a></span></span>, or one loving parent and one emotionally unavailable one. The rules of the game kept changing.</p>
+<p>The child's nervous system concludes: <em>I cannot count on the world to show up for me. I need to work hard to keep people close.</em></p>
+<p>In adulthood, anxious <span class="gl" tabindex="0">attachment<span class="gl-pop" role="tooltip"><span class="gl-def">A neurobiologically grounded framework explaining how humans develop the capacity to form bonds with others — and how the quality of those early bonds shapes the way you relate to people for the rest of your life.</span><a class="gl-more" href="../glossary.html#glossary-attachment-theory">Full definition →</a></span></span> looks like:
+- Intense fear of abandonment or being left
+- Tolerating bad or even abusive behavior because the alternative — being alone — feels more terrifying
+- Difficulty self-regulating; relying heavily on other people to feel okay
+- Performing emotional suppression in the other direction — being relentlessly upbeat and likable — because expressing need directly doesn't feel safe, then unexpectedly becoming passive-aggressive or emotionally flooded
+- Trouble with <span class="gl" tabindex="0">intrinsic motivation<span class="gl-pop" role="tooltip"><span class="gl-def">Motivation that arises from novelty, genuine interest, and autonomy — not from rewards, emotions, or changes in biological state.</span><a class="gl-more" href="../glossary.html#glossary-intrinsic-motivation">Full definition →</a></span></span>, because going out into the world and taking risks requires trusting that effort will be rewarded — which is hard when the world feels fundamentally unreliable</p>
+<h3 id="summary-avoidant-attachment">Avoidant Attachment</h3>
+<p>Avoidantly attached kids look, on the surface, like the healthiest ones. They explore the room fine. They don't fuss when the stranger arrives. When the parent leaves, they barely react. When the parent returns, they ignore them.</p>
+<p>But this is a mask. When researchers actually measured these children's physiology — heart rate, blood pressure — their bodies were in full stress response. They had learned to suppress the external signal while their nervous system was quietly panicking on the inside.</p>
+<p>The origin is <strong>consistent emotional unavailability</strong>. Not necessarily abuse — often just a parent who worked constantly, believed in tough love, or simply wasn't able to provide emotional attunement. Every time the child reached out emotionally, the signal got ignored or rebuffed. Eventually the child stopped reaching.</p>
+<blockquote>
+<p>"They have to learn how to calm down their own emotions, but they don't really calm them down. What they really do is suppress them."</p>
+</blockquote>
+<p>In adulthood, <span class="gl" tabindex="0">avoidant attachment<span class="gl-pop" role="tooltip"><span class="gl-def">A pattern of relating to others in which a person keeps people at emotional arm&#x27;s length — not because they don&#x27;t crave connection, but because connection feels dangerous.</span><a class="gl-more" href="../glossary.html#glossary-avoidant-attachment">Full definition →</a></span></span> looks like:
+- Fierce independence and self-reliance that can look admirable but is actually exhausting
+- Discomfort with vulnerability and emotional intimacy
+- A "I don't need anyone" stance that is more survival strategy than genuine preference
+- High performance and productivity — because everything depends on you, you work very hard
+- Emotional numbness or a robotic quality in relationships</p>
+<p>This pattern is extremely common, and is actively reinforced by cultural norms around masculinity — the idea that needing people is weakness. But it shows up in anyone raised in an environment where emotional needs were consistently unsupported.</p>
+<h3 id="summary-disorganized-attachment">Disorganized Attachment</h3>
+<p>Disorganized <span class="gl" tabindex="0">attachment<span class="gl-pop" role="tooltip"><span class="gl-def">A neurobiologically grounded framework explaining how humans develop the capacity to form bonds with others — and how the quality of those early bonds shapes the way you relate to people for the rest of your life.</span><a class="gl-more" href="../glossary.html#glossary-attachment-theory">Full definition →</a></span></span> is what emerges from severe early abuse, neglect, or <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span>. These individuals don't have a coherent strategy — they alternate between emotional numbness and intense dysregulation, struggle to maintain relationships of any kind, and have little sense of what they're feeling in any given moment.</p>
+<p>This is not hopeless, but it does require real clinical support. The work involves slowly learning to identify internal emotional states, building regulation skills, and — very gradually — allowing trust and vulnerability with safe people who can hold emotional energy without being overwhelmed by it.</p>
+<p>If your relationships feel like genuine chaos, you cycle between complete shutdown and emotional flooding, and connection with others feels almost impossible, professional support isn't optional — it's the appropriate level of intervention.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-common-pitfalls">Common Pitfalls</h2>
+<p><strong>Treating <span class="gl" tabindex="0">attachment<span class="gl-pop" role="tooltip"><span class="gl-def">A neurobiologically grounded framework explaining how humans develop the capacity to form bonds with others — and how the quality of those early bonds shapes the way you relate to people for the rest of your life.</span><a class="gl-more" href="../glossary.html#glossary-attachment-theory">Full definition →</a></span></span> styles as fixed <span class="gl" tabindex="0">identity<span class="gl-pop" role="tooltip"><span class="gl-def">A stable sense of who you are, built from the narrative integration of emotionally salient experiences — not a fixed trait you possess, but a story you construct by stringing together the moments in your life that…</span><a class="gl-more" href="../glossary.html#glossary-identity">Full definition →</a></span></span>.</strong> Your <span class="gl" tabindex="0">attachment<span class="gl-pop" role="tooltip"><span class="gl-def">A neurobiologically grounded framework explaining how humans develop the capacity to form bonds with others — and how the quality of those early bonds shapes the way you relate to people for the rest of your life.</span><a class="gl-more" href="../glossary.html#glossary-attachment-theory">Full definition →</a></span></span> style is a pattern your brain learned, not a permanent feature of your personality. The brain is plastic. These patterns can change.</p>
+<p><strong>Pathologizing <span class="gl" tabindex="0">avoidant attachment<span class="gl-pop" role="tooltip"><span class="gl-def">A pattern of relating to others in which a person keeps people at emotional arm&#x27;s length — not because they don&#x27;t crave connection, but because connection feels dangerous.</span><a class="gl-more" href="../glossary.html#glossary-avoidant-attachment">Full definition →</a></span></span> because it's high-functioning.</strong> Avoidantly attached people often look fine — even impressive. The internal cost is invisible. Don't dismiss this style just because it's socially rewarded.</p>
+<p><strong>Confusing anxious <span class="gl" tabindex="0">attachment<span class="gl-pop" role="tooltip"><span class="gl-def">A neurobiologically grounded framework explaining how humans develop the capacity to form bonds with others — and how the quality of those early bonds shapes the way you relate to people for the rest of your life.</span><a class="gl-more" href="../glossary.html#glossary-attachment-theory">Full definition →</a></span></span> with "being emotional."</strong> Anxiously attached people often appear cheerful and easygoing until suddenly they don't. The switch feels confusing to partners. This isn't manipulation — it's an inconsistent strategy developed in response to an inconsistent environment.</p>
+<p><strong>Assuming secure <span class="gl" tabindex="0">attachment<span class="gl-pop" role="tooltip"><span class="gl-def">A neurobiologically grounded framework explaining how humans develop the capacity to form bonds with others — and how the quality of those early bonds shapes the way you relate to people for the rest of your life.</span><a class="gl-more" href="../glossary.html#glossary-attachment-theory">Full definition →</a></span></span> means no emotional pain.</strong> Securely attached people still grieve, still get hurt, still cry. The difference is they return to baseline faster, not that they never leave it.</p>
+<p><strong>Using <span class="gl" tabindex="0">attachment theory<span class="gl-pop" role="tooltip"><span class="gl-def">A neurobiologically grounded framework explaining how humans develop the capacity to form bonds with others — and how the quality of those early bonds shapes the way you relate to people for the rest of your life.</span><a class="gl-more" href="../glossary.html#glossary-attachment-theory">Full definition →</a></span></span> as an excuse.</strong> Understanding why you do something is not the same as being stuck doing it forever. The goal of this framework is insight that leads to change, not a reason to stay the same.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-action-items-exercises">Action Items &amp; Exercises</h2>
+<ol>
+<li>
+<p><strong>Trace your caregiving environment.</strong> Think back to your childhood home. Was emotional support consistently available, inconsistently available, or rarely available? This single question points you toward your baseline <span class="gl" tabindex="0">attachment<span class="gl-pop" role="tooltip"><span class="gl-def">A neurobiologically grounded framework explaining how humans develop the capacity to form bonds with others — and how the quality of those early bonds shapes the way you relate to people for the rest of your life.</span><a class="gl-more" href="../glossary.html#glossary-attachment-theory">Full definition →</a></span></span> pattern.</p>
+</li>
+<li>
+<p><strong>Notice your regulation speed.</strong> The next time something upsets you, pay attention to how long it takes to genuinely calm down — not suppress the feeling, but actually return to baseline. Hours? Minutes? This is real data about your nervous system.</p>
+</li>
+<li>
+<p><strong>Identify your default relationship move.</strong> When a relationship feels threatened, do you cling and seek reassurance? Go cold and pull away? Oscillate between the two? Naming the pattern is the first step to catching it in real time.</p>
+</li>
+<li>
+<p><strong>Practice the Strange Situation on yourself.</strong> When you feel relationship <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> arise — a partner being distant, a friend not responding — ask: <em>Is the threat real right now, or am I reacting to an old wiring?</em> Securely attached people check current reality, not old fear.</p>
+</li>
+<li>
+<p><strong>If you're avoidant, try one small disclosure.</strong> Pick a safe relationship and share something you would normally keep to yourself. Not deep <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> — just something real. Notice what actually happens versus what you expected to happen.</p>
+</li>
+<li>
+<p><strong>If you're anxious, practice tolerating small gaps.</strong> When you feel the urge to reach out or seek reassurance, wait. Not forever — just longer than usual. Notice that the <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> peaks and then decreases even without external soothing. This builds the internal regulation capacity that didn't get wired in early.</p>
+</li>
+<li>
+<p><strong>If your patterns feel severe and chaotic</strong>, pursue professional support. This is not a failing — it's matching the level of care to what the situation actually requires.</p>
+</li>
+</ol>
+</section></article>
+    </div>
+  </div>
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      
+      <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
 <p>So next up, we&#x27;re going to dive into more of the details of what <span class="gl" tabindex="0">attachment theory<span class="gl-pop" role="tooltip"><span class="gl-def">A neurobiologically grounded framework explaining how humans develop the capacity to form bonds with others — and how the quality of those early bonds shapes the way you relate to people for the rest of your life.</span><a class="gl-more" href="../glossary.html#glossary-attachment-theory">Full definition →</a></span></span> has shown us. And in my opinion, this still remains the best sort of source of research on how human beings form relationships. So we&#x27;re going to go back a little bit historically to, I think, a guy named John Bowlby. So John Bowlby was, I think he was a British -English psychologist who observed kids playing in parks. And he thought this was super fascinating, right? So this is what&#x27;s cool. Psychologists back in the day, we didn&#x27;t have very sophisticated science, so they&#x27;d just sit there and watch stuff. So he was sitting in a park one day, and he observed how kids were playing.</p>
 <p>And he noticed that kids fell into a couple of different patterns. Some kids were kind of clingy, and they were mostly with their caregiver. And other kids were a little bit more adventurous and kind of ran around and sort of explored things, were willing to play with each other. Some kids were a little bit more loners, and other kids were able to form new relationships. And he discovered something really interesting, that if he took the kids that were more clingy, he started to explore a little bit about what happened in their past. And he found out of his original group of 44 kids that he studied, that 17 out of those 44 kids who were clingy had some kind of separation from their caregivers.</p>
 <p>That something happened early in their life where they were separated from the people like parents. Either parent traveled or parent was very sick, but there was some kind of sustained separation from a caregiver. And if he looked at his population of healthy kids, only two of those kids who were healthy had some degree of separation. So he discovered something very interesting, which is that if we are separated from our caregivers in some way, so this is a case of a physical separation, we are eight times as likely to be clingy and not be able to form relationships with other kids at the playground.</p>
@@ -85,15 +208,21 @@ try {
 <p>And it turns out that the reason we end up in these cycles of being a doormat or being the person who texts first has to do with the way that we view relationships. See, when you were wiring, when your brain was wiring about what a relationship looks like, there were certain truths that got kind of implanted into your circuitry. The goal of understanding these things is that even though those things got wired that way, the beautiful thing is that the brain is plastic, which means that we can rewire. And so if you want to change the nature of your relationships, if you want to engage in healthy relationships, we have to understand <span class="gl" tabindex="0">attachment theory<span class="gl-pop" role="tooltip"><span class="gl-def">A neurobiologically grounded framework explaining how humans develop the capacity to form bonds with others — and how the quality of those early bonds shapes the way you relate to people for the rest of your life.</span><a class="gl-more" href="../glossary.html#glossary-attachment-theory">Full definition →</a></span></span>.</p>
 <p>And what <span class="gl" tabindex="0">attachment theory<span class="gl-pop" role="tooltip"><span class="gl-def">A neurobiologically grounded framework explaining how humans develop the capacity to form bonds with others — and how the quality of those early bonds shapes the way you relate to people for the rest of your life.</span><a class="gl-more" href="../glossary.html#glossary-attachment-theory">Full definition →</a></span></span> shows us is the way that we were raised determines the way that we experience relationships. It will give us insight into why we feel the things that we feel, why we engage in the behaviors that we engage in, why on one day I feel very angry with this person, on the other day I feel very numb. Without <span class="gl" tabindex="0">attachment theory<span class="gl-pop" role="tooltip"><span class="gl-def">A neurobiologically grounded framework explaining how humans develop the capacity to form bonds with others — and how the quality of those early bonds shapes the way you relate to people for the rest of your life.</span><a class="gl-more" href="../glossary.html#glossary-attachment-theory">Full definition →</a></span></span>, the experience of trying to go through relationships can feel very, very confusing and disempowering. So next what we&#x27;re going to do is talk specifically about relationship interactions for these different <span class="gl" tabindex="0">attachment<span class="gl-pop" role="tooltip"><span class="gl-def">A neurobiologically grounded framework explaining how humans develop the capacity to form bonds with others — and how the quality of those early bonds shapes the way you relate to people for the rest of your life.</span><a class="gl-more" href="../glossary.html#glossary-attachment-theory">Full definition →</a></span></span> styles. And my hope is that as we tunnel down into actual relationship dynamics, that will be the final piece of the puzzle that will allow you to understand how you connect with other people.</p>
 </section></article>
+    </div>
   </div>
+  
 
-  <p class="meta">Transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">Trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> → <span class="gl" tabindex="0">Trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> & Relationships). Captions auto-generated.</p>
+  <p class="meta">Medium summary + transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">Trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> → <span class="gl" tabindex="0">Trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> & Relationships). Captions auto-generated; summary by claude-sonnet-4-6.</p>
 </div>
 
 <script>
 (function () {
   var root = document.documentElement;
-  var tb = document.querySelector('.theme-toggle');
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'medium');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
   var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
   tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
@@ -101,6 +230,9 @@ try {
   function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
   var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+  function navigateTo(id){ var el=id&&document.getElementById(id); if(!el)return; var v=el.closest('.view'); if(v)setView(v.getAttribute('data-view')); el.scrollIntoView(); }
+  window.addEventListener('hashchange', function(){ navigateTo(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash) navigateTo(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>
 <script>

@@ -9,7 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-} catch (e) {}
+  document.documentElement.setAttribute('data-view', 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -31,9 +32,103 @@ try {
     <span class="speakers-note">13:57 min</span>
   </p>
 
-  <div class="doc">
+  
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">1,369w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">2,645w</span></button>
     
-    <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
+  </div>
+  
+
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#summary-summary">Summary</a></li>
+<li><a href="#summary-the-advertising-industry-already-figured-this-out">The Advertising Industry Already Figured This Out</a></li>
+<li><a href="#summary-how-sensory-impressions-become-lasting-thought-patterns">How Sensory Impressions Become Lasting Thought Patterns</a></li>
+<li><a href="#summary-the-third-source-transcendent-thought">The Third Source: Transcendent Thought</a></li>
+<li><a href="#summary-common-pitfalls">Common Pitfalls</a></li>
+<li><a href="#summary-action-items-exercises">Action Items &amp; Exercises</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="summary-summary">Summary</h2>
+<p><strong>TL;DR — Your thoughts don't appear from nowhere; they come from what your senses take in, the emotions those impressions get attached to, and occasionally from something deeper. Understanding this gives you real leverage over your mind.</strong></p>
+<p>Most people try to manage their thoughts after the fact — suppressing them, redirecting them, talking themselves out of them. But there's an earlier point of intervention: the origin of a thought itself. Thoughts come from three identifiable sources, and knowing those sources lets you work upstream rather than constantly firefighting inside your own head.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-the-advertising-industry-already-figured-this-out">The Advertising Industry Already Figured This Out</h2>
+<p>Here's a thought experiment: why weren't people 2,000 years ago excited about the next Marvel movie or the next big video game release?</p>
+<p>Because they'd never heard of it.</p>
+<p>That sounds obvious, but sit with what it actually implies. The excitement you feel about something — the <span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span> to pursue it, the anticipation of it — had to enter your mind from the outside first. It didn't emerge spontaneously from within you. It arrived through your eyes, your ears, your senses. Before the sensory input, there was no thought. Before the thought, there was no <span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span>.</p>
+<p>The advertising industry understood this and built an entire multi-billion dollar field around it. An advertisement is just a carefully engineered sensory input designed to plant a specific thought in your head. Once the thought is there, the behavior follows. This isn't manipulation in some secret, nefarious sense — it's just how the mind works, and advertisers got there before most of us did.</p>
+<p>The same logic is behind why Alcoholics Anonymous doesn't recommend spending time at bars to get sober, and why startup incubators put founders together in the same physical space. You aren't just "in a different environment" — you're being exposed to a different stream of sensory impressions, which generates a different stream of thoughts, which produces different behavior.</p>
+<blockquote>
+<p>"What is environment? Environment is simply a group of sensory impressions."</p>
+</blockquote>
+<p>This reframe matters. Once you stop thinking of your environment as a backdrop and start thinking of it as an active input into your thought-generation system, you can start making deliberate choices about what you let in.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-how-sensory-impressions-become-lasting-thought-patterns">How Sensory Impressions Become Lasting Thought Patterns</h2>
+<p>Raw sensory input is only part of the story. The mind doesn't just log experiences neutrally — it attaches emotions to them. That pairing, <strong>sensory impression + emotional charge</strong>, is what gets stored in memory and becomes a self-sustaining thought generator.</p>
+<p>Consider the difference between a grown adult being called an idiot and a five-year-old being called an idiot. The auditory stimulus is identical. But the emotional impact — and therefore what gets laid down in memory — is completely different. The child may carry that impression for decades in the form of thoughts like <em>I'm not good enough</em> or <em>I don't deserve this</em>, thoughts that will later shape whether they apply for a promotion, ask someone out, or believe they're capable of anything at all.</p>
+<p>This is why childhood environments have such an outsized effect on adult behavior. It's not just what was said or done — it's the emotional weight attached to those sensory experiences, which then quietly populates the mind with particular kinds of thoughts long after the original experience is over.</p>
+<blockquote>
+<p>"That complex of sensory organ plus emotion can kind of populate your mind with thoughts."</p>
+</blockquote>
+<p>This is also why psychotherapy works. When you revisit a memory in a therapeutic context, you're not just recalling an event — you're processing and digesting the emotion that got attached to it. Change the emotional association, and you change the thoughts the memory generates going forward. The same sensory impression, de-charged of its emotional weight, no longer produces the same anxious or self-defeating thinking.</p>
+<p><strong>Emotional triggers</strong> follow the exact same logic in reverse. If you were traumatized by a dog, seeing a dog again doesn't just remind you of the past event — it activates the whole emotional-sensory complex and floods your mind with fear and <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span>. The trigger is a sensory input hitting a stored emotional impression.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-the-third-source-transcendent-thought">The Third Source: Transcendent Thought</h2>
+<p>For completeness, there is a third place thoughts come from — one that has nothing to do with sensory impressions or the emotions attached to them.</p>
+<p>Call it a flash of insight, creative inspiration, or the light-bulb moment when everything clicks into place. Artists often describe their best ideas as arriving from somewhere outside themselves. The word <em>genius</em> actually comes from this idea — that true genius is not a permanent trait of a person but a temporary state, something that visits you.</p>
+<p>The yogis who mapped this territory thousands of years ago observed their own thoughts carefully enough to notice that some thoughts couldn't be traced back to any sensory experience or emotional memory. They came from somewhere else entirely — a quieter, deeper place accessible through sustained <span class="gl" tabindex="0">meditation<span class="gl-pop" role="tooltip"><span class="gl-def">Meditation is the practice of focusing consciousness completely — until thinking itself falls away and you exist in a state of pure awareness with no mental activity.</span><a class="gl-more" href="../glossary.html#glossary-meditation">Full definition →</a></span></span> or certain creative states.</p>
+<p>This matters conceptually, but practically it's not the main lever most people need to pull. Transcendent thought tends to be a byproduct of deep practice rather than something you can engineer directly. The more actionable territory is the first two sources: sensory input and emotional impressions.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-common-pitfalls">Common Pitfalls</h2>
+<p><strong>Thinking willpower is the primary tool.</strong> If your environment is feeding your mind a constant stream of unhelpful sensory impressions, trying to suppress the resulting thoughts through sheer determination is working against the current. You can manage individual thoughts, but if the input stream doesn't change, new ones will keep arriving.</p>
+<p><strong>Treating environment as neutral.</strong> It's easy to assume that your surroundings are just a backdrop. They're not. Every environment is actively generating sensory impressions that are shaping your thoughts in real time.</p>
+<p><strong>Conflating the sensory event with the emotional impression.</strong> Two people can have the same experience and come away with wildly different thought patterns because of the emotional associations each attaches to it. The raw sensory content isn't what matters as much as what your mind does with it.</p>
+<p><strong>Trying to change behavior directly without addressing its source.</strong> Behavior flows from thoughts. Thoughts flow from sensory impressions and emotional attachments. Intervening only at the behavior level — trying to force yourself to act differently — skips over the upstream causes.</p>
+<p><strong>Dismissing emotional processing as soft or unnecessary.</strong> Working through the emotional charge on old sensory impressions (as in therapy) isn't just about feeling better. It literally changes the thought-generating machinery in your mind, which then changes what you automatically feel motivated or afraid to do.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-action-items-exercises">Action Items &amp; Exercises</h2>
+<ol>
+<li>
+<p><strong>Audit your sensory environment.</strong> For one day, pay attention to what you're feeding your senses — what you watch, listen to, read, who you spend time around. Ask: are these inputs generating thoughts I actually want? What thought does each input tend to plant?</p>
+</li>
+<li>
+<p><strong>Engineer one environment change deliberately.</strong> Pick one area of your life where your thoughts are working against you (<span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span>, <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span>, self-worth). Identify one concrete change to your sensory environment — what you consume, where you spend time, who you're around — and make that change for one week.</p>
+</li>
+<li>
+<p><strong>Trace a recurring thought back to its sensory origin.</strong> The next time a self-defeating thought shows up (e.g., <em>I'm not capable</em>, <em>I don't deserve this</em>), ask: where did I first hear or experience something that planted this? You're not trying to solve it in one sitting — just practice noticing the connection between the thought and its source impression.</p>
+</li>
+<li>
+<p><strong>Notice emotional charge in real time.</strong> When something triggers a strong emotional reaction — frustration, <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span>, craving — pause and ask: what was the sensory input that set this off? Is this emotion coming from right now, or from an older stored impression? This builds the <span class="gl" tabindex="0">habit<span class="gl-pop" role="tooltip"><span class="gl-def">Automatic behavior that operates without motivation, willpower, or conscious thought — you simply do it.</span><a class="gl-more" href="../glossary.html#glossary-habit">Full definition →</a></span></span> of seeing the mechanism rather than just being swept along by it.</p>
+</li>
+<li>
+<p><strong>Apply the AA principle to one personal goal.</strong> Identify something you want to build (a skill, a <span class="gl" tabindex="0">habit<span class="gl-pop" role="tooltip"><span class="gl-def">Automatic behavior that operates without motivation, willpower, or conscious thought — you simply do it.</span><a class="gl-more" href="../glossary.html#glossary-habit">Full definition →</a></span></span>, a creative project) and ask: what sensory environment would make the right thoughts arise naturally? Find or create some version of that environment — a <span class="gl" tabindex="0">community<span class="gl-pop" role="tooltip"><span class="gl-def">A Sanskrit term meaning community, sangha refers to the group of people — or beings — whose shared orientation supports your spiritual or personal growth.</span><a class="gl-more" href="../glossary.html#glossary-sangha">Full definition →</a></span></span>, a physical space, a routine — rather than relying solely on willpower.</p>
+</li>
+</ol>
+</section></article>
+    </div>
+  </div>
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      
+      <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
 <p>- Now that we understand the fundamental movements of the mind, how do I drop a thought how do I pick up a thought how do I hold onto the thought? The facts still remains, we don&#x27;t quite understand where thoughts come from, right? So we know what to do with them and how to sort of control them, but we still don&#x27;t understand the origin of thoughts. So in order to understand where the right thoughts come from and where the wrong thoughts come from, we have to understand the origin of thoughts themselves. So thoughts tend to come from three places. And the first place they come from is the Indriyas or the sense organs.</p>
 <p>So I want y&#x27;all to think about, you know the last show that you were excited to watch or the last movie that you were really excited about or maybe you&#x27;re excited about that&#x27;s going to be coming out soon. So just think about that show or movie for a second. Were people 2000 years ago just as excited as you are about that movie? And then you may ask, you may sort of say like, well obviously duh, like no of course they weren&#x27;t. And then the question is, hold on a second, the question is why? Why weren&#x27;t people 2000 years ago excited about, you know the next Star Wars movie or Marvel movie or whatever, the next video game coming out, next album that you&#x27;re looking forward to?</p>
 <p>Why weren&#x27;t they excited about it 2000 years ago? &#x27;Cause it&#x27;s pretty hype, right? Like it&#x27;s pretty cool that this thing is coming out and like everyone&#x27;s talking about it and it&#x27;s like really fantastic. And if it&#x27;s so objectively fantastic and so excitable like why weren&#x27;t they excited about it 2000 years ago? And you&#x27;re like, obviously like idiot, like no of course they weren&#x27;t excited about it and why not? Because they had never heard of it. So stop for a second. Think about that. So if you really think about what makes you excited, where did that originate from? It originated from your sense organs.</p>
@@ -57,15 +152,21 @@ try {
 <p>So thoughts in our mind come from what we see, what we hear, what we smell, what we taste. And then the second thing is that when we have some kind of sensory impression, oftentimes it gets attached with a particular emotion and this is why people get triggered, right? The emotion that they get triggered with comes from a sensory impression. If I&#x27;ve been traumatized by a dog or a cat or a bear or a moose, seeing one of those animals again will bring up those emotions will bring up those fears and will bring up those anxieties. So if we want to control those fears, control those anxieties, we have to understand where they originated from and what the process is of populating our mind with our fears.</p>
 <p>And that fundamentally comes from sensory organs and emotional impressions that are attached to sensory organs. And then just for the sake of completeness the third place that thoughts can come from, is from this sort of transcendent state of consciousness which kind of feels like the light bulb going off in your head where everything kind of clicks or what we can sort of call creative inspiration. So now that we understand the importance of senses for creating thoughts, the next natural step is to train our sensory organs. The more that we train our sensory organs, the more that we will sort of create a filter or a control on what thoughts will populate our mind.</p>
 </section></article>
+    </div>
   </div>
+  
 
-  <p class="meta">Transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> → Spiritual Perspectives on Thought). Captions auto-generated.</p>
+  <p class="meta">Medium summary + transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> → Spiritual Perspectives on Thought). Captions auto-generated; summary by claude-sonnet-4-6.</p>
 </div>
 
 <script>
 (function () {
   var root = document.documentElement;
-  var tb = document.querySelector('.theme-toggle');
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'medium');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
   var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
   tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
@@ -73,6 +174,9 @@ try {
   function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
   var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+  function navigateTo(id){ var el=id&&document.getElementById(id); if(!el)return; var v=el.closest('.view'); if(v)setView(v.getAttribute('data-view')); el.scrollIntoView(); }
+  window.addEventListener('hashchange', function(){ navigateTo(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash) navigateTo(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>
 <script>

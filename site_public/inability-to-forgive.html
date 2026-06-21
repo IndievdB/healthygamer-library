@@ -9,7 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-} catch (e) {}
+  document.documentElement.setAttribute('data-view', 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -31,9 +32,151 @@ try {
     <span class="speakers-note">16:34 min</span>
   </p>
 
-  <div class="doc">
+  
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">1,630w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">3,070w</span></button>
     
-    <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
+  </div>
+  
+
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#summary-summary">Summary</a></li>
+<li><a href="#summary-blame-is-almost-never-sitting-in-the-right-place">Blame Is Almost Never Sitting in the Right Place</a></li>
+<li><a href="#summary-how-self-blame-gets-programmed-in">How Self-Blame Gets Programmed In</a></li>
+<li><a href="#summary-self-blame-as-an-act-of-love-and-why-it-backfires">Self-Blame as an Act of Love (and Why It Backfires)</a></li>
+<li><a href="#summary-blaming-others-to-protect-yourself">Blaming Others to Protect Yourself</a></li>
+<li><a href="#summary-assigning-blame-correctly-is-the-door-to-forgiveness">Assigning Blame Correctly Is the Door to Forgiveness</a></li>
+<li><a href="#summary-the-emotional-wave-that-comes-with-getting-this-right">The Emotional Wave That Comes With Getting This Right</a></li>
+<li><a href="#summary-common-pitfalls">Common Pitfalls</a></li>
+<li><a href="#summary-action-items-exercises">Action Items &amp; Exercises</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="summary-summary">Summary</h2>
+<p><strong>TL;DR — <span class="gl" tabindex="0">Depression<span class="gl-pop" role="tooltip"><span class="gl-def">A disruption in mood and functioning that exists on a spectrum — not a single, uniform illness.</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span> is deeply tied to blame, and the path out runs through forgiveness. But before you can forgive, you first have to make sure you're blaming the right person.</strong></p>
+<p>Blame sits at the core of many depressive states. Sometimes it points inward, sometimes outward — but in either direction, it tends to be misplaced. The old Western understanding of <span class="gl" tabindex="0">depression<span class="gl-pop" role="tooltip"><span class="gl-def">A disruption in mood and functioning that exists on a spectrum — not a single, uniform illness.</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span> as "anger turned against the self" is a useful frame: buried anger, resentment, and guilt calcify into a depressive weight that quietly poisons everyday life. Understanding <em>why</em> blame lands where it does is the first step to dissolving it.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-blame-is-almost-never-sitting-in-the-right-place">Blame Is Almost Never Sitting in the Right Place</h2>
+<p>There are two main directions blame travels, and both can be misdirected.</p>
+<p><strong>Self-blame</strong> comes from one of two sources:
+1. You were <em>conditioned</em> to blame yourself.
+2. You are <em>protecting someone you love</em> by absorbing blame that belongs to them.</p>
+<p><strong>Other-blame</strong> has its own hidden motive:
+- You redirect fault outward to <em>protect yourself</em> from having to look at your own role.</p>
+<p>Notice the symmetry: blaming yourself protects others, and blaming others protects yourself. In both cases, blame is being used as a shield — not as an accurate accounting of what actually happened.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-how-self-blame-gets-programmed-in">How Self-Blame Gets Programmed In</h2>
+<p>Children absorb what they're told. If a parent repeatedly communicated — directly or indirectly — that their child was the cause of their unhappiness, that message doesn't stay outside. It migrates inward and starts running on a loop.</p>
+<p>One example: a woman whose mother blamed her for the end of a modeling career. The mother had a serious drinking problem that was far more likely responsible for her physical decline, but the child couldn't reason through those nuances at age four or five. All she heard was <em>it's your fault mommy's life is ruined.</em> Years later, the mother's words were still bouncing around in her own mind, in her own voice.</p>
+<p>Another example: a parent who blamed every emotional difficulty on gluten and dairy, effectively teaching their child that his feelings were a dietary problem rather than a legitimate human response to how he was being treated.</p>
+<blockquote>
+<p>"As children, our minds get programmed based on what we're told, what we're taught. If we think about how we learn which language to use, we learn the words that we speak through listening."</p>
+</blockquote>
+<p>If you grew up in an environment that taught you to self-blame, you need to ask a hard question: <em>Is this actually my fault, or is this something I was trained to believe?</em></p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-self-blame-as-an-act-of-love-and-why-it-backfires">Self-Blame as an Act of Love (and Why It Backfires)</h2>
+<p>Sometimes self-blame has nothing to do with <span class="gl" tabindex="0">conditioning<span class="gl-pop" role="tooltip"><span class="gl-def">The brain&#x27;s mechanism for repeating actions that produced pleasure or relief — when a behavior leads to a dopamine release (or suppresses negative emotion), the nucleus accumbens signals &quot;do that again,&quot; building…</span><a class="gl-more" href="../glossary.html#glossary-behavioral-reinforcement">Full definition →</a></span></span>. It's an act of protection toward someone you care about.</p>
+<p>A second example: a woman whose mother died of a neurological illness when she was around eight or nine. Her father, grief-stricken and overwhelmed, began drinking every evening before coming home. She needed two parents; she got half of one. But when asked about her father, she consistently said, <em>he did the best he could</em> — compassionate, yes, but also a way of making sure she never had to feel the anger underneath.</p>
+<p>The problem is that the anger was there anyway. Buried in the unconscious, unfelt and unexamined, it was running the <span class="gl" tabindex="0">depression<span class="gl-pop" role="tooltip"><span class="gl-def">A disruption in mood and functioning that exists on a spectrum — not a single, uniform illness.</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span> from backstage.</p>
+<blockquote>
+<p>"How can you actually forgive your dad if you never blame him? Because subconsciously the resentment is there."</p>
+</blockquote>
+<p>There's also a practical trap here: if you blame yourself for something that isn't your fault, you can never fix it — because you're trying to solve the wrong problem. Self-blame can feel <em>empowering</em> in a distorted way, because at least if it's your fault, you have the power to change it. But if the real source of the problem is someone else's actions, no amount of self-improvement will reach the root.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-blaming-others-to-protect-yourself">Blaming Others to Protect Yourself</h2>
+<p>The mirror image of this is the person who blames everyone around them — parents, circumstances, society — for everything that has gone wrong in their life. On the surface it looks like the opposite problem. But the underlying mechanism is the same: blame is being misrouted to avoid something painful.</p>
+<p>In this case, the painful thing is accountability. Looking honestly at yourself and acknowledging, <em>I played a role in this</em> — that brings up <span class="gl" tabindex="0">shame<span class="gl-pop" role="tooltip"><span class="gl-def">The emotion triggered by a perceived gap between where you are and where you think you should be.</span><a class="gl-more" href="../glossary.html#glossary-shame">Full definition →</a></span></span>. And <span class="gl" tabindex="0">shame<span class="gl-pop" role="tooltip"><span class="gl-def">The emotion triggered by a perceived gap between where you are and where you think you should be.</span><a class="gl-more" href="../glossary.html#glossary-shame">Full definition →</a></span></span> is one of the most uncomfortable emotions a person can feel.</p>
+<p>But until you look in that direction, you can't actually forgive yourself either. Forgiving yourself requires first acknowledging that there's something to forgive.</p>
+<blockquote>
+<p>"I kinda screwed up. I kinda screwed over my own life. And then the next thing I need to say to myself is — that's okay. I forgive myself for screwing up, because I'm not perfect."</p>
+</blockquote>
+<p>That sequence — honest acknowledgment, then self-forgiveness — is how the negative energy that's been holding you back starts to dissolve.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-assigning-blame-correctly-is-the-door-to-forgiveness">Assigning Blame Correctly Is the Door to Forgiveness</h2>
+<p>The central insight here is that <strong>you cannot forgive someone you haven't blamed.</strong> Forgiveness is not the same as excusing. It requires clearly seeing what happened, naming who was actually responsible, and <em>then</em> choosing to release the resentment.</p>
+<blockquote>
+<p>"We have to say, dad, what you did wasn't right — and I love you anyway and I forgive you anyway. But as long as we're protecting dad, we can never say those words."</p>
+</blockquote>
+<p>That's what the woman in the second example ultimately had to do: tell her father she felt abandoned, that it wasn't okay — and that she forgave him anyway. That's the moment real relief becomes possible.</p>
+<p>The same structure applies in reverse. If you've been externalizing blame, you have to honestly say: this part is mine. Not to destroy yourself with it, but to acknowledge it clearly so you can actually let it go.</p>
+<p><strong>The process looks like this:</strong>
+1. Identify where blame currently sits in your mind.
+2. Ask whether that placement is accurate, or whether it's serving a protective function.
+3. Reassign blame honestly — inward <em>or</em> outward, wherever it actually belongs.
+4. Use that honest assignment as the foundation for genuine forgiveness.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-the-emotional-wave-that-comes-with-getting-this-right">The Emotional Wave That Comes With Getting This Right</h2>
+<p>Expect discomfort when you start correcting the direction of blame. Your mind placed it in the wrong direction <em>for a reason</em> — to spare you from something painful. When you move it, that pain shows up.</p>
+<ul>
+<li>Shifting blame outward (onto someone who actually wronged you) will often bring up <strong>guilt</strong> — feeling ungrateful, disloyal, or like a complainer.</li>
+<li>Shifting blame inward (taking honest responsibility) brings up <strong><span class="gl" tabindex="0">shame<span class="gl-pop" role="tooltip"><span class="gl-def">The emotion triggered by a perceived gap between where you are and where you think you should be.</span><a class="gl-more" href="../glossary.html#glossary-shame">Full definition →</a></span></span></strong>.</li>
+</ul>
+<p>Neither feeling means you're doing it wrong. They mean you're getting close to something real. These buried emotions — the resentment, guilt, <span class="gl" tabindex="0">shame<span class="gl-pop" role="tooltip"><span class="gl-def">The emotion triggered by a perceived gap between where you are and where you think you should be.</span><a class="gl-more" href="../glossary.html#glossary-shame">Full definition →</a></span></span> — are what maintain the depressive state. They sit just underneath the surface, invisible but corrosive.</p>
+<blockquote>
+<p>"It's like an animal that's died in your walls and it's starting to stink up the whole house — those negative emotions, even though we're not aware of them, pollute our entire mind."</p>
+</blockquote>
+<p>You can't clean out what you can't locate. Getting blame into the right place makes the emotion findable — and therefore workable.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-common-pitfalls">Common Pitfalls</h2>
+<ul>
+<li><strong>Mistaking compassion for forgiveness.</strong> Saying "he did the best he could" is not the same as forgiving someone. It can actually be a way of avoiding forgiveness entirely, by skipping over the necessary step of acknowledging harm.</li>
+<li><strong>Confusing blame-correction with blame-shifting.</strong> If you've been blaming yourself for everything, the solution is not to start blaming everyone else. The goal is accuracy, not a swap.</li>
+<li><strong>Thinking self-blame is a virtue.</strong> Taking responsibility feels mature and strong. But if that self-blame is absorbing fault that belongs elsewhere, it's a trap — not strength.</li>
+<li><strong>Expecting forgiveness to arrive without emotional discomfort.</strong> The difficult feelings that come up when you reassign blame are not a sign that something is going wrong. They're the buried contents of the problem surfacing at last.</li>
+<li><strong>Trying to forgive without first naming the wrong.</strong> Premature or bypassed forgiveness — jumping straight to "it's fine" — leaves the underlying resentment untouched.</li>
+</ul>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-action-items-exercises">Action Items &amp; Exercises</h2>
+<ol>
+<li>
+<p><strong>Map your current blame.</strong> Write down the main sources of pain or struggle in your life right now. For each one, note who or what you're blaming. Be honest — even if the answer seems unfair or uncomfortable.</p>
+</li>
+<li>
+<p><strong>Ask the protective function question.</strong> For each piece of self-blame on your list, ask: <em>Was I taught to see this as my fault? Or am I taking this on to protect someone I care about?</em> For each piece of other-blame, ask: <em>Am I focusing here to avoid looking at my own role?</em></p>
+</li>
+<li>
+<p><strong>Reassign blame accurately.</strong> Based on that review, consciously re-place responsibility where it more honestly belongs. This doesn't need to be shared with anyone yet — it's an internal act of clarity.</p>
+</li>
+<li>
+<p><strong>Sit with what comes up.</strong> When you move blame to its correct location, notice the emotional reaction. If guilt or <span class="gl" tabindex="0">shame<span class="gl-pop" role="tooltip"><span class="gl-def">The emotion triggered by a perceived gap between where you are and where you think you should be.</span><a class="gl-more" href="../glossary.html#glossary-shame">Full definition →</a></span></span> arises, don't immediately push it away. Acknowledge it: <em>This is what my mind was trying to protect me from.</em></p>
+</li>
+<li>
+<p><strong>Practice the two-part forgiveness statement.</strong> For someone who wronged you: <em>"What you did was not okay — and I forgive you anyway."</em> For yourself: <em>"I made real mistakes — and I forgive myself anyway."</em> Say it out loud, or write it. It may feel hollow at first. That's normal. Repeat it as the emotion surfaces.</p>
+</li>
+<li>
+<p><strong>Notice inherited self-talk.</strong> Pay attention to the voice in your head when it criticizes you. Ask: <em>Is this actually my thought, or is this something someone else used to say to me?</em> Recognizing borrowed blame is often enough to start loosening its grip.</p>
+</li>
+</ol>
+</section></article>
+    </div>
+  </div>
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      
+      <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
 <p>- So now we&#x27;re gonna talk about the inability to forgive. For a lot of people who suffer from <span class="gl" tabindex="0">depression<span class="gl-pop" role="tooltip"><span class="gl-def">A disruption in mood and functioning that exists on a spectrum — not a single, uniform illness.</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span> or they kind of describe feeling depressed, if you actually look into their mind, what you find is a ton of blame. They blame themselves a lot, they blame other people a lot, it&#x27;s just blame, blame, blame, blame, blame. And if you think about where that comes from, it&#x27;s interesting because old theories, like basically the oldest theories of <span class="gl" tabindex="0">depression<span class="gl-pop" role="tooltip"><span class="gl-def">A disruption in mood and functioning that exists on a spectrum — not a single, uniform illness.</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span> from the West, essentially talk about how <span class="gl" tabindex="0">depression<span class="gl-pop" role="tooltip"><span class="gl-def">A disruption in mood and functioning that exists on a spectrum — not a single, uniform illness.</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span> is anger turned against the self. And so what happens when someone becomes depressed is that they&#x27;re blaming themselves.</p>
 <p>And so if we think about, you know, it doesn&#x27;t sort of matter whether you&#x27;re blaming other people or you&#x27;re blaming yourself, there is a common element to <span class="gl" tabindex="0">depression<span class="gl-pop" role="tooltip"><span class="gl-def">A disruption in mood and functioning that exists on a spectrum — not a single, uniform illness.</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span>, which is blame. And the good news is that blame generally speaking has the same the solution, which is forgiveness. So now what we&#x27;re gonna do is understand a little bit about where this blame comes from, so that we can find the path to forgiveness. So the first thing is that in <span class="gl" tabindex="0">depression<span class="gl-pop" role="tooltip"><span class="gl-def">A disruption in mood and functioning that exists on a spectrum — not a single, uniform illness.</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span> we tend to blame ourselves, and we blame ourselves for one of two reasons. One is that we were either taught to blame ourselves, we were programmed to blame ourselves or conditioned to blame ourselves, or we actually blame ourselves to protect other people.</p>
 <p>And that&#x27;s kinda subtle, but it&#x27;s really fascinating once you uncover it. The second place that we tend to stick blame is onto other people. And ironically, the reason that we blame other people is oftentimes to protect ourselves. So it doesn&#x27;t really matter which way you blame, chances are that if you&#x27;re blaming yourself, you may actually need to assign that blame outside of yourself, and if you&#x27;re blaming other people way too much, maybe you need to take a closer look at yourself. So let&#x27;s jump in and start talking a little bit about blame. So a lot of times, the reason that we blame ourselves is literally because we were taught to blame ourselves.</p>
@@ -59,15 +202,21 @@ try {
 <p>And so be prepared for that negative emotion. And in terms of blaming other people, be prepared for all of the negativity and <span class="gl" tabindex="0">shame<span class="gl-pop" role="tooltip"><span class="gl-def">The emotion triggered by a perceived gap between where you are and where you think you should be.</span><a class="gl-more" href="../glossary.html#glossary-shame">Full definition →</a></span></span> that is going to come up when you actually look at yourself, right? When you look at yourself and give yourself a long, hard look in the mirror, and you say that I am not what I should be, that I actually screwed up here and that no one else is responsible for my mistakes. And those, that revelation, that sort of very microscopic look at yourself can also be accompanied by ton of negative emotion, and <span class="gl" tabindex="0">shame<span class="gl-pop" role="tooltip"><span class="gl-def">The emotion triggered by a perceived gap between where you are and where you think you should be.</span><a class="gl-more" href="../glossary.html#glossary-shame">Full definition →</a></span></span> is at the top of the list. But at the end of the day, that pent up negative emotion, whether it&#x27;s resentment, or guilt, or <span class="gl" tabindex="0">shame<span class="gl-pop" role="tooltip"><span class="gl-def">The emotion triggered by a perceived gap between where you are and where you think you should be.</span><a class="gl-more" href="../glossary.html#glossary-shame">Full definition →</a></span></span> is what keeps us in that depressive mindset.</p>
 <p>It&#x27;s why we feel so burdened and negative in our mind every single day. And it&#x27;s just underneath the surface. It&#x27;s like an animal that&#x27;s kind of died in your walls and it&#x27;s starting to stink up the whole house, those negative emotions, even though we&#x27;re not aware of them pollute our entire mind. And in order to clean them out, we have to figure out where they are first. And so if you understand that blame is a big part of <span class="gl" tabindex="0">depression<span class="gl-pop" role="tooltip"><span class="gl-def">A disruption in mood and functioning that exists on a spectrum — not a single, uniform illness.</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span> and you blame the right person, that could be yourself, it could be other people, then you can really start down the path of forgiveness. And what we&#x27;ll do is teach you a little bit about how to digest these <span class="gl" tabindex="0">samskaras<span class="gl-pop" role="tooltip"><span class="gl-def">A samskara is a ball of undigested emotional energy from past experiences that gets stored in the mind and automatically activates in present situations, distorting your perception of what&#x27;s actually happening.</span><a class="gl-more" href="../glossary.html#glossary-samskara">Full definition →</a></span></span>, and we&#x27;ll also teach you particular <span class="gl" tabindex="0">meditation<span class="gl-pop" role="tooltip"><span class="gl-def">Meditation is the practice of focusing consciousness completely — until thinking itself falls away and you exist in a state of pure awareness with no mental activity.</span><a class="gl-more" href="../glossary.html#glossary-meditation">Full definition →</a></span></span> techniques that are oriented at cultivating the parts of your brain that will allow you to forgive.</p>
 </section></article>
+    </div>
   </div>
+  
 
-  <p class="meta">Transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">Depression<span class="gl-pop" role="tooltip"><span class="gl-def">A disruption in mood and functioning that exists on a spectrum — not a single, uniform illness.</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span> → Common Manifestations of <span class="gl" tabindex="0">Depression<span class="gl-pop" role="tooltip"><span class="gl-def">A disruption in mood and functioning that exists on a spectrum — not a single, uniform illness.</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span>). Captions auto-generated.</p>
+  <p class="meta">Medium summary + transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">Depression<span class="gl-pop" role="tooltip"><span class="gl-def">A disruption in mood and functioning that exists on a spectrum — not a single, uniform illness.</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span> → Common Manifestations of <span class="gl" tabindex="0">Depression<span class="gl-pop" role="tooltip"><span class="gl-def">A disruption in mood and functioning that exists on a spectrum — not a single, uniform illness.</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span>). Captions auto-generated; summary by claude-sonnet-4-6.</p>
 </div>
 
 <script>
 (function () {
   var root = document.documentElement;
-  var tb = document.querySelector('.theme-toggle');
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'medium');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
   var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
   tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
@@ -75,6 +224,9 @@ try {
   function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
   var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+  function navigateTo(id){ var el=id&&document.getElementById(id); if(!el)return; var v=el.closest('.view'); if(v)setView(v.getAttribute('data-view')); el.scrollIntoView(); }
+  window.addEventListener('hashchange', function(){ navigateTo(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash) navigateTo(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>
 <script>

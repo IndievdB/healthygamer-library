@@ -9,7 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-} catch (e) {}
+  document.documentElement.setAttribute('data-view', 'transcript');
+} catch (e) { document.documentElement.setAttribute('data-view', 'transcript'); }
 </script>
 </head>
 <body>
@@ -31,9 +32,13 @@ try {
     <span class="speakers-note">10:56 min</span>
   </p>
 
-  <div class="doc">
-    
-    <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
+  
+
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      
+      <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
 <p>- So let&#x27;s talk a little bit about bipolar disorder. I don&#x27;t think really any clinical discussion of <span class="gl" tabindex="0">depression<span class="gl-pop" role="tooltip"><span class="gl-def">A disruption in mood and functioning that exists on a spectrum — not a single, uniform illness.</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span> is really complete without touching on bipolar disorder. It is thankfully a relatively rare illness, but can be really, really impactful for the people who suffer from it. So the first thing before we even get into bipolar disorder, we got to talk about mood lability because nowadays everybody is bipolar. Like, I hear this all the time where people are like, &quot;Oh my God, my son is so bipolar. Anytime I interrupt him playing video games, he like flips out and does all these terrible things&quot;.</p>
 <p>And we&#x27;ll also hear it from significant others. Like, &quot;Oh my God. Like, you know, my partner, or my girlfriend my boyfriend is like so bipolar. And what they&#x27;re really describing is something that we call mood lability. So mood lability isn&#x27;t really a diagnosis, it&#x27;s really a more of a symptom. So it&#x27;s something that when your mood rapidly fluctuates. So people with mood lability can have their mood change like very, very quickly over like brief periods of time. So, you know, one minute you&#x27;re hot, next minute you&#x27;re cold. One minute you&#x27;re happy, next minute you&#x27;re very, very angry. We see a lot of mood lability in <span class="gl" tabindex="0">personality disorders<span class="gl-pop" role="tooltip"><span class="gl-def">A personality disorder is a deeply ingrained distortion in the way a person perceives, internally reacts to, and behaves in the world — not an episodic illness that happens to them, but the fundamental shape of who they…</span><a class="gl-more" href="../glossary.html#glossary-personality-disorders">Full definition →</a></span></span>.</p>
 <p>We see rapid fluctuations of mood. And true bipolar disorder doesn&#x27;t really involve mood lability. What true bipolar disorder is, is fluctuating mood states that will last for weeks or months at a time, not hours or days. So once a depressive episode hits in someone with bipolar disorder, it hangs around, unfortunately for weeks or months at a time. With the higher moods or manic or hypomanic moods, they can persist for days or weeks at a time. So let&#x27;s jump into some epidemiology or some statistics about bipolar disorder. So about 1% of the population is affected by bipolar disorder, which means that 99 out of a hundred people who claim they&#x27;re &quot;I&#x27;m so bipolar&quot; are not actually bipolar.</p>
@@ -52,7 +57,9 @@ try {
 <p>So people who are cyclothymic can kind of be depressed for a week and then hypomanic for three days and then kind of depressed for a week. So they do rapidly cycle between moods, but it&#x27;s still not to the point of mood lability. So this video is really all about exploring bipolar disorder and just to kind of hit on the key points. So number one is mood lability doesn&#x27;t make you bipolar disorder. The second thing is that, you know, people with bipolar disorder will have depressive episodes, but they&#x27;ll also have manic episodes or hypomanic episodes. And that diagnosis becomes really, really important because each one has a different treatment.</p>
 <p>And just like <span class="gl" tabindex="0">major depressive disorder<span class="gl-pop" role="tooltip"><span class="gl-def">A disruption in mood and functioning that exists on a spectrum — not a single, uniform illness.</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span>, it&#x27;s really important to take kind of a comprehensive approach towards bipolar disorder and try to channel that good, positive energy while remaining relatively balanced and not really paying the price of the depressive crash afterward.</p>
 </section></article>
+    </div>
   </div>
+  
 
   <p class="meta">Transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">Depression<span class="gl-pop" role="tooltip"><span class="gl-def">A disruption in mood and functioning that exists on a spectrum — not a single, uniform illness.</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span> → Clinical Track). Captions auto-generated.</p>
 </div>
@@ -60,7 +67,11 @@ try {
 <script>
 (function () {
   var root = document.documentElement;
-  var tb = document.querySelector('.theme-toggle');
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'transcript');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
   var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
   tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
@@ -68,6 +79,9 @@ try {
   function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
   var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+  function navigateTo(id){ var el=id&&document.getElementById(id); if(!el)return; var v=el.closest('.view'); if(v)setView(v.getAttribute('data-view')); el.scrollIntoView(); }
+  window.addEventListener('hashchange', function(){ navigateTo(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash) navigateTo(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>
 <script>

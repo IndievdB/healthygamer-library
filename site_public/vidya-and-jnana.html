@@ -9,7 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-} catch (e) {}
+  document.documentElement.setAttribute('data-view', 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -31,9 +32,133 @@ try {
     <span class="speakers-note">12:57 min</span>
   </p>
 
-  <div class="doc">
+  
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">1,636w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">2,375w</span></button>
     
-    <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
+  </div>
+  
+
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#summary-summary">Summary</a></li>
+<li><a href="#summary-two-kinds-of-knowledge-vidya-and-jnana">Two Kinds of Knowledge: Vidya and Jnana</a></li>
+<li><a href="#summary-why-motivation-and-willpower-are-the-wrong-explanation">Why "Motivation" and "Willpower" Are the Wrong Explanation</a></li>
+<li><a href="#summary-how-jnana-actually-produces-change-the-smoking-story">How Jnana Actually Produces Change: The Smoking Story</a></li>
+<li><a href="#summary-the-problem-we-actively-avoid-understanding">The Problem: We Actively Avoid Understanding</a></li>
+<li><a href="#summary-how-to-cultivate-jnana">How to Cultivate Jnana</a></li>
+<li><a href="#summary-common-pitfalls">Common Pitfalls</a></li>
+<li><a href="#summary-action-items-exercises">Action Items &amp; Exercises</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="summary-summary">Summary</h2>
+<p><strong>TL;DR — Lasting behavioral change doesn't come from willpower or <span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span>; it comes from a specific kind of deep, experiential understanding the yogic tradition calls <em>jnana</em>.</strong></p>
+<p>Most people explain their failures with words like "I'm lazy" or "I lack discipline." Most people explain others' successes with words like "they're motivated" or "they have strong willpower." Both explanations miss what's actually happening. There are two fundamentally different types of <span class="gl" tabindex="0">knowledge<span class="gl-pop" role="tooltip"><span class="gl-def">Vidya is objective, transmissible information — the kind of knowledge that can be written in a textbook, proven to another person, or exchanged between minds.</span><a class="gl-more" href="../glossary.html#glossary-vidya">Full definition →</a></span></span>, and confusing them is why so many attempts at change fail — no matter how hard you try to force yourself.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-two-kinds-of-knowledge-vidya-and-jnana">Two Kinds of Knowledge: Vidya and Jnana</h2>
+<p>Sanskrit distinguishes between two forms of knowing that English collapses into one word.</p>
+<p><strong><span class="gl" tabindex="0">Vidya<span class="gl-pop" role="tooltip"><span class="gl-def">Vidya is objective, transmissible information — the kind of knowledge that can be written in a textbook, proven to another person, or exchanged between minds.</span><a class="gl-more" href="../glossary.html#glossary-vidya">Full definition →</a></span></span></strong> is information. It is:
+- Objective — verifiable by many people independently
+- Transmissible — it can be written in a book, recorded in a lecture, passed from one person to another
+- The kind of <span class="gl" tabindex="0">knowledge<span class="gl-pop" role="tooltip"><span class="gl-def">Vidya is objective, transmissible information — the kind of knowledge that can be written in a textbook, proven to another person, or exchanged between minds.</span><a class="gl-more" href="../glossary.html#glossary-vidya">Full definition →</a></span></span> that fills libraries and curricula</p>
+<p><strong>Jnana</strong> is understanding. It is:
+- Subjective — it lives inside a specific person's experience
+- Non-transmissible — it cannot be handed from one person to another
+- Closer, according to the yogis, to the actual truth of a thing than any amount of information</p>
+<p>The clearest illustration: you can read every neuroscience paper ever written on taste perception, study the chemistry of strawberries in depth, become the world's foremost academic expert on gustatory experience — and none of that will give you the <em>taste</em> of a strawberry. The taste itself is jnana. The papers are <span class="gl" tabindex="0">vidya<span class="gl-pop" role="tooltip"><span class="gl-def">Vidya is objective, transmissible information — the kind of knowledge that can be written in a textbook, proven to another person, or exchanged between minds.</span><a class="gl-more" href="../glossary.html#glossary-vidya">Full definition →</a></span></span>.</p>
+<p>Other examples of the gap:
+- Reading a romance novel vs. being in love
+- Getting a PhD in social activism vs. actually marching in the civil rights movement</p>
+<p><span class="gl" tabindex="0">Vidya<span class="gl-pop" role="tooltip"><span class="gl-def">Vidya is objective, transmissible information — the kind of knowledge that can be written in a textbook, proven to another person, or exchanged between minds.</span><a class="gl-more" href="../glossary.html#glossary-vidya">Full definition →</a></span></span> about love and jnana of love are not the same thing, and no amount of the first substitutes for the second.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-why-motivation-and-willpower-are-the-wrong-explanation">Why "Motivation" and "Willpower" Are the Wrong Explanation</h2>
+<p>When someone pulls their life together — gets sober, leaves a toxic relationship, finally makes a change they'd been unable to make for years — and you ask them <em>how</em>, listen carefully to the words they actually choose.</p>
+<p>They don't say "I finally got motivated enough." They say:</p>
+<blockquote>
+<p>"One day I woke up and I just <em>knew</em>. I <em>realized</em>. I <em>discovered</em>."</p>
+</blockquote>
+<p>The linguistic cortex picks the right word for the job. And the word successful changers reach for is consistently a word of <em><span class="gl" tabindex="0">knowledge<span class="gl-pop" role="tooltip"><span class="gl-def">Vidya is objective, transmissible information — the kind of knowledge that can be written in a textbook, proven to another person, or exchanged between minds.</span><a class="gl-more" href="../glossary.html#glossary-vidya">Full definition →</a></span></span></em>, not energy or <span class="gl" tabindex="0">desire<span class="gl-pop" role="tooltip"><span class="gl-def">One of the four classical Hindu goals of life, Kama is the pursuit of pleasure, desire, and sensory enjoyment — including but not limited to sexuality and lust.</span><a class="gl-more" href="../glossary.html#glossary-kama">Full definition →</a></span></span>.</p>
+<p>This matters because <span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span> turns out not to be the bottleneck anyway. Consider someone in recovery from alcohol <span class="gl" tabindex="0">addiction<span class="gl-pop" role="tooltip"><span class="gl-def">The use of a chemical (alcohol, opioids, cannabis, caffeine, etc.) that produces neurological effects your brain then adapts to — leading to tolerance, withdrawal, and, potentially, addiction.</span><a class="gl-more" href="../glossary.html#glossary-substance-use">Full definition →</a></span></span>: in their first week of sobriety, if you ask how badly they want a drink, the answer is an eleven out of ten. The sober person craves alcohol <em>more</em> than the person who just drank. The difference between them isn't <span class="gl" tabindex="0">desire<span class="gl-pop" role="tooltip"><span class="gl-def">One of the four classical Hindu goals of life, Kama is the pursuit of pleasure, desire, and sensory enjoyment — including but not limited to sexuality and lust.</span><a class="gl-more" href="../glossary.html#glossary-kama">Full definition →</a></span></span>. It isn't willpower either — at least not in the way most people imagine it.</p>
+<p>The standard model of behavior change pictures the mind as a tug-of-war: your <em>id</em> (the impulsive part that wants the unhealthy thing) pulling against your <em>superego</em> (the moralistic part that says you <em>should</em> resist). Willpower is the rope. If your willpower is strong today, you eat the oatmeal. If it's weak, you eat the junk food. Change becomes a daily war of attrition you are always at risk of losing.</p>
+<p>Jnana dissolves the conflict entirely.</p>
+<p>When you genuinely <em>understand</em> something, your natural impulse shifts. You don't need to force anything. If you've burned your hand on a hot stove, you don't require willpower to keep your hand away from it the next time. The understanding itself reorganizes what you want. Jnana isn't the opposite of laziness — it's the opposite of <em>willpower</em>. It makes willpower unnecessary.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-how-jnana-actually-produces-change-the-smoking-story">How Jnana Actually Produces Change: The Smoking Story</h2>
+<p>One patient had worked through a serious poly-substance <span class="gl" tabindex="0">habit<span class="gl-pop" role="tooltip"><span class="gl-def">Automatic behavior that operates without motivation, willpower, or conscious thought — you simply do it.</span><a class="gl-more" href="../glossary.html#glossary-habit">Full definition →</a></span></span> — alcohol, marijuana, multiple substances — but cigarettes remained. Nothing worked. Then, during a trek in the Himalayas, he found himself huffing and puffing up the mountain and had a sudden, visceral realization: <em>smoking is directly attacking the thing I care about most — my breath, my connection to my body, my spiritual practice.</em></p>
+<p>After that moment, cigarettes were finished. Not because he tried harder. Not because he found more <span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span>. Because he understood something in a way that reorganized his relationship with smoking from the inside.</p>
+<p>That's jnana. And the reason no book or podcast could have delivered it is that it had to be <em>his</em> experience, in <em>his</em> body, connected to <em>his</em> <span class="gl" tabindex="0">values<span class="gl-pop" role="tooltip"><span class="gl-def">Something you genuinely care about that, when you move toward it, produces a felt sense of fulfillment — not just a vague wish, but the force that actually gets you out of the chair and moving.</span><a class="gl-more" href="../glossary.html#glossary-values">Full definition →</a></span></span>. The realization was non-transferable.</p>
+<blockquote>
+<p>"This is why no one is actually getting better — because true understanding, subjective understanding that creates behavioral change, transforms you as a person, and cannot be put down into any kind of medium."</p>
+</blockquote>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-the-problem-we-actively-avoid-understanding">The Problem: We Actively Avoid Understanding</h2>
+<p>Here's the uncomfortable part. When you're caught in a cycle you know is harmful, <span class="gl" tabindex="0">awareness<span class="gl-pop" role="tooltip"><span class="gl-def">The capacity to accurately receive and process information about what is happening — in your environment, your body, or your mind — so that your brain can respond appropriately.</span><a class="gl-more" href="../glossary.html#glossary-awareness">Full definition →</a></span></span> of the harm feels unbearable — so you flee from it. The worse an <span class="gl" tabindex="0">addiction<span class="gl-pop" role="tooltip"><span class="gl-def">The use of a chemical (alcohol, opioids, cannabis, caffeine, etc.) that produces neurological effects your brain then adapts to — leading to tolerance, withdrawal, and, potentially, addiction.</span><a class="gl-more" href="../glossary.html#glossary-substance-use">Full definition →</a></span></span> makes you feel, the more clearly you start to see what it's costing you, the harder you reach back into the <span class="gl" tabindex="0">addiction<span class="gl-pop" role="tooltip"><span class="gl-def">The use of a chemical (alcohol, opioids, cannabis, caffeine, etc.) that produces neurological effects your brain then adapts to — leading to tolerance, withdrawal, and, potentially, addiction.</span><a class="gl-more" href="../glossary.html#glossary-substance-use">Full definition →</a></span></span> to avoid sitting with that understanding.</p>
+<p>Playing video games until 4 a.m. isn't just about fun. It's also about not having to sit with how the day went.</p>
+<p>The very thing that would produce change — really experiencing and acknowledging what a behavior costs you — is the thing the behavior is designed to prevent you from doing. This is why <span class="gl" tabindex="0">avoidance<span class="gl-pop" role="tooltip"><span class="gl-def">Avoidance is the largely subconscious impulse to move away from a negative emotion or the situation that triggers it, rather than moving toward something positive.</span><a class="gl-more" href="../glossary.html#glossary-avoidance">Full definition →</a></span></span> is the enemy of jnana, and why insight tends to arrive in moments of stillness, physical vulnerability, or honest reflection rather than in moments of distraction.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-how-to-cultivate-jnana">How to Cultivate Jnana</h2>
+<p>Because jnana is grounded in experience, the path toward it is always internal and attentive.</p>
+<p>The core practice is simple: <strong>pay attention to your own experience while it's happening</strong>, especially around the behaviors you want to change.</p>
+<p>For example, if you want to eat more healthily, don't white-knuckle through cravings. Instead:
+- Actually notice what eating an unhealthy meal <em>feels like</em> during and after
+- Sit with the food coma, the sluggishness, the afternoon crash — don't distract yourself from it
+- Let the experience register fully</p>
+<p>Over time, your mind begins to accumulate genuine understanding — not rules you're trying to follow, but lived <span class="gl" tabindex="0">knowledge<span class="gl-pop" role="tooltip"><span class="gl-def">Vidya is objective, transmissible information — the kind of knowledge that can be written in a textbook, proven to another person, or exchanged between minds.</span><a class="gl-more" href="../glossary.html#glossary-vidya">Full definition →</a></span></span> of what certain choices actually do to you. The next time the impulse arises, the understanding speaks first.</p>
+<p>The same applies to anything: screen time, relationships, <span class="gl" tabindex="0">sleep<span class="gl-pop" role="tooltip"><span class="gl-def">Sleep is the period during which the brain converts short-term memories stored in the hippocampus into stable long-term memories — a process called memory consolidation.</span><a class="gl-more" href="../glossary.html#glossary-sleep">Full definition →</a></span></span>, substances. The goal isn't to punish yourself with <span class="gl" tabindex="0">awareness<span class="gl-pop" role="tooltip"><span class="gl-def">The capacity to accurately receive and process information about what is happening — in your environment, your body, or your mind — so that your brain can respond appropriately.</span><a class="gl-more" href="../glossary.html#glossary-awareness">Full definition →</a></span></span>. It's to stop fleeing from it long enough for understanding to form.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-common-pitfalls">Common Pitfalls</h2>
+<p><strong>Treating this as more <span class="gl" tabindex="0">vidya<span class="gl-pop" role="tooltip"><span class="gl-def">Vidya is objective, transmissible information — the kind of knowledge that can be written in a textbook, proven to another person, or exchanged between minds.</span><a class="gl-more" href="../glossary.html#glossary-vidya">Full definition →</a></span></span>.</strong> Reading about jnana does not give you jnana. The irony is thick: a talk explaining that understanding can't be transmitted is itself transmissible information. You can understand this framework completely intellectually and still be no closer to actual change. The framework is pointing at something you have to go do.</p>
+<p><strong>Confusing emotional pain with jnana.</strong> Feeling bad about a behavior isn't the same as understanding it. <span class="gl" tabindex="0">Shame<span class="gl-pop" role="tooltip"><span class="gl-def">The emotion triggered by a perceived gap between where you are and where you think you should be.</span><a class="gl-more" href="../glossary.html#glossary-shame">Full definition →</a></span></span> and guilt often produce more <span class="gl" tabindex="0">avoidance<span class="gl-pop" role="tooltip"><span class="gl-def">Avoidance is the largely subconscious impulse to move away from a negative emotion or the situation that triggers it, rather than moving toward something positive.</span><a class="gl-more" href="../glossary.html#glossary-avoidance">Full definition →</a></span></span>, not more insight. The goal is clear-eyed attention, not self-punishment.</p>
+<p><strong>Using willpower as a substitute.</strong> Willpower has its uses, but treating it as the primary engine of change sets you up for exhaustion and relapse. If every good day requires maximum effort, the model is broken. Genuine jnana should make things <em>easier</em>, not harder.</p>
+<p><strong>Expecting jnana to arrive on a schedule.</strong> It tends to arrive sideways — in a moment of physical experience, in a quiet pause you didn't plan for, in a conversation that suddenly lands differently. You can't manufacture the realization. You can only create the conditions: attention, honesty, and staying present with your experience rather than running from it.</p>
+<p><strong>Giving up because the change hasn't "clicked" yet.</strong> The accumulation of experience is the practice. You don't need a lightning-bolt moment on day one. You need to keep paying attention and stop working so hard to avoid what you're noticing.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-action-items-exercises">Action Items &amp; Exercises</h2>
+<ol>
+<li>
+<p><strong>Track your experience in real time, not just your behavior.</strong> When you engage in a <span class="gl" tabindex="0">habit<span class="gl-pop" role="tooltip"><span class="gl-def">Automatic behavior that operates without motivation, willpower, or conscious thought — you simply do it.</span><a class="gl-more" href="../glossary.html#glossary-habit">Full definition →</a></span></span> you want to change, don't just note that you did it. Note what it feels like <em>during</em> and what it feels like <em>afterward</em>. Write it down if that helps. The goal is to build a richer internal record of what the behavior actually costs you — not to <span class="gl" tabindex="0">shame<span class="gl-pop" role="tooltip"><span class="gl-def">The emotion triggered by a perceived gap between where you are and where you think you should be.</span><a class="gl-more" href="../glossary.html#glossary-shame">Full definition →</a></span></span> yourself, but to know.</p>
+</li>
+<li>
+<p><strong>Practice sitting with discomfort instead of fleeing it.</strong> The next time you reach for a distraction (phone, junk food, gaming, etc.) at a moment when you know you're avoiding something, pause for two to five minutes first. Don't necessarily stop — just sit with whatever the feeling is before you act on it. You're practicing the <span class="gl" tabindex="0">tolerance<span class="gl-pop" role="tooltip"><span class="gl-def">The use of a chemical (alcohol, opioids, cannabis, caffeine, etc.) that produces neurological effects your brain then adapts to — leading to tolerance, withdrawal, and, potentially, addiction.</span><a class="gl-more" href="../glossary.html#glossary-substance-use">Full definition →</a></span></span> that makes jnana possible.</p>
+</li>
+<li>
+<p><strong>Listen to your own language.</strong> When you describe your struggles or your successes to someone else, notice the words you reach for. If you find yourself defaulting to "<span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span>," "laziness," or "willpower," ask what's actually underneath those umbrella terms. What do you actually <em>understand</em> or <em>not understand</em> about the situation?</p>
+</li>
+<li>
+<p><strong>Ask "what do I understand about this?" instead of "how do I force myself to do this?"</strong> For any <span class="gl" tabindex="0">habit<span class="gl-pop" role="tooltip"><span class="gl-def">Automatic behavior that operates without motivation, willpower, or conscious thought — you simply do it.</span><a class="gl-more" href="../glossary.html#glossary-habit">Full definition →</a></span></span> or change you're working on, shift the question. Not: <em>how do I get more motivated?</em> But: <em>what would I need to genuinely understand — from experience — for this to naturally feel like the right thing to do?</em></p>
+</li>
+<li>
+<p><strong>Create conditions for experience, not just information.</strong> If you want to eat better, cook a real meal and pay attention to how you feel. If you want to exercise more, go for one walk and actually notice what it does to your mood. Stop reading articles about the benefits and start accumulating personal data points. Let the experience teach you what no article can.</p>
+</li>
+</ol>
+</section></article>
+    </div>
+  </div>
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      
+      <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
 <p>- Now I&#x27;d like to dive into a really important yogic concept which is sort of that <span class="gl" tabindex="0">knowledge<span class="gl-pop" role="tooltip"><span class="gl-def">Vidya is objective, transmissible information — the kind of knowledge that can be written in a textbook, proven to another person, or exchanged between minds.</span><a class="gl-more" href="../glossary.html#glossary-vidya">Full definition →</a></span></span> actually has two different types. And if we really look at some people who are very successful, it seems like these people have some kind of secret to success or the way that their sort of mind works is just a little bit different. And I think understanding what makes successful people successful can actually be understood through <span class="gl" tabindex="0">vidya<span class="gl-pop" role="tooltip"><span class="gl-def">Vidya is objective, transmissible information — the kind of knowledge that can be written in a textbook, proven to another person, or exchanged between minds.</span><a class="gl-more" href="../glossary.html#glossary-vidya">Full definition →</a></span></span> and jnana. So Sanskrit has two words for <span class="gl" tabindex="0">knowledge<span class="gl-pop" role="tooltip"><span class="gl-def">Vidya is objective, transmissible information — the kind of knowledge that can be written in a textbook, proven to another person, or exchanged between minds.</span><a class="gl-more" href="../glossary.html#glossary-vidya">Full definition →</a></span></span>. The first is <span class="gl" tabindex="0">vidya<span class="gl-pop" role="tooltip"><span class="gl-def">Vidya is objective, transmissible information — the kind of knowledge that can be written in a textbook, proven to another person, or exchanged between minds.</span><a class="gl-more" href="../glossary.html#glossary-vidya">Full definition →</a></span></span> and <span class="gl" tabindex="0">vidya<span class="gl-pop" role="tooltip"><span class="gl-def">Vidya is objective, transmissible information — the kind of knowledge that can be written in a textbook, proven to another person, or exchanged between minds.</span><a class="gl-more" href="../glossary.html#glossary-vidya">Full definition →</a></span></span> is more literally translated as information. So some of the qualities of <span class="gl" tabindex="0">vidya<span class="gl-pop" role="tooltip"><span class="gl-def">Vidya is objective, transmissible information — the kind of knowledge that can be written in a textbook, proven to another person, or exchanged between minds.</span><a class="gl-more" href="../glossary.html#glossary-vidya">Full definition →</a></span></span> include that it is information, it is objective and it is transmissible.</p>
 <p>So any book has <span class="gl" tabindex="0">vidya<span class="gl-pop" role="tooltip"><span class="gl-def">Vidya is objective, transmissible information — the kind of knowledge that can be written in a textbook, proven to another person, or exchanged between minds.</span><a class="gl-more" href="../glossary.html#glossary-vidya">Full definition →</a></span></span>, right? So anyone can read what&#x27;s in the book. I can write something in a book and then I can pass it on to someone else who can then read that. So if we also think about things like facts, facts are universally verifiable by lots of different people therefore they&#x27;re objective. The yogis realized that in addition to transmissible information that is objective, there&#x27;s also jnana which is sort of subjective <span class="gl" tabindex="0">knowledge<span class="gl-pop" role="tooltip"><span class="gl-def">Vidya is objective, transmissible information — the kind of knowledge that can be written in a textbook, proven to another person, or exchanged between minds.</span><a class="gl-more" href="../glossary.html#glossary-vidya">Full definition →</a></span></span> or understanding. And if we really think about it, understanding is such an important part of our life. So like I understand how to make good food, I understand how to do math but understanding isn&#x27;t really transmissible.</p>
 <p>It&#x27;s actually very subjective, right? Because my understanding of making good food could be different from your understanding of making good food. So if you look at people who are very successful in life and really turned things around and you talk to them about how did you do that? How did you actually get sober? I see this a lot as an <span class="gl" tabindex="0">addiction<span class="gl-pop" role="tooltip"><span class="gl-def">The use of a chemical (alcohol, opioids, cannabis, caffeine, etc.) that produces neurological effects your brain then adapts to — leading to tolerance, withdrawal, and, potentially, addiction.</span><a class="gl-more" href="../glossary.html#glossary-substance-use">Full definition →</a></span></span> psychiatrist. And when I talk to my patients, what I find is that oftentimes they&#x27;ll say something like one day I woke up and I realized that enough is enough and I could never have another drink again. And even if we talk to people who have been in like toxic relationships and then they sort of also will wake up and realize that they were in denial this whole time and that their relationship is actually not good for them.</p>
@@ -55,15 +180,21 @@ try {
 <p>I strive not to understand by actually turning into the <span class="gl" tabindex="0">addiction<span class="gl-pop" role="tooltip"><span class="gl-def">The use of a chemical (alcohol, opioids, cannabis, caffeine, etc.) that produces neurological effects your brain then adapts to — leading to tolerance, withdrawal, and, potentially, addiction.</span><a class="gl-more" href="../glossary.html#glossary-substance-use">Full definition →</a></span></span> more. So jnana starts with experience. It starts with what you understand and that involves sort of paying attention to yourself. So I encourage all of you to start walking this path of <span class="gl" tabindex="0">vidya<span class="gl-pop" role="tooltip"><span class="gl-def">Vidya is objective, transmissible information — the kind of knowledge that can be written in a textbook, proven to another person, or exchanged between minds.</span><a class="gl-more" href="../glossary.html#glossary-vidya">Full definition →</a></span></span> versus jnana. Start emphasizing a little bit more on understanding and recognize that in order to make a change in your life, if you want to make it easily, if you wanna make it consistently, if you wanna behave in a way that other people see as discipline, it begins with understanding. And very practically, this is where there are particular <span class="gl" tabindex="0">meditation<span class="gl-pop" role="tooltip"><span class="gl-def">Meditation is the practice of focusing consciousness completely — until thinking itself falls away and you exist in a state of pure awareness with no mental activity.</span><a class="gl-more" href="../glossary.html#glossary-meditation">Full definition →</a></span></span> techniques like Ajna Chakra Sadhana which are sort of third eye techniques will help you cultivate a capacity of understanding.</p>
 <p>If you wanna actually digest information and read and assimilate more then that&#x27;s gonna be more of the Manipura Chakra path and we&#x27;ll teach you both of those. There are particular techniques but at the end of the day, it ultimately starts with <span class="gl" tabindex="0">awareness<span class="gl-pop" role="tooltip"><span class="gl-def">The capacity to accurately receive and process information about what is happening — in your environment, your body, or your mind — so that your brain can respond appropriately.</span><a class="gl-more" href="../glossary.html#glossary-awareness">Full definition →</a></span></span> and understanding.</p>
 </section></article>
+    </div>
   </div>
+  
 
-  <p class="meta">Transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">Meditation<span class="gl-pop" role="tooltip"><span class="gl-def">Meditation is the practice of focusing consciousness completely — until thinking itself falls away and you exist in a state of pure awareness with no mental activity.</span><a class="gl-more" href="../glossary.html#glossary-meditation">Full definition →</a></span></span> → Jnana Padha (Path of <span class="gl" tabindex="0">Knowledge<span class="gl-pop" role="tooltip"><span class="gl-def">Vidya is objective, transmissible information — the kind of knowledge that can be written in a textbook, proven to another person, or exchanged between minds.</span><a class="gl-more" href="../glossary.html#glossary-vidya">Full definition →</a></span></span>)). Captions auto-generated.</p>
+  <p class="meta">Medium summary + transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">Meditation<span class="gl-pop" role="tooltip"><span class="gl-def">Meditation is the practice of focusing consciousness completely — until thinking itself falls away and you exist in a state of pure awareness with no mental activity.</span><a class="gl-more" href="../glossary.html#glossary-meditation">Full definition →</a></span></span> → Jnana Padha (Path of <span class="gl" tabindex="0">Knowledge<span class="gl-pop" role="tooltip"><span class="gl-def">Vidya is objective, transmissible information — the kind of knowledge that can be written in a textbook, proven to another person, or exchanged between minds.</span><a class="gl-more" href="../glossary.html#glossary-vidya">Full definition →</a></span></span>)). Captions auto-generated; summary by claude-sonnet-4-6.</p>
 </div>
 
 <script>
 (function () {
   var root = document.documentElement;
-  var tb = document.querySelector('.theme-toggle');
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'medium');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
   var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
   tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
@@ -71,6 +202,9 @@ try {
   function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
   var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+  function navigateTo(id){ var el=id&&document.getElementById(id); if(!el)return; var v=el.closest('.view'); if(v)setView(v.getAttribute('data-view')); el.scrollIntoView(); }
+  window.addEventListener('hashchange', function(){ navigateTo(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash) navigateTo(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>
 <script>

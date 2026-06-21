@@ -9,7 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-} catch (e) {}
+  document.documentElement.setAttribute('data-view', 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -31,9 +32,135 @@ try {
     <span class="speakers-note">22:02 min</span>
   </p>
 
-  <div class="doc">
+  
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">1,601w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">3,840w</span></button>
     
-    <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
+  </div>
+  
+
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#summary-summary">Summary</a></li>
+<li><a href="#summary-medications-fast-relief-with-trade-offs">Medications: Fast Relief With Trade-offs</a></li>
+<li><a href="#summary-psychotherapy-three-different-kinds-of-work">Psychotherapy: Three Different Kinds of Work</a></li>
+<li><a href="#summary-complementary-practices-what-the-evidence-actually-supports">Complementary Practices: What the Evidence Actually Supports</a></li>
+<li><a href="#summary-common-pitfalls">Common Pitfalls</a></li>
+<li><a href="#summary-action-items-exercises">Action Items &amp; Exercises</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="summary-summary">Summary</h2>
+<p><strong>TL;DR — No single treatment cures <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span>; the best outcomes come from layering medications, psychotherapy, and lifestyle practices in a sequence that fits your circumstances.</strong></p>
+<p><span class="gl" tabindex="0">Anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> treatment is genuinely complex and highly individual. There is no one-size-fits-all answer, but there is a clear map of the available tools — what each one does well, what it doesn't do, and how to combine them. This piece walks through that map: medications (both SRIs and benzodiazepines), three branches of psychotherapy, and the complementary practices that have real evidence behind them versus the ones that don't.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-medications-fast-relief-with-trade-offs">Medications: Fast Relief With Trade-offs</h2>
+<p>Medications are the most common first step, partly because the cost-benefit analysis usually favors them — they work relatively quickly, require minimal effort, and are generally well tolerated. But they have real limitations worth understanding before you start.</p>
+<h3 id="summary-sris-ssris-and-snris">SRIs (SSRIs and SNRIs)</h3>
+<p><strong>SRIs</strong> — <span class="gl" tabindex="0">serotonin<span class="gl-pop" role="tooltip"><span class="gl-def">A neurotransmitter associated with contentment and peace — distinct from dopamine&#x27;s excitement and pleasure — whose levels are clinically linked to depression and anxiety.</span><a class="gl-more" href="../glossary.html#glossary-serotonin">Full definition →</a></span></span> reuptake inhibitors — work by activating gene transcription inside nerve cells, essentially providing a blueprint for building anti-<span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> machinery. Because of this, they are slow. Expect four to eight weeks before you feel the full effect.</p>
+<p>The population average is roughly a <strong>60% reduction in <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> symptoms</strong> after that window, but individual results vary significantly.</p>
+<p>The most important thing to know about SRIs before you start:</p>
+<blockquote>
+<p>"The side effects tend to happen early but the benefit takes weeks to kick in."</p>
+</blockquote>
+<p>Most people experience headache, GI upset, or feeling slightly wired or tired in the first few days. These side effects usually resolve within a couple of weeks — but the benefit hasn't arrived yet, which is exactly when most people want to quit. If you can commit to roughly two months, the picture usually improves dramatically.</p>
+<p>After stopping an SRI, the effect lingers for roughly six months because the cellular machinery it helped build takes time to break down. This means medication doesn't have to be permanent for everyone — how long you need it depends far more on what else you're doing (therapy, <span class="gl" tabindex="0">meditation<span class="gl-pop" role="tooltip"><span class="gl-def">Meditation is the practice of focusing consciousness completely — until thinking itself falls away and you exist in a state of pure awareness with no mental activity.</span><a class="gl-more" href="../glossary.html#glossary-meditation">Full definition →</a></span></span>, diet) than on the drug itself.</p>
+<h3 id="summary-benzodiazepines">Benzodiazepines</h3>
+<p><strong>Benzodiazepines</strong> work on GABA, an inhibitory neurotransmitter — the same one alcohol acts on. They work fast (sometimes in seconds) and wear off relatively quickly (hours to a full day). They are designed for acute, infrequent use: panic attacks, or situations where impairment is so severe you can't function at all.</p>
+<p>Key rules:</p>
+<ul>
+<li>The faster and harder a benzo hits, the shorter its duration and the higher its <span class="gl" tabindex="0">addiction<span class="gl-pop" role="tooltip"><span class="gl-def">The use of a chemical (alcohol, opioids, cannabis, caffeine, etc.) that produces neurological effects your brain then adapts to — leading to tolerance, withdrawal, and, potentially, addiction.</span><a class="gl-more" href="../glossary.html#glossary-substance-use">Full definition →</a></span></span> potential. Xanax is the classic example.</li>
+<li>Newer benzodiazepines have a smoother, slower onset, making them less likely to be abused.</li>
+<li><strong>Dependence is a real risk.</strong> Benzodiazepine <span class="gl" tabindex="0">withdrawal<span class="gl-pop" role="tooltip"><span class="gl-def">The use of a chemical (alcohol, opioids, cannabis, caffeine, etc.) that produces neurological effects your brain then adapts to — leading to tolerance, withdrawal, and, potentially, addiction.</span><a class="gl-more" href="../glossary.html#glossary-substance-use">Full definition →</a></span></span> can be a medical emergency — potentially lethal. Never stop them abruptly. Taper slowly, always under medical supervision.</li>
+</ul>
+<h3 id="summary-how-to-think-about-medications-in-a-treatment-plan">How to Think About Medications in a Treatment Plan</h3>
+<p>SRIs lower your <strong>baseline</strong> <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> — they don't eliminate worry, they bring it down to a normal, non-impairing level. Benzos address <strong>acute</strong> spikes, like panic attacks. Together they can buy you enough stability to do the slower, more durable work of therapy and lifestyle change.</p>
+<p>A reasonable arc looks like this: start medication when symptoms are too severe to engage with anything else → use that window to build in therapy, <span class="gl" tabindex="0">meditation<span class="gl-pop" role="tooltip"><span class="gl-def">Meditation is the practice of focusing consciousness completely — until thinking itself falls away and you exist in a state of pure awareness with no mental activity.</span><a class="gl-more" href="../glossary.html#glossary-meditation">Full definition →</a></span></span>, and diet changes → taper off medication over three to six months → ideally be off it within about a year. Some people will need medication longer, or permanently, and that's fine — individual brains and circumstances differ.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-psychotherapy-three-different-kinds-of-work">Psychotherapy: Three Different Kinds of Work</h2>
+<p>There are many forms of psychotherapy. Three broad branches cover most of what's available.</p>
+<h3 id="summary-psychodynamic-therapy">Psychodynamic Therapy</h3>
+<p>This is what most people picture as traditional therapy — a therapist who listens carefully, asks a lot about your past and childhood, and doesn't direct you toward a specific destination. It is exploratory and deep. It takes longer to show results but may produce more permanent change. It is harder to study because no two therapists do it identically.</p>
+<h3 id="summary-cognitive-behavioral-therapy-cbt">Cognitive Behavioral Therapy (CBT)</h3>
+<p>Developed by Aaron Beck and extended by Judith Beck, <strong><span class="gl" tabindex="0">CBT<span class="gl-pop" role="tooltip"><span class="gl-def">A structured, results-focused form of psychotherapy that works by breaking a problem — say, procrastination or social anxiety — down into its three components: thoughts, emotions, and behaviors, then targeting each one…</span><a class="gl-more" href="../glossary.html#glossary-cognitive-behavioral-therapy-cbt">Full definition →</a></span></span></strong> maps the relationship between thoughts, emotions, and behaviors. Each one influences the others: emotions shape what thoughts arise, thoughts drive behaviors, and behaviors feed back into emotional states. <span class="gl" tabindex="0">CBT<span class="gl-pop" role="tooltip"><span class="gl-def">A structured, results-focused form of psychotherapy that works by breaking a problem — say, procrastination or social anxiety — down into its three components: thoughts, emotions, and behaviors, then targeting each one…</span><a class="gl-more" href="../glossary.html#glossary-cognitive-behavioral-therapy-cbt">Full definition →</a></span></span> uses a structured, week-by-week protocol — homework included — which makes it easier to study and often produces faster results. Some research suggests the benefits may not last quite as long as those from psychodynamic work, though this isn't settled.</p>
+<p><span class="gl" tabindex="0">CBT<span class="gl-pop" role="tooltip"><span class="gl-def">A structured, results-focused form of psychotherapy that works by breaking a problem — say, procrastination or social anxiety — down into its three components: thoughts, emotions, and behaviors, then targeting each one…</span><a class="gl-more" href="../glossary.html#glossary-cognitive-behavioral-therapy-cbt">Full definition →</a></span></span> tends to suit people who want clear structure and a defined plan.</p>
+<h3 id="summary-third-wave-therapies-dbt-and-others">Third-Wave Therapies (DBT and others)</h3>
+<p>The third wave takes Western psychotherapy and injects Eastern or <span class="gl" tabindex="0">mindfulness<span class="gl-pop" role="tooltip"><span class="gl-def">The capacity to separate self from mind and observe that gap — what Sanskrit calls sakshi bhav, or &quot;witnessing attitude&quot;.</span><a class="gl-more" href="../glossary.html#glossary-mindfulness">Full definition →</a></span></span>-based principles. <strong>Dialectical Behavioral Therapy (DBT)</strong> is a well-known example. These approaches have shown real promise for conditions that traditional therapy historically struggled with. The addition of contemplative or meditative elements appears to be doing meaningful work — not just as a pleasant add-on, but as something that changes outcomes.</p>
+<h3 id="summary-which-therapy-should-you-choose">Which Therapy Should You Choose?</h3>
+<p>Ideally, all of them over time. Finding a good therapist is a process, not a single decision. You might work with one modality, hit a plateau, and discover that switching to a different approach unlocks something new. The fit between person and method matters as much as the method itself.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-complementary-practices-what-the-evidence-actually-supports">Complementary Practices: What the Evidence Actually Supports</h2>
+<p>A lot of people use non-clinical approaches — herbs, yoga, <span class="gl" tabindex="0">meditation<span class="gl-pop" role="tooltip"><span class="gl-def">Meditation is the practice of focusing consciousness completely — until thinking itself falls away and you exist in a state of pure awareness with no mental activity.</span><a class="gl-more" href="../glossary.html#glossary-meditation">Full definition →</a></span></span> — either alongside or instead of conventional treatment. Here is a clear-eyed look at what has evidence behind it and what doesn't.</p>
+<p><strong>What works:</strong></p>
+<ul>
+<li><strong><span class="gl" tabindex="0">Meditation<span class="gl-pop" role="tooltip"><span class="gl-def">Meditation is the practice of focusing consciousness completely — until thinking itself falls away and you exist in a state of pure awareness with no mental activity.</span><a class="gl-more" href="../glossary.html#glossary-meditation">Full definition →</a></span></span></strong> — There is essentially no serious scientific debate here. <span class="gl" tabindex="0">Meditation<span class="gl-pop" role="tooltip"><span class="gl-def">Meditation is the practice of focusing consciousness completely — until thinking itself falls away and you exist in a state of pure awareness with no mental activity.</span><a class="gl-more" href="../glossary.html#glossary-meditation">Full definition →</a></span></span> is an effective treatment for <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span>. It takes about eight weeks to begin measurably rewiring the brain, so consistency over that window matters.</li>
+<li><strong>Yoga and Tai Chi</strong> — These mind-body practices have been shown to outperform general exercise for <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> specifically.</li>
+<li><strong>Specific herbs</strong> — Certain herbs are now well-studied and show real benefit. (General nutritional supplements marketed as "anti-<span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span>," however, are mostly not supported by the evidence.)</li>
+<li><strong>Exercise and diet</strong> — Both help, including the effect of food on gut bacteria linked to <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span>.</li>
+<li><strong>Ayurveda and Traditional Chinese Medicine</strong> — These systems have millennia of practice, ongoing active use, and a growing body of research. Many pharmaceutical drugs, including widely used cholesterol medications, were originally derived from TCM herbs.</li>
+</ul>
+<p><strong>What has inconsistent or weak evidence:</strong></p>
+<ul>
+<li>Energy healing, essential oils, crystal and magnet therapies, and expensive IV infusions or advanced supplement protocols marketed by some practitioners. This doesn't mean no individual ever benefits — it means there's no reliable evidence of consistent benefit for most people, and no quality control over who is actually providing these services.</li>
+</ul>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-common-pitfalls">Common Pitfalls</h2>
+<ul>
+<li><strong>Quitting SRIs too early.</strong> The worst period — side effects present, benefits absent — falls in the first two to four weeks. Most people who quit do so here, right before the medication would have started helping.</li>
+<li><strong>Using benzos as a daily crutch.</strong> They are designed for acute, infrequent use. Relying on them regularly accelerates dependence and doesn't address anything underlying.</li>
+<li><strong>Treating medication as either the whole solution or as something to avoid entirely.</strong> Medication is a stabilizer that buys time for the slower, more durable interventions. It works best as part of a plan, not as the plan.</li>
+<li><strong>Expecting therapy to work immediately.</strong> Even <span class="gl" tabindex="0">CBT<span class="gl-pop" role="tooltip"><span class="gl-def">A structured, results-focused form of psychotherapy that works by breaking a problem — say, procrastination or social anxiety — down into its three components: thoughts, emotions, and behaviors, then targeting each one…</span><a class="gl-more" href="../glossary.html#glossary-cognitive-behavioral-therapy-cbt">Full definition →</a></span></span> — the fastest of the three — takes several weeks. Psychodynamic therapy unfolds over months. Patience is structural to the process.</li>
+<li><strong>Spending heavily on unproven supplements or protocols.</strong> High price tags do not signal efficacy. The best-supported CAM approaches (<span class="gl" tabindex="0">meditation<span class="gl-pop" role="tooltip"><span class="gl-def">Meditation is the practice of focusing consciousness completely — until thinking itself falls away and you exist in a state of pure awareness with no mental activity.</span><a class="gl-more" href="../glossary.html#glossary-meditation">Full definition →</a></span></span>, yoga, diet, certain herbs) are also among the most accessible.</li>
+<li><strong>Treating treatment as a one-time choice.</strong> <span class="gl" tabindex="0">Anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> treatment is a living plan that evolves. What you need at month one is likely different from what you need at month twelve.</li>
+</ul>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-action-items-exercises">Action Items &amp; Exercises</h2>
+<ol>
+<li>
+<p><strong>If your <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> is currently too severe to engage with anything else, talk to a doctor about an SRI.</strong> Frame it explicitly as a bridge — something to stabilize you while you build in the slower-acting tools. Commit to eight weeks before evaluating whether it's working.</p>
+</li>
+<li>
+<p><strong>If you are prescribed an SRI, write down what the first two to four weeks will feel like</strong> (possible GI upset, headache, no benefit yet) so you don't quit during the hardest window. Set a calendar reminder at the eight-week mark to reassess.</p>
+</li>
+<li>
+<p><strong>If you take or are considering benzodiazepines, clarify with your prescriber exactly what "as needed" means</strong> and never stop them without a supervised taper plan already in place.</p>
+</li>
+<li>
+<p><strong>Start a <span class="gl" tabindex="0">meditation<span class="gl-pop" role="tooltip"><span class="gl-def">Meditation is the practice of focusing consciousness completely — until thinking itself falls away and you exist in a state of pure awareness with no mental activity.</span><a class="gl-more" href="../glossary.html#glossary-meditation">Full definition →</a></span></span> practice with an eight-week commitment.</strong> Even ten to fifteen minutes a day is enough to begin producing measurable changes. Treat the first eight weeks as the minimum unit of time before judging results.</p>
+</li>
+<li>
+<p><strong>Try at least one yoga or Tai Chi class per week</strong> as a substitute for or supplement to regular exercise, particularly if exercise alone hasn't moved the needle on your <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span>.</p>
+</li>
+<li>
+<p><strong>Consult a therapist from each major branch over time</strong> — not necessarily simultaneously, but with the understanding that you are looking for the best fit, which may take more than one try. A structured option like <span class="gl" tabindex="0">CBT<span class="gl-pop" role="tooltip"><span class="gl-def">A structured, results-focused form of psychotherapy that works by breaking a problem — say, procrastination or social anxiety — down into its three components: thoughts, emotions, and behaviors, then targeting each one…</span><a class="gl-more" href="../glossary.html#glossary-cognitive-behavioral-therapy-cbt">Full definition →</a></span></span> is a reasonable place to start if you want clear direction quickly.</p>
+</li>
+<li>
+<p><strong>Before spending money on supplements or specialty wellness protocols, ask one question:</strong> Is there consistent clinical evidence that this works for most people? If the answer is unclear, save the money and invest it in <span class="gl" tabindex="0">meditation<span class="gl-pop" role="tooltip"><span class="gl-def">Meditation is the practice of focusing consciousness completely — until thinking itself falls away and you exist in a state of pure awareness with no mental activity.</span><a class="gl-more" href="../glossary.html#glossary-meditation">Full definition →</a></span></span>, yoga, or sessions with a well-credentialed therapist.</p>
+</li>
+</ol>
+</section></article>
+    </div>
+  </div>
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      
+      <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
 <p>- Much like diagnosis of <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span>, treatment for <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> is complex and highly individualistic. What I&#x27;d like to do today is go over some of the major treatment options for <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span>, along with explaining a little bit about what each one is good for as well as address some of the concerns that people have around particular treatment options. So we&#x27;re gonna cover three major buckets today, medications, psychotherapy, and complimentary and alternative medicine. So let&#x27;s start with medications. <span class="gl" tabindex="0">Anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> treatment is pretty funny when it comes to medications because people tend to fall into two camps.</p>
 <p>Either they really, really want to avoid medication, or they really, really want a medication to make their life like easier or better. And the advantage of medication is that it tends to work pretty fast and it&#x27;s pretty easy to take. Compared to some of these other things like yoga or <span class="gl" tabindex="0">meditation<span class="gl-pop" role="tooltip"><span class="gl-def">Meditation is the practice of focusing consciousness completely — until thinking itself falls away and you exist in a state of pure awareness with no mental activity.</span><a class="gl-more" href="../glossary.html#glossary-meditation">Full definition →</a></span></span>, it doesn&#x27;t really require a whole lot of discipline or time investment or effort. It&#x27;s just kind of like popping a pill every day and it sort of helps with your <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span>. The primary disadvantages of medications tend to be first and foremost side effects. Thankfully, when it comes to medications for <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> the side effects tend to be pretty well tolerated but they do happen if you&#x27;re unlucky and costs depending on where you are.</p>
 <p>So some medications for <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> can be quite expensive. Another disadvantage for medications is that they don&#x27;t really address the root of the cause of your <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span>. And this is where like, you know, I&#x27;ve had a lot of success with medications but it&#x27;s been a little bit unclear to me you know, if you take medication and you don&#x27;t do some of the other stuff like psychotherapy or <span class="gl" tabindex="0">meditation<span class="gl-pop" role="tooltip"><span class="gl-def">Meditation is the practice of focusing consciousness completely — until thinking itself falls away and you exist in a state of pure awareness with no mental activity.</span><a class="gl-more" href="../glossary.html#glossary-meditation">Full definition →</a></span></span>, it&#x27;s unclear to me how long you&#x27;re gonna need to be on medication. At the end of the day, though, the relative safety of medications along with their effectiveness is part of the reason why most psychiatrists will prescribe medications because essentially the cost benefit analysis is sort of in the favor of sort of taking medications.</p>
@@ -68,15 +195,21 @@ try {
 <p>And what I really like to do is maybe start people on medications and then have them start to do some of these other more long-term treatments, like engage in psychotherapy, do <span class="gl" tabindex="0">meditation<span class="gl-pop" role="tooltip"><span class="gl-def">Meditation is the practice of focusing consciousness completely — until thinking itself falls away and you exist in a state of pure awareness with no mental activity.</span><a class="gl-more" href="../glossary.html#glossary-meditation">Full definition →</a></span></span>, do some yoga. And so, what I really like to do is come up with a comprehensive plan that starts with one or two of these. And then you sort of start to do some of these more slow, long-term or more permanent treatments and then you can kind of scale back on the <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> medication. The end of the day, though, the main point here is that, you know, you&#x27;ve got to think about your own situation and what&#x27;s gonna work for you.</p>
 <p>And here&#x27;s my take on basically what the most useful options are. So hopefully that&#x27;s helpful and hopefully you can come up with a plan that works for you.</p>
 </section></article>
+    </div>
   </div>
+  
 
-  <p class="meta">Transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">Anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> → Clinical Track). Captions auto-generated.</p>
+  <p class="meta">Medium summary + transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">Anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> → Clinical Track). Captions auto-generated; summary by claude-sonnet-4-6.</p>
 </div>
 
 <script>
 (function () {
   var root = document.documentElement;
-  var tb = document.querySelector('.theme-toggle');
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'medium');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
   var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
   tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
@@ -84,6 +217,9 @@ try {
   function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
   var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+  function navigateTo(id){ var el=id&&document.getElementById(id); if(!el)return; var v=el.closest('.view'); if(v)setView(v.getAttribute('data-view')); el.scrollIntoView(); }
+  window.addEventListener('hashchange', function(){ navigateTo(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash) navigateTo(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>
 <script>

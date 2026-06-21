@@ -9,7 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-} catch (e) {}
+  document.documentElement.setAttribute('data-view', 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -31,9 +32,111 @@ try {
     <span class="speakers-note">15:01 min</span>
   </p>
 
-  <div class="doc">
+  
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">1,438w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">2,684w</span></button>
     
-    <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
+  </div>
+  
+
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#summary-summary">Summary</a></li>
+<li><a href="#summary-two-ways-your-brain-directs-attention">Two Ways Your Brain Directs Attention</a></li>
+<li><a href="#summary-why-adhd-and-modern-technology-intersect-so-badly">Why ADHD and Modern Technology Intersect So Badly</a></li>
+<li><a href="#summary-why-a-clean-room-actually-makes-you-smarter">Why a Clean Room Actually Makes You Smarter</a></li>
+<li><a href="#summary-training-both-systems">Training Both Systems</a></li>
+<li><a href="#summary-common-pitfalls">Common Pitfalls</a></li>
+<li><a href="#summary-action-items-exercises">Action Items &amp; Exercises</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="summary-summary">Summary</h2>
+<p><strong>TL;DR — Your brain has two attention systems: one you control, one that controls you. Understanding the difference is the first step to reclaiming your focus.</strong></p>
+<p>Your brain is constantly deciding what to pay attention to. That decision doesn't always belong to you. Two competing systems — <strong>top-down</strong> and <strong>bottom-up</strong> processing — are fighting over your attention at every moment. Modern technology has figured out how to exploit this, which is why it's getting harder for almost everyone to focus, not just people with <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span>. The good news is that this battle is not fixed — you can actually shift the balance.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-two-ways-your-brain-directs-attention">Two Ways Your Brain Directs Attention</h2>
+<p><strong>Top-down processing</strong> is the brain's command-and-control system. The cerebral cortex — the seat of abstract thought, logic, and planning — sends orders downward through the rest of the brain. When top-down control is working well, you decide to study, and your brain falls in line: it suppresses hunger signals, ignores the urge to check your phone, and keeps you on task. It's the general giving orders to the troops.</p>
+<p>Most people who struggle with <span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span> are really struggling with top-down control. They want to tell their mind to do something and have it actually listen. That's the dream, and it's achievable — but it takes some understanding first.</p>
+<p><strong>Bottom-up processing</strong> is the opposite. Instead of your goals directing your attention, incoming sensory information hijacks it. Imagine walking with a friend, deep in conversation about philosophy. A snake slithers across the path. You stop mid-sentence. You didn't decide to look at the snake — your visual system detected it and yanked your attention there automatically. That's bottom-up processing.</p>
+<blockquote>
+<p>Even though your top-down direction is to discuss philosophy, suddenly there's a visual stimulus which interrupts your attention and says, "Hey, we saw a snake."</p>
+</blockquote>
+<p>This kind of interruption is not a flaw — it's a survival feature. The brain is constantly scanning everything in your environment, quietly suppressing most of it below the level of conscious <span class="gl" tabindex="0">awareness<span class="gl-pop" role="tooltip"><span class="gl-def">The capacity to accurately receive and process information about what is happening — in your environment, your body, or your mind — so that your brain can respond appropriately.</span><a class="gl-more" href="../glossary.html#glossary-awareness">Full definition →</a></span></span>. The only way it can catch a snake is if it was watching in the first place. That background scanning is always running.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-why-adhd-and-modern-technology-intersect-so-badly">Why ADHD and Modern Technology Intersect So Badly</h2>
+<p>People with <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> are more vulnerable to bottom-up interruptions. Their brains are more likely to have their attention captured by incidental sensory stimuli — a sound, a movement, a notification. The top-down system has less grip.</p>
+<p>Now layer on what modern apps are doing. Every major platform — TikTok, YouTube, Instagram, Reddit — is competing for your attention, because your attention is how they generate revenue. As these platforms get more sophisticated, they get better at triggering bottom-up responses. They're not just hoping you open the app; they're engineering pings, thumbnails, autoplay, and notifications specifically to break through your top-down control.</p>
+<blockquote>
+<p>As technology gets more sophisticated, it gets better and better at pulling our attention away.</p>
+</blockquote>
+<p>The result is that even people without clinical <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> report that they can't focus the way they used to. They could read a book ten years ago. Now they can't get through a chapter without reaching for their phone. That's not a personal failing — it's what happens when you have a brain that was never designed to face this level of bottom-up bombardment.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-why-a-clean-room-actually-makes-you-smarter">Why a Clean Room Actually Makes You Smarter</h2>
+<p>Here's something that seems trivial but has real neuroscience behind it: it's genuinely easier to focus in a clean space than a messy one.</p>
+<p>Even when you're not consciously looking at the pile of dishes, the open tabs of browser windows, or the clutter on your desk, your brain is still <em>processing</em> all of it. That background scanning system — the one that catches snakes — never turns off. Every piece of visual clutter is received and then actively suppressed so it doesn't reach your conscious <span class="gl" tabindex="0">awareness<span class="gl-pop" role="tooltip"><span class="gl-def">The capacity to accurately receive and process information about what is happening — in your environment, your body, or your mind — so that your brain can respond appropriately.</span><a class="gl-more" href="../glossary.html#glossary-awareness">Full definition →</a></span></span>.</p>
+<p>That suppression is not free. It costs energy. Your brain is doing constant subconscious work that it can no longer devote to the thing you actually want to focus on. Researchers who had people focus in messy versus clean spaces found a statistically significant difference in performance — the clean room wins.</p>
+<p>This reframes tidying up. It's not a productivity cliché. It's directly reducing the load on your bottom-up processing system, freeing up cognitive resources for top-down work.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-training-both-systems">Training Both Systems</h2>
+<p>The top-down and bottom-up systems are not fixed. They can both be modified.</p>
+<p><strong>Bottom-up sensitivity changes with experience.</strong> New parents are a striking example. Before having children, a quiet whimper from across the house wouldn't break anyone's <span class="gl" tabindex="0">concentration<span class="gl-pop" role="tooltip"><span class="gl-def">The deliberate act of focusing your entire attention on a single object — and holding it there.</span><a class="gl-more" href="../glossary.html#glossary-dharana">Full definition →</a></span></span>. After becoming a parent, the same signal cuts through everything — instantly and involuntarily. The brain has recalibrated which stimuli matter. This isn't a decision; it's a biological adaptation. And it generalizes: parents at a playground find themselves noticing when <em>other people's</em> children do something dangerous, even when they're focused on their own kids.</p>
+<p>This shows that bottom-up sensitivity is plastic. It changes based on what your life has taught your brain to care about. Technology companies understand this, which is why their products are designed to create habits that keep recalibrating your brain toward their content.</p>
+<p><strong>Top-down control can be strengthened deliberately.</strong> <span class="gl" tabindex="0">Meditation<span class="gl-pop" role="tooltip"><span class="gl-def">Meditation is the practice of focusing consciousness completely — until thinking itself falls away and you exist in a state of pure awareness with no mental activity.</span><a class="gl-more" href="../glossary.html#glossary-meditation">Full definition →</a></span></span> is the most well-evidenced method. When you meditate, you practice doing exactly what top-down control is supposed to do: you set an intention (focus on the breath), a distraction arises (a thought, a sound, a sensation), and you return to the intention. That cycle, repeated, is literally training your brain's ability to hold attention where you want it and resist bottom-up interruptions.</p>
+<p><span class="gl" tabindex="0">Meditation<span class="gl-pop" role="tooltip"><span class="gl-def">Meditation is the practice of focusing consciousness completely — until thinking itself falls away and you exist in a state of pure awareness with no mental activity.</span><a class="gl-more" href="../glossary.html#glossary-meditation">Full definition →</a></span></span> isn't the only lever, though. Environment design — cleaning your space, removing devices from your field of view, silencing notifications — directly reduces how hard your bottom-up system has to work, which makes it easier for top-down control to hold.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-common-pitfalls">Common Pitfalls</h2>
+<p><strong>Treating it as a fixed trait.</strong> Difficulty focusing can feel like a permanent feature of who you are, especially for people with <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span>. But both processing systems are trainable and adaptive. Treating attention as unchangeable leads to helplessness when real options exist.</p>
+<p><strong>Blaming yourself for technology distraction.</strong> You are not weak-willed for getting pulled into your phone. You are fighting systems engineered by teams of engineers whose entire job is to exploit bottom-up processing. Understanding the mechanism removes the <span class="gl" tabindex="0">shame<span class="gl-pop" role="tooltip"><span class="gl-def">The emotion triggered by a perceived gap between where you are and where you think you should be.</span><a class="gl-more" href="../glossary.html#glossary-shame">Full definition →</a></span></span> and lets you respond strategically.</p>
+<p><strong>Thinking <span class="gl" tabindex="0">meditation<span class="gl-pop" role="tooltip"><span class="gl-def">Meditation is the practice of focusing consciousness completely — until thinking itself falls away and you exist in a state of pure awareness with no mental activity.</span><a class="gl-more" href="../glossary.html#glossary-meditation">Full definition →</a></span></span> is optional if you "just clean your room."</strong> These interventions work on different ends of the problem. Cleaning reduces incoming bottom-up load; <span class="gl" tabindex="0">meditation<span class="gl-pop" role="tooltip"><span class="gl-def">Meditation is the practice of focusing consciousness completely — until thinking itself falls away and you exist in a state of pure awareness with no mental activity.</span><a class="gl-more" href="../glossary.html#glossary-meditation">Full definition →</a></span></span> strengthens top-down resistance. You ideally want both. Relying only on environment design means you're still fragile whenever your environment isn't perfect.</p>
+<p><strong>Assuming <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> makes this hopeless.</strong> Greater sensitivity to bottom-up interruptions is real, but the systems themselves are still trainable. People with <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> benefit from the same strategies — they may just need to apply them more consistently or with additional support.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-action-items-exercises">Action Items &amp; Exercises</h2>
+<ol>
+<li>
+<p><strong>Clean your workspace before you start.</strong> Before a study or work session, spend five minutes removing visual clutter from your immediate environment. This isn't procrastination — it directly reduces the subconscious processing load your brain carries while you try to focus.</p>
+</li>
+<li>
+<p><strong>Put your phone out of sight, not just on silent.</strong> Out of sight means it no longer generates visual bottom-up load. On silent but visible still registers in that background scanning system. Physical distance matters.</p>
+</li>
+<li>
+<p><strong>Start a basic <span class="gl" tabindex="0">meditation<span class="gl-pop" role="tooltip"><span class="gl-def">Meditation is the practice of focusing consciousness completely — until thinking itself falls away and you exist in a state of pure awareness with no mental activity.</span><a class="gl-more" href="../glossary.html#glossary-meditation">Full definition →</a></span></span> practice focused on returning attention.</strong> The core skill is simple: choose a focus (breath, a word, a sensation), notice when your attention has wandered, and bring it back. Do this for even five to ten minutes daily. The returning is the training — that's what builds top-down strength.</p>
+</li>
+<li>
+<p><strong>Notice when you're experiencing bottom-up capture.</strong> When you find yourself on your phone or distracted, pause and name it: "That was a bottom-up interruption." This builds metacognitive <span class="gl" tabindex="0">awareness<span class="gl-pop" role="tooltip"><span class="gl-def">The capacity to accurately receive and process information about what is happening — in your environment, your body, or your mind — so that your brain can respond appropriately.</span><a class="gl-more" href="../glossary.html#glossary-awareness">Full definition →</a></span></span>, which is the first condition for being able to do something about it.</p>
+</li>
+<li>
+<p><strong>Audit one technology <span class="gl" tabindex="0">habit<span class="gl-pop" role="tooltip"><span class="gl-def">Automatic behavior that operates without motivation, willpower, or conscious thought — you simply do it.</span><a class="gl-more" href="../glossary.html#glossary-habit">Full definition →</a></span></span> this week.</strong> Pick one app or notification type and ask: is this serving my goals, or is it capturing my bottom-up attention against my intentions? Then make one concrete change — turn off that notification, delete the app from your home screen, or set a usage window.</p>
+</li>
+<li>
+<p><strong>Design for focus before you need it.</strong> Rather than relying on willpower in the moment, set up your environment in advance. Close unused browser tabs, put your phone in another room, and create a physical space that signals "work" to your brain. The cleaner the environment, the more cognitive fuel stays available for what you actually want to do.</p>
+</li>
+</ol>
+</section></article>
+    </div>
+  </div>
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      
+      <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
 <p>- Next up. What I&#x27;d love to do is dive into a little bit about how our brain fundamentally directs our attention. So one of the challenges with <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> is that we struggle with pointing our mind in the direction that we want it to go. And we&#x27;ve touched on other things throughout the course of this module about sort of from a yogic perspective or meditative perspective, how our attention is directed. But what do we know about the direction of attention from a neuroscience perspective? And this is really important, not just for the people with <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span>, but for all of us, because we are living in a society that is increasingly pulling our attention in a thousand different directions.</p>
 <p>So we&#x27;re seeing sort of a global movement towards difficulty focusing on a particular thing. And if we wanna learn how to overcome that, if we wanna learn how to overcome or compensate for the influence of technology, we have to start by understanding in our brain. How does attention actually go from point A to point B? So the first thing to understand is that there are two ways that our brain directs our attention. And that is top down direction or bottom up. And these are sort of two methods of information processing or the way that our brain sort of brings to the surface what we are kind of dealing with in a particular moment.</p>
 <p>So let&#x27;s start with top down. So this is pretty simple because generally speaking we have a part of our brain that is our cerebral cortex. So this is where our sense of higher order human brain functions happen. So things like abstract thought, logic, all of what we sort of think of is this is what humans are capable of doing that animals are not. Like waking up in the morning and thinking a little bit about, &quot;Okay I have to do laundry today so I can get ready for my job interview tomorrow.&quot; So all of those kinds of things are actually governed by the cortex. And the cortex governs top down thinking.</p>
@@ -58,15 +161,21 @@ try {
 <p>So this is why it&#x27;s kind of interesting but researchers have essentially discovered that cleaning your space is an effective way to boost your attentional control and your ability to focus. The other thing that we want to consider in terms of how to manage this, is we&#x27;ve mentioned that as technology starts warring for your attention, it sort of follows that we can sort of try to ease the burdens on your bottom up system, by cleaning. We can meditate to strengthen the top down system. But the other really simple thing that we can do, is regulate technology&#x27;s ability to interfere with us. So next up, what we&#x27;re gonna do is dive into the specifics of setting good technology habits.</p>
 <p>And how can we really understand, okay, what can I do with the technology in my life to keep it from taking advantage of this bottom up interruption.</p>
 </section></article>
+    </div>
   </div>
+  
 
-  <p class="meta">Transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> → Practical Tools for <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span>). Captions auto-generated.</p>
+  <p class="meta">Medium summary + transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> → Practical Tools for <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span>). Captions auto-generated; summary by claude-sonnet-4-6.</p>
 </div>
 
 <script>
 (function () {
   var root = document.documentElement;
-  var tb = document.querySelector('.theme-toggle');
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'medium');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
   var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
   tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
@@ -74,6 +183,9 @@ try {
   function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
   var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+  function navigateTo(id){ var el=id&&document.getElementById(id); if(!el)return; var v=el.closest('.view'); if(v)setView(v.getAttribute('data-view')); el.scrollIntoView(); }
+  window.addEventListener('hashchange', function(){ navigateTo(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash) navigateTo(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>
 <script>

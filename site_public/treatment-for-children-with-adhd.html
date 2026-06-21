@@ -9,7 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-} catch (e) {}
+  document.documentElement.setAttribute('data-view', 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -31,9 +32,137 @@ try {
     <span class="speakers-note">17:59 min</span>
   </p>
 
-  <div class="doc">
+  
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">1,487w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">3,529w</span></button>
     
-    <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
+  </div>
+  
+
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#summary-summary">Summary</a></li>
+<li><a href="#summary-why-behavioral-interventions-come-before-medication">Why Behavioral Interventions Come Before Medication</a></li>
+<li><a href="#summary-the-brain-science-behind-habit-and-routine">The Brain Science Behind Habit and Routine</a></li>
+<li><a href="#summary-practical-strategies-for-parents">Practical Strategies for Parents</a></li>
+<li><a href="#summary-the-invisible-damage-to-self-esteem">The Invisible Damage to Self-Esteem</a></li>
+<li><a href="#summary-on-discipline">On Discipline</a></li>
+<li><a href="#summary-when-medication-makes-sense">When Medication Makes Sense</a></li>
+<li><a href="#summary-common-pitfalls">Common Pitfalls</a></li>
+<li><a href="#summary-action-items-exercises">Action Items &amp; Exercises</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="summary-summary">Summary</h2>
+<p><strong>TL;DR — Medication is not the first step for children with <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span>. Behavioral interventions, <span class="gl" tabindex="0">habit<span class="gl-pop" role="tooltip"><span class="gl-def">Automatic behavior that operates without motivation, willpower, or conscious thought — you simply do it.</span><a class="gl-more" href="../glossary.html#glossary-habit">Full definition →</a></span></span>-building, and smart parenting strategies are the evidence-based first line of treatment, and they work just as well.</strong></p>
+<p><span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> treatment is one of the most emotionally charged topics in child psychiatry — some parents want nothing but medication, others want nothing to do with it. The evidence lands somewhere that surprises most people: behavioral interventions are at least as effective as medication for children, and they should come first. Medication is a powerful tool, but it belongs second in line, not first.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-why-behavioral-interventions-come-before-medication">Why Behavioral Interventions Come Before Medication</h2>
+<p>Years of research and clinical experience have shifted the standard of care. Medication for children with <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> is no longer considered first-line treatment. Studies show that <strong>behavioral interventions</strong> — structured, skill-building approaches that involve parents heavily — produce results comparable to stimulant medications, without the side-effect profile.</p>
+<p>This isn't a soft or alternative medicine position. It's where the evidence points.</p>
+<p>The catch: these interventions are genuinely hard. They take time, consistency, and significant parental involvement. The degree to which treatment works is directly tied to how involved the parent is. This is not a once-a-week therapy where the clinician "fixes" the child and sends them home. The therapeutic work happens at home, at the dinner table, at the school pickup — constantly.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-the-brain-science-behind-habit-and-routine">The Brain Science Behind Habit and Routine</h2>
+<p>The central insight behind most behavioral interventions is this: <strong>the attentional circuit and the habitual circuit in the brain are separate systems</strong>.</p>
+<p>A child with <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> has an attentional system that gets pulled off course easily. But if you can build a <span class="gl" tabindex="0">habit<span class="gl-pop" role="tooltip"><span class="gl-def">Automatic behavior that operates without motivation, willpower, or conscious thought — you simply do it.</span><a class="gl-more" href="../glossary.html#glossary-habit">Full definition →</a></span></span> deeply enough, the child can execute a task — getting ready for school, cleaning up after themselves — even while their attention is somewhere else entirely. They move on autopilot.</p>
+<p>This is why <strong>routine</strong> is one of the most powerful interventions available. When therapists work with families, one of the first things they focus on is building predictable daily routines so that <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> symptoms don't have to enter the picture at all. The child isn't fighting against distraction; they're running a groove worn smooth by repetition.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-practical-strategies-for-parents">Practical Strategies for Parents</h2>
+<p><strong>Minimize distractions.</strong> Children with <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> have a lower threshold for stimuli breaking through their focus. A quiet, low-stimulus homework environment isn't a luxury — it's functional medicine.</p>
+<p><strong>Limit choices.</strong> "Go get dressed" puts a child with <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> in front of an overwhelming decision tree. "Do you want the red sweater or the blue one?" gives them one small, manageable choice. Fewer options means less opportunity to get lost.</p>
+<p><strong>Use organizational systems.</strong> Calendars, color-coded folders, checklists, timed reminders — these external scaffolds reduce the cognitive load that the child's brain struggles to handle internally.</p>
+<p><strong>Pick two or three target behaviors, not twenty.</strong> When a child has <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span>, problems show up everywhere: the messy room, the forgotten homework, the fights at recess, the chaos at dinner. It's tempting to attack everything at once, which is exactly why nothing improves. Pick two or three specific, concrete, actionable goals. Work on them for a defined period. Let the rest go for now.</p>
+<blockquote>
+<p>"We can't build 18 routines at the same time. We can't form 15 habits at the same time."</p>
+</blockquote>
+<p>An example of what that looks like in practice: for the next two weeks, the family focuses on (1) staying seated through dinner, (2) not cutting in line during recess, and (3) putting clothes in the hamper immediately after taking them off. Everything else gets set aside. Once those habits are established, move on.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-the-invisible-damage-to-self-esteem">The Invisible Damage to Self-Esteem</h2>
+<p>One of the least-discussed consequences of untreated or poorly-managed <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> in children is what it does to how they see themselves. School is not neutral for a child with <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> — it is a daily grind against a system built for a brain type they don't have. Recess, which should be a relief, becomes its own social minefield: cutting in line, losing turns, getting into conflicts, losing friends.</p>
+<blockquote>
+<p>"Going to school every day is a torture. Going to school every day is a war."</p>
+</blockquote>
+<p>Fifty to seventy-five percent of children with <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> go on to develop <span class="gl" tabindex="0">depression<span class="gl-pop" role="tooltip"><span class="gl-def">A disruption in mood and functioning that exists on a spectrum — not a single, uniform illness.</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span> as adults. A significant part of that trajectory is rooted in years of struggling to engage with a world that keeps giving them evidence they are failing.</p>
+<p>One of the most effective — and underrated — interventions is deliberately selecting activities where the child can <strong>succeed</strong>. This isn't about lowering standards. It's about finding domains where their brain works with them rather than against them, and protecting their developing sense of what they're capable of. Every win matters.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-on-discipline">On Discipline</h2>
+<p>Because children with <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> appear defiant — they don't sit still, they lose things, they don't follow instructions — parents naturally get frustrated and increasingly punitive. This is understandable. It is also often counterproductive.</p>
+<p>Children with <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> are not being defiant. They are not losing their socks every morning to irritate you. Their brain is working against them. A <strong>non-punitive disciplinary approach</strong> that focuses on shaping behavior rather than punishing failure is more effective, and it protects the parent-child relationship.</p>
+<p>Also worth watching for: <strong>inadvertently reinforcing the wrong behavior</strong>. If a child gets up and runs around during dinner and the parent responds by handing over the iPad to settle them down, the lesson the child learns is not "sitting still is expected." The lesson is "running around gets me the iPad." The short-term fix becomes the long-term problem.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-when-medication-makes-sense">When Medication Makes Sense</h2>
+<p>Medication moves to the front of the conversation when:</p>
+<ul>
+<li>Behavioral interventions have been consistently tried and aren't working</li>
+<li>The child is facing serious consequences — suspension, expulsion, significant social harm — that can't wait for behavioral change to take hold</li>
+<li>The situation is acute enough that there isn't time to build habits</li>
+</ul>
+<p>When medication is used, <strong>non-stimulant options</strong> (like atomoxetine) are now generally preferred over stimulants as a starting point for children. The primary concern with stimulants like methylphenidate (Ritalin) or amphetamine salts (Adderall) in children is appetite suppression, which can affect weight gain and nutrition during critical growth years. Non-stimulants tend to avoid this problem.</p>
+<p>Stimulants are not never used — they remain effective — but the field has moved toward trying non-stimulant medications first in pediatric cases.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-common-pitfalls">Common Pitfalls</h2>
+<ul>
+<li><strong>Reaching for medication immediately</strong> because behavioral work feels too slow or demanding. Practically speaking, it happens a lot. It's understandable. It's also jumping past interventions that work.</li>
+<li><strong>Trying to fix everything at once.</strong> Working on fifteen behaviors simultaneously means none of them develop into stable habits. Progress requires focus.</li>
+<li><strong>Interpreting <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> behavior as defiance.</strong> A child who can't get their socks on is not staging a protest. Treating it as a discipline problem, rather than a neurological one, leads to escalating punishment that doesn't help.</li>
+<li><strong>Accidentally reinforcing the behavior you're trying to stop.</strong> Giving a child something desirable in response to disruptive behavior teaches them the disruptive behavior is a useful tool.</li>
+<li><strong>Dismissing medication entirely.</strong> For some children, behavioral interventions alone aren't enough. Refusing to consider medication when it's clearly indicated is its own form of harm.</li>
+<li><strong>Abandoning an approach too soon.</strong> <span class="gl" tabindex="0">Habit<span class="gl-pop" role="tooltip"><span class="gl-def">Automatic behavior that operates without motivation, willpower, or conscious thought — you simply do it.</span><a class="gl-more" href="../glossary.html#glossary-habit">Full definition →</a></span></span> formation and routine-building take weeks, not days. Inconsistency is one of the main reasons these strategies fail.</li>
+</ul>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-action-items-exercises">Action Items &amp; Exercises</h2>
+<ol>
+<li>
+<p><strong>Identify two or three specific target behaviors.</strong> Write them down. Make them concrete and observable ("stays seated through dinner" rather than "behaves better"). Commit to working on only those behaviors for the next two to four weeks before adding anything new.</p>
+</li>
+<li>
+<p><strong>Map the child's daily routine and look for places to install habits.</strong> Morning routine, after-school routine, bedtime routine. For each segment, define the sequence of steps. Practice it consistently until it runs on autopilot.</p>
+</li>
+<li>
+<p><strong>Audit the environment for distractions during homework or focus time.</strong> Remove screens, reduce background noise, create a designated, low-stimulation workspace. Do this before assuming the child needs more intervention.</p>
+</li>
+<li>
+<p><strong>Review your own responses to disruptive behavior.</strong> For each problem behavior, ask: what happens immediately after? Are you inadvertently providing something the child wants as a result of the behavior? If yes, redesign your response.</p>
+</li>
+<li>
+<p><strong>Find and protect one activity where the child can consistently succeed.</strong> A sport, a craft, a game — something they take to naturally. Schedule it regularly. Let it be a no-struggle zone.</p>
+</li>
+<li>
+<p><strong>Practice limiting choices rather than giving open-ended instructions.</strong> Instead of "go get ready," try "do you want to put your shoes on first or your jacket?" Smaller decision sets reduce overwhelm and actually get things done.</p>
+</li>
+<li>
+<p><strong>If behavioral interventions aren't gaining traction after genuine sustained effort, consult a licensed clinician.</strong> This isn't failure — it's the appropriate next step, and a professional can help design a tailored plan that may include evaluating medication options.</p>
+</li>
+</ol>
+</section></article>
+    </div>
+  </div>
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      
+      <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
 <p>- So let&#x27;s talk a little bit about treatment for <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span>. So the first thing is that treatment for <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> is one of the most, how can I say this, divisive, and passionate aspects of <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span>. So sometimes I&#x27;ll get someone like a college student, who comes in, who will try to trick, intimidate, or, you know, beg their way into a stimulant prescription, because all they want is Adderall, because they need to study, they need to study, they need to study. On the flip side, sometimes I&#x27;ll get parents in my office who are terrified about medicating their children, and they want do everything they can, but they don&#x27;t want their kid on drugs.</p>
 <p>They don&#x27;t wanna give &#x27;em drugs. They don&#x27;t wanna give &#x27;em medication. We want to do diet. We want to eat vegan. We wanna be organic. We wanna meditate. We want do ayurveda stuff, but like no meds, no meds, no meds. So what I&#x27;d love to do is dispel a lot of the myths around the treatment of <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span>, and really help y&#x27;all understand, the how, sort of, clinician&#x27;s approach, really, in an evidence based manner, what is the best way to treat <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span>? So, as we&#x27;ve already mentioned, the majority of research on treatment, and sort of just the research on <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span>, tends to be within kids. Even if we look at, for example, the percentages of diagnosis, 5% of kids have <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span>, whereas only 2.5% of adults have <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span>.</p>
 <p>So a lot of the trials that we have, a lot of the studies that we have, actually focus on the pediatric population. So let&#x27;s start with kids. So the first thing to understand, is that medication is no longer first line treatment for children. What we sort of discovered after years, and years, of you know, putting kids on meds, is that meds can help. And the way that they help is a little bit different from what people originally thought. But the truth is that studies show that behavioral interventions, or therapy of a kind, is actually just as good as medication. And so what therapy for a child usually means, is like really simple stuff like organization, reducing distractions, you know, helping them like develop tools to focus, and things like that.</p>
@@ -64,15 +193,21 @@ try {
 <p>And that&#x27;s really, really important from a growth perspective, right? So we wanna make sure that kids who have growing bodies, are eating appropriately, and kind of putting on weight, and getting nutrients for their growing bones, growing muscles, growing brain. So we&#x27;ve kind of stepped away from stimulants as a first line medication. And now they&#x27;re non-stimulant medications, like atomoxetine, is one example. There are other, you know, non stimulant medications that can also have side effects, but they tend to not have as much of that appetite suppression, and growth problems, not really problems, the kid is just gonna be a little bit underweight.</p>
 <p>But you know, their height and stuff tends to be pretty normal. But generally speaking, we want to use medication second, and we don&#x27;t really wanna start with a stimulant medication anymore. Don&#x27;t lose hope, just because you&#x27;ve tried something for <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span>, and it didn&#x27;t really seem to work. The goal of this particular lecture, and this module is, to help you understand that there are a lot of different options out there. And if this kind of stuff appeals to you, by all means, go see a licensed clinician, because they&#x27;re the people that are gonna be trained to help you develop a tailored plan that will work for you.</p>
 </section></article>
+    </div>
   </div>
+  
 
-  <p class="meta">Transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> → Parenting & <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span>). Captions auto-generated.</p>
+  <p class="meta">Medium summary + transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> → Parenting & <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span>). Captions auto-generated; summary by claude-sonnet-4-6.</p>
 </div>
 
 <script>
 (function () {
   var root = document.documentElement;
-  var tb = document.querySelector('.theme-toggle');
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'medium');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
   var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
   tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
@@ -80,6 +215,9 @@ try {
   function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
   var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+  function navigateTo(id){ var el=id&&document.getElementById(id); if(!el)return; var v=el.closest('.view'); if(v)setView(v.getAttribute('data-view')); el.scrollIntoView(); }
+  window.addEventListener('hashchange', function(){ navigateTo(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash) navigateTo(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>
 <script>

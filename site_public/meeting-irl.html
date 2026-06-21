@@ -9,7 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-} catch (e) {}
+  document.documentElement.setAttribute('data-view', 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -31,9 +32,167 @@ try {
     <span class="speakers-note">14:50 min</span>
   </p>
 
-  <div class="doc">
+  
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">1,611w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">2,663w</span></button>
     
-    <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
+  </div>
+  
+
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#summary-summary">Summary</a></li>
+<li><a href="#summary-the-time-problem-nobody-warns-you-about">The Time Problem Nobody Warns You About</a></li>
+<li><a href="#summary-proximity-and-frequency-are-the-soil">Proximity and Frequency Are the Soil</a></li>
+<li><a href="#summary-micro-interactions-the-actual-building-blocks">Micro-Interactions: The Actual Building Blocks</a></li>
+<li><a href="#summary-the-escalation-ladder">The Escalation Ladder</a></li>
+<li><a href="#summary-the-explicit-invitation">The Explicit Invitation</a></li>
+<li><a href="#summary-reliability-is-the-make-or-break-factor">Reliability Is the Make-or-Break Factor</a></li>
+<li><a href="#summary-when-you-need-to-move-faster">When You Need to Move Faster</a></li>
+<li><a href="#summary-common-pitfalls">Common Pitfalls</a></li>
+<li><a href="#summary-action-items-exercises">Action Items &amp; Exercises</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="summary-summary">Summary</h2>
+<p><strong>TL;DR — Relationships are built through proximity, frequency, and a slow escalation of vulnerability — not willpower, charm, or a single perfect conversation.</strong></p>
+<p>Most advice about meeting people IRL stops at "join a hobby group" or "go to the gym," without explaining <em>why</em> those things are supposed to work — or why they so often don't. Once you understand the actual mechanisms your brain uses to form connections, you can stop waiting for something to click and start building the conditions where connection becomes almost inevitable.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-the-time-problem-nobody-warns-you-about">The Time Problem Nobody Warns You About</h2>
+<p>Before anything else, reset your expectations about how long this takes.</p>
+<p>Research on friendship formation puts the numbers roughly here:</p>
+<ul>
+<li><strong>~50 hours</strong> of contact to become a casual acquaintance</li>
+<li><strong>~100–200 hours</strong> of casual contact to form a genuine friendship</li>
+</ul>
+<p>That means even if you start a new job and spend 40 hours a week around the same people, you might be just barely learning names after a full month. If you've been going to the gym for three months and haven't made a friend yet, you haven't failed — you may simply not have accumulated enough contact hours yet.</p>
+<p>This is also why trying to force a friendship through deliberate, scheduled hangouts is so hard. Every planned meeting carries pressure, requires coordination, and eats into two people's busy lives. When it keeps falling through, it starts to feel like more trouble than it's worth.</p>
+<p>The alternative is structuring your life so that contact accumulates <em>without</em> pressure.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-proximity-and-frequency-are-the-soil">Proximity and Frequency Are the Soil</h2>
+<p>Think about the friendships you've actually made in your life. Almost all of them share two properties: <strong>proximity</strong> (the person was physically nearby regularly) and <strong>frequency</strong> (you ran into them repeatedly, without planning it).</p>
+<p>School works because you sit next to the same people every day. Dorms work. Office jobs work. These environments create the raw material — repeated, low-stakes exposure — that relationships need to grow from.</p>
+<blockquote>
+<p>"We need proximity and frequency. And practically, if you think about the friends that you've made, you will almost always find these two things."</p>
+</blockquote>
+<p>This is the real reason "join a hobby group" is good advice. The point isn't the hobby. The point is that you're engineering a situation where you'll see the same people again and again, with no social pressure attached to any individual encounter.</p>
+<p>Just showing up, though, isn't enough on its own.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-micro-interactions-the-actual-building-blocks">Micro-Interactions: The Actual Building Blocks</h2>
+<p>The mechanism that turns repeated exposure into a relationship is <strong>micro-interactions</strong> — small, low-stakes signals that accumulate over time into familiarity.</p>
+<p>Think about how a hallway relationship with a neighbor unfolds:</p>
+<ol>
+<li>The nod.</li>
+<li>Next time, the nod again.</li>
+<li>Eventually, a smile.</li>
+<li>One day: "Hey, I've seen you around — I'm Alok."</li>
+</ol>
+<p>None of these steps is dramatic. None requires courage or charm. But skip them, or rush past them, and the relationship doesn't develop naturally. Each tiny exchange adds a layer. By the time you're having a real conversation, the groundwork is already laid.</p>
+<p>Two micro-interaction skills that have become underrated in an era of Discord and texting:
+- <strong>Smiling</strong> at people when you see them
+- <strong>Introducing yourself</strong> — your name, a simple observation ("I've seen you in organic chemistry")</p>
+<p>After an introduction, watch what happens. If the other person smiles back, gives their name, and engages — you have something to work with. If they look away or give a cold one-word answer, that's useful information too.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-the-escalation-ladder">The Escalation Ladder</h2>
+<p>Once you have basic familiarity, relationships deepen through a specific sequence of <strong>information exchange</strong>. Skipping steps — or misreading where you are in the sequence — is one of the most common ways people accidentally stall or damage a developing connection.</p>
+<p><strong>Level 1 — Facts</strong>
+Demographic, surface-level information: where you grew up, what you do for work, where you live. Low stakes. This is just establishing that a real human being exists on the other side.</p>
+<p><strong>Level 2 — Preferences and opinions</strong>
+Favorite food, music taste, things you enjoy. This is where a genuine sense of the other person starts to emerge. One caution: avoid highly polarizing topics (religion, politics) early on. Share opinions that open doors rather than close them.</p>
+<p><strong>Level 3 — Mild vulnerabilities</strong>
+This is where real connection gets made. Share something personal — either something positive that matters to you, or something <em>mildly</em> negative. The emphasis is on <em>mild</em>. A vulnerability is not an invitation to <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span>-dump.</p>
+<blockquote>
+<p>"You don't want to be a tennis ball machine — lobbing stuff over to their side. Today was a shit show, tomorrow I'm upset, the next day I'm anxious, the next day I'm depressed. It is too much for the other person."</p>
+</blockquote>
+<p>When you share a vulnerability, you're essentially putting the ball in the other person's court. If they lean in ("Oh no, what happened?"), the door to a deeper level just opened. If they deflect and keep moving, they're signaling they're not ready — or not interested — in going deeper.</p>
+<p><strong><span class="gl" tabindex="0">Reciprocity<span class="gl-pop" role="tooltip"><span class="gl-def">The mutual exchange of care, effort, and goodwill between friends — not as an equal trade, but as each person contributing what they genuinely can.</span><a class="gl-more" href="../glossary.html#glossary-reciprocity">Full definition →</a></span></span> is the rule throughout.</strong> The exchange should feel like a tennis rally, not a monologue. Share, listen, receive, share again.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-the-explicit-invitation">The Explicit Invitation</h2>
+<p>At some point, organic interaction needs a nudge. Someone has to move things forward deliberately. That's the <strong>explicit invitation</strong>.</p>
+<p>Once you know enough about someone — what they like, how they spend their time — you can invite them into a specific experience:</p>
+<ul>
+<li>"Do you want to grab a beer after work?"</li>
+<li>"I'm having a few people over for a barbecue — you should come."</li>
+<li>"Do you want to catch a movie sometime?"</li>
+</ul>
+<p>A <strong>one-on-one invitation</strong> carries a stronger signal than a group invite. It communicates that you're specifically interested in <em>them</em>, not just filling a seat at a party. For romantic relationships especially, this distinction matters.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-reliability-is-the-make-or-break-factor">Reliability Is the Make-or-Break Factor</h2>
+<p>One of the biggest ways people drop the ball — and often don't realize it — is <strong>unreliability</strong>.</p>
+<p>Research consistently shows that being unreliable is one of the strongest predictors of relationship failure. Being stood up, having plans cancelled last-minute, or being kept waiting sends a clear message: <em>you're not worth my follow-through</em>.</p>
+<blockquote>
+<p>"Once you say you are going to do something, you should do that thing. Follow through is one of the biggest positive signals you can send in a relationship."</p>
+</blockquote>
+<p><span class="gl" tabindex="0">Social anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> and <span class="gl" tabindex="0">depression<span class="gl-pop" role="tooltip"><span class="gl-def">A disruption in mood and functioning that exists on a spectrum — not a single, uniform illness.</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span> make canceling feel necessary in the moment. But the person on the other end experiences the same thing regardless of your internal reason. If you commit, show up. If you genuinely can't, communicate early and with care.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-when-you-need-to-move-faster">When You Need to Move Faster</h2>
+<p>The friendship timeline — 50 to 200 hours — assumes you'll have repeated access to the same person over weeks or months. That's not always available.</p>
+<p>At a party, a bar, or any setting where you may never see this person again, it's appropriate to <strong>accelerate the timeline</strong>. Compress the escalation ladder. Signal interest more directly. You don't have the luxury of waiting for organic micro-interactions to build up naturally, so you move faster — and that's okay.</p>
+<p>The core mechanics are the same; the pace just adjusts to the window you actually have.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-common-pitfalls">Common Pitfalls</h2>
+<ul>
+<li><strong>Expecting results too soon.</strong> Three gym visits won't build a friendship. Even 30 might not. The hours have to add up first.</li>
+<li><strong>Forcing planned hangouts before organic familiarity exists.</strong> When connection isn't there yet, pressure kills it.</li>
+<li><strong>Skipping the micro-interaction phase</strong> and jumping straight to asking someone to hang out. It feels presumptuous to the other person because the relational foundation isn't there.</li>
+<li><strong>Over-sharing early.</strong> Jumping to deep vulnerabilities before you've exchanged facts and opinions doesn't create intimacy — it creates discomfort.</li>
+<li><strong>Treating every early interaction as a performance.</strong> The point of proximity and frequency is that <em>most</em> of these encounters are low stakes and forgettable. That's the feature, not the flaw.</li>
+<li><strong>Being unreliable and underestimating its impact.</strong> People assume their reasons for canceling are as visible to others as they are to themselves. They're not.</li>
+<li><strong>Waiting for the other person to always escalate.</strong> Someone has to make the explicit invitation eventually — it may need to be you.</li>
+</ul>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-action-items-exercises">Action Items &amp; Exercises</h2>
+<ol>
+<li>
+<p><strong>Pick one recurring environment.</strong> Choose a place you can realistically return to at least once a week for the next three to six months — a class, a gym, a club, a regular volunteering shift. Proximity and frequency are preconditions for everything else.</p>
+</li>
+<li>
+<p><strong>Start logging micro-interactions.</strong> Each time you attend, find one person to exchange a small signal with: a nod, a smile, a brief comment. Don't try to make a friend. Just make a deposit.</p>
+</li>
+<li>
+<p><strong>Practice introducing yourself.</strong> Next time you recognize a face from a recurring context, say your name and note where you've seen them. One sentence is enough. Notice whether they reciprocate.</p>
+</li>
+<li>
+<p><strong>Run through the escalation ladder deliberately.</strong> In your next developing acquaintance, consciously notice what level you're at — facts, preferences, or mild vulnerability — and don't skip ahead. Let the other person's responses tell you when it's time to go deeper.</p>
+</li>
+<li>
+<p><strong>Make one explicit invitation.</strong> Once you've had several micro-interactions with someone, invite them to something specific — ideally one-on-one. Keep it low-pressure and genuinely fit to what you know about them.</p>
+</li>
+<li>
+<p><strong>Audit your reliability.</strong> Think back over the last month. Did you cancel plans? Show up late without warning? If so, identify one concrete change — a calendar <span class="gl" tabindex="0">habit<span class="gl-pop" role="tooltip"><span class="gl-def">Automatic behavior that operates without motivation, willpower, or conscious thought — you simply do it.</span><a class="gl-more" href="../glossary.html#glossary-habit">Full definition →</a></span></span>, a communication norm — that makes you more predictable and trustworthy to the people around you.</p>
+</li>
+</ol>
+</section></article>
+    </div>
+  </div>
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      
+      <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
 <p>So look, dating online doesn&#x27;t work for everyone. Dating online is about initial reactions, gut reactions. And let&#x27;s be honest for a moment. Some people, what they project in the first five seconds of meeting them is not actually their strong suit. What they offer in a relationship isn&#x27;t captured by a profile on the internet. And we&#x27;re also seeing people move more towards IRL meetings as they get frustrated with all the crap that happens when you try to date online. So when we talk about meeting people IRL, we&#x27;re not just talking about romantic relationships. We&#x27;re also talking about forming friendships. And this becomes incredibly important because there&#x27;s a bunch of research that shows that having a broad social network, having plenty of friends actually increases your chances of having a successful romantic relationship. And there are some fundamental things, some fundamental ways that our brain works that allow us to form connections with other human beings. And this happens in both friendships and romantic relationships. So that&#x27;s what we&#x27;re going to talk about. And this is where a lot of people will ask questions and solicit advice. They&#x27;ll be like, How do I make new friends? Where do I go to meet people? And oftentimes the responses they get are very concrete plans, like, oh, you know, go join a chess club or start working out at the gym. People will get concrete advice. But when I sit down and work with people, it doesn&#x27;t work for everyone. So some people will be like, okay, fine. So I&#x27;m supposed to go to the gym. I went to the gym. I&#x27;ve been going for three months and I haven&#x27;t made any friends. So what we need to do is teach y&#x27;all the fundamental systems that human beings use to form connections with each other. And once we understand how human beings fundamentally connect, we will be able to develop a plan that will foster your relationships.</p>
 <p>We got to start with expectations. And this is something that very few people really understand. It&#x27;s crazy how much time it takes to even make a friend. It takes 50 hours of contact to even become a casual acquaintance with someone. And I want you all to think about this for a second, right? So if I go to my job, let&#x27;s say I start a new job, even becoming an acquaintance with someone at the job is going to take a full week of like me working with them, or two, or three. You may be meeting someone and really learning their name one month in of going to this job every day or five days a week, 40 hours a week, and you&#x27;re just barely getting to know them. Making friends takes even longer. 100 to 200 hours of casual contact is oftentimes what is required to form a friendship. So if you&#x27;re going somewhere once, twice, or three times, if you are trying to induce people to hang out with you more at that early stage, it just doesn&#x27;t work out great. Instead, what we want to focus on are two things proximity and frequency. So generally speaking, people form relationships with multiple unplanned interactions.</p>
 <p>And I don&#x27;t know if this kind of makes sense, but I tried to make a friend about 18 months ago. And man, it&#x27;s like really hard. Like I don&#x27;t know how else to say it. Like I haven&#x27;t made a new friend in a long time. But I was at a retreat and I met someone, and then I was like, oh, like I get along so well with this person. And we texted back and forth so much for like 18 months, and we met twice. We met uh once right away, and then it was like nine months later we met again. And then for a third time, it was like nine months later because I have my life and he has his life. And trying to combine these two things is like really inconvenient. It becomes so much pressure, right? Because now you&#x27;re trying to hang out and oh, they&#x27;ve got this thing and I&#x27;ve got this thing, and it almost becomes more trouble than it&#x27;s worth. And if we look at the science of how human beings form relationships, we see that the core of it is multiple unplanned interactions. We need proximity and frequency. And practically, if you think about the friends that you&#x27;ve made, you will almost always find these two things. These are people that you used to go to class with. You see them every single day in class, at school. There&#x27;s no pressure on there. So this is sort of the soil in which relationships are cultivated. But as you may have learned, showing up isn&#x27;t sufficient. This is where we get to another important part, which is micro interactions. So this is like I don&#x27;t know how to explain this, but this is like the little stuff that you do. So I think about, you know, when I used to live in an apartment, like there are other people who live in the apartment building, and it&#x27;s based Like an apartment building relationship, right? So I&#x27;m walking down the hall. This other person is walking down the hall. It starts with like the nod, right? Like you do the nod. And then, you know, the next time you see them, there&#x27;s like another nod. And then at some point you like start smiling. And then one day you&#x27;re like, hey, I&#x27;ve seen you in the hallway. My name is Alok. You introduce yourself. So these kinds of microscopic interactions are really what foster relationships. And this is also why it&#x27;s so important to have a structure where the two of y&#x27;all like bounce into each other over and over again. These micro interactions are the fundamental way in which relationships form. So practically, there are a couple of things that you want to do when you go places where you run into people again and again. You want to do basic things like smile, right? Which is a lost art now that we communicate over Discord and over the internet so much, like we don&#x27;t smile at people when we see them. You can also do other insane things that we no longer do, like introduce yourself. Hi, my name is Alloak. I&#x27;ve seen you a couple times in the hall. It&#x27;s nice to meet you, you know, or I noticed that you were in organic chemistry. So these little kinds of interactions become incredibly important. Once we have a couple of those, and this is important too, that people will like reciprocate, right? So when you smile at someone else, if they like look away, like that&#x27;s not gonna work out. After you introduce yourself, if they&#x27;re like you, that&#x27;s not gonna work out. So after you introduce yourself, you say your name, they say their name, then we wanna escalate things. And this is where there&#x27;s also some really cool science about the steps to escalate a relationship from a simple acquaintance to even becoming a lifelong friend. So the first stage is basically facts about yourself. This is the first level of information exchange that leads to a relationship. So this is oftentimes demographic information, where you grew up, what your job is, maybe what part of the city you&#x27;re living in. And then we start to escalate to preferences and opinions. So what&#x27;s your favorite food, what kind of music you like? And I don&#x27;t know if this makes sense, but like there is a depth of knowing someone that changes when you move from facts to opinions or preferences. This is where we have to be a little bit careful because there are some preferences or opinions that if you share at the very beginning or early on, may drive some people away. So, generally speaking, if I&#x27;m talking to you know my patients who are on the autism spectrum and we&#x27;re sort of laying this thing, the sequence out like, you know, step by step, I&#x27;ll tell them explicitly avoid talking about religion and avoid talking about politics. So we want to share preferences, we want to share opinions, we want to share likes and dislikes, but we want to share things that are not going to be polarizing for the other person. Once we&#x27;ve shared our facts and we&#x27;ve shared some preferences or opinions, and we&#x27;ve noticed that the other person is sharing too, then we want to share what we call mild or safe vulnerabilities. So this can be something that is personal about you and positive, or personal about you and very mildly negative. You don&#x27;t want to <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> dump when you&#x27;re you&#x27;re meeting someone, right?</p>
@@ -41,15 +200,21 @@ try {
 <p>It is too much for the other person. So <span class="gl" tabindex="0">reciprocity<span class="gl-pop" role="tooltip"><span class="gl-def">The mutual exchange of care, effort, and goodwill between friends — not as an equal trade, but as each person contributing what they genuinely can.</span><a class="gl-more" href="../glossary.html#glossary-reciprocity">Full definition →</a></span></span> becomes really important. Share facts, share opinions, moderate positive vulnerabilities, right? Things that are personal to you, or mild negative vulnerabilities. And then depending on how they respond to that, that opens the door for a deeper level of sharing. Now, once again, remember that the time frame we&#x27;re talking about is not meeting someone three times. I&#x27;ve had plenty of patients who will have very, very, very deep connections the first time that you meet someone. And sometimes, you know, there is this sort of kindred spirit kind of idea. Sometimes people have <span class="gl" tabindex="0">borderline personality disorder<span class="gl-pop" role="tooltip"><span class="gl-def">A pervasive pattern of instability across relationships, self-image, and emotional experience — rooted not in random reactivity, but in constant, unrelenting emotional pain.</span><a class="gl-more" href="../glossary.html#glossary-borderline-personality-disorder">Full definition →</a></span></span>, and part of the diagnosis is a history of intense and unstable relationships. So we want to go slow and it takes some time. So now that we understand these couple of pieces, the first thing that I want to point out is this is where a lot of the advice comes from. So when people say like join a hobby group, what they&#x27;re sort of suggesting is that you enter into a situation where you have an opportunity for these non-pressured organic interactions. Now, usually at some point, in order to make a friend, sometimes things will happen naturally, but then there&#x27;s one other tool, which is an explicit invitation. So once you get to know someone, you know a little bit about who they are, you know a little bit about their preferences and what kind of food they like. If you want to make a friend, it helps to sometimes be explicit. Someone usually has to get the ball rolling. And that can be an explicit invitation to hang out sometime. Hey, do you want to grab a beer after work? Or I&#x27;m hosting a barbecue because a friend of mine is coming in town. Do you want to come? So an explicit invitation can move the friendship or a romantic relationship to the next level. The other thing that we want to focus on is oftentimes one-to-one interactions. So you can invite someone to like a group event, like if you&#x27;re having a barbecue or a party, but one big signal that you can send to someone that you are interested for a relationship with them is to invite them on a one-on-one interaction. So this can be something like, hey, do you want to catch a movie? Do you want to grab dinner sometime? You want to go for a hike? So here&#x27;s the biggest place that people screw up. Here&#x27;s how they drop the ball in relationships. A ton of research shows that being unreliable is very negatively correlated with forming relationships. This is like basic stuff. Showing up on time if you&#x27;re gonna be late, communicating, giving people plenty of time if you are canceling or changing plans. I don&#x27;t know if y&#x27;all have ever been in a situation where you&#x27;ve shown up and you&#x27;ve been stood up by someone, whether it&#x27;s a friend or a romantic interest, but it really sucks to be on the receiving end of someone else&#x27;s callousness. And if someone else leaves you hanging, your <span class="gl" tabindex="0">desire<span class="gl-pop" role="tooltip"><span class="gl-def">One of the four classical Hindu goals of life, Kama is the pursuit of pleasure, desire, and sensory enjoyment — including but not limited to sexuality and lust.</span><a class="gl-more" href="../glossary.html#glossary-kama">Full definition →</a></span></span> to be in a relationship with them really goes down. Now, a lot of the people that I work with struggle with things like <span class="gl" tabindex="0">social anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> or <span class="gl" tabindex="0">depression<span class="gl-pop" role="tooltip"><span class="gl-def">A disruption in mood and functioning that exists on a spectrum — not a single, uniform illness.</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span>, but that doesn&#x27;t change the experience of the person on the other side. So being reliable is one of the most important things. Once you say you are going to do something, you should do that thing. If you say you&#x27;re gonna show up at a certain time in a certain place, you should show up at that time or place. Follow through is one of the biggest positive signals you can send in a relationship. Romantic relationships form in very similar ways to friendships, with a couple of key differences. The biggest one is indicating interest. And we&#x27;ll talk a little bit about flirting and charisma and what sort of that involves.</p>
 <p>But the biggest difference that I want you all to focus on now is if you don&#x27;t have a large opportunity, if you don&#x27;t have a lot of time to shoot your shot, you sometimes have to accelerate the timeline. So when it comes to friendships, it takes 50 hours, 100 hours, 200 hours or more. There are a lot of times where we just don&#x27;t have that kind of time. So these are things, these are, these are activities that are like sometimes considered romantic, right? So if you&#x27;re at a party, if you&#x27;re at a bar, if you&#x27;re at a rave and you feel really interested in someone, you&#x27;re enamored by the way they dance, the way they look, the way they smile, it&#x27;s okay to actually accelerate the timeline and kind of shoot your shot. We&#x27;ll get into the rest of it flirting, charisma, et cetera, down the road. But the key thing to remember for now is that if you don&#x27;t have a long window of time, it&#x27;s okay to accelerate the timeline.</p>
 </section></article>
+    </div>
   </div>
+  
 
-  <p class="meta">Transcript of a Dr. K's Guide lesson (Love, Sex & Relationships → Finding & Meeting Potential Partners). Captions auto-generated.</p>
+  <p class="meta">Medium summary + transcript of a Dr. K's Guide lesson (Love, Sex & Relationships → Finding & Meeting Potential Partners). Captions auto-generated; summary by claude-sonnet-4-6.</p>
 </div>
 
 <script>
 (function () {
   var root = document.documentElement;
-  var tb = document.querySelector('.theme-toggle');
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'medium');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
   var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
   tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
@@ -57,6 +222,9 @@ try {
   function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
   var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+  function navigateTo(id){ var el=id&&document.getElementById(id); if(!el)return; var v=el.closest('.view'); if(v)setView(v.getAttribute('data-view')); el.scrollIntoView(); }
+  window.addEventListener('hashchange', function(){ navigateTo(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash) navigateTo(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>
 <script>

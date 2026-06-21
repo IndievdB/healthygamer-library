@@ -9,7 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-} catch (e) {}
+  document.documentElement.setAttribute('data-view', 'transcript');
+} catch (e) { document.documentElement.setAttribute('data-view', 'transcript'); }
 </script>
 </head>
 <body>
@@ -31,9 +32,13 @@ try {
     <span class="speakers-note">8:38 min</span>
   </p>
 
-  <div class="doc">
-    
-    <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
+  
+
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      
+      <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
 <p>- So what is <span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span>? At the end of the day it&#x27;s the ability to hold one thought in your head for an extended period of time. People who are able to hold particular thoughts in their head for a long time, are the people that we see when we think of someone who&#x27;s disciplined or motivated. Because they&#x27;re the ones that are waking up every day and thinking about, okay today I&#x27;m gonna eat this and I&#x27;m not gonna eat this. Whereas it&#x27;s the people who slip up with their diet when they stop thinking that way. So when we adopt a new year&#x27;s resolution, and we sort of it fades over time, what actually changes between the first month of the year and the second month of the year, it&#x27;s the amount of time we spend thinking about it.</p>
 <p>And for those of us that are engaged in behaviors that we don&#x27;t want to be engaged in. What do we sort of notice about our thoughts? If I&#x27;m struggling to play a video game less, it&#x27;s gonna be harder and harder the more my mind is bombarded with thoughts of the video game. If I think about the game before going to bed at night, and I think about the game the first thing when I wake up in the morning, it&#x27;s going to be really really hard to resist the <span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span> to play the game. So at the end of the day fundamentally, the ability to hold a particular thought in our mind is going to result in <span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span>.</p>
 <p>The challenge is that we&#x27;re not really taught how to do that. No one ever teaches us how to concentrate. So now what we&#x27;re gonna do is dive into how <span class="gl" tabindex="0">concentration<span class="gl-pop" role="tooltip"><span class="gl-def">The deliberate act of focusing your entire attention on a single object — and holding it there.</span><a class="gl-more" href="../glossary.html#glossary-dharana">Full definition →</a></span></span> actually works and tunnel down into what are the features of <span class="gl" tabindex="0">concentration<span class="gl-pop" role="tooltip"><span class="gl-def">The deliberate act of focusing your entire attention on a single object — and holding it there.</span><a class="gl-more" href="../glossary.html#glossary-dharana">Full definition →</a></span></span>. So I remember when I was a kid in school, my teachers always said one thing to my parents during our parent teacher conferences. So the feedback that they got, they gave time and time again, was that Aloke has a ton of potential if only he would apply himself. They always talked about my potential and how if I really wanted to, I could do a great job. But I remember what my experience of trying to do a great job was.</p>
@@ -49,7 +54,9 @@ try {
 <p>We will learn how to focus. We will learn how to keep our thoughts in a particular place. And once we learn how to keep our thoughts in a particular place, that will lead to better action. So next up what we&#x27;re gonna do is dive into some actual techniques that train the mind to do that. These are going to be the equivalent of pushups, or sit ups, or bench press. These are gonna be the equivalent of jogging or stretching. These are the fundamental functions of the mind that we are going to do reps. We are gonna train these specific faculties of dropping thoughts, picking up thoughts, and holding thoughts in a particular place.</p>
 <p>And the cool thing is that once you train those faculties, your mind will listen to what you tell it to do. And that in turn will lead to a lot more healthy action and hopefully success.</p>
 </section></article>
+    </div>
   </div>
+  
 
   <p class="meta">Transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> → Spiritual Perspectives on Thought). Captions auto-generated.</p>
 </div>
@@ -57,7 +64,11 @@ try {
 <script>
 (function () {
   var root = document.documentElement;
-  var tb = document.querySelector('.theme-toggle');
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'transcript');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
   var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
   tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
@@ -65,6 +76,9 @@ try {
   function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
   var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+  function navigateTo(id){ var el=id&&document.getElementById(id); if(!el)return; var v=el.closest('.view'); if(v)setView(v.getAttribute('data-view')); el.scrollIntoView(); }
+  window.addEventListener('hashchange', function(){ navigateTo(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash) navigateTo(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>
 <script>

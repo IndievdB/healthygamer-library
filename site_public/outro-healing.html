@@ -9,7 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-} catch (e) {}
+  document.documentElement.setAttribute('data-view', 'transcript');
+} catch (e) { document.documentElement.setAttribute('data-view', 'transcript'); }
 </script>
 </head>
 <body>
@@ -31,9 +32,13 @@ try {
     <span class="speakers-note">8:58 min</span>
   </p>
 
-  <div class="doc">
-    
-    <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
+  
+
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      
+      <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
 <p>We&#x27;ve made it to the final video of Dr. K&#x27;s Guide to <span class="gl" tabindex="0">Trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span>, and I&#x27;d love to spend a few minutes summarizing what we&#x27;ve learned and how I hope this guide will be helpful to you. So let&#x27;s start by remembering that <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> is different because it&#x27;s not a malfunction, it is an adaptation. As we go through life, experiences teach us lessons. And the challenge in <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> is that the lessons that we had to survive yesterday create problems today. So our goal is to try to rewire ourselves to be adaptive to the life that we live in today, and hopefully create the life that you want to live for tomorrow.</p>
 <p>So this begins with reconnecting with your body. Depending on the kind of traumas that you&#x27;ve experienced, we oftentimes will develop an antagonistic or fearful relationship with the body. The body becomes a source of pain and something to be avoided. Sometimes this can even manifest as a diagnosable illness, like irritable bowel syndrome or fibromyalgia. As long as we are running away from the body, and the body is a source of pain, you will constantly be running away from something that exists with you for the duration of your life. So we must become comfortable with our body. This is where mind-body practices are a foundational thing that you can do at home.</p>
 <p>So we can start with practices like yoga or Tai Chi. You can go to a yoga studio, you can take a class, and there are even some clinical interventions that involve these practices. Once we reconnect with our body, the next thing that we need to do is become comfortable with our emotions. So remember that in <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span>, we experience something called <span class="gl" tabindex="0">hemispheric lateralization<span class="gl-pop" role="tooltip"><span class="gl-def">The corpus callosum is the band of neural tissue sitting in the middle of the brain that connects the left and right hemispheres, acting as the communication highway between them.</span><a class="gl-more" href="../glossary.html#glossary-corpus-callosum">Full definition →</a></span></span>. We numb ourselves to our emotional experience, because growing up in environments that are abusive, controlling, or neglectful, our emotions don&#x27;t accomplish what they&#x27;re supposed to. And when my emotion can&#x27;t motivate me or create the right kind of situation around me, then the only choice that I have is to numb myself from it, because then it just becomes a constant source of pain.</p>
@@ -49,7 +54,9 @@ try {
 <p>And that is a <span class="gl" tabindex="0">vasana<span class="gl-pop" role="tooltip"><span class="gl-def">A vasana is a mental habit — a groove worn into the mind by repetitive thinking that fires automatically, independent of whether it reflects anything true.</span><a class="gl-more" href="../glossary.html#glossary-vasanas">Full definition →</a></span></span>. How many times have you had that thought? How many times has someone told you, hey, give this a shot? And before you even give it a shot, your mind disables your ability to even try. So now we even begin to see that depending on how your mind is shaped, it will keep you stuck. So you must take the right action. And that action is really any action. Give something a shot because you don&#x27;t know what tomorrow brings. I know your mind sometimes tells you that you know exactly what your destiny is going to be like, but that would be a scientific marvel. Holy crap. You are the one person in the world who can actually predict the future.</p>
 <p>That is amazing. So take a step back, take a deep breath and calmly really think about what are the changes that you want to make and what are the first steps that you can take to make those changes. Thank you so much for watching the guide. I hope it&#x27;s been helpful and good luck on your journey.</p>
 </section></article>
+    </div>
   </div>
+  
 
   <p class="meta">Transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">Trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> → Outro: Healing). Captions auto-generated.</p>
 </div>
@@ -57,7 +64,11 @@ try {
 <script>
 (function () {
   var root = document.documentElement;
-  var tb = document.querySelector('.theme-toggle');
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'transcript');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
   var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
   tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
@@ -65,6 +76,9 @@ try {
   function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
   var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+  function navigateTo(id){ var el=id&&document.getElementById(id); if(!el)return; var v=el.closest('.view'); if(v)setView(v.getAttribute('data-view')); el.scrollIntoView(); }
+  window.addEventListener('hashchange', function(){ navigateTo(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash) navigateTo(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>
 <script>

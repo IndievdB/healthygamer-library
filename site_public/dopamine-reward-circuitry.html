@@ -9,7 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-} catch (e) {}
+  document.documentElement.setAttribute('data-view', 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -31,9 +32,127 @@ try {
     <span class="speakers-note">15:45 min</span>
   </p>
 
-  <div class="doc">
+  
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">1,450w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">2,989w</span></button>
     
-    <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
+  </div>
+  
+
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#summary-summary">Summary</a></li>
+<li><a href="#summary-how-the-reward-circuit-actually-works">How the Reward Circuit Actually Works</a></li>
+<li><a href="#summary-why-addiction-is-the-clearest-example-of-a-broken-loop">Why Addiction Is the Clearest Example of a Broken Loop</a></li>
+<li><a href="#summary-tolerance-why-you-need-more-to-feel-less">Tolerance: Why You Need More to Feel Less</a></li>
+<li><a href="#summary-the-negativity-bias-makes-it-worse">The Negativity Bias Makes It Worse</a></li>
+<li><a href="#summary-the-motivational-spillover-effect">The Motivational Spillover Effect</a></li>
+<li><a href="#summary-common-pitfalls">Common Pitfalls</a></li>
+<li><a href="#summary-action-items-exercises">Action Items &amp; Exercises</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="summary-summary">Summary</h2>
+<p><strong>TL;DR — Your brain's reward circuitry was built for a world far less stimulating than the one you live in now. Heavy technology use exploits and distorts that circuitry, making it harder to enjoy, learn from, and motivate toward almost everything else.</strong></p>
+<p>The mesolimbic circuit — the brain's core reward system — connects behavior, reward, and learning. When it works well, doing something beneficial feels good, which teaches your brain to do it again. When it gets overstimulated by technology, that same system starts working against you: you keep doing things you don't enjoy, stop learning from your mistakes, and find it nearly impossible to feel motivated by anything that isn't a screen.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-how-the-reward-circuit-actually-works">How the Reward Circuit Actually Works</h2>
+<p>The central hub here is the <strong><span class="gl" tabindex="0">nucleus accumbens<span class="gl-pop" role="tooltip"><span class="gl-def">A brain region at the center of the dopamine system that drives pleasure, craving, and behavioral reinforcement.</span><a class="gl-more" href="../glossary.html#glossary-nucleus-accumbens">Full definition →</a></span></span></strong>, sitting inside what's called the <strong>mesolimbic circuit</strong> (often called the reward circuit). Three things run through it in a loop:</p>
+<ol>
+<li><strong>Behavior</strong> — you do something</li>
+<li><strong>Reward</strong> — your brain registers a positive signal</li>
+<li><strong>Reinforcement</strong> — the behavior gets encoded as "worth repeating"</li>
+</ol>
+<p>This loop <em>is</em> learning. When a baby takes their first steps and everyone cheers, the huge emotional reward tells the brain: do that again. When you study hard and get a good grade, the reward is smaller but still real — and it slowly builds a <span class="gl" tabindex="0">habit<span class="gl-pop" role="tooltip"><span class="gl-def">Automatic behavior that operates without motivation, willpower, or conscious thought — you simply do it.</span><a class="gl-more" href="../glossary.html#glossary-habit">Full definition →</a></span></span>.</p>
+<p>The key insight is that <span class="gl" tabindex="0">dopamine<span class="gl-pop" role="tooltip"><span class="gl-def">A neurotransmitter that drives motivation, behavioral reinforcement, and craving — not simply the feeling of pleasure.</span><a class="gl-more" href="../glossary.html#glossary-dopamine">Full definition →</a></span></span> isn't just about <span class="gl" tabindex="0">pleasure<span class="gl-pop" role="tooltip"><span class="gl-def">The experience of pleasure that comes from satisfying desires — roughly associated with dopamine and the brain&#x27;s reward circuitry.</span><a class="gl-more" href="../glossary.html#glossary-hedonics">Full definition →</a></span></span>. It's fundamentally about <strong>learning which behaviors matter</strong>. Mess with this circuit and you mess with the brain's ability to update itself.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-why-addiction-is-the-clearest-example-of-a-broken-loop">Why Addiction Is the Clearest Example of a Broken Loop</h2>
+<p>Drugs like cocaine or opiates don't wait for you to earn a reward — they <strong>directly and chemically activate</strong> the <span class="gl" tabindex="0">nucleus accumbens<span class="gl-pop" role="tooltip"><span class="gl-def">A brain region at the center of the dopamine system that drives pleasure, craving, and behavioral reinforcement.</span><a class="gl-more" href="../glossary.html#glossary-nucleus-accumbens">Full definition →</a></span></span>. The signal is so strong that it drowns out every other source of feedback: consequences, relationships, health, money.</p>
+<p>This is why people with <span class="gl" tabindex="0">addiction<span class="gl-pop" role="tooltip"><span class="gl-def">The use of a chemical (alcohol, opioids, cannabis, caffeine, etc.) that produces neurological effects your brain then adapts to — leading to tolerance, withdrawal, and, potentially, addiction.</span><a class="gl-more" href="../glossary.html#glossary-substance-use">Full definition →</a></span></span> keep repeating a behavior even as it destroys their lives. It's not stubbornness or stupidity. The circuit has been hijacked. The lesson the brain <em>should</em> be learning — "this is hurting me" — never registers, because the chemical reward keeps overwriting it.</p>
+<p>You see the same pattern in everyday behavior. A brutal hangover feels like a lesson learned, a genuine vow: <em>never again.</em> But the next weekend, the same thing happens. The negative feedback didn't stick. The circuit is still more responsive to the immediate reward than to any downstream consequence.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-tolerance-why-you-need-more-to-feel-less">Tolerance: Why You Need More to Feel Less</h2>
+<p>The brain has a built-in adaptive mechanism: when the same signal arrives repeatedly, it <strong>reduces its sensitivity to that signal</strong>. This is <strong><span class="gl" tabindex="0">tolerance<span class="gl-pop" role="tooltip"><span class="gl-def">The use of a chemical (alcohol, opioids, cannabis, caffeine, etc.) that produces neurological effects your brain then adapts to — leading to tolerance, withdrawal, and, potentially, addiction.</span><a class="gl-more" href="../glossary.html#glossary-substance-use">Full definition →</a></span></span></strong>.</p>
+<p>It happens with caffeine (your first cup is electric; after a month, it just gets you to baseline). It happens with alcohol (a first-time drinker gets drunk on two beers; a long-term heavy drinker might need twelve). And there are strong signs it happens with technology use too.</p>
+<p>Think about binge-watching: is hour one or hour twelve more enjoyable? Think about a long gaming session: the 18th hour versus the first hour of a session after a week off. The answer is obvious from experience — and it reflects the brain recalibrating to a flood of stimulation.</p>
+<p>Here's the part that trips people up: <strong><span class="gl" tabindex="0">tolerance<span class="gl-pop" role="tooltip"><span class="gl-def">The use of a chemical (alcohol, opioids, cannabis, caffeine, etc.) that produces neurological effects your brain then adapts to — leading to tolerance, withdrawal, and, potentially, addiction.</span><a class="gl-more" href="../glossary.html#glossary-substance-use">Full definition →</a></span></span> doesn't make you stop. It makes you stop enjoying something while continuing to do it.</strong> Nobody sits down on a Saturday thinking "I can't wait to doom-scroll for eight hours — that's going to be incredible." And at the end of the day, there's genuine regret. But the next morning, the phone comes out again. The circuit isn't asking whether you're having fun. It's already trained.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-the-negativity-bias-makes-it-worse">The Negativity Bias Makes It Worse</h2>
+<p>Not all <span class="gl" tabindex="0">dopamine<span class="gl-pop" role="tooltip"><span class="gl-def">A neurotransmitter that drives motivation, behavioral reinforcement, and craving — not simply the feeling of pleasure.</span><a class="gl-more" href="../glossary.html#glossary-dopamine">Full definition →</a></span></span>-triggering content is even positive. The brain has a deep, evolutionarily ancient <strong>bias toward negative information</strong>.</p>
+<p>The reasoning is straightforward: millions of years ago, the brains that ignored threats didn't survive. A single bad meal can ruin a favorite restaurant for you permanently, even if you've eaten there twenty times without a problem. One frightening encounter reconfigures behavior more powerfully than twenty safe ones.</p>
+<p>Social media and algorithmic feeds have figured this out, whether intentionally or not. Content that is upsetting, alarming, or morally outrageous gets more engagement — not because people enjoy it, but because the brain is <em>compelled</em> by it. The circuit responds to emotional activation, and negative emotions activate it most powerfully.</p>
+<p>This is why the most addictive content online often doesn't feel good at all. You scroll through something awful, feel worse, and keep scrolling. The circuit is engaged; it just isn't delivering <span class="gl" tabindex="0">pleasure<span class="gl-pop" role="tooltip"><span class="gl-def">The experience of pleasure that comes from satisfying desires — roughly associated with dopamine and the brain&#x27;s reward circuitry.</span><a class="gl-more" href="../glossary.html#glossary-hedonics">Full definition →</a></span></span>.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-the-motivational-spillover-effect">The Motivational Spillover Effect</h2>
+<p>The mesolimbic circuit is shared. The same reward pathway that gets activated by a drug also gets activated by:</p>
+<ul>
+<li>Getting a good grade</li>
+<li>Reading an interesting book</li>
+<li>Learning to play an instrument</li>
+<li>Exercising</li>
+</ul>
+<p>When technology use pushes that circuit into a high-<span class="gl" tabindex="0">tolerance<span class="gl-pop" role="tooltip"><span class="gl-def">The use of a chemical (alcohol, opioids, cannabis, caffeine, etc.) that produces neurological effects your brain then adapts to — leading to tolerance, withdrawal, and, potentially, addiction.</span><a class="gl-more" href="../glossary.html#glossary-substance-use">Full definition →</a></span></span> state, <strong>the baseline for "rewarding enough" rises for everything.</strong> A book can't compete. Exercise can't compete. Even a good TV show starts to feel insufficient compared to the rapid-fire stimulation of a social media feed — which is why your hand reaches for the phone while you're supposedly watching something you chose to enjoy.</p>
+<p>This is the engine behind the motivational problems many people notice in themselves:</p>
+<blockquote>
+<p>"Despite the fact that it stops being fun, despite the fact that you don't actually enjoy it on hour 18, you can't stop."</p>
+</blockquote>
+<p>And on the flip side: things that genuinely matter — work, learning, relationships — feel flat, boring, and impossible to sustain. Not because those things have changed. Because the brain's sensitivity to their rewards has been turned way down.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-common-pitfalls">Common Pitfalls</h2>
+<p><strong>Thinking <span class="gl" tabindex="0">dopamine<span class="gl-pop" role="tooltip"><span class="gl-def">A neurotransmitter that drives motivation, behavioral reinforcement, and craving — not simply the feeling of pleasure.</span><a class="gl-more" href="../glossary.html#glossary-dopamine">Full definition →</a></span></span> = <span class="gl" tabindex="0">pleasure<span class="gl-pop" role="tooltip"><span class="gl-def">The experience of pleasure that comes from satisfying desires — roughly associated with dopamine and the brain&#x27;s reward circuitry.</span><a class="gl-more" href="../glossary.html#glossary-hedonics">Full definition →</a></span></span>.</strong> <span class="gl" tabindex="0">Dopamine<span class="gl-pop" role="tooltip"><span class="gl-def">A neurotransmitter that drives motivation, behavioral reinforcement, and craving — not simply the feeling of pleasure.</span><a class="gl-more" href="../glossary.html#glossary-dopamine">Full definition →</a></span></span> is really about learning and reinforcement. A behavior can activate this circuit without feeling good at all — which is why you can be glued to content that's making you miserable.</p>
+<p><strong>Assuming willpower is the solution.</strong> If the circuit itself is miscalibrated, deciding harder to stop doesn't address the root problem. The brain isn't learning the lessons your conscious mind keeps trying to teach it.</p>
+<p><strong>Expecting regret to be enough.</strong> Regret is a cognitive <span class="gl" tabindex="0">awareness<span class="gl-pop" role="tooltip"><span class="gl-def">The capacity to accurately receive and process information about what is happening — in your environment, your body, or your mind — so that your brain can respond appropriately.</span><a class="gl-more" href="../glossary.html#glossary-awareness">Full definition →</a></span></span>, not a circuit-level signal. Knowing you wasted a day doesn't automatically update the mesolimbic circuit the way a real consequence would — especially when the circuit has already been desensitized.</p>
+<p><strong>Misunderstanding "<span class="gl" tabindex="0">dopamine<span class="gl-pop" role="tooltip"><span class="gl-def">A neurotransmitter that drives motivation, behavioral reinforcement, and craving — not simply the feeling of pleasure.</span><a class="gl-more" href="../glossary.html#glossary-dopamine">Full definition →</a></span></span> fasts."</strong> Cutting off stimulation isn't magic, but the underlying logic is real: the circuit needs time without being flooded to recalibrate its sensitivity. The mistake is treating it as a one-time detox rather than an ongoing recalibration.</p>
+<p><strong>Thinking the problem is only with things that feel obviously addictive.</strong> The same circuit processes all rewards. Low-grade, habitual scrolling — even when it feels totally neutral or mildly boring — is still feeding the <span class="gl" tabindex="0">tolerance<span class="gl-pop" role="tooltip"><span class="gl-def">The use of a chemical (alcohol, opioids, cannabis, caffeine, etc.) that produces neurological effects your brain then adapts to — leading to tolerance, withdrawal, and, potentially, addiction.</span><a class="gl-more" href="../glossary.html#glossary-substance-use">Full definition →</a></span></span> cycle.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-action-items-exercises">Action Items &amp; Exercises</h2>
+<ol>
+<li>
+<p><strong>Notice the gap between anticipation and experience.</strong> The next time you pick up your phone or open a social media app, pause after five minutes and honestly ask: am I actually enjoying this? Track the difference between how fun you expected it to be and how fun it actually is. This builds <span class="gl" tabindex="0">awareness<span class="gl-pop" role="tooltip"><span class="gl-def">The capacity to accurately receive and process information about what is happening — in your environment, your body, or your mind — so that your brain can respond appropriately.</span><a class="gl-more" href="../glossary.html#glossary-awareness">Full definition →</a></span></span> of the <span class="gl" tabindex="0">tolerance<span class="gl-pop" role="tooltip"><span class="gl-def">The use of a chemical (alcohol, opioids, cannabis, caffeine, etc.) that produces neurological effects your brain then adapts to — leading to tolerance, withdrawal, and, potentially, addiction.</span><a class="gl-more" href="../glossary.html#glossary-substance-use">Full definition →</a></span></span> effect in real time.</p>
+</li>
+<li>
+<p><strong>Do a session-length audit.</strong> Pick one technology behavior (gaming, social media, streaming) and log how engaged you feel at the start versus an hour in versus two hours in. You don't need to change anything yet — just build a concrete, personal picture of diminishing returns.</p>
+</li>
+<li>
+<p><strong>Schedule low-stimulation gaps deliberately.</strong> Before reaching for your phone first thing in the morning, give yourself 10–20 minutes of no screens. This isn't about white-knuckling it — it's about letting the circuit breathe before you flood it. Start small and increase over time.</p>
+</li>
+<li>
+<p><strong>Reintroduce low-stimulation activities in short doses.</strong> If reading or a creative hobby feels impossible to sustain, that's expected — the reward from it currently doesn't clear the <span class="gl" tabindex="0">tolerance<span class="gl-pop" role="tooltip"><span class="gl-def">The use of a chemical (alcohol, opioids, cannabis, caffeine, etc.) that produces neurological effects your brain then adapts to — leading to tolerance, withdrawal, and, potentially, addiction.</span><a class="gl-more" href="../glossary.html#glossary-substance-use">Full definition →</a></span></span> threshold. Try five to ten minutes, not an hour. The goal isn't immediate enjoyment; it's beginning to rebuild the circuit's sensitivity to smaller rewards.</p>
+</li>
+<li>
+<p><strong>Don't rely on regret as a teacher.</strong> After a session you feel bad about, instead of just vowing to do better, ask: what concrete thing can I change about the <em>conditions</em> (time of day, phone location, triggers) so the circuit encounters a different situation tomorrow? Behavioral change needs environmental change, not just intention.</p>
+</li>
+<li>
+<p><strong>Treat negative emotional content as a warning signal.</strong> When you notice you're consuming content that feels bad — outrage-bait, distressing news loops, conflict-driven social media — recognize that your engagement is being driven by the brain's negativity bias, not genuine interest or benefit. Use that recognition as a cue to disengage rather than continue.</p>
+</li>
+</ol>
+</section></article>
+    </div>
+  </div>
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      
+      <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
 <p>- So the internet talks a lot about <span class="gl" tabindex="0">dopamine<span class="gl-pop" role="tooltip"><span class="gl-def">A neurotransmitter that drives motivation, behavioral reinforcement, and craving — not simply the feeling of pleasure.</span><a class="gl-more" href="../glossary.html#glossary-dopamine">Full definition →</a></span></span>. It&#x27;s such a hot topic, we have podcasts about <span class="gl" tabindex="0">dopamine<span class="gl-pop" role="tooltip"><span class="gl-def">A neurotransmitter that drives motivation, behavioral reinforcement, and craving — not simply the feeling of pleasure.</span><a class="gl-more" href="../glossary.html#glossary-dopamine">Full definition →</a></span></span>, you have neuroscientists talking about <span class="gl" tabindex="0">dopamine<span class="gl-pop" role="tooltip"><span class="gl-def">A neurotransmitter that drives motivation, behavioral reinforcement, and craving — not simply the feeling of pleasure.</span><a class="gl-more" href="../glossary.html#glossary-dopamine">Full definition →</a></span></span>, you have videos, you even have like Silicon Valley CEOs talking about going on a <span class="gl" tabindex="0">dopamine<span class="gl-pop" role="tooltip"><span class="gl-def">A neurotransmitter that drives motivation, behavioral reinforcement, and craving — not simply the feeling of pleasure.</span><a class="gl-more" href="../glossary.html#glossary-dopamine">Full definition →</a></span></span> fast and how it helped them sort of reconnect with themselves and become so much more productive. And it kinda makes sense, right, because <span class="gl" tabindex="0">dopamine<span class="gl-pop" role="tooltip"><span class="gl-def">A neurotransmitter that drives motivation, behavioral reinforcement, and craving — not simply the feeling of pleasure.</span><a class="gl-more" href="../glossary.html#glossary-dopamine">Full definition →</a></span></span> is this neurotransmitter that we sort of attribute to so many things related to technology. So I was thinking about this myself recently, and sort of, you know, sometimes when I&#x27;ll sit down to watch a show, like I&#x27;ll get really, really excited and I, you know, set aside time, make sure someone is watching my kids, and I&#x27;ll sit down, ready to have fun and really engage with a show that I&#x27;ve fallen behind on.</p>
 <p>And then as I start watching, like I start to notice that like before I realized it, I&#x27;ve pulled out my phone and I&#x27;m kinda scrolling through stuff and I&#x27;m kinda like on my phone and watching the show sort of at the same time. And my mind kind of becomes a blur and I&#x27;m not really like there, right? I&#x27;m not even enjoying it. And I don&#x27;t really realize it, but I don&#x27;t know how I started doing this. And so then I&#x27;ll put my phone away and focus on the show and then like, sure enough, a minute later like my hand is back on the phone and I&#x27;m kind of scrolling through. And so we&#x27;re starting to see that technology is kind of like entering our lives and it&#x27;s sort of changing our behavior and it&#x27;s causing all kinds of problems.</p>
 <p>Like I&#x27;ll hear a lot that people instead of doing their work are spending time watching videos on YouTube, or instead of like learning how to bake or learning a new instrument, they&#x27;re spending three hours on Twitter. And so we&#x27;re starting to recognize kind of globally as a society and also academically because people are now getting diagnosed with like video game <span class="gl" tabindex="0">addiction<span class="gl-pop" role="tooltip"><span class="gl-def">The use of a chemical (alcohol, opioids, cannabis, caffeine, etc.) that produces neurological effects your brain then adapts to — leading to tolerance, withdrawal, and, potentially, addiction.</span><a class="gl-more" href="../glossary.html#glossary-substance-use">Full definition →</a></span></span> or social media <span class="gl" tabindex="0">addiction<span class="gl-pop" role="tooltip"><span class="gl-def">The use of a chemical (alcohol, opioids, cannabis, caffeine, etc.) that produces neurological effects your brain then adapts to — leading to tolerance, withdrawal, and, potentially, addiction.</span><a class="gl-more" href="../glossary.html#glossary-substance-use">Full definition →</a></span></span>, that something is going on with technology and our ability to do what we want. Technology seems to be interfering, and so if we wanna understand exactly what&#x27;s going on, we have to start by understanding how does the human brain decide to do something?</p>
@@ -59,15 +178,21 @@ try {
 <p>It&#x27;s always a struggle. And so one of the key things here is that the <span class="gl" tabindex="0">dopamine<span class="gl-pop" role="tooltip"><span class="gl-def">A neurotransmitter that drives motivation, behavioral reinforcement, and craving — not simply the feeling of pleasure.</span><a class="gl-more" href="../glossary.html#glossary-dopamine">Full definition →</a></span></span> circuitry that we have is sort of getting messed up. Our mesolimbic circuit is all confused. And as it becomes confused, a major source of <span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span>. Why can&#x27;t I study? I&#x27;m so unmotivated to study. Well yeah, that&#x27;s because you&#x27;ve developed such a high <span class="gl" tabindex="0">tolerance<span class="gl-pop" role="tooltip"><span class="gl-def">The use of a chemical (alcohol, opioids, cannabis, caffeine, etc.) that produces neurological effects your brain then adapts to — leading to tolerance, withdrawal, and, potentially, addiction.</span><a class="gl-more" href="../glossary.html#glossary-substance-use">Full definition →</a></span></span> to <span class="gl" tabindex="0">dopamine<span class="gl-pop" role="tooltip"><span class="gl-def">A neurotransmitter that drives motivation, behavioral reinforcement, and craving — not simply the feeling of pleasure.</span><a class="gl-more" href="../glossary.html#glossary-dopamine">Full definition →</a></span></span> from technology that the reward that a human being used to get from studying a hundred years ago is like a tiny amount compared to this easy, easy benefit of studying. And so what&#x27;s happening in our <span class="gl" tabindex="0">dopamine<span class="gl-pop" role="tooltip"><span class="gl-def">A neurotransmitter that drives motivation, behavioral reinforcement, and craving — not simply the feeling of pleasure.</span><a class="gl-more" href="../glossary.html#glossary-dopamine">Full definition →</a></span></span> circuitry, and this is, we&#x27;ll go into more detail about how to fix this, is essentially like technology use among a couple of other things is affecting this mesolimbic circuit and making it hard for us to actually motivate in the right direction.</p>
 <p>As we understand the relationship between behavior, reward, and reinforcement and learning and how that drives the right behavior, is we sort of understand this and we&#x27;re gonna go more into the hedonic circuitry, we&#x27;re gonna go more into effort calculations and things like that. We&#x27;ll start to tease apart this puzzle of where <span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span> comes from. And by understanding each of these individual parts of the brain, we can also develop a plan about how to reset them, right? So how do we rebalance this part of our brain that has gotten out of whack? So next up, we&#x27;ll dive a little bit further into other parts of the brain.</p>
 </section></article>
+    </div>
   </div>
+  
 
-  <p class="meta">Transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> → Neuroscience of Thought). Captions auto-generated.</p>
+  <p class="meta">Medium summary + transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> → Neuroscience of Thought). Captions auto-generated; summary by claude-sonnet-4-6.</p>
 </div>
 
 <script>
 (function () {
   var root = document.documentElement;
-  var tb = document.querySelector('.theme-toggle');
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'medium');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
   var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
   tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
@@ -75,6 +200,9 @@ try {
   function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
   var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+  function navigateTo(id){ var el=id&&document.getElementById(id); if(!el)return; var v=el.closest('.view'); if(v)setView(v.getAttribute('data-view')); el.scrollIntoView(); }
+  window.addEventListener('hashchange', function(){ navigateTo(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash) navigateTo(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>
 <script>

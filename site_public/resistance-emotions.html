@@ -9,7 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-} catch (e) {}
+  document.documentElement.setAttribute('data-view', 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -31,9 +32,128 @@ try {
     <span class="speakers-note">23:33 min</span>
   </p>
 
-  <div class="doc">
+  
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">1,575w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">4,598w</span></button>
     
-    <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
+  </div>
+  
+
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#summary-summary">Summary</a></li>
+<li><a href="#summary-youre-not-lacking-motivation-youre-resisting-something">You're Not Lacking Motivation — You're Resisting Something</a></li>
+<li><a href="#summary-why-emotions-beat-logic-every-time">Why Emotions Beat Logic Every Time</a></li>
+<li><a href="#summary-why-you-dont-feel-the-emotion-directly">Why You Don't Feel the Emotion Directly</a></li>
+<li><a href="#summary-what-this-looks-like-in-real-life">What This Looks Like in Real Life</a></li>
+<li><a href="#summary-im-just-tired-a-sneaky-form-of-resistance">"I'm Just Tired" — A Sneaky Form of Resistance</a></li>
+<li><a href="#summary-common-pitfalls">Common Pitfalls</a></li>
+<li><a href="#summary-action-items-exercises">Action Items &amp; Exercises</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="summary-summary">Summary</h2>
+<p><strong>TL;DR — The problem isn't a lack of <span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span>; it's that emotions are actively blocking you. Until you identify and face those emotions, no productivity hack or self-help trick will work.</strong></p>
+<p>Most people who struggle to act on things they know they should do diagnose the problem as "low <span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span>" and go looking for ways to pump that <span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span> up. But this misses what's actually happening. You're not under-motivated — you're highly motivated in the <em>wrong direction</em>. Something emotional is standing in your way, and your brain is working hard to keep you from ever feeling it directly. Until you understand that, you'll keep spinning your wheels.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-youre-not-lacking-motivation-youre-resisting-something">You're Not Lacking Motivation — You're Resisting Something</h2>
+<p>Consider a patient addicted to heroin. His life was falling apart — court dates, near-divorce, job probation, mounting debt. By every rational measure, the consequences of using kept getting worse, so <span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span> to quit should have been growing. Instead, his use increased alongside the chaos.</p>
+<p>The breakthrough came when he explained it plainly: every day was an unrelenting pile of problems. And using heroin was the one thing that made all of those problems disappear for a few hours. He <em>was</em> motivated — intensely motivated to escape unbearable suffering. The <span class="gl" tabindex="0">addiction<span class="gl-pop" role="tooltip"><span class="gl-def">The use of a chemical (alcohol, opioids, cannabis, caffeine, etc.) that produces neurological effects your brain then adapts to — leading to tolerance, withdrawal, and, potentially, addiction.</span><a class="gl-more" href="../glossary.html#glossary-substance-use">Full definition →</a></span></span> was the solution his brain had found, not evidence of missing willpower.</p>
+<p>The same logic applies to smaller everyday struggles: wanting to go to the gym, eat better, work on a resume, practice a skill. When you find yourself not doing these things, the instinct is to call it laziness or lack of drive. The more accurate framing is: something called <strong>resistance</strong> is in the way. Resistance is whatever blocks you from doing what you know you should do.</p>
+<p>There are two major sources of resistance. The one this talk focuses on is <strong>emotions</strong>.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-why-emotions-beat-logic-every-time">Why Emotions Beat Logic Every Time</h2>
+<p>Logic is a poor motivator for behavior. You can tell a smoker every statistical fact about lung cancer, and they'll agree with all of it and light another cigarette. That's because the parts of the brain responsible for logical reasoning — the cerebral cortex — are largely separate from the parts that actually <em>drive behavior</em>.</p>
+<p>What drives behavior is emotion. The brain's emotional centers, including the <span class="gl" tabindex="0">amygdala<span class="gl-pop" role="tooltip"><span class="gl-def">The brain&#x27;s negative emotional center — the region that generates fear, anxiety, and survival responses.</span><a class="gl-more" href="../glossary.html#glossary-amygdala">Full definition →</a></span></span> (the fear and survival hub), sit right next to the structures responsible for learning and behavioral <span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span>. Emotions are wired directly into action. Logic is not.</p>
+<p>This is why the most transformative moments in real life — and in every film that's ever moved you — are emotional, not intellectual. Nobody has a life-changing breakthrough from reading a Wikipedia article. The change comes from a moment of genuine feeling.</p>
+<blockquote>
+<p>"Emotions are kind of like the override switch for behavior. Even if we kind of know logically that we should do something, if there's an emotional activation, if the <span class="gl" tabindex="0">amygdala<span class="gl-pop" role="tooltip"><span class="gl-def">The brain&#x27;s negative emotional center — the region that generates fear, anxiety, and survival responses.</span><a class="gl-more" href="../glossary.html#glossary-amygdala">Full definition →</a></span></span> kind of activates at a particular time, it sort of overrides any kind of logic."</p>
+</blockquote>
+<p>Think about a musician who has practiced a piece for three months, playing it perfectly at home, even backstage. The moment they walk onstage, something hijacks them. That's not a <span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span> problem. That's the emotional override switch firing — and it fires in everyday life constantly, just more quietly.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-why-you-dont-feel-the-emotion-directly">Why You Don't Feel the Emotion Directly</h2>
+<p>Here's the confusing part: when emotional resistance blocks you, it usually doesn't feel emotional. It feels like vague inertia, tiredness, or just not being in the mood. You sit down to do the thing, and somehow you end up on your phone for an hour.</p>
+<p>That drift into distraction isn't random. It's your brain protecting you. The moment you start to approach the thing you're avoiding, a negative emotion begins to surface — <span class="gl" tabindex="0">shame<span class="gl-pop" role="tooltip"><span class="gl-def">The emotion triggered by a perceived gap between where you are and where you think you should be.</span><a class="gl-more" href="../glossary.html#glossary-shame">Full definition →</a></span></span>, fear, dread — and before it can fully register, your mind steers you somewhere neutral. Research using fMRI (functional brain imaging) shows that engaging in distracting activities actually reduces blood flow to the brain's negative emotional circuitry. Distraction works as emotional suppression.</p>
+<p>So the sequence looks like this:
+1. You consider doing the thing
+2. An emotion begins to stir beneath the surface
+3. Your brain redirects you to something distracting before the emotion becomes conscious
+4. You don't feel much — just "blah" or "tired" — and assume you lack <span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span></p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-what-this-looks-like-in-real-life">What This Looks Like in Real Life</h2>
+<p><strong>Procrastinating on a simple email.</strong> A student needed to ask their professor for a deadline extension — a three-line email, a professor they trusted, a reasonable excuse. They couldn't send it. Every time they opened a draft, they'd close it within seconds and open a video game or Netflix instead.</p>
+<p>Underneath that paralysis were layers of emotion: <span class="gl" tabindex="0">shame<span class="gl-pop" role="tooltip"><span class="gl-def">The emotion triggered by a perceived gap between where you are and where you think you should be.</span><a class="gl-more" href="../glossary.html#glossary-shame">Full definition →</a></span></span> about not managing their time better, fear of how the professor would see them, and a specific terror that the professor might say no — leaving them with four days and no options. Every one of those emotions was quietly standing between them and a 30-second task.</p>
+<p><strong><span class="gl" tabindex="0">Imposter syndrome<span class="gl-pop" role="tooltip"><span class="gl-def">A persistent belief that your success is undeserved — that you got lucky, fooled people, or benefited from circumstances — rather than from your own effort or competence.</span><a class="gl-more" href="../glossary.html#glossary-imposter-syndrome">Full definition →</a></span></span> at work.</strong> Someone gets hired after a thorough interview process, has the credentials, did the job before. But in meetings, they can't speak up. They have wins to share; they deserve credit. The logical case for speaking is airtight. But the emotional override fires: <em>What if they figure out I don't belong here? What if I say something and the CEO realizes I'm an idiot?</em></p>
+<blockquote>
+<p>"We know it's irrational. And then we beat ourselves up because we're like, it's an irrational fear — but that's the nature of emotions. All emotions by definition are not rational."</p>
+</blockquote>
+<p><strong>Vulnerability in relationships.</strong> You're with someone you trust, someone who loves you, someone you know won't judge you. The logical case for opening up is complete. But fear of rejection — especially when you carry <span class="gl" tabindex="0">shame<span class="gl-pop" role="tooltip"><span class="gl-def">The emotion triggered by a perceived gap between where you are and where you think you should be.</span><a class="gl-more" href="../glossary.html#glossary-shame">Full definition →</a></span></span> from the past — creates an emotional barrier that logic cannot dismantle. Paradoxically, caring more about the relationship can make the fear of losing it <em>stronger</em>, not weaker.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-im-just-tired-a-sneaky-form-of-resistance">"I'm Just Tired" — A Sneaky Form of Resistance</h2>
+<p>Tiredness is one of the most common camouflages for emotional resistance. The tell is specificity: tired doesn't actually stop most behavior. People stay up until 4 AM doing things they enjoy when they were exhausted at 10 PM. Tired bodies still scroll social media, still watch TV, still find energy for low-stakes activities.</p>
+<p>The question worth asking is: does feeling tired only stop you from <em>this particular thing</em>? If so, the tiredness isn't the cause — it's the cover story the brain offers so you don't have to confront what's actually underneath.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-common-pitfalls">Common Pitfalls</h2>
+<ul>
+<li>
+<p><strong>Assuming more <span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span> is the answer.</strong> The self-help industry has built an empire on this assumption, and it doesn't work — because it's treating the wrong problem. You don't need more <span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span>; you need to understand what's blocking the <span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span> you already have.</p>
+</li>
+<li>
+<p><strong>Trusting logic to override the block.</strong> Reminding yourself of all the reasons you <em>should</em> do something feels productive, but logical arguments don't reach the emotional circuitry that's actually in control. Knowing you should do it and being able to do it are governed by different systems in the brain.</p>
+</li>
+<li>
+<p><strong>Taking the distraction at face value.</strong> When you notice yourself drifting to your phone or TV, it's easy to attribute it to <span class="gl" tabindex="0">habit<span class="gl-pop" role="tooltip"><span class="gl-def">Automatic behavior that operates without motivation, willpower, or conscious thought — you simply do it.</span><a class="gl-more" href="../glossary.html#glossary-habit">Full definition →</a></span></span> or <span class="gl" tabindex="0">boredom<span class="gl-pop" role="tooltip"><span class="gl-def">A stimulus-seeking emotional state your brain manufactures to punish you for not engaging in dopamine-producing activities.</span><a class="gl-more" href="../glossary.html#glossary-boredom">Full definition →</a></span></span>. The more useful interpretation: you may have been on the edge of an uncomfortable emotion and your brain bailed you out before you could feel it.</p>
+</li>
+<li>
+<p><strong>Beating yourself up for "irrational" fears.</strong> Fear of a professor saying no, or a partner leaving after you share something, or colleagues discovering you're not as competent as they think — these feel irrational, and sometimes they are. But calling an emotion irrational doesn't make it weaker. It just adds <span class="gl" tabindex="0">shame<span class="gl-pop" role="tooltip"><span class="gl-def">The emotion triggered by a perceived gap between where you are and where you think you should be.</span><a class="gl-more" href="../glossary.html#glossary-shame">Full definition →</a></span></span> on top of fear and makes the resistance heavier.</p>
+</li>
+</ul>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-action-items-exercises">Action Items &amp; Exercises</h2>
+<ol>
+<li>
+<p><strong>Catch the distraction, not the <span class="gl" tabindex="0">avoidance<span class="gl-pop" role="tooltip"><span class="gl-def">Avoidance is the largely subconscious impulse to move away from a negative emotion or the situation that triggers it, rather than moving toward something positive.</span><a class="gl-more" href="../glossary.html#glossary-avoidance">Full definition →</a></span></span>.</strong> The next time you can't bring yourself to do something, pay attention to what you do <em>instead</em>. That pivot to your phone, to food, to social media — that's the signal. Note it without judgment: "I was about to do X and instead I picked up my phone."</p>
+</li>
+<li>
+<p><strong>Sit with the discomfort for 60 seconds before distracting.</strong> When you notice yourself avoiding something, try pausing before reaching for the distraction. Don't force yourself to do the task — just sit with the thought of doing it and let whatever comes up, come up. You may start to feel something you've been automatically suppressing.</p>
+</li>
+<li>
+<p><strong>Ask "what's the worst case scenario I'm actually afraid of?"</strong> Not the logical answer, but the emotional one. For the email, it wasn't "I don't have time" — it was "the professor will see me as lazy and incompetent." Naming the specific fear is the first step to working with it rather than running from it.</p>
+</li>
+<li>
+<p><strong>When you feel tired and unmotivated, check for specificity.</strong> Ask yourself: am I too tired to do <em>anything</em>, or am I only too tired to do <em>this</em>? If tiredness is conveniently confined to one task, treat it as a potential signal of emotional resistance rather than a physiological state.</p>
+</li>
+<li>
+<p><strong>Rephrase the problem.</strong> Instead of "I need to get motivated to do X," try "something about doing X is generating a feeling I'm trying to avoid — what might that be?" This reframe points your attention in the right direction and takes the self-blame out of the equation.</p>
+</li>
+</ol>
+</section></article>
+    </div>
+  </div>
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      
+      <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
 <p>- One of the confusing things about <span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span> is that, oftentimes we kind of know exactly what we need to do, but we can&#x27;t seem to bring ourselves to do it. And this is sort of the quintessential, motivational struggle that people have, right? I know what&#x27;s good for me. I know I should eat healthier. I know I should wake up earlier. I know I should exercise more. I know I should work on my resume. I know I should do all these things, but I can&#x27;t bring myself to do it. And so, what we sort of think of is we think, &quot;Oh my God, I need <span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span>, I need to find more <span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span>, I lack <span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span>.&quot;</p>
 <p>But this is something that I&#x27;d really like to dig into because I think part of the reason that this is so hard to fix is because we actually misdiagnosed the problem. So, as an <span class="gl" tabindex="0">addiction<span class="gl-pop" role="tooltip"><span class="gl-def">The use of a chemical (alcohol, opioids, cannabis, caffeine, etc.) that produces neurological effects your brain then adapts to — leading to tolerance, withdrawal, and, potentially, addiction.</span><a class="gl-more" href="../glossary.html#glossary-substance-use">Full definition →</a></span></span> psychiatrist, I work with a lot of people who really want to make changes in their lives. And so, for example, if you&#x27;re addicted to a substance, so, for example, one time I had a patient who was addicted to heroin and the heroin was just ruining every part of their life. So, they were running into trouble with work. They were like missing work. They were sort of getting put on probation. They had legal trouble.</p>
 <p>There was a lot of financial stress because they were spending a lot of money buying drugs. From a relationship standpoint, they were also running into a lot of trouble, on the brink of divorce because of their <span class="gl" tabindex="0">substance use<span class="gl-pop" role="tooltip"><span class="gl-def">The use of a chemical (alcohol, opioids, cannabis, caffeine, etc.) that produces neurological effects your brain then adapts to — leading to tolerance, withdrawal, and, potentially, addiction.</span><a class="gl-more" href="../glossary.html#glossary-substance-use">Full definition →</a></span></span>. And so, as I was working with this person, I was kind of really shocked, because despite all of these reasons to quit, they just weren&#x27;t able to. And at the very beginning, I used to think, Oh, this is just because they&#x27;re addicted, right? This is just something that&#x27;s in their brain. It&#x27;s not anything more complicated than that. This is just a biological <span class="gl" tabindex="0">addiction<span class="gl-pop" role="tooltip"><span class="gl-def">The use of a chemical (alcohol, opioids, cannabis, caffeine, etc.) that produces neurological effects your brain then adapts to — leading to tolerance, withdrawal, and, potentially, addiction.</span><a class="gl-more" href="../glossary.html#glossary-substance-use">Full definition →</a></span></span> that they just sort of drew the short straw in life.</p>
@@ -73,15 +193,21 @@ try {
 <p>And if it keeps you from doing something, that&#x27;s a clue that the tiredness could be the umbrella or it could be sort of the camouflage for the emotional resistance underneath. So, oddly enough, I know it sounds kind of strange, but if you find yourself to be lacking <span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span>, what you really needed to look at is what&#x27;s the resistance at work here? What&#x27;s getting in the way of your <span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span>. And the tricky thing about that is that, you may not feel a very powerful emotion right at the get go. It won&#x27;t necessarily be like that situation where you&#x27;re about to go on stage. Instead, chances are what&#x27;s gonna happen is, as that emotion starts to rise up, your mind tries to protect you from it by engaging in a distraction.</p>
 <p>And we know there&#x27;s numerous FMRI studies, which look at It&#x27;s a functional imaging study of the brain, which look at blood flow to the emotional centers of our brain. And when we engage in distracting activities, we actually reduce the blood flow to our negative emotional circuitry within the brain. So, if you&#x27;re someone who kind of goes into these situations where you logically should do something, but you can&#x27;t bring yourself to do it and you wind up distracting yourself with something else, the answer could be that emotional resistance. And we&#x27;ll teach you a little bit more about how to unpack what that is, and how to dig into it.</p>
 </section></article>
+    </div>
   </div>
+  
 
-  <p class="meta">Transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> → Resistance). Captions auto-generated.</p>
+  <p class="meta">Medium summary + transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> → Resistance). Captions auto-generated; summary by claude-sonnet-4-6.</p>
 </div>
 
 <script>
 (function () {
   var root = document.documentElement;
-  var tb = document.querySelector('.theme-toggle');
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'medium');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
   var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
   tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
@@ -89,6 +215,9 @@ try {
   function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
   var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+  function navigateTo(id){ var el=id&&document.getElementById(id); if(!el)return; var v=el.closest('.view'); if(v)setView(v.getAttribute('data-view')); el.scrollIntoView(); }
+  window.addEventListener('hashchange', function(){ navigateTo(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash) navigateTo(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>
 <script>

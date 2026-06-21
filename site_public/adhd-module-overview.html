@@ -9,7 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-} catch (e) {}
+  document.documentElement.setAttribute('data-view', 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -31,9 +32,153 @@ try {
     <span class="speakers-note">11:24 min</span>
   </p>
 
-  <div class="doc">
+  
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">1,681w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">2,102w</span></button>
     
-    <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
+  </div>
+  
+
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#summary-summary">Summary</a></li>
+<li><a href="#summary-the-real-difference-between-doing-and-trying">The Real Difference Between Doing and Trying</a></li>
+<li><a href="#summary-attention-is-the-foundation-of-motivation">Attention Is the Foundation of Motivation</a></li>
+<li><a href="#summary-why-attention-is-getting-harder-for-everyone">Why Attention Is Getting Harder for Everyone</a></li>
+<li><a href="#summary-where-desires-come-from-and-why-that-matters">Where Desires Come From — and Why That Matters</a></li>
+<li><a href="#summary-the-neuroscience-side-reward-circuits-and-dopamine">The Neuroscience Side: Reward Circuits and Dopamine</a></li>
+<li><a href="#summary-resistance-the-part-of-you-that-sabotages-yourself">Resistance: The Part of You That Sabotages Yourself</a></li>
+<li><a href="#summary-the-five-emotional-blocks-samskaras">The Five Emotional Blocks (Samskaras)</a></li>
+<li><a href="#summary-environment-and-goals-the-overlooked-variables">Environment and Goals: The Overlooked Variables</a></li>
+<li><a href="#summary-adhd-parenting-and-co-occurring-conditions">ADHD, Parenting, and Co-Occurring Conditions</a></li>
+<li><a href="#summary-common-pitfalls">Common Pitfalls</a></li>
+<li><a href="#summary-action-items-exercises">Action Items &amp; Exercises</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="summary-summary">Summary</h2>
+<p><strong>TL;DR — The gap between people who do things and people who try to do things isn't willpower or discipline. It's a set of learnable mental mechanics, and understanding them is the first step to changing.</strong></p>
+<p>Most of us assume that people who consistently accomplish their goals have something we don't — more drive, more self-control, some innate quality we were shortchanged on. That assumption is wrong, and it's also the thing keeping you stuck. The real differences involve attention, <span class="gl" tabindex="0">desire<span class="gl-pop" role="tooltip"><span class="gl-def">One of the four classical Hindu goals of life, Kama is the pursuit of pleasure, desire, and sensory enjoyment — including but not limited to sexuality and lust.</span><a class="gl-more" href="../glossary.html#glossary-kama">Full definition →</a></span></span>, reward circuitry, resistance, environment, and how goals are framed — all of which can be understood and worked with. This piece maps the full terrain.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-the-real-difference-between-doing-and-trying">The Real Difference Between Doing and Trying</h2>
+<p>There are two kinds of people: those who do stuff, and those who try to do stuff. If you've spent years wishing you had more discipline, more <span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span>, or more willpower — you're in the second camp. Most people in that camp are.</p>
+<p>Here's what's counterintuitive: people who consistently accomplish things aren't necessarily more motivated, more disciplined, or more driven than you. The gap isn't a character deficit. It's a gap in understanding <em>how the mind actually works</em> and how to work with it instead of against it.</p>
+<p>The goal isn't to become a different person. It's to understand the machinery.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-attention-is-the-foundation-of-motivation">Attention Is the Foundation of Motivation</h2>
+<p><span class="gl" tabindex="0">Motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span> and attention aren't separate problems — they're the same problem.</p>
+<p>Think about why you don't get things done. It's almost never that you <em>can't</em> physically do it. You sit down to study and your phone pulls you away. You plan to spend a weekend learning something new and you end up on a video game. The obstacle isn't your body or your capability. It's that you can't direct your mind where you want it to go.</p>
+<blockquote>
+<p>"Those of us that are able to actually consistently maintain <span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span> are those that are able to consistently maintain focus. The two are actually one and the same."</p>
+</blockquote>
+<p>This is why understanding attention — including <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> — is central to understanding <span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span>. If your attention is fragmented, your <span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span> will be too, no matter how much you want something.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-why-attention-is-getting-harder-for-everyone">Why Attention Is Getting Harder for Everyone</h2>
+<p>Attentional difficulty isn't just a clinical issue anymore — it's a societal one. Technology is specifically engineered to capture and redirect your attention, and it's getting better at that job every year. Notifications, short-form content, algorithmic feeds — all of it is fracturing the capacity to focus on one thing.</p>
+<p>This matters for everyone, not just people with an <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> diagnosis. The baseline level of attentional difficulty in the general population is rising. What used to be a clinical problem is increasingly a near-universal experience.</p>
+<p>Understanding the neuroscience and psychology of attention isn't just useful for people with <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span>. It's essential <span class="gl" tabindex="0">knowledge<span class="gl-pop" role="tooltip"><span class="gl-def">Vidya is objective, transmissible information — the kind of knowledge that can be written in a textbook, proven to another person, or exchanged between minds.</span><a class="gl-more" href="../glossary.html#glossary-vidya">Full definition →</a></span></span> for anyone trying to function in a world designed to pull your focus apart.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-where-desires-come-from-and-why-that-matters">Where Desires Come From — and Why That Matters</h2>
+<p>Yoga philosophy offers something surprisingly practical here: most of our <span class="gl" tabindex="0">desires<span class="gl-pop" role="tooltip"><span class="gl-def">Desires are signals generated by the sense organs (the indriyas) that point toward something you currently lack — creating a gap between what you have and what you want.</span><a class="gl-more" href="../glossary.html#glossary-desires">Full definition →</a></span></span> originate through our sense organs — what the tradition calls <strong>indriyas</strong>. You see someone with a great physique and suddenly you "want" to get in shape. You watch someone drive a nice car and you "want" financial success. You don't generate these <span class="gl" tabindex="0">desires<span class="gl-pop" role="tooltip"><span class="gl-def">Desires are signals generated by the sense organs (the indriyas) that point toward something you currently lack — creating a gap between what you have and what you want.</span><a class="gl-more" href="../glossary.html#glossary-desires">Full definition →</a></span></span> in a vacuum; they're often born of what you're exposed to.</p>
+<p>This raises a question most people never ask: <em>Where did my goal come from in the first place?</em></p>
+<p>If you never examine that, you can spend enormous energy chasing a goal that wasn't really yours to begin with — or one that's framed in a way that guarantees paralysis rather than action.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-the-neuroscience-side-reward-circuits-and-dopamine">The Neuroscience Side: Reward Circuits and Dopamine</h2>
+<p>At the neurological level, doing stuff is about rewards. The brain's <span class="gl" tabindex="0">dopamine<span class="gl-pop" role="tooltip"><span class="gl-def">A neurotransmitter that drives motivation, behavioral reinforcement, and craving — not simply the feeling of pleasure.</span><a class="gl-more" href="../glossary.html#glossary-dopamine">Full definition →</a></span></span> and reward circuitry is constantly running calculations: <em>is this worth the effort?</em> That circuitry governs behavior whether you're aware of it or not.</p>
+<p>Understanding this matters because <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span>, in particular, involves differences in how the brain processes reward and <span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span> — not a simple deficiency in effort or character. When you understand what your brain is actually optimizing for, you can start to design your environment and goals to work <em>with</em> that circuitry instead of expecting sheer willpower to override it.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-resistance-the-part-of-you-that-sabotages-yourself">Resistance: The Part of You That Sabotages Yourself</h2>
+<p>One of the most disorienting experiences in trying to get things done is this: you genuinely <em>want</em> something, and yet when the moment comes to act, you don't. The job application sits there. The project file goes unopened. The gym shoes stay by the door.</p>
+<p>This isn't laziness. It's <strong>resistance</strong> — and it's a real psychological phenomenon. Parts of the mind actively work against goals that another part has consciously committed to. The "you" that wants something and the "you" that avoids it are both real.</p>
+<blockquote>
+<p>"I can want to do something, but then when I try to do it, I don't want to do it — which is kind of weird, right? 'Cause I want to do it, but I also don't want to do it. So who is the me that wants to do it, and what the hell gets in the way?"</p>
+</blockquote>
+<p>Understanding resistance — where it comes from and how it operates — is a prerequisite for getting past it. Trying harder in the face of resistance usually doesn't work. Understanding it does.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-the-five-emotional-blocks-samskaras">The Five Emotional Blocks (Samskaras)</h2>
+<p>Embedded in the mind are what yoga calls <strong><span class="gl" tabindex="0">samskaras<span class="gl-pop" role="tooltip"><span class="gl-def">A samskara is a ball of undigested emotional energy from past experiences that gets stored in the mind and automatically activates in present situations, distorting your perception of what&#x27;s actually happening.</span><a class="gl-more" href="../glossary.html#glossary-samskara">Full definition →</a></span></span></strong> — emotional patterns that generate recurring thought loops. Five are particularly relevant to doing stuff:</p>
+<ul>
+<li><em>"It doesn't matter what I do."</em> (helplessness)</li>
+<li><em>"I'm not quite ready yet."</em> (perpetual preparation as <span class="gl" tabindex="0">avoidance<span class="gl-pop" role="tooltip"><span class="gl-def">Avoidance is the largely subconscious impulse to move away from a negative emotion or the situation that triggers it, rather than moving toward something positive.</span><a class="gl-more" href="../glossary.html#glossary-avoidance">Full definition →</a></span></span>)</li>
+<li><em>"I won't be able to do this."</em> (preemptive defeat)</li>
+<li><em>"Other people can do it, but not me."</em> (<span class="gl" tabindex="0">identity<span class="gl-pop" role="tooltip"><span class="gl-def">A stable sense of who you are, built from the narrative integration of emotionally salient experiences — not a fixed trait you possess, but a story you construct by stringing together the moments in your life that…</span><a class="gl-more" href="../glossary.html#glossary-identity">Full definition →</a></span></span>-level exclusion)</li>
+<li>And related variations of these themes</li>
+</ul>
+<p>These aren't just random thoughts. They're patterned responses that reliably short-circuit action. Recognizing which ones are active for you is itself a form of leverage.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-environment-and-goals-the-overlooked-variables">Environment and Goals: The Overlooked Variables</h2>
+<p>The people and spaces around you are shaping your <span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span> constantly, often without your <span class="gl" tabindex="0">awareness<span class="gl-pop" role="tooltip"><span class="gl-def">The capacity to accurately receive and process information about what is happening — in your environment, your body, or your mind — so that your brain can respond appropriately.</span><a class="gl-more" href="../glossary.html#glossary-awareness">Full definition →</a></span></span>. Your environment can actively cultivate your capacity to get things done — or quietly destroy it. The company you keep, the spaces you inhabit, the default activities available to you: all of it matters.</p>
+<p>Goal-setting itself is also more complicated than it looks. Most people skip the critical step of examining whether a goal will actually <em>inspire</em> action or create paralysis. A goal that's too abstract, too overwhelming, or too far removed from any near-term reward often produces the opposite of <span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span> — it produces <span class="gl" tabindex="0">avoidance<span class="gl-pop" role="tooltip"><span class="gl-def">Avoidance is the largely subconscious impulse to move away from a negative emotion or the situation that triggers it, rather than moving toward something positive.</span><a class="gl-more" href="../glossary.html#glossary-avoidance">Full definition →</a></span></span>. Getting goal-setting right is a skill, not just a matter of ambition.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-adhd-parenting-and-co-occurring-conditions">ADHD, Parenting, and Co-Occurring Conditions</h2>
+<p>For parents of children with <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span>, the challenge isn't just medical management — it completely reshapes how parenting works. Unlike a condition you can manage with a daily medication and move on, <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> touches every routine: getting to school, eating meals, screens, attention, listening, boundaries. Every day involves friction. Parents dealing with this are carrying a significant and often underacknowledged load.</p>
+<p><span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> also doesn't travel alone. It correlates meaningfully with <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span>, mood difficulties, <span class="gl" tabindex="0">depression<span class="gl-pop" role="tooltip"><span class="gl-def">A disruption in mood and functioning that exists on a spectrum — not a single, uniform illness.</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span>, and <span class="gl" tabindex="0">addiction<span class="gl-pop" role="tooltip"><span class="gl-def">The use of a chemical (alcohol, opioids, cannabis, caffeine, etc.) that produces neurological effects your brain then adapts to — leading to tolerance, withdrawal, and, potentially, addiction.</span><a class="gl-more" href="../glossary.html#glossary-substance-use">Full definition →</a></span></span>. Childhood <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span>, in particular, significantly raises the likelihood of clinical <span class="gl" tabindex="0">depression<span class="gl-pop" role="tooltip"><span class="gl-def">A disruption in mood and functioning that exists on a spectrum — not a single, uniform illness.</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span> in adulthood. Understanding these connections matters for anyone managing <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> — in themselves or in a child.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-common-pitfalls">Common Pitfalls</h2>
+<ul>
+<li><strong>Attributing the gap to willpower.</strong> The assumption that people who accomplish things are just more disciplined leads you to try harder at the wrong thing. The actual levers are attention, environment, resistance, and goal design.</li>
+<li><strong>Treating your goals as given.</strong> Most people never question whether their goals are actually theirs, actually achievable, or framed in a way that produces action. Unexamined goals are often the ones that go nowhere.</li>
+<li><strong>Expecting insight alone to fix things.</strong> Understanding <span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span> conceptually is a starting point, not the destination. Neuroscience, <span class="gl" tabindex="0">samskaras<span class="gl-pop" role="tooltip"><span class="gl-def">A samskara is a ball of undigested emotional energy from past experiences that gets stored in the mind and automatically activates in present situations, distorting your perception of what&#x27;s actually happening.</span><a class="gl-more" href="../glossary.html#glossary-samskara">Full definition →</a></span></span>, and attention theory are tools — they need to be applied.</li>
+<li><strong>Thinking <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span>-style attention problems only apply to diagnosed people.</strong> If you find yourself constantly distracted, that's relevant information regardless of whether you have a clinical diagnosis.</li>
+<li><strong>Treating resistance as laziness.</strong> Calling yourself lazy when you're experiencing resistance is misdiagnosis. It explains nothing and helps nothing. The two look similar from the outside but require completely different responses.</li>
+</ul>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-action-items-exercises">Action Items &amp; Exercises</h2>
+<ol>
+<li>
+<p><strong>Ask where your goals came from.</strong> Pick one major goal you're currently pursuing and trace it back. Did it originate from something you saw, something someone told you, something you genuinely want? Is it yours, or did it come in through your sense organs as exposure to someone else's life?</p>
+</li>
+<li>
+<p><strong>Notice the moment of resistance.</strong> The next time you avoid something you said you wanted to do, don't label it laziness. Get curious: what exactly happens in the moment before you divert? What thought or feeling precedes the <span class="gl" tabindex="0">avoidance<span class="gl-pop" role="tooltip"><span class="gl-def">Avoidance is the largely subconscious impulse to move away from a negative emotion or the situation that triggers it, rather than moving toward something positive.</span><a class="gl-more" href="../glossary.html#glossary-avoidance">Full definition →</a></span></span>? Just observe it without judgment first.</p>
+</li>
+<li>
+<p><strong>Audit your attention environment.</strong> For one day, track every time your attention gets pulled away from something you intended to focus on. What pulled it? Phone? Notification? Social feed? Build a picture of where your attention is actually going versus where you want it to go.</p>
+</li>
+<li>
+<p><strong>Identify your <span class="gl" tabindex="0">samskara<span class="gl-pop" role="tooltip"><span class="gl-def">A samskara is a ball of undigested emotional energy from past experiences that gets stored in the mind and automatically activates in present situations, distorting your perception of what&#x27;s actually happening.</span><a class="gl-more" href="../glossary.html#glossary-samskara">Full definition →</a></span></span>.</strong> Of the five emotional blocks listed above, which one shows up most reliably for you? Write it down. Notice when it appears over the next week. Simply naming it when it arises — "there's the 'I'm not ready' pattern" — begins to create distance from it.</p>
+</li>
+<li>
+<p><strong>Redesign one environmental variable.</strong> Pick one context where your <span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span> consistently fails and change something physical about it: where you work, what's accessible, who you're around. Don't rely on willpower to override the environment — change the environment.</p>
+</li>
+<li>
+<p><strong>Reframe an overwhelming goal into a near-term action.</strong> Take a goal that currently feels paralyzing and ask: what is the smallest action that would be a real step toward it? Not a plan, not preparation — an action. Make it small enough that resistance can't justify avoiding it.</p>
+</li>
+</ol>
+</section></article>
+    </div>
+  </div>
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      
+      <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
 <p>- All human beings want to be able to do stuff. We all wanna get straight A&#x27;s, we all want to get in shape. We all wanna be professionally successful and have healthy relationships. The problem, however, is that there are two kinds of people. There are those people that actually do stuff and those people that try to do stuff. And so what I&#x27;d love to do over the course of &quot;Dr. K&#x27;s Guide to <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> and Doing Stuff&quot;, is help you understand what&#x27;s the difference between these two things. And if you&#x27;re like me, you&#x27;re in that camp of people who tries to do stuff, and looks at those people who are capable of doing things and says things to your yourself, like, &quot;Man I wish I wasn&#x27;t so lazy.</p>
 <p>I wish I had more discipline like that person does. I wish I had more willpower.&quot; And when we look at those people who are highly motivated, we think to ourselves, &quot;Wow, that person is so amazing. They&#x27;re so disciplined.&quot; The tricky thing is that if you actually talk to that person and believe me, I&#x27;ve talked to a lot of those people, what you discover is that those people aren&#x27;t actually that different from us, that people who consistently accomplish things aren&#x27;t necessarily more motivated, have more willpower, or even more discipline. I know that at least in terms of my life, I&#x27;m basically the same person.</p>
 <p>I was lazy 20 years ago and I&#x27;m still lazy now but I&#x27;m able to accomplish so much more. And so what I&#x27;d like to do today is to dive into what are the components of this thing called <span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span>? What&#x27;s the difference between someone who actually does stuff and someone who just tries to do stuff. So this journey starts, like most things that we teach, with yoga. So thankfully, the tradition of yoga has all of these yogis that are sitting in caves in the Himalayas for thousands of years. And what they&#x27;re doing day in and day out, year after year, is studying their mind. And they discovered some really, really basic stuff that I think it&#x27;s criminal that we don&#x27;t actually teach.</p>
@@ -53,15 +198,21 @@ try {
 <p>We never think critically about where our dreams came from in the first place. We never think critically about, is my dream fundamentally achievable? Is my dream something that is going to actually inspire me to act, or is my dream so overwhelming, so unreachable, that it actually causes me to feel paralyzed? So we&#x27;ll dig into a lot of how to actually set goals, common pitfalls in goals, and also some kinds of tricks that our mind plays on us. We&#x27;ll explore five different <span class="gl" tabindex="0">samskaras<span class="gl-pop" role="tooltip"><span class="gl-def">A samskara is a ball of undigested emotional energy from past experiences that gets stored in the mind and automatically activates in present situations, distorting your perception of what&#x27;s actually happening.</span><a class="gl-more" href="../glossary.html#glossary-samskara">Full definition →</a></span></span>. These are sort of emotional blocks that populate our mind with particular thoughts. These are thoughts like, it doesn&#x27;t matter what I do.</p>
 <p>Or, I&#x27;m not quite ready yet. Or, I won&#x27;t be able to this. Even though other people could do something like that, I&#x27;m not going to be able to. So this module is all about doing stuff. It&#x27;s all about understanding, okay, fine, there are two types of people in this world, those people who do stuff and those people who try to do stuff. And by sort of understanding what the difference is, by understanding all of the components of actually doing stuff, we hope to be able to shift you from one camp to the other.</p>
 </section></article>
+    </div>
   </div>
+  
 
-  <p class="meta">Transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> → Core <span class="gl" tabindex="0">Knowledge<span class="gl-pop" role="tooltip"><span class="gl-def">Vidya is objective, transmissible information — the kind of knowledge that can be written in a textbook, proven to another person, or exchanged between minds.</span><a class="gl-more" href="../glossary.html#glossary-vidya">Full definition →</a></span></span>: Starter Path). Captions auto-generated.</p>
+  <p class="meta">Medium summary + transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> → Core <span class="gl" tabindex="0">Knowledge<span class="gl-pop" role="tooltip"><span class="gl-def">Vidya is objective, transmissible information — the kind of knowledge that can be written in a textbook, proven to another person, or exchanged between minds.</span><a class="gl-more" href="../glossary.html#glossary-vidya">Full definition →</a></span></span>: Starter Path). Captions auto-generated; summary by claude-sonnet-4-6.</p>
 </div>
 
 <script>
 (function () {
   var root = document.documentElement;
-  var tb = document.querySelector('.theme-toggle');
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'medium');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
   var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
   tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
@@ -69,6 +220,9 @@ try {
   function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
   var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+  function navigateTo(id){ var el=id&&document.getElementById(id); if(!el)return; var v=el.closest('.view'); if(v)setView(v.getAttribute('data-view')); el.scrollIntoView(); }
+  window.addEventListener('hashchange', function(){ navigateTo(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash) navigateTo(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>
 <script>

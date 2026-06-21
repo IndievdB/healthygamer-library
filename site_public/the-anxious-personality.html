@@ -9,7 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-} catch (e) {}
+  document.documentElement.setAttribute('data-view', 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -31,9 +32,125 @@ try {
     <span class="speakers-note">16:55 min</span>
   </p>
 
-  <div class="doc">
+  
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">1,451w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">2,921w</span></button>
     
-    <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
+  </div>
+  
+
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#summary-summary">Summary</a></li>
+<li><a href="#summary-hardware-vs-software-two-sources-of-anxiety">Hardware vs. Software: Two Sources of Anxiety</a></li>
+<li><a href="#summary-the-strange-situation-where-attachment-styles-come-from">The Strange Situation: Where Attachment Styles Come From</a></li>
+<li><a href="#summary-the-four-attachment-styles">The Four Attachment Styles</a></li>
+<li><a href="#summary-why-this-matters-for-how-you-experience-the-world">Why This Matters for How You Experience the World</a></li>
+<li><a href="#summary-common-pitfalls">Common Pitfalls</a></li>
+<li><a href="#summary-action-items-exercises">Action Items &amp; Exercises</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="summary-summary">Summary</h2>
+<p><strong>TL;DR — Some people aren't anxious because something went wrong recently; they're anxious because their brain was wired that way in childhood.</strong> Understanding <em>where</em> that wiring comes from is the first step toward actually changing it.</p>
+<p><span class="gl" tabindex="0">Anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> doesn't always arrive as a discrete illness like <span class="gl" tabindex="0">PTSD<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> or <span class="gl" tabindex="0">panic disorder<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> — something that strikes you from the outside. For some people, the tendency to worry is baked into the hardware: a baseline orientation toward the world that treats even ordinary, safe situations as potential threats. This is what's meant by an <strong>anxious personality</strong>, and it's meaningfully different from an <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> disorder, both in how it developed and in how it can change.</p>
+<p>The roots of this personality type live in early childhood — specifically in a process called <strong><span class="gl" tabindex="0">attachment<span class="gl-pop" role="tooltip"><span class="gl-def">A neurobiologically grounded framework explaining how humans develop the capacity to form bonds with others — and how the quality of those early bonds shapes the way you relate to people for the rest of your life.</span><a class="gl-more" href="../glossary.html#glossary-attachment-theory">Full definition →</a></span></span></strong>, which shapes whether your brain learns to experience the world as fundamentally safe or fundamentally unpredictable.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-hardware-vs-software-two-sources-of-anxiety">Hardware vs. Software: Two Sources of Anxiety</h2>
+<p>It helps to draw a clean line between two kinds of <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span>:</p>
+<ul>
+<li><strong>Illness-based <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span></strong> (software): <span class="gl" tabindex="0">PTSD<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span>, generalized <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> disorder, <span class="gl" tabindex="0">panic disorder<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> — these can develop at any point in life in response to events. They're discrete conditions that can, in principle, be treated with targeted interventions.</li>
+<li><strong>Personality-based <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span></strong> (hardware): A deep, wired tendency to worry that isn't tied to any single event. It's not something that happened <em>to</em> you — it's part of how your brain is organized.</li>
+</ul>
+<p>The hardware/software distinction matters for one practical reason: hardware changes more slowly. You can't just install a patch. But here's the upside — because personality change works at the level of neural wiring (<strong>brain plasticity</strong>), when it does shift, it tends to be more permanent than treating a discrete illness. Who you were ten years ago is genuinely not who you are today. Personality is not fixed; it just moves on a longer timescale.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-the-strange-situation-where-attachment-styles-come-from">The Strange Situation: Where Attachment Styles Come From</h2>
+<p>The foundational experiment for <strong><span class="gl" tabindex="0">attachment theory<span class="gl-pop" role="tooltip"><span class="gl-def">A neurobiologically grounded framework explaining how humans develop the capacity to form bonds with others — and how the quality of those early bonds shapes the way you relate to people for the rest of your life.</span><a class="gl-more" href="../glossary.html#glossary-attachment-theory">Full definition →</a></span></span></strong> goes like this: a one-year-old infant is placed in a room with a parent and some toys. The parent quietly leaves. A stranger enters and keeps their distance. Then the parent returns.</p>
+<p>What happens when the parent comes back reveals a child's <span class="gl" tabindex="0">attachment<span class="gl-pop" role="tooltip"><span class="gl-def">A neurobiologically grounded framework explaining how humans develop the capacity to form bonds with others — and how the quality of those early bonds shapes the way you relate to people for the rest of your life.</span><a class="gl-more" href="../glossary.html#glossary-attachment-theory">Full definition →</a></span></span> style — and, researchers found, traces directly back to how caregivers responded to that child's emotional needs from birth.</p>
+<p>The key mechanism is <strong><span class="gl" tabindex="0">emotional mirroring<span class="gl-pop" role="tooltip"><span class="gl-def">The ability to literally feel what another person is feeling, rather than simply understanding it intellectually.</span><a class="gl-more" href="../glossary.html#glossary-emotional-empathy">Full definition →</a></span></span></strong>: very young children don't know what they're feeling. They look to caregivers to tell them. Watch a toddler trip and fall — they don't cry immediately. They look at the adult first. If the adult laughs, the kid laughs. If the adult panics, the kid cries. Caregivers are literally teaching children what emotions mean and how serious situations are. When that teaching is consistent and appropriate, the child builds a mental model of the world as a logical, safe place. When it's inconsistent or absent, the child's brain can't figure out the rules — and stays on high alert.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-the-four-attachment-styles">The Four Attachment Styles</h2>
+<p><strong>1. Secure <span class="gl" tabindex="0">attachment<span class="gl-pop" role="tooltip"><span class="gl-def">A neurobiologically grounded framework explaining how humans develop the capacity to form bonds with others — and how the quality of those early bonds shapes the way you relate to people for the rest of your life.</span><a class="gl-more" href="../glossary.html#glossary-attachment-theory">Full definition →</a></span></span></strong>
+When the parent returns, the child settles quickly. The world makes sense: there are consistent rules, comfort reliably follows distress, and the caregiver is a safe base to return to. These children grow up adventurous, confident, and able to ask for help. That underlying sense — <em>things will fundamentally be okay</em> — carries forward into adult life.</p>
+<p><strong>2. Insecure (anxious) <span class="gl" tabindex="0">attachment<span class="gl-pop" role="tooltip"><span class="gl-def">A neurobiologically grounded framework explaining how humans develop the capacity to form bonds with others — and how the quality of those early bonds shapes the way you relate to people for the rest of your life.</span><a class="gl-more" href="../glossary.html#glossary-attachment-theory">Full definition →</a></span></span></strong>
+When the parent returns, the child cannot be consoled. They cling, continue crying, and seem to be amplifying distress rather than winding it down. This develops when caregiving is genuinely unpredictable — the classic example being a parent with an alcohol <span class="gl" tabindex="0">addiction<span class="gl-pop" role="tooltip"><span class="gl-def">The use of a chemical (alcohol, opioids, cannabis, caffeine, etc.) that produces neurological effects your brain then adapts to — leading to tolerance, withdrawal, and, potentially, addiction.</span><a class="gl-more" href="../glossary.html#glossary-substance-use">Full definition →</a></span></span>. Some days the child gets comforted when hurt; other days they get yelled at; other days the parent isn't there at all. The child's brain draws the only logical conclusion available: <em>the world is dangerous, and even things that seem safe might not be.</em> Everyday benign situations become threat-adjacent because the pattern-matching system learned to see danger in safe places.</p>
+<p><strong>3. Anxious-ambivalent <span class="gl" tabindex="0">attachment<span class="gl-pop" role="tooltip"><span class="gl-def">A neurobiologically grounded framework explaining how humans develop the capacity to form bonds with others — and how the quality of those early bonds shapes the way you relate to people for the rest of your life.</span><a class="gl-more" href="../glossary.html#glossary-attachment-theory">Full definition →</a></span></span></strong>
+When the parent returns, the child wants comfort but also pushes the parent away — sometimes even hitting them. The caregiver in this case <em>was</em> capable of love and connection, but only some of the time. The child grows up knowing connection is possible, but unable to figure out what triggers it. The result is a personality that simultaneously craves closeness and erects walls against it, because emotional vulnerability has been a source of pain. This often shows up as:
+- Isolating, then craving connection
+- Pushing people away while also resenting them for not being available
+- Difficulty asking for help or expressing emotional needs directly
+- Anger directed at people they actually feel close to</p>
+<blockquote>
+<p>"It almost becomes a protective shell to not care about relationships, because relationships hurt."</p>
+</blockquote>
+<p><strong>4. <span class="gl" tabindex="0">Avoidant attachment<span class="gl-pop" role="tooltip"><span class="gl-def">A pattern of relating to others in which a person keeps people at emotional arm&#x27;s length — not because they don&#x27;t crave connection, but because connection feels dangerous.</span><a class="gl-more" href="../glossary.html#glossary-avoidant-attachment">Full definition →</a></span></span></strong>
+When the parent returns, the child barely reacts. This style develops not necessarily from abuse, but from caregivers who simply weren't emotionally responsive — or who actively discouraged emotional expression ("toughen up," "stop being a baby"). The child learns to suppress emotional needs rather than express them. This pattern is especially common in men, whose upbringing often explicitly trains emotional unavailability.</p>
+<p>In severe cases, deeply ingrained <span class="gl" tabindex="0">attachment<span class="gl-pop" role="tooltip"><span class="gl-def">A neurobiologically grounded framework explaining how humans develop the capacity to form bonds with others — and how the quality of those early bonds shapes the way you relate to people for the rest of your life.</span><a class="gl-more" href="../glossary.html#glossary-attachment-theory">Full definition →</a></span></span> disruptions can develop into what clinicians call <strong><span class="gl" tabindex="0">personality disorders<span class="gl-pop" role="tooltip"><span class="gl-def">A personality disorder is a deeply ingrained distortion in the way a person perceives, internally reacts to, and behaves in the world — not an episodic illness that happens to them, but the fundamental shape of who they…</span><a class="gl-more" href="../glossary.html#glossary-personality-disorders">Full definition →</a></span></span></strong> — when the wiring becomes so rigid that it meaningfully impairs functioning across whole areas of life.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-why-this-matters-for-how-you-experience-the-world">Why This Matters for How You Experience the World</h2>
+<p>The through-line across all the insecure styles is the same: your brain was trained on a world where the rules were either absent, inconsistent, or punishing. So your nervous system runs a heightened-threat model as the default.</p>
+<p>This is not weakness. It's not a character flaw. It's the brain doing exactly what it's supposed to do: learning from experience and building predictions. The problem is that the experiences it learned from weren't representative of the world you live in now.</p>
+<blockquote>
+<p>"Your brain has learned to see danger in safe places."</p>
+</blockquote>
+<p>That explains why anxious personalities often find that standard reassurance doesn't work — telling someone "there's nothing to worry about" doesn't reach the hardware. The wiring itself has to change.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-common-pitfalls">Common Pitfalls</h2>
+<p><strong>Assuming you just have an <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> disorder.</strong>
+If <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> has always been present — not triggered by a specific event but just a background hum — it may be personality-level wiring rather than a discrete illness. The distinction shapes what kind of approach actually helps.</p>
+<p><strong>Expecting a fast fix.</strong>
+Because this is hardware rather than software, approaches that work for discrete <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> disorders (medication, short-term <span class="gl" tabindex="0">CBT<span class="gl-pop" role="tooltip"><span class="gl-def">A structured, results-focused form of psychotherapy that works by breaking a problem — say, procrastination or social anxiety — down into its three components: thoughts, emotions, and behaviors, then targeting each one…</span><a class="gl-more" href="../glossary.html#glossary-cognitive-behavioral-therapy-cbt">Full definition →</a></span></span>) may not produce the same results here. This doesn't mean nothing works — it means expecting change to unfold over months and years, not weeks.</p>
+<p><strong>Thinking personality is permanent.</strong>
+The opposite error is assuming that because it feels deep, it can't move. Brains remain plastic. People genuinely change. The goal isn't to white-knuckle through <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> but to give your brain new, consistent experiences that slowly update the underlying model.</p>
+<p><strong>Misreading the avoidant style as "just being independent."</strong>
+Emotional unavailability that comes from early <span class="gl" tabindex="0">attachment<span class="gl-pop" role="tooltip"><span class="gl-def">A neurobiologically grounded framework explaining how humans develop the capacity to form bonds with others — and how the quality of those early bonds shapes the way you relate to people for the rest of your life.</span><a class="gl-more" href="../glossary.html#glossary-attachment-theory">Full definition →</a></span></span> wounds isn't the same as being naturally self-sufficient. The absence of visible distress doesn't mean the need for connection isn't there.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-action-items-exercises">Action Items &amp; Exercises</h2>
+<ol>
+<li>
+<p><strong>Identify your style.</strong> Review the four <span class="gl" tabindex="0">attachment<span class="gl-pop" role="tooltip"><span class="gl-def">A neurobiologically grounded framework explaining how humans develop the capacity to form bonds with others — and how the quality of those early bonds shapes the way you relate to people for the rest of your life.</span><a class="gl-more" href="../glossary.html#glossary-attachment-theory">Full definition →</a></span></span> styles and sit with which one resonates — not as a diagnosis, but as a starting point for self-understanding. Pay attention to your habitual responses when someone you care about isn't available to you.</p>
+</li>
+<li>
+<p><strong>Trace the pattern back.</strong> Think about what <span class="gl" tabindex="0">emotional mirroring<span class="gl-pop" role="tooltip"><span class="gl-def">The ability to literally feel what another person is feeling, rather than simply understanding it intellectually.</span><a class="gl-more" href="../glossary.html#glossary-emotional-empathy">Full definition →</a></span></span> actually looked like in your home growing up. Was comfort consistent? Were emotional expressions punished? Were caregivers sometimes available and sometimes not? Understanding <em>why</em> your brain wired the way it did can reduce the <span class="gl" tabindex="0">shame<span class="gl-pop" role="tooltip"><span class="gl-def">The emotion triggered by a perceived gap between where you are and where you think you should be.</span><a class="gl-more" href="../glossary.html#glossary-shame">Full definition →</a></span></span> around it.</p>
+</li>
+<li>
+<p><strong>Pursue psychotherapy — especially relational therapy.</strong> <span class="gl" tabindex="0">Attachment<span class="gl-pop" role="tooltip"><span class="gl-def">A neurobiologically grounded framework explaining how humans develop the capacity to form bonds with others — and how the quality of those early bonds shapes the way you relate to people for the rest of your life.</span><a class="gl-more" href="../glossary.html#glossary-attachment-theory">Full definition →</a></span></span> patterns were built through relationship; they are most effectively rewired through relationship. A consistent, reliable therapeutic relationship gives your brain repeated new data: <em>this person responds predictably, and that's safe.</em></p>
+</li>
+<li>
+<p><strong>Invest deliberately in consistent, healthy relationships.</strong> Every relationship where your emotional needs are met reliably and appropriately is a small deposit toward rewiring your <span class="gl" tabindex="0">attachment<span class="gl-pop" role="tooltip"><span class="gl-def">A neurobiologically grounded framework explaining how humans develop the capacity to form bonds with others — and how the quality of those early bonds shapes the way you relate to people for the rest of your life.</span><a class="gl-more" href="../glossary.html#glossary-attachment-theory">Full definition →</a></span></span> model. Seek out and maintain people who respond consistently — and notice when they do.</p>
+</li>
+<li>
+<p><strong>Practice tolerating the <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> rather than escaping it.</strong> When a safe situation triggers a disproportionate anxious response, notice it without immediately fleeing or over-managing it. The goal isn't to feel nothing; it's to accumulate evidence that the threat your brain predicted didn't materialize.</p>
+</li>
+<li>
+<p><strong>Set a long time horizon.</strong> Personality-level change is real but slow. Rather than measuring progress week to week, look back at who you were a year or two ago. Use that longer lens to track movement.</p>
+</li>
+</ol>
+</section></article>
+    </div>
+  </div>
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      
+      <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
 <p>- So now I&#x27;d like to talk a little bit about what I call the anxious personality. When we think about impairment or suffering from a psychiatric perspective, we can think about it originating from two different places. One is an illness, which is something that happens to you. If I&#x27;m healthy and then an illness like the flu comes from outside and affects me, but in psychiatry, we also have another source of potential <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span>, which could be part of who you are and is more hardwired into you. Some people have what I call an anxious personality, and you can think about this a little bit like hardware and software.</p>
 <p>Software can be changed, replaced, modified relatively easily. Much like a computer virus, illnesses like <span class="gl" tabindex="0">PTSD<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> or <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> can kind of strike out of the blue. You&#x27;re not born with <span class="gl" tabindex="0">PTSD<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span>. Your personality and the way you view the world is more like hardware. It&#x27;s the way that your neurons are wired. It is kind of like some people who have an addictive personality. They don&#x27;t necessarily have a particular <span class="gl" tabindex="0">addiction<span class="gl-pop" role="tooltip"><span class="gl-def">The use of a chemical (alcohol, opioids, cannabis, caffeine, etc.) that produces neurological effects your brain then adapts to — leading to tolerance, withdrawal, and, potentially, addiction.</span><a class="gl-more" href="../glossary.html#glossary-substance-use">Full definition →</a></span></span>, but their brain is wired to get really, really intensely into things. In that same way, sometimes people don&#x27;t really have a clinical illness per se, but their brain is wired to have a tendency to worry, and the good news is that even with personality, you can still change things because your brain has this quality called plasticity, which makes it able to rewire itself.</p>
 <p>So people&#x27;s personality can actually change over the course of their life, but it happens a lot more slowly, and on the upside, when you do rewire your personality, it tends to be more permanent than treatments for other kinds of discreet illnesses, so if you kind of think about it for a second, personality is sort of who you are, but who you were 10 years ago is not the same person that you are today, so it certainly can change and it is more permanent, but it sort of takes a different kind of approach. It&#x27;s not just like simply taking pills or something like that. So where does this anxious personality come from?</p>
@@ -59,15 +176,21 @@ try {
 <p>And then we also have a bunch of stuff in between, like when caregivers are inconsistent or when caregivers tell kids to kind of toughen up, and that also shapes the way that we navigate the world. These <span class="gl" tabindex="0">attachment<span class="gl-pop" role="tooltip"><span class="gl-def">A neurobiologically grounded framework explaining how humans develop the capacity to form bonds with others — and how the quality of those early bonds shapes the way you relate to people for the rest of your life.</span><a class="gl-more" href="../glossary.html#glossary-attachment-theory">Full definition →</a></span></span> styles are part of the way that we&#x27;re wired, and so don&#x27;t really have a discreet, simple treatment, like a pill, but they absolutely can be changed. They&#x27;re a part of our personality, but remember that personality grows and changes over time. So the good news is that even if you fall into one of these <span class="gl" tabindex="0">attachment<span class="gl-pop" role="tooltip"><span class="gl-def">A neurobiologically grounded framework explaining how humans develop the capacity to form bonds with others — and how the quality of those early bonds shapes the way you relate to people for the rest of your life.</span><a class="gl-more" href="../glossary.html#glossary-attachment-theory">Full definition →</a></span></span> styles, there are ways to actually overcome it. So psychotherapy is a really great example.</p>
 <p>Even doing things like engaging in healthy relationships that allow your brain to rewire consistently over time can actually deal with some of these issues. And so overall, the point of this video is to sort of explain that like it&#x27;s not a discreet illness that necessarily causes people to have <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span>. It can sometimes be an anxious personality, and that anxious personality in turn is developed through childhood experiences. So hopefully that&#x27;s helpful, and hopefully it kind of helps you understand yourself just a little bit better.</p>
 </section></article>
+    </div>
   </div>
+  
 
-  <p class="meta">Transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">Anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> → Science of <span class="gl" tabindex="0">Anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span>). Captions auto-generated.</p>
+  <p class="meta">Medium summary + transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">Anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> → Science of <span class="gl" tabindex="0">Anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span>). Captions auto-generated; summary by claude-sonnet-4-6.</p>
 </div>
 
 <script>
 (function () {
   var root = document.documentElement;
-  var tb = document.querySelector('.theme-toggle');
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'medium');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
   var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
   tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
@@ -75,6 +198,9 @@ try {
   function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
   var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+  function navigateTo(id){ var el=id&&document.getElementById(id); if(!el)return; var v=el.closest('.view'); if(v)setView(v.getAttribute('data-view')); el.scrollIntoView(); }
+  window.addEventListener('hashchange', function(){ navigateTo(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash) navigateTo(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>
 <script>

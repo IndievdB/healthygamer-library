@@ -9,7 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-} catch (e) {}
+  document.documentElement.setAttribute('data-view', 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -31,9 +32,146 @@ try {
     <span class="speakers-note">15:12 min</span>
   </p>
 
-  <div class="doc">
+  
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">1,548w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">2,792w</span></button>
     
-    <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
+  </div>
+  
+
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#summary-summary">Summary</a></li>
+<li><a href="#summary-trauma-doesnt-break-everyone-the-same-way">Trauma Doesn't Break Everyone the Same Way</a></li>
+<li><a href="#summary-the-five-variables-that-predict-growth">The Five Variables That Predict Growth</a></li>
+<li><a href="#summary-why-appreciation-for-life-gets-shut-down">Why Appreciation for Life Gets Shut Down</a></li>
+<li><a href="#summary-why-the-future-feels-inaccessible-after-trauma">Why the Future Feels Inaccessible After Trauma</a></li>
+<li><a href="#summary-why-connection-feels-hollow">Why Connection Feels Hollow</a></li>
+<li><a href="#summary-why-identity-gets-distorted">Why Identity Gets Distorted</a></li>
+<li><a href="#summary-the-spiritual-variable">The Spiritual Variable</a></li>
+<li><a href="#summary-common-pitfalls">Common Pitfalls</a></li>
+<li><a href="#summary-action-items-exercises">Action Items &amp; Exercises</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="summary-summary">Summary</h2>
+<p><strong>TL;DR — <span class="gl" tabindex="0">Trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> doesn't have to define you. Research on survivors of mass violence shows that most people can grow from traumatic experiences, and that growth follows a predictable pattern you can work toward.</strong></p>
+<p>Most people assume <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> leads inevitably to <span class="gl" tabindex="0">PTSD<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> or lasting damage. But when researchers studied tens of thousands of survivors of genocidal conflict, they found something unexpected: the majority did <em>not</em> develop <span class="gl" tabindex="0">PTSD<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span>. That gap — between people who were destroyed by <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> and people who became stronger — launched the field of post-traumatic growth research. Five variables consistently separate the two groups. Understanding them gives you a map, not just a vague hope.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-trauma-doesnt-break-everyone-the-same-way">Trauma Doesn't Break Everyone the Same Way</h2>
+<p>If a single catastrophic event affects 50,000 people and fewer than half develop <span class="gl" tabindex="0">PTSD<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span>, the <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> alone can't be the whole explanation. Something else is determining the outcome.</p>
+<p>From an evolutionary standpoint, this makes sense. Living organisms need a system that allows them to encounter negative experiences and come out more capable on the other side — otherwise the species couldn't survive repeated adversity. Post-traumatic growth is that system working as intended.</p>
+<p>The important caveat: growth and suffering aren't mutually exclusive. In practice, <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> often disrupts someone's life for a period <em>first</em>, and growth emerges afterward. Missing the immediate growth window doesn't mean you've lost your chance.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-the-five-variables-that-predict-growth">The Five Variables That Predict Growth</h2>
+<p>Researchers compared people who developed <span class="gl" tabindex="0">PTSD<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> with people who grew from their <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> and isolated five consistent differences. People in the growth group showed:</p>
+<ol>
+<li><strong>An appreciation for life</strong></li>
+<li><strong>The ability to consider new possibilities for the future</strong></li>
+<li><strong>A sense of connectedness to others</strong></li>
+<li><strong>A strong personal sense of self</strong></li>
+<li><strong>Some kind of spiritual change</strong></li>
+</ol>
+<p>Reading that list, it's easy to feel defeated — these sound like qualities healthy people already have. But each one is something you can move toward, and understanding <em>why</em> <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> blocks them is the first step.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-why-appreciation-for-life-gets-shut-down">Why Appreciation for Life Gets Shut Down</h2>
+<p>When some part of your body or mind becomes a source of suffering, your brain's natural response is to numb it. That numbing is protective — but it isn't selective. You can't turn down the volume on pain without also turning it down on <span class="gl" tabindex="0">pleasure<span class="gl-pop" role="tooltip"><span class="gl-def">The experience of pleasure that comes from satisfying desires — roughly associated with dopamine and the brain&#x27;s reward circuitry.</span><a class="gl-more" href="../glossary.html#glossary-hedonics">Full definition →</a></span></span>.</p>
+<ul>
+<li>Physical numbing through substances, compulsive behaviors, or even extreme exercise can sever you from bodily experience.</li>
+<li>Emotional numbing cuts you off from the very fuel that makes experiences feel meaningful — excitement, love, joy, connection.</li>
+</ul>
+<blockquote>
+<p>"Once we numb something, we can't selectively numb the bad stuff. We numb the good stuff and the bad stuff."</p>
+</blockquote>
+<p>The path back to appreciation for life starts by reversing that numbing process. Developing <span class="gl" tabindex="0">emotional regulation<span class="gl-pop" role="tooltip"><span class="gl-def">The ability to identify and modify emotional states in ways that support adaptive, goal-directed behavior.</span><a class="gl-more" href="../glossary.html#glossary-emotional-regulation">Full definition →</a></span></span> skills makes it safer to let emotions back in. Gentle body-based practices like yoga or Tai Chi offer a low-stakes way to reconnect with physical sensation — not by forcing positive feeling, but by allowing contrast. The relief of resting after an uncomfortable yoga pose, for example, is a small, genuine experience of the body feeling <em>good</em>. That's where appreciation gets rebuilt, one moment at a time.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-why-the-future-feels-inaccessible-after-trauma">Why the Future Feels Inaccessible After Trauma</h2>
+<p>Untreated <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> doesn't just leave a scar — it pulls the past into the present. Flashbacks are the clearest example: an event that happened years ago is functionally occupying your mind right now, leaving no psychological space for anything forward-looking.</p>
+<blockquote>
+<p>"As long as we are stuck in the past, it is very difficult to consider the future."</p>
+</blockquote>
+<p>The counterintuitive solution is that you can't simply <em>decide</em> to think about the future. The past has to be processed and placed in the past first. Once unresolved memories stop dominating your present experience, your attention naturally begins to open toward possibility. The future doesn't become accessible through willpower — it becomes accessible through working through what happened.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-why-connection-feels-hollow">Why Connection Feels Hollow</h2>
+<p>Many people with <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> histories aren't alone in a literal sense. They have colleagues, family, friends — but the relationships feel surface-level or empty. The issue usually isn't a lack of people; it's a broken emotional channel.</p>
+<p>Genuine connection between people depends on <strong>emotional resonance</strong> — both people experiencing something similar at the same moment. There's research on this: strangers meeting on an unstable, rickety bridge (which generates mild mutual <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span>) report feeling more attracted to each other than strangers meeting on a solid bridge. Shared emotional experience is the mechanism of bonding.</p>
+<p><span class="gl" tabindex="0">Trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> disrupts this in two opposite ways:
+- <strong>Emotional numbness</strong> — you feel little while others around you feel normally, creating a gap.
+- <strong><span class="gl" tabindex="0">Emotional dysregulation<span class="gl-pop" role="tooltip"><span class="gl-def">The inability to reliably identify and modify your emotional states in ways that support adaptive, goal-directed behavior.</span><a class="gl-more" href="../glossary.html#glossary-emotional-dysregulation">Full definition →</a></span></span></strong> — your feelings are so overwhelming and unpredictable that others can't meet you there.</p>
+<p>Either way, the shared emotional ground that connection requires becomes hard to find. Restoring the capacity to feel in a regulated, manageable way is what makes real relationships possible again.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-why-identity-gets-distorted">Why Identity Gets Distorted</h2>
+<p><span class="gl" tabindex="0">Trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> doesn't just hurt you — it teaches you conclusions about yourself. Typically, those conclusions are:</p>
+<ul>
+<li>I am weak.</li>
+<li>I am less capable than other people.</li>
+<li>I am a loser. I won't be able to handle this.</li>
+</ul>
+<p>These aren't just negative thoughts; they become a <strong><span class="gl" tabindex="0">sense of identity<span class="gl-pop" role="tooltip"><span class="gl-def">A stable sense of who you are, built from the narrative integration of emotionally salient experiences — not a fixed trait you possess, but a story you construct by stringing together the moments in your life that…</span><a class="gl-more" href="../glossary.html#glossary-identity">Full definition →</a></span></span></strong>, what is called <em>ahamkar</em> in Sanskrit — the "I-feeling," the felt sense of who you are. When that core self-image becomes contaminated by <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span>, it colors everything.</p>
+<p>The path forward isn't to argue yourself into feeling strong. It's to gradually dissolve the negative self-concept through <span class="gl" tabindex="0">identity<span class="gl-pop" role="tooltip"><span class="gl-def">A stable sense of who you are, built from the narrative integration of emotionally salient experiences — not a fixed trait you possess, but a story you construct by stringing together the moments in your life that…</span><a class="gl-more" href="../glossary.html#glossary-identity">Full definition →</a></span></span> work — practices that create enough space for the underlying, more natural sense of self to re-emerge. Most people have a healthier self-image beneath the traumatized one; they've just lost access to it.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-the-spiritual-variable">The Spiritual Variable</h2>
+<p>This is the least understood of the five. Researchers didn't set out looking for spiritual change — they just compared people in the <span class="gl" tabindex="0">PTSD<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> group with people in the growth group and noticed a consistent pattern: something that functions as spiritual development was present in those who grew.</p>
+<p>What exactly constitutes that change, or what triggers it neurologically, isn't fully known. But the finding is sturdy enough that it can't be dismissed. If you want <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> to become a source of strength rather than a source of ongoing damage, some engagement with a spiritual dimension of life appears to be part of the picture — even if what that looks like is different for every person.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-common-pitfalls">Common Pitfalls</h2>
+<p><strong>Assuming these five qualities are prerequisites, not outcomes.</strong> It's tempting to read the list and think, "Of course people with strong relationships and a sense of self don't get <span class="gl" tabindex="0">PTSD<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> — they were fine to begin with." The point is that these are also <em>products</em> of doing the work. You don't need to arrive with them; you develop them through the process.</p>
+<p><strong>Treating numbness as neutrality.</strong> Many people who have emotionally shut down don't realize they're numb — they just think they're "not emotional" or "not the type to enjoy things." Recognizing the numbing for what it is, a protective strategy that costs you access to positive experience, is essential before anything else can shift.</p>
+<p><strong>Trying to force future-thinking before processing the past.</strong> Journaling about goals or doing visualization exercises won't work if unresolved <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> is still pulling your attention backward. The sequence matters: past first, then present, then future.</p>
+<p><strong>Mistaking surface relationships for connection.</strong> Having people in your life doesn't mean you have the emotional bonds that support growth. If relationships feel functional but hollow, that's a signal — not a personality quirk.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-action-items-exercises">Action Items &amp; Exercises</h2>
+<ol>
+<li>
+<p><strong>Notice your numbing strategies.</strong> For one week, track the things you do when you feel bad — substances, excessive exercise, binge-watching, scrolling. You're not trying to stop them yet; you're just mapping the pattern. <span class="gl" tabindex="0">Awareness<span class="gl-pop" role="tooltip"><span class="gl-def">The capacity to accurately receive and process information about what is happening — in your environment, your body, or your mind — so that your brain can respond appropriately.</span><a class="gl-more" href="../glossary.html#glossary-awareness">Full definition →</a></span></span> of how you numb is the prerequisite for changing it.</p>
+</li>
+<li>
+<p><strong>Start a gentle somatic practice.</strong> Commit to a short yoga or Tai Chi session two to three times per week. Pay specific attention to the moment of rest at the end. That small window of physical relief is a real experience of appreciation — let yourself notice it.</p>
+</li>
+<li>
+<p><strong>Practice tolerating one uncomfortable emotion without numbing it.</strong> When a negative emotion arises, try staying with it for two minutes before doing anything to make it go away. This builds the <span class="gl" tabindex="0">emotional regulation<span class="gl-pop" role="tooltip"><span class="gl-def">The ability to identify and modify emotional states in ways that support adaptive, goal-directed behavior.</span><a class="gl-more" href="../glossary.html#glossary-emotional-regulation">Full definition →</a></span></span> capacity that allows you to eventually feel positive emotions more fully too.</p>
+</li>
+<li>
+<p><strong>Create a shared experience with someone.</strong> Reach out to one person and do something that generates a mild shared emotional state — watch an intense film together, take on a physical challenge, work toward a common goal. Notice whether the conversation feels more real afterward.</p>
+</li>
+<li>
+<p><strong>Write a brief narrative of what happened.</strong> In a private journal, describe a difficult experience in the past tense, as a story with a beginning, middle, and end. The act of giving it narrative structure helps move it from the present into the past, where it belongs.</p>
+</li>
+<li>
+<p><strong>Examine one conclusion <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> taught you about yourself.</strong> Write it down explicitly (e.g., "I am weak" or "I can't handle hard things"). Then write two or three specific examples from your life — however small — that contradict it. You're not trying to overwrite the belief in one sitting; you're introducing friction.</p>
+</li>
+</ol>
+</section></article>
+    </div>
+  </div>
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      
+      <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
 <p>Next up, we&#x27;re going to talk about post -traumatic growth. So this is a really interesting concept, and it&#x27;s fascinating how people discover this. So we were looking at people who had survived genocidal conflict. So these are groups of refugees, like 50,000 people. And when these refugees go to a refugee camp, of course we have an army of psychologists and therapists that are going to help them, right? And the first thing that we discover is really fascinating, that if you have 50,000 people who go through a genocidal conflict, not all of them get <span class="gl" tabindex="0">PTSD<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span>. In fact, a minority of them get <span class="gl" tabindex="0">PTSD<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span>, certainly less than 50%.</p>
 <p>And so people started to wonder, hold on a second, if <span class="gl" tabindex="0">PTSD<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> or some kind of <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span>-related disorder is caused by a <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span>, how is it that there can be one <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> that affects 50,000 people, but the majority of them don&#x27;t actually get traumatized, or are able to move past it in some way. So this is the research that formed the foundation of something called post-traumatic growth. And what we now know is that traumas can actually make you stronger. So there&#x27;s kind of the saying that what doesn&#x27;t kill you makes you stronger. And then as a medical doctor you sort of learn that that ain&#x27;t always true, because what doesn&#x27;t kill you either makes you stronger or cripples you for life, which maybe we shouldn&#x27;t talk about here because we&#x27;re talking about growth and hope.</p>
 <p>But we really do know that it&#x27;s kind of interesting because if you sort of think about it from an evolutionary perspective, what we kind of know is that animals and organisms, living organisms, will go through negative experiences in life. And we must have some kind of system to where even if we go through a negative experience, that we can be stronger because of it on the other side. As living organisms, we need to adapt to negative circumstances and be able to handle them in the future. And this is kind of where post-traumatic growth comes from. So after doing a bunch of research on what separates whether someone gets post-traumatic stress disorder or post-traumatic growth, whether they grow from the experience and become better for it, researchers were able to isolate five variables that correlate with post -traumatic growth.</p>
@@ -58,15 +196,21 @@ try {
 <p>So just to summarize, we know that traumatic experiences don&#x27;t have to destroy the lives of people. And if we look at people who have grown from their <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span>, which by the way for the record, there can be a period of time where it fucks up your life and then you grow after it. That&#x27;s what I&#x27;ve seen as a clinician. So it&#x27;s not like if you missed the boat on growth, now you&#x27;re screwed. No, actually what usually happens is it kind of screws us over for a little bit and then we end up growing afterward. But facilitating that growth involves five things. The first is the ability to appreciate and enjoy life.</p>
 <p>The second is the ability to consider new possibilities. The third is forming connections with the people around us. The fourth is developing a sense of personal strength. And the fifth is some kind of spiritual change. And my hope is that this guide will form the foundation for you to do all five of these things.</p>
 </section></article>
+    </div>
   </div>
+  
 
-  <p class="meta">Transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">Trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> → <span class="gl" tabindex="0">Identity<span class="gl-pop" role="tooltip"><span class="gl-def">A stable sense of who you are, built from the narrative integration of emotionally salient experiences — not a fixed trait you possess, but a story you construct by stringing together the moments in your life that…</span><a class="gl-more" href="../glossary.html#glossary-identity">Full definition →</a></span></span> & <span class="gl" tabindex="0">Samskaras<span class="gl-pop" role="tooltip"><span class="gl-def">A samskara is a ball of undigested emotional energy from past experiences that gets stored in the mind and automatically activates in present situations, distorting your perception of what&#x27;s actually happening.</span><a class="gl-more" href="../glossary.html#glossary-samskara">Full definition →</a></span></span>). Captions auto-generated.</p>
+  <p class="meta">Medium summary + transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">Trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> → <span class="gl" tabindex="0">Identity<span class="gl-pop" role="tooltip"><span class="gl-def">A stable sense of who you are, built from the narrative integration of emotionally salient experiences — not a fixed trait you possess, but a story you construct by stringing together the moments in your life that…</span><a class="gl-more" href="../glossary.html#glossary-identity">Full definition →</a></span></span> & <span class="gl" tabindex="0">Samskaras<span class="gl-pop" role="tooltip"><span class="gl-def">A samskara is a ball of undigested emotional energy from past experiences that gets stored in the mind and automatically activates in present situations, distorting your perception of what&#x27;s actually happening.</span><a class="gl-more" href="../glossary.html#glossary-samskara">Full definition →</a></span></span>). Captions auto-generated; summary by claude-sonnet-4-6.</p>
 </div>
 
 <script>
 (function () {
   var root = document.documentElement;
-  var tb = document.querySelector('.theme-toggle');
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'medium');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
   var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
   tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
@@ -74,6 +218,9 @@ try {
   function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
   var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+  function navigateTo(id){ var el=id&&document.getElementById(id); if(!el)return; var v=el.closest('.view'); if(v)setView(v.getAttribute('data-view')); el.scrollIntoView(); }
+  window.addEventListener('hashchange', function(){ navigateTo(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash) navigateTo(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>
 <script>

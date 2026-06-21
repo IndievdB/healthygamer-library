@@ -9,7 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-} catch (e) {}
+  document.documentElement.setAttribute('data-view', 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -31,9 +32,148 @@ try {
     <span class="speakers-note">29:34 min</span>
   </p>
 
-  <div class="doc">
+  
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">1,822w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">5,805w</span></button>
     
-    <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
+  </div>
+  
+
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#summary-summary">Summary</a></li>
+<li><a href="#summary-procrastination-is-a-feature-not-a-bug">Procrastination Is a Feature, Not a Bug</a></li>
+<li><a href="#summary-the-misdiagnosis-problem">The Misdiagnosis Problem</a></li>
+<li><a href="#summary-type-1-idealistic-procrastination-the-ego-problem">Type 1: Idealistic Procrastination (The Ego Problem)</a></li>
+<li><a href="#summary-type-2-avoidance-procrastination-the-emotion-problem">Type 2: Avoidance Procrastination (The Emotion Problem)</a></li>
+<li><a href="#summary-type-3-operational-procrastination-the-overwhelm-problem">Type 3: Operational Procrastination (The Overwhelm Problem)</a></li>
+<li><a href="#summary-common-pitfalls">Common Pitfalls</a></li>
+<li><a href="#summary-action-items-exercises">Action Items &amp; Exercises</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="summary-summary">Summary</h2>
+<p><strong>TL;DR — Procrastination isn't laziness or a character flaw; it's an efficient brain strategy that has three distinct causes, each requiring a different fix.</strong></p>
+<p>Most advice about procrastination fails because it treats procrastination as one thing and throws generic tips at it. It's not one thing. Your brain procrastinates for real reasons, and until you diagnose <em>which</em> reason is driving you on a given task, no amount of willpower or productivity hacks will stick. Once you identify the type, the solution becomes much clearer.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-procrastination-is-a-feature-not-a-bug">Procrastination Is a Feature, Not a Bug</h2>
+<p>Here's the uncomfortable truth: procrastination is rational. Your brain is doing math.</p>
+<p>Option A: Study every day for 30 days → get an A.
+Option B: Relax for 28 days, grind for 2 days → get a B minus.</p>
+<p>Your brain looks at that trade-off and chooses option B. That's not stupidity — that's efficiency. The fact that <em>everyone</em> procrastinates is actually evidence that it's a built-in feature of human cognition. Biological malfunctions like disease don't affect everyone uniformly; universal behaviors like procrastination do. It's a resource-allocation strategy: do a good enough job in the minimum necessary time.</p>
+<p>The problem isn't that procrastination "doesn't work." In the short term, it often does. The problem is that a long string of B-minuses doesn't distinguish you, and optimizing for comfort today quietly costs you over years.</p>
+<blockquote>
+<p>"Procrastination isn't a problem, it's a solution."</p>
+</blockquote>
+<p>Understanding this reframes the whole challenge. You're not trying to defeat something broken in you — you're trying to upgrade a strategy that works okay into one that works better.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-the-misdiagnosis-problem">The Misdiagnosis Problem</h2>
+<p>If a patient walks into a doctor's office and says "I'm sick," no competent doctor hands them a pill and sends them home. The doctor asks <em>what kind</em> of sick — stomach, lungs, bones, mind? The treatment depends entirely on the diagnosis.</p>
+<p>Procrastination advice fails for the same reason. "Five tips to stop procrastinating" doesn't work because it doesn't ask which procrastination you have. There are (at least) three meaningfully different types, and the solution to each one is completely different.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-type-1-idealistic-procrastination-the-ego-problem">Type 1: Idealistic Procrastination (The Ego Problem)</h2>
+<p>This is perfectionism in disguise. You won't start until you can do it <em>right</em>. You'd rather have a 100% chance of an F than a 20% chance at a merely decent performance.</p>
+<p>The pattern looks like:
+- "I'll sign up for that class once I feel ready."
+- "I won't apply to colleges — except MIT. If I can't get into the best, I'm not going."
+- "If I can't lose 50 pounds, I'm not even starting the diet."</p>
+<p>What's actually going on underneath is <strong>ego protection</strong>. If you do something perfectly, no one can criticize you. If no one can criticize you, your self-image is safe. The flip side: if you <em>try</em> and fall short, you have to hear something uncomfortable about yourself. So the brain short-circuits the whole process — either you'll be flawless, or you won't play.</p>
+<blockquote>
+<p>"You'd rather not compete at all than be second best. Just think about what that means for your life — that's so restrictive."</p>
+</blockquote>
+<p>The fix here isn't a productivity technique. It's ego work. Ask yourself honestly: <em>Why does being less than perfect feel threatening to my <span class="gl" tabindex="0">identity<span class="gl-pop" role="tooltip"><span class="gl-def">A stable sense of who you are, built from the narrative integration of emotionally salient experiences — not a fixed trait you possess, but a story you construct by stringing together the moments in your life that…</span><a class="gl-more" href="../glossary.html#glossary-identity">Full definition →</a></span></span>? What am I actually protecting?</em> When you tunnel down into that question, the logic usually falls apart. Graduating with a 3.0 GPA at 22 is objectively better than being 26 and still polishing a perfect application. The perfectionist fantasy rarely survives contact with honest reflection.</p>
+<p>Working on your ego — developing the ability to tolerate not being the best, to act without guaranteed success — is what unlocks this type of procrastination. The motivational speech version ("just do it!") doesn't help. The internal work does.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-type-2-avoidance-procrastination-the-emotion-problem">Type 2: Avoidance Procrastination (The Emotion Problem)</h2>
+<p>This type is more emotional than intellectual. Your brain isn't avoiding the task — it's avoiding the <em>feeling</em> the task will produce.</p>
+<p>Classic example: you're house-sitting and you flood the bathroom. Your parents call every day to check in. You know you'll eventually have to tell them. You know there's no way to avoid the consequence. And yet — you don't say anything.</p>
+<p>Why? Because the moment you say it, you feel the fear, the <span class="gl" tabindex="0">shame<span class="gl-pop" role="tooltip"><span class="gl-def">The emotion triggered by a perceived gap between where you are and where you think you should be.</span><a class="gl-more" href="../glossary.html#glossary-shame">Full definition →</a></span></span>, the anticipation of their anger. Your brain's job is to protect you — not from the outside world, but from negative internal experience. Negative emotions act as an <strong>override switch</strong> on behavior. Your brain says: <em>don't do that, it's going to hurt</em>.</p>
+<p>The reason generic solutions fail here is that people try to force their way through without ever asking why they're stuck. They push, get frustrated, push harder — and nothing changes.</p>
+<blockquote>
+<p>"We never seek to understand, we only seek to change."</p>
+</blockquote>
+<p>The solution is <strong><span class="gl" tabindex="0">awareness<span class="gl-pop" role="tooltip"><span class="gl-def">The capacity to accurately receive and process information about what is happening — in your environment, your body, or your mind — so that your brain can respond appropriately.</span><a class="gl-more" href="../glossary.html#glossary-awareness">Full definition →</a></span></span>, then emotional digestion</strong>. When you notice you're avoiding a task, pause and ask: <em>What emotion is my brain trying to protect me from right now? What consequence am I actually afraid of?</em> Just naming it — <span class="gl" tabindex="0">shame<span class="gl-pop" role="tooltip"><span class="gl-def">The emotion triggered by a perceived gap between where you are and where you think you should be.</span><a class="gl-more" href="../glossary.html#glossary-shame">Full definition →</a></span></span>, fear of rejection, embarrassment, conflict — starts to loosen its grip. Decades of research on <span class="gl" tabindex="0">meditation<span class="gl-pop" role="tooltip"><span class="gl-def">Meditation is the practice of focusing consciousness completely — until thinking itself falls away and you exist in a state of pure awareness with no mental activity.</span><a class="gl-more" href="../glossary.html#glossary-meditation">Full definition →</a></span></span> and emotional <span class="gl" tabindex="0">detachment<span class="gl-pop" role="tooltip"><span class="gl-def">The Sanskrit term for detachment — specifically, detachment from the outcomes of your actions rather than from the actions themselves.</span><a class="gl-more" href="../glossary.html#glossary-vairagya">Full definition →</a></span></span> show that when you can observe an emotion rather than be controlled by it, you can engage with the task it was blocking.</p>
+<p>The key insight: the emotion is running the show invisibly. Once you make it visible, you have a fighting chance.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-type-3-operational-procrastination-the-overwhelm-problem">Type 3: Operational Procrastination (The Overwhelm Problem)</h2>
+<p>This type has nothing to do with ego or emotion. Your brain simply can't figure out <em>how</em> to start, so it doesn't.</p>
+<p>Research on academic performance illustrates this sharply. Students were categorized by the kinds of thoughts they had about an upcoming chemistry test:</p>
+<ul>
+<li><em>"I want to get an A"</em> → correlation with actually getting an A: <strong>0.36</strong></li>
+<li><em>"I need to study for chemistry"</em> → correlation: <strong>0.36</strong> (essentially identical)</li>
+<li><em>"I'm going to study for chemistry on Wednesday at 3pm in the library"</em> → correlation: <strong>0.65</strong></li>
+</ul>
+<p>The thought that actually predicts success isn't the goal or the <span class="gl" tabindex="0">desire<span class="gl-pop" role="tooltip"><span class="gl-def">One of the four classical Hindu goals of life, Kama is the pursuit of pleasure, desire, and sensory enjoyment — including but not limited to sexuality and lust.</span><a class="gl-more" href="../glossary.html#glossary-kama">Full definition →</a></span></span> — it's the <strong>implementation intention</strong>: a specific when, where, and how. Goals alone don't move behavior. Concrete plans do.</p>
+<p>The reason is neurological. The <span class="gl" tabindex="0">frontal lobes<span class="gl-pop" role="tooltip"><span class="gl-def">The brain region responsible for planning, executing tasks, controlling impulses, and regulating other parts of the brain — essentially the hardware of self-regulation and mature behavior.</span><a class="gl-more" href="../glossary.html#glossary-frontal-lobes">Full definition →</a></span></span> govern executive function — planning, sequencing, executing. When a task is too large and abstract (like "get a job" or "clean the house"), the brain can't chunk it into manageable pieces, gets overwhelmed, and shuts down. The bigger the mess in your room, the harder it feels to start cleaning it — not because you're lazier, but because the cognitive load of planning has exceeded your brain's working capacity.</p>
+<p>The solution is <strong>operationalizing</strong>: breaking the abstract task all the way down into concrete actions, working backwards from the finish line.</p>
+<p>Take "find a job":
+1. Accept a job offer
+2. ← Negotiate the offer
+3. ← Receive an offer
+4. ← Do well in the interview
+5. ← Prepare for the interview (research company, clothes, practice answers)
+6. ← Accept an interview invitation
+7. ← Apply for a job
+8. ← Identify jobs to apply to (job boards, alumni network, LinkedIn, your cousin in the field)
+9. ← Build a resume (read five examples, pick a format, adapt it)</p>
+<p>By the time you've worked backwards to step 8 or 9, you have tasks that are actually <em>doable today</em>. You can't "find a job" on a Tuesday afternoon. You absolutely can send a text to your cousin. You can spend 45 minutes on Indeed. You can draft three emails to alumni contacts.</p>
+<p>When the task is broken down far enough, procrastination often disappears — because the thing you're supposed to do next is specific and small enough that your brain can actually execute it.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-common-pitfalls">Common Pitfalls</h2>
+<p><strong>Treating all procrastination the same.</strong> Trying to operationalize your way out of emotional <span class="gl" tabindex="0">avoidance<span class="gl-pop" role="tooltip"><span class="gl-def">Avoidance is the largely subconscious impulse to move away from a negative emotion or the situation that triggers it, rather than moving toward something positive.</span><a class="gl-more" href="../glossary.html#glossary-avoidance">Full definition →</a></span></span> won't work. Trying to motivate yourself past perfectionism with implementation intentions won't work either. Diagnose first.</p>
+<p><strong>Seeking to change before seeking to understand.</strong> Forcing yourself to just start, without asking <em>why</em> you're not starting, is the default move — and it mostly fails. The understanding isn't a detour; it's the work.</p>
+<p><strong>Confusing "I want to" or "I need to" with actually having a plan.</strong> <span class="gl" tabindex="0">Desire<span class="gl-pop" role="tooltip"><span class="gl-def">One of the four classical Hindu goals of life, Kama is the pursuit of pleasure, desire, and sensory enjoyment — including but not limited to sexuality and lust.</span><a class="gl-more" href="../glossary.html#glossary-kama">Full definition →</a></span></span> and intention feel like progress but have nearly the same predictive power as each other, and both are much weaker than a concrete implementation thought.</p>
+<p><strong>Treating the last-minute panic strategy as sustainable.</strong> It can work in bursts. Deliberately stacking so much onto your plate that you're in permanent crisis mode is not a life strategy — it's an emergency measure that carries a real cost.</p>
+<p><strong>Waiting until you're ready.</strong> Readiness feels like a reasonable prerequisite, but there's no objective threshold for it. It functions the same way perfectionism does: it protects you from the risk of doing something imperfectly, which means it can keep you waiting indefinitely.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-action-items-exercises">Action Items &amp; Exercises</h2>
+<ol>
+<li>
+<p><strong>Diagnose before you fix.</strong> The next time you notice you're procrastinating on something, sit with it for a few minutes before trying to push through. Ask: <em>Is this about my ego and needing to be perfect? Is this about a feeling I'm trying to avoid? Or is this because I genuinely don't know what step to take next?</em> Different answers need different responses.</p>
+</li>
+<li>
+<p><strong>Do the ego audit (for idealistic procrastination).</strong> Write down the task you've been avoiding and finish this sentence: <em>"If I tried and it didn't go perfectly, it would mean that I'm ___."</em> Look honestly at what you wrote. Then ask: <em>Is that actually true? And is avoiding the task better than the alternative?</em></p>
+</li>
+<li>
+<p><strong>Name the emotion (for <span class="gl" tabindex="0">avoidance<span class="gl-pop" role="tooltip"><span class="gl-def">Avoidance is the largely subconscious impulse to move away from a negative emotion or the situation that triggers it, rather than moving toward something positive.</span><a class="gl-more" href="../glossary.html#glossary-avoidance">Full definition →</a></span></span> procrastination).</strong> When a task feels repellent and you can't explain why, write down: <em>"If I do this task, I might feel ___."</em> Try to be specific — is it <span class="gl" tabindex="0">shame<span class="gl-pop" role="tooltip"><span class="gl-def">The emotion triggered by a perceived gap between where you are and where you think you should be.</span><a class="gl-more" href="../glossary.html#glossary-shame">Full definition →</a></span></span>, fear of rejection, fear of conflict, embarrassment? Once you've named it, sit with that emotion for a moment without trying to escape it. Notice whether it softens when you stop running from it.</p>
+</li>
+<li>
+<p><strong>Work backwards to find your first step (for operational procrastination).</strong> Take one overwhelming task and write down the very last thing that happens when it's complete. Then ask: <em>What comes right before that?</em> Keep going backwards until you hit something you could actually do in the next 24 hours. Schedule that specific action — day, time, location.</p>
+</li>
+<li>
+<p><strong>Replace goal thoughts with implementation thoughts.</strong> Instead of "I need to work on my resume," write: "I will spend 30 minutes looking at resume examples on Tuesday at 7pm at my kitchen table." The specificity is the point — it gives your brain an executable instruction rather than an abstract aspiration.</p>
+</li>
+<li>
+<p><strong>Use the five-text trick.</strong> When a big task feels impossible, identify the single smallest possible action that moves it forward — something you could do in the next five minutes. Do just that one thing. Often, starting breaks the paralysis.</p>
+</li>
+</ol>
+</section></article>
+    </div>
+  </div>
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      
+      <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
 <p>- So as you all may have learned by now, I struggled a lot in college. And so after being in college for four years, I realized I was barely a junior and had about three semesters left. And so I was going into my fifth year of college and I was like, I&#x27;m gonna be damned if I&#x27;m in college for six years. I can&#x27;t spend six years in university. I understand I screwed up a little bit. I understand life is hard, I&#x27;ve grown. I&#x27;m a better person, all that positive BS. But I was like, there&#x27;s just no way that I can handle, my ego cannot handle being in college for six years, I just felt pathetic. And so I was sitting down and I was struggling &#x27;cause I was like, what am I gonna do?</p>
 <p>Because I have like a year and a half of coursework left and I&#x27;m starting my fifth year. And so I sat down and I tried to figure out, how long does it actually take me to do a class? And I realized that for the last couple of years, despite doing a little bit better, I was still procrastinating a ton. And then it sort of hit me that I spend about a week on a class. So I&#x27;ll procrastinate, I&#x27;ll do a little bit of work here or there, but then I&#x27;ll wait till last minute for my final exam. And I&#x27;ll spend about one week working on each class. And so if I really sit down and you guys may find that this is true as well, if you really think about one semester of school, you&#x27;re kind of moving along at a pretty chill pace and then you really work your ass off for a few days or about a week.</p>
 <p>Some classes you have a big midterm, some classes you have a big project, but for the most part, you&#x27;re just kind of chilling. And so I decided, oh, you know what, I actually really, really work best when I&#x27;m in that state of last minute panic. When you wait, when you procrastinate towards the end, I&#x27;m so productive and for 48 hours, I&#x27;m eating, sleeping, working, writing papers, it&#x27;s so intense and it&#x27;s actually really productive. So I decided, you know what, I&#x27;m not gonna stop trying to procrastinate, I&#x27;m just gonna use my procrastination for me. And I&#x27;m gonna sign up for so many tasks that for a period of one year, I&#x27;m in a perpetual state of last minute panic and I&#x27;m gonna do a year and a half worth of coursework in one year.</p>
@@ -81,15 +221,21 @@ try {
 <p>What they think about is I&#x27;m gonna crack open this chemistry textbook on Wednesday at 3:00 pm in the library. When we break down the tasks, they become easier to do and our outcomes become better. So these are a couple of perspectives on procrastination. You could explore a little bit more, and there are a couple of other things that we could think a little bit about when we look at the neuroscience segment, what we&#x27;re gonna do is also talk about overestimating costs and how that leads to procrastination. But for now, this is a really simple way to break apart procrastination to three kinds. So the takeaways here are that, first of all, the reason we all procrastinate is because it&#x27;s like a pretty good system.</p>
 <p>It gets us 70% of the way there. Waiting until the last minute to get something done is still a strategy to get things done. So that&#x27;s the first thing. The second thing is that part of the reason that we struggle with it is because we misdiagnosed the problem. And for different tasks, you may be doing different kinds of procrastination. So if we wanna overcome it, we have to figure out, which of these procrastinations am I actually doing? And for each one, there&#x27;s a different solution. And as you start to implement a targeted solutions for your procrastination, you&#x27;ll be able to actually be a lot more successful.</p>
 </section></article>
+    </div>
   </div>
+  
 
-  <p class="meta">Transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> → Resistance). Captions auto-generated.</p>
+  <p class="meta">Medium summary + transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> → Resistance). Captions auto-generated; summary by claude-sonnet-4-6.</p>
 </div>
 
 <script>
 (function () {
   var root = document.documentElement;
-  var tb = document.querySelector('.theme-toggle');
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'medium');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
   var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
   tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
@@ -97,6 +243,9 @@ try {
   function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
   var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+  function navigateTo(id){ var el=id&&document.getElementById(id); if(!el)return; var v=el.closest('.view'); if(v)setView(v.getAttribute('data-view')); el.scrollIntoView(); }
+  window.addEventListener('hashchange', function(){ navigateTo(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash) navigateTo(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>
 <script>

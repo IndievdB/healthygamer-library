@@ -9,7 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-} catch (e) {}
+  document.documentElement.setAttribute('data-view', 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -31,9 +32,147 @@ try {
     <span class="speakers-note">25:32 min</span>
   </p>
 
-  <div class="doc">
+  
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">1,550w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">4,547w</span></button>
     
-    <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
+  </div>
+  
+
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#summary-summary">Summary</a></li>
+<li><a href="#summary-why-adhd-cant-be-just-treated">Why ADHD Can't Be "Just Treated"</a></li>
+<li><a href="#summary-how-adhd-pulls-parents-into-a-vicious-cycle">How ADHD Pulls Parents Into a Vicious Cycle</a></li>
+<li><a href="#summary-the-four-parenting-styles-and-what-the-research-shows">The Four Parenting Styles and What the Research Shows</a></li>
+<li><a href="#summary-common-pitfalls">Common Pitfalls</a></li>
+<li><a href="#summary-action-items-exercises">Action Items &amp; Exercises</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="summary-summary">Summary</h2>
+<p><strong>TL;DR — A child's <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> actively reshapes how their parents behave, often creating a vicious cycle that makes the <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> worse. Understanding that cycle — and which parenting style breaks it — is the first step.</strong></p>
+<p>Most parents think of parenting as a one-way street: what I do shapes who my child becomes. With <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span>, that assumption breaks down. The child's symptoms pull the parent into reactive, harsh, or checked-out patterns, and those patterns in turn worsen the very symptoms that triggered them. Until you see that cycle clearly, you can't interrupt it.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-why-adhd-cant-be-just-treated">Why ADHD Can't Be "Just Treated"</h2>
+<p>When a child has asthma, you hand them an inhaler. The medical issue gets managed separately from everyday family life. <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> doesn't work that way. It bleeds into every ordinary moment — getting shoes on, finishing homework, keeping a friend from blowing out candles at someone else's birthday party. Medication and therapy can help, but neither one quarantines the diagnosis away from the parent-child relationship. <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> is, at its core, a relational diagnosis, and it demands a relational response.</p>
+<p>This is also worth noting for parents of kids who <em>don't</em> have a formal diagnosis: as screens and technology compress the attention spans of all children, every family is dealing with something that sits somewhere on the <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> spectrum.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-how-adhd-pulls-parents-into-a-vicious-cycle">How ADHD Pulls Parents Into a Vicious Cycle</h2>
+<p>There are three core features of <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> that each create their own feedback loop between child and parent.</p>
+<p><strong>1. <span class="gl" tabindex="0">Disordered attention<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> → passive non-compliance → yelling</strong></p>
+<p>A child deep in a Lego project isn't ignoring you to be defiant. Their brain's attentional circuitry is locked in, and your words literally don't break through. You say "shoes on" once. Twice. Three times. Nothing. Then you raise your voice, and <em>that</em> breaks through — because the sudden emotional signal is strong enough to override the attentional block.</p>
+<p>Over time, your brain quietly learns: <em>raising my voice is what actually works.</em> So you start there sooner. Your child's experience of this is: <em>Mom/Dad is always angry at me. I keep screwing up.</em> That repeated experience chips away at their <span class="gl" tabindex="0">self-esteem<span class="gl-pop" role="tooltip"><span class="gl-def">Self-esteem is the degree to which you accept yourself as you are — not how you measure up against others.</span><a class="gl-more" href="../glossary.html#glossary-self-esteem">Full definition →</a></span></span>. And research shows that households with a child with <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> see measurably more depressive symptoms and guilt in the parent — not because the parent is doing something wrong intentionally, but because the child's neurology is steering the parent's behavior.</p>
+<p><strong>2. Disorganization → parents absorbing the entire organizational load</strong></p>
+<p>A child with <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> forgets assignments, forgets where things are, finishes homework and then forgets to put it in their backpack. Every gap becomes something the parent has to fill. On top of managing their own job, groceries, and bills, the parent is now also tracking every due date, every permission slip, every social obligation the child has. This extra cognitive burden compounds stress — and stress erodes patience.</p>
+<p><strong>3. <span class="gl" tabindex="0">Emotional dysregulation<span class="gl-pop" role="tooltip"><span class="gl-def">The inability to reliably identify and modify your emotional states in ways that support adaptive, goal-directed behavior.</span><a class="gl-more" href="../glossary.html#glossary-emotional-dysregulation">Full definition →</a></span></span> → escalating conflict and punishment</strong></p>
+<p>The emotional circuits of a child with <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> are quicker to fire and harder for the <span class="gl" tabindex="0">frontal lobes<span class="gl-pop" role="tooltip"><span class="gl-def">The brain region responsible for planning, executing tasks, controlling impulses, and regulating other parts of the brain — essentially the hardware of self-regulation and mature behavior.</span><a class="gl-more" href="../glossary.html#glossary-frontal-lobes">Full definition →</a></span></span> to quiet down. They're more prone to anger, irritability, meltdowns, and talking back. Studies confirm that parenting a child with <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> produces higher stress levels than parenting a neurotypical child. When you're stressed and your child is mid-meltdown, you lose your own temper and lean on punishment. That harsh environment then makes the child <em>more</em> dysregulated, which makes the parent <em>more</em> reactive — and the loop tightens.</p>
+<blockquote>
+<p>"The worse the <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> is, the more the parent becomes reactive, frustrated, raises their voice. And when you have a parent who's frustrated and raising their voice, it actually exacerbates the <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span>."</p>
+</blockquote>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-the-four-parenting-styles-and-what-the-research-shows">The Four Parenting Styles and What the Research Shows</h2>
+<p>Researchers mapped parenting styles across two axes: <strong>warmth vs. coldness</strong> and <strong>involvement vs. hands-off</strong>. Each combination produces a recognizable style, and each has a measurably different effect on <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> symptoms.</p>
+<table>
+<thead>
+<tr>
+<th>Style</th>
+<th>Warmth</th>
+<th>Involvement</th>
+<th>Effect on <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Authoritative</strong></td>
+<td>High</td>
+<td>High</td>
+<td>Best outcomes; symptoms improve</td>
+</tr>
+<tr>
+<td><strong>Authoritarian</strong></td>
+<td>Low</td>
+<td>High</td>
+<td>Slight worsening</td>
+</tr>
+<tr>
+<td><strong>Permissive</strong></td>
+<td>High</td>
+<td>Low</td>
+<td>Slight worsening</td>
+</tr>
+<tr>
+<td><strong>Neglectful</strong></td>
+<td>Low</td>
+<td>Low</td>
+<td>Significant worsening</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Authoritative</strong> parenting — warm, structured, and involved — consistently produces the best results. This means asking "how was your day, what are you struggling with?" while also maintaining structure, talking to teachers, and staying engaged with the child's world. It's not about being soft; it's about being present and caring at the same time as being organized and consistent.</p>
+<p><strong>Authoritarian</strong> parenting (controlling, high-expectations, cold) looks like "Bs are unacceptable, no video games until you get an A" without much curiosity about <em>why</em> the child is struggling. It's involvement without warmth.</p>
+<p><strong>Permissive</strong> parenting is the "cool parent" — warm and likeable, but without consistent limits. Sometimes this comes from genuinely not being very organized yourself; sometimes it comes from wanting your kid to like you. Without structure, the child's <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> has nothing to push against, and symptoms drift worse.</p>
+<p><strong>Neglectful</strong> parenting — checked out and cold — produces the worst outcomes. The child gets neither emotional support nor structural scaffolding.</p>
+<p>The painful irony is that <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> itself tends to <em>push</em> parents toward the authoritarian style. The more a child's attention is disordered, the more a parent raises their voice. The more they yell, the less empathic they feel. The colder and harsher the dynamic becomes, the more the <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> worsens. Parents who came into parenting intending to be warm and fair find themselves somewhere they never expected to be — and then feel guilty about it on top of everything else.</p>
+<blockquote>
+<p>"<span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> raises a particular kind of parent. The behaviors of the child themselves will shape our behavior as a parent."</p>
+</blockquote>
+<p>The antidote — authoritative parenting — works because it provides <strong>guardrails</strong>. A warm, structured parent gives the child's attention something to orient toward instead of just bouncing around. When a parent is too permissive or too controlling, they either leave the child without scaffolding or take over the driving entirely, which prevents the child from ever building the executive-function skills they need.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-common-pitfalls">Common Pitfalls</h2>
+<p><strong>Thinking <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> is the child's problem to solve.</strong> The diagnosis belongs to the child, but the management lives in the relationship. A parent who treats it like a medical condition that gets handled at the doctor's office will be blindsided by how thoroughly it reshapes daily life.</p>
+<p><strong>Mistaking passive non-compliance for deliberate defiance.</strong> When your child doesn't respond to the first three requests, they are almost certainly not choosing to ignore you. Treating it as willful disobedience leads straight to yelling — which works in the short term and damages in the long term.</p>
+<p><strong>Confusing permissiveness with warmth.</strong> Warmth and structure are not opposites. Letting everything slide doesn't make you a loving parent; it removes the scaffolding your child's brain actually needs. Warmth combined with clear expectations is what moves the needle.</p>
+<p><strong>Believing you just need more willpower to "not yell."</strong> The shift toward authoritarian parenting happens gradually and is driven by the child's symptoms. Simply deciding to be calmer doesn't address the structural feedback loop. You need specific techniques, not just good intentions — which is why the how matters just as much as the what.</p>
+<p><strong>Absorbing all organizational responsibility indefinitely.</strong> Compensating for your child's disorganization is sometimes necessary, but if it becomes permanent, your child never develops their own systems. The goal is scaffolding that gradually transfers responsibility back to the child.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-action-items-exercises">Action Items &amp; Exercises</h2>
+<ol>
+<li>
+<p><strong>Map where you actually are.</strong> Honestly place your current parenting on the warmth/involvement grid. Not where you want to be — where you actually end up on a hard day. That gap tells you what to work on first.</p>
+</li>
+<li>
+<p><strong>Identify your personal trigger chain.</strong> Write down the sequence that leads to you yelling or punishing. Usually it's: child doesn't respond → repeated requests → frustration builds → raised voice. Naming the chain is the first step to interrupting it before the frustration peaks.</p>
+</li>
+<li>
+<p><strong>Stop interpreting passive non-compliance as defiance.</strong> When your child doesn't respond to the first request, practice telling yourself: <em>their attention is locked, not their attitude</em>. Then physically move closer, make eye contact, and get their attention before giving the instruction — rather than repeating from across the room.</p>
+</li>
+<li>
+<p><strong>Build one small structure that you maintain consistently.</strong> Pick a single recurring moment (morning routine, homework time, bedtime) and create a simple, predictable sequence for it. Consistency in even one area reduces the daily negotiation that drains your patience.</p>
+</li>
+<li>
+<p><strong>Track your own mood alongside your child's behavior.</strong> For one week, keep a simple log: when did things escalate, what happened right before, and how were you already feeling? Stress and <span class="gl" tabindex="0">sleep<span class="gl-pop" role="tooltip"><span class="gl-def">Sleep is the period during which the brain converts short-term memories stored in the hippocampus into stable long-term memories — a process called memory consolidation.</span><a class="gl-more" href="../glossary.html#glossary-sleep">Full definition →</a></span></span> deprivation are huge accelerants. Seeing the pattern in writing makes it less invisible.</p>
+</li>
+<li>
+<p><strong>Separate organizational support from doing it for them.</strong> Instead of just remembering your child's homework deadline yourself, sit with them to build a visual checklist or calendar they own. Your role is coach and scaffold, not secretary.</p>
+</li>
+<li>
+<p><strong>Find outside support for your own mental health.</strong> If you recognize the depressive symptoms and guilt described here, take them seriously. A parent who is depleted cannot sustain the patience required for authoritative parenting. Your wellbeing is part of the treatment plan.</p>
+</li>
+</ol>
+</section></article>
+    </div>
+  </div>
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      
+      <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
 <p>- So the first thing that we&#x27;ve gotta do is sort of acknowledge that parenting a kid with <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> is a completely different experience. And what do I mean by that? So if we think about being a parent or even having a medical condition, generally speaking, the medical condition requires treatment, but the treatment of the medical condition is over here and the parenting is over here. So if I have a kid who has asthma, for example, they get diagnosed with asthma, kind of sucks that they have asthma, right? Of course, but we&#x27;ve got treatment. You start giving them their inhalers twice a day. And at the end of the day, their condition is treated and you can sort of live a regular life.</p>
 <p>If your kid has, for example, GI problems or gets an upset stomach easily, that&#x27;s something that you just kind of like treat. And then you&#x27;re sort of done. The challenge is that parenting a kid with <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> is not just like a diagnosis that you can treat. And it kind of like the problem goes away. You can&#x27;t really just manage <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> and parent a kid normally. It turns out that parenting a kid with <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> is a completely different experience because these are kids that sort of don&#x27;t listen when other kids do. These are kids that always forget where their stuff is when other kids are able to remember, these are kids that will run into social difficulties and will blow out the candles at a different kids&#x27; birthday party because they can&#x27;t control their impulses.</p>
 <p>And so then your kid doesn&#x27;t get invited to the birthday party again, and then you&#x27;re trying to figure out, okay, what am I gonna do about this? So parenting a kid with <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> can be incredibly challenging. And this is where generally speaking, we think about parenting is affecting our kid. And what do I mean by that? That means that we sort of know is parents that how I parent my kid will determine how my kid grows up, right? If I&#x27;m a good parent, I will raise a healthy and successful child. And if I&#x27;m a bad parent I&#x27;ll cause my kids&#x27; problems. So if we sort of think about it, fundamentally the relationship between parenting and the person that you parent is kind of one way we think about our parenting style is affecting how our kids grow up.</p>
@@ -76,15 +215,21 @@ try {
 <p>They have more meltdowns, which in turn, stress me out and cause me to lose patients. And the problem here is that as my child&#x27;s <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> manifests in life, I react to it. And the problem here is that as my parenting gets altered, this actually worsens the <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> that my child experiences, it creates a vicious cycle where <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> impacts my parenting and my parenting worsens the <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span>. And so a lot of parents of children with <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> feel like they&#x27;re spinning out of control. They just don&#x27;t know how to get a handle on things. And we&#x27;ve explored with y&#x27;all some of these different parenting styles and research into sort of what is the right way to parent your kid.</p>
 <p>Unfortunately, we can sort of say, okay, you should be authoritative, but not authoritarian. You should be structured and emotionally supportive, and you shouldn&#x27;t yell at your kid, but we haven&#x27;t really dug into how the hell do you actually do that. So next up, we&#x27;re gonna go into a lot of detail and share several techniques with you about how to sort of shift towards a healthy parenting style, which will support your child with <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span>.</p>
 </section></article>
+    </div>
   </div>
+  
 
-  <p class="meta">Transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> → Parenting & <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span>). Captions auto-generated.</p>
+  <p class="meta">Medium summary + transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> → Parenting & <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span>). Captions auto-generated; summary by claude-sonnet-4-6.</p>
 </div>
 
 <script>
 (function () {
   var root = document.documentElement;
-  var tb = document.querySelector('.theme-toggle');
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'medium');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
   var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
   tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
@@ -92,6 +237,9 @@ try {
   function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
   var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+  function navigateTo(id){ var el=id&&document.getElementById(id); if(!el)return; var v=el.closest('.view'); if(v)setView(v.getAttribute('data-view')); el.scrollIntoView(); }
+  window.addEventListener('hashchange', function(){ navigateTo(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash) navigateTo(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>
 <script>

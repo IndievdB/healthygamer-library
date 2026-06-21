@@ -9,7 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-} catch (e) {}
+  document.documentElement.setAttribute('data-view', 'transcript');
+} catch (e) { document.documentElement.setAttribute('data-view', 'transcript'); }
 </script>
 </head>
 <body>
@@ -31,9 +32,13 @@ try {
     <span class="speakers-note">10:27 min</span>
   </p>
 
-  <div class="doc">
-    
-    <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
+  
+
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      
+      <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
 <p>- So now I&#x27;d like to talk a little bit about protective hopelessness. So this is something that I really think about when someone comes into my office and complains of being stuck or being in limbo. And they&#x27;re really looking for something like <span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span>. They want my help at trying to figure out how can I start acting again? How can I start doing something again? They&#x27;ll have all these hopes and dreams and aspirations, but at the end of the day they find themselves kind of being in a morass where like every day is the same and they just can&#x27;t really get out of bed and do what they really want to do.</p>
 <p>They have all these ideas, but they can&#x27;t bring themselves to do it. And inevitably, when I work with these people, what&#x27;s underneath their inability to do stuff is what I call protective hopelessness. And if you kind of tunnel down, okay, why aren&#x27;t you motivated? And they&#x27;re like &#x27;well, there&#x27;s no point.&#x27; And if you get underneath, there&#x27;s no point what you ultimately find is hopelessness. That there&#x27;s really no point because nothing is gonna succeed. And so then the question becomes, you know, how do we help these people get unstuck? And as we uncover the hopelessness, they&#x27;ll ask me, okay, how can I learn to hope again?</p>
 <p>And the first thing to do is to recognize that this problem that they face of hopelessness, isn&#x27;t actually a problem it&#x27;s actually a solution. Because the truth is that hopelessness is an impervious shield to rejection and failure. As long as I don&#x27;t hope for anything, I won&#x27;t try. And as long as I don&#x27;t try for anything, I can&#x27;t fail. And it&#x27;s a really, really tricky thing because we think about hopelessness as something that paralyzes us but the truth is that hopelessness is something that protects us. So if we really think about it, you know, it may sound really bizarre, but like okay, I don&#x27;t want to be hopeless.</p>
@@ -52,7 +57,9 @@ try {
 <p>Or is it this issue with success? Where even if you do the right thing, your mind starts to tell you it isn&#x27;t enough. Because if that&#x27;s the case, then what we need to learn how to do is respond to our mind in the right way. Once we know what it&#x27;s doing, once we know where the trap is, we can avoid it. Because you can then understand that as you do the pushups, you&#x27;re going to mentally prepare yourself you&#x27;re going to see it coming. So it&#x27;s not going to catch you off guard. I&#x27;m going to feel like this isn&#x27;t enough and I&#x27;m going to do it anyway. Learn to act in spite of what your mind tells you instead of being controlled by your mind.</p>
 <p>And then you&#x27;ll take one step forward in overcoming protective hopelessness.</p>
 </section></article>
+    </div>
   </div>
+  
 
   <p class="meta">Transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">Depression<span class="gl-pop" role="tooltip"><span class="gl-def">A disruption in mood and functioning that exists on a spectrum — not a single, uniform illness.</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span> → Common Manifestations of <span class="gl" tabindex="0">Depression<span class="gl-pop" role="tooltip"><span class="gl-def">A disruption in mood and functioning that exists on a spectrum — not a single, uniform illness.</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span>). Captions auto-generated.</p>
 </div>
@@ -60,7 +67,11 @@ try {
 <script>
 (function () {
   var root = document.documentElement;
-  var tb = document.querySelector('.theme-toggle');
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'transcript');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
   var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
   tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
@@ -68,6 +79,9 @@ try {
   function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
   var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+  function navigateTo(id){ var el=id&&document.getElementById(id); if(!el)return; var v=el.closest('.view'); if(v)setView(v.getAttribute('data-view')); el.scrollIntoView(); }
+  window.addEventListener('hashchange', function(){ navigateTo(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash) navigateTo(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>
 <script>

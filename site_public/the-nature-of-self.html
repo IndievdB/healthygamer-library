@@ -9,7 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-} catch (e) {}
+  document.documentElement.setAttribute('data-view', 'transcript');
+} catch (e) { document.documentElement.setAttribute('data-view', 'transcript'); }
 </script>
 </head>
 <body>
@@ -31,9 +32,13 @@ try {
     <span class="speakers-note">6:56 min</span>
   </p>
 
-  <div class="doc">
-    
-    <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
+  
+
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      
+      <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
 <p>- The next thing we&#x27;re gonna cover is the nature of self. The yogis discovered that a lot of our suffering in life comes from not understanding who we truly are. If we go back to the metaphysics that we discussed earlier, we&#x27;ll recall that the most basic unit of stuff in the universe is Brahman or cosmic consciousness. And Brahman kinda coalesces down into energy, which then coalesces down into matter. So the question is what combination of this consciousness stuff, energy, and matter makes an actual human being? And what the yogis did is approach this scientifically. And they started by looking at the body.</p>
 <p>And they ask themselves, am I my body? And what they came to the conclusion of is that, &quot;not really because my body changes over time, but I&#x27;m still me. And even in some really unfortunate circumstances, I can even like lose a hand. But if I lose a hand, am I still me or do I become someone else?&quot; And so they concluded that who they are transcends their body. The next thing that they looked at was the mind. And they noticed that there are fluctuations in the mind. That we can be angry, and sad, and upset. And that despite all these fluctuations in the mind, that you&#x27;re still you, that there&#x27;s a certain you-ness that transcends emotion.</p>
 <p>And the next thing that they looked at was the <span class="gl" tabindex="0">identity<span class="gl-pop" role="tooltip"><span class="gl-def">A stable sense of who you are, built from the narrative integration of emotionally salient experiences — not a fixed trait you possess, but a story you construct by stringing together the moments in your life that…</span><a class="gl-more" href="../glossary.html#glossary-identity">Full definition →</a></span></span> or the ego. And they kind of thought, &quot;okay, so what do most people think they are?&quot; And what they realized is that most people identify with certain attributes of their <span class="gl" tabindex="0">identity<span class="gl-pop" role="tooltip"><span class="gl-def">A stable sense of who you are, built from the narrative integration of emotionally salient experiences — not a fixed trait you possess, but a story you construct by stringing together the moments in your life that…</span><a class="gl-more" href="../glossary.html#glossary-identity">Full definition →</a></span></span>. And it sort of makes sense, right? Because that&#x27;s what we mean by <span class="gl" tabindex="0">identity<span class="gl-pop" role="tooltip"><span class="gl-def">A stable sense of who you are, built from the narrative integration of emotionally salient experiences — not a fixed trait you possess, but a story you construct by stringing together the moments in your life that…</span><a class="gl-more" href="../glossary.html#glossary-identity">Full definition →</a></span></span>. That some people will identify as a man or a woman or some people will identify with a particular profession. Or some people may identify with a particular kind of like, I&#x27;m a parent, or I&#x27;m a son, or I&#x27;m a daughter, they&#x27;ll identify with a relationship. And yet the yogis noticed that that too fluctuates over time.</p>
@@ -45,7 +50,9 @@ try {
 <p>And our capacity to witness actually stays completely constant throughout life. That we can always witness our sadness and our happiness, we can always witness our anger, that there at the end of the day is an &quot;experiencer&quot; within you. Someone who actually experiences all of the fluctuations of life. And the more that we become centered in that witnesser, that person who observes and that person who experiences, the more content we become. Even the negative emotions in life, when experienced through this witnessing attitude can actually be things that can lead to sort of peace and joy. That if you really think about the most entertaining movie, it&#x27;s not one where like people are winning 24/7, that there are trials and tribulations.</p>
 <p>And that the more we&#x27;re able to like appreciate those, the more enjoyable the movie is. And what the yogis ended up discovering was that if we can ground ourselves in that true self, that witnessing self, that our life becomes no different, that the ups and downs of life all become enjoyable. And that the true secret of happiness is grounding ourselves, discovering what we truly are because then the fluctuations of life, whether it&#x27;s getting a job or losing a job or getting likes or not getting likes are all a part of the movie and it&#x27;s all something to be enjoyed.</p>
 </section></article>
+    </div>
   </div>
+  
 
   <p class="meta">Transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">Meditation<span class="gl-pop" role="tooltip"><span class="gl-def">Meditation is the practice of focusing consciousness completely — until thinking itself falls away and you exist in a state of pure awareness with no mental activity.</span><a class="gl-more" href="../glossary.html#glossary-meditation">Full definition →</a></span></span> → Atman Padha (Path of Self)). Captions auto-generated.</p>
 </div>
@@ -53,7 +60,11 @@ try {
 <script>
 (function () {
   var root = document.documentElement;
-  var tb = document.querySelector('.theme-toggle');
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'transcript');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
   var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
   tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
@@ -61,6 +72,9 @@ try {
   function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
   var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+  function navigateTo(id){ var el=id&&document.getElementById(id); if(!el)return; var v=el.closest('.view'); if(v)setView(v.getAttribute('data-view')); el.scrollIntoView(); }
+  window.addEventListener('hashchange', function(){ navigateTo(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash) navigateTo(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>
 <script>

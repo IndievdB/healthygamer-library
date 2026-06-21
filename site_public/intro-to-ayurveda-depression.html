@@ -9,7 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-} catch (e) {}
+  document.documentElement.setAttribute('data-view', 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -31,9 +32,113 @@ try {
     <span class="speakers-note">16:18 min</span>
   </p>
 
-  <div class="doc">
+  
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">1,374w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">2,687w</span></button>
     
-    <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
+  </div>
+  
+
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#summary-summary">Summary</a></li>
+<li><a href="#summary-how-western-medicine-and-ayurveda-approach-the-same-problem-differently">How Western Medicine and Ayurveda Approach the Same Problem Differently</a></li>
+<li><a href="#summary-the-three-doshas-vata-pitta-and-kapha">The Three Doshas: Vata, Pitta, and Kapha</a></li>
+<li><a href="#summary-balance-imbalance-and-why-disease-is-personal">Balance, Imbalance, and Why Disease Is Personal</a></li>
+<li><a href="#summary-where-ayurveda-and-modern-research-overlap">Where Ayurveda and Modern Research Overlap</a></li>
+<li><a href="#summary-common-pitfalls">Common Pitfalls</a></li>
+<li><a href="#summary-action-items-exercises">Action Items &amp; Exercises</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="summary-summary">Summary</h2>
+<p><strong>TL;DR — Ayurveda is a 3,000–5,000-year-old system of medicine that treats people as individuals rather than treating diseases in the abstract. Understanding your dosha — your constitutional type — helps explain your physical tendencies, your mental patterns, and how you respond to stress.</strong></p>
+<p>Western medicine is extraordinarily powerful at identifying and treating specific diseases. But it was built to study diseases in isolation, stripped of the person who has them. Ayurveda went the opposite direction: instead of drilling down to smaller and smaller pieces, it looked for the big patterns that connect physical, mental, and behavioral traits into a coherent picture of a whole person. Both systems are genuinely useful, and they complement each other in ways that make each one more meaningful.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-how-western-medicine-and-ayurveda-approach-the-same-problem-differently">How Western Medicine and Ayurveda Approach the Same Problem Differently</h2>
+<p>Western medicine is a divide-and-conquer system. It breaks things down — organs, pathogens, gram-positive versus gram-negative bacteria, <span class="gl" tabindex="0">addiction<span class="gl-pop" role="tooltip"><span class="gl-def">The use of a chemical (alcohol, opioids, cannabis, caffeine, etc.) that produces neurological effects your brain then adapts to — leading to tolerance, withdrawal, and, potentially, addiction.</span><a class="gl-more" href="../glossary.html#glossary-substance-use">Full definition →</a></span></span> versus <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> — and tries to find the smallest, most precise unit of a problem. Its gold-standard tool, the randomized controlled trial, is specifically designed to <em>remove</em> individual variation so that only the pure disease signal remains. That's scientifically elegant, but it produces a paradox: the best evidence-based treatment for <span class="gl" tabindex="0">depression<span class="gl-pop" role="tooltip"><span class="gl-def">A disruption in mood and functioning that exists on a spectrum — not a single, uniform illness.</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span> exists, but the best evidence-based treatment for <em>you specifically</em> is genuinely unknown.</p>
+<p>Ayurveda runs in the opposite direction. Instead of asking "what is the smallest cause of this illness?", Ayurvedic physicians asked "what patterns keep appearing together?" They gathered many small data points — metabolism, body type, memory style, emotional tendencies, stress responses — and looked for the overarching pattern that tied them together. Their fundamental premise is that disease cannot be separated from the person who has it. Your body type, your mental tendencies, and your disease vulnerabilities are all expressions of the same underlying constitution.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-the-three-doshas-vata-pitta-and-kapha">The Three Doshas: Vata, Pitta, and Kapha</h2>
+<p>To describe the patterns they observed, Ayurvedic physicians developed the concept of the <strong>dosha</strong> — a kind of elemental constitutional type. There are three doshas, and every person carries all three in some proportion. The balance you're born with is called your <strong>prakruti</strong>, and it appears to have a real genetic basis: a branch of research called <strong>ayurgenomics</strong> has found that people who identify as the same dosha type actually share common gene variants. So this isn't purely metaphor — it maps onto biological reality.</p>
+<p><strong><span class="gl" tabindex="0">Vata<span class="gl-pop" role="tooltip"><span class="gl-def">One of the three Ayurvedic doshas, Vata is the constitution governed by wind and ether — the elements of movement and empty space — and it shapes both mind and body in the image of the wind itself.</span><a class="gl-more" href="../glossary.html#glossary-vata">Full definition →</a></span></span></strong> is associated with wind and ether.
+- Physically: slender build, fast metabolism, prominent veins, tends toward low body weight
+- Mentally: quick to learn, quick to forget, gets excited easily, uses hands when talking, struggles with follow-through
+- Under stress: <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span>, scattered attention, <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span>-like patterns
+- Work style: great out of the gate in the morning, but low stamina
+- Core challenge: flightiness — changing direction frequently in ways that frustrate others</p>
+<p><strong><span class="gl" tabindex="0">Pitta<span class="gl-pop" role="tooltip"><span class="gl-def">One of the three Ayurvedic doshas, Pitta is the fire-type personality — driven, focused, ambitious, and capable of sustained, intense effort within a structured workday.</span><a class="gl-more" href="../glossary.html#glossary-pitta">Full definition →</a></span></span></strong> is associated with fire and water.
+- Physically: medium build, strong digestion, prone to ulcers when the "digestive fire" overruns itself
+- Mentally: driven, focused, ambitious, competitive
+- Under stress: irritable, argumentative, conflict-prone
+- Work style: starts at a solid pace, sustains for a while, eventually tires
+- Core challenge: intensity that tips into aggression or combativeness</p>
+<p><strong><span class="gl" tabindex="0">Kapha<span class="gl-pop" role="tooltip"><span class="gl-def">In Ayurveda, Kapha is the dosha associated with the elements of water and earth — qualities that are cold, wet, thick, stable, heavy, and grounded.</span><a class="gl-more" href="../glossary.html#glossary-kapha">Full definition →</a></span></span></strong> is associated with earth and water.
+- Physically: larger build, slower metabolism, prone to weight gain
+- Mentally: slow to learn but rarely forgets, deliberate, stable, resilient
+- Under stress: <span class="gl" tabindex="0">depression<span class="gl-pop" role="tooltip"><span class="gl-def">A disruption in mood and functioning that exists on a spectrum — not a single, uniform illness.</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span>, sadness, guilt, and <span class="gl" tabindex="0">shame<span class="gl-pop" role="tooltip"><span class="gl-def">The emotion triggered by a perceived gap between where you are and where you think you should be.</span><a class="gl-more" href="../glossary.html#glossary-shame">Full definition →</a></span></span>
+- Work style: slow to start but exceptional endurance — can work long and late
+- Core challenge: resistance to change that can make them frustrating collaborators</p>
+<p>None of these types is superior to the others. Each has genuine strengths and specific vulnerabilities.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-balance-imbalance-and-why-disease-is-personal">Balance, Imbalance, and Why Disease Is Personal</h2>
+<p>You have a natural baseline level of each dosha — your prakruti. But your diet, environment, and daily behaviors can push any dosha higher or lower. That shifted state is called your <strong>vikruti</strong>. When a dosha drifts too far from your natural balance in either direction, illness follows.</p>
+<p>Here's why this matters practically: if you were born with a naturally high <span class="gl" tabindex="0">vata<span class="gl-pop" role="tooltip"><span class="gl-def">One of the three Ayurvedic doshas, Vata is the constitution governed by wind and ether — the elements of movement and empty space — and it shapes both mind and body in the image of the wind itself.</span><a class="gl-more" href="../glossary.html#glossary-vata">Full definition →</a></span></span> level, it doesn't take much of a push to tip you into a <span class="gl" tabindex="0">vata<span class="gl-pop" role="tooltip"><span class="gl-def">One of the three Ayurvedic doshas, Vata is the constitution governed by wind and ether — the elements of movement and empty space — and it shapes both mind and body in the image of the wind itself.</span><a class="gl-more" href="../glossary.html#glossary-vata">Full definition →</a></span></span>-disease state like <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> or insomnia. Someone born with lower <span class="gl" tabindex="0">vata<span class="gl-pop" role="tooltip"><span class="gl-def">One of the three Ayurvedic doshas, Vata is the constitution governed by wind and ether — the elements of movement and empty space — and it shapes both mind and body in the image of the wind itself.</span><a class="gl-more" href="../glossary.html#glossary-vata">Full definition →</a></span></span> could sustain the exact same diet and lifestyle without those symptoms. This is why Ayurveda insists that disease is fundamentally tied to the individual — the same trigger lands differently depending on your constitution.</p>
+<p>The goal isn't to become a different type. It's to keep your doshas near <em>your</em> natural balance. And when you do, multiple things improve simultaneously. Balancing <span class="gl" tabindex="0">vata<span class="gl-pop" role="tooltip"><span class="gl-def">One of the three Ayurvedic doshas, Vata is the constitution governed by wind and ether — the elements of movement and empty space — and it shapes both mind and body in the image of the wind itself.</span><a class="gl-more" href="../glossary.html#glossary-vata">Full definition →</a></span></span>, for example, tends to calm the mind, reduce <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span>, support healthy weight, and ease constipation — because all of those are expressions of the same underlying <span class="gl" tabindex="0">vata<span class="gl-pop" role="tooltip"><span class="gl-def">One of the three Ayurvedic doshas, Vata is the constitution governed by wind and ether — the elements of movement and empty space — and it shapes both mind and body in the image of the wind itself.</span><a class="gl-more" href="../glossary.html#glossary-vata">Full definition →</a></span></span> imbalance. You don't treat each symptom separately; you address the root pattern.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-where-ayurveda-and-modern-research-overlap">Where Ayurveda and Modern Research Overlap</h2>
+<p>Western medicine has independently confirmed several of the correlations Ayurvedic physicians described thousands of years ago. People prone to diabetes are statistically more prone to <span class="gl" tabindex="0">depression<span class="gl-pop" role="tooltip"><span class="gl-def">A disruption in mood and functioning that exists on a spectrum — not a single, uniform illness.</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span>. People with <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> tend to be physically restless and typically weigh less than people without <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span>. These co-occurring patterns — called <strong>comorbidities</strong> in clinical research — are exactly what Ayurveda was describing all along, just without the language of doshas.</p>
+<p>The ayurgenomics research mentioned above goes further, finding that the three constitutional types actually correspond to distinct genetic profiles. This doesn't mean Ayurveda is simply genetics in disguise, but it does suggest the pattern-recognition that ancient physicians were doing was capturing something real.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-common-pitfalls">Common Pitfalls</h2>
+<p><strong>Treating doshas as rigid personality boxes.</strong> Everyone has all three doshas. Most people have a primary and a secondary type, and the balance shifts over time. Knowing your dominant dosha is a starting point, not a life sentence.</p>
+<p><strong>Assuming Ayurveda replaces Western medicine.</strong> These are complementary frameworks. Western medicine excels at identifying specific pathogens, performing surgery, and treating acute illness with precision. Ayurveda excels at understanding the individual context in which illness arises. Using one doesn't mean rejecting the other.</p>
+<p><strong>Confusing prakruti with vikruti.</strong> Your natural constitution (prakruti) isn't the problem — it's just who you are. What creates disease is your current imbalance (vikruti). Trying to fight your natural type instead of working with it while correcting imbalances is a common mistake.</p>
+<p><strong>Dismissing Ayurveda because it isn't measurable the same way Western medicine is.</strong> You can't run a blood test for <span class="gl" tabindex="0">vata<span class="gl-pop" role="tooltip"><span class="gl-def">One of the three Ayurvedic doshas, Vata is the constitution governed by wind and ether — the elements of movement and empty space — and it shapes both mind and body in the image of the wind itself.</span><a class="gl-more" href="../glossary.html#glossary-vata">Full definition →</a></span></span> levels. That doesn't make the patterns less real — it just means they operate at a different level of description than a lab panel. The genetic research suggests the underlying biology is there, even if the Ayurvedic language isn't the same as molecular biology.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-action-items-exercises">Action Items &amp; Exercises</h2>
+<ol>
+<li>
+<p><strong>Identify your likely dominant dosha.</strong> Without overthinking it, read through the three type descriptions above and notice which one fits your physical build, your natural energy pattern, and your stress response most closely. Most people have a clear primary type.</p>
+</li>
+<li>
+<p><strong>Map your stress response.</strong> The next time you feel genuinely overwhelmed, notice what happens: Does your mind race and scatter (<span class="gl" tabindex="0">vata<span class="gl-pop" role="tooltip"><span class="gl-def">One of the three Ayurvedic doshas, Vata is the constitution governed by wind and ether — the elements of movement and empty space — and it shapes both mind and body in the image of the wind itself.</span><a class="gl-more" href="../glossary.html#glossary-vata">Full definition →</a></span></span>)? Do you get irritable and want to pick a fight (<span class="gl" tabindex="0">pitta<span class="gl-pop" role="tooltip"><span class="gl-def">One of the three Ayurvedic doshas, Pitta is the fire-type personality — driven, focused, ambitious, and capable of sustained, intense effort within a structured workday.</span><a class="gl-more" href="../glossary.html#glossary-pitta">Full definition →</a></span></span>)? Do you withdraw, go heavy, and feel a creeping sadness (<span class="gl" tabindex="0">kapha<span class="gl-pop" role="tooltip"><span class="gl-def">In Ayurveda, Kapha is the dosha associated with the elements of water and earth — qualities that are cold, wet, thick, stable, heavy, and grounded.</span><a class="gl-more" href="../glossary.html#glossary-kapha">Full definition →</a></span></span>)? That response is a live signal about your dosha state.</p>
+</li>
+<li>
+<p><strong>Audit your energy across the day.</strong> For one week, note when your energy peaks and when it drops. Vatas tend to be morning-strong but fade early. Pittas sustain through the middle of the day. Kaphas take time to warm up but outlast everyone. Use this to structure your most demanding work accordingly.</p>
+</li>
+<li>
+<p><strong>Identify one lifestyle factor that may be aggravating your dominant dosha.</strong> For vatas, this is often irregular schedules, too much screen stimulation, or skipping meals. For pittas, it's overwork, excessive competition, or inflammatory foods. For kaphas, it's sedentary routines, heavy food, or low stimulation. Pick one and experiment with changing it for two weeks.</p>
+</li>
+<li>
+<p><strong>If you work with or manage others, consider dosha differences in how people handle conflict and change.</strong> A <span class="gl" tabindex="0">vata<span class="gl-pop" role="tooltip"><span class="gl-def">One of the three Ayurvedic doshas, Vata is the constitution governed by wind and ether — the elements of movement and empty space — and it shapes both mind and body in the image of the wind itself.</span><a class="gl-more" href="../glossary.html#glossary-vata">Full definition →</a></span></span> colleague who keeps adding new ideas isn't being reckless — that's how their mind works. A <span class="gl" tabindex="0">kapha<span class="gl-pop" role="tooltip"><span class="gl-def">In Ayurveda, Kapha is the dosha associated with the elements of water and earth — qualities that are cold, wet, thick, stable, heavy, and grounded.</span><a class="gl-more" href="../glossary.html#glossary-kapha">Full definition →</a></span></span> colleague who resists change isn't being obstinate — they need more time to move. Adjusting your approach to fit the type reduces unnecessary friction.</p>
+</li>
+</ol>
+</section></article>
+    </div>
+  </div>
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      
+      <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
 <p>- So now I&#x27;d like to talk a little bit about Ayurveda or traditional Indian medicine. And I really love sort of the Ayurvedic perspective because it is so different from how Western medicine was conceived and developed. And each of these perspectives is relatively complimentary. And when you put them together, you can get a really good understanding of how a person works and how disease works. So let&#x27;s start by understanding a little bit about Western medicine. So the first thing to understand about Western medicine is that it likes to divide and conquer. So if you think about how you, so if you think about doctors in Western medicine, they specialize on a particular organ.</p>
 <p>So you&#x27;ll have a psychiatrist who focuses on the mind, and then you&#x27;ll have a neurologist who focuses on the brain, and you&#x27;ll have a cardiologist who focuses on the heart, and you&#x27;ll have a pediatrician who focuses on children, and an obstetrician who focuses on pregnancy. So Western medicine is all about dividing and understanding the pieces of things to try to get to the truth of it. So you can also look at something like infectious disease, which is another specialty, but if we look at infections, what we find is that some infections are caused by viruses and other infections are caused by bacteria.</p>
 <p>And if we look at bacteria, there are gram-positive bacteria and gram-negative bacteria, and that the gram-positive bacteria respond to particular kinds of antibiotics, and that gram-negative bacteria respond to other kinds of antibiotics. So we can see that in medicine, what you&#x27;ve got is a lot of like dividing and specializing, going further in. I, for example, I&#x27;m an <span class="gl" tabindex="0">addiction<span class="gl-pop" role="tooltip"><span class="gl-def">The use of a chemical (alcohol, opioids, cannabis, caffeine, etc.) that produces neurological effects your brain then adapts to — leading to tolerance, withdrawal, and, potentially, addiction.</span><a class="gl-more" href="../glossary.html#glossary-substance-use">Full definition →</a></span></span> psychiatrist and other people are traumatologists who sort of focus on <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span>. So Western medicine is all about sort of dividing and conquering, and trying to find the smallest piece of something to sort of discover where the source of illness is.</p>
@@ -58,15 +163,21 @@ try {
 <p>And that people who are prone to <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span>, are actually physically very restless and tend to have lower weight than people who don&#x27;t have <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span>. And the Ayurvedic physicians have been saying this for thousands of years. So our hope is that by equipping you with a little bit of <span class="gl" tabindex="0">knowledge<span class="gl-pop" role="tooltip"><span class="gl-def">Vidya is objective, transmissible information — the kind of knowledge that can be written in a textbook, proven to another person, or exchanged between minds.</span><a class="gl-more" href="../glossary.html#glossary-vidya">Full definition →</a></span></span> of Ayurveda, you can start to yourself better. You can start to understand what your natural inclinations are, sort of what your genetic predispositions are, and how your environment may actually exacerbate or worsen some of your doshas. And if your doshas are out of balance, we can also teach you a little bit about how to balance them.</p>
 <p>And the cool thing is that if you balance your doshas, a lot of different things will get better at the same time. So when you balance the <span class="gl" tabindex="0">vata<span class="gl-pop" role="tooltip"><span class="gl-def">One of the three Ayurvedic doshas, Vata is the constitution governed by wind and ether — the elements of movement and empty space — and it shapes both mind and body in the image of the wind itself.</span><a class="gl-more" href="../glossary.html#glossary-vata">Full definition →</a></span></span> dosha, for example, people&#x27;s minds will be a little bit more calm. They&#x27;ll be a little bit less anxious. They may also put on a little bit of healthy weight, and they may also have an improvement in constipation, which is also a <span class="gl" tabindex="0">vata<span class="gl-pop" role="tooltip"><span class="gl-def">One of the three Ayurvedic doshas, Vata is the constitution governed by wind and ether — the elements of movement and empty space — and it shapes both mind and body in the image of the wind itself.</span><a class="gl-more" href="../glossary.html#glossary-vata">Full definition →</a></span></span> problem. So I hope this has been a useful introduction, and we hope to teach you a little bit more about Ayurveda throughout these modules.</p>
 </section></article>
+    </div>
   </div>
+  
 
-  <p class="meta">Transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">Depression<span class="gl-pop" role="tooltip"><span class="gl-def">A disruption in mood and functioning that exists on a spectrum — not a single, uniform illness.</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span> → <span class="gl" tabindex="0">Depression<span class="gl-pop" role="tooltip"><span class="gl-def">A disruption in mood and functioning that exists on a spectrum — not a single, uniform illness.</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span> & Ayurveda). Captions auto-generated.</p>
+  <p class="meta">Medium summary + transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">Depression<span class="gl-pop" role="tooltip"><span class="gl-def">A disruption in mood and functioning that exists on a spectrum — not a single, uniform illness.</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span> → <span class="gl" tabindex="0">Depression<span class="gl-pop" role="tooltip"><span class="gl-def">A disruption in mood and functioning that exists on a spectrum — not a single, uniform illness.</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span> & Ayurveda). Captions auto-generated; summary by claude-sonnet-4-6.</p>
 </div>
 
 <script>
 (function () {
   var root = document.documentElement;
-  var tb = document.querySelector('.theme-toggle');
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'medium');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
   var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
   tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
@@ -74,6 +185,9 @@ try {
   function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
   var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+  function navigateTo(id){ var el=id&&document.getElementById(id); if(!el)return; var v=el.closest('.view'); if(v)setView(v.getAttribute('data-view')); el.scrollIntoView(); }
+  window.addEventListener('hashchange', function(){ navigateTo(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash) navigateTo(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>
 <script>

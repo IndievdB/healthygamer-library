@@ -9,7 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-} catch (e) {}
+  document.documentElement.setAttribute('data-view', 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -31,9 +32,150 @@ try {
     <span class="speakers-note">19:41 min</span>
   </p>
 
-  <div class="doc">
+  
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">1,765w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">3,524w</span></button>
     
-    <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
+  </div>
+  
+
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#summary-summary">Summary</a></li>
+<li><a href="#summary-what-sex-actually-does-in-a-relationship">What Sex Actually Does in a Relationship</a></li>
+<li><a href="#summary-secure-attachment-sex-as-an-expression-of-intimacy">Secure Attachment: Sex as an Expression of Intimacy</a></li>
+<li><a href="#summary-anxious-attachment-sex-as-a-way-to-create-closeness">Anxious Attachment: Sex as a Way to Create Closeness</a></li>
+<li><a href="#summary-avoidant-attachment-sex-as-distance-management">Avoidant Attachment: Sex as Distance Management</a></li>
+<li><a href="#summary-traumas-fingerprints-on-sex">Trauma's Fingerprints on Sex</a></li>
+<li><a href="#summary-common-pitfalls">Common Pitfalls</a></li>
+<li><a href="#summary-action-items-exercises">Action Items &amp; Exercises</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="summary-summary">Summary</h2>
+<p><strong>TL;DR — Your <span class="gl" tabindex="0">attachment<span class="gl-pop" role="tooltip"><span class="gl-def">A neurobiologically grounded framework explaining how humans develop the capacity to form bonds with others — and how the quality of those early bonds shapes the way you relate to people for the rest of your life.</span><a class="gl-more" href="../glossary.html#glossary-attachment-theory">Full definition →</a></span></span> style shapes not just how you relate emotionally, but how you use sex in relationships: as intimacy, as a tool to create closeness, or as a way to keep distance.</strong></p>
+<p><span class="gl" tabindex="0">Attachment<span class="gl-pop" role="tooltip"><span class="gl-def">A neurobiologically grounded framework explaining how humans develop the capacity to form bonds with others — and how the quality of those early bonds shapes the way you relate to people for the rest of your life.</span><a class="gl-more" href="../glossary.html#glossary-attachment-theory">Full definition →</a></span></span> styles — secure, anxious, and avoidant — aren't just abstract psychological categories. They have a direct, practical effect on how you experience sex and physical intimacy with a partner. Layered on top of that, <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> complicates the picture further, since sex activates every major part of the brain and body simultaneously, making it one of the places where unresolved pain surfaces most visibly.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-what-sex-actually-does-in-a-relationship">What Sex Actually Does in a Relationship</h2>
+<p>Before mapping <span class="gl" tabindex="0">attachment<span class="gl-pop" role="tooltip"><span class="gl-def">A neurobiologically grounded framework explaining how humans develop the capacity to form bonds with others — and how the quality of those early bonds shapes the way you relate to people for the rest of your life.</span><a class="gl-more" href="../glossary.html#glossary-attachment-theory">Full definition →</a></span></span> styles onto sex, it helps to understand what sex is doing physiologically and emotionally.</p>
+<p>Sex is, for many people, an <strong><span class="gl" tabindex="0">emotional regulation<span class="gl-pop" role="tooltip"><span class="gl-def">The ability to identify and modify emotional states in ways that support adaptive, goal-directed behavior.</span><a class="gl-more" href="../glossary.html#glossary-emotional-regulation">Full definition →</a></span></span> technique</strong>. Physical arousal suppresses negative emotional circuitry in the brain — which is part of why some people develop compulsive relationships with sex or pornography. When you feel bad internally, activating those circuits quiets the noise.</p>
+<p>Sex also releases a cascade of neurochemicals:</p>
+<ul>
+<li><strong><span class="gl" tabindex="0">Dopamine<span class="gl-pop" role="tooltip"><span class="gl-def">A neurotransmitter that drives motivation, behavioral reinforcement, and craving — not simply the feeling of pleasure.</span><a class="gl-more" href="../glossary.html#glossary-dopamine">Full definition →</a></span></span></strong> during orgasm (<span class="gl" tabindex="0">pleasure<span class="gl-pop" role="tooltip"><span class="gl-def">The experience of pleasure that comes from satisfying desires — roughly associated with dopamine and the brain&#x27;s reward circuitry.</span><a class="gl-more" href="../glossary.html#glossary-hedonics">Full definition →</a></span></span> and reward)</li>
+<li><strong><span class="gl" tabindex="0">Oxytocin<span class="gl-pop" role="tooltip"><span class="gl-def">A hormone central to emotional bonding, released during physical contact — hugging, cuddling, skin-to-skin touch, breastfeeding, and sexual activity.</span><a class="gl-more" href="../glossary.html#glossary-oxytocin">Full definition →</a></span></span></strong> during the cuddling and closeness afterward (this is the bonding chemical — the act itself matters less for <span class="gl" tabindex="0">attachment<span class="gl-pop" role="tooltip"><span class="gl-def">A neurobiologically grounded framework explaining how humans develop the capacity to form bonds with others — and how the quality of those early bonds shapes the way you relate to people for the rest of your life.</span><a class="gl-more" href="../glossary.html#glossary-attachment-theory">Full definition →</a></span></span> than what happens after)</li>
+<li><strong><span class="gl" tabindex="0">Serotonin<span class="gl-pop" role="tooltip"><span class="gl-def">A neurotransmitter associated with contentment and peace — distinct from dopamine&#x27;s excitement and pleasure — whose levels are clinically linked to depression and anxiety.</span><a class="gl-more" href="../glossary.html#glossary-serotonin">Full definition →</a></span></span></strong> in the aftermath, producing a sense of contentment and calm</li>
+</ul>
+<p>Because sex is simultaneously physical, emotional, sensory, and <span class="gl" tabindex="0">identity<span class="gl-pop" role="tooltip"><span class="gl-def">A stable sense of who you are, built from the narrative integration of emotionally salient experiences — not a fixed trait you possess, but a story you construct by stringing together the moments in your life that…</span><a class="gl-more" href="../glossary.html#glossary-identity">Full definition →</a></span></span>-related, it activates the entire brain — every sensory cortex, the emotional centers, the <span class="gl" tabindex="0">frontal lobes<span class="gl-pop" role="tooltip"><span class="gl-def">The brain region responsible for planning, executing tasks, controlling impulses, and regulating other parts of the brain — essentially the hardware of self-regulation and mature behavior.</span><a class="gl-more" href="../glossary.html#glossary-frontal-lobes">Full definition →</a></span></span>, the <span class="gl" tabindex="0">pleasure<span class="gl-pop" role="tooltip"><span class="gl-def">The experience of pleasure that comes from satisfying desires — roughly associated with dopamine and the brain&#x27;s reward circuitry.</span><a class="gl-more" href="../glossary.html#glossary-hedonics">Full definition →</a></span></span> circuits, and even the areas tied to your sense of self and connection to others. It also engages both the <span class="gl" tabindex="0">parasympathetic nervous system<span class="gl-pop" role="tooltip"><span class="gl-def">The branch of the autonomic nervous system responsible for &quot;rest and digest&quot; — the body&#x27;s recovery and regeneration mode, as opposed to the fight-or-flight activation of the sympathetic system.</span><a class="gl-more" href="../glossary.html#glossary-parasympathetic-nervous-system">Full definition →</a></span></span> (relaxation, openness) and the <span class="gl" tabindex="0">sympathetic nervous system<span class="gl-pop" role="tooltip"><span class="gl-def">The body&#x27;s fight-or-flight activation system — one half of the autonomic nervous system that mobilizes you for intense physical action.</span><a class="gl-more" href="../glossary.html#glossary-sympathetic-nervous-system">Full definition →</a></span></span> (physiological intensity). This whole-brain, whole-body quality is exactly why <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> — which also touches every dimension of a person — intersects with sex so deeply.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-secure-attachment-sex-as-an-expression-of-intimacy">Secure Attachment: Sex as an Expression of Intimacy</h2>
+<p>People with secure <span class="gl" tabindex="0">attachment<span class="gl-pop" role="tooltip"><span class="gl-def">A neurobiologically grounded framework explaining how humans develop the capacity to form bonds with others — and how the quality of those early bonds shapes the way you relate to people for the rest of your life.</span><a class="gl-more" href="../glossary.html#glossary-attachment-theory">Full definition →</a></span></span> (roughly 50% of the population) carry a foundational belief that the world is safe and that good relationships are possible. If one relationship ends, it hurts, but it doesn't shatter their worldview. They can form new bonds.</p>
+<p>In practice, securely attached people:</p>
+<ul>
+<li>Can identify and manage their own emotions without leaning entirely on a partner</li>
+<li>Can tolerate a partner's difficult emotions without internalizing them as personal failure</li>
+<li>Have a reasonably stable <span class="gl" tabindex="0">sense of identity<span class="gl-pop" role="tooltip"><span class="gl-def">A stable sense of who you are, built from the narrative integration of emotionally salient experiences — not a fixed trait you possess, but a story you construct by stringing together the moments in your life that…</span><a class="gl-more" href="../glossary.html#glossary-identity">Full definition →</a></span></span> and self-worth</li>
+</ul>
+<p>For secure individuals, <strong>sex is primarily an expression of an already existing bond</strong>. It can be purely physical sometimes, but in the context of a relationship, it tends to be one natural outgrowth of genuine intimacy rather than a substitute for it or a tool to manufacture it.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-anxious-attachment-sex-as-a-way-to-create-closeness">Anxious Attachment: Sex as a Way to Create Closeness</h2>
+<p>Anxiously attached individuals learned early on that the people they depended on were inconsistent — sometimes available, sometimes not. The result is a persistent internal question: <em>How do I get what I need from this person?</em></p>
+<p>This plays out in relationships as:</p>
+<ul>
+<li><strong>Clingy or people-pleasing behavior</strong> — staying maximally likable so the other person won't leave</li>
+<li><strong>Behaviors designed to elicit sympathy</strong> — because when someone sympathizes with you, it feels like being cared for and safe</li>
+<li><strong>Hypervigilance about abandonment</strong> — interpreting an unreturned text or a request for space as a sign the relationship is ending</li>
+<li>Difficulty attending to a partner's emotional needs because their own internal distress is so consuming</li>
+</ul>
+<p>When an anxiously attached person is told their partner needs space, the internal experience can spiral into something like: <em>"You're right, I'm a terrible partner, you deserve someone better, you should just break up with me."</em> It isn't manipulation — it's a nervous system that genuinely cannot distinguish "my partner needs an hour alone" from "I am about to be abandoned."</p>
+<p>In extreme cases, anxious <span class="gl" tabindex="0">attachment<span class="gl-pop" role="tooltip"><span class="gl-def">A neurobiologically grounded framework explaining how humans develop the capacity to form bonds with others — and how the quality of those early bonds shapes the way you relate to people for the rest of your life.</span><a class="gl-more" href="../glossary.html#glossary-attachment-theory">Full definition →</a></span></span> shades into <strong><span class="gl" tabindex="0">borderline personality disorder<span class="gl-pop" role="tooltip"><span class="gl-def">A pervasive pattern of instability across relationships, self-image, and emotional experience — rooted not in random reactivity, but in constant, unrelenting emotional pain.</span><a class="gl-more" href="../glossary.html#glossary-borderline-personality-disorder">Full definition →</a></span></span></strong>, where the fear of abandonment becomes so intense it severely impairs functioning.</p>
+<p>When it comes to sex, anxiously attached individuals often <strong>use sex to manufacture intimacy</strong>. If there's tension in the relationship, if the partner seems distant or upset, initiating sex becomes a way to pull them back in — to reestablish closeness and feel safe again.</p>
+<blockquote>
+<p>"If we can have sex, then I feel close to them. I'm pulling them back in and we feel kind of intimate. I feel safe because if we're having sex, then that means we're close together and the person isn't going to leave."</p>
+</blockquote>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-avoidant-attachment-sex-as-distance-management">Avoidant Attachment: Sex as Distance Management</h2>
+<p>Avoidantly attached individuals had caregivers who were reliably unavailable. The lesson they absorbed: <em>Don't rely on anyone. Handle everything yourself.</em> The result is fierce emotional independence — but at a cost.</p>
+<p>fMRI brain scans reveal something striking: when avoidantly attached people are in relationships, the part of the brain that <strong>craves emotional connection is being actively suppressed</strong>. They are expending real mental energy to override a natural human drive, because experience taught them that reaching for connection only leads to pain.</p>
+<p>In relationships, this looks like:</p>
+<ul>
+<li>Seeming emotionally cold or distant even while the relationship has all the external features (trips, shared activities, sex)</li>
+<li>Keeping a partner in a <strong>limbo zone</strong> — close enough that they don't disappear, but not close enough to feel genuinely vulnerable</li>
+<li>Sometimes downplaying a partner's competence, because if you <em>need</em> your partner, you've made yourself vulnerable — whereas if you're superior and they're inferior, you can tell yourself you don't really need them</li>
+<li>Pulling a partner in when they get too distant, then pushing them away when they get too close</li>
+</ul>
+<p>For avoidant individuals, <strong>sex can actually be used to maintain distance rather than create closeness</strong>. After sex, there's little cuddling or emotional presence. The intimacy that <em>could</em> follow gets avoided — the "let's get dressed and move on" dynamic. The sexual act becomes mechanical and physical, stripped of the emotional layer.</p>
+<p>This also shows up in arrangements like friends with benefits: a setup that looks like pure physical connection with no emotional stakes. But if that person starts dating someone else and forming a genuine bond with them, the avoidant individual often becomes jealous or passive-aggressive — because underneath the walls, the need for connection was always there.</p>
+<blockquote>
+<p>"Deep down, they still crave that connection. And the last thing I want to touch on is just a little bit more about sex and <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span>."</p>
+</blockquote>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-traumas-fingerprints-on-sex">Trauma's Fingerprints on Sex</h2>
+<p>Because sex activates every part of the brain at once — emotion, sensation, <span class="gl" tabindex="0">identity<span class="gl-pop" role="tooltip"><span class="gl-def">A stable sense of who you are, built from the narrative integration of emotionally salient experiences — not a fixed trait you possess, but a story you construct by stringing together the moments in your life that…</span><a class="gl-more" href="../glossary.html#glossary-identity">Full definition →</a></span></span>, bonding, <span class="gl" tabindex="0">pleasure<span class="gl-pop" role="tooltip"><span class="gl-def">The experience of pleasure that comes from satisfying desires — roughly associated with dopamine and the brain&#x27;s reward circuitry.</span><a class="gl-more" href="../glossary.html#glossary-hedonics">Full definition →</a></span></span>, attention — it's one of the most reliable surfaces on which <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> leaves a mark.</p>
+<p>A few concrete examples:</p>
+<ul>
+<li><strong>Vaginismus</strong>: involuntary muscle spasms that make penetrative intercourse impossible or painful, sometimes linked to a history of sexual abuse — a physical manifestation of a psychological wound</li>
+<li><strong>Emotional disconnection during sex</strong>: if <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> has cut you off from your own emotions, it's difficult to make love; what's left is purely mechanical sex without relational depth</li>
+<li><strong>Using sex as a coping mechanism</strong>: because sex is such a powerful physiological intervention — quieting mental noise, forcing presence in the body, engaging the nervous system — it can become a go-to way to regulate unbearable internal states</li>
+</ul>
+<p>The complicated part is that the same features that make sex a potential coping tool (it stills the mind, roots you in the present, engages the full nervous system) also make it a place where <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> echoes loudest.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-common-pitfalls">Common Pitfalls</h2>
+<ul>
+<li><strong>Confusing the behavior for the person.</strong> Anxious clinginess and avoidant coldness are not character flaws — they're learned survival strategies. Treating them as moral failures (in yourself or a partner) just adds <span class="gl" tabindex="0">shame<span class="gl-pop" role="tooltip"><span class="gl-def">The emotion triggered by a perceived gap between where you are and where you think you should be.</span><a class="gl-more" href="../glossary.html#glossary-shame">Full definition →</a></span></span> without changing anything.</li>
+<li><strong>Thinking avoidant people don't want connection.</strong> They do. The suppression is active and effortful. Interpreting distance as indifference misses what's actually happening neurologically.</li>
+<li><strong>Assuming sex problems are purely physical.</strong> Vaginismus, low <span class="gl" tabindex="0">desire<span class="gl-pop" role="tooltip"><span class="gl-def">One of the four classical Hindu goals of life, Kama is the pursuit of pleasure, desire, and sensory enjoyment — including but not limited to sexuality and lust.</span><a class="gl-more" href="../glossary.html#glossary-kama">Full definition →</a></span></span>, compulsive sex, inability to be emotionally present during intimacy — these are often downstream of <span class="gl" tabindex="0">attachment<span class="gl-pop" role="tooltip"><span class="gl-def">A neurobiologically grounded framework explaining how humans develop the capacity to form bonds with others — and how the quality of those early bonds shapes the way you relate to people for the rest of your life.</span><a class="gl-more" href="../glossary.html#glossary-attachment-theory">Full definition →</a></span></span> wounds and <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span>, not just body mechanics.</li>
+<li><strong>Expecting reassurance to fix anxious <span class="gl" tabindex="0">attachment<span class="gl-pop" role="tooltip"><span class="gl-def">A neurobiologically grounded framework explaining how humans develop the capacity to form bonds with others — and how the quality of those early bonds shapes the way you relate to people for the rest of your life.</span><a class="gl-more" href="../glossary.html#glossary-attachment-theory">Full definition →</a></span></span>.</strong> If you're with an anxiously attached person and you've proven a hundred times that you're not leaving, and the fear still doesn't go away — that's not a failure of evidence. The fear isn't rooted in logic; it's rooted in early-wired threat detection. Reassurance helps in the moment but doesn't rewrite the underlying pattern.</li>
+<li><strong>Mistaking the limbo zone for a healthy relationship.</strong> <span class="gl" tabindex="0">Avoidant attachment<span class="gl-pop" role="tooltip"><span class="gl-def">A pattern of relating to others in which a person keeps people at emotional arm&#x27;s length — not because they don&#x27;t crave connection, but because connection feels dangerous.</span><a class="gl-more" href="../glossary.html#glossary-avoidant-attachment">Full definition →</a></span></span> creates a dynamic where neither person is fully present. It can feel stable because nothing dramatic is happening, but it's a sustained absence of intimacy, not the presence of it.</li>
+</ul>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-action-items-exercises">Action Items &amp; Exercises</h2>
+<ol>
+<li>
+<p><strong>Identify your pattern.</strong> Which of the three descriptions — secure, anxious, avoidant — resonates with how you behave in relationships? Be honest about the behaviors, not just the feelings. Do you pursue when someone pulls away? Do you emotionally disappear when things get close?</p>
+</li>
+<li>
+<p><strong>Notice what sex means to you right now.</strong> Ask yourself: when you initiate sex, what are you reaching for? Genuine closeness? Reassurance that the relationship is okay? Relief from <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> or internal discomfort? Physical release with emotional distance? Just naming it clearly is more useful than judging it.</p>
+</li>
+<li>
+<p><strong>Track the abandonment trigger (anxious).</strong> If you notice yourself spiraling when a partner doesn't text back or asks for space, pause and write down: <em>What story am I telling myself right now? What's the evidence for and against it?</em> This won't eliminate the fear, but it builds a <span class="gl" tabindex="0">habit<span class="gl-pop" role="tooltip"><span class="gl-def">Automatic behavior that operates without motivation, willpower, or conscious thought — you simply do it.</span><a class="gl-more" href="../glossary.html#glossary-habit">Full definition →</a></span></span> of checking the interpretation before acting on it.</p>
+</li>
+<li>
+<p><strong>Practice tolerating closeness in small doses (avoidant).</strong> After sex or a positive moment with a partner, stay present for five minutes before reaching for your phone, getting up, or shifting into task mode. You don't have to process deep emotion — just don't immediately exit. Small extensions of presence over time can begin to rewire the reflex.</p>
+</li>
+<li>
+<p><strong>If <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> is in the picture, get appropriate help.</strong> <span class="gl" tabindex="0">Trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> that affects your capacity for intimacy responds to specific therapeutic approaches (<span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span>-focused therapy, somatic work). Understanding that your difficulty with sex, emotional connection, or trust <em>has a source</em> is the beginning — but professional support is the most direct path through it.</p>
+</li>
+<li>
+<p><strong>Have the conversation with your partner.</strong> If you recognize your <span class="gl" tabindex="0">attachment<span class="gl-pop" role="tooltip"><span class="gl-def">A neurobiologically grounded framework explaining how humans develop the capacity to form bonds with others — and how the quality of those early bonds shapes the way you relate to people for the rest of your life.</span><a class="gl-more" href="../glossary.html#glossary-attachment-theory">Full definition →</a></span></span> pattern (or theirs) in this material, consider naming it directly — not as a diagnosis or accusation, but as a shared framework. "I think I do this because I'm afraid of being abandoned" is a very different conversation than the behavior itself, and it gives both people something to work with.</p>
+</li>
+</ol>
+</section></article>
+    </div>
+  </div>
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      
+      <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
 <p>So, we are now going to dive a little bit deeper into how these <span class="gl" tabindex="0">attachment<span class="gl-pop" role="tooltip"><span class="gl-def">A neurobiologically grounded framework explaining how humans develop the capacity to form bonds with others — and how the quality of those early bonds shapes the way you relate to people for the rest of your life.</span><a class="gl-more" href="../glossary.html#glossary-attachment-theory">Full definition →</a></span></span> styles actually manifest in relationships. But before we do that, we have to do a quick detour to understand a little bit about sex. So, sex is something that is, you know, has all kinds of attachments to it. But when it comes to relationships, it serves a couple of very important functions. And we have to sort of explore what those are, because sex is a big part of many relationships. And each of these <span class="gl" tabindex="0">attachment<span class="gl-pop" role="tooltip"><span class="gl-def">A neurobiologically grounded framework explaining how humans develop the capacity to form bonds with others — and how the quality of those early bonds shapes the way you relate to people for the rest of your life.</span><a class="gl-more" href="../glossary.html#glossary-attachment-theory">Full definition →</a></span></span> styles kind of have a unique intersection when it comes to sex. So, let&#x27;s start by understanding a couple of basics about sex.</p>
 <p>So, some... I was about to go into the anatomy of how we have sex. But then that&#x27;s a little bit complicated, because it depends. So, let&#x27;s understand a little bit of the sort of physiology and emotionality of sex. So, the first thing to understand is that for many people, sex is a <span class="gl" tabindex="0">emotional regulation<span class="gl-pop" role="tooltip"><span class="gl-def">The ability to identify and modify emotional states in ways that support adaptive, goal-directed behavior.</span><a class="gl-more" href="../glossary.html#glossary-emotional-regulation">Full definition →</a></span></span> technique. We sort of know that if we look at studies on pornography and masturbation, that any time we are physically aroused, it suppresses negative emotional circuitry in the brain. So, people will sometimes get addicted to sex or pornography, because when we activate these circuits, these circuits will shut off a lot of negativity in the brain.</p>
 <p>So, sometimes sex can be used as an <span class="gl" tabindex="0">emotional regulation<span class="gl-pop" role="tooltip"><span class="gl-def">The ability to identify and modify emotional states in ways that support adaptive, goal-directed behavior.</span><a class="gl-more" href="../glossary.html#glossary-emotional-regulation">Full definition →</a></span></span> technique. We also know that sex, the process of sex, and especially orgasm and what happens after that, can release a lot of positive chemicals and neurotransmitters and things like that. Just as a couple, we get <span class="gl" tabindex="0">dopamine<span class="gl-pop" role="tooltip"><span class="gl-def">A neurotransmitter that drives motivation, behavioral reinforcement, and craving — not simply the feeling of pleasure.</span><a class="gl-more" href="../glossary.html#glossary-dopamine">Full definition →</a></span></span> from the process of orgasm. We also get something called <span class="gl" tabindex="0">oxytocin<span class="gl-pop" role="tooltip"><span class="gl-def">A hormone central to emotional bonding, released during physical contact — hugging, cuddling, skin-to-skin touch, breastfeeding, and sexual activity.</span><a class="gl-more" href="../glossary.html#glossary-oxytocin">Full definition →</a></span></span>, which is what forms bonding between two human beings. So, it isn&#x27;t necessarily the act of sex, but usually the cuddling after that results in bonding between two people. So, sex is a big part of how people form relationships. So, <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> also affects our relationship with sex.</p>
@@ -65,15 +207,21 @@ try {
 <p>The good news is that since it&#x27;s all <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> related, that may sound overwhelming, but the good news is that we have many avenues to address these things. So if you have difficulty forming an emotional connection, we&#x27;ve given you tools to get in touch with and metabolize your emotions. If you have difficulty understanding your relationships with other people, hopefully in this lecture we&#x27;ve illustrated some of the dynamics that are at play. If you&#x27;re an avoidantly attached individual and you want to connect with, you crave connection with another human being, but you&#x27;re scared of it. And so you send people mixed signals, because on the one hand you don&#x27;t want them to leave, but on the other hand you don&#x27;t want them to get any closer.</p>
 <p>Stay right there, no closer, no further away, right there. This is where I feel safe. And yet that is unsatisfying, because deep down you crave something more. And it&#x27;s confusing as hell for your partner. The key thing that I want you all to take away is that we understand what is going on here. And if you spend enough time, if you spend enough energy, if you get the right kind of help, no matter what your problem is, chances are you can move forward in a very positive way. And you can get exactly to where you want to go. Which is hopefully a healthy relationship that involves the amount of sex that you feel comfortable with.</p>
 </section></article>
+    </div>
   </div>
+  
 
-  <p class="meta">Transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">Trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> → <span class="gl" tabindex="0">Trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> & Relationships). Captions auto-generated.</p>
+  <p class="meta">Medium summary + transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">Trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> → <span class="gl" tabindex="0">Trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> & Relationships). Captions auto-generated; summary by claude-sonnet-4-6.</p>
 </div>
 
 <script>
 (function () {
   var root = document.documentElement;
-  var tb = document.querySelector('.theme-toggle');
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'medium');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
   var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
   tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
@@ -81,6 +229,9 @@ try {
   function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
   var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+  function navigateTo(id){ var el=id&&document.getElementById(id); if(!el)return; var v=el.closest('.view'); if(v)setView(v.getAttribute('data-view')); el.scrollIntoView(); }
+  window.addEventListener('hashchange', function(){ navigateTo(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash) navigateTo(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>
 <script>

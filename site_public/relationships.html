@@ -9,7 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-} catch (e) {}
+  document.documentElement.setAttribute('data-view', 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -31,9 +32,113 @@ try {
     <span class="speakers-note">14:50 min</span>
   </p>
 
-  <div class="doc">
+  
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">1,509w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">2,747w</span></button>
     
-    <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
+  </div>
+  
+
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#summary-summary">Summary</a></li>
+<li><a href="#summary-how-you-learned-what-you-feel-mirroring">How You Learned What You Feel: Mirroring</a></li>
+<li><a href="#summary-mirroring-also-teaches-you-how-to-regulate-emotions">Mirroring Also Teaches You How to Regulate Emotions</a></li>
+<li><a href="#summary-what-happens-when-mirroring-is-missing">What Happens When Mirroring Is Missing</a></li>
+<li><a href="#summary-why-the-same-patterns-keep-repeating">Why the Same Patterns Keep Repeating</a></li>
+<li><a href="#summary-common-pitfalls">Common Pitfalls</a></li>
+<li><a href="#summary-action-items-exercises">Action Items &amp; Exercises</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="summary-summary">Summary</h2>
+<p><strong>TL;DR — Your ability to understand and manage your own emotions was shaped by how the people around you responded to your emotions when you were a child. If that mirroring was absent or distorted, you likely carry patterns into adult relationships that repeat themselves no matter how hard you try to change them.</strong></p>
+<p>Relationships are one of the areas where early experience has the most lasting, invisible influence. Even people who didn't grow up in outright abusive or neglectful homes can find themselves stuck in one-sided friendships, unable to enforce boundaries, clinging anxiously when a partner needs space, or staying in relationships they know are harmful. The common thread isn't the specific relationship — it's a repeating internal pattern that follows you from partner to partner, friend to friend. To understand why, you have to go back to the basics of how human beings learn to connect in the first place.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-how-you-learned-what-you-feel-mirroring">How You Learned What You Feel: Mirroring</h2>
+<p>Most people assume their inner emotional life is entirely their own — something they experience privately, independent of the world around them. <span class="gl" tabindex="0">Attachment theory<span class="gl-pop" role="tooltip"><span class="gl-def">A neurobiologically grounded framework explaining how humans develop the capacity to form bonds with others — and how the quality of those early bonds shapes the way you relate to people for the rest of your life.</span><a class="gl-more" href="../glossary.html#glossary-attachment-theory">Full definition →</a></span></span> tells a more complicated story. Your <em>understanding</em> of your internal emotional state was built from the outside in.</p>
+<p>Here's the clearest demonstration of this: a small child stumbles and falls. Before they cry or laugh, they look around. If the adults nearby laugh and wave it off, the child laughs too and runs along. If the adults panic, the child cries. The child isn't faking — they genuinely use the emotional response of the people around them to interpret what they just experienced. That's <strong>mirroring</strong>.</p>
+<p>This makes sense when you consider that a two- or three-year-old has no internal vocabulary for emotions. They don't yet know the difference between anger, sadness, disappointment, or fear. All they know is <em>content</em> or <em>not content</em>. The way they build a map of their inner world is by watching how others respond to them.</p>
+<p>This is why, across most cultures, adults instinctively use exaggerated emotional expression with small children. When a child brings you a crayon drawing, you don't offer a measured critique — you act like you've seen a masterpiece. When they show you a broken stick, you act like it's a small tragedy. This isn't irrational. It's how children learn to locate and name what's happening inside them:</p>
+<blockquote>
+<p>"Kids have an internal experience. They don't know what it is. It's almost like there's a dictionary being built from their internal emotional state and what they see around them."</p>
+</blockquote>
+<p>When the child falls and the adults panic: <em>this is danger, this is concern, that's what I'm feeling.</em> When they show you the drawing and you light up: <em>this is pride and joy, that's what this feeling is.</em> Each interaction adds an entry to that internal dictionary.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-mirroring-also-teaches-you-how-to-regulate-emotions">Mirroring Also Teaches You How to Regulate Emotions</h2>
+<p>Mirroring doesn't just label emotions — it also teaches you how to handle them.</p>
+<p>Watch what happens when a small child starts to get upset and a parent ignores them. The distress escalates. It keeps escalating until the parent shows up, acknowledges what's happening, and meets the child where they are. The moment that happens, the emotion settles. The parent essentially acts as a <strong>vessel</strong> for the child's emotions — the child offloads what they can't carry alone, and the parent holds it with them.</p>
+<p>This process, repeated hundreds of times over the course of childhood, builds something crucial: the belief that emotions are manageable. When you reliably experienced that getting upset led to someone showing up and helping you through it, you internalized that being upset is not catastrophic. Distress has an end. The classic ritual of kissing a boo-boo has nothing to do with medicine — it's entirely psychological, a way of taking on the child's emotional weight so they don't have to carry it alone.</p>
+<p>The child who had that experience grows up with a baseline sense that their feelings won't overwhelm them. The child who <em>didn't</em> — whose distress was ignored, dismissed, or met with more panic — grows up without that foundation.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-what-happens-when-mirroring-is-missing">What Happens When Mirroring Is Missing</h2>
+<p>When <span class="gl" tabindex="0">emotional mirroring<span class="gl-pop" role="tooltip"><span class="gl-def">The ability to literally feel what another person is feeling, rather than simply understanding it intellectually.</span><a class="gl-more" href="../glossary.html#glossary-emotional-empathy">Full definition →</a></span></span> is absent or insufficient during childhood, two things fail to develop properly:</p>
+<ol>
+<li><strong>Emotional <span class="gl" tabindex="0">awareness<span class="gl-pop" role="tooltip"><span class="gl-def">The capacity to accurately receive and process information about what is happening — in your environment, your body, or your mind — so that your brain can respond appropriately.</span><a class="gl-more" href="../glossary.html#glossary-awareness">Full definition →</a></span></span></strong> — you don't know what you're feeling</li>
+<li><strong><span class="gl" tabindex="0">Emotional regulation<span class="gl-pop" role="tooltip"><span class="gl-def">The ability to identify and modify emotional states in ways that support adaptive, goal-directed behavior.</span><a class="gl-more" href="../glossary.html#glossary-emotional-regulation">Full definition →</a></span></span></strong> — you can't manage what you're feeling</li>
+</ol>
+<p>The clinical term for the first failure is <strong><span class="gl" tabindex="0">alexithymia<span class="gl-pop" role="tooltip"><span class="gl-def">A near-total blindness to your own internal emotional state — you can&#x27;t reliably recognize, name, or describe what you&#x27;re actually feeling.</span><a class="gl-more" href="../glossary.html#glossary-alexithymia">Full definition →</a></span></span></strong> — literally, color blindness to your own emotions. You're not faking being out of touch with your feelings. You genuinely lack the internal map that would let you identify them.</p>
+<p>This is particularly common in men. There's even a specific term for it: <strong><span class="gl" tabindex="0">normative male alexithymia<span class="gl-pop" role="tooltip"><span class="gl-def">A near-total blindness to your own internal emotional state — you can&#x27;t reliably recognize, name, or describe what you&#x27;re actually feeling.</span><a class="gl-more" href="../glossary.html#glossary-alexithymia">Full definition →</a></span></span></strong> — normative because it affects most men, not just some. The reason is straightforward: boys are less likely to receive exaggerated <span class="gl" tabindex="0">emotional mirroring<span class="gl-pop" role="tooltip"><span class="gl-def">The ability to literally feel what another person is feeling, rather than simply understanding it intellectually.</span><a class="gl-more" href="../glossary.html#glossary-emotional-empathy">Full definition →</a></span></span>. When a boy cries over something small, the response is more often suppression than amplification. Over time, that adds up to a much thinner internal emotional vocabulary.</p>
+<p>The effects show up clearly in adult relationships. You feel a spike of <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> when your partner doesn't text back quickly — but you can't name the feeling or trace where it comes from. You behave in ways that confuse you after the fact. You keep ending up in the same kinds of relationships even though you're actively trying to change. That's not weakness or bad luck. It's a missing foundation.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-why-the-same-patterns-keep-repeating">Why the Same Patterns Keep Repeating</h2>
+<p>The most disorienting feature of <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span>'s effect on relationships is the repetition. Change the partner, change the city, change the approach to dating — the same dynamic reassembles itself. That's because the force driving it isn't external. It's an internal pattern built early, running underneath conscious decision-making.</p>
+<p>These patterns can look like:
+- Always being the one to initiate contact; the relationship collapses if you stop
+- Being unable to advocate for yourself without serious <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span>
+- Feeling intensely clingy while logically knowing the feeling is disproportionate
+- Staying in relationships that are clearly harmful, with no clear understanding of why leaving feels impossible</p>
+<p>None of these are character flaws. They are predictable outcomes of specific gaps in early emotional development.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-common-pitfalls">Common Pitfalls</h2>
+<p><strong>Assuming <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> requires abuse or neglect.</strong> Many people dismiss their own relational struggles because their childhood "wasn't that bad." But mirroring failures don't require dramatic events — a parent who consistently shut down emotional expression, couldn't tolerate certain feelings in their child, or was simply emotionally unavailable is enough to create lasting gaps.</p>
+<p><strong>Thinking these patterns are permanent.</strong> The brain is plastic. The skills that weren't built in childhood — identifying feelings, tolerating them, regulating them — can be built in adulthood. That's much of what psychotherapy actually does.</p>
+<p><strong>Dismissing the "how does that make you feel?" question.</strong> It feels beside the point when you have an actual problem to solve. But unexamined emotions don't go away — they drive behavior from underneath. You can't think clearly about a problem while an unidentified emotion is running the decision-making process. Naming the feeling is the prerequisite to solving the problem, not a detour from it.</p>
+<p><strong>Blaming the wrong variable.</strong> If the same relationship pattern has followed you through multiple partners or social circles, the variable they all have in common is you — specifically, your internal emotional framework. That's not a moral failing; it's useful diagnostic information.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-action-items-exercises">Action Items &amp; Exercises</h2>
+<ol>
+<li>
+<p><strong>Identify your <span class="gl" tabindex="0">alexithymia<span class="gl-pop" role="tooltip"><span class="gl-def">A near-total blindness to your own internal emotional state — you can&#x27;t reliably recognize, name, or describe what you&#x27;re actually feeling.</span><a class="gl-more" href="../glossary.html#glossary-alexithymia">Full definition →</a></span></span> baseline.</strong> The next time you feel a strong emotional reaction — <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span>, irritability, a pull toward someone or away from them — pause and try to name it specifically. Not just "bad" or "stressed," but what exactly. Angry? Scared? Ashamed? Lonely? Notice how hard or easy that is. The difficulty itself is data.</p>
+</li>
+<li>
+<p><strong>Trace a repeating relationship pattern.</strong> Think of one pattern that has shown up in more than one relationship (friendship or romantic). Write it down concretely: <em>what happens, what you do, what the other person does.</em> Don't analyze it yet — just describe it clearly enough that someone else could recognize it.</p>
+</li>
+<li>
+<p><strong>Practice not suppressing before you've named.</strong> When something upsets you, resist the immediate move to fix it or dismiss it. Give yourself 60 seconds to sit with the feeling and try to locate it in your body. Where do you feel it? What does it remind you of?</p>
+</li>
+<li>
+<p><strong>Notice escalation cycles.</strong> Pay attention to moments when your emotional distress ramps up quickly — a partner who doesn't respond, a friend who cancels, a situation where you feel left out. Notice the escalation <em>before</em> you react. The goal isn't to stop feeling it; it's to observe the pattern happening in real time.</p>
+</li>
+<li>
+<p><strong>Use relationships as mirrors intentionally.</strong> If you have a trusted friend or therapist, practice naming emotions out loud in conversation rather than reporting events. Instead of "here's what happened," try "here's what I felt when it happened." The other person's mirrored response — even subtle — gives you the same calibration you needed as a child and didn't fully get.</p>
+</li>
+</ol>
+</section></article>
+    </div>
+  </div>
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      
+      <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
 <p>So, we&#x27;re now going to dive into the part of the guide that governs the way that people who have histories of <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> connect to other people. Now, when we say history of <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span>, we mean a couple of different things. So, we certainly know that if you grew up in a household where there was abuse, neglect, or things were extremely controlling, that that will shape the way that you see people and the way that you form connections. But what I&#x27;ve learned as a psychiatrist is that there&#x27;s a whole swath of people out there who didn&#x27;t grow up in abusive or neglectful households, and yet something happened in their upbringing, something about the way that their parents related to them or how sort of walled off they were, or potentially how parents couldn&#x27;t handle some of your emotions, that then lingers into adulthood, and that people can have difficulty forming connections even if they didn&#x27;t grow up in abusive households.</p>
 <p>So, we&#x27;ll sort of illustrate the core principles at play so that you can see how this could apply to your life. Now, very practically, what does this look like? So, a lot of people will struggle with relationships in all kinds of different ways. In some cases, you form relationships that are incredibly one-way, where you&#x27;re always texting first, you&#x27;re always seeing what people are up to, and if you don&#x27;t text them, they&#x27;re never going to text you. You do favors for them, but they don&#x27;t do favors for you. So, we can see one-way relationships. So, what&#x27;s going on there? How is it that we get stuck in those patterns?</p>
 <p>Sometimes this can result in relationships where we are doormats, right? Where you can&#x27;t really stand up for yourself, or you get really anxious if you try to stand up for yourself. And in the worst cases, this can look like frank abuse, where you are in a relationship with a partner who is abusing you, and you don&#x27;t know why you can&#x27;t leave, or you don&#x27;t think it&#x27;s a good idea to leave. This can be very perplexing to people on the outside, but we have lots of studies and plenty of clinical experience that shows that people will stay in abusive relationships because there are powerful forces keeping them there.</p>
@@ -59,15 +164,21 @@ try {
 <p>I need to fix this problem. This problem is out here and I need to do something about it. I don&#x27;t care what difference does it make, how it makes me feel. And that&#x27;s precisely the point, is we want you to acknowledge what you feel, understand what you feel, because that&#x27;s how we regulate how you feel. And once your emotions are not controlling you, then you can fix the problem with a clear mind. If you haven&#x27;t had an emotionally supportive upbringing, that&#x27;s actually okay. We&#x27;ll go into more detail as we learn more of these principles about how you relate to other people. And as we go into more detail, we&#x27;ll also start to see where some of these patterns come from.</p>
 <p>There are some people out there who are able to engage in healthy relationships and are secure in themselves and can take chances and can ask people out. And there are some of us who are incredibly <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> -ridden and very, very clingy and very anxious. So we&#x27;ll sort of discover what all those patterns are. So this is the first foundational step of what we need to understand, that <span class="gl" tabindex="0">emotional mirroring<span class="gl-pop" role="tooltip"><span class="gl-def">The ability to literally feel what another person is feeling, rather than simply understanding it intellectually.</span><a class="gl-more" href="../glossary.html#glossary-emotional-empathy">Full definition →</a></span></span> leads to emotional <span class="gl" tabindex="0">awareness<span class="gl-pop" role="tooltip"><span class="gl-def">The capacity to accurately receive and process information about what is happening — in your environment, your body, or your mind — so that your brain can respond appropriately.</span><a class="gl-more" href="../glossary.html#glossary-awareness">Full definition →</a></span></span> and <span class="gl" tabindex="0">emotional regulation<span class="gl-pop" role="tooltip"><span class="gl-def">The ability to identify and modify emotional states in ways that support adaptive, goal-directed behavior.</span><a class="gl-more" href="../glossary.html#glossary-emotional-regulation">Full definition →</a></span></span>. Next, we&#x27;re going to explore a couple of other principles from <span class="gl" tabindex="0">attachment theory<span class="gl-pop" role="tooltip"><span class="gl-def">A neurobiologically grounded framework explaining how humans develop the capacity to form bonds with others — and how the quality of those early bonds shapes the way you relate to people for the rest of your life.</span><a class="gl-more" href="../glossary.html#glossary-attachment-theory">Full definition →</a></span></span>.</p>
 </section></article>
+    </div>
   </div>
+  
 
-  <p class="meta">Transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">Trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> → <span class="gl" tabindex="0">Trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> & Relationships). Captions auto-generated.</p>
+  <p class="meta">Medium summary + transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">Trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> → <span class="gl" tabindex="0">Trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> & Relationships). Captions auto-generated; summary by claude-sonnet-4-6.</p>
 </div>
 
 <script>
 (function () {
   var root = document.documentElement;
-  var tb = document.querySelector('.theme-toggle');
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'medium');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
   var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
   tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
@@ -75,6 +186,9 @@ try {
   function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
   var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+  function navigateTo(id){ var el=id&&document.getElementById(id); if(!el)return; var v=el.closest('.view'); if(v)setView(v.getAttribute('data-view')); el.scrollIntoView(); }
+  window.addEventListener('hashchange', function(){ navigateTo(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash) navigateTo(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>
 <script>

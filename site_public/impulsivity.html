@@ -9,7 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-} catch (e) {}
+  document.documentElement.setAttribute('data-view', 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -31,9 +32,127 @@ try {
     <span class="speakers-note">17:01 min</span>
   </p>
 
-  <div class="doc">
+  
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">1,522w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">3,197w</span></button>
     
-    <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
+  </div>
+  
+
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#summary-summary">Summary</a></li>
+<li><a href="#summary-the-root-growing-up-without-control-over-your-circumstances">The Root: Growing Up Without Control Over Your Circumstances</a></li>
+<li><a href="#summary-emotion-focused-coping-the-strategy-that-gets-stuck">Emotion-Focused Coping: The Strategy That Gets Stuck</a></li>
+<li><a href="#summary-what-an-impulse-actually-is">What an Impulse Actually Is</a></li>
+<li><a href="#summary-self-sabotage-the-specific-case">Self-Sabotage: The Specific Case</a></li>
+<li><a href="#summary-reading-the-clues-in-your-own-behavior">Reading the Clues in Your Own Behavior</a></li>
+<li><a href="#summary-common-pitfalls">Common Pitfalls</a></li>
+<li><a href="#summary-action-items-exercises">Action Items &amp; Exercises</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="summary-summary">Summary</h2>
+<p><strong>TL;DR — <span class="gl" tabindex="0">Impulsivity<span class="gl-pop" role="tooltip"><span class="gl-def">The ability of the brain&#x27;s frontal lobes to suppress urges before they become actions — what happens when that system works well, and what breaks down when it doesn&#x27;t.</span><a class="gl-more" href="../glossary.html#glossary-impulse-control">Full definition →</a></span></span> and self-sabotage aren't character flaws or random bad luck; they're the long-term cost of learning to cope with circumstances you couldn't control as a child.</strong></p>
+<p>If your life feels like it's been blown around by the wind — changing majors, leaving relationships, moving cities, or blowing up good things right before they get real — there's usually a single root mechanism driving it. Understanding that mechanism is the first step to getting out of the cycle.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-the-root-growing-up-without-control-over-your-circumstances">The Root: Growing Up Without Control Over Your Circumstances</h2>
+<p>When a child grows up in an abusive, neglectful, or controlling environment, one thing is always true: they cannot change what's happening around them. They can't make an absent parent come home. They can't make an abusive parent stop. They can't negotiate with a controlling parent about what the birthday party looks like.</p>
+<p>That leaves the child with exactly one thing they <em>can</em> control: how they feel on the inside.</p>
+<p>This is worth sitting with, because the same pattern shows up in environments that don't look traumatic at first glance. A single parent working two jobs, sacrificing everything they have — that parent can be deeply loving and still be unable to show up in the ways a child needs. You might feel guilt or <span class="gl" tabindex="0">shame<span class="gl-pop" role="tooltip"><span class="gl-def">The emotion triggered by a perceived gap between where you are and where you think you should be.</span><a class="gl-more" href="../glossary.html#glossary-shame">Full definition →</a></span></span> for even framing that as difficult, which is exactly what keeps the pattern hidden. The caregiving was imperfect <em>by circumstance</em>, not by intention — but the child's experience of having no power over their circumstances is the same either way.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-emotion-focused-coping-the-strategy-that-gets-stuck">Emotion-Focused Coping: The Strategy That Gets Stuck</h2>
+<p>When you can't fix your circumstances, you learn to fix your <em>internal state</em> instead. This is called <strong>emotion-focused coping</strong>: I can't change what's out there, so I'll change what's in here.</p>
+<p>As an adult with occasional stress, this is a reasonable tool. Go to happy hour after a rough week. Fine. The problem is that children who rely on it exclusively never develop the counterpart — <strong>problem-focused coping</strong>, the ability to actually change circumstances. And they learn to numb emotions rather than process them.</p>
+<p>The numbing can look like:
+- Video games
+- Substances (alcohol, marijuana, etc.)
+- Social media and doom scrolling
+- Anything that reliably makes the feeling go away temporarily</p>
+<p>Here's the catch: numbing doesn't eliminate emotions. It just pushes them underground. They continue to operate below conscious <span class="gl" tabindex="0">awareness<span class="gl-pop" role="tooltip"><span class="gl-def">The capacity to accurately receive and process information about what is happening — in your environment, your body, or your mind — so that your brain can respond appropriately.</span><a class="gl-more" href="../glossary.html#glossary-awareness">Full definition →</a></span></span> — and this is exactly where <span class="gl" tabindex="0">impulsivity<span class="gl-pop" role="tooltip"><span class="gl-def">The ability of the brain&#x27;s frontal lobes to suppress urges before they become actions — what happens when that system works well, and what breaks down when it doesn&#x27;t.</span><a class="gl-more" href="../glossary.html#glossary-impulse-control">Full definition →</a></span></span> comes from.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-what-an-impulse-actually-is">What an Impulse Actually Is</h2>
+<p>An impulse closely mirrors an emotion. Both arise suddenly, carry motivational force, and fade on their own. When you feel the urge to move across the country, buy a dog, change your major, or blow up a relationship, that isn't coming from analytical reasoning — it's an emotion surfacing in disguise.</p>
+<p>The sequence looks like this:</p>
+<ol>
+<li>An underlying emotion (feeling stuck, afraid, dissatisfied) builds up below <span class="gl" tabindex="0">awareness<span class="gl-pop" role="tooltip"><span class="gl-def">The capacity to accurately receive and process information about what is happening — in your environment, your body, or your mind — so that your brain can respond appropriately.</span><a class="gl-more" href="../glossary.html#glossary-awareness">Full definition →</a></span></span>.</li>
+<li>Because you've learned to numb emotions rather than feel them, you don't recognize what's happening.</li>
+<li>The emotion finds an outlet: a sudden, urgent feeling that <em>something external needs to change</em>.</li>
+<li>The impulse feels rational in the moment (and you'll find reasons to justify it), but it's really just the emotion looking for relief.</li>
+</ol>
+<blockquote>
+<p>"Wherever you move, you're going to take yourself with you."</p>
+</blockquote>
+<p>This is why the pattern repeats. New city, same feelings. New relationship, same dynamics. New major, same dissatisfaction. The external change doesn't touch the internal source.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-self-sabotage-the-specific-case">Self-Sabotage: The Specific Case</h2>
+<p>Self-sabotage is the same mechanism in a particularly painful form. Take someone who consistently destroys relationships right when things are going well. On the surface it looks self-defeating — and it is — but the internal logic makes sense once you see it.</p>
+<p>The fear isn't just "I'll screw this up." The fear is: <em>the better this relationship gets, the more it will hurt when I inevitably ruin it.</em> A relationship you don't care about is cheap to lose. A relationship you love costs everything to lose.</p>
+<p>So the mind — trying to protect you from the worst version of that hurt — decides to end it now, on its own terms, before it gets any more painful to lose. Blackout drinking, infidelity, starting a fight: these aren't random chaos. They're a pre-emptive strike against anticipated heartbreak.</p>
+<p>The emotion driving the self-sabotage (fear, low self-worth, dread of loss) is not visible. What's visible is just the behavior, which from the outside — and often from the inside too — looks inexplicable.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-reading-the-clues-in-your-own-behavior">Reading the Clues in Your Own Behavior</h2>
+<p>There are patterns you can start to notice:</p>
+<ul>
+<li><strong>Numbing spikes before or after impulses.</strong> If you find yourself bingeing video games or doomscrolling and then waking up with a sudden urge to quit your job or end a relationship, that's the sequence in action. The numbing was holding something down; the impulse is what escaped.</li>
+<li><strong>Escalating reliance on numbing behaviors.</strong> When your brain senses subsurface emotions building, it calls for more anesthetic. If you notice you suddenly <em>need</em> to play games or scroll more than usual, something is accumulating underneath.</li>
+<li><strong>Rapid fluctuation of the urge.</strong> A genuine insight — "I actually need to leave this job" — tends to persist over time. A true impulse spikes and fades. If a <span class="gl" tabindex="0">desire<span class="gl-pop" role="tooltip"><span class="gl-def">One of the four classical Hindu goals of life, Kama is the pursuit of pleasure, desire, and sensory enjoyment — including but not limited to sexuality and lust.</span><a class="gl-more" href="../glossary.html#glossary-kama">Full definition →</a></span></span> is wildly intense on Tuesday and mostly gone by Thursday, it's more likely driven by an emotion than a real decision.</li>
+</ul>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-common-pitfalls">Common Pitfalls</h2>
+<p><strong>"My childhood was fine, so this doesn't apply to me."</strong> This is one of the most common blocks. Guilt about blaming a loving parent, or <span class="gl" tabindex="0">shame<span class="gl-pop" role="tooltip"><span class="gl-def">The emotion triggered by a perceived gap between where you are and where you think you should be.</span><a class="gl-more" href="../glossary.html#glossary-shame">Full definition →</a></span></span> about not having "real" <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span>, can make it very hard to see the pattern. A parent can be loving <em>and</em> unable to give you what you needed. Both things are true. The emotional outcome for the child is the same regardless of the parent's intentions.</p>
+<p><strong>Trying to manage <span class="gl" tabindex="0">impulsivity<span class="gl-pop" role="tooltip"><span class="gl-def">The ability of the brain&#x27;s frontal lobes to suppress urges before they become actions — what happens when that system works well, and what breaks down when it doesn&#x27;t.</span><a class="gl-more" href="../glossary.html#glossary-impulse-control">Full definition →</a></span></span> purely through willpower.</strong> Gritting your teeth and white-knuckling against impulses doesn't address what's generating them. If the underlying emotions stay suppressed, they keep producing impulses. Restraint helps at the margins but won't fix the cycle.</p>
+<p><strong>Confusing "changing your circumstances" with "acting on an impulse."</strong> These can look identical from the outside. The difference: a real decision to change something holds up over time and survives reflection. An impulse spikes fast, fades fast, and typically arrives right alongside a numbing behavior. If you're seriously considering a major life change, sit with it. If it's still clearly the right call in a few weeks, that's meaningful data.</p>
+<p><strong>Assuming you're still as powerless as you were as a child.</strong> Emotion-focused coping was the only rational strategy available to a child with no agency. The tragedy is that the mind doesn't automatically update that assessment when you become an adult. You now have options a child never had — you can set limits on people, leave situations, have direct conversations, and actually change your circumstances. The child's framework just doesn't feel that way from the inside.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-action-items-exercises">Action Items &amp; Exercises</h2>
+<ol>
+<li>
+<p><strong>Map your numbing patterns.</strong> For one week, notice when you reach for your numbing behavior of choice (scrolling, gaming, substances, etc.) and write down what was happening just before. What were you about to do, think about, or feel? The emotion you were trying to avoid is usually right there in the answer.</p>
+</li>
+<li>
+<p><strong>Identify your triggers.</strong> Once you have some data from #1, look for recurring themes. Calls from a particular person? A specific kind of task at work? Moments of closeness in a relationship? Name the trigger explicitly — "I numb out when I'm about to have to disappoint someone."</p>
+</li>
+<li>
+<p><strong>Explore the emotion underneath an impulse.</strong> The next time you feel a strong pull toward a big change (new city, new relationship, quitting something), sit with the question: <em>What am I feeling right now that this change would make go away?</em> Journal it. Don't try to solve it immediately — just describe the feeling as honestly as you can.</p>
+</li>
+<li>
+<p><strong>Develop one alternate regulation technique.</strong> Choose something that actually processes emotion rather than numbing it: a walk where you let yourself think about what's bothering you, a conversation with someone you trust, journaling, therapy, <span class="gl" tabindex="0">meditation<span class="gl-pop" role="tooltip"><span class="gl-def">Meditation is the practice of focusing consciousness completely — until thinking itself falls away and you exist in a state of pure awareness with no mental activity.</span><a class="gl-more" href="../glossary.html#glossary-meditation">Full definition →</a></span></span>. The specific method matters less than the fact that you're engaging with the feeling instead of burying it.</p>
+</li>
+<li>
+<p><strong>Apply the time test to impulses.</strong> When an urgent <span class="gl" tabindex="0">desire<span class="gl-pop" role="tooltip"><span class="gl-def">One of the four classical Hindu goals of life, Kama is the pursuit of pleasure, desire, and sensory enjoyment — including but not limited to sexuality and lust.</span><a class="gl-more" href="../glossary.html#glossary-kama">Full definition →</a></span></span> to change something major shows up, don't act on it immediately — and don't suppress it either. Write it down and revisit it in one to two weeks. If it's still just as clear and present, it deserves serious consideration. If it's mostly faded, you have your answer.</p>
+</li>
+<li>
+<p><strong>Practice one small act of actually changing your circumstances.</strong> Identify something in your current life that's generating a negative emotional state and that you <em>do</em> have the power to change. Set a boundary with someone. Have a conversation you've been avoiding. Make the appointment you keep putting off. The point is to rebuild the muscle of problem-focused coping — the <span class="gl" tabindex="0">knowledge<span class="gl-pop" role="tooltip"><span class="gl-def">Vidya is objective, transmissible information — the kind of knowledge that can be written in a textbook, proven to another person, or exchanged between minds.</span><a class="gl-more" href="../glossary.html#glossary-vidya">Full definition →</a></span></span> that you can actually affect your environment, and you don't have to just manage your internal state.</p>
+</li>
+</ol>
+</section></article>
+    </div>
+  </div>
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      
+      <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
 <p>So, we are now going to dive into <span class="gl" tabindex="0">impulsivity<span class="gl-pop" role="tooltip"><span class="gl-def">The ability of the brain&#x27;s frontal lobes to suppress urges before they become actions — what happens when that system works well, and what breaks down when it doesn&#x27;t.</span><a class="gl-more" href="../glossary.html#glossary-impulse-control">Full definition →</a></span></span> and self-sabotage. This, too, can be something that is very common for people. So, you may have sort of found in your life that you make a lot of impulsive decisions. You are kind of tired of studying this subject in university, so you wake up one day and you are like, you know what, I am going to study this instead. In the most severe cases, this can actually look like straight up self-sabotage. So, I worked with a patient, for example, who any time their relationship got really, so when they were in a romantic relationship that was moving in the right direction and they were very optimistic about it, they always inevitably did something to screw it up, which frequently involved getting black out drunk and sometimes infidelity.</p>
 <p>So, some of us kind of look at our lives and we notice this pattern of impulsive behavior, the inability to stick to a particular goal, or even self-sabotage. And this, too, can be tracked back to <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span>. So, let&#x27;s go back to our traditional sort of picture of a traumatic upbringing. So, this is a case of an abusive, neglectful, or controlling environment. So, the common theme in all three of these environments is that I am not in control of my circumstances, right? So, if I want to do something, like if I want to plan a birthday party, in the case of a controlling environment, I don&#x27;t get to choose what the birthday party is.</p>
 <p>In the case of a neglectful environment, my parents aren&#x27;t around enough to even plan that kind of thing. And in an abusive environment, I may get punished for it or I may be even too afraid to ask. So, when you have a kid who grows up in an environment where they can&#x27;t shape their circumstances, all they&#x27;re left with, the only thing that they can really control, is their own emotional state. So, this pattern of <span class="gl" tabindex="0">impulsivity<span class="gl-pop" role="tooltip"><span class="gl-def">The ability of the brain&#x27;s frontal lobes to suppress urges before they become actions — what happens when that system works well, and what breaks down when it doesn&#x27;t.</span><a class="gl-more" href="../glossary.html#glossary-impulse-control">Full definition →</a></span></span> and self -sabotage is very commonly associated with this idea of <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span>. So, abuse, neglect, or control. But we&#x27;ll also see this in subtle ways, because remember that a lot of people don&#x27;t have very severe cases of this.</p>
@@ -61,15 +180,21 @@ try {
 <p>So I encourage you all to lean into the things that you all feel more strongly over time in a relatively consistent way. So the last thing to really consider is that you are far more empowered now than you used to be. And your mind may tell you that that is otherwise, but we&#x27;ll get to that when we talk about <span class="gl" tabindex="0">identity<span class="gl-pop" role="tooltip"><span class="gl-def">A stable sense of who you are, built from the narrative integration of emotionally salient experiences — not a fixed trait you possess, but a story you construct by stringing together the moments in your life that…</span><a class="gl-more" href="../glossary.html#glossary-identity">Full definition →</a></span></span> and personality and things like that. So at the end of the day, a very common problem that people deal with is that their life seems to have no sense of direction. They sort of feel like they&#x27;re incredibly impulsive, and they&#x27;re blowing... the wind is blowing this way, so this is the way that your life blows, and then the wind blows this way, and you kind of go with the wind.</p>
 <p>There&#x27;s no sort of sense of forward direction in life, and it seems like you&#x27;re constantly struggling with <span class="gl" tabindex="0">impulsivity<span class="gl-pop" role="tooltip"><span class="gl-def">The ability of the brain&#x27;s frontal lobes to suppress urges before they become actions — what happens when that system works well, and what breaks down when it doesn&#x27;t.</span><a class="gl-more" href="../glossary.html#glossary-impulse-control">Full definition →</a></span></span> at the least or self -sabotage at the worst. You find yourself in these cycles where you can&#x27;t make any forward progress. And it turns out that both of these things are consequences of suppressing our emotions, because self-sabotage and <span class="gl" tabindex="0">impulsivity<span class="gl-pop" role="tooltip"><span class="gl-def">The ability of the brain&#x27;s frontal lobes to suppress urges before they become actions — what happens when that system works well, and what breaks down when it doesn&#x27;t.</span><a class="gl-more" href="../glossary.html#glossary-impulse-control">Full definition →</a></span></span> are both driven by subsurface emotions. So as we connect with our emotions, as we regulate our emotions, as we recognize our triggers, develop alternate ways to deal with our emotional state, and finally start to shape our circumstances because we&#x27;re not five-year -old kids anymore, this is when the <span class="gl" tabindex="0">impulsivity<span class="gl-pop" role="tooltip"><span class="gl-def">The ability of the brain&#x27;s frontal lobes to suppress urges before they become actions — what happens when that system works well, and what breaks down when it doesn&#x27;t.</span><a class="gl-more" href="../glossary.html#glossary-impulse-control">Full definition →</a></span></span> and self-sabotage will start to change.</p>
 </section></article>
+    </div>
   </div>
+  
 
-  <p class="meta">Transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">Trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> → Cognitive <span class="gl" tabindex="0">Trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span>). Captions auto-generated.</p>
+  <p class="meta">Medium summary + transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">Trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> → Cognitive <span class="gl" tabindex="0">Trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span>). Captions auto-generated; summary by claude-sonnet-4-6.</p>
 </div>
 
 <script>
 (function () {
   var root = document.documentElement;
-  var tb = document.querySelector('.theme-toggle');
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'medium');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
   var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
   tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
@@ -77,6 +202,9 @@ try {
   function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
   var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+  function navigateTo(id){ var el=id&&document.getElementById(id); if(!el)return; var v=el.closest('.view'); if(v)setView(v.getAttribute('data-view')); el.scrollIntoView(); }
+  window.addEventListener('hashchange', function(){ navigateTo(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash) navigateTo(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>
 <script>

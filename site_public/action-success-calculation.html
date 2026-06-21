@@ -9,7 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-} catch (e) {}
+  document.documentElement.setAttribute('data-view', 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -31,9 +32,143 @@ try {
     <span class="speakers-note">22:16 min</span>
   </p>
 
-  <div class="doc">
+  
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">1,550w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">4,485w</span></button>
     
-    <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
+  </div>
+  
+
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#summary-summary">Summary</a></li>
+<li><a href="#summary-the-three-inputs-your-brain-uses-to-decide-everything">The Three Inputs Your Brain Uses to Decide Everything</a></li>
+<li><a href="#summary-why-your-brain-doesnt-care-about-benefits-it-cant-feel">Why Your Brain Doesn't Care About Benefits It Can't Feel</a></li>
+<li><a href="#summary-how-miscalculating-cost-creates-procrastination-and-follow-through-problems">How Miscalculating Cost Creates Procrastination and Follow-Through Problems</a></li>
+<li><a href="#summary-why-confidence-is-actually-a-probability-estimate">Why Confidence Is Actually a Probability Estimate</a></li>
+<li><a href="#summary-common-pitfalls">Common Pitfalls</a></li>
+<li><a href="#summary-action-items-exercises">Action Items &amp; Exercises</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="summary-summary">Summary</h2>
+<p><strong>TL;DR — Your brain is always running a three-part calculation before deciding whether to act: expected benefit, estimated cost, and likelihood of success. Most <span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span> problems are just errors in one of these three inputs.</strong></p>
+<p><span class="gl" tabindex="0">Motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span> isn't a personality trait you either have or don't. It's a dynamic, moment-to-moment calculation your brain runs continuously — the same way it decides whether you need to use the bathroom right now or can wait until the next rest stop. Once you see which input your brain is miscalculating, the fix becomes far more targeted than another productivity system or motivational book.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-the-three-inputs-your-brain-uses-to-decide-everything">The Three Inputs Your Brain Uses to Decide Everything</h2>
+<p>The action success calculation looks like this:</p>
+<blockquote>
+<p><strong>(Benefit − Cost) × Likelihood of Success = <span class="gl" tabindex="0">Motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span> to Act</strong></p>
+</blockquote>
+<p>It has three components:</p>
+<ol>
+<li><strong>Benefit</strong> — What do I actually get if I do this?</li>
+<li><strong>Cost</strong> — What does it take out of me?</li>
+<li><strong>Likelihood of success</strong> — Is this even going to work?</li>
+</ol>
+<p>Your brain weights all three before generating the impulse to act. The uncomfortable truth is that it can get any of the three badly wrong — and when it does, you experience that as procrastination, poor follow-through, or paralysis, without ever realizing the real culprit.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-why-your-brain-doesnt-care-about-benefits-it-cant-feel">Why Your Brain Doesn't Care About Benefits It Can't Feel</h2>
+<p>The brain's reward system — the <span class="gl" tabindex="0">nucleus accumbens<span class="gl-pop" role="tooltip"><span class="gl-def">A brain region at the center of the dopamine system that drives pleasure, craving, and behavioral reinforcement.</span><a class="gl-more" href="../glossary.html#glossary-nucleus-accumbens">Full definition →</a></span></span> — doesn't respond to ideas. It responds to experiences.</p>
+<p>You only need to eat cake once to want it again. But you have to go to the gym for months before your brain registers any meaningful reward. This is the core problem with a huge category of worthwhile behaviors: the payoff arrives so far after the effort that your brain essentially doesn't register a benefit at all.</p>
+<blockquote>
+<p>"The <span class="gl" tabindex="0">nucleus accumbens<span class="gl-pop" role="tooltip"><span class="gl-def">A brain region at the center of the dopamine system that drives pleasure, craving, and behavioral reinforcement.</span><a class="gl-more" href="../glossary.html#glossary-nucleus-accumbens">Full definition →</a></span></span> doesn't respond to ideas. It doesn't respond to hypotheticals. It responds to experiences."</p>
+</blockquote>
+<p>This is why public health campaigns struggle to get people to quit smoking by listing long-term health consequences. A 21-year-old's brain has no experience of heart disease at 60. The benefit is intellectually known but neurologically invisible. Raising cigarette prices, on the other hand, makes the <strong>cost</strong> of smoking immediately felt — which is why it actually moves behavior.</p>
+<p>The same dynamic explains why it's hard to motivate yourself to exercise, floss, or save money. You <em>know</em> the benefit, but your brain hasn't <em>felt</em> it yet. As long as the reward stays an abstraction, <span class="gl" tabindex="0">intrinsic motivation<span class="gl-pop" role="tooltip"><span class="gl-def">Motivation that arises from novelty, genuine interest, and autonomy — not from rewards, emotions, or changes in biological state.</span><a class="gl-more" href="../glossary.html#glossary-intrinsic-motivation">Full definition →</a></span></span> won't reliably show up.</p>
+<p><strong>What this means practically:</strong> You need to find ways to make benefits experiential and immediate, not just intellectual. The more your brain can actually feel a reward sooner, the more it will push you toward the behavior.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-how-miscalculating-cost-creates-procrastination-and-follow-through-problems">How Miscalculating Cost Creates Procrastination and Follow-Through Problems</h2>
+<p>Cost estimation errors are responsible for two very common and very different-looking problems:</p>
+<p><strong>Overestimating cost → Procrastination</strong></p>
+<p>When your brain assigns a cost that's way higher than reality, it keeps delaying. You dread the task. You wait. Finally, the cost of <em>not</em> doing it (failing the test, missing the deadline) overtakes the imagined cost of doing it, and you act. Then you finish and think, "That wasn't nearly as bad as I thought. I should've started a week ago."</p>
+<p>The procrastination wasn't laziness. It was your brain protecting you from a cost that turned out to be fictional.</p>
+<p><strong>Underestimating cost → Abandonment</strong></p>
+<p>The opposite error looks like enthusiasm followed by giving up. You see someone learn guitar on YouTube in two weeks and think, "I can do that." Your brain focuses entirely on the benefits — playing songs, impressing people, finally doing the thing you've always wanted to do. You order the guitar. Then you pick it up and discover that your fingers hurt, it sounds terrible, and it's genuinely hard.</p>
+<blockquote>
+<p>"No one told me that my fingers were gonna hurt."</p>
+</blockquote>
+<p>Your brain didn't lie to you exactly — it just never modeled the cost accurately. So it committed to something it wasn't actually prepared for, and when reality arrived, it quit. This is why some people accumulate a collection of abandoned instruments, half-finished language apps, and dusty exercise equipment. It's not a character flaw. It's a systematic failure to estimate cost before committing.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-why-confidence-is-actually-a-probability-estimate">Why Confidence Is Actually a Probability Estimate</h2>
+<p>The third input — likelihood of success — is where things get especially tricky, because your brain's estimate of "will this work?" is heavily shaped by <strong><span class="gl" tabindex="0">confidence<span class="gl-pop" role="tooltip"><span class="gl-def">Self-esteem is the degree to which you accept yourself as you are — not how you measure up against others.</span><a class="gl-more" href="../glossary.html#glossary-self-esteem">Full definition →</a></span></span></strong>. And <span class="gl" tabindex="0">confidence<span class="gl-pop" role="tooltip"><span class="gl-def">Self-esteem is the degree to which you accept yourself as you are — not how you measure up against others.</span><a class="gl-more" href="../glossary.html#glossary-self-esteem">Full definition →</a></span></span> is subjective, not objective.</p>
+<p>Consider someone who is 25 and has never been on a date. Their friends can see, clearly, that they're likable, interesting, and worth getting to know. But this person's brain, drawing on its own history, calculates the odds of a successful date as very low. So even when they force themselves to go on a date using sheer willpower, they're internally tense, second-guessing every word, unable to relax — and that tension typically guarantees a bad outcome. The bad outcome lowers <span class="gl" tabindex="0">confidence<span class="gl-pop" role="tooltip"><span class="gl-def">Self-esteem is the degree to which you accept yourself as you are — not how you measure up against others.</span><a class="gl-more" href="../glossary.html#glossary-self-esteem">Full definition →</a></span></span> further, which lowers the perceived likelihood of success, which makes the next attempt feel even more pointless. A vicious cycle.</p>
+<blockquote>
+<p>"As their <span class="gl" tabindex="0">confidence<span class="gl-pop" role="tooltip"><span class="gl-def">Self-esteem is the degree to which you accept yourself as you are — not how you measure up against others.</span><a class="gl-more" href="../glossary.html#glossary-self-esteem">Full definition →</a></span></span> tanks, the likelihood of success for future dates plummets."</p>
+</blockquote>
+<p>Here's what makes this so insidious: the brain doesn't announce "you have a <span class="gl" tabindex="0">confidence<span class="gl-pop" role="tooltip"><span class="gl-def">Self-esteem is the degree to which you accept yourself as you are — not how you measure up against others.</span><a class="gl-more" href="../glossary.html#glossary-self-esteem">Full definition →</a></span></span> problem." It just quietly tells you <em>it won't work</em> — you'll be alone forever, no one will publish your book, there's no point trying. So you don't think of yourself as someone lacking <span class="gl" tabindex="0">confidence<span class="gl-pop" role="tooltip"><span class="gl-def">Self-esteem is the degree to which you accept yourself as you are — not how you measure up against others.</span><a class="gl-more" href="../glossary.html#glossary-self-esteem">Full definition →</a></span></span>. You think of yourself as someone who's lazy, or unlucky, or just not cut out for this. And you go looking for external solutions — a new course, a writing group, a networking strategy, a supplement — when the actual variable that needs to change is internal.</p>
+<p>The classic workaround for low perceived success-probability is <strong>stacking the odds</strong>: gathering more credentials, more preparation, more favorable conditions before acting. Some of this is useful. But there's no logical endpoint to it.</p>
+<blockquote>
+<p>"How much more do you need to stack the odds in your favor before you actually act?"</p>
+</blockquote>
+<p>People prepare and prepare and never go. "I'll go to the gym once I'm already in better shape." The preparation becomes a way of managing the <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> of low <span class="gl" tabindex="0">confidence<span class="gl-pop" role="tooltip"><span class="gl-def">Self-esteem is the degree to which you accept yourself as you are — not how you measure up against others.</span><a class="gl-more" href="../glossary.html#glossary-self-esteem">Full definition →</a></span></span> while never actually resolving it.</p>
+<p><span class="gl" tabindex="0">Confidence<span class="gl-pop" role="tooltip"><span class="gl-def">Self-esteem is the degree to which you accept yourself as you are — not how you measure up against others.</span><a class="gl-more" href="../glossary.html#glossary-self-esteem">Full definition →</a></span></span> built through <em>unrelated</em> challenges can transfer directly. Climbing a difficult mountain, finishing a hard project, doing something you didn't think you could do — these experiences update your brain's probability estimate across domains. A writer who climbs a 16,000-foot mountain may wake up the next morning and find it easier to write, not because anything about writing changed, but because their brain updated its general assessment of what they're capable of.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-common-pitfalls">Common Pitfalls</h2>
+<ul>
+<li>
+<p><strong>Treating <span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span> as fixed.</strong> Calling yourself "not a motivated person" misses the point entirely. <span class="gl" tabindex="0">Motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span> is an output, not a trait. The inputs can be changed.</p>
+</li>
+<li>
+<p><strong>Buying external solutions for internal problems.</strong> Productivity planners, new apps, and optimization frameworks can help at the margins, but they don't touch cost estimation errors or low <span class="gl" tabindex="0">confidence<span class="gl-pop" role="tooltip"><span class="gl-def">Self-esteem is the degree to which you accept yourself as you are — not how you measure up against others.</span><a class="gl-more" href="../glossary.html#glossary-self-esteem">Full definition →</a></span></span>. They're the right tools for the wrong problem.</p>
+</li>
+<li>
+<p><strong>Misidentifying the issue.</strong> Procrastinators often think they're lazy. People with follow-through problems think they're flaky. People paralyzed by low <span class="gl" tabindex="0">confidence<span class="gl-pop" role="tooltip"><span class="gl-def">Self-esteem is the degree to which you accept yourself as you are — not how you measure up against others.</span><a class="gl-more" href="../glossary.html#glossary-self-esteem">Full definition →</a></span></span> think they just need more preparation. Without identifying which input is actually misfiring, you can't fix it.</p>
+</li>
+<li>
+<p><strong>Confusing intellectual <span class="gl" tabindex="0">knowledge<span class="gl-pop" role="tooltip"><span class="gl-def">Vidya is objective, transmissible information — the kind of knowledge that can be written in a textbook, proven to another person, or exchanged between minds.</span><a class="gl-more" href="../glossary.html#glossary-vidya">Full definition →</a></span></span> of benefit with felt experience of benefit.</strong> Knowing something is good for you does very little to drive behavior. Your brain needs to feel rewards, not just understand them.</p>
+</li>
+<li>
+<p><strong>Thinking <span class="gl" tabindex="0">confidence<span class="gl-pop" role="tooltip"><span class="gl-def">Self-esteem is the degree to which you accept yourself as you are — not how you measure up against others.</span><a class="gl-more" href="../glossary.html#glossary-self-esteem">Full definition →</a></span></span>-building has to be directly related to the goal.</strong> Success in one area genuinely transfers. You don't have to become a better writer to become more motivated to write — sometimes you need to become more confident as a person first.</p>
+</li>
+</ul>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-action-items-exercises">Action Items &amp; Exercises</h2>
+<ol>
+<li>
+<p><strong>Diagnose your specific input error.</strong> Pick one area where you're stuck. Ask yourself honestly: Is my brain miscalculating the <em>benefit</em> (no felt reward)? The <em>cost</em> (dreading something I've never actually tried)? Or the <em>likelihood of success</em> (low <span class="gl" tabindex="0">confidence<span class="gl-pop" role="tooltip"><span class="gl-def">Self-esteem is the degree to which you accept yourself as you are — not how you measure up against others.</span><a class="gl-more" href="../glossary.html#glossary-self-esteem">Full definition →</a></span></span>)?</p>
+</li>
+<li>
+<p><strong>Make a benefit experiential, not just conceptual.</strong> If you're trying to build a <span class="gl" tabindex="0">habit<span class="gl-pop" role="tooltip"><span class="gl-def">Automatic behavior that operates without motivation, willpower, or conscious thought — you simply do it.</span><a class="gl-more" href="../glossary.html#glossary-habit">Full definition →</a></span></span> whose payoff is distant (exercise, diet, saving money), find the smallest version of the reward your brain can actually <em>feel</em> today. Track one concrete, immediate metric that makes progress visible.</p>
+</li>
+<li>
+<p><strong>Reality-test your cost estimates.</strong> Before avoiding a task, write down exactly what you expect it to cost — how long, how hard, how painful. Do the task. Write down what it actually cost. Over time, you'll calibrate your brain's tendency to inflate costs.</p>
+</li>
+<li>
+<p><strong>Before starting something new, honestly map the cost.</strong> Ask people who have done it what the hard parts were. What does week three actually feel like, not week one? Accurate cost estimates before you commit reduce abandonment later.</p>
+</li>
+<li>
+<p><strong>Invest in <span class="gl" tabindex="0">confidence<span class="gl-pop" role="tooltip"><span class="gl-def">Self-esteem is the degree to which you accept yourself as you are — not how you measure up against others.</span><a class="gl-more" href="../glossary.html#glossary-self-esteem">Full definition →</a></span></span> through any domain.</strong> If you notice you're perpetually "preparing but not acting," shift focus temporarily away from stacking odds in your target area and toward doing something genuinely difficult in any area of life — physical, creative, social. Let the <span class="gl" tabindex="0">confidence<span class="gl-pop" role="tooltip"><span class="gl-def">Self-esteem is the degree to which you accept yourself as you are — not how you measure up against others.</span><a class="gl-more" href="../glossary.html#glossary-self-esteem">Full definition →</a></span></span> transfer.</p>
+</li>
+<li>
+<p><strong>Notice when your brain says "it won't work" and ask whether that's a probability estimate or a <span class="gl" tabindex="0">confidence<span class="gl-pop" role="tooltip"><span class="gl-def">Self-esteem is the degree to which you accept yourself as you are — not how you measure up against others.</span><a class="gl-more" href="../glossary.html#glossary-self-esteem">Full definition →</a></span></span> artifact.</strong> Get a second opinion from someone who isn't inside your head. What probability would they assign?</p>
+</li>
+</ol>
+</section></article>
+    </div>
+  </div>
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      
+      <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
 <p>- The next thing that we&#x27;re gonna talk about sounds kind of like complicated. It&#x27;s the action success calculation, but it turns out to actually be really, really simple. So when we struggle to do something, we run into all kinds of problems, right? So if you look at the literature on <span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span>, you talk to motivational speakers, you&#x27;ll hear all kinds of these common experiences like, &quot;Oh, I have trouble with follow through,&quot; or, &quot;I struggle with procrastination,&quot; or, &quot;I lack <span class="gl" tabindex="0">confidence<span class="gl-pop" role="tooltip"><span class="gl-def">Self-esteem is the degree to which you accept yourself as you are — not how you measure up against others.</span><a class="gl-more" href="../glossary.html#glossary-self-esteem">Full definition →</a></span></span>, and it&#x27;s hard to get motivated without <span class="gl" tabindex="0">confidence<span class="gl-pop" role="tooltip"><span class="gl-def">Self-esteem is the degree to which you accept yourself as you are — not how you measure up against others.</span><a class="gl-more" href="../glossary.html#glossary-self-esteem">Full definition →</a></span></span>.&quot; So as we look at this concept of <span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span>, we tie in all of these experiences to <span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span>, like procrastination and follow through and <span class="gl" tabindex="0">confidence<span class="gl-pop" role="tooltip"><span class="gl-def">Self-esteem is the degree to which you accept yourself as you are — not how you measure up against others.</span><a class="gl-more" href="../glossary.html#glossary-self-esteem">Full definition →</a></span></span>, and so then the question kind of becomes like, &quot;Okay, which of these is it, right?</p>
 <p>What goes into <span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span>? How much of it is <span class="gl" tabindex="0">confidence<span class="gl-pop" role="tooltip"><span class="gl-def">Self-esteem is the degree to which you accept yourself as you are — not how you measure up against others.</span><a class="gl-more" href="../glossary.html#glossary-self-esteem">Full definition →</a></span></span>? How much of it is procrastination? What&#x27;s goin&#x27; on here?&quot; And the cool thing, the really, almost bizarre thing is that if you understand how the brain chooses to do something or not do something, all of these things will become clear, and the central thing that we&#x27;re gonna talk about that sort of explains procrastination, follow through, and <span class="gl" tabindex="0">confidence<span class="gl-pop" role="tooltip"><span class="gl-def">Self-esteem is the degree to which you accept yourself as you are — not how you measure up against others.</span><a class="gl-more" href="../glossary.html#glossary-self-esteem">Full definition →</a></span></span> is this thing called the action success calculation. So the first thing to understand is that we tend to think about <span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span> as sort of a static quality. This person is motivated, and this person is not motivated.</p>
 <p>Why does someone get an A? Because they&#x27;re motivated. Why does someone get a B? Because they&#x27;re not as motivated? What makes an Olympic medalist? They want it more. So we think about <span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span> as sort of this static quality, and if you&#x27;re watching this video, let&#x27;s be honest, you&#x27;re probably in the not motivated camp, but the truth is that&#x27;s not how <span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span> works. <span class="gl" tabindex="0">Motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span> is a constantly ongoing calculation in the brain, and when I say constantly ongoing, what does that mean? Well, let&#x27;s look at something really, really simple, like using the bathroom. So are you motivated to use the bathroom, or are you not motivated to use the bathroom, and your answer is probably, &quot;It depends,&quot; and some of you who are watching this right now, the answer is gonna be yes.</p>
@@ -71,15 +206,21 @@ try {
 <p>Because this happens a lot with people who are struggling with <span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span>, as well, where is they prepare and prepare and prepare, and they never act, right? &quot;I need a little bit more. I&#x27;m not ready yet. I&#x27;ll go to the gym once I start getting into shape and I don&#x27;t embarrass myself there.&quot; So if we wanna understand <span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span>, this action success calculation is very, very helpful because it shows us that a lot of the struggles that we have, like procrastination, follow through, and a lack of <span class="gl" tabindex="0">confidence<span class="gl-pop" role="tooltip"><span class="gl-def">Self-esteem is the degree to which you accept yourself as you are — not how you measure up against others.</span><a class="gl-more" href="../glossary.html#glossary-self-esteem">Full definition →</a></span></span>, are not mediated in some deep flaw in our being and are not something to be fixed by buying this organizational planner that has four different colors.</p>
 <p>That&#x27;s not gonna work. What we actually need to do is understand how the hell our brain decides to take action and not take action and see which of these mistakes is our brain making? &quot;Am I overestimating the cost? Do I really not understand what the benefits are? Does my brain and body know what the advantages of doing this are? Do I lack <span class="gl" tabindex="0">confidence<span class="gl-pop" role="tooltip"><span class="gl-def">Self-esteem is the degree to which you accept yourself as you are — not how you measure up against others.</span><a class="gl-more" href="../glossary.html#glossary-self-esteem">Full definition →</a></span></span>?&quot; Because then we can work on those things, and suddenly, the solution becomes a lot simpler than you may realize, but you would&#x27;ve never seen it unless you understood how the brain makes this action success calculation. So hopefully, that helps, and we&#x27;ll dive in a little bit further into what to do next.</p>
 </section></article>
+    </div>
   </div>
+  
 
-  <p class="meta">Transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> → Neuroscience of Thought). Captions auto-generated.</p>
+  <p class="meta">Medium summary + transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> → Neuroscience of Thought). Captions auto-generated; summary by claude-sonnet-4-6.</p>
 </div>
 
 <script>
 (function () {
   var root = document.documentElement;
-  var tb = document.querySelector('.theme-toggle');
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'medium');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
   var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
   tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
@@ -87,6 +228,9 @@ try {
   function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
   var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+  function navigateTo(id){ var el=id&&document.getElementById(id); if(!el)return; var v=el.closest('.view'); if(v)setView(v.getAttribute('data-view')); el.scrollIntoView(); }
+  window.addEventListener('hashchange', function(){ navigateTo(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash) navigateTo(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>
 <script>

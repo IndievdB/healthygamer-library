@@ -9,7 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-} catch (e) {}
+  document.documentElement.setAttribute('data-view', 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -31,9 +32,139 @@ try {
     <span class="speakers-note">22:30 min</span>
   </p>
 
-  <div class="doc">
+  
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">1,710w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">4,055w</span></button>
     
-    <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
+  </div>
+  
+
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#summary-summary">Summary</a></li>
+<li><a href="#summary-emotions-are-information-and-motivation-not-verdicts">Emotions Are Information and Motivation, Not Verdicts</a></li>
+<li><a href="#summary-what-each-emotion-is-actually-telling-you">What Each Emotion Is Actually Telling You</a></li>
+<li><a href="#summary-how-emotions-get-hijacked">How Emotions Get Hijacked</a></li>
+<li><a href="#summary-the-technology-trap">The Technology Trap</a></li>
+<li><a href="#summary-common-pitfalls">Common Pitfalls</a></li>
+<li><a href="#summary-action-items-exercises">Action Items &amp; Exercises</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="summary-summary">Summary</h2>
+<p><strong>TL;DR — Emotions aren't good or bad; they're signals pushing you toward specific actions. When you numb them or can't regulate them, your life stagnates or other people start controlling you.</strong></p>
+<p>Most people spend their lives chasing pleasant feelings and running from unpleasant ones. That seems logical, but it's exactly backwards. The more you avoid a negative emotion, the more power it has over you — and the more you miss the information it's trying to deliver. Understanding what each emotion is <em>for</em> changes everything about how you relate to your inner life.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-emotions-are-information-and-motivation-not-verdicts">Emotions Are Information and Motivation, Not Verdicts</h2>
+<p>Every emotion — including the painful ones — serves two functions:</p>
+<ol>
+<li><strong>A source of information</strong> — something in your environment or situation needs your attention.</li>
+<li><strong>A <span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span> toward action</strong> — the discomfort is pushing you to do something specific.</li>
+</ol>
+<p>The clearest analogy is physical pain. When you sprain your ankle, the pain isn't punishing you — it's telling you to stop walking on it so it can heal. Hunger and thirst work the same way: the discomfort is intense <em>because</em> eating and drinking are non-negotiable. Negative emotions operate by the same logic. They hurt because whatever they're pointing at genuinely matters.</p>
+<p>This is why numbing yourself from negative emotions is so damaging. The pain is the signal. Cut the signal, and you stop taking the action that would actually fix your life.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-what-each-emotion-is-actually-telling-you">What Each Emotion Is Actually Telling You</h2>
+<h3 id="summary-anger-your-territory-is-being-violated">Anger → Your territory is being violated</h3>
+<p><strong>Anger</strong> is the brain's boundary-protection system. "Territory" here is broader than physical space — it includes your body, your possessions, and the psychological space around you. When someone crowds your seat on a plane, when someone physically threatens you, or when something that's yours is being taken, anger fires up.</p>
+<p>Physiologically, anger narrows your vision from a normal 180-degree field down to roughly a 30-degree tunnel focused on the threat. Your heart rate and blood pressure rise. Your whole organism zooms in and prepares to defend. This is also why angry people can't "just let it go" — neurologically, that's not what anger is designed to do. It's designed to lock you onto the threat until it's resolved.</p>
+<p>Anger can also fire when you're not consciously sure why. That's worth paying attention to. Your brain processes far more information than your conscious mind sees, and a vague sense of anger can mean some boundary is being crossed that you haven't quite identified yet.</p>
+<h3 id="summary-fear-and-anxiety-a-potential-danger-needs-addressing">Fear and Anxiety → A potential danger needs addressing</h3>
+<p><strong>Fear and <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span></strong> both run through the <span class="gl" tabindex="0">amygdala<span class="gl-pop" role="tooltip"><span class="gl-def">The brain&#x27;s negative emotional center — the region that generates fear, anxiety, and survival responses.</span><a class="gl-more" href="../glossary.html#glossary-amygdala">Full definition →</a></span></span>, the brain's survival center. The key insight is that <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> is always about something that <em>hasn't happened yet</em>. You're afraid you'll fail, that someone will leave, that you'll miss a flight. Technically, none of those things are real — you're projecting a threat into the future.</p>
+<p>That's exactly the point. <span class="gl" tabindex="0">Anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> is your brain's early-warning system. It surfaces a potential danger to your conscious attention so you can act <em>before</em> the bad thing happens. <span class="gl" tabindex="0">Anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> about a test motivates studying. <span class="gl" tabindex="0">Anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> about missing a flight motivates leaving earlier. The emotion hurts so that you take preventive action.</p>
+<h3 id="summary-shame-social-behavior-needs-correcting">Shame → Social behavior needs correcting</h3>
+<p><strong><span class="gl" tabindex="0">Shame<span class="gl-pop" role="tooltip"><span class="gl-def">The emotion triggered by a perceived gap between where you are and where you think you should be.</span><a class="gl-more" href="../glossary.html#glossary-shame">Full definition →</a></span></span></strong> is externally facing. It fires when you believe other people are watching and judging you negatively. Humans evolved as tribal creatures — being rejected by the group was historically life-threatening. So the brain developed a powerful enforcement mechanism: <span class="gl" tabindex="0">shame<span class="gl-pop" role="tooltip"><span class="gl-def">The emotion triggered by a perceived gap between where you are and where you think you should be.</span><a class="gl-more" href="../glossary.html#glossary-shame">Full definition →</a></span></span>, to make you conform to group norms and preserve your belonging.</p>
+<h3 id="summary-guilt-internal-values-need-honoring">Guilt → Internal values need honoring</h3>
+<p><strong>Guilt</strong> is internally facing. It fires when <em>you</em> believe you've violated your own standards, regardless of whether anyone else is watching. The corrective action <span class="gl" tabindex="0">shame<span class="gl-pop" role="tooltip"><span class="gl-def">The emotion triggered by a perceived gap between where you are and where you think you should be.</span><a class="gl-more" href="../glossary.html#glossary-shame">Full definition →</a></span></span> and guilt push you toward is similar — change your behavior — but the reference point differs.</p>
+<ul>
+<li><em><span class="gl" tabindex="0">Shame<span class="gl-pop" role="tooltip"><span class="gl-def">The emotion triggered by a perceived gap between where you are and where you think you should be.</span><a class="gl-more" href="../glossary.html#glossary-shame">Full definition →</a></span></span>:</em> Someone else thinks I did something wrong.</li>
+<li><em>Guilt:</em> I think I did something wrong.</li>
+</ul>
+<p>If you feel guilty for snapping at a child, that guilt pushes you toward self-correction: be calmer, seek help, work on it. That's guilt functioning as designed.</p>
+<h3 id="summary-sadness-stop-conserve-and-ask-for-help">Sadness → Stop, conserve, and ask for help</h3>
+<p><strong>Sadness</strong> motivates <em>inaction</em>, which sounds strange until you understand why. When your brain assesses a problem as unsolvable, spending energy trying to fix it is wasteful. Sadness is the brain's way of conserving resources by putting you in a low-activity state.</p>
+<p>Crying is part of this system too — it's a signal to the people around you that you're overwhelmed and need support. Sadness is essentially saying: <em>this problem is too big to solve alone; ask for help.</em></p>
+<blockquote>
+<p>"If you are feeling sad, maybe the solution you really need is to ask for help."</p>
+</blockquote>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-how-emotions-get-hijacked">How Emotions Get Hijacked</h2>
+<p>Emotions are calibrated for a specific environment — and that calibration can go wrong in two main ways.</p>
+<h3 id="summary-conditioning-from-your-past">Conditioning from your past</h3>
+<p>Growing up in a particular household wires you to feel <span class="gl" tabindex="0">shame<span class="gl-pop" role="tooltip"><span class="gl-def">The emotion triggered by a perceived gap between where you are and where you think you should be.</span><a class="gl-more" href="../glossary.html#glossary-shame">Full definition →</a></span></span> or guilt in response to specific triggers. A parent obsessed with appearance shames you for looking rumpled. Years later, a hair out of place still triggers a <span class="gl" tabindex="0">shame<span class="gl-pop" role="tooltip"><span class="gl-def">The emotion triggered by a perceived gap between where you are and where you think you should be.</span><a class="gl-more" href="../glossary.html#glossary-shame">Full definition →</a></span></span> spiral — even though there's no real social consequence anymore. The trigger was learned; it doesn't mean the emotion is pointing at anything real in your current life.</p>
+<p>Similarly, someone can be conditioned to feel angry about "territory" they don't actually own — treating a partner like property, or feeling entitled to a promotion as though it's something owed to them. The emotion is real, but what it's pointing at is distorted.</p>
+<h3 id="summary-manipulation-by-others">Manipulation by others</h3>
+<p>Because emotions are designed to push you toward action, someone who figures out which emotions you can't regulate has a map of your behavior.</p>
+<blockquote>
+<p>"I don't need to solve my problems. All I have to do is make this person feel guilty, and they will pay my rent for me."</p>
+</blockquote>
+<p>A friend with a sob story who extracts money by making you feel guilty is exploiting the guilt system — using your own emotional machinery against you. People who've experienced <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> are especially vulnerable to this because <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> often prevents the development of <span class="gl" tabindex="0">emotional regulation<span class="gl-pop" role="tooltip"><span class="gl-def">The ability to identify and modify emotional states in ways that support adaptive, goal-directed behavior.</span><a class="gl-more" href="../glossary.html#glossary-emotional-regulation">Full definition →</a></span></span> skills. Without the ability to manage the emotion internally, the only release valve is <em>acting on it</em> — which is exactly what the manipulator is counting on.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-the-technology-trap">The Technology Trap</h2>
+<p>Modern technology has introduced something the human brain was never designed to handle: an instant, always-available way to suppress any negative emotion without solving anything.</p>
+<p>Social media, video games, pornography, binge-watching, substances — all of these effectively mute negative emotions on demand. That feels like relief, but it's actually self-sabotage.</p>
+<p>If guilt about not studying is driving you to open your books, but a video game makes the guilt disappear, you get the temporary relief <em>without the corrective action</em>. The underlying problem — not studying — remains completely untouched. Do this repeatedly across every domain of life and the cumulative result is a life that never actually moves forward.</p>
+<blockquote>
+<p>"People stop actually moving forward in life. They are so caught up in being controlled by emotions or suppressing emotions that they never actually fix their life in any meaningful way."</p>
+</blockquote>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-common-pitfalls">Common Pitfalls</h2>
+<ul>
+<li><strong>Labeling emotions as good or bad.</strong> This is the root mistake. Calling anger "bad" and happiness "good" means you'll suppress anger precisely when it's trying to protect you.</li>
+<li><strong>Confusing numbing with coping.</strong> Playing a game until the <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> goes away isn't regulation — it's <span class="gl" tabindex="0">avoidance<span class="gl-pop" role="tooltip"><span class="gl-def">Avoidance is the largely subconscious impulse to move away from a negative emotion or the situation that triggers it, rather than moving toward something positive.</span><a class="gl-more" href="../glossary.html#glossary-avoidance">Full definition →</a></span></span>. The <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> returns (usually stronger) because nothing was actually resolved.</li>
+<li><strong>Acting on every emotion immediately.</strong> The opposite mistake. Not every emotional signal is accurately calibrated. Feeling entitled anger doesn't mean someone actually violated your boundaries. Feeling manipulated guilt doesn't mean you're actually responsible for someone else's problems.</li>
+<li><strong>Ignoring vague or low-level emotions.</strong> A subtle background hum of anger or sadness is still carrying information. Waiting until it's overwhelming before paying attention means you've already been ignoring the signal for a long time.</li>
+<li><strong>Assuming sadness means weakness.</strong> Sadness is the brain's signal to stop wasting energy and recruit support. Treating it as something to push through and hide typically means you never get the help you actually need.</li>
+</ul>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-action-items-exercises">Action Items &amp; Exercises</h2>
+<ol>
+<li>
+<p><strong>Name the emotion before you act on it.</strong> When you notice a strong feeling, pause and ask: <em>What is this emotion? What is it signaling?</em> Even just naming it (anger, <span class="gl" tabindex="0">shame<span class="gl-pop" role="tooltip"><span class="gl-def">The emotion triggered by a perceived gap between where you are and where you think you should be.</span><a class="gl-more" href="../glossary.html#glossary-shame">Full definition →</a></span></span>, guilt, sadness) begins to shift you from being driven by it to observing it.</p>
+</li>
+<li>
+<p><strong>Trace the signal to its source.</strong> For each emotion, ask the diagnostic question it's designed for:
+   - <em>Anger:</em> What boundary or territory feels violated right now?
+   - <em><span class="gl" tabindex="0">Anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span>:</em> What potential danger is my brain trying to warn me about? Is it realistic?
+   - <em>Guilt:</em> Did I actually do something that contradicts my own <span class="gl" tabindex="0">values<span class="gl-pop" role="tooltip"><span class="gl-def">Something you genuinely care about that, when you move toward it, produces a felt sense of fulfillment — not just a vague wish, but the force that actually gets you out of the chair and moving.</span><a class="gl-more" href="../glossary.html#glossary-values">Full definition →</a></span></span> — or is someone making me feel responsible for their problem?
+   - <em><span class="gl" tabindex="0">Shame<span class="gl-pop" role="tooltip"><span class="gl-def">The emotion triggered by a perceived gap between where you are and where you think you should be.</span><a class="gl-more" href="../glossary.html#glossary-shame">Full definition →</a></span></span>:</em> Is this external judgment something I actually need to care about, or is it a conditioned response from my past?
+   - <em>Sadness:</em> Is there something here I genuinely can't solve alone? Who could help?</p>
+</li>
+<li>
+<p><strong>Delay the numbing behavior by 10 minutes.</strong> When you feel the pull toward a screen, substance, or distraction, set a timer for 10 minutes and sit with the emotion. Notice what it's pointing at. After 10 minutes, decide consciously whether to act on the emotion or use the distraction — the goal is to make it a choice, not a reflex.</p>
+</li>
+<li>
+<p><strong>Audit your guilt.</strong> The next time you feel guilty and someone is present, ask yourself: <em>Did I actually do something wrong according to my own <span class="gl" tabindex="0">values<span class="gl-pop" role="tooltip"><span class="gl-def">Something you genuinely care about that, when you move toward it, produces a felt sense of fulfillment — not just a vague wish, but the force that actually gets you out of the chair and moving.</span><a class="gl-more" href="../glossary.html#glossary-values">Full definition →</a></span></span>, or is someone engineering this feeling?</em> If you can't identify a specific thing you did that violated your own standards, that's a signal you may be being manipulated.</p>
+</li>
+<li>
+<p><strong>Practice tolerating the discomfort without acting on it.</strong> Sit with an uncomfortable emotion — especially a mild one — for a few minutes without numbing it or immediately acting to relieve it. This is the foundational skill of <span class="gl" tabindex="0">emotional regulation<span class="gl-pop" role="tooltip"><span class="gl-def">The ability to identify and modify emotional states in ways that support adaptive, goal-directed behavior.</span><a class="gl-more" href="../glossary.html#glossary-emotional-regulation">Full definition →</a></span></span>: learning that you can feel something without it controlling what you do next. Over time, this is what converts emotional energy from something that controls you into something that fuels purposeful action.</p>
+</li>
+</ol>
+</section></article>
+    </div>
+  </div>
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      
+      <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
 <p>So now we&#x27;re going to talk a little bit more about emotions. So I know it sounds kind of crazy, but I think one of the largest deficiencies in our educational curriculum is that we do not teach people about their emotions. So the first thing that a lot of people experience is that some emotions are good and other emotions are bad. And we tend to craft our life out of chasing good emotions and avoiding negative emotions. And the real irony there is that the more that you run away from your negative emotions, the worse your life can become. So let&#x27;s first start by understanding that there is no such thing as a good emotion or a bad emotion.</p>
 <p>If we look at emotion in general, it is conserved across the human species. Everyone has the capability of anger, sadness, guilt, and <span class="gl" tabindex="0">shame<span class="gl-pop" role="tooltip"><span class="gl-def">The emotion triggered by a perceived gap between where you are and where you think you should be.</span><a class="gl-more" href="../glossary.html#glossary-shame">Full definition →</a></span></span>. So then the question becomes, if these things are hurtful, which they absolutely are, why is everyone capable of actually feeling these negative things? So let&#x27;s start to understand why a human being, why a body, a brain, a mind, gives you a negative experience. So let&#x27;s start with simple examples like hunger and thirst. So hunger and thirst are some of the most painful experiences that someone can go through. And why does our body make these things painful?</p>
 <p>So anytime the body or the mind inflicts pain on you, it is trying to get you to act in a particular way. So if I have a physical injury and I&#x27;m very, very sensitive because it hurts, that is my body&#x27;s way of telling me, hey, stop moving this thing, because if you move it, we&#x27;re not going to be able to heal properly, and you may hurt it even further. If you look at something like hunger or thirst, this is our body&#x27;s way of telling us we need food and we need something to drink. And emotions, especially our negative emotions, are no different. So let&#x27;s remember that emotions serve two basic purposes.</p>
@@ -69,15 +200,21 @@ try {
 <p>I stop moving forward. And this is such a commonly, overwhelmingly common experience that I see over and over again, which is that people stop actually moving forward in life. They are so caught up in their emotions and being controlled by emotions or suppressing emotions that they never actually fix their life in any meaningful way. So in order to do that, in order to break yourself free from the cycle of being manipulated by others, in order to break yourself free from the cycle of being controlled by your anger, or even in order to break yourself free from an <span class="gl" tabindex="0">addiction<span class="gl-pop" role="tooltip"><span class="gl-def">The use of a chemical (alcohol, opioids, cannabis, caffeine, etc.) that produces neurological effects your brain then adapts to — leading to tolerance, withdrawal, and, potentially, addiction.</span><a class="gl-more" href="../glossary.html#glossary-substance-use">Full definition →</a></span></span> to technology, we need to understand how to control our emotions in a healthier way.</p>
 <p>We must be able to, first of all, listen to our emotions without numbing them because they&#x27;re telling you something important. The next thing that we need to do is be able to regulate our emotions without giving in to particular behaviors, whether that&#x27;s loaning your friend $100 or playing a video game. And once we have those two things taken care of, then something beautiful, amazing, and unheard of will happen. That emotional energy will fuel your <span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span> to actually take corrective action. And anytime I have helped a patient with this, their life begins to transform because instead of this powerful emotional energy which they are suppressing, they can now channel it towards progress.</p>
 </section></article>
+    </div>
   </div>
+  
 
-  <p class="meta">Transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">Trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> → Emotions & <span class="gl" tabindex="0">Trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span>). Captions auto-generated.</p>
+  <p class="meta">Medium summary + transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">Trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> → Emotions & <span class="gl" tabindex="0">Trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span>). Captions auto-generated; summary by claude-sonnet-4-6.</p>
 </div>
 
 <script>
 (function () {
   var root = document.documentElement;
-  var tb = document.querySelector('.theme-toggle');
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'medium');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
   var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
   tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
@@ -85,6 +222,9 @@ try {
   function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
   var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+  function navigateTo(id){ var el=id&&document.getElementById(id); if(!el)return; var v=el.closest('.view'); if(v)setView(v.getAttribute('data-view')); el.scrollIntoView(); }
+  window.addEventListener('hashchange', function(){ navigateTo(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash) navigateTo(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>
 <script>

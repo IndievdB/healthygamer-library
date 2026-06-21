@@ -9,7 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-} catch (e) {}
+  document.documentElement.setAttribute('data-view', 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -31,9 +32,124 @@ try {
     <span class="speakers-note">11:20 min</span>
   </p>
 
-  <div class="doc">
+  
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">1,491w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">2,004w</span></button>
     
-    <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
+  </div>
+  
+
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#summary-summary">Summary</a></li>
+<li><a href="#summary-two-mindsets-two-very-different-responses-to-failure">Two Mindsets, Two Very Different Responses to Failure</a></li>
+<li><a href="#summary-the-ancient-version-of-the-same-idea">The Ancient Version of the Same Idea</a></li>
+<li><a href="#summary-what-failure-sounds-like-inside-your-head">What Failure Sounds Like Inside Your Head</a></li>
+<li><a href="#summary-how-to-actually-shift-from-one-to-the-other">How to Actually Shift from One to the Other</a></li>
+<li><a href="#summary-common-pitfalls">Common Pitfalls</a></li>
+<li><a href="#summary-action-items-exercises">Action Items &amp; Exercises</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="summary-summary">Summary</h2>
+<p><strong>TL;DR — Your relationship with failure determines whether you keep going or quit, and that relationship is shaped by a mindset you formed in childhood — one you can actually change.</strong></p>
+<p>Most people think <span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span> is about drive, willpower, or <span class="gl" tabindex="0">desire<span class="gl-pop" role="tooltip"><span class="gl-def">One of the four classical Hindu goals of life, Kama is the pursuit of pleasure, desire, and sensory enjoyment — including but not limited to sexuality and lust.</span><a class="gl-more" href="../glossary.html#glossary-kama">Full definition →</a></span></span>. But <span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span> collapses the moment things go wrong. What actually determines whether you reach a goal is what happens in your head after you fail. There are two fundamentally different ways people process failure, and understanding which one you default to is the first step toward changing it.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-two-mindsets-two-very-different-responses-to-failure">Two Mindsets, Two Very Different Responses to Failure</h2>
+<p>Carol Dweck, a psychologist who blended social, personality, and developmental psychology, identified two distinct orientations kids develop toward success and failure.</p>
+<p><strong>The fixed mindset (performance mindset):</strong> Kids raised with this mindset were praised for being smart or talented. They came to believe that outcomes reflect inborn, unchangeable qualities — intelligence, natural ability, raw potential. When they succeed, it's proof they have the gift. When they fail, it's proof they don't.</p>
+<p>The problem with that framing is mathematical: if failure means you lack an inborn trait, and inborn traits don't change, then trying again is pointless. Why play a second game of chess against someone smarter than you? Nothing about the situation has changed. This is why kids with a fixed mindset are more likely to give up after a setback — they've essentially developed a <strong>deterministic outlook</strong>, where the outcome feels pre-decided by qualities they can't control.</p>
+<p><strong>The growth mindset (learning mindset):</strong> Kids raised with this mindset were praised for their effort. They came to believe that outcomes reflect practice, experience, and work — all of which can change. When they lose a chess game, the explanation isn't "they're smarter than me," it's "they're more experienced than me." That's a gap that effort can close.</p>
+<p>The difference in <span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span> is enormous. One mindset reads failure as evidence of a verdict. The other reads it as a data point on a learning curve.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-the-ancient-version-of-the-same-idea">The Ancient Version of the Same Idea</h2>
+<p>Dweck discovered this in a Western research context, but yogic philosophy mapped the same territory thousands of years earlier through the concept of a <strong><span class="gl" tabindex="0">samskara<span class="gl-pop" role="tooltip"><span class="gl-def">A samskara is a ball of undigested emotional energy from past experiences that gets stored in the mind and automatically activates in present situations, distorting your perception of what&#x27;s actually happening.</span><a class="gl-more" href="../glossary.html#glossary-samskara">Full definition →</a></span></span></strong> — an emotionally charged memory that gets activated when you face similar circumstances again.</p>
+<p>When you were young and failed at something, that experience didn't just pass through you neutrally. It was processed with emotions — <span class="gl" tabindex="0">shame<span class="gl-pop" role="tooltip"><span class="gl-def">The emotion triggered by a perceived gap between where you are and where you think you should be.</span><a class="gl-more" href="../glossary.html#glossary-shame">Full definition →</a></span></span>, encouragement, humiliation, reassurance — shaped by how the adults around you responded. Those emotionally colored experiences became internalized templates, mental filters through which you now automatically interpret new situations.</p>
+<p>If your parents said, explicitly or implicitly, "you failed because you're not cut out for this," that experience may have laid down a <span class="gl" tabindex="0">samskara<span class="gl-pop" role="tooltip"><span class="gl-def">A samskara is a ball of undigested emotional energy from past experiences that gets stored in the mind and automatically activates in present situations, distorting your perception of what&#x27;s actually happening.</span><a class="gl-more" href="../glossary.html#glossary-samskara">Full definition →</a></span></span> that fires every time you hit a wall now. You feel the old emotion — inadequacy, <span class="gl" tabindex="0">shame<span class="gl-pop" role="tooltip"><span class="gl-def">The emotion triggered by a perceived gap between where you are and where you think you should be.</span><a class="gl-more" href="../glossary.html#glossary-shame">Full definition →</a></span></span> — and pull back, without even quite realizing why.</p>
+<p>The important thing the yogic tradition adds here is this: <strong><span class="gl" tabindex="0">samskaras<span class="gl-pop" role="tooltip"><span class="gl-def">A samskara is a ball of undigested emotional energy from past experiences that gets stored in the mind and automatically activates in present situations, distorting your perception of what&#x27;s actually happening.</span><a class="gl-more" href="../glossary.html#glossary-samskara">Full definition →</a></span></span> are not permanent.</strong> They can be processed, digested, and replaced. Personality is not fixed. This matters because it means neither mindset is a life sentence.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-what-failure-sounds-like-inside-your-head">What Failure Sounds Like Inside Your Head</h2>
+<p>The practical question isn't "which mindset did I grow up with?" It's "what does my mind actually do when I fail right now?"</p>
+<p>Pay attention to the thoughts that arise automatically after a setback. Some common fixed-mindset responses:</p>
+<ul>
+<li><em>"I'm just bad at this."</em></li>
+<li><em>"I knew I wasn't cut out for it."</em></li>
+<li><em>"There's no point trying again."</em></li>
+<li><em>"This always happens to me."</em></li>
+</ul>
+<p>These thoughts don't just describe a feeling — they tank <span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span>. When your brain treats a single failure as permanent evidence about your capability, it makes trying again feel irrational. Why put in effort when the result is already determined?</p>
+<p>Growth-mindset responses sound different:</p>
+<ul>
+<li><em>"I messed up, but I know more than I did before."</em></li>
+<li><em>"The other person has more practice — I can close that gap."</em></li>
+<li><em>"It takes more than one attempt to get good at something."</em></li>
+</ul>
+<p>Notice also the language difference between a <strong>setback</strong> and a <strong>failure</strong>. A setback is a temporary obstacle on a path. A failure is a final verdict. Which word you reach for first is a small but real signal about which mindset is running in the background.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-how-to-actually-shift-from-one-to-the-other">How to Actually Shift from One to the Other</h2>
+<p>Recognizing which mindset you default to is useful. Changing it requires deliberate practice — specifically, <strong>intentional <span class="gl" tabindex="0">cognitive reframing<span class="gl-pop" role="tooltip"><span class="gl-def">Deliberately shifting how you interpret an event to change its emotional impact — not by forcing positivity, but by questioning whether your automatic reading of the situation is actually accurate.</span><a class="gl-more" href="../glossary.html#glossary-cognitive-reframing">Full definition →</a></span></span></strong>.</p>
+<p>This isn't about forcing positive thinking. It's about catching the automatic thought and interrupting it before it steers your behavior.</p>
+<p>Here's how that works in practice:</p>
+<ol>
+<li><strong>Notice the instinctive reaction.</strong> When you fail or make a mistake, your mind produces a thought almost immediately. Catch it. Don't act on it yet — just observe what it is.</li>
+<li><strong>Notice what that thought does to your <span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span>.</strong> Does it make you want to try again, or does it make you want to avoid the situation entirely? The thought and the <span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span> collapse are connected.</li>
+<li><strong>Apply the friend test.</strong> Ask yourself: if a friend came to you in the exact same situation, what would you tell them? You wouldn't say "you failed once, so obviously give up." You'd acknowledge it takes practice. You'd encourage them to try again. Extend yourself that same logic.</li>
+<li><strong>Reframe the meaning of the failure.</strong> Instead of "I failed, therefore I'm bad at this," try "I failed, therefore I now know something I didn't know before." The failure isn't evidence of your ceiling — it's part of the process of raising it.</li>
+</ol>
+<blockquote>
+<p>"It's okay to lose a single game of chess. It's not the end of the world. I learned something from it and it's gonna be harder for my opponent to beat me next time."</p>
+</blockquote>
+<p>This isn't self-delusion. It's an accurate description of how skill development actually works.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-common-pitfalls">Common Pitfalls</h2>
+<p><strong>Confusing the mindset with the outcome.</strong> Having a growth mindset doesn't mean you'll always succeed or that effort always produces results on your timeline. It means you stay in the game long enough to find out. People sometimes abandon the growth mindset when results are slow, because they expected the mindset itself to guarantee success quickly.</p>
+<p><strong>Thinking you just "have" one mindset and that's that.</strong> Both mindsets can coexist in the same person across different domains. You might have a growth mindset about your job but a fixed mindset about your athletic ability, your social skills, or your intelligence. The work is domain-specific, not a single global switch to flip.</p>
+<p><strong>Mistaking positive self-talk for the actual reframe.</strong> Telling yourself "I'm great, I'll do better" without identifying and interrupting the specific automatic thought isn't a reframe — it's noise layered on top of the problem. The reframe only works if it actually engages with the thought that's undermining you.</p>
+<p><strong>Using failure as evidence indefinitely.</strong> There's a real question embedded in this whole discussion: when should you actually stop trying something? The growth mindset doesn't mean ignoring all evidence. But one failure — or even a handful — is almost never enough information to answer that question. The fixed mindset jumps to "quit" too early; the learning mindset keeps gathering real data.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-action-items-exercises">Action Items &amp; Exercises</h2>
+<ol>
+<li>
+<p><strong>Run a failure audit.</strong> Think of a recent situation where you gave up on something or avoided trying. Write down the thoughts you had at the moment of failure or anticipated failure. Were they fixed ("I'm just not good at this") or growth-oriented ("I don't know how to do this yet")? Identifying the pattern is the starting point.</p>
+</li>
+<li>
+<p><strong>Log your automatic reactions for one week.</strong> Any time you encounter a setback — big or small — write down the first thought that crosses your mind and then note what it did to your <span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span>. You're building <span class="gl" tabindex="0">awareness<span class="gl-pop" role="tooltip"><span class="gl-def">The capacity to accurately receive and process information about what is happening — in your environment, your body, or your mind — so that your brain can respond appropriately.</span><a class="gl-more" href="../glossary.html#glossary-awareness">Full definition →</a></span></span> of the feedback loop between thought and action.</p>
+</li>
+<li>
+<p><strong>Practice the friend test in real time.</strong> The next time you fail at something, pause and literally ask yourself: "What would I tell a close friend who just went through this?" Then apply that answer to yourself. Do this out loud or in writing — it's harder to dismiss when it's externalized.</p>
+</li>
+<li>
+<p><strong>Reframe one past "failure" right now.</strong> Pick something you gave up on or felt bad about. Write a single-sentence reframe that replaces a fixed-mindset interpretation with a growth-mindset one. For example: <em>"I quit because I wasn't talented enough"</em> → <em>"I stopped before I had enough practice to see real improvement."</em> This is a low-stakes way to practice the cognitive movement before you need it under pressure.</p>
+</li>
+<li>
+<p><strong>Notice your praise patterns.</strong> If you have children, students, or people you mentor, pay attention to whether you praise them for being smart/talented or for the effort and process they put in. Adjusting how you recognize other people's work is both a gift to them and a way to reinforce the growth mindset in yourself.</p>
+</li>
+</ol>
+</section></article>
+    </div>
+  </div>
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      
+      <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
 <p>- One of the most memorable lectures that I had during my psychiatry training was actually on the first day of my internship orientation. The chief of anesthesiology at Massachusetts General Hospital gave us a lecture about mindset. And he started off by saying that each and every one of you is intelligent, you&#x27;re talented. It&#x27;s really hard to get to be where you are. And at the same time, from this point forward, y&#x27;all will separate into two camps. And depending on our mindset, we&#x27;ll deal with challenges and failures in different ways. And what he introduced to us that day was the concept of a fixed mindset and a growth mindset.</p>
 <p>And this is really important because when we think about <span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span>, we can be motivated towards something, we can have a particular goal, and we can work towards it. But what ultimately determines whether we succeed is actually how we handle failure along the way. Because every time that I&#x27;m motivated towards something, when I fail, one of two things can happen. I can fail and I can sort of give up at that point, right? I can say things like, &quot;There&#x27;s no point in trying&quot; or &quot;It&#x27;s not gonna work&quot;, or I never knew I was, &quot;I knew I wasn&#x27;t cut out for it to begin with&quot;, or I can take that failure as sort of a learning experience and sort of learn from it and grow from it.</p>
 <p>That can be simple for me to say, but as we actually tunnel down into it, one of the most challenging questions we can have is how do we know when we should quit? Right? How do we know, how many times do I need to fail before I realize, &quot;Okay, should I try again? Or was this really not meant to be?&quot; So managing failure is a really, really important part of managing <span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span>. And this is where we&#x27;re gonna sort of lean on two major sources of expertise. One is going to be the work of the psychologist Carol Dweck who talked about mindset. And the second is actually from the yogic perspective where the yogis actually discovered very, very similar things.</p>
@@ -52,15 +168,21 @@ try {
 <p>Would you tell them, &quot;Oh, yeah. Since you screwed up once, you better not try ever again.&quot; No, of course not. You&#x27;d encourage them to try again. You&#x27;d acknowledge to all of your friends that they&#x27;re not perfect the first time they try something, that of course it takes a couple tries to get good at something. For some people, it even takes a more than a couple of tries and that&#x27;s actually perfectly okay. As you start to combat those thoughts, as you sort of become aware of your instinctive reaction, what you&#x27;ll sort of find is there&#x27;s a natural change in <span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span>. Because if you live in a world, if in your head failing once means failing forever, of course it&#x27;s gonna destroy your <span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span>.</p>
 <p>As we combat that perception that failing once is failing forever, as we combat the perception that failure is deterministic, what we&#x27;ll naturally start to do is increase our <span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span>. It&#x27;s okay to lose a single game of chess. It&#x27;s not the end of the world. I learned something from it and it&#x27;s gonna be harder for my opponent to beat me next time. And if I keep at it at some point, I&#x27;ll start to win.</p>
 </section></article>
+    </div>
   </div>
+  
 
-  <p class="meta">Transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> → Goal Setting & <span class="gl" tabindex="0">Motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span>). Captions auto-generated.</p>
+  <p class="meta">Medium summary + transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> → Goal Setting & <span class="gl" tabindex="0">Motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span>). Captions auto-generated; summary by claude-sonnet-4-6.</p>
 </div>
 
 <script>
 (function () {
   var root = document.documentElement;
-  var tb = document.querySelector('.theme-toggle');
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'medium');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
   var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
   tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
@@ -68,6 +190,9 @@ try {
   function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
   var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+  function navigateTo(id){ var el=id&&document.getElementById(id); if(!el)return; var v=el.closest('.view'); if(v)setView(v.getAttribute('data-view')); el.scrollIntoView(); }
+  window.addEventListener('hashchange', function(){ navigateTo(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash) navigateTo(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>
 <script>

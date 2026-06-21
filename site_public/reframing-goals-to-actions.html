@@ -9,7 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-} catch (e) {}
+  document.documentElement.setAttribute('data-view', 'transcript');
+} catch (e) { document.documentElement.setAttribute('data-view', 'transcript'); }
 </script>
 </head>
 <body>
@@ -31,9 +32,13 @@ try {
     <span class="speakers-note">9:18 min</span>
   </p>
 
-  <div class="doc">
-    
-    <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
+  
+
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      
+      <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
 <p>- This concept of <span class="gl" tabindex="0">Karma<span class="gl-pop" role="tooltip"><span class="gl-def">The fundamental principle that every action has a cause and every cause produces an effect — nothing more, nothing less.</span><a class="gl-more" href="../glossary.html#glossary-karma">Full definition →</a></span></span> Fal is really cool and all, but how do I actually do it, right? How do I start the process of reframing from goals or an outcome orientation to actions? How do I start living in the present instead of focusing on the future? It&#x27;s a really great question, and it&#x27;s a real problem because our society isn&#x27;t action-oriented. It&#x27;s outcome oriented. Let&#x27;s remember that everything that society tells us is to be goal-oriented, right? So if we think about someone who&#x27;s successful, there&#x27;s someone who&#x27;s like very, very goal oriented and really moves towards their goals. And if we really look at what society tells us, we find that even our value as a human being is all based on our accomplishments.</p>
 <p>Like literally if I&#x27;ve graduated from high school and that&#x27;s, what&#x27;s on my resume, I&#x27;m worth a certain amount of money. If I&#x27;ve graduated from college with a particular degree, then I&#x27;m worth a different amount of money. And if I&#x27;ve graduated from like medical school or law school, then I&#x27;m worth an even different amount of money. So it&#x27;s really challenging because our entire lives, we&#x27;re taught by society that outcomes are what&#x27;s important. And if we look at really common things like New Year&#x27;s resolutions. What happens on New Year&#x27;s day? People make resolutions. They set goals for themselves, like getting in shape.</p>
 <p>But the problem is that when we set these kinds of goals for ourselves, our brain actually starts working against us. And I know it sounds really bizarre, but stay with me for a second. So understand that your brain is incredibly efficient at <span class="gl" tabindex="0">behavioral reinforcement<span class="gl-pop" role="tooltip"><span class="gl-def">The brain&#x27;s mechanism for repeating actions that produced pleasure or relief — when a behavior leads to a dopamine release (or suppresses negative emotion), the nucleus accumbens signals &quot;do that again,&quot; building…</span><a class="gl-more" href="../glossary.html#glossary-behavioral-reinforcement">Full definition →</a></span></span>. So what our brain does, is looks at particular things, and if it sort of works out the way that we want it to, if we see that an action is tied to a good result, we will reinforce that behavior. It&#x27;s sort of behaviorism 101. And if we take an action that doesn&#x27;t get the desired result, our brain actually discourages that kind of behavior.</p>
@@ -48,7 +53,9 @@ try {
 <p>And that&#x27;s just updating the resume. But see how many individual steps there are to it. And once you have a resume updated, then it&#x27;s gonna be &quot;apply for jobs.&quot; And what does that mean? Remember that this person doesn&#x27;t know anything. So you have to instruct them in each and everything. How are you gonna find the jobs to apply to? Are you gonna Google positions? Are you gonna use LinkedIn? Are you gonna use job websites? Are you gonna do networking? Are you gonna email your friends to see if they have any openings? What are you gonna do? Even networking is a bunch of tiny little actions. So if you want to start reframing from outcomes or goals to taking actions, use this exercise and recognize that the more that you be- that you&#x27;re goal oriented, the more that you think about these weird abstract things like getting in shape, the more that your goals don&#x27;t actually become actions that you can perform, the more stuck you&#x27;re gonna be in life.</p>
 <p>And the more that you can break things down into their tiny little constituent components, tiny little actions that you can take one after the other, after the other, after the other, you&#x27;ll also be recruiting that sort of instant gratification circuitry, where it may not be quite as gratifying, but at least your brain can see, &quot;hey, at the end of today, my resume&#x27;s done.&quot; Even an hour from now or two hours from now. If you&#x27;re someone who needs to update your resume, one hour from now, look at the clock, it could be finished. You could be done an hour from now. It&#x27;s very possible. All you have to do, is reframe from a goal to an action.</p>
 </section></article>
+    </div>
   </div>
+  
 
   <p class="meta">Transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">Meditation<span class="gl-pop" role="tooltip"><span class="gl-def">Meditation is the practice of focusing consciousness completely — until thinking itself falls away and you exist in a state of pure awareness with no mental activity.</span><a class="gl-more" href="../glossary.html#glossary-meditation">Full definition →</a></span></span> → Siddhi Padha (Path of Accomplishment)). Captions auto-generated.</p>
 </div>
@@ -56,7 +63,11 @@ try {
 <script>
 (function () {
   var root = document.documentElement;
-  var tb = document.querySelector('.theme-toggle');
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'transcript');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
   var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
   tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
@@ -64,6 +75,9 @@ try {
   function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
   var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+  function navigateTo(id){ var el=id&&document.getElementById(id); if(!el)return; var v=el.closest('.view'); if(v)setView(v.getAttribute('data-view')); el.scrollIntoView(); }
+  window.addEventListener('hashchange', function(){ navigateTo(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash) navigateTo(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>
 <script>

@@ -9,7 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-} catch (e) {}
+  document.documentElement.setAttribute('data-view', 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -31,9 +32,137 @@ try {
     <span class="speakers-note">24:49 min</span>
   </p>
 
-  <div class="doc">
+  
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">1,772w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">4,589w</span></button>
     
-    <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
+  </div>
+  
+
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#summary-summary">Summary</a></li>
+<li><a href="#summary-why-the-brain-shuts-down-emotions-in-the-first-place">Why the Brain Shuts Down Emotions in the First Place</a></li>
+<li><a href="#summary-what-emotions-actually-do-and-what-you-lose-without-them">What Emotions Actually Do (And What You Lose Without Them)</a></li>
+<li><a href="#summary-the-hidden-costs-of-going-numb">The Hidden Costs of Going Numb</a></li>
+<li><a href="#summary-reconnecting-starting-with-language">Reconnecting: Starting with Language</a></li>
+<li><a href="#summary-reconnecting-working-through-the-body">Reconnecting: Working Through the Body</a></li>
+<li><a href="#summary-common-pitfalls">Common Pitfalls</a></li>
+<li><a href="#summary-action-items-exercises">Action Items &amp; Exercises</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="summary-summary">Summary</h2>
+<p><strong>TL;DR — <span class="gl" tabindex="0">Trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> teaches the brain to shut emotions off as a survival strategy, but that same shutdown causes serious problems in adulthood. Reconnecting with your emotions — through language and through the body — is how you reverse the damage.</strong></p>
+<p>When emotions caused pain instead of relief in childhood, the brain did the only reasonable thing available to it: it disconnected the emotional system. That protective adaptation helps a kid survive, but it doesn't switch off when the danger passes. Understanding exactly what got unplugged — and why — is the first step to plugging it back in.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-why-the-brain-shuts-down-emotions-in-the-first-place">Why the Brain Shuts Down Emotions in the First Place</h2>
+<p>Emotions exist for good reasons. <span class="gl" tabindex="0">Anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> warns you of danger. Sadness signals to others that you need support. Anger mobilizes you to protect your boundaries. In a healthy environment, expressing these feelings produces real results.</p>
+<p>In an abusive or neglectful home, the opposite happens. A child cries and instead of comfort, gets punishment. A child gets angry and instead of being heard, gets hurt worse. The emotional system keeps firing signals that produce no useful outcome — or actively backfire. Since a young child can't rationalize ("my parent is struggling, this isn't about me") the way an adult can, the only option left is to stop feeling altogether.</p>
+<p>This shutdown process runs in stages:</p>
+<ol>
+<li><strong>Emotional suppression</strong> — actively pushing feelings down, stuffing them away</li>
+<li><strong>Emotional numbness</strong> — the brain automates the suppression; feelings stop arriving</li>
+<li><strong><span class="gl" tabindex="0">Dissociation<span class="gl-pop" role="tooltip"><span class="gl-def">A protective fragmentation of the self in which the brain severs communication between its emotional and analytical hemispheres — numbing feeling so that overwhelming experience becomes survivable.</span><a class="gl-more" href="../glossary.html#glossary-dissociation">Full definition →</a></span></span></strong> — in severe cases, a complete unplugging from the emotional experience of a moment, sometimes described as an out-of-body sensation</li>
+</ol>
+<p>Neurologically, this is called <strong><span class="gl" tabindex="0">hemispheric lateralization<span class="gl-pop" role="tooltip"><span class="gl-def">The corpus callosum is the band of neural tissue sitting in the middle of the brain that connects the left and right hemispheres, acting as the communication highway between them.</span><a class="gl-more" href="../glossary.html#glossary-corpus-callosum">Full definition →</a></span></span></strong>. The brain has a left hemisphere (analytical thinking, language) and a right hemisphere (emotions, creativity), connected by a structure called the <strong><span class="gl" tabindex="0">corpus callosum<span class="gl-pop" role="tooltip"><span class="gl-def">The corpus callosum is the band of neural tissue sitting in the middle of the brain that connects the left and right hemispheres, acting as the communication highway between them.</span><a class="gl-more" href="../glossary.html#glossary-corpus-callosum">Full definition →</a></span></span></strong>. Under <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span>, activity across the <span class="gl" tabindex="0">corpus callosum<span class="gl-pop" role="tooltip"><span class="gl-def">The corpus callosum is the band of neural tissue sitting in the middle of the brain that connects the left and right hemispheres, acting as the communication highway between them.</span><a class="gl-more" href="../glossary.html#glossary-corpus-callosum">Full definition →</a></span></span> decreases. The two hemispheres stop talking to each other. You can still think, but you can no longer feel — or at least, you can no longer access what you feel.</p>
+<p>At the time, this is a genuine adaptation. The emotions of severe abuse are overwhelming. Walling them off is how the system protects itself. The problem is that the wall doesn't come down on its own.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-what-emotions-actually-do-and-what-you-lose-without-them">What Emotions Actually Do (And What You Lose Without Them)</h2>
+<p>Once the emotional system goes dark, you lose two things emotions were quietly doing for you all along.</p>
+<p><strong>1. Information</strong></p>
+<p>Emotions process data faster than conscious thought. Walking into a room and instantly sensing that something is wrong before anyone says a word — that's your emotional system scanning and reporting. The gut feeling that a colleague isn't trustworthy, the subtle unease in a relationship you can't quite explain — these are your brain feeding you real intelligence in the form of feelings.</p>
+<p>When you're numb, that feed cuts out. Life starts to feel like you're flying blind.</p>
+<p><strong>2. <span class="gl" tabindex="0">Motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span></strong></p>
+<p>Emotions don't just tell you what's happening; they give you the energy to do something about it. Anger, specifically, is what allows you to enforce boundaries and protect yourself. A person who was punished as a child every time they got angry learns: <em>anger makes things worse</em>. The anger circuit gets unplugged. When that child becomes an adult and someone mistreats them, the circuit is still off. They can see, analytically, that they're being mistreated — but they can't feel the anger that would normally mobilize them to act. This is a direct neurological explanation for why people with childhood abuse histories so often end up in abusive adult relationships. It isn't weakness or stupidity. The protective system is simply still running the old code.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-the-hidden-costs-of-going-numb">The Hidden Costs of Going Numb</h2>
+<p>Suppressing emotions doesn't make them disappear. It makes them invisible to <em>you</em> — while they keep running in the background, shaping your behavior without your <span class="gl" tabindex="0">awareness<span class="gl-pop" role="tooltip"><span class="gl-def">The capacity to accurately receive and process information about what is happening — in your environment, your body, or your mind — so that your brain can respond appropriately.</span><a class="gl-more" href="../glossary.html#glossary-awareness">Full definition →</a></span></span>.</p>
+<p><strong>You lose the ability to articulate feelings.</strong> This matters more than it sounds. Freud noticed that when patients could finally put words to something emotionally charged, their symptoms improved. Language appears to metabolize emotion in some way — it calms the charge. Without the ability to name what you feel, you can't explain yourself to others, can't work through conflict in relationships, and can't build the kind of narrative that allows <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> to become something you move past rather than something that moves you around.</p>
+<blockquote>
+<p>"Language is a substitute for action."</p>
+</blockquote>
+<p><strong>Flow state and productivity break down.</strong> Optimal performance — the focused, energized state researchers call <strong>flow</strong> — requires the left and right hemispheres working together. You need analytical focus <em>and</em> emotional engagement simultaneously. When a task is too easy, you feel bored (emotional signal). When it's too hard, you feel anxious (emotional signal). The sweet spot, where you're challenged but capable, produces positive emotional engagement that makes deep focus possible. <span class="gl" tabindex="0">Hemispheric lateralization<span class="gl-pop" role="tooltip"><span class="gl-def">The corpus callosum is the band of neural tissue sitting in the middle of the brain that connects the left and right hemispheres, acting as the communication highway between them.</span><a class="gl-more" href="../glossary.html#glossary-corpus-callosum">Full definition →</a></span></span> breaks this. You're either stuck in pure analytical mode, dry and disengaged, or flooded by emotion you can't think through. Either way, sustained, high-quality work becomes much harder.</p>
+<p><strong>Suppressed emotions leak out sideways.</strong> Just because you can't feel something doesn't mean it's gone. Unfelt emotions are still active — they just express themselves in ways you don't recognize as emotional. Addictions are one of the clearest examples: the craving for alcohol, weed, opiates, or any numbing agent is often the body trying to self-medicate emotions it can't consciously access. <span class="gl" tabindex="0">Impulsivity<span class="gl-pop" role="tooltip"><span class="gl-def">The ability of the brain&#x27;s frontal lobes to suppress urges before they become actions — what happens when that system works well, and what breaks down when it doesn&#x27;t.</span><a class="gl-more" href="../glossary.html#glossary-impulse-control">Full definition →</a></span></span>, chronic procrastination, inability to go to the gym or start projects, lack of direction — these can all be suppressed emotional energy with nowhere legitimate to go.</p>
+<blockquote>
+<p>"Just because we don't feel our emotions doesn't mean that our emotions aren't wreaking havoc within us."</p>
+</blockquote>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-reconnecting-starting-with-language">Reconnecting: Starting with Language</h2>
+<p>Reversing <span class="gl" tabindex="0">hemispheric lateralization<span class="gl-pop" role="tooltip"><span class="gl-def">The corpus callosum is the band of neural tissue sitting in the middle of the brain that connects the left and right hemispheres, acting as the communication highway between them.</span><a class="gl-more" href="../glossary.html#glossary-corpus-callosum">Full definition →</a></span></span> starts with articulation. Naming an emotion begins to restore the connection between the feeling (right hemisphere) and the language that can work with it (left hemisphere).</p>
+<p>This is harder than it sounds for someone who has been numb for years. A useful tool is a <strong>feelings wheel</strong> — a visual chart of emotions arranged in categories. Many people who genuinely cannot answer "what are you feeling?" can point to a word on a chart and recognize it immediately. That recognition is the beginning.</p>
+<p>One signal worth watching: defensive neutral language about painful experiences. Saying "my parents did the best they could" for months without ever saying they <em>did well</em> is a kind of emotional protection — avoiding the grief and anger underneath by staying in the analytical lane. Being able to finally say "they didn't do a great job, and that hurt me" is not an act of disloyalty. It's the moment something starts to move.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-reconnecting-working-through-the-body">Reconnecting: Working Through the Body</h2>
+<p>Emotions don't only live in the mind. They live in the body — and this opens a second pathway back.</p>
+<p>If you're too numb to access feelings directly, start with physical sensation. Ask yourself:
+- Is there tightness in my chest?
+- Is there a clenching in my throat?
+- Do I feel butterflies in my stomach?
+- Is there tension in my shoulders or jaw?</p>
+<p>Research has mapped which physical sensations tend to correspond to which emotions. Recognizing the body pattern can identify the feeling even when the feeling itself isn't consciously available.</p>
+<p>More importantly, working with the physical sensation seems to offer real emotional relief. Breathing deliberately into chest tightness, expanding it, releasing — this isn't just relaxation technique. It appears to process some of what's stored there.</p>
+<p>Mind-body practices with growing research support include:
+- <strong>Yoga and tai chi</strong> — sustained, movement-based practices that reconnect body <span class="gl" tabindex="0">awareness<span class="gl-pop" role="tooltip"><span class="gl-def">The capacity to accurately receive and process information about what is happening — in your environment, your body, or your mind — so that your brain can respond appropriately.</span><a class="gl-more" href="../glossary.html#glossary-awareness">Full definition →</a></span></span> with <span class="gl" tabindex="0">emotional regulation<span class="gl-pop" role="tooltip"><span class="gl-def">The ability to identify and modify emotional states in ways that support adaptive, goal-directed behavior.</span><a class="gl-more" href="../glossary.html#glossary-emotional-regulation">Full definition →</a></span></span>
+- <strong>Exercise</strong> generally
+- <strong>EFT (Emotional Freedom Technique / tapping)</strong> — once dismissed as pseudoscience, now supported by some randomized controlled trials; involves tapping specific points on the body to release stored emotional charge
+- <strong>Massage</strong> — physical contact as a route to emotional processing</p>
+<p>The general principle: if you want emotional health, you have to work on the body, because emotions are partly stored there.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-common-pitfalls">Common Pitfalls</h2>
+<p><strong>Thinking numbness means healing.</strong> Not feeling pain is not the same as being okay. The absence of felt emotion and the absence of emotional activity are completely different things. The emotions are still there, driving behavior — you just can't see them.</p>
+<p><strong>Believing that talking about emotions is pointless or weak.</strong> This is almost always a conclusion drawn from a childhood where emotional expression made things worse. It felt true then. It's not accurate now, and it has measurable costs.</p>
+<p><strong>Confusing analytical understanding with emotional processing.</strong> You can have a sophisticated intellectual account of your <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> — who did what, why it happened, how it shaped you — while the emotional charge remains completely unprocessed. Understanding the story is not the same as metabolizing the feeling.</p>
+<p><strong>Blaming yourself for the shutdown.</strong> <span class="gl" tabindex="0">Hemispheric lateralization<span class="gl-pop" role="tooltip"><span class="gl-def">The corpus callosum is the band of neural tissue sitting in the middle of the brain that connects the left and right hemispheres, acting as the communication highway between them.</span><a class="gl-more" href="../glossary.html#glossary-corpus-callosum">Full definition →</a></span></span> wasn't a choice. A child's brain did what it had to do to survive. The work now isn't about fault — it's about updating a system that's still running protective code in conditions that no longer require it.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-action-items-exercises">Action Items &amp; Exercises</h2>
+<ol>
+<li>
+<p><strong>Use a feelings wheel daily.</strong> Once a day — ideally at the same time — pull up a feelings wheel (easily found online) and point to what you're experiencing. Don't try to reason it out. Just look, scan, and pick. Name it out loud or write it down.</p>
+</li>
+<li>
+<p><strong>Do a body scan when you feel stuck or off.</strong> Before reaching for your phone, a drink, or anything else to manage discomfort, pause and ask: <em>Where do I feel this in my body?</em> Chest? Gut? Throat? Sit with the sensation for 60 seconds without trying to fix it.</p>
+</li>
+<li>
+<p><strong>Breathe into physical tension.</strong> If you notice tightness anywhere — chest especially — take a slow breath directed into that area, let it expand, and exhale fully. Repeat three to five times. Notice whether the sensation shifts.</p>
+</li>
+<li>
+<p><strong>Audit your neutral language.</strong> Think about how you describe your most painful experiences — childhood, relationships, failures. Are you always analytical? Always fair to the other person? See if there's a feeling underneath the fairness that never gets named.</p>
+</li>
+<li>
+<p><strong>Add one mind-body practice to your week.</strong> It doesn't have to be elaborate — a 20-minute yoga video, a long walk with attention on physical sensation, or a short tai chi routine. The goal is building the <span class="gl" tabindex="0">habit<span class="gl-pop" role="tooltip"><span class="gl-def">Automatic behavior that operates without motivation, willpower, or conscious thought — you simply do it.</span><a class="gl-more" href="../glossary.html#glossary-habit">Full definition →</a></span></span> of body <span class="gl" tabindex="0">awareness<span class="gl-pop" role="tooltip"><span class="gl-def">The capacity to accurately receive and process information about what is happening — in your environment, your body, or your mind — so that your brain can respond appropriately.</span><a class="gl-more" href="../glossary.html#glossary-awareness">Full definition →</a></span></span>, not achieving any particular outcome.</p>
+</li>
+<li>
+<p><strong>Write or speak one true thing you've been protecting someone from.</strong> This could be in a journal, with a therapist, or even out loud alone. Something you usually soften. See what shifts when you say it plainly.</p>
+</li>
+</ol>
+</section></article>
+    </div>
+  </div>
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      
+      <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
 <p>Next, we&#x27;re going to talk about how <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> shapes our emotions. So let&#x27;s go back to our standard scenario of a child who grows up in a somewhat abusive household. So in this situation, a child expresses emotion, but oftentimes the emotion doesn&#x27;t result in what it&#x27;s supposed to result in. So we sort of think about why do we experience negative emotions? We experience <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> to protect us. We start crying and we feel sad is a signal to the people around us that I need help. But if you&#x27;re a child who grows up in a neglectful or abusive household, do those emotions result in that kind of support?</p>
 <p>So in the worst cases, a child who expresses emotions get actually punished for expressing those emotions. And instead of those emotions resulting in help, they result in more problems. So if we sort of think about this, as a grown -up, what would we do, as an adult, what would we do if we encounter situations like this? If someone gets very angry at us and is inappropriate with us, does not respond to our emotions in the right way, we&#x27;ll sort of separate from those kinds of people, hopefully. Unless you&#x27;re watching this guide and you have trouble doing that, in which case we&#x27;ll help you do it, okay?</p>
 <p>Now, oftentimes as adults, though, we have different kinds of coping mechanisms that we can use when we&#x27;re feeling bad. We can recognize that, okay, even though I&#x27;m feeling sad today, I recognize that this breakup is something that I can grow from. There are other fish in the sea. I&#x27;ll meet someone else. We can use our rational mind to buffer against our negative emotions. But as a child who&#x27;s 5, 6, 10, 12, is not capable of that, right? Because a 6-year-old can&#x27;t rationalize to themselves why their parent is yelling at them when they&#x27;re crying. They don&#x27;t have that capability. So the child does the only thing it knows how to do, which is unplug the whole emotional system.</p>
@@ -75,15 +204,21 @@ try {
 <p>So overall, we have to be super careful with our emotions when it comes to <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span>. It&#x27;s not your fault, or anyone else&#x27;s fault, that they have ended up in a space of a <span class="gl" tabindex="0">hemispheric lateralization<span class="gl-pop" role="tooltip"><span class="gl-def">The corpus callosum is the band of neural tissue sitting in the middle of the brain that connects the left and right hemispheres, acting as the communication highway between them.</span><a class="gl-more" href="../glossary.html#glossary-corpus-callosum">Full definition →</a></span></span>. You couldn&#x27;t really do anything else about it, right? Because early on, when you grew up in this kind of environment, your brain was like, we can&#x27;t handle these emotions, so we&#x27;re gonna unplug. The problem is that unplugging helped you survive back then, but is creating problems today. And the process of reconnecting with your emotions can be quite difficult. It starts with articulating them, because now we have language that we can use to manipulate this stuff.</p>
 <p>It also increases our understanding and facilitates some of these other things that we&#x27;ll talk about, like post-traumatic growth and building a narrative, putting the <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> behind you. But then we can also leverage the body in other ways, whether it be through mind-body practices, exercise, or even some of these more novel techniques like EFT, or even massage, that we can use to sort of heal some of the emotions that are stored in our body.</p>
 </section></article>
+    </div>
   </div>
+  
 
-  <p class="meta">Transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">Trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> → Emotions & <span class="gl" tabindex="0">Trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span>). Captions auto-generated.</p>
+  <p class="meta">Medium summary + transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">Trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> → Emotions & <span class="gl" tabindex="0">Trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span>). Captions auto-generated; summary by claude-sonnet-4-6.</p>
 </div>
 
 <script>
 (function () {
   var root = document.documentElement;
-  var tb = document.querySelector('.theme-toggle');
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'medium');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
   var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
   tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
@@ -91,6 +226,9 @@ try {
   function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
   var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+  function navigateTo(id){ var el=id&&document.getElementById(id); if(!el)return; var v=el.closest('.view'); if(v)setView(v.getAttribute('data-view')); el.scrollIntoView(); }
+  window.addEventListener('hashchange', function(){ navigateTo(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash) navigateTo(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>
 <script>

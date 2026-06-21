@@ -9,7 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-} catch (e) {}
+  document.documentElement.setAttribute('data-view', 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -31,9 +32,127 @@ try {
     <span class="speakers-note">23:46 min</span>
   </p>
 
-  <div class="doc">
+  
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">1,479w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">4,604w</span></button>
     
-    <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
+  </div>
+  
+
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#summary-summary">Summary</a></li>
+<li><a href="#summary-how-intelligence-or-any-identity-becomes-a-prison">How Intelligence (or Any Identity) Becomes a Prison</a></li>
+<li><a href="#summary-confidence-is-the-ability-to-face-uncertainty">Confidence Is the Ability to Face Uncertainty</a></li>
+<li><a href="#summary-confidence-comes-from-surviving-failure-not-achieving-success">Confidence Comes from Surviving Failure, Not Achieving Success</a></li>
+<li><a href="#summary-confidence-comes-from-within-ego-needs-an-audience">Confidence Comes from Within; Ego Needs an Audience</a></li>
+<li><a href="#summary-common-pitfalls">Common Pitfalls</a></li>
+<li><a href="#summary-action-items-exercises">Action Items &amp; Exercises</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="summary-summary">Summary</h2>
+<p><strong>TL;DR — <span class="gl" tabindex="0">Confidence<span class="gl-pop" role="tooltip"><span class="gl-def">Self-esteem is the degree to which you accept yourself as you are — not how you measure up against others.</span><a class="gl-more" href="../glossary.html#glossary-self-esteem">Full definition →</a></span></span> and ego aren't the same thing; they're opposites. Ego is a borrowed sense of worth that crumbles under pressure, while <span class="gl" tabindex="0">confidence<span class="gl-pop" role="tooltip"><span class="gl-def">Self-esteem is the degree to which you accept yourself as you are — not how you measure up against others.</span><a class="gl-more" href="../glossary.html#glossary-self-esteem">Full definition →</a></span></span> is an internal resilience built by facing uncertainty and surviving failure.</strong></p>
+<p>Most people think the path to <span class="gl" tabindex="0">confidence<span class="gl-pop" role="tooltip"><span class="gl-def">Self-esteem is the degree to which you accept yourself as you are — not how you measure up against others.</span><a class="gl-more" href="../glossary.html#glossary-self-esteem">Full definition →</a></span></span> runs through success — win enough, achieve enough, get enough validation, and you'll eventually feel secure. This gets it exactly backwards. Real <span class="gl" tabindex="0">confidence<span class="gl-pop" role="tooltip"><span class="gl-def">Self-esteem is the degree to which you accept yourself as you are — not how you measure up against others.</span><a class="gl-more" href="../glossary.html#glossary-self-esteem">Full definition →</a></span></span> comes from a completely different place than ego does, and confusing the two is the reason so many smart, accomplished people still feel hollow and avoidant.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-how-intelligence-or-any-identity-becomes-a-prison">How Intelligence (or Any Identity) Becomes a Prison</h2>
+<p>Consider what happens when a child is told, over and over, that they're smart. The child starts performing that <span class="gl" tabindex="0">identity<span class="gl-pop" role="tooltip"><span class="gl-def">A stable sense of who you are, built from the narrative integration of emotionally salient experiences — not a fixed trait you possess, but a story you construct by stringing together the moments in your life that…</span><a class="gl-more" href="../glossary.html#glossary-identity">Full definition →</a></span></span> — showing off, basking in praise — and eventually <em>being smart</em> stops being an observation and becomes the whole self.</p>
+<p>The problem emerges the moment something requires effort. If you're the smart kid and something is hard, struggling with it threatens the only <span class="gl" tabindex="0">identity<span class="gl-pop" role="tooltip"><span class="gl-def">A stable sense of who you are, built from the narrative integration of emotionally salient experiences — not a fixed trait you possess, but a story you construct by stringing together the moments in your life that…</span><a class="gl-more" href="../glossary.html#glossary-identity">Full definition →</a></span></span> you have. So you pull away from hard things: sports, music, challenging coursework. Your world gets narrower and narrower until all that's left is the label.</p>
+<p>And then comes the really destructive move: <strong>self-sabotage as ego-protection</strong>. If you study hard for a test and still get a B, what does that mean? It means you're not smart. But if you wait until the night before and get a B, you're still a smart kid — just a lazy one. The laziness becomes a psychological shield. You stay a "talented genius cursed with poor discipline" rather than risk finding out the talent was never there.</p>
+<p>This pattern shows up wherever someone builds their <span class="gl" tabindex="0">identity<span class="gl-pop" role="tooltip"><span class="gl-def">A stable sense of who you are, built from the narrative integration of emotionally salient experiences — not a fixed trait you possess, but a story you construct by stringing together the moments in your life that…</span><a class="gl-more" href="../glossary.html#glossary-identity">Full definition →</a></span></span> around an external achievement:</p>
+<ul>
+<li>The student who was always top of their class, arriving in medical school and falling apart when they're no longer the smartest in the room</li>
+<li>The content creator who blows up overnight and immediately develops <span class="gl" tabindex="0">imposter syndrome<span class="gl-pop" role="tooltip"><span class="gl-def">A persistent belief that your success is undeserved — that you got lucky, fooled people, or benefited from circumstances — rather than from your own effort or competence.</span><a class="gl-more" href="../glossary.html#glossary-imposter-syndrome">Full definition →</a></span></span></li>
+<li>The "nice guy" who does endless favors to guarantee a yes before he risks rejection</li>
+</ul>
+<p>In every case, the underlying move is the same: <strong>avoid uncertainty to protect a fragile sense of self</strong>. And that <span class="gl" tabindex="0">avoidance<span class="gl-pop" role="tooltip"><span class="gl-def">Avoidance is the largely subconscious impulse to move away from a negative emotion or the situation that triggers it, rather than moving toward something positive.</span><a class="gl-more" href="../glossary.html#glossary-avoidance">Full definition →</a></span></span> is the opposite of <span class="gl" tabindex="0">confidence<span class="gl-pop" role="tooltip"><span class="gl-def">Self-esteem is the degree to which you accept yourself as you are — not how you measure up against others.</span><a class="gl-more" href="../glossary.html#glossary-self-esteem">Full definition →</a></span></span>.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-confidence-is-the-ability-to-face-uncertainty">Confidence Is the Ability to Face Uncertainty</h2>
+<p>Here's the core definition: <strong><span class="gl" tabindex="0">confidence<span class="gl-pop" role="tooltip"><span class="gl-def">Self-esteem is the degree to which you accept yourself as you are — not how you measure up against others.</span><a class="gl-more" href="../glossary.html#glossary-self-esteem">Full definition →</a></span></span> is the ability to face uncertainty</strong>. Not certainty of outcome — uncertainty.</p>
+<p>The "nice guy" example makes this vivid. Someone who does months of favors before confessing feelings isn't being generous; they're eliminating the chance of rejection. They're stacking the deck. And paradoxically, the more they stack it, the more insecure they become — because when the person they like says yes (or says "let's just be friends"), they still don't know if they're actually lovable. They only know the deck was stacked.</p>
+<p>The same thing happens with cheating at a game. Win by cheating, and you haven't learned anything about your actual skill. You've only made yourself <em>more</em> dependent on cheating next time.</p>
+<blockquote>
+<p>"The more that we actually try to stack the deck in our favor, the more that we try to remove uncertainty from the equation, the less confident we become."</p>
+</blockquote>
+<p>When you walk into a job interview not knowing if you're the best candidate, and you give everything you have — whether you get the job or not, you leave more confident than you arrived. Facing the question mark and still showing up is what builds something real.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-confidence-comes-from-surviving-failure-not-achieving-success">Confidence Comes from Surviving Failure, Not Achieving Success</h2>
+<p>Success builds ego. Surviving failure builds <span class="gl" tabindex="0">confidence<span class="gl-pop" role="tooltip"><span class="gl-def">Self-esteem is the degree to which you accept yourself as you are — not how you measure up against others.</span><a class="gl-more" href="../glossary.html#glossary-self-esteem">Full definition →</a></span></span>. These are genuinely different things.</p>
+<p>Medical students who've been top of their class their whole lives often shatter at the first real hardship — a surgeon yelling at them, a failed exam — because their <span class="gl" tabindex="0">confidence<span class="gl-pop" role="tooltip"><span class="gl-def">Self-esteem is the degree to which you accept yourself as you are — not how you measure up against others.</span><a class="gl-more" href="../glossary.html#glossary-self-esteem">Full definition →</a></span></span> was never real. It was ego constructed from an unbroken streak of wins. The streak ends, the ego collapses.</p>
+<p>Someone who has already failed — really failed, not just stumbled — has a different relationship with setbacks. They know they can come out the other side. A surgeon yelling at you is just noise when you've already survived much worse. That's not arrogance; that's earned calm.</p>
+<p>The breakup is a useful illustration. The first one feels catastrophic. You're certain you'll never recover. Then, slowly, you do — you meet someone new, you realize you're okay, your <span class="gl" tabindex="0">confidence<span class="gl-pop" role="tooltip"><span class="gl-def">Self-esteem is the degree to which you accept yourself as you are — not how you measure up against others.</span><a class="gl-more" href="../glossary.html#glossary-self-esteem">Full definition →</a></span></span> returns. Not because things went perfectly, but because you survived the failure. The second breakup is still painful but shorter. The pattern is clear: <strong><span class="gl" tabindex="0">confidence<span class="gl-pop" role="tooltip"><span class="gl-def">Self-esteem is the degree to which you accept yourself as you are — not how you measure up against others.</span><a class="gl-more" href="../glossary.html#glossary-self-esteem">Full definition →</a></span></span> accumulates through survival, not achievement</strong>.</p>
+<blockquote>
+<p>"Everything that I am and everything that I'm able to offer the world is because of my failures. I'm so grateful that I actually failed so hard."</p>
+</blockquote>
+<p>This is hard to hear when you're in the middle of failure. But the failure isn't detour — it's the actual road.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-confidence-comes-from-within-ego-needs-an-audience">Confidence Comes from Within; Ego Needs an Audience</h2>
+<p>Here's the fundamental difference between <span class="gl" tabindex="0">confidence<span class="gl-pop" role="tooltip"><span class="gl-def">Self-esteem is the degree to which you accept yourself as you are — not how you measure up against others.</span><a class="gl-more" href="../glossary.html#glossary-self-esteem">Full definition →</a></span></span> and ego:</p>
+<ul>
+<li><strong><span class="gl" tabindex="0">Confidence<span class="gl-pop" role="tooltip"><span class="gl-def">Self-esteem is the degree to which you accept yourself as you are — not how you measure up against others.</span><a class="gl-more" href="../glossary.html#glossary-self-esteem">Full definition →</a></span></span></strong> = sense of value derived internally</li>
+<li><strong>Ego</strong> = sense of value derived from the outside</li>
+</ul>
+<p>A simple test: imagine a random stranger on the street insults you. A confident person thinks "I don't know what's wrong with this guy" and keeps walking. An egotistical person <em>has to</em> prove the stranger wrong — starts an argument, gets defensive — because their sense of self actually depends on what that stranger thinks.</p>
+<p>Egotistical people brag and show off not because they feel great about themselves, but because they need to <em>convince</em> others so they can borrow that belief back. The external validation is the whole engine.</p>
+<p>Social media is engineered to make this worse. In a small village, only a handful of people's opinions reached you. Now every meal, every opinion, every private moment gets exposed to mass judgment. Ten thousand likes feels good — until you get eight thousand on the next post. The mind doesn't compare upward to its old baseline; it compares sideways to whoever is doing better. The cycle never closes.</p>
+<p>This is the Sanskrit concept of <strong>ahamkara</strong> — the ego — whose defining function is comparison. Smarter than, faster than, more popular than, less successful than. The more the ego compares, the more it needs. And the more it needs external validation, the less internal <span class="gl" tabindex="0">confidence<span class="gl-pop" role="tooltip"><span class="gl-def">Self-esteem is the degree to which you accept yourself as you are — not how you measure up against others.</span><a class="gl-more" href="../glossary.html#glossary-self-esteem">Full definition →</a></span></span> is possible.</p>
+<blockquote>
+<p>"Social media is going to foster ego, encourage comparison, and actually decrease your <span class="gl" tabindex="0">confidence<span class="gl-pop" role="tooltip"><span class="gl-def">Self-esteem is the degree to which you accept yourself as you are — not how you measure up against others.</span><a class="gl-more" href="../glossary.html#glossary-self-esteem">Full definition →</a></span></span>."</p>
+</blockquote>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-common-pitfalls">Common Pitfalls</h2>
+<p><strong>Thinking success will eventually tip over into <span class="gl" tabindex="0">confidence<span class="gl-pop" role="tooltip"><span class="gl-def">Self-esteem is the degree to which you accept yourself as you are — not how you measure up against others.</span><a class="gl-more" href="../glossary.html#glossary-self-esteem">Full definition →</a></span></span>.</strong> It won't. Each success just raises the stakes. <span class="gl" tabindex="0">Imposter syndrome<span class="gl-pop" role="tooltip"><span class="gl-def">A persistent belief that your success is undeserved — that you got lucky, fooled people, or benefited from circumstances — rather than from your own effort or competence.</span><a class="gl-more" href="../glossary.html#glossary-imposter-syndrome">Full definition →</a></span></span> is what happens when someone succeeds faster than they've developed any real internal foundation.</p>
+<p><strong>Mistaking ego for <span class="gl" tabindex="0">confidence<span class="gl-pop" role="tooltip"><span class="gl-def">Self-esteem is the degree to which you accept yourself as you are — not how you measure up against others.</span><a class="gl-more" href="../glossary.html#glossary-self-esteem">Full definition →</a></span></span>.</strong> Someone who brags, dominates conversations, or can't take criticism looks confident on the surface. But the defensiveness is the tell. Confident people don't need the argument.</p>
+<p><strong>Avoiding failure as a protection strategy.</strong> Self-sabotage feels safer — if you never really try, you never really fail. But this is just ego-protection at the cost of your actual growth.</p>
+<p><strong>Thinking that sharing an accomplishment is the same as having it.</strong> The moment you post the mountain photo, other people's reactions become part of how you hold the experience. The accomplishment becomes partially external. That's not nothing — but it's worth noticing.</p>
+<p><strong>Waiting to feel confident before taking the uncertain step.</strong> That's backwards. The <span class="gl" tabindex="0">confidence<span class="gl-pop" role="tooltip"><span class="gl-def">Self-esteem is the degree to which you accept yourself as you are — not how you measure up against others.</span><a class="gl-more" href="../glossary.html#glossary-self-esteem">Full definition →</a></span></span> comes <em>after</em> taking the step, not before.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-action-items-exercises">Action Items &amp; Exercises</h2>
+<ol>
+<li>
+<p><strong>Take one uncertain step this week without stacking the deck.</strong> Ask someone out, apply for something you're not sure you'll get, speak up in a room where you might be wrong. Do it without the prep work designed to guarantee a yes. Notice what happens to how you feel about yourself afterward, regardless of the outcome.</p>
+</li>
+<li>
+<p><strong>Audit where your sense of value is coming from.</strong> When you feel good about yourself today, is it because of something internal — your effort, your <span class="gl" tabindex="0">values<span class="gl-pop" role="tooltip"><span class="gl-def">Something you genuinely care about that, when you move toward it, produces a felt sense of fulfillment — not just a vague wish, but the force that actually gets you out of the chair and moving.</span><a class="gl-more" href="../glossary.html#glossary-values">Full definition →</a></span></span>, your choices — or because of something external — likes, praise, someone's approval? Just notice. You don't have to fix it immediately.</p>
+</li>
+<li>
+<p><strong>Spend time in an environment that doesn't care about your status.</strong> Go for a walk or a hike alone. Don't post about it. Let the experience just be yours. This is a low-stakes way to practice building internal reference points.</p>
+</li>
+<li>
+<p><strong>Take a deliberate break from social media</strong> — even one day a week — and observe what happens to your baseline mood and self-perception without the constant comparison feed.</p>
+</li>
+<li>
+<p><strong>When you're in the middle of failure, write down one past failure you've already survived.</strong> The goal isn't toxic positivity. It's building a concrete record that you've come out the other side before, so the current failure has context.</p>
+</li>
+<li>
+<p><strong>Notice when you self-sabotage to protect an <span class="gl" tabindex="0">identity<span class="gl-pop" role="tooltip"><span class="gl-def">A stable sense of who you are, built from the narrative integration of emotionally salient experiences — not a fixed trait you possess, but a story you construct by stringing together the moments in your life that…</span><a class="gl-more" href="../glossary.html#glossary-identity">Full definition →</a></span></span>.</strong> Ask yourself: <em>what label am I protecting right now, and what am I avoiding in order to protect it?</em> The <span class="gl" tabindex="0">identity<span class="gl-pop" role="tooltip"><span class="gl-def">A stable sense of who you are, built from the narrative integration of emotionally salient experiences — not a fixed trait you possess, but a story you construct by stringing together the moments in your life that…</span><a class="gl-more" href="../glossary.html#glossary-identity">Full definition →</a></span></span> itself — smart, talented, successful — isn't the problem. The <span class="gl" tabindex="0">avoidance<span class="gl-pop" role="tooltip"><span class="gl-def">Avoidance is the largely subconscious impulse to move away from a negative emotion or the situation that triggers it, rather than moving toward something positive.</span><a class="gl-more" href="../glossary.html#glossary-avoidance">Full definition →</a></span></span> it produces is.</p>
+</li>
+</ol>
+</section></article>
+    </div>
+  </div>
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      
+      <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
 <p>- So now I wanna talk a little bit about <span class="gl" tabindex="0">confidence<span class="gl-pop" role="tooltip"><span class="gl-def">Self-esteem is the degree to which you accept yourself as you are — not how you measure up against others.</span><a class="gl-more" href="../glossary.html#glossary-self-esteem">Full definition →</a></span></span> versus ego. And this is such an important topic and one that I enjoy talking about a lot, because so many of the problems that we see today are rooted in <span class="gl" tabindex="0">confidence<span class="gl-pop" role="tooltip"><span class="gl-def">Self-esteem is the degree to which you accept yourself as you are — not how you measure up against others.</span><a class="gl-more" href="../glossary.html#glossary-self-esteem">Full definition →</a></span></span> or ego, whether that be low <span class="gl" tabindex="0">self-esteem<span class="gl-pop" role="tooltip"><span class="gl-def">Self-esteem is the degree to which you accept yourself as you are — not how you measure up against others.</span><a class="gl-more" href="../glossary.html#glossary-self-esteem">Full definition →</a></span></span> and people who sort of don&#x27;t believe in themselves, therefore never try, or people who are very egotistical and maybe believe in themselves a little bit too much. And this kind of ego and arrogance can actually result in things like relationship problems or, you know, not making the right decision at the right time. And for a lot of us, you know, we want to be just a little bit more confident, we wanna be able to take that risk, take a step outside of our nine to five job and really pursue the career of our dreams.</p>
 <p>And all of it kind of comes down to our ability to be secure in ourselves, our ability to be confident, and also to step away a little bit from our ego. So I&#x27;m gonna start with actually a story that sort of illustrates some of these points, which is something that we see a lot in the Healthy Gamer <span class="gl" tabindex="0">Community<span class="gl-pop" role="tooltip"><span class="gl-def">A Sanskrit term meaning community, sangha refers to the group of people — or beings — whose shared orientation supports your spiritual or personal growth.</span><a class="gl-more" href="../glossary.html#glossary-sangha">Full definition →</a></span></span> and something that I actually dealt with a lot growing up, and that&#x27;s how intelligence leads to <span class="gl" tabindex="0">avoidance<span class="gl-pop" role="tooltip"><span class="gl-def">Avoidance is the largely subconscious impulse to move away from a negative emotion or the situation that triggers it, rather than moving toward something positive.</span><a class="gl-more" href="../glossary.html#glossary-avoidance">Full definition →</a></span></span>. So when I was a little kid, I was told from the very beginning that I was really smart. And so I kind of realized, like, oh, everyone&#x27;s telling me I&#x27;m smart and so I started to do things that would kind of encourage people to tell me how smart I am.</p>
 <p>I started to show off a little bit and develop a little bit of an ego about being a clever little kid. And this was really fantastic and everyone would laugh and encourage me and see how smart Alok is, such a smart boy, you know. And so it started to become a part of who I was, my <span class="gl" tabindex="0">identity<span class="gl-pop" role="tooltip"><span class="gl-def">A stable sense of who you are, built from the narrative integration of emotionally salient experiences — not a fixed trait you possess, but a story you construct by stringing together the moments in your life that…</span><a class="gl-more" href="../glossary.html#glossary-identity">Full definition →</a></span></span> started revolving around being smart. And this actually worked really well early on in school because I didn&#x27;t have to study very hard, and remember that smart kids don&#x27;t have to study, right? That&#x27;s what makes them smart. Whereas all these other kids who are average have to study really hard to understand things, I understand that right away, it&#x27;s super effortless for me.</p>
@@ -72,15 +191,21 @@ try {
 <p>So if you spend time with yourself, you&#x27;ll naturally become more confident. So my favorite example of this is just spending time in nature, because nature doesn&#x27;t really care who you are. If you go for a hike and you say I&#x27;m gonna climb to the top of that mountain, no one&#x27;s watching. If you succeed, no one cares, no one&#x27;s gonna give you a trophy. If you fail, no one cares, no one&#x27;s gonna call you a failure. Everything that you do in nature is by yourself, as long as you don&#x27;t post about it because the second you post about how you climbed this mountain, and we see this all the time, right? We see lots of pictures of people on top of mountains and look at how much fun they&#x27;re having and look at how awesome they are.</p>
 <p>And then suddenly, ego enters the picture. So try to spend a little bit of time by yourself. Spend a little bit of time away from people. Spend a little bit of time off of social media and your <span class="gl" tabindex="0">confidence<span class="gl-pop" role="tooltip"><span class="gl-def">Self-esteem is the degree to which you accept yourself as you are — not how you measure up against others.</span><a class="gl-more" href="../glossary.html#glossary-self-esteem">Full definition →</a></span></span> will naturally grow.</p>
 </section></article>
+    </div>
   </div>
+  
 
-  <p class="meta">Transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">Meditation<span class="gl-pop" role="tooltip"><span class="gl-def">Meditation is the practice of focusing consciousness completely — until thinking itself falls away and you exist in a state of pure awareness with no mental activity.</span><a class="gl-more" href="../glossary.html#glossary-meditation">Full definition →</a></span></span> → Atman Padha (Path of Self)). Captions auto-generated.</p>
+  <p class="meta">Medium summary + transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">Meditation<span class="gl-pop" role="tooltip"><span class="gl-def">Meditation is the practice of focusing consciousness completely — until thinking itself falls away and you exist in a state of pure awareness with no mental activity.</span><a class="gl-more" href="../glossary.html#glossary-meditation">Full definition →</a></span></span> → Atman Padha (Path of Self)). Captions auto-generated; summary by claude-sonnet-4-6.</p>
 </div>
 
 <script>
 (function () {
   var root = document.documentElement;
-  var tb = document.querySelector('.theme-toggle');
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'medium');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
   var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
   tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
@@ -88,6 +213,9 @@ try {
   function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
   var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+  function navigateTo(id){ var el=id&&document.getElementById(id); if(!el)return; var v=el.closest('.view'); if(v)setView(v.getAttribute('data-view')); el.scrollIntoView(); }
+  window.addEventListener('hashchange', function(){ navigateTo(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash) navigateTo(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>
 <script>

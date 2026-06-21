@@ -9,7 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-} catch (e) {}
+  document.documentElement.setAttribute('data-view', 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -31,9 +32,105 @@ try {
     <span class="speakers-note">14:19 min</span>
   </p>
 
-  <div class="doc">
+  
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">1,460w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">2,567w</span></button>
     
-    <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
+  </div>
+  
+
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#summary-summary">Summary</a></li>
+<li><a href="#summary-what-dukkha-actually-is">What Dukkha Actually Is</a></li>
+<li><a href="#summary-the-trap-of-seeking-pleasure-and-avoiding-pain">The Trap of Seeking Pleasure and Avoiding Pain</a></li>
+<li><a href="#summary-why-attachment-is-the-actual-problem">Why Attachment Is the Actual Problem</a></li>
+<li><a href="#summary-common-pitfalls">Common Pitfalls</a></li>
+<li><a href="#summary-action-items-exercises">Action Items &amp; Exercises</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="summary-summary">Summary</h2>
+<p><strong>TL;DR — Suffering isn't caused by bad circumstances; it's caused by <span class="gl" tabindex="0">attachment<span class="gl-pop" role="tooltip"><span class="gl-def">A neurobiologically grounded framework explaining how humans develop the capacity to form bonds with others — and how the quality of those early bonds shapes the way you relate to people for the rest of your life.</span><a class="gl-more" href="../glossary.html#glossary-attachment-theory">Full definition →</a></span></span> to how you expect things to go. Understanding this is the first step toward real peace.</strong></p>
+<p>Most people assume happiness is a matter of accumulating enough good things and eliminating enough bad ones. The yogic and Buddhist traditions offer a more precise diagnosis: the root of suffering — <em>dukkha</em> — isn't the absence of <span class="gl" tabindex="0">pleasure<span class="gl-pop" role="tooltip"><span class="gl-def">The experience of pleasure that comes from satisfying desires — roughly associated with dopamine and the brain&#x27;s reward circuitry.</span><a class="gl-more" href="../glossary.html#glossary-hedonics">Full definition →</a></span></span> but the presence of <span class="gl" tabindex="0">attachment<span class="gl-pop" role="tooltip"><span class="gl-def">A neurobiologically grounded framework explaining how humans develop the capacity to form bonds with others — and how the quality of those early bonds shapes the way you relate to people for the rest of your life.</span><a class="gl-more" href="../glossary.html#glossary-attachment-theory">Full definition →</a></span></span>. This idea is thousands of years old, and it holds up under close examination of modern life.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-what-dukkha-actually-is">What Dukkha Actually Is</h2>
+<p><strong>Dukkha</strong> is a Sanskrit word usually translated as "suffering," but it points to something more specific than sadness or pain. It sits on a different axis entirely — not <em>emotion</em>, but <em>peace versus unease</em>. You can feel sadness without dukkha. You can have joy without peace. The two dimensions are independent.</p>
+<p>The clearest illustration of this is the person who seems to have everything — good career, healthy relationships, financial security — and still walks into a therapist's office saying, "I'm depressed." Their emotions aren't the problem in any obvious way. Something subtler is wrong.</p>
+<p>That something is what the Bhagavad Gita — one of the foundational texts of Hindu philosophy — identifies as <strong><span class="gl" tabindex="0">attachment<span class="gl-pop" role="tooltip"><span class="gl-def">A neurobiologically grounded framework explaining how humans develop the capacity to form bonds with others — and how the quality of those early bonds shapes the way you relate to people for the rest of your life.</span><a class="gl-more" href="../glossary.html#glossary-attachment-theory">Full definition →</a></span></span> to expectations</strong>.</p>
+<p>The story goes like this: on the eve of a great civil war, the warrior Arjuna is about to fight a battle that is, by every reasonable standard, just. But when he looks across the battlefield and sees his cousins, his teacher, and his grandfather on the other side, he falls into despair. He tells Krishna, his charioteer and adviser, that he can't go through with it.</p>
+<p>Krishna's response — which becomes the entire Bhagavad Gita — is essentially: <em>your suffering has nothing to do with the situation, and everything to do with your <span class="gl" tabindex="0">attachment<span class="gl-pop" role="tooltip"><span class="gl-def">A neurobiologically grounded framework explaining how humans develop the capacity to form bonds with others — and how the quality of those early bonds shapes the way you relate to people for the rest of your life.</span><a class="gl-more" href="../glossary.html#glossary-attachment-theory">Full definition →</a></span></span> to it.</em> The situation hasn't changed. The war is still just. What's making Arjuna suffer is his grip on how he expected things to be — a world without this conflict, intact relationships, no impossible choices. Letting go of that grip is the beginning of finding peace.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-the-trap-of-seeking-pleasure-and-avoiding-pain">The Trap of Seeking Pleasure and Avoiding Pain</h2>
+<p>Most people run their lives on a simple operating system: maximize <span class="gl" tabindex="0">pleasure<span class="gl-pop" role="tooltip"><span class="gl-def">The experience of pleasure that comes from satisfying desires — roughly associated with dopamine and the brain&#x27;s reward circuitry.</span><a class="gl-more" href="../glossary.html#glossary-hedonics">Full definition →</a></span></span>, minimize pain. Avoid the awkward conversation. Don't ask for the promotion because they might think you're greedy. Don't ask out the person you like because the rejection would hurt. Play video games. Have a drink. Keep things comfortable.</p>
+<p>This approach <em>can</em> work, up to a point. You can get genuinely good at it. But even at its most successful, it doesn't produce peace — because the strategy doesn't touch the underlying source of suffering.</p>
+<p>The Buddha's story is the extreme case. He was a king with a <span class="gl" tabindex="0">flourishing<span class="gl-pop" role="tooltip"><span class="gl-def">A deep sense of contentment, peace, and well-being that is neurologically and experientially distinct from pleasure.</span><a class="gl-more" href="../glossary.html#glossary-eudaimonia">Full definition →</a></span></span> kingdom, a respected wife, a healthy son. He had won the <span class="gl" tabindex="0">pleasure-seeking<span class="gl-pop" role="tooltip"><span class="gl-def">One of the four classical Hindu goals of life, Kama is the pursuit of pleasure, desire, and sensory enjoyment — including but not limited to sexuality and lust.</span><a class="gl-more" href="../glossary.html#glossary-kama">Full definition →</a></span></span> game completely. And then he woke up one day and was unhappy anyway.</p>
+<p>That's actually the most terrifying version of this problem, because the usual solution — <em>go get the next thing</em> — was no longer available to him. There was no next thing. Most people's minds stay busy chasing: the promotion, the raise, the right pair of shoes, the next phone. The chase itself masks the dukkha. When there's nothing left to chase, the suffering surfaces nakedly.</p>
+<blockquote>
+<p>"It's not that they're sad — dukkha isn't about emotion. Even someone who doesn't have dukkha can still feel sadness or happiness. This isn't on the axis of emotion, it's a slightly different axis of peace versus suffering."</p>
+</blockquote>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-why-attachment-is-the-actual-problem">Why Attachment Is the Actual Problem</h2>
+<p>Think about high school for a moment — how enormous everything felt. The right friends, the right social standing, the right person to have a crush on. If you're a few years past it, you can probably see clearly now that none of it was actually that consequential. But it caused <em>real</em> suffering at the time.</p>
+<p>What changed? Not the facts of high school. What changed is that you detached from it. The social landscape of a particular hallway in a particular building stopped having a grip on you. And notice: even the most popular person in high school suffered — constantly anxious about losing their status, about someone else becoming more popular. Success within the game doesn't eliminate the suffering. Only <span class="gl" tabindex="0">detachment<span class="gl-pop" role="tooltip"><span class="gl-def">The Sanskrit term for detachment — specifically, detachment from the outcomes of your actions rather than from the actions themselves.</span><a class="gl-more" href="../glossary.html#glossary-vairagya">Full definition →</a></span></span> from the game does.</p>
+<p>A more adult version of the same trap is the pursuit of the perfect wedding. Months of planning, enormous emotional investment, a precise vision of how the day should go. And then — the wrong appetizer, or rain, or a late vendor — and it becomes a source of lasting resentment. It sounds almost comical, but:</p>
+<blockquote>
+<p>"Think about how insane it is that 10 years later, not getting a particular meal is still causing you suffering."</p>
+</blockquote>
+<p>The appetizer itself is trivial. What isn't trivial is the <span class="gl" tabindex="0">attachment<span class="gl-pop" role="tooltip"><span class="gl-def">A neurobiologically grounded framework explaining how humans develop the capacity to form bonds with others — and how the quality of those early bonds shapes the way you relate to people for the rest of your life.</span><a class="gl-more" href="../glossary.html#glossary-attachment-theory">Full definition →</a></span></span> — the expectation that was held tightly enough to generate a decade of grievance when it wasn't met.</p>
+<p>This dynamic scales all the way up to the hardest human experiences. Parents of children with serious illness face the most extreme version of this. The grief is real and appropriate. But some parents, even in that devastating situation, find some semblance of peace — and what makes that possible is a capacity to release, to let go. Grief, understood properly, <em>is</em> the process of <span class="gl" tabindex="0">detachment<span class="gl-pop" role="tooltip"><span class="gl-def">The Sanskrit term for detachment — specifically, detachment from the outcomes of your actions rather than from the actions themselves.</span><a class="gl-more" href="../glossary.html#glossary-vairagya">Full definition →</a></span></span>. It's how peace becomes possible even in the presence of tremendous sadness.</p>
+<p>The insight isn't that love or caring is wrong. It's that there is a <em>way</em> of holding what you love — without white-knuckling it into a fixed expectation — that protects your peace while preserving the relationship. That technique exists; it's learnable.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-common-pitfalls">Common Pitfalls</h2>
+<p><strong>Confusing <span class="gl" tabindex="0">detachment<span class="gl-pop" role="tooltip"><span class="gl-def">The Sanskrit term for detachment — specifically, detachment from the outcomes of your actions rather than from the actions themselves.</span><a class="gl-more" href="../glossary.html#glossary-vairagya">Full definition →</a></span></span> with not caring.</strong> Letting go of <span class="gl" tabindex="0">attachment<span class="gl-pop" role="tooltip"><span class="gl-def">A neurobiologically grounded framework explaining how humans develop the capacity to form bonds with others — and how the quality of those early bonds shapes the way you relate to people for the rest of your life.</span><a class="gl-more" href="../glossary.html#glossary-attachment-theory">Full definition →</a></span></span> doesn't mean becoming indifferent to your children, your work, or your relationships. It means holding them without demanding that reality conform to your precise expectations about them. The parents who find peace in the hardest circumstances haven't stopped loving their child — they've found a way to love without the grip.</p>
+<p><strong>Thinking dukkha is just <span class="gl" tabindex="0">depression<span class="gl-pop" role="tooltip"><span class="gl-def">A disruption in mood and functioning that exists on a spectrum — not a single, uniform illness.</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span> or sadness.</strong> Dukkha is not a mood disorder. It's a structural feature of how you relate to the world. Someone can be cheerful and full of dukkha, or sorrowful and relatively free of it. Treating it purely as an emotional problem — with medication, or distraction, or mood management — misses what's actually going on.</p>
+<p><strong>Assuming more success will resolve it.</strong> The Buddha example is the warning here. Getting better at acquiring good things and eliminating bad things does not reduce dukkha. It often delays confronting it. The more completely you "win," the more clearly the underlying suffering surfaces.</p>
+<p><strong>Treating this as a complicated philosophical question.</strong> The tradition being drawn on here is explicit that the answer isn't that hard to state. The hard part is applying it. Decades of intellectual analysis won't substitute for the actual practice of <span class="gl" tabindex="0">detachment<span class="gl-pop" role="tooltip"><span class="gl-def">The Sanskrit term for detachment — specifically, detachment from the outcomes of your actions rather than from the actions themselves.</span><a class="gl-more" href="../glossary.html#glossary-vairagya">Full definition →</a></span></span>.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-action-items-exercises">Action Items &amp; Exercises</h2>
+<ol>
+<li>
+<p><strong>Identify one active <span class="gl" tabindex="0">attachment<span class="gl-pop" role="tooltip"><span class="gl-def">A neurobiologically grounded framework explaining how humans develop the capacity to form bonds with others — and how the quality of those early bonds shapes the way you relate to people for the rest of your life.</span><a class="gl-more" href="../glossary.html#glossary-attachment-theory">Full definition →</a></span></span> right now.</strong> Pick something in your life that you're holding tightly — a relationship outcome, a career milestone, how an event should go. Write down specifically what you're attached to and what you're afraid of losing or not getting.</p>
+</li>
+<li>
+<p><strong>Revisit a past "high school."</strong> Think of a period in your life that once felt all-consuming but no longer does. Notice that the facts didn't change — your <span class="gl" tabindex="0">detachment<span class="gl-pop" role="tooltip"><span class="gl-def">The Sanskrit term for detachment — specifically, detachment from the outcomes of your actions rather than from the actions themselves.</span><a class="gl-more" href="../glossary.html#glossary-vairagya">Full definition →</a></span></span> did. Use this as concrete evidence that <span class="gl" tabindex="0">detachment<span class="gl-pop" role="tooltip"><span class="gl-def">The Sanskrit term for detachment — specifically, detachment from the outcomes of your actions rather than from the actions themselves.</span><a class="gl-more" href="../glossary.html#glossary-vairagya">Full definition →</a></span></span> is both real and achievable, not just a concept.</p>
+</li>
+<li>
+<p><strong>Audit your <span class="gl" tabindex="0">pleasure<span class="gl-pop" role="tooltip"><span class="gl-def">The experience of pleasure that comes from satisfying desires — roughly associated with dopamine and the brain&#x27;s reward circuitry.</span><a class="gl-more" href="../glossary.html#glossary-hedonics">Full definition →</a></span></span>-and-pain operating system.</strong> For one week, notice each time you seek <span class="gl" tabindex="0">pleasure<span class="gl-pop" role="tooltip"><span class="gl-def">The experience of pleasure that comes from satisfying desires — roughly associated with dopamine and the brain&#x27;s reward circuitry.</span><a class="gl-more" href="../glossary.html#glossary-hedonics">Full definition →</a></span></span> or avoid pain specifically to escape discomfort — scrolling, substances, dodging a hard conversation. Don't judge it; just notice the pattern and log it.</p>
+</li>
+<li>
+<p><strong>Sit with a small disappointment without fixing it.</strong> When something minor goes wrong — a plan changes, something you wanted doesn't happen — resist the urge to immediately compensate or distract. Sit with the feeling for five minutes and observe where the discomfort actually lives.</p>
+</li>
+<li>
+<p><strong>Ask yourself the "decade test" for current resentments.</strong> For any ongoing frustration or grievance, ask: <em>Will this matter in ten years? Am I still carrying something like a wrong appetizer?</em> If the honest answer is that it won't matter, that's a signal that the suffering is coming from <span class="gl" tabindex="0">attachment<span class="gl-pop" role="tooltip"><span class="gl-def">A neurobiologically grounded framework explaining how humans develop the capacity to form bonds with others — and how the quality of those early bonds shapes the way you relate to people for the rest of your life.</span><a class="gl-more" href="../glossary.html#glossary-attachment-theory">Full definition →</a></span></span>, not from the situation itself.</p>
+</li>
+<li>
+<p><strong>Read into <span class="gl" tabindex="0">dharma<span class="gl-pop" role="tooltip"><span class="gl-def">Dharma is your duty or responsibility in life — not a grand cosmic purpose, but the ongoing attitude of doing right by yourself and the people around you.</span><a class="gl-more" href="../glossary.html#glossary-dharma">Full definition →</a></span></span> as the next concept.</strong> The tradition presented here treats <span class="gl" tabindex="0">dharma<span class="gl-pop" role="tooltip"><span class="gl-def">Dharma is your duty or responsibility in life — not a grand cosmic purpose, but the ongoing attitude of doing right by yourself and the people around you.</span><a class="gl-more" href="../glossary.html#glossary-dharma">Full definition →</a></span></span> — doing what is right regardless of outcome — as the primary antidote to dukkha. Arjuna ultimately had to fight because it was the right action, not because it would feel good. Exploring what your own sense of <span class="gl" tabindex="0">duty<span class="gl-pop" role="tooltip"><span class="gl-def">Dharma is your duty or responsibility in life — not a grand cosmic purpose, but the ongoing attitude of doing right by yourself and the people around you.</span><a class="gl-more" href="../glossary.html#glossary-dharma">Full definition →</a></span></span> or right action looks like is the natural next step.</p>
+</li>
+</ol>
+</section></article>
+    </div>
+  </div>
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      
+      <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
 <p>- So a lot of people will wonder, how do I be happy in life? And it turns out that the yogic tradition actually has a really good answer to that. That essentially there&#x27;s a particular condition called dukkha or suffering that governs a lot of our life. And that most of the time, if we look at how people behave in life, they seek <span class="gl" tabindex="0">pleasure<span class="gl-pop" role="tooltip"><span class="gl-def">The experience of pleasure that comes from satisfying desires — roughly associated with dopamine and the brain&#x27;s reward circuitry.</span><a class="gl-more" href="../glossary.html#glossary-hedonics">Full definition →</a></span></span> and avoid pain. And at the end of the day though, even though if we&#x27;re really successful at that, what we tend to find is that people who are very sort of hedonistic and <span class="gl" tabindex="0">pleasure<span class="gl-pop" role="tooltip"><span class="gl-def">The experience of pleasure that comes from satisfying desires — roughly associated with dopamine and the brain&#x27;s reward circuitry.</span><a class="gl-more" href="../glossary.html#glossary-hedonics">Full definition →</a></span></span> seeking still sort of feel this sort of lack of contentment, feel this sort of cosmic sense that something isn&#x27;t right.</p>
 <p>And I feel like we have sort of a societal or almost cosmic dukkha or suffering going on, where I look at like a lot of young people and they feel like things just aren&#x27;t going well, that the future looks sort of bleak and hopeless. So how can we start to understand what is the nature of happiness? What is the nature of suffering? How do I find peace? And we treat that question like it&#x27;s a very, very complicated question that requires a lifetime of theoretical analysis to figure out. Whereas it turns out that in the tradition of yoga and <span class="gl" tabindex="0">meditation<span class="gl-pop" role="tooltip"><span class="gl-def">Meditation is the practice of focusing consciousness completely — until thinking itself falls away and you exist in a state of pure awareness with no mental activity.</span><a class="gl-more" href="../glossary.html#glossary-meditation">Full definition →</a></span></span>, the answer to that question is actually very simple.</p>
 <p>That there&#x27;s a particular source of suffering in our life called dukkha and that there are particular antidotes to dukkha. So let&#x27;s start by sort of understanding what dukkha is and I&#x27;m gonna share a story with y&#x27;all that&#x27;s a couple thousand years old about one of the Pandavas who&#x27;s sort of one of these heroes from the Hindu tradition named Arjuna. So the backdrop of this is that there&#x27;s in ancient India, there was sort of a civil war happening between two sets of cousins. One set of cousins or the Pandavas were sort of the good guys. And they were as arguably the rightful kings. The problem is that their cousins were very covetous of their kingdom and basically tried to steal half of it away or steal the whole thing away.</p>
@@ -56,15 +153,21 @@ try {
 <p>They&#x27;re able to sort of let go of their child. They&#x27;re able to sort of really grieve them. &#x27;Cause if we think about the process of grief it&#x27;s the process of letting go. It&#x27;s the process of detaching and that&#x27;s how we find peace. And so at the end of the day, it&#x27;s our <span class="gl" tabindex="0">attachment<span class="gl-pop" role="tooltip"><span class="gl-def">A neurobiologically grounded framework explaining how humans develop the capacity to form bonds with others — and how the quality of those early bonds shapes the way you relate to people for the rest of your life.</span><a class="gl-more" href="../glossary.html#glossary-attachment-theory">Full definition →</a></span></span> to things that ultimately causes us suffering. And even though, relationships can be important to us, like especially the relationship between a parent and a child, there&#x27;s a certain method, there&#x27;s a certain secret, there&#x27;s a certain technique to being able to find that peace in spite of the emotion. And so I want you guys to really appreciate this for a second, that that parent who&#x27;s in that situation really needs something incredibly powerful to help them find peace, that if you&#x27;re addicted to a substance and you need some kind of strength to overcome that <span class="gl" tabindex="0">addiction<span class="gl-pop" role="tooltip"><span class="gl-def">The use of a chemical (alcohol, opioids, cannabis, caffeine, etc.) that produces neurological effects your brain then adapts to — leading to tolerance, withdrawal, and, potentially, addiction.</span><a class="gl-more" href="../glossary.html#glossary-substance-use">Full definition →</a></span></span>, that you need something really powerful to help you overcome that.</p>
 <p>And that even for the little benign things like seeking <span class="gl" tabindex="0">pleasure<span class="gl-pop" role="tooltip"><span class="gl-def">The experience of pleasure that comes from satisfying desires — roughly associated with dopamine and the brain&#x27;s reward circuitry.</span><a class="gl-more" href="../glossary.html#glossary-hedonics">Full definition →</a></span></span> and avoiding pain, that all of us need to find a way to tolerate pain, right? I have to find a way to take those risks. Arjuna ultimately had to find a way to fight that battle because it was the right thing to do. And so the most simple antidote to dukkha is this concept called <span class="gl" tabindex="0">dharma<span class="gl-pop" role="tooltip"><span class="gl-def">Dharma is your duty or responsibility in life — not a grand cosmic purpose, but the ongoing attitude of doing right by yourself and the people around you.</span><a class="gl-more" href="../glossary.html#glossary-dharma">Full definition →</a></span></span> which we&#x27;ll dive into next.</p>
 </section></article>
+    </div>
   </div>
+  
 
-  <p class="meta">Transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">Depression<span class="gl-pop" role="tooltip"><span class="gl-def">A disruption in mood and functioning that exists on a spectrum — not a single, uniform illness.</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span> → Meditative Perspectives on <span class="gl" tabindex="0">Depression<span class="gl-pop" role="tooltip"><span class="gl-def">A disruption in mood and functioning that exists on a spectrum — not a single, uniform illness.</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span>). Captions auto-generated.</p>
+  <p class="meta">Medium summary + transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">Depression<span class="gl-pop" role="tooltip"><span class="gl-def">A disruption in mood and functioning that exists on a spectrum — not a single, uniform illness.</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span> → Meditative Perspectives on <span class="gl" tabindex="0">Depression<span class="gl-pop" role="tooltip"><span class="gl-def">A disruption in mood and functioning that exists on a spectrum — not a single, uniform illness.</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span>). Captions auto-generated; summary by claude-sonnet-4-6.</p>
 </div>
 
 <script>
 (function () {
   var root = document.documentElement;
-  var tb = document.querySelector('.theme-toggle');
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'medium');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
   var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
   tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
@@ -72,6 +175,9 @@ try {
   function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
   var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+  function navigateTo(id){ var el=id&&document.getElementById(id); if(!el)return; var v=el.closest('.view'); if(v)setView(v.getAttribute('data-view')); el.scrollIntoView(); }
+  window.addEventListener('hashchange', function(){ navigateTo(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash) navigateTo(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>
 <script>

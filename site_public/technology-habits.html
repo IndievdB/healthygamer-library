@@ -9,7 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-} catch (e) {}
+  document.documentElement.setAttribute('data-view', 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -31,9 +32,138 @@ try {
     <span class="speakers-note">15:40 min</span>
   </p>
 
-  <div class="doc">
+  
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">1,556w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">2,958w</span></button>
     
-    <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
+  </div>
+  
+
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#summary-summary">Summary</a></li>
+<li><a href="#summary-how-technology-is-reshaping-your-attention">How Technology Is Reshaping Your Attention</a></li>
+<li><a href="#summary-your-phone-is-the-central-problem">Your Phone Is the Central Problem</a></li>
+<li><a href="#summary-creating-friction-where-it-matters">Creating Friction Where It Matters</a></li>
+<li><a href="#summary-the-alarm-trick-for-breaking-autopilot">The Alarm Trick for Breaking Autopilot</a></li>
+<li><a href="#summary-common-pitfalls">Common Pitfalls</a></li>
+<li><a href="#summary-action-items-exercises">Action Items &amp; Exercises</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="summary-summary">Summary</h2>
+<p><strong>TL;DR — Technology is quietly eroding your ability to pay attention, and a few targeted habits can help you take that back.</strong></p>
+<p>The trend toward shorter content — from blog posts to tweets, from hour-long shows to TikToks — isn't just a cultural shift. It's reshaping your brain. Because attention works on a "use it or lose it" principle, the less you practice sustained focus, the less capacity you have for it. This also partly explains why <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> diagnoses are rising: even people who don't meet the clinical threshold are struggling to control their attention in ways that were less common a generation ago. The good news is you don't need to fully understand the neuroscience to start fixing it. A handful of practical habits can help you reclaim your focus.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-how-technology-is-reshaping-your-attention">How Technology Is Reshaping Your Attention</h2>
+<p>Your brain is an efficiency machine. It constantly trims whatever it doesn't need. When the content you consume gets shorter and the reward comes faster, your brain draws a reasonable conclusion: <em>there's no point maintaining the machinery for long-form focus</em>. It's the same as letting a language atrophy — stop practicing and the brain quietly reassigns those resources.</p>
+<p>Consider the shift over the past few decades:
+- Long-form blog posts → tweets
+- Facebook albums and status updates → Instagram
+- Long video essays → TikToks
+- Reading books → skimming headlines</p>
+<p>Each step in that progression shortens the gap between stimulus and payoff. And as the payoff gets quicker and sweeter, sitting with discomfort — with a slow chapter, a complicated argument, a dull meeting — becomes harder. Your brain has been trained to expect the next hit immediately.</p>
+<p>This isn't a moral failing. It's adaptation. But adaptation can work against you, and you can consciously push back on it.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-your-phone-is-the-central-problem">Your Phone Is the Central Problem</h2>
+<p>The phone is uniquely dangerous because it erases the boundary between everything. Work and play, rest and productivity, presence and distraction — the phone collapses all of it into one glowing rectangle you carry everywhere.</p>
+<p>Two consequences follow from this:</p>
+<ol>
+<li>
+<p><strong>Distraction is frictionless.</strong> The moment your attention drifts — which it will, because that's what minds do — your phone is right there to reward the drift with a <span class="gl" tabindex="0">dopamine<span class="gl-pop" role="tooltip"><span class="gl-def">A neurotransmitter that drives motivation, behavioral reinforcement, and craving — not simply the feeling of pleasure.</span><a class="gl-more" href="../glossary.html#glossary-dopamine">Full definition →</a></span></span> hit. Every time that cycle completes, you've trained your brain that wandering attention gets a prize.</p>
+</li>
+<li>
+<p><strong>You never fully rest.</strong> Answering a work email at 9:35 PM isn't just one small concession. It signals to your coworkers that you're available at 9:35 PM, so they keep sending things at 9:35 PM, so you feel like you can never fully stop. The boundary erodes completely, and burnout follows.</p>
+</li>
+</ol>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-creating-friction-where-it-matters">Creating Friction Where It Matters</h2>
+<p>The key insight for managing technology isn't willpower — it's <strong>friction</strong>. Apps and platforms are designed to make engagement effortless. Your job is to make distraction slightly harder than staying on task.</p>
+<p>A useful analogy: studying at a library with a physical textbook. You still got distracted every few minutes. But to <em>act</em> on that distraction, you'd have to pack up, walk down six flights of stairs, and leave the building. That barrier meant most distractions dissolved on their own. You lost 30 seconds but stayed on task for the rest of the hour.</p>
+<p>That's what you're recreating with these habits.</p>
+<h3 id="summary-physical-separation-from-your-phone">Physical Separation from Your Phone</h3>
+<p>Leave your phone somewhere you can't reflexively grab it — near the door, in a drawer, with your keys. If you're worried about missing emergencies, honestly audit: how many genuine emergencies has your phone delivered in the past three to six months? For most people, the answer is very few.</p>
+<p>At night, don't <span class="gl" tabindex="0">sleep<span class="gl-pop" role="tooltip"><span class="gl-def">Sleep is the period during which the brain converts short-term memories stored in the hippocampus into stable long-term memories — a process called memory consolidation.</span><a class="gl-more" href="../glossary.html#glossary-sleep">Full definition →</a></span></span> with your phone within arm's reach. Leave it across the room or in the bathroom with the door open — still reachable if truly needed, but not something you can grab on autopilot before you're even fully awake. This simple change helps you fall asleep faster, stop doomscrolling in bed, and break the <span class="gl" tabindex="0">habit<span class="gl-pop" role="tooltip"><span class="gl-def">Automatic behavior that operates without motivation, willpower, or conscious thought — you simply do it.</span><a class="gl-more" href="../glossary.html#glossary-habit">Full definition →</a></span></span> of your phone being the first and last thing you interact with each day.</p>
+<h3 id="summary-separate-work-from-play-at-the-device-level">Separate Work from Play at the Device Level</h3>
+<p>Don't rely on self-discipline alone to keep work and recreation separate. Build the separation into the setup itself:</p>
+<ul>
+<li>Use <strong>different logins</strong> on a shared computer for work and personal use</li>
+<li>Use <strong>different devices</strong> entirely if possible (a work phone and a personal phone)</li>
+<li>Adjust your home screen so high-distraction apps aren't one tap away</li>
+</ul>
+<p>The goal is to increase the number of steps between you and a distraction. You don't need the barrier to be massive — you just need it to be big enough that a 30-second impulse doesn't turn into a four-hour detour.</p>
+<h3 id="summary-turn-off-notifications-ruthlessly">Turn Off Notifications Ruthlessly</h3>
+<p>Every notification is a company fighting for your attention. When one lands, ask yourself: what does this do to the next five minutes? The next hour? Your focus for the rest of the day?</p>
+<p>For anything non-essential, turn notifications off entirely. Be especially skeptical of apps that make it hard to disable notifications — that resistance is intentional. They're making it difficult because interrupting you is how they win.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-the-alarm-trick-for-breaking-autopilot">The Alarm Trick for Breaking Autopilot</h2>
+<p>One of the most underrated tools is the humble alarm. Before you open YouTube, start a game, or begin scrolling TikToks, set a timer — 10 or 20 minutes.</p>
+<p>Here's why this works: platforms are specifically designed to keep you on autopilot. One video ends and three more are already queued. You're not really choosing to keep watching — you're just not stopping. The alarm interrupts that loop and forces a moment of actual choice.</p>
+<p>When the alarm goes off, ask yourself:
+- Am I still enjoying this?
+- Do I actually want to keep going, or am I just on autopilot?
+- Is there something I'd rather be doing?</p>
+<p>You might decide to keep going — and that's fine. The point isn't mandatory stopping. The point is <strong><span class="gl" tabindex="0">awareness<span class="gl-pop" role="tooltip"><span class="gl-def">The capacity to accurately receive and process information about what is happening — in your environment, your body, or your mind — so that your brain can respond appropriately.</span><a class="gl-more" href="../glossary.html#glossary-awareness">Full definition →</a></span></span></strong>. Choosing to continue is completely different from mindlessly continuing.</p>
+<blockquote>
+<p>Even though we get sucked into technology, we tend to not enjoy it after a particular period of time. The first 10 minutes of browsing TikTok, you're having fun. But I can guarantee you that hour three is not gonna be as fun as the first 10 minutes.</p>
+</blockquote>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-common-pitfalls">Common Pitfalls</h2>
+<p><strong>Thinking <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> diagnoses explain everything.</strong> The rise in diagnoses reflects both better <span class="gl" tabindex="0">awareness<span class="gl-pop" role="tooltip"><span class="gl-def">The capacity to accurately receive and process information about what is happening — in your environment, your body, or your mind — so that your brain can respond appropriately.</span><a class="gl-more" href="../glossary.html#glossary-awareness">Full definition →</a></span></span> <em>and</em> real changes in attention. Even if you've never been diagnosed with anything, your attention may still be genuinely impaired by your technology habits. Don't wait for a clinical label to take this seriously.</p>
+<p><strong>Treating this as a willpower problem.</strong> The apps are designed by teams of engineers specifically to override your willpower. Trying harder is not a reliable solution. Environmental design — physical separation, friction, different logins — is far more effective than resolution alone.</p>
+<p><strong>Dismissing the "what if there's an emergency" concern without examining it.</strong> This fear keeps people tethered to their phones constantly. Actually track how many real emergencies your phone has delivered. For most people, acknowledging the real number defuses the <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> significantly.</p>
+<p><strong>Responding to work messages late at night "just this once."</strong> Every response at 9:35 PM is a signal. You're training your workplace — and yourself — about what's acceptable. "Just this once" compounds into an expectation.</p>
+<p><strong>Expecting the alarm to make you stop.</strong> The alarm is for <span class="gl" tabindex="0">awareness<span class="gl-pop" role="tooltip"><span class="gl-def">The capacity to accurately receive and process information about what is happening — in your environment, your body, or your mind — so that your brain can respond appropriately.</span><a class="gl-more" href="../glossary.html#glossary-awareness">Full definition →</a></span></span>, not enforcement. If you expect it to magically end your session and it doesn't, you'll dismiss the technique. Instead, treat it as a prompt to make a conscious choice, not an automatic off switch.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-action-items-exercises">Action Items &amp; Exercises</h2>
+<ol>
+<li>
+<p><strong>Do a distraction audit.</strong> List the specific apps or content types that most reliably steal your time. For each one, estimate: when you lose a 30-second battle to it, how many hours do you actually end up spending? This maps your highest-risk entry points.</p>
+</li>
+<li>
+<p><strong>Pick one place to leave your phone.</strong> Designate a spot — near your front door, in a drawer — and make a <span class="gl" tabindex="0">habit<span class="gl-pop" role="tooltip"><span class="gl-def">Automatic behavior that operates without motivation, willpower, or conscious thought — you simply do it.</span><a class="gl-more" href="../glossary.html#glossary-habit">Full definition →</a></span></span> of leaving it there when you're eating, working, or spending time with people. Start with one context and expand from there.</p>
+</li>
+<li>
+<p><strong>Move your phone out of arm's reach at bedtime.</strong> Tonight. Leave it on a dresser, on a counter, or in the bathroom. Keep it accessible for true emergencies but not graspable by reflex.</p>
+</li>
+<li>
+<p><strong>Audit your notifications.</strong> Go through your phone's notification settings and turn off everything that isn't genuinely time-sensitive. For anything that makes disabling hard, treat that resistance as a red flag about the app.</p>
+</li>
+<li>
+<p><strong>Set an alarm before you start any open-ended tech use.</strong> Before you scroll, watch, or play — set a 10- or 20-minute timer. When it goes off, pause and consciously decide whether to continue. Track whether hour three feels as good as the first 10 minutes.</p>
+</li>
+<li>
+<p><strong>Create at least one structural separation between work and play.</strong> Different logins, different devices, or different browser profiles. Make switching between modes require a deliberate step rather than a single click.</p>
+</li>
+<li>
+<p><strong>Track your "emergency" calls for one month.</strong> If the fear of missing something urgent keeps your phone glued to you, keep a simple tally of how many genuine emergencies actually come through. Let the real number inform how you manage access.</p>
+</li>
+</ol>
+</section></article>
+    </div>
+  </div>
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      
+      <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
 <p>- We used to be able to watch 30 minute or hour long TV shows. We used to be able to read books. And I wanna say it used to be a little bit easier to actually study. But technology is changing our attention span. As technology becomes more bite sized, we no longer need to pay attention the way that we used to. The payoff from technology is becoming sweeter, faster and more immediate. And what we&#x27;re also seeing a parallel of is a rise in the diagnosis of <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span>. Clinically, people are being diagnosed more with <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> now than they ever have been. But that begs a couple of questions. Is this because more people have <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span>?</p>
 <p>Or is it because we&#x27;re actually becoming more aware of how big the problem is? And we&#x27;re just, we&#x27;re catching more diagnoses that we used to miss. The chances are it&#x27;s a little bit of all of the above. And while we certainly are more sophisticated and more aware that <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> is out there, we also seem to be observing changes in our attention span. And even if you don&#x27;t meet clinical criteria for <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span>, I as a psychiatrist have heard the most complaints I&#x27;ve ever heard for people struggling to control their attention, even if they don&#x27;t have <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span>. So what&#x27;s going on? Chances are that as technology evolves, our attention span is adapting to it.</p>
 <p>So as I mentioned before, if you sort of think a little bit about how our attention span used to be 30 years ago or 40 years ago, presuming you were alive back then. You know, even if you look at something like reading a book. Reading a book is a situation where the payoff isn&#x27;t immediate, right? You read the book, the beginning is slow. It gets kinda interesting in the middle. There&#x27;s slow parts, interesting parts. There&#x27;s hopefully a really good climax at the end, but it&#x27;s sort of this idea that there&#x27;s delayed gratification. Even if we look at the manner in which the internet used to convey information, it used to be longer form and longer duration.</p>
@@ -59,15 +189,21 @@ try {
 <p>It&#x27;s gonna require a lot of <span class="gl" tabindex="0">awareness<span class="gl-pop" role="tooltip"><span class="gl-def">The capacity to accurately receive and process information about what is happening — in your environment, your body, or your mind — so that your brain can respond appropriately.</span><a class="gl-more" href="../glossary.html#glossary-awareness">Full definition →</a></span></span> on your part, a lot of experimentation on your part, a lot of really figuring out, okay, what&#x27;s your drug of choice when it comes to technology? What are the areas in which you&#x27;re the most vulnerable? And we&#x27;ll share certain exercises and worksheets and things like that to help you sort of map out, okay, what is your technology usage? And which of these battles can you lose that you lose a 30 minute battle, I mean a 30 second battle, and then end up wasting four hours of your time. So as we gain <span class="gl" tabindex="0">awareness<span class="gl-pop" role="tooltip"><span class="gl-def">The capacity to accurately receive and process information about what is happening — in your environment, your body, or your mind — so that your brain can respond appropriately.</span><a class="gl-more" href="../glossary.html#glossary-awareness">Full definition →</a></span></span> of this stuff, we&#x27;re not saying that you need to abstain from technology usage.</p>
 <p>It&#x27;s just simply that some of these things cost us a lot more than others. And by sort of starting to be a little bit more hygienic with our technology usage, we can start to reclaim our attention and reclaim our lives.</p>
 </section></article>
+    </div>
   </div>
+  
 
-  <p class="meta">Transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> → Practical Tools for <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span>). Captions auto-generated.</p>
+  <p class="meta">Medium summary + transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> → Practical Tools for <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span>). Captions auto-generated; summary by claude-sonnet-4-6.</p>
 </div>
 
 <script>
 (function () {
   var root = document.documentElement;
-  var tb = document.querySelector('.theme-toggle');
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'medium');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
   var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
   tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
@@ -75,6 +211,9 @@ try {
   function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
   var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+  function navigateTo(id){ var el=id&&document.getElementById(id); if(!el)return; var v=el.closest('.view'); if(v)setView(v.getAttribute('data-view')); el.scrollIntoView(); }
+  window.addEventListener('hashchange', function(){ navigateTo(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash) navigateTo(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>
 <script>

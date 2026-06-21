@@ -9,7 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-} catch (e) {}
+  document.documentElement.setAttribute('data-view', 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -31,9 +32,105 @@ try {
     <span class="speakers-note">11:32 min</span>
   </p>
 
-  <div class="doc">
+  
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">1,299w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">2,028w</span></button>
     
-    <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
+  </div>
+  
+
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#summary-summary">Summary</a></li>
+<li><a href="#summary-what-satya-is-and-where-it-comes-from">What Satya Is and Where It Comes From</a></li>
+<li><a href="#summary-how-truthfulness-pulls-you-into-the-present">How Truthfulness Pulls You Into the Present</a></li>
+<li><a href="#summary-how-truthfulness-reshapes-what-you-do">How Truthfulness Reshapes What You Do</a></li>
+<li><a href="#summary-how-truthfulness-teaches-you-to-let-go">How Truthfulness Teaches You to Let Go</a></li>
+<li><a href="#summary-common-pitfalls">Common Pitfalls</a></li>
+<li><a href="#summary-action-items-exercises">Action Items &amp; Exercises</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="summary-summary">Summary</h2>
+<p><strong>TL;DR — The ancient practice of simply not lying is a practical, science-backed method for living in the present, changing your behavior, and learning to let go.</strong></p>
+<p>Most spiritual advice sounds meaningful but leaves you stranded. "Live in the present." "Learn to detach." "Let go." Nobody tells you how. <strong><span class="gl" tabindex="0">Satya<span class="gl-pop" role="tooltip"><span class="gl-def">Satya is the yogic principle of truthfulness — a commitment to not lying in any form, including deliberate omission or strategic vagueness.</span><a class="gl-more" href="../glossary.html#glossary-satya">Full definition →</a></span></span></strong> — the Sanskrit word for <span class="gl" tabindex="0">truthfulness<span class="gl-pop" role="tooltip"><span class="gl-def">Satya is the yogic principle of truthfulness — a commitment to not lying in any form, including deliberate omission or strategic vagueness.</span><a class="gl-more" href="../glossary.html#glossary-satya">Full definition →</a></span></span>, one of the personal observances in the Raja yoga tradition — is one of those rare practices that actually delivers on those promises in a concrete, testable way. Committing to not lying does three specific things: it sharpens your <span class="gl" tabindex="0">awareness<span class="gl-pop" role="tooltip"><span class="gl-def">The capacity to accurately receive and process information about what is happening — in your environment, your body, or your mind — so that your brain can respond appropriately.</span><a class="gl-more" href="../glossary.html#glossary-awareness">Full definition →</a></span></span> of the present moment, it starts to reshape your actions, and it teaches you what surrender actually feels like.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-what-satya-is-and-where-it-comes-from">What Satya Is and Where It Comes From</h2>
+<p>Raja yoga is one of four classical paths to enlightenment — the path of willpower and discipline. It unfolds in eight steps, starting with <strong>Yamas</strong> (how you relate to society) and <strong>Niyamas</strong> (how you relate to yourself). <span class="gl" tabindex="0">Satya<span class="gl-pop" role="tooltip"><span class="gl-def">Satya is the yogic principle of truthfulness — a commitment to not lying in any form, including deliberate omission or strategic vagueness.</span><a class="gl-more" href="../glossary.html#glossary-satya">Full definition →</a></span></span> belongs to this second category: it's a personal observance, not a religious commandment.</p>
+<p>That distinction matters. The yogis who developed these practices weren't operating on faith — they were running experiments on human experience. The question wasn't "what does God require?" but "what happens to a person who actually lives this way?" <span class="gl" tabindex="0">Satya<span class="gl-pop" role="tooltip"><span class="gl-def">Satya is the yogic principle of truthfulness — a commitment to not lying in any form, including deliberate omission or strategic vagueness.</span><a class="gl-more" href="../glossary.html#glossary-satya">Full definition →</a></span></span> earns its place not because a text says so, but because the consequences of practicing it are real and measurable.</p>
+<p>This is also backed by modern research. People who meditate regularly show meaningful improvements in mental health — less <span class="gl" tabindex="0">depression<span class="gl-pop" role="tooltip"><span class="gl-def">A disruption in mood and functioning that exists on a spectrum — not a single, uniform illness.</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span>, less <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span>, fewer addictive behaviors, better focus and memory. <span class="gl" tabindex="0">Satya<span class="gl-pop" role="tooltip"><span class="gl-def">Satya is the yogic principle of truthfulness — a commitment to not lying in any form, including deliberate omission or strategic vagueness.</span><a class="gl-more" href="../glossary.html#glossary-satya">Full definition →</a></span></span> is essentially a form of applied <span class="gl" tabindex="0">mindfulness<span class="gl-pop" role="tooltip"><span class="gl-def">The capacity to separate self from mind and observe that gap — what Sanskrit calls sakshi bhav, or &quot;witnessing attitude&quot;.</span><a class="gl-more" href="../glossary.html#glossary-mindfulness">Full definition →</a></span></span>, and the benefits run parallel.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-how-truthfulness-pulls-you-into-the-present">How Truthfulness Pulls You Into the Present</h2>
+<p>Try this: go as long as you can without telling a lie.</p>
+<p>The moment you set that intention, something shifts. Life stops running on autopilot. Every word you're about to say suddenly requires attention. You have to catch yourself in real time — <em>is this true? am I about to shade something?</em> — and that act of catching requires presence.</p>
+<p>Most lies aren't calculated. They slip out because you're not paying attention. So committing to <span class="gl" tabindex="0">Satya<span class="gl-pop" role="tooltip"><span class="gl-def">Satya is the yogic principle of truthfulness — a commitment to not lying in any form, including deliberate omission or strategic vagueness.</span><a class="gl-more" href="../glossary.html#glossary-satya">Full definition →</a></span></span> forces a level of <span class="gl" tabindex="0">awareness<span class="gl-pop" role="tooltip"><span class="gl-def">The capacity to accurately receive and process information about what is happening — in your environment, your body, or your mind — so that your brain can respond appropriately.</span><a class="gl-more" href="../glossary.html#glossary-awareness">Full definition →</a></span></span> onto the present moment that's genuinely effortful at first. That cognitive load is a feature, not a bug — your brain is literally building a new skill: noticing what's happening inside you before it comes out of your mouth.</p>
+<p>This is exactly the mechanism through which <span class="gl" tabindex="0">meditation<span class="gl-pop" role="tooltip"><span class="gl-def">Meditation is the practice of focusing consciousness completely — until thinking itself falls away and you exist in a state of pure awareness with no mental activity.</span><a class="gl-more" href="../glossary.html#glossary-meditation">Full definition →</a></span></span> helps people with <span class="gl" tabindex="0">addiction<span class="gl-pop" role="tooltip"><span class="gl-def">The use of a chemical (alcohol, opioids, cannabis, caffeine, etc.) that produces neurological effects your brain then adapts to — leading to tolerance, withdrawal, and, potentially, addiction.</span><a class="gl-more" href="../glossary.html#glossary-substance-use">Full definition →</a></span></span>. One of the core findings from neuroscience is that <span class="gl" tabindex="0">meditation<span class="gl-pop" role="tooltip"><span class="gl-def">Meditation is the practice of focusing consciousness completely — until thinking itself falls away and you exist in a state of pure awareness with no mental activity.</span><a class="gl-more" href="../glossary.html#glossary-meditation">Full definition →</a></span></span> improves sobriety by increasing <strong><span class="gl" tabindex="0">awareness<span class="gl-pop" role="tooltip"><span class="gl-def">The capacity to accurately receive and process information about what is happening — in your environment, your body, or your mind — so that your brain can respond appropriately.</span><a class="gl-more" href="../glossary.html#glossary-awareness">Full definition →</a></span></span> of internal signals</strong> — the subtle feelings of <span class="gl" tabindex="0">shame<span class="gl-pop" role="tooltip"><span class="gl-def">The emotion triggered by a perceived gap between where you are and where you think you should be.</span><a class="gl-more" href="../glossary.html#glossary-shame">Full definition →</a></span></span>, sadness, or craving that, unnoticed, quietly drive someone toward a substance. People who relapse often say they didn't even see it coming. Practicing <span class="gl" tabindex="0">Satya<span class="gl-pop" role="tooltip"><span class="gl-def">Satya is the yogic principle of truthfulness — a commitment to not lying in any form, including deliberate omission or strategic vagueness.</span><a class="gl-more" href="../glossary.html#glossary-satya">Full definition →</a></span></span> trains the same <span class="gl" tabindex="0">awareness<span class="gl-pop" role="tooltip"><span class="gl-def">The capacity to accurately receive and process information about what is happening — in your environment, your body, or your mind — so that your brain can respond appropriately.</span><a class="gl-more" href="../glossary.html#glossary-awareness">Full definition →</a></span></span> muscle: you pay attention to what's arising inside you, in real time, before it drives your behavior.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-how-truthfulness-reshapes-what-you-do">How Truthfulness Reshapes What You Do</h2>
+<p>Once you commit to not lying, an interesting pressure starts to build. You're about to do something — something you'd normally smooth over or explain away afterward — and a thought appears: <em>if I do this, I'm going to have to lie about it later.</em></p>
+<p>And if you're holding <span class="gl" tabindex="0">Satya<span class="gl-pop" role="tooltip"><span class="gl-def">Satya is the yogic principle of truthfulness — a commitment to not lying in any form, including deliberate omission or strategic vagueness.</span><a class="gl-more" href="../glossary.html#glossary-satya">Full definition →</a></span></span> seriously, that's a problem. So instead of doing the thing and managing the fallout with a story, you stop before the thing. The practice starts working backwards, upstream of the behavior itself.</p>
+<p>Over time, this creates what you might call a <strong>reverse-engineering effect</strong>: you stop needing to lie because you've quietly adjusted what you're doing. Your life slowly reshapes itself toward actions you don't have to hide. And if you think honestly about the life you'd actually want — the version you'd build with a hypothetical magic wand — most of it would be a life you wouldn't need to lie about anyway. <span class="gl" tabindex="0">Satya<span class="gl-pop" role="tooltip"><span class="gl-def">Satya is the yogic principle of truthfulness — a commitment to not lying in any form, including deliberate omission or strategic vagueness.</span><a class="gl-more" href="../glossary.html#glossary-satya">Full definition →</a></span></span> accelerates the journey toward that version of yourself, not by willpower alone, but by closing off the escape routes that allow <span class="gl" tabindex="0">avoidance<span class="gl-pop" role="tooltip"><span class="gl-def">Avoidance is the largely subconscious impulse to move away from a negative emotion or the situation that triggers it, rather than moving toward something positive.</span><a class="gl-more" href="../glossary.html#glossary-avoidance">Full definition →</a></span></span> to persist.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-how-truthfulness-teaches-you-to-let-go">How Truthfulness Teaches You to Let Go</h2>
+<p>Here's the part most people don't expect. At its root, lying is about <strong>control</strong>.</p>
+<p>When you lie to someone, you're trying to manage how they respond to you. You're engineering their reaction, steering them away from judgment, disappointment, or conflict. Every lie is an attempt to control another person's behavior.</p>
+<p>Which means every time you tell the truth instead, you are surrendering that control.</p>
+<p>This is what "letting go" actually means in practice — not some internal mental state you achieve through visualization, but the concrete act of saying the true thing and letting someone respond however they're going to respond. You do what you do. You say what's real. You give other people the right to judge you, to be upset, to walk away. And you don't manipulate the outcome.</p>
+<blockquote>
+<p>"When you let go of that control, you'll be incredibly free."</p>
+</blockquote>
+<p>That's surrender. Not passivity — you still act, still work, still try — but you stop controlling the consequences. You study for six hours a day and then let the test go however it goes. The freedom people are reaching for when they talk about "<span class="gl" tabindex="0">detachment<span class="gl-pop" role="tooltip"><span class="gl-def">The Sanskrit term for detachment — specifically, detachment from the outcomes of your actions rather than from the actions themselves.</span><a class="gl-more" href="../glossary.html#glossary-vairagya">Full definition →</a></span></span>" or "<span class="gl" tabindex="0">non-attachment<span class="gl-pop" role="tooltip"><span class="gl-def">The Sanskrit term for detachment — specifically, detachment from the outcomes of your actions rather than from the actions themselves.</span><a class="gl-more" href="../glossary.html#glossary-vairagya">Full definition →</a></span></span>" lives inside that small, repeated choice to tell the truth and hold loosely to the result.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-common-pitfalls">Common Pitfalls</h2>
+<p><strong>Treating <span class="gl" tabindex="0">Satya<span class="gl-pop" role="tooltip"><span class="gl-def">Satya is the yogic principle of truthfulness — a commitment to not lying in any form, including deliberate omission or strategic vagueness.</span><a class="gl-more" href="../glossary.html#glossary-satya">Full definition →</a></span></span> as a moral rule rather than an experiment.</strong> This isn't about being a good person in a religious sense. It's a hypothesis: <em>if I stop lying, specific things will happen to my life.</em> Approach it that way. The goal isn't guilt-free virtue — it's curiosity about what changes.</p>
+<p><strong>Underestimating how often you lie in small ways.</strong> Most lies aren't dramatic. They're omissions, softened truths, social autopilot. The practice is revealing precisely because the small ones are so habitual you don't notice them. Expect to be surprised.</p>
+<p><strong>Treating <span class="gl" tabindex="0">awareness<span class="gl-pop" role="tooltip"><span class="gl-def">The capacity to accurately receive and process information about what is happening — in your environment, your body, or your mind — so that your brain can respond appropriately.</span><a class="gl-more" href="../glossary.html#glossary-awareness">Full definition →</a></span></span> of a lie as failure.</strong> Noticing that you were about to lie — or just did — is the practice working. The point isn't a perfect streak; it's the moment of catching yourself. That's the rewiring happening.</p>
+<p><strong>Confusing surrender with passivity.</strong> Letting go of control over consequences is not the same as not caring or not trying. You act fully, then release the outcome. These are not in conflict.</p>
+<p><strong>Skipping the upstream work.</strong> If <span class="gl" tabindex="0">Satya<span class="gl-pop" role="tooltip"><span class="gl-def">Satya is the yogic principle of truthfulness — a commitment to not lying in any form, including deliberate omission or strategic vagueness.</span><a class="gl-more" href="../glossary.html#glossary-satya">Full definition →</a></span></span> is only making you feel guilty about what you've already done, you've missed the deeper function. The real leverage is upstream: it changes your behavior <em>before</em> the lie would ever be necessary.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-action-items-exercises">Action Items &amp; Exercises</h2>
+<ol>
+<li>
+<p><strong>Start the practice today.</strong> Set an intention to go as long as possible without telling a lie — including small ones, omissions, and social softening. Don't set a goal of 30 days; just see how long you can go and notice what comes up.</p>
+</li>
+<li>
+<p><strong>Keep a brief log of the moments you catch yourself.</strong> When you're about to lie, or realize you just did, write one sentence: <em>what was I trying to control?</em> Over time, patterns will emerge about which situations trigger the most dishonesty.</p>
+</li>
+<li>
+<p><strong>Before an action you'd normally hide, pause and ask:</strong> "Would I have to lie about this later?" If yes, that's information. Use it to make a different choice rather than relying on a cover story afterward.</p>
+</li>
+<li>
+<p><strong>Practice small surrenders.</strong> Find one situation this week where you tell the plain truth to someone and consciously let go of managing their reaction. Notice what the discomfort feels like — and notice what comes after it.</p>
+</li>
+<li>
+<p><strong>Use <span class="gl" tabindex="0">Satya<span class="gl-pop" role="tooltip"><span class="gl-def">Satya is the yogic principle of truthfulness — a commitment to not lying in any form, including deliberate omission or strategic vagueness.</span><a class="gl-more" href="../glossary.html#glossary-satya">Full definition →</a></span></span> as a present-moment anchor.</strong> If you find your mind wandering during conversations or decisions, come back to the question: <em>is what I'm saying or about to say true?</em> It functions like a <span class="gl" tabindex="0">meditation<span class="gl-pop" role="tooltip"><span class="gl-def">Meditation is the practice of focusing consciousness completely — until thinking itself falls away and you exist in a state of pure awareness with no mental activity.</span><a class="gl-more" href="../glossary.html#glossary-meditation">Full definition →</a></span></span> bell — it pulls attention back to now.</p>
+</li>
+</ol>
+</section></article>
+    </div>
+  </div>
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      
+      <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
 <p>So now we&#x27;re gonna talk about <span class="gl" tabindex="0">Satya<span class="gl-pop" role="tooltip"><span class="gl-def">Satya is the yogic principle of truthfulness — a commitment to not lying in any form, including deliberate omission or strategic vagueness.</span><a class="gl-more" href="../glossary.html#glossary-satya">Full definition →</a></span></span>, which is the Sanskrit word for <span class="gl" tabindex="0">truthfulness<span class="gl-pop" role="tooltip"><span class="gl-def">Satya is the yogic principle of truthfulness — a commitment to not lying in any form, including deliberate omission or strategic vagueness.</span><a class="gl-more" href="../glossary.html#glossary-satya">Full definition →</a></span></span>. Now, if we go back, we&#x27;ll remember that there are four paths to enlightenment. And one of them is Raja yoga, or the path of willpower. And within Raja yoga are eight steps. Yamas, which are societal observances, and then Niyamas, which are personal observances. And then we move onto yoga postures, and breathing, and <span class="gl" tabindex="0">meditation<span class="gl-pop" role="tooltip"><span class="gl-def">Meditation is the practice of focusing consciousness completely — until thinking itself falls away and you exist in a state of pure awareness with no mental activity.</span><a class="gl-more" href="../glossary.html#glossary-meditation">Full definition →</a></span></span>, and all that good stuff. So Niyamas, or personal observances, are a really important part of Raja yoga and spiritual growth. And what we find more practically is that people who sort of engage in a dedicated spiritual practice like <span class="gl" tabindex="0">meditation<span class="gl-pop" role="tooltip"><span class="gl-def">Meditation is the practice of focusing consciousness completely — until thinking itself falls away and you exist in a state of pure awareness with no mental activity.</span><a class="gl-more" href="../glossary.html#glossary-meditation">Full definition →</a></span></span>, not only do they maybe get a little bit more enlightened, whatever that means.</p>
 <p>But we definitely do know that people who meditate regularly will actually be a little bit better at life. So we know that their mental health is a little bit better. They&#x27;re less prone to <span class="gl" tabindex="0">depression<span class="gl-pop" role="tooltip"><span class="gl-def">A disruption in mood and functioning that exists on a spectrum — not a single, uniform illness.</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span>, less prone to <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span>, less prone to addictions, and even more able to focus, have improvements in memory and things like that. And so when we look at spirituality, there are a lot of these like, phrases or sayings that people will talk about. Like, learn how to live in the present. Learn how to detach. Learn how to let go. You know, as we talk about these vague concepts, like, people always tell you to learn how to.</p>
 <p>They won&#x27;t actually tell you how to do it. So they don&#x27;t tell you how to live in the present, or how to let go. And the cool thing is that I think what the yogis sort of discovered, is when you adopt these practices like <span class="gl" tabindex="0">Satya<span class="gl-pop" role="tooltip"><span class="gl-def">Satya is the yogic principle of truthfulness — a commitment to not lying in any form, including deliberate omission or strategic vagueness.</span><a class="gl-more" href="../glossary.html#glossary-satya">Full definition →</a></span></span> or <span class="gl" tabindex="0">truthfulness<span class="gl-pop" role="tooltip"><span class="gl-def">Satya is the yogic principle of truthfulness — a commitment to not lying in any form, including deliberate omission or strategic vagueness.</span><a class="gl-more" href="../glossary.html#glossary-satya">Full definition →</a></span></span>, they actually facilitate a lot of these spiritual goals that we talk about. And they actually result in concrete improvements in your life. So let&#x27;s go through sort of how adhering to <span class="gl" tabindex="0">truthfulness<span class="gl-pop" role="tooltip"><span class="gl-def">Satya is the yogic principle of truthfulness — a commitment to not lying in any form, including deliberate omission or strategic vagueness.</span><a class="gl-more" href="../glossary.html#glossary-satya">Full definition →</a></span></span> can actually affect you in different ways. So I&#x27;m gonna start by actually sharing a practice with you guys. And that practice is to go as long as you can without telling a lie.</p>
@@ -52,15 +149,21 @@ try {
 <p>It&#x27;s about experimentation, and hypothesis testing. And what they discovered is that if you start living a truthful life, all kinds of things will happen. And so if you commit to living a truthful life, you&#x27;ll become more aware of what&#x27;s going on in your mind. That&#x27;s literally how you live in the present moment. If you commit to <span class="gl" tabindex="0">truthfulness<span class="gl-pop" role="tooltip"><span class="gl-def">Satya is the yogic principle of truthfulness — a commitment to not lying in any form, including deliberate omission or strategic vagueness.</span><a class="gl-more" href="../glossary.html#glossary-satya">Full definition →</a></span></span>, it&#x27;s going to shape the actions that you take, because you&#x27;re not allowed to lie about them later. And lastly, for the actions that you do take, if you&#x27;re not gonna lie about them, you&#x27;re sort of surrendering control to the consequences of your actions. You&#x27;re no longer going to be as manipulative in your relationships.</p>
 <p>You&#x27;re going to give other people in your life the right to judge you, to dislike you. And when you let go of that control, you&#x27;ll be incredibly free.</p>
 </section></article>
+    </div>
   </div>
+  
 
-  <p class="meta">Transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">Meditation<span class="gl-pop" role="tooltip"><span class="gl-def">Meditation is the practice of focusing consciousness completely — until thinking itself falls away and you exist in a state of pure awareness with no mental activity.</span><a class="gl-more" href="../glossary.html#glossary-meditation">Full definition →</a></span></span> → Siddhi Padha (Path of Accomplishment)). Captions auto-generated.</p>
+  <p class="meta">Medium summary + transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">Meditation<span class="gl-pop" role="tooltip"><span class="gl-def">Meditation is the practice of focusing consciousness completely — until thinking itself falls away and you exist in a state of pure awareness with no mental activity.</span><a class="gl-more" href="../glossary.html#glossary-meditation">Full definition →</a></span></span> → Siddhi Padha (Path of Accomplishment)). Captions auto-generated; summary by claude-sonnet-4-6.</p>
 </div>
 
 <script>
 (function () {
   var root = document.documentElement;
-  var tb = document.querySelector('.theme-toggle');
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'medium');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
   var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
   tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
@@ -68,6 +171,9 @@ try {
   function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
   var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+  function navigateTo(id){ var el=id&&document.getElementById(id); if(!el)return; var v=el.closest('.view'); if(v)setView(v.getAttribute('data-view')); el.scrollIntoView(); }
+  window.addEventListener('hashchange', function(){ navigateTo(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash) navigateTo(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>
 <script>

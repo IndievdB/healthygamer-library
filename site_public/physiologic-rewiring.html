@@ -9,7 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-} catch (e) {}
+  document.documentElement.setAttribute('data-view', 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -31,9 +32,130 @@ try {
     <span class="speakers-note">20:33 min</span>
   </p>
 
-  <div class="doc">
+  
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">1,641w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">3,715w</span></button>
     
-    <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
+  </div>
+  
+
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#summary-summary">Summary</a></li>
+<li><a href="#summary-the-two-modes-your-body-runs-on">The Two Modes Your Body Runs On</a></li>
+<li><a href="#summary-how-three-different-childhoods-lead-to-the-same-problem">How Three Different Childhoods Lead to the Same Problem</a></li>
+<li><a href="#summary-the-measurable-damage-heart-rate-variability">The Measurable Damage: Heart Rate Variability</a></li>
+<li><a href="#summary-physiologic-stretching-the-core-idea">Physiologic Stretching: The Core Idea</a></li>
+<li><a href="#summary-three-concrete-levers-for-rewiring">Three Concrete Levers for Rewiring</a></li>
+<li><a href="#summary-common-pitfalls">Common Pitfalls</a></li>
+<li><a href="#summary-action-items-exercises">Action Items &amp; Exercises</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="summary-summary">Summary</h2>
+<p><strong>TL;DR — <span class="gl" tabindex="0">Trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> doesn't just leave psychological scars; it physically rewires your nervous system into a state of near-constant alert. The path back runs through your body, not just your mind.</strong></p>
+<p>Most attempts to address <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> or <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> focus on talking through thoughts and feelings. But the deeper problem is often baked into the physiology itself — into the autonomic nervous system that governs whether your body is in "fight or flight" mode or "rest and digest" mode. Understanding how that system gets miscalibrated, and how to recalibrate it, is what this is about.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-the-two-modes-your-body-runs-on">The Two Modes Your Body Runs On</h2>
+<p>Your autonomic nervous system has two main settings:</p>
+<ul>
+<li><strong><span class="gl" tabindex="0">Sympathetic nervous system<span class="gl-pop" role="tooltip"><span class="gl-def">The body&#x27;s fight-or-flight activation system — one half of the autonomic nervous system that mobilizes you for intense physical action.</span><a class="gl-more" href="../glossary.html#glossary-sympathetic-nervous-system">Full definition →</a></span></span></strong> — the "fight, flight, or freeze" mode. Blood rushes to your arms and legs, digestion pauses, thinking becomes fast and black-and-white, and you're primed for action or survival.</li>
+<li><strong><span class="gl" tabindex="0">Parasympathetic nervous system<span class="gl-pop" role="tooltip"><span class="gl-def">The branch of the autonomic nervous system responsible for &quot;rest and digest&quot; — the body&#x27;s recovery and regeneration mode, as opposed to the fight-or-flight activation of the sympathetic system.</span><a class="gl-more" href="../glossary.html#glossary-parasympathetic-nervous-system">Full definition →</a></span></span></strong> — the "rest and digest" mode. Blood flows to your stomach, liver, and gut. You feel calm, sleepy, and restored.</li>
+</ul>
+<p>In a healthy body, these two systems take turns throughout the day. You play soccer and feel wired; you eat pizza afterward and crash into a food coma. The system flexes naturally between activation and recovery.</p>
+<p>One thing worth noting about freeze: it isn't the opposite of fight or flight. It's actually what happens at the extreme end of the sympathetic response — think of an animal playing dead so convincingly that it doesn't flinch even if poked. Freezing is a survival mechanism driven by an <em>overloaded</em> <span class="gl" tabindex="0">sympathetic nervous system<span class="gl-pop" role="tooltip"><span class="gl-def">The body&#x27;s fight-or-flight activation system — one half of the autonomic nervous system that mobilizes you for intense physical action.</span><a class="gl-more" href="../glossary.html#glossary-sympathetic-nervous-system">Full definition →</a></span></span>.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-how-three-different-childhoods-lead-to-the-same-problem">How Three Different Childhoods Lead to the Same Problem</h2>
+<p><span class="gl" tabindex="0">Trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> isn't limited to one type of difficult upbringing. Three very different environments can all produce the same physiological result — a chronically over-activated <span class="gl" tabindex="0">sympathetic nervous system<span class="gl-pop" role="tooltip"><span class="gl-def">The body&#x27;s fight-or-flight activation system — one half of the autonomic nervous system that mobilizes you for intense physical action.</span><a class="gl-more" href="../glossary.html#glossary-sympathetic-nervous-system">Full definition →</a></span></span>.</p>
+<p><strong>1. Abusive parents</strong>
+A child in an abusive household must constantly scan the environment for danger. They learn to read micro-expressions, tone of voice, and body language at an incredibly fine level of detail — because missing a small warning sign could mean getting hurt. This hypervigilance is a survival adaptation, but it stays wired in. Years later, a stranger on the street who seems mildly irritated can trigger a genuine danger response in the body, even when the rational mind knows everything is fine.</p>
+<p><strong>2. Neglectful parents</strong>
+Neglect might seem less obviously harmful than abuse, but consider what parental vigilance actually provides: a safe environment. Parents protect toddlers from stairs, from sharp corners, from a dozen hazards a small child can't assess yet. Without that protection, the world genuinely is more dangerous. A child who grows up in that environment learns, at a bodily level, that danger can come from anywhere — because it could. The <span class="gl" tabindex="0">sympathetic nervous system<span class="gl-pop" role="tooltip"><span class="gl-def">The body&#x27;s fight-or-flight activation system — one half of the autonomic nervous system that mobilizes you for intense physical action.</span><a class="gl-more" href="../glossary.html#glossary-sympathetic-nervous-system">Full definition →</a></span></span> adapts accordingly.</p>
+<p><strong>3. Highly demanding or "helicopter" parents</strong>
+These parents aren't abusive or neglectful — they're the opposite. But the constant pressure to perform keeps the child's nervous system in a sustained stress state. You'll often see a telltale pattern in these kids and adults: intense bursts of productivity while under external pressure, followed by complete collapse the moment the pressure lifts. Their nervous system learned that it needs an outside threat to function. Without the threat, there's no signal to act.</p>
+<blockquote>
+<p>"Even opposite cases of abuse versus neglect or even highly demanding parents all result in the same thing, which is hyper-activation of the <span class="gl" tabindex="0">sympathetic nervous system<span class="gl-pop" role="tooltip"><span class="gl-def">The body&#x27;s fight-or-flight activation system — one half of the autonomic nervous system that mobilizes you for intense physical action.</span><a class="gl-more" href="../glossary.html#glossary-sympathetic-nervous-system">Full definition →</a></span></span>."</p>
+</blockquote>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-the-measurable-damage-heart-rate-variability">The Measurable Damage: Heart Rate Variability</h2>
+<p>The clearest physical marker of all this is <strong>heart rate variability (HRV)</strong> — how much your heart rate fluctuates up and down across the day. In a healthy person, heart rate rises during stress and falls during rest, swinging through a wide range. That range <em>is</em> the variability.</p>
+<p>In someone whose nervous system has been shaped by <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span>, HRV is low. The heart rate sits in a narrow band — often chronically elevated — because the body is perpetually braced for threat. And here's the practical consequence: if your baseline stress level is already high, it doesn't take much to push you over the edge. You've used up your buffer just existing.</p>
+<p>The flip side of this is telling. Athletes — especially endurance athletes — have <em>very</em> high HRV. A marathon runner's resting heart rate might sit at 40–45 beats per minute, which looks dangerously low on paper but is actually a sign of a system with enormous capacity to flex. Their bodies can swing wide in both directions, absorbing stress without being overwhelmed.</p>
+<p>HRV also turns out to be the best available measure of <span class="gl" tabindex="0">meditation<span class="gl-pop" role="tooltip"><span class="gl-def">Meditation is the practice of focusing consciousness completely — until thinking itself falls away and you exist in a state of pure awareness with no mental activity.</span><a class="gl-more" href="../glossary.html#glossary-meditation">Full definition →</a></span></span> quality. Researchers initially tried measuring brain waves (EEG) to assess how deeply someone was meditating. It didn't work well. The most reliable signal was a finger probe measuring heart rate fluctuation. When HRV increases, the person is in a deeper meditative state. <span class="gl" tabindex="0">Meditation<span class="gl-pop" role="tooltip"><span class="gl-def">Meditation is the practice of focusing consciousness completely — until thinking itself falls away and you exist in a state of pure awareness with no mental activity.</span><a class="gl-more" href="../glossary.html#glossary-meditation">Full definition →</a></span></span>, at its core, is a physiological event.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-physiologic-stretching-the-core-idea">Physiologic Stretching: The Core Idea</h2>
+<p>Think of a chronically tense muscle. You don't fix it by resting it — you stretch it. And the best way to stretch a muscle is to <em>contract it first</em>, then release. Physical therapy uses this principle deliberately: intentional contraction followed by intentional relaxation increases the muscle's range of motion.</p>
+<p>The same logic applies to your autonomic nervous system. The goal is to create <strong>physiologic stretch</strong> — deliberately moving the system between high activation and deep recovery, repeatedly, to widen its range.</p>
+<p>This is why practices like yoga, tai chi, and <span class="gl" tabindex="0">meditation<span class="gl-pop" role="tooltip"><span class="gl-def">Meditation is the practice of focusing consciousness completely — until thinking itself falls away and you exist in a state of pure awareness with no mental activity.</span><a class="gl-more" href="../glossary.html#glossary-meditation">Full definition →</a></span></span> have measurable effects on HRV and <span class="gl" tabindex="0">cortisol<span class="gl-pop" role="tooltip"><span class="gl-def">A stress hormone your body releases in response to danger — not the immediate spike of adrenaline, but the sustained chemical state that keeps you alert for the 24–48 hours after a threat passes.</span><a class="gl-more" href="../glossary.html#glossary-cortisol">Full definition →</a></span></span>. They're not just calming — they're training the nervous system to flex.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-three-concrete-levers-for-rewiring">Three Concrete Levers for Rewiring</h2>
+<p><strong>1. Calming practices</strong>
+Yoga, tai chi, and <span class="gl" tabindex="0">meditation<span class="gl-pop" role="tooltip"><span class="gl-def">Meditation is the practice of focusing consciousness completely — until thinking itself falls away and you exist in a state of pure awareness with no mental activity.</span><a class="gl-more" href="../glossary.html#glossary-meditation">Full definition →</a></span></span> all increase HRV and lower <span class="gl" tabindex="0">cortisol<span class="gl-pop" role="tooltip"><span class="gl-def">A stress hormone your body releases in response to danger — not the immediate spike of adrenaline, but the sustained chemical state that keeps you alert for the 24–48 hours after a threat passes.</span><a class="gl-more" href="../glossary.html#glossary-cortisol">Full definition →</a></span></span>. A key mechanism in <span class="gl" tabindex="0">meditation<span class="gl-pop" role="tooltip"><span class="gl-def">Meditation is the practice of focusing consciousness completely — until thinking itself falls away and you exist in a state of pure awareness with no mental activity.</span><a class="gl-more" href="../glossary.html#glossary-meditation">Full definition →</a></span></span> is changing your respiratory rate — breathing very slowly or in structured patterns shifts your physiology and forces the nervous system to recalibrate. These aren't soft lifestyle suggestions; they produce measurable physiological changes.</p>
+<p><strong>2. Intense short-burst exercise</strong>
+Running hard for 60 seconds does something counterintuitive: it forces your body into deep recovery immediately afterward. You've pushed the <span class="gl" tabindex="0">sympathetic nervous system<span class="gl-pop" role="tooltip"><span class="gl-def">The body&#x27;s fight-or-flight activation system — one half of the autonomic nervous system that mobilizes you for intense physical action.</span><a class="gl-more" href="../glossary.html#glossary-sympathetic-nervous-system">Full definition →</a></span></span> to its limit, and when you stop, the parasympathetic response kicks in hard — heavy breathing, exhaustion, the need to sit down. You've made the nervous system stretch in both directions.</p>
+<blockquote>
+<p>"By running for 60 seconds, we trigger all of these aspects of our physiology that will force us to rest and calm down."</p>
+</blockquote>
+<p>This works as an intervention during a building panic attack. Go outside and run as hard as you can for a full minute. The recovery that follows is physiological, not just willpower.</p>
+<p>For ongoing benefit, 20–60 minutes of cardiovascular exercise regularly trains the system over time, the same way marathon training gradually lowers resting heart rate.</p>
+<p><strong>3. Blood sugar and <span class="gl" tabindex="0">cortisol<span class="gl-pop" role="tooltip"><span class="gl-def">A stress hormone your body releases in response to danger — not the immediate spike of adrenaline, but the sustained chemical state that keeps you alert for the 24–48 hours after a threat passes.</span><a class="gl-more" href="../glossary.html#glossary-cortisol">Full definition →</a></span></span></strong>
+When the <span class="gl" tabindex="0">sympathetic nervous system<span class="gl-pop" role="tooltip"><span class="gl-def">The body&#x27;s fight-or-flight activation system — one half of the autonomic nervous system that mobilizes you for intense physical action.</span><a class="gl-more" href="../glossary.html#glossary-sympathetic-nervous-system">Full definition →</a></span></span> fires, it releases two key hormones: <strong>adrenaline</strong> (kicks in within a second, fades in about five minutes) and <strong><span class="gl" tabindex="0">cortisol<span class="gl-pop" role="tooltip"><span class="gl-def">A stress hormone your body releases in response to danger — not the immediate spike of adrenaline, but the sustained chemical state that keeps you alert for the 24–48 hours after a threat passes.</span><a class="gl-more" href="../glossary.html#glossary-cortisol">Full definition →</a></span></span></strong> (builds over hours and lingers for up to a day). <span class="gl" tabindex="0">Cortisol<span class="gl-pop" role="tooltip"><span class="gl-def">A stress hormone your body releases in response to danger — not the immediate spike of adrenaline, but the sustained chemical state that keeps you alert for the 24–48 hours after a threat passes.</span><a class="gl-more" href="../glossary.html#glossary-cortisol">Full definition →</a></span></span> is also tied to blood sugar — it floods the bloodstream with glucose so muscles have fuel to run from threats.</p>
+<p>This creates a loop: chronic stress elevates <span class="gl" tabindex="0">cortisol<span class="gl-pop" role="tooltip"><span class="gl-def">A stress hormone your body releases in response to danger — not the immediate spike of adrenaline, but the sustained chemical state that keeps you alert for the 24–48 hours after a threat passes.</span><a class="gl-more" href="../glossary.html#glossary-cortisol">Full definition →</a></span></span>, which elevates blood sugar, which sustains the stress state. Certain foods appear to intervene in this loop. <strong>Beta-glucans</strong> (found in mushrooms), dark chocolate, and some healthy fats have been shown to affect glucose metabolism in ways that feed back to lower <span class="gl" tabindex="0">cortisol<span class="gl-pop" role="tooltip"><span class="gl-def">A stress hormone your body releases in response to danger — not the immediate spike of adrenaline, but the sustained chemical state that keeps you alert for the 24–48 hours after a threat passes.</span><a class="gl-more" href="../glossary.html#glossary-cortisol">Full definition →</a></span></span> levels. This is a smaller lever than exercise or <span class="gl" tabindex="0">meditation<span class="gl-pop" role="tooltip"><span class="gl-def">Meditation is the practice of focusing consciousness completely — until thinking itself falls away and you exist in a state of pure awareness with no mental activity.</span><a class="gl-more" href="../glossary.html#glossary-meditation">Full definition →</a></span></span>, but it's a real one.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-common-pitfalls">Common Pitfalls</h2>
+<p><strong>Thinking you just need to think your way out.</strong> Cognitive insight about why your <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> is irrational doesn't override a nervous system wired for threat. The wiring is below the level of conscious thought. Understanding your history helps, but it doesn't substitute for physiological intervention.</p>
+<p><strong>Treating relaxation alone as the solution.</strong> Rest and calming practices are important, but the muscle metaphor matters here — you also need to stress the system intentionally. Avoiding intensity keeps the range narrow. The goal is <em>stretch</em>, not just <em>stillness</em>.</p>
+<p><strong>Mistaking low <span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span> for laziness.</strong> If your nervous system learned to activate only under external pressure, losing that pressure feels like a personality flaw. It isn't. It's a physiological pattern, and it can be changed.</p>
+<p><strong>Waiting until you're calm to exercise.</strong> If you're already anxious, intense exercise might be exactly what's needed — not something to put off until you feel better.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-action-items-exercises">Action Items &amp; Exercises</h2>
+<ol>
+<li>
+<p><strong>Start a daily calming practice.</strong> Pick one: yoga, tai chi, or a breath-based <span class="gl" tabindex="0">meditation<span class="gl-pop" role="tooltip"><span class="gl-def">Meditation is the practice of focusing consciousness completely — until thinking itself falls away and you exist in a state of pure awareness with no mental activity.</span><a class="gl-more" href="../glossary.html#glossary-meditation">Full definition →</a></span></span>. Even 10–15 minutes daily has measurable effects on HRV over time. Slow or patterned breathing is the mechanism — let it be deliberate.</p>
+</li>
+<li>
+<p><strong>Use the 60-second sprint as a panic intervention.</strong> The next time you feel <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> building, go somewhere you can move and run as hard as you can for one full minute. Then stop and notice what happens to your body. Let the parasympathetic recovery do its work.</p>
+</li>
+<li>
+<p><strong>Add regular cardiovascular exercise.</strong> Aim for 20–60 minutes most days. You're not just staying fit — you're training your nervous system to flex across a wider range, the same way endurance athletes do.</p>
+</li>
+<li>
+<p><strong>Notice your activation patterns.</strong> If you find you only feel motivated under external pressure (a deadline, someone watching), recognize this as a nervous system pattern, not a character flaw. Begin experimenting with self-generated, low-stakes effort to start building internal activation.</p>
+</li>
+<li>
+<p><strong>Make one dietary adjustment targeting <span class="gl" tabindex="0">cortisol<span class="gl-pop" role="tooltip"><span class="gl-def">A stress hormone your body releases in response to danger — not the immediate spike of adrenaline, but the sustained chemical state that keeps you alert for the 24–48 hours after a threat passes.</span><a class="gl-more" href="../glossary.html#glossary-cortisol">Full definition →</a></span></span>.</strong> Add beta-glucan-rich foods (like shiitake or maitake mushrooms), a small amount of dark chocolate, or increase healthy fats. This is a supporting measure, not a primary one, but it works on a real mechanism.</p>
+</li>
+<li>
+<p><strong>Track your baseline.</strong> If you have access to a fitness tracker or heart rate monitor that measures HRV, start logging it. Watching the number improve over weeks is concrete feedback that the physiological rewiring is actually happening.</p>
+</li>
+</ol>
+</section></article>
+    </div>
+  </div>
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      
+      <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
 <p>So let&#x27;s take a look at how <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> rewires our physiology. In order to understand how the rewiring happens, we have to understand how the basic wiring already is. So we&#x27;re going to start by explaining the concept of the autonomic nervous system. This is the part of our nervous system that governs our modes of operation. So the autonomic nervous system is divided into the <span class="gl" tabindex="0">sympathetic nervous system<span class="gl-pop" role="tooltip"><span class="gl-def">The body&#x27;s fight-or-flight activation system — one half of the autonomic nervous system that mobilizes you for intense physical action.</span><a class="gl-more" href="../glossary.html#glossary-sympathetic-nervous-system">Full definition →</a></span></span>, which triggers our fight, flight, or freeze response, and our <span class="gl" tabindex="0">parasympathetic nervous system<span class="gl-pop" role="tooltip"><span class="gl-def">The branch of the autonomic nervous system responsible for &quot;rest and digest&quot; — the body&#x27;s recovery and regeneration mode, as opposed to the fight-or-flight activation of the sympathetic system.</span><a class="gl-more" href="../glossary.html#glossary-parasympathetic-nervous-system">Full definition →</a></span></span>, which governs our rest and digest response. Basically, the way that this works is our body has two modes of operation.</p>
 <p>Sometimes we feel very active, like let&#x27;s say I&#x27;m playing a sport, and in this case, my body is focused on a lot of physical activity, kind of high adrenaline activities. I can be very excited, I can go dancing, or I can even be in danger. In each of these cases, whether I&#x27;m dancing, I&#x27;m playing a sport, or I&#x27;m fighting off a tiger, we basically want the body to function in the same way. We want a lot of blood flow to go to our skeletal muscles, our arms and our legs, so that we can move them a lot. We don&#x27;t want to spend any blood on our digestion. So we don&#x27;t need to be digesting nutrients or building new tissue at this point.</p>
 <p>We want to be focused on survival and activity. And the <span class="gl" tabindex="0">sympathetic nervous system<span class="gl-pop" role="tooltip"><span class="gl-def">The body&#x27;s fight-or-flight activation system — one half of the autonomic nervous system that mobilizes you for intense physical action.</span><a class="gl-more" href="../glossary.html#glossary-sympathetic-nervous-system">Full definition →</a></span></span>, when it&#x27;s active, also affects the way that we think. We start to think in terms of very black and white, we start to make decisions very, very quickly, and we don&#x27;t tend to think things through. So this is the activity of our <span class="gl" tabindex="0">sympathetic nervous system<span class="gl-pop" role="tooltip"><span class="gl-def">The body&#x27;s fight-or-flight activation system — one half of the autonomic nervous system that mobilizes you for intense physical action.</span><a class="gl-more" href="../glossary.html#glossary-sympathetic-nervous-system">Full definition →</a></span></span>, which primes us for fighting, running away, or flight, or even in the most severe cases, freezing. Now this may sound kind of surprising, because isn&#x27;t fighting and running away the very opposite of freezing? And it seems so, but actually there&#x27;s sort of an interesting discovery that we made, which is that if you reach the end of fight or flight, the next step is to freeze.</p>
@@ -67,15 +189,21 @@ try {
 <p>So the main thing that we want to do when our physiology has been wired to a high arousal level is to calm down the physiology. We need to teach our body the lesson that not everything needs to trigger danger. And actually we&#x27;re over-responding a bit to danger signals that are way too small. The key way that we do that, the most effective way that we&#x27;ve sort of learned, is to increase our heart rate variability. Instead of our body being in a high stress state relatively constantly, because we&#x27;re so stressed out all the time, we need to lower that stress level. And we can do it by physiologically stretching our body.</p>
 <p>Physiologically stretching our autonomic nervous system and our heart. And the last thing that we can do is to actually directly act on <span class="gl" tabindex="0">cortisol<span class="gl-pop" role="tooltip"><span class="gl-def">A stress hormone your body releases in response to danger — not the immediate spike of adrenaline, but the sustained chemical state that keeps you alert for the 24–48 hours after a threat passes.</span><a class="gl-more" href="../glossary.html#glossary-cortisol">Full definition →</a></span></span> through the blood glucose mechanism. And if we employ these three things, we will increase our heart rate variability and we will calm down our nervous system.</p>
 </section></article>
+    </div>
   </div>
+  
 
-  <p class="meta">Transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">Trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> → Physiology of <span class="gl" tabindex="0">Trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span>). Captions auto-generated.</p>
+  <p class="meta">Medium summary + transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">Trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> → Physiology of <span class="gl" tabindex="0">Trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span>). Captions auto-generated; summary by claude-sonnet-4-6.</p>
 </div>
 
 <script>
 (function () {
   var root = document.documentElement;
-  var tb = document.querySelector('.theme-toggle');
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'medium');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
   var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
   tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
@@ -83,6 +211,9 @@ try {
   function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
   var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+  function navigateTo(id){ var el=id&&document.getElementById(id); if(!el)return; var v=el.closest('.view'); if(v)setView(v.getAttribute('data-view')); el.scrollIntoView(); }
+  window.addEventListener('hashchange', function(){ navigateTo(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash) navigateTo(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>
 <script>

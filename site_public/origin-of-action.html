@@ -9,7 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-} catch (e) {}
+  document.documentElement.setAttribute('data-view', 'transcript');
+} catch (e) { document.documentElement.setAttribute('data-view', 'transcript'); }
 </script>
 </head>
 <body>
@@ -31,9 +32,13 @@ try {
     <span class="speakers-note">5:25 min</span>
   </p>
 
-  <div class="doc">
-    
-    <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
+  
+
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      
+      <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
 <p>- In order to understand how to succeed in action, we have to start by understanding where action comes from. And fundamentally, action comes from three different places. The first place that action comes from is reflex or instinct. These are actions that are automatic and don&#x27;t require any sort of training or practice or anything like that. They&#x27;re instinctual. So you can take a newborn dog and actually drop it in a pool of water, and it&#x27;ll know how to swim. You can take a newborn child who naturally knows how to drink milk and swallow, right? There are all of these different features that we have as human beings which are reflexive.</p>
 <p>There are different kinds of reflexes which you can test. Like if you squeeze the palm of your hand, what&#x27;ll actually happen is your fist will curl, which is an ancient sort of grasping reflex that we have that&#x27;s kind of baked into our DNA. So the first place that actions come from are actually from reflexes are instincts. The second place that actions come from are through training. And once we train an action over and over and over again, it becomes something that we call a <span class="gl" tabindex="0">habit<span class="gl-pop" role="tooltip"><span class="gl-def">Automatic behavior that operates without motivation, willpower, or conscious thought — you simply do it.</span><a class="gl-more" href="../glossary.html#glossary-habit">Full definition →</a></span></span>. And at that point, the action becomes autopilot. It becomes automatic, which leaves us with a third area where actions come from, which is actually what we&#x27;re gonna focus on today, which is that actions originate from thoughts.</p>
 <p>So if you think for a second about your own life, think about the last time you ate food. How did you decide to eat that food, right? That action of you eating that actual food and taking bites of it, you know, maybe pulling it out of the fridge, heating something up, cooking, ordering something. Where did that action originate from? Chances are it originated from your thoughts, and this isn&#x27;t true just for food. It also happens with all kinds of other stuff. Like, think about the last TV show you watched or the last video you watched, or the last game you played. The act of watching that TV show or, you know, clicking on a video, where did that action originate?</p>
@@ -44,7 +49,9 @@ try {
 <p>What we&#x27;re focusing on is the end of the road, the fruits, the flowers, the leaves, instead of focusing on the birth of action, which is the seed and the root. The problem is that in today&#x27;s society, we gain <span class="gl" tabindex="0">knowledge<span class="gl-pop" role="tooltip"><span class="gl-def">Vidya is objective, transmissible information — the kind of knowledge that can be written in a textbook, proven to another person, or exchanged between minds.</span><a class="gl-more" href="../glossary.html#glossary-vidya">Full definition →</a></span></span>, right? We&#x27;ll learn about finance and we&#x27;ll learn about economics and mathematics and science, but we never actually train the mind itself. We may focus on acquiring expertise, but we never learn how to do the equivalent of pushups for the mind, sit ups for the mind. How do we strengthen the mind itself as an organ? And the key to understanding how to accomplish what you want to in life is to ultimately strengthen your mind itself.</p>
 <p>And that process starts fundamentally with the skill of <span class="gl" tabindex="0">concentration<span class="gl-pop" role="tooltip"><span class="gl-def">The deliberate act of focusing your entire attention on a single object — and holding it there.</span><a class="gl-more" href="../glossary.html#glossary-dharana">Full definition →</a></span></span> or <span class="gl" tabindex="0">Dharana<span class="gl-pop" role="tooltip"><span class="gl-def">The deliberate act of focusing your entire attention on a single object — and holding it there.</span><a class="gl-more" href="../glossary.html#glossary-dharana">Full definition →</a></span></span>.</p>
 </section></article>
+    </div>
   </div>
+  
 
   <p class="meta">Transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> → Spiritual Perspectives on Thought). Captions auto-generated.</p>
 </div>
@@ -52,7 +59,11 @@ try {
 <script>
 (function () {
   var root = document.documentElement;
-  var tb = document.querySelector('.theme-toggle');
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'transcript');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
   var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
   tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
@@ -60,6 +71,9 @@ try {
   function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
   var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+  function navigateTo(id){ var el=id&&document.getElementById(id); if(!el)return; var v=el.closest('.view'); if(v)setView(v.getAttribute('data-view')); el.scrollIntoView(); }
+  window.addEventListener('hashchange', function(){ navigateTo(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash) navigateTo(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>
 <script>

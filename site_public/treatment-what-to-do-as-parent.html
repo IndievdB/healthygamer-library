@@ -9,7 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-} catch (e) {}
+  document.documentElement.setAttribute('data-view', 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -31,9 +32,156 @@ try {
     <span class="speakers-note">28:07 min</span>
   </p>
 
-  <div class="doc">
+  
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">1,679w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">5,210w</span></button>
     
-    <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
+  </div>
+  
+
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#summary-summary">Summary</a></li>
+<li><a href="#summary-passive-non-compliance-why-your-child-isnt-just-ignoring-you">Passive Non-Compliance: Why Your Child Isn't Just Ignoring You</a></li>
+<li><a href="#summary-reminders-give-more-notice-than-feels-reasonable">Reminders: Give More Notice Than Feels Reasonable</a></li>
+<li><a href="#summary-recall-over-confirmation">Recall Over Confirmation</a></li>
+<li><a href="#summary-structure-over-reactivity">Structure Over Reactivity</a></li>
+<li><a href="#summary-reasoning-over-direction">Reasoning Over Direction</a></li>
+<li><a href="#summary-setting-boundaries-and-enforcing-them-at-separate-times">Setting Boundaries and Enforcing Them at Separate Times</a></li>
+<li><a href="#summary-imposing-limits-without-emotion">Imposing Limits Without Emotion</a></li>
+<li><a href="#summary-self-care-isnt-optional">Self-Care Isn't Optional</a></li>
+<li><a href="#summary-common-pitfalls">Common Pitfalls</a></li>
+<li><a href="#summary-action-items-exercises">Action Items &amp; Exercises</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="summary-summary">Summary</h2>
+<p><strong>TL;DR — Parenting a child with <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> isn't about applying more pressure or stricter rules; it's about building systems that work <em>with</em> how the <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> brain actually functions, while keeping yourself healthy enough to show up calmly.</strong></p>
+<p>Most of the friction between parents and kids with <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> doesn't come from defiance — it comes from a mismatch between how neurotypical parenting instincts work and how the <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> brain processes information. The child often genuinely doesn't register what was said, doesn't feel the approach of a deadline, and experiences consequences as random and unfair. Understanding that changes everything about how you respond. These seven strategies address that mismatch directly.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-passive-non-compliance-why-your-child-isnt-just-ignoring-you">Passive Non-Compliance: Why Your Child Isn't Just Ignoring You</h2>
+<p><span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> is, at its core, a disorder of attention. One of the most painful patterns for parents is <strong>passive non-compliance</strong> — the child appears to hear you, says "yeah, okay," and then does absolutely nothing. This isn't deliberate defiance. The words simply don't break through into actual conscious attention. The "yeah" is a social reflex, not a confirmation that anything landed.</p>
+<p>When a consequence arrives — computer unplugged at 10 pm, rushing out the door — and the child has no internal record of being warned, it feels completely arbitrary. From inside their experience, the punishment came out of nowhere. That feeling of unfairness is what triggers the meltdown, not bad character.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-reminders-give-more-notice-than-feels-reasonable">Reminders: Give More Notice Than Feels Reasonable</h2>
+<p>Because attention is disordered, a single warning thirty minutes before a deadline won't reliably penetrate. The solution is <strong>frequent, layered reminders</strong>.</p>
+<p>A practical example for bedtime:
+- 9:30 pm — "Bedtime is at 10, don't start a new game."
+- 9:45 pm — "Fifteen minutes."
+- 9:55 pm — "Five minutes, lights out at 10."</p>
+<p>Three warnings serve two purposes: they break into attention repeatedly so the deadline actually registers, and they dramatically reduce the emotional intensity of enforcement. When a child has acknowledged the upcoming limit multiple times, the moment of enforcement is far less of a shock. The temper tantrum — if there is one — will be significantly smaller.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-recall-over-confirmation">Recall Over Confirmation</h2>
+<p>Most parents instinctively ask <strong>confirming questions</strong>: "Did you hear me?" The answer will almost always be "yes," because saying yes is the path of least resistance. It's not a lie exactly — it's an autopilot response that says <em>please stop talking so I can focus on this.</em></p>
+<p>Replace confirmation questions with <strong>recall questions</strong>:
+- "When are we leaving?"
+- "What do you need to have done before we go?"
+- "What happens at 10 pm if you're still in the middle of a match?"</p>
+<p>Recall questions require actual cognitive engagement. The child can't answer on autopilot — they have to retrieve and process the information. Verbalizing it also reinforces it, making it more likely to actually stick. You cannot recall something you haven't truly understood.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-structure-over-reactivity">Structure Over Reactivity</h2>
+<p>Reactive parenting — running around at 7:55 am because your kid hasn't started getting ready — destroys your patience and teaches nothing. Every high-stress scramble is an opportunity you've missed.</p>
+<p><strong>Structure</strong> works because <span class="gl" tabindex="0">habit<span class="gl-pop" role="tooltip"><span class="gl-def">Automatic behavior that operates without motivation, willpower, or conscious thought — you simply do it.</span><a class="gl-more" href="../glossary.html#glossary-habit">Full definition →</a></span></span> circuitry in the brain can compensate for what attention circuitry misses. If the backpack always goes on the same hook, it's never lost. If the snack always goes in the same spot, no one has to search. If bedtime is always 10 pm with no exceptions, there's nothing new to attend to — the body and brain just start to follow the groove.</p>
+<p>The practical investment is front-loading: spend time building routines and physical structures (designated spots for things, consistent sequences), and you spend far less time reacting to chaos later. Structure doesn't demand attention — it just runs.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-reasoning-over-direction">Reasoning Over Direction</h2>
+<p>Children with <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> often have average or above-average intelligence. Treating them as if they need to be commanded rather than persuaded wastes that asset — and creates resistance.</p>
+<p>Instead of issuing directives ("put your shoes on, no arguments"), walk your child through the <em>why</em> and then let them reason their way to the answer:</p>
+<blockquote>
+<p>"What happens the next day when we go to bed at 11 pm? How do you feel in the morning when you're tired? When you're tired, do I yell more or less? If you want a story before bed, what time do we need to finish your snack?"</p>
+</blockquote>
+<p>When a child reverse-engineers their own bedtime routine and arrives at the conclusion themselves, they're no longer fighting against an arbitrary adult decree. They understand the logic, which means they're working <em>with</em> the system instead of against it. This takes more time upfront — but it saves enormous time and conflict over the long run.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-setting-boundaries-and-enforcing-them-at-separate-times">Setting Boundaries and Enforcing Them at Separate Times</h2>
+<p>One of the most common mistakes is <strong>announcing a rule and enforcing it simultaneously</strong>. Telling a child at 10:05 pm "no more games after 10 pm" as you reach for the plug is punishing them for a rule they didn't know existed. Of course they're furious.</p>
+<p>Discuss the boundary at a calm, neutral moment — say, 3 pm on a weekend afternoon. Explain exactly what will happen and when:</p>
+<blockquote>
+<p>"The last time you can queue up for a match is 9 pm, because bedtime is 10 pm. If you're still in a match at 10, I'm unplugging it. That's the rule."</p>
+</blockquote>
+<p>Then use recall at dinner to reinforce it. By the time 10 pm arrives, the child has had the rule explained, recalled it multiple times, and confirmed they understand the consequence. Enforcement still might sting, but there's no legitimate grounds for "that's not fair" — and that removes much of the fuel from the blowup.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-imposing-limits-without-emotion">Imposing Limits Without Emotion</h2>
+<p>The worst time to set a new rule is when you're furious. Anger-driven limits tend to be extreme ("no games <em>ever</em> again"), unenforceable, and — when you inevitably walk them back — actively teach your child that your limits don't have to be respected.</p>
+<blockquote>
+<p>The more frustrated you are, the worse limits you're going to set.</p>
+</blockquote>
+<p>If it's 10:10 and you're already angry, the window for calm enforcement has passed. Take the five or ten minutes to settle yourself first — literally sit down, breathe, make a cup of tea — and go in at 10:20 calm and collected. The conversation that follows will be exponentially more productive than the one where you come in guns blazing.</p>
+<p>Being calm isn't weakness or permissiveness. It's the prerequisite for setting limits your child will actually respect.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-self-care-isnt-optional">Self-Care Isn't Optional</h2>
+<p>Having a child with <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> genuinely increases <span class="gl" tabindex="0">depression<span class="gl-pop" role="tooltip"><span class="gl-def">A disruption in mood and functioning that exists on a spectrum — not a single, uniform illness.</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span> and stress in parents. That's not a character flaw — it's documented. The vicious cycle looks like this:</p>
+<p><strong>Burnout → less empathy → harsher parenting → worsened <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> symptoms → more chaos → deeper burnout.</strong></p>
+<p>You cannot break that cycle from the child's end alone. The intervention point is <em>you</em>.</p>
+<p>Self-care here means concrete things: therapy, parent support groups, exercise, a genuine recharge routine, learning to meditate. Even fifteen minutes of <span class="gl" tabindex="0">meditation<span class="gl-pop" role="tooltip"><span class="gl-def">Meditation is the practice of focusing consciousness completely — until thinking itself falls away and you exist in a state of pure awareness with no mental activity.</span><a class="gl-more" href="../glossary.html#glossary-meditation">Full definition →</a></span></span> a day changes your baseline <span class="gl" tabindex="0">emotional regulation<span class="gl-pop" role="tooltip"><span class="gl-def">The ability to identify and modify emotional states in ways that support adaptive, goal-directed behavior.</span><a class="gl-more" href="../glossary.html#glossary-emotional-regulation">Full definition →</a></span></span> — which directly changes how you show up for your child.</p>
+<blockquote>
+<p>If you don't have time to meditate for half an hour, you should meditate for an hour instead.</p>
+</blockquote>
+<p>The counterintuitive truth is that investing time in your own stability pays back more than spending that same time managing the downstream chaos of being depleted.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-common-pitfalls">Common Pitfalls</h2>
+<ul>
+<li><strong>Treating "yes" as confirmation.</strong> A child with <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> can say "yes, I heard you" without any information actually registering. Stop reading "yes" as proof of understanding.</li>
+<li><strong>One warning and done.</strong> A single heads-up is almost always insufficient. If you only told them once, the shock of enforcement is predictable and avoidable.</li>
+<li><strong>Setting rules in the heat of the moment.</strong> Angry limit-setting produces rules you can't hold and teaches kids to ignore you.</li>
+<li><strong>Punishing without building understanding.</strong> Direction without reasoning creates compliance through fear at best — and defiance when the fear wears off.</li>
+<li><strong>Ignoring your own mental state.</strong> Parents who feel like they're always drowning rarely consider that their burnout is actively feeding the problem they're trying to solve.</li>
+<li><strong>Confusing passive non-compliance with defiance.</strong> Treating a child as deliberately ignoring you, when they're neurologically struggling to attend, poisons the relationship and misses the actual problem.</li>
+</ul>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-action-items-exercises">Action Items &amp; Exercises</h2>
+<ol>
+<li>
+<p><strong>Implement the four-stage reminder system.</strong> For any transition (bedtime, leaving the house, ending screen time), set reminders at one hour, thirty minutes, fifteen minutes, and five minutes out. Do this consistently for two weeks and observe whether the emotional intensity at the transition point decreases.</p>
+</li>
+<li>
+<p><strong>Switch to recall questions.</strong> For one week, replace every "did you hear me?" or "do you understand?" with a concrete recall prompt: "What time are we leaving?" / "What happens if you queue up at 9:45?" Notice how often the child actually doesn't know the answer — and how much more engaged they become when asked.</p>
+</li>
+<li>
+<p><strong>Build two or three physical structures this week.</strong> Pick the flashpoints in your daily routine (lost backpack, missing shoes, forgotten snack) and assign each item a fixed, permanent home. Drill the <span class="gl" tabindex="0">habit<span class="gl-pop" role="tooltip"><span class="gl-def">Automatic behavior that operates without motivation, willpower, or conscious thought — you simply do it.</span><a class="gl-more" href="../glossary.html#glossary-habit">Full definition →</a></span></span> until it runs automatically.</p>
+</li>
+<li>
+<p><strong>Have one "boundary conversation" at a neutral time.</strong> Pick a rule that currently causes conflict at enforcement time, and discuss it during a calm afternoon. Explain the why, walk through the consequences, and ask the child to recall the terms back to you.</p>
+</li>
+<li>
+<p><strong>Establish one non-negotiable self-care practice.</strong> It doesn't have to be large — fifteen minutes of <span class="gl" tabindex="0">meditation<span class="gl-pop" role="tooltip"><span class="gl-def">Meditation is the practice of focusing consciousness completely — until thinking itself falls away and you exist in a state of pure awareness with no mental activity.</span><a class="gl-more" href="../glossary.html#glossary-meditation">Full definition →</a></span></span>, a daily walk, a weekly call with a friend. Protect that time specifically because you feel you can't afford it. Track whether your emotional baseline in parenting moments shifts over a month.</p>
+</li>
+<li>
+<p><strong>Before enforcing a rule you're angry about, wait ten minutes.</strong> If you notice you're furious, physically leave the room, do something to regulate (breathe, make tea, write down what you're feeling), and return when you can speak at a normal volume. Reserve rule-setting for moments of calm — not moments of peak frustration.</p>
+</li>
+</ol>
+</section></article>
+    </div>
+  </div>
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      
+      <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
 <p>- Now that we&#x27;ve gone through a little bit about the theory of parenting a child with <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span>, we&#x27;re gonna give you all some very practical tips. So we&#x27;re gonna give you seven tips today about how you can structure your parenting to facilitate a healthy relationship with a child with <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span>. So the seven things that we&#x27;re gonna focus on are reminders, recall, structure, instead of reactivity, reasoning, instead of direction, boundaries and enforcement, imposing limits without emotion, and self-care. So I know that&#x27;s a lot, but we&#x27;re gonna take it slow. So the first thing we&#x27;re gonna talk about are reminders.</p>
 <p>So remember that a child with <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> has <span class="gl" tabindex="0">disordered attention<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span>, and if they have <span class="gl" tabindex="0">disordered attention<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span>, what that&#x27;s going to mean is that they&#x27;ll engage in something called passive non-compliance. So passive non-compliance is when they&#x27;re not listening to what you&#x27;re saying, but it&#x27;s not a willful defiance, it&#x27;s actually passive non-compliance. They&#x27;re just not hearing what you&#x27;re saying. It&#x27;s not sinking into their brain and into their attention. So this can be very frustrating for parents. So instead, what I recommend is frequent reminders. So, this is the kind of thing where instead of telling your kid, &quot;Oh, okay, we&#x27;ve got to be ready for school in 30 minutes.&quot;</p>
 <p>And then you show up 30 minutes later and your kid hasn&#x27;t done a single thing. So this is emotionally frustrating for you. They acknowledged that they sort of on autopilot said, &quot;Yeah, mom.&quot; And you&#x27;ll even ask questions like, &quot;Did you hear me?&quot; &quot;Yes, I heard you.&quot; But their attention, they&#x27;re just sort of like, they&#x27;re not actually hearing you, they&#x27;re just learning how to autopilot say yes. So what can you do for that? One thing that you can do is give them frequent reminders. And giving them frequent reminders also has another advantage. So if you tell your kid, for example, that bedtime is 10 o&#x27;clock and you tell them at 9:30, you better not start another game, bedtime&#x27;s at 10, bedtime&#x27;s at 10.</p>
@@ -77,15 +225,21 @@ try {
 <p>The more you slip into unhealthy parenting styles, the worse the <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> is gonna get. The worse <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> gets, the more disasters there&#x27;re going to be. So even though it can sound absolutely insane, take a step back and prioritize your self-care, learn how to meditate for 15 minutes every single day. Even if you meditate for 15 minutes, if you feel like, oh my God, that means that I can&#x27;t do X, Y, Z, that&#x27;s okay. So there&#x27;s a very famous quote from the Dalai Lama and he sort of recommends that everyone should meditate for half an hour a day. And he says, if you don&#x27;t have the time to meditate for half an hour, you should meditate for an hour instead.</p>
 <p>And the beautiful thing is that people who listen to this advice ultimately found that it&#x27;s 100% correct. You&#x27;ll get around to it as long as you are in your best head space. The biggest challenge of parenting a child with <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> is that you yourself are burnt out, and so how can you expect all of this success from yourself? So take care of yourself, and that&#x27;s the first step to take care of your kid with <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span>.</p>
 </section></article>
+    </div>
   </div>
+  
 
-  <p class="meta">Transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> → Parenting & <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span>). Captions auto-generated.</p>
+  <p class="meta">Medium summary + transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> → Parenting & <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span>). Captions auto-generated; summary by claude-sonnet-4-6.</p>
 </div>
 
 <script>
 (function () {
   var root = document.documentElement;
-  var tb = document.querySelector('.theme-toggle');
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'medium');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
   var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
   tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
@@ -93,6 +247,9 @@ try {
   function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
   var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+  function navigateTo(id){ var el=id&&document.getElementById(id); if(!el)return; var v=el.closest('.view'); if(v)setView(v.getAttribute('data-view')); el.scrollIntoView(); }
+  window.addEventListener('hashchange', function(){ navigateTo(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash) navigateTo(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>
 <script>

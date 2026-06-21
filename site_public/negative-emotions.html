@@ -9,7 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-} catch (e) {}
+  document.documentElement.setAttribute('data-view', 'transcript');
+} catch (e) { document.documentElement.setAttribute('data-view', 'transcript'); }
 </script>
 </head>
 <body>
@@ -31,9 +32,13 @@ try {
     <span class="speakers-note">11:00 min</span>
   </p>
 
-  <div class="doc">
-    
-    <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
+  
+
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      
+      <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
 <p>- So in this next part of the module, what I want to cover is common psychological complexes or <span class="gl" tabindex="0">samskaras<span class="gl-pop" role="tooltip"><span class="gl-def">A samskara is a ball of undigested emotional energy from past experiences that gets stored in the mind and automatically activates in present situations, distorting your perception of what&#x27;s actually happening.</span><a class="gl-more" href="../glossary.html#glossary-samskara">Full definition →</a></span></span> that people who feel depressed have lurking in their mind. And each of these complexes forms in a particular way and also exerts a particular kind of influence. The good news is that if we can understand this complex at work, if we can sort of catch it in action, we can start the process of dismantling it and then ultimately be free of that negative emotional energy. So before we go down to the specifics, we have to understand a couple of really basic things about what emotions are, why we have them, how they affect us, and how we kind of carry them forward in our subconscious mind.</p>
 <p>So let&#x27;s start with the simple question of like, why do we even have negative emotions? If you really stop and think about it, it&#x27;s really, really strange, right, that like we spend so much of our lives trying to avoid negative emotions. If I&#x27;m feeling embarrassed, I will steer clear of whatever I find embarrassing. I spend so much time and energy avoiding feeling guilty or feeling ashamed. We&#x27;ll distract our things with like alcohol or other substances, or other forms of distraction like entertainment. And if you really look at your life, most human beings spend most of their lives trying to avoid the pain of negative emotion, which then begs the question, why on earth do we have them in the first place?</p>
 <p>And I want y&#x27;all to like really think about this for a second, because evolutionarily, the experience of negative emotion is conserved across the entire human species. Almost every human being that has ever existed experiences negative emotions. And so if we look at it from an evolutionary biology perspective, what that means is that emotions must be incredibly adaptive, right? Like if every human being experiences this thing, it must do something really, really important for us. And so this is really best illustrated with a story. So I was working with kind of a budding musical artist who was trying to make it in the industry.</p>
@@ -51,7 +56,9 @@ try {
 <p>And those very things which were protective now actually become maladaptive. And so in this next part of the module, we&#x27;re gonna go into five examples of these sorts of protective mechanisms which plague us a lot and cause us a lot of pain. And our approach to these are gonna be first, to isolate them, to see them in the mind. And the second step that we&#x27;re gonna take is to realize that these things which we think are negative, the reason that they stick around in our minds so damn much is not because they&#x27;re negative, but because they actually do something for us. They fulfill a vital function, which is why our mind holds on to them with so much fierceness.</p>
 <p>And once we understand what function they serve, then we can start to reduce the need for them by addressing the underlying thing that they&#x27;re protecting us from. And the last thing that we&#x27;ll learn to do is kind of not only deal with them in the present and try to no longer need their protection, but we can actually go all the way to the past and see where they were formed. We can go to the birth of that scar and we can actually try to rewrite history a little bit, change our mind&#x27;s conceptualization of the truths that we learned in the past that cause us suffering today. And if we do that, my hope is that you&#x27;ll be free of these psychological complexes and get a better handle on your <span class="gl" tabindex="0">depression<span class="gl-pop" role="tooltip"><span class="gl-def">A disruption in mood and functioning that exists on a spectrum — not a single, uniform illness.</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span>.</p>
 </section></article>
+    </div>
   </div>
+  
 
   <p class="meta">Transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">Depression<span class="gl-pop" role="tooltip"><span class="gl-def">A disruption in mood and functioning that exists on a spectrum — not a single, uniform illness.</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span> → Scientific Perspectives on <span class="gl" tabindex="0">Depression<span class="gl-pop" role="tooltip"><span class="gl-def">A disruption in mood and functioning that exists on a spectrum — not a single, uniform illness.</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span>). Captions auto-generated.</p>
 </div>
@@ -59,7 +66,11 @@ try {
 <script>
 (function () {
   var root = document.documentElement;
-  var tb = document.querySelector('.theme-toggle');
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'transcript');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
   var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
   tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
@@ -67,6 +78,9 @@ try {
   function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
   var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+  function navigateTo(id){ var el=id&&document.getElementById(id); if(!el)return; var v=el.closest('.view'); if(v)setView(v.getAttribute('data-view')); el.scrollIntoView(); }
+  window.addEventListener('hashchange', function(){ navigateTo(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash) navigateTo(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>
 <script>

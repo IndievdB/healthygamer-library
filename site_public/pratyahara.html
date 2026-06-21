@@ -9,7 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-} catch (e) {}
+  document.documentElement.setAttribute('data-view', 'transcript');
+} catch (e) { document.documentElement.setAttribute('data-view', 'transcript'); }
 </script>
 </head>
 <body>
@@ -31,9 +32,13 @@ try {
     <span class="speakers-note">9:22 min</span>
   </p>
 
-  <div class="doc">
-    
-    <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
+  
+
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      
+      <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
 <p>- So when I was growing up, I remember one time we were going to dinner at a friend&#x27;s house and I was maybe about seven or eight at the time. We were listening to the radio and my dad was driving and it was pretty dark outside and we were already a little bit late &#x27;cause we&#x27;re Indian. And so we&#x27;re driving around like in this neighborhood looking for where this house is and everything&#x27;s kinda dark and this is in the days before GPS. So if you guys remember that, what it was like to look for a house late at night, this story may sound familiar but we were looking around and the radio was on and then my dad started getting frustrated.</p>
 <p>And so then what he wanted to do was he he told us to turn off the radio so we turned off the radio and then he was like looking for the house and we were kinda chatting in the back, right? And then after a little while he told us to like stop talking and then I got like super confused because here he is looking for something like what difference does it make if I&#x27;m talking in the back? And so listened to him for a little while, was quiet for a little while and then I started talking and then he got upset with me again and he was like, stop talking like, we&#x27;re looking for this thing. You guys should be looking too.</p>
 <p>And I was too short, I couldn&#x27;t even look out the window sitting in the back seat. And I got kinda confused because I was wondering a little bit about like what&#x27;s the relationship like I don&#x27;t understand, here you are looking for something outside, what difference does it make if the radio is on or people are talking, right? Like sight and sound even to my seven year old mind were completely different things. One shouldn&#x27;t really interfere with the other. But it turns out that the two are very related and that if you&#x27;re looking for something, being distracted by sounds or things like that actually makes it harder for you to focus.</p>
@@ -49,7 +54,9 @@ try {
 <p>So instead of being able to direct my attention where I want it to, I&#x27;m relying on a TV show or video game or piece of music or some kind of like social media post to pull my attention in a particular way. And since we lose control of our attention as we become more vulnerable to <span class="gl" tabindex="0">boredom<span class="gl-pop" role="tooltip"><span class="gl-def">A stimulus-seeking emotional state your brain manufactures to punish you for not engaging in dopamine-producing activities.</span><a class="gl-more" href="../glossary.html#glossary-boredom">Full definition →</a></span></span>, we lose control of our lives. And what does this result in? It results in me being bored so I&#x27;m gonna open up an app and then I&#x27;m gonna direct my attention there. I&#x27;m actually not directing it if you really think about it, I&#x27;m letting that application pull my attention automatically. It becomes a crutch and as it becomes a crutch, I start to lose control over my attention.</p>
 <p>And then we sort of get into this like sort of vicious cycle of not being able to tell our mind what to do, it doesn&#x27;t listen and then as our mind gets more distracted and more bored, we rely on these crutches to alleviate that <span class="gl" tabindex="0">boredom<span class="gl-pop" role="tooltip"><span class="gl-def">A stimulus-seeking emotional state your brain manufactures to punish you for not engaging in dopamine-producing activities.</span><a class="gl-more" href="../glossary.html#glossary-boredom">Full definition →</a></span></span>. So we have to really understand this concept very well that our sensory organs and attention go hand in hand. And if we really wanna overcome sort of some of the addictions of the technological world and we want to be able to direct our thoughts in sort of a positive way, it starts with control of the sensory organs which is achieved to the practice of <span class="gl" tabindex="0">pratyahara<span class="gl-pop" role="tooltip"><span class="gl-def">The fifth limb of Patanjali&#x27;s eight-limbed yoga, pratyahara is the deliberate withdrawal of attention away from external sensory objects and back inward.</span><a class="gl-more" href="../glossary.html#glossary-pratyahara">Full definition →</a></span></span>.</p>
 </section></article>
+    </div>
   </div>
+  
 
   <p class="meta">Transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> → Spiritual Perspectives on Thought). Captions auto-generated.</p>
 </div>
@@ -57,7 +64,11 @@ try {
 <script>
 (function () {
   var root = document.documentElement;
-  var tb = document.querySelector('.theme-toggle');
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'transcript');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
   var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
   tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
@@ -65,6 +76,9 @@ try {
   function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
   var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+  function navigateTo(id){ var el=id&&document.getElementById(id); if(!el)return; var v=el.closest('.view'); if(v)setView(v.getAttribute('data-view')); el.scrollIntoView(); }
+  window.addEventListener('hashchange', function(){ navigateTo(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash) navigateTo(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>
 <script>

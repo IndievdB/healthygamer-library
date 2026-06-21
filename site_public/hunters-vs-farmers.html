@@ -9,7 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-} catch (e) {}
+  document.documentElement.setAttribute('data-view', 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -31,9 +32,114 @@ try {
     <span class="speakers-note">13:17 min</span>
   </p>
 
-  <div class="doc">
+  
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">1,474w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">2,453w</span></button>
     
-    <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
+  </div>
+  
+
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#summary-summary">Summary</a></li>
+<li><a href="#summary-two-ancient-cognitive-styles">Two Ancient Cognitive Styles</a></li>
+<li><a href="#summary-adhd-is-partly-a-mismatch-problem">ADHD Is Partly a Mismatch Problem</a></li>
+<li><a href="#summary-the-hyperfocus-question">The Hyperfocus Question</a></li>
+<li><a href="#summary-your-unique-attentional-fingerprint">Your Unique Attentional Fingerprint</a></li>
+<li><a href="#summary-common-pitfalls">Common Pitfalls</a></li>
+<li><a href="#summary-action-items-exercises">Action Items &amp; Exercises</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="summary-summary">Summary</h2>
+<p><strong>TL;DR — Your attention style isn't a flaw to fix; it's a fingerprint to understand. Once you know whether you're wired more like a hunter or a farmer, you can build a life around that wiring instead of fighting it.</strong></p>
+<p>Most people who struggle with focus assume something is wrong with them. But human attention was never uniform — there have always been people whose minds thrive on novelty and variety, and people whose minds thrive on routine and repetition. The clinical label "<span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span>" sits at one end of a natural spectrum, and where you fall on that spectrum has real implications for which environments will make you succeed and which will grind you down.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-two-ancient-cognitive-styles">Two Ancient Cognitive Styles</h2>
+<p>Human populations have always included two broad attentional types, and evolutionary pressures shaped both.</p>
+<p><strong>Farmers</strong> are creatures of <span class="gl" tabindex="0">habit<span class="gl-pop" role="tooltip"><span class="gl-def">Automatic behavior that operates without motivation, willpower, or conscious thought — you simply do it.</span><a class="gl-more" href="../glossary.html#glossary-habit">Full definition →</a></span></span>. They do their best work when they can wake up at the same time each day, follow a stable routine, and apply sustained focus to predictable tasks. Disruption costs them.</p>
+<p><strong>Hunters</strong> are the opposite. Their attention is dynamic — scanning broadly, integrating many signals at once, switching fluidly between stimuli. Thousands of years ago, this was exactly what you needed: noticing a footprint over here, a snapped branch over there, a sound in the distance, and weaving those pieces into a coherent picture. <span class="gl" tabindex="0">Boredom<span class="gl-pop" role="tooltip"><span class="gl-def">A stimulus-seeking emotional state your brain manufactures to punish you for not engaging in dopamine-producing activities.</span><a class="gl-more" href="../glossary.html#glossary-boredom">Full definition →</a></span></span> is the hunter's enemy; monotony doesn't just bore them, it functionally impairs them.</p>
+<p>Early research found that societies with strong hunter-gatherer traditions carried a higher proportion of <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span>-associated genes, which seemed like a neat confirmation of this theory. More rigorous, large-scale studies have complicated that picture — it now appears that over roughly the last 35,000 years, <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> genes have actually been <em>negatively</em> selected against. The science is still debated. What remains clear is that <strong>natural variation in attention is real</strong>, it has a genetic component, and it interacts heavily with environment.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-adhd-is-partly-a-mismatch-problem">ADHD Is Partly a Mismatch Problem</h2>
+<p>One of the most practically important findings is that an <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> diagnosis is not purely biological — it's <strong>environmentally dependent</strong>. The same child can be diagnosable in one setting and completely fine in another.</p>
+<p>Research on schools illustrates this directly. When class sizes are large and teacher-to-student ratios are poor, more children get diagnosed with <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span>. When there are enough teachers to provide individualized structure and redirection, many of those same kids function without any diagnosis at all. The child's brain didn't change — the environment did.</p>
+<p>This pattern extends far beyond school. Consider someone who struggled through college, then spent years grinding through a corporate finance role — long days, fixed hours, endless spreadsheet work and PowerPoint presentations — never quite performing up to their potential. After years of that friction, they moved into real estate. The work was just as demanding intellectually, but the <em>texture</em> of the day was completely different: meeting clients in the morning, reviewing contracts mid-day, rushing to a job site when something went wrong, pivoting into afternoon planning sessions. What had felt like a liability — a restless, rapidly switching mind — became an asset. The same cognitive style that made sitting at a screen for twelve hours miserable made juggling fifteen simultaneous demands energizing.</p>
+<blockquote>
+<p>"It sort of seems that if you look at people who have <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span>, there are particular environments they'll kind of do better in, as opposed to other environments where they'll kind of struggle."</p>
+</blockquote>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-the-hyperfocus-question">The Hyperfocus Question</h2>
+<p>People with <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> often experience <strong><span class="gl" tabindex="0">hyperfocus<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span></strong> — becoming so completely absorbed in a task that hours vanish, hunger disappears, and nothing external breaks through. Parents of kids with <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> know this well: the child who "can't pay attention" will sit with their Legos for six uninterrupted hours.</p>
+<p>This gets framed as a superpower, but it's worth being clear-eyed about it. <span class="gl" tabindex="0">Hyperfocus<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> is largely <em>involuntary</em>. You can't flip it on like a switch. You fall into it — and sometimes you fall into it on the wrong thing, spending five hours on a side project while the actual deadline goes unmet. Whether <span class="gl" tabindex="0">hyperfocus<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> counts as an advantage depends entirely on whether it happens to land on what matters right now, and you don't always get to choose.</p>
+<p>So the honest picture of <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span>-style attention is this: it's <strong>not uniformly good or bad</strong>. It's a pattern with real strengths in the right context and real costs in the wrong one.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-your-unique-attentional-fingerprint">Your Unique Attentional Fingerprint</h2>
+<p>Beyond clinical <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span>, most people today are experiencing some version of attentional disruption. Constant notifications, email, and social media are training everyone's attention toward shorter and shorter cycles. In that sense, the hunter-versus-farmer framework is useful even if you've never been anywhere near an <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> diagnosis.</p>
+<p>The core idea is that <strong>every person has a unique cognitive fingerprint</strong> — a characteristic pattern of how their attention works, what it thrives on, what degrades it, and what environments bring out its best. Treating that fingerprint as a fixed deficiency to medicate or muscle through is the wrong frame. Understanding it, and then structuring your life around it, is the right one.</p>
+<p>That means asking honest questions:</p>
+<ul>
+<li>Are you more farmer or more hunter — do you perform best in stable routines or dynamic environments?</li>
+<li>If you tend toward the hunter end, are you currently living in a farmer's world (fixed schedule, repetitive tasks, long unbroken work blocks)?</li>
+<li>Do you experience <span class="gl" tabindex="0">hyperfocus<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span>? If so, what triggers it, and what derails it?</li>
+<li>Are there specific environmental conditions — noise, structure, variety, social presence — that reliably improve or harm your <span class="gl" tabindex="0">concentration<span class="gl-pop" role="tooltip"><span class="gl-def">The deliberate act of focusing your entire attention on a single object — and holding it there.</span><a class="gl-more" href="../glossary.html#glossary-dharana">Full definition →</a></span></span>?</li>
+<li>Do you need some form of external structure (a deadline, a co-worker, a strict schedule) to compensate for attention that fluctuates on its own?</li>
+</ul>
+<p>None of these questions have universally correct answers. A farmer trying to perform in a hunter's environment suffers just as much as a hunter trapped in a farmer's routine.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-common-pitfalls">Common Pitfalls</h2>
+<p><strong>Treating <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> as purely biological or purely a myth.</strong> Both extremes miss the picture. There's genuine genetic heritability, <em>and</em> the diagnosis is heavily shaped by environment. Both things are true.</p>
+<p><strong>Assuming <span class="gl" tabindex="0">hyperfocus<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> is a reliable advantage.</strong> It's powerful when it lands well, but because it's involuntary, it can just as easily derail you. Don't plan your productivity system around reliably summoning it.</p>
+<p><strong>Forcing yourself into an environment that doesn't match your cognitive style and calling the resulting failure a personal weakness.</strong> The corporate finance job and the real estate job were both hard, demanding work. One fit; one didn't. That's an environmental mismatch, not a character flaw.</p>
+<p><strong>Conflating "needs structure" with "has <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span>."</strong> A hunter-type mind benefits from <em>external</em> structure precisely because its internal structure is less rigid. Recognizing that you need scaffolding isn't a sign of failure — it's accurate self-<span class="gl" tabindex="0">knowledge<span class="gl-pop" role="tooltip"><span class="gl-def">Vidya is objective, transmissible information — the kind of knowledge that can be written in a textbook, proven to another person, or exchanged between minds.</span><a class="gl-more" href="../glossary.html#glossary-vidya">Full definition →</a></span></span>.</p>
+<p><strong>Assuming the solution is always medication.</strong> Medication can help and is a legitimate tool, but it doesn't change the underlying mismatch between your attentional style and your environment. Both levers matter.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-action-items-exercises">Action Items &amp; Exercises</h2>
+<ol>
+<li>
+<p><strong>Map your cognitive type honestly.</strong> Over the next week, notice when you feel genuinely absorbed and energized by work versus when you feel like you're dragging yourself through quicksand. Don't judge it — just log it. Look for patterns around task type, time of day, and environmental conditions.</p>
+</li>
+<li>
+<p><strong>Audit your current environment against your type.</strong> List the three biggest demands your daily routine places on your attention. For each one, ask: does this require farmer-style sustained focus or hunter-style dynamic switching? Then ask: which do I actually do well? If there's a mismatch, that's your friction point.</p>
+</li>
+<li>
+<p><strong>Experiment with task structure.</strong> If you suspect you lean hunter, try breaking long work blocks into shorter, varied segments with genuine switching between different types of tasks. If you lean farmer, try protecting a consistent block of time each day for your most important work and reducing mid-task interruptions.</p>
+</li>
+<li>
+<p><strong>Identify your <span class="gl" tabindex="0">hyperfocus<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> triggers.</strong> If you experience periods of deep absorption, think back on the last two or three times it happened. What were the conditions — topic, time of day, environment, emotional state? This won't give you an on/off switch, but it will help you create conditions where it's more likely to occur on useful tasks.</p>
+</li>
+<li>
+<p><strong>Find or build external structure where your internal structure is weak.</strong> If your attention fluctuates and you know it, don't rely on willpower to compensate. Use external anchors: co-working with someone, public commitments, timers, or environments (like a library) that impose structure from outside.</p>
+</li>
+<li>
+<p><strong>If you're in a role or environment that persistently doesn't fit, take the mismatch seriously.</strong> Before concluding you're simply not capable, ask whether the environment itself is the problem. That doesn't always mean quitting your job — but it might mean negotiating for a different kind of role, a different physical workspace, or a different distribution of responsibilities.</p>
+</li>
+</ol>
+</section></article>
+    </div>
+  </div>
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      
+      <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
 <p>- A lot of us feel like we&#x27;re getting more <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span>, and it almost seems like our society as a whole is starting to have problems with their attention. We struggle with focus. We get increasingly distracted. And we also know that clinically, the number of <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> diagnosis is actually increasing. So what I&#x27;d like to do now is actually take a step back, and think a little bit about where does <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> come from? Why does the human brain sort of have this vulnerability to have a distractable kind of mind, or an attention that&#x27;s highly variable? Sort of what do we know about kind of the evolution of the human mind as it relates to <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span>?</p>
 <p>And there&#x27;s a really interesting theory about this. So we sort of know in general that there&#x27;s a variability within human populations. Some people are tall and some people are short. Some people have deeper voices. Some people have higher pitched voices. Some people have hair that&#x27;s one color. Some people have hair that&#x27;s another color. So we know that human beings have variable aspects. And the interesting thing is that there seem to be naturally occurring variabilities in attention and this is best characterized by something called hunters versus farmers. So if we look at human beings, some people are temperamentally like farmers.</p>
 <p>So they enjoy waking up at the same time every day, essentially sort of really sticking to a routine, even doing work that is sort of stable, predictable and kind of satisfying. Some people are sort of creatures of <span class="gl" tabindex="0">habit<span class="gl-pop" role="tooltip"><span class="gl-def">Automatic behavior that operates without motivation, willpower, or conscious thought — you simply do it.</span><a class="gl-more" href="../glossary.html#glossary-habit">Full definition →</a></span></span>, right? And we even have phrases like that to describe them. Other people are more like hunters, and their attention is more dynamic. Whereas the farmer really enjoys routine, and gets disrupted by sort of changing circumstances or doing things at different times. The hunter kind of thrives on that. So if we think a little bit about you know, thousands of years ago or millions of years ago when human beings were evolving, what we sort of realize is that some human beings needed to have highly variable attention.</p>
@@ -56,15 +162,21 @@ try {
 <p>Are you more of a hunter or are you more of a farmer? Are you a hunter who&#x27;s trying to live in a farmer&#x27;s world or are you a farmer trying to live in a hunter&#x27;s world? What is your kind of relationship with hyper focus? Are you capable of that? What triggers it? What kind of gets in the way of it? And all of these factors kind of become really important. And even if we sort of go back to the school example for a second, are there particular a aspects of your attention that become worse in particular environments? So do you need some kind of external structure support to kind of support your fluctuating attention so that you can succeed?</p>
 <p>And at the end of the day, I think this is the most important thing. To understand, &quot;Okay. What is my unique attentional fingerprint?&quot; And once you understand what that is, you can start to structure your life kind of around that, so that irrespective of what you&#x27;re trying to accomplish, you can still be successful with it.</p>
 </section></article>
+    </div>
   </div>
+  
 
-  <p class="meta">Transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> → Core <span class="gl" tabindex="0">Knowledge<span class="gl-pop" role="tooltip"><span class="gl-def">Vidya is objective, transmissible information — the kind of knowledge that can be written in a textbook, proven to another person, or exchanged between minds.</span><a class="gl-more" href="../glossary.html#glossary-vidya">Full definition →</a></span></span>: Starter Path). Captions auto-generated.</p>
+  <p class="meta">Medium summary + transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by a disorder of attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> → Core <span class="gl" tabindex="0">Knowledge<span class="gl-pop" role="tooltip"><span class="gl-def">Vidya is objective, transmissible information — the kind of knowledge that can be written in a textbook, proven to another person, or exchanged between minds.</span><a class="gl-more" href="../glossary.html#glossary-vidya">Full definition →</a></span></span>: Starter Path). Captions auto-generated; summary by claude-sonnet-4-6.</p>
 </div>
 
 <script>
 (function () {
   var root = document.documentElement;
-  var tb = document.querySelector('.theme-toggle');
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'medium');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
   var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
   tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
@@ -72,6 +184,9 @@ try {
   function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
   var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+  function navigateTo(id){ var el=id&&document.getElementById(id); if(!el)return; var v=el.closest('.view'); if(v)setView(v.getAttribute('data-view')); el.scrollIntoView(); }
+  window.addEventListener('hashchange', function(){ navigateTo(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash) navigateTo(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>
 <script>

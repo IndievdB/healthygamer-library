@@ -9,7 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-} catch (e) {}
+  document.documentElement.setAttribute('data-view', 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -31,9 +32,140 @@ try {
     <span class="speakers-note">14:47 min</span>
   </p>
 
-  <div class="doc">
+  
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">1,627w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">2,876w</span></button>
     
-    <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
+  </div>
+  
+
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#summary-summary">Summary</a></li>
+<li><a href="#summary-how-the-feeling-gets-built-escalating-impossibility">How the Feeling Gets Built: Escalating Impossibility</a></li>
+<li><a href="#summary-how-your-mind-keeps-the-story-going">How Your Mind Keeps the Story Going</a></li>
+<li><a href="#summary-why-catching-up-makes-things-worse">Why "Catching Up" Makes Things Worse</a></li>
+<li><a href="#summary-the-fantasy-keeping-you-stuck">The Fantasy Keeping You Stuck</a></li>
+<li><a href="#summary-what-actually-moves-you-forward">What Actually Moves You Forward</a></li>
+<li><a href="#summary-common-pitfalls">Common Pitfalls</a></li>
+<li><a href="#summary-action-items-exercises">Action Items &amp; Exercises</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="summary-summary">Summary</h2>
+<p><strong>TL;DR — The feeling of "falling behind" is a mental construction, and the instinct to "catch up" is exactly what keeps you stuck. Moving forward requires dropping both ideas entirely.</strong></p>
+<p>Almost everyone has felt it: the creeping sense that time has passed, other people have moved on, and you're somehow stranded. This feeling isn't just discouraging — it can quietly become a source of <span class="gl" tabindex="0">depression<span class="gl-pop" role="tooltip"><span class="gl-def">A disruption in mood and functioning that exists on a spectrum — not a single, uniform illness.</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span>. Understanding where it comes from, how your mind amplifies it, and why the obvious solution (catching up) backfires is the first step toward actually getting unstuck.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-how-the-feeling-gets-built-escalating-impossibility">How the Feeling Gets Built: Escalating Impossibility</h2>
+<p>It starts small. Picture a test a month away. The rational plan is simple — one hour of studying per day. Totally manageable. But days pass without action, and here's what happens to that plan:</p>
+<ul>
+<li>Week one: "I still have 27 days — no big deal."</li>
+<li>Week two: The panic starts. "I'll need 1.5 hours a day. Still doable." But instead of starting, you distract yourself — video games, binge-watching — while a quiet voice in the back of your head keeps whispering <em>maybe I should start.</em></li>
+<li>Week three: Full panic. Paradoxically, the worse the feeling gets, the harder it is to open a book. So you party instead, trying to forget.</li>
+<li>Final days: Studying now requires five, eight hours a day. The window for a perfect score has closed. The whole thing feels impossible.</li>
+</ul>
+<p>Then the test happens. You walk out and immediately try to push the entire experience out of your mind.</p>
+<p>But here's the key question: <em>where does all that emotional energy go?</em></p>
+<p>It doesn't disappear. It gets buried. In Vedic psychology, this stored emotional residue is called a <strong><span class="gl" tabindex="0">Samskara<span class="gl-pop" role="tooltip"><span class="gl-def">A samskara is a ball of undigested emotional energy from past experiences that gets stored in the mind and automatically activates in present situations, distorting your perception of what&#x27;s actually happening.</span><a class="gl-more" href="../glossary.html#glossary-samskara">Full definition →</a></span></span></strong> — a dormant imprint in the mind that reactivates later and colors how you see yourself. Every time you told yourself <em>you should have started earlier, why didn't you, you're so dumb</em> — that energy compresses into a quiet but persistent belief: <em>I am someone who falls behind.</em></p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-how-your-mind-keeps-the-story-going">How Your Mind Keeps the Story Going</h2>
+<p>Once that <span class="gl" tabindex="0">Samskara<span class="gl-pop" role="tooltip"><span class="gl-def">A samskara is a ball of undigested emotional energy from past experiences that gets stored in the mind and automatically activates in present situations, distorting your perception of what&#x27;s actually happening.</span><a class="gl-more" href="../glossary.html#glossary-samskara">Full definition →</a></span></span> is active, it doesn't just make you feel bad — it recruits your intellect to prove that the feeling is true. This is important to understand: <strong>the emotion comes first, and the "evidence" gets assembled afterward.</strong></p>
+<p>Your mind scans your social environment and builds a kind of Frankenstein composite — the smartest person you know, the best-looking one, the most financially successful one, the most charismatic one — and then presents this imaginary super-person as the benchmark you're failing to meet. Meanwhile, the actual flaws and struggles of those real people get quietly ignored. The friend in investment banking has a serious drug problem. The handsome one is kind of awful. None of that makes the cut.</p>
+<blockquote>
+<p>"Your mind comes up with all of these logical reasons why things are not right and why the way that you feel is actually true."</p>
+</blockquote>
+<p>This is what makes the feeling so sticky. From the inside, the conclusion that you've fallen behind <em>feels like logic</em>. It feels like you've assessed the facts and reached a reasonable verdict. But the facts were cherry-picked by the emotion that was already there. You're not reasoning your way to a feeling — you're feeling your way to a reason.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-why-catching-up-makes-things-worse">Why "Catching Up" Makes Things Worse</h2>
+<p>Once the mind has convinced you that you've fallen behind, it offers an obvious prescription: <em>catch up.</em> Work harder. Make up for lost time. And this feels right — it feels like what any determined person would do.</p>
+<p>But catching up is actually paralyzing, and here's why.</p>
+<p><strong>Catching up is an action wrapped inside an expectation.</strong> The action you need to take (go to the gym, open the textbook, send the application) is identical regardless of whether you're "behind" or not. But when catching up is the frame, every step you take gets immediately evaluated against the distance still remaining. You go to the gym once — so what, you have a hundred pounds to lose. You study for an hour — so what, you've wasted two weeks. The action is real, but it feels like nothing.</p>
+<blockquote>
+<p>"The more my mind tells me, you need to catch up, you need to catch up, you need to catch up — the harder it is to actually take one step forward."</p>
+</blockquote>
+<p>The bigger the perceived deficit, the more insignificant any single action feels. Catching up doesn't motivate action — it smothers it.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-the-fantasy-keeping-you-stuck">The Fantasy Keeping You Stuck</h2>
+<p>So why is it so hard to just let go of the catching-up frame? Because embedded inside it is something deeply appealing: <strong>the redemption arc.</strong></p>
+<p>We're raised on stories where the hero, at their lowest point, digs deep and triumphs over everything. That structure is intoxicating. When you've been sitting with the <span class="gl" tabindex="0">shame<span class="gl-pop" role="tooltip"><span class="gl-def">The emotion triggered by a perceived gap between where you are and where you think you should be.</span><a class="gl-more" href="../glossary.html#glossary-shame">Full definition →</a></span></span> of feeling behind, your mind doesn't just want to move forward — it wants a <em>victory</em> big enough to cancel out all that stored pain.</p>
+<p>So if you're 26 and applying to medical school while your high school friend is already a surgical resident, your mind doesn't say "just apply." It says: <em>you need to get into Harvard. You need to become so impressive that you surpass her entirely. Then all of this will have been worth it.</em></p>
+<p>If you dropped out of college, ordinary success won't cut it — you need to start a billion-dollar company.</p>
+<p>The fantasy scales with the <span class="gl" tabindex="0">shame<span class="gl-pop" role="tooltip"><span class="gl-def">The emotion triggered by a perceived gap between where you are and where you think you should be.</span><a class="gl-more" href="../glossary.html#glossary-shame">Full definition →</a></span></span>. And here's the trap: <strong>telling yourself to stop catching up means giving up the fantasy of the triumphant comeback.</strong> It feels like quitting. Like settling. Like becoming "just a guy who's 26 and applying to medical school" instead of the hero who overcomes everything.</p>
+<p>But that fantasy is exactly what keeps you frozen. The <span class="gl" tabindex="0">desire<span class="gl-pop" role="tooltip"><span class="gl-def">One of the four classical Hindu goals of life, Kama is the pursuit of pleasure, desire, and sensory enjoyment — including but not limited to sexuality and lust.</span><a class="gl-more" href="../glossary.html#glossary-kama">Full definition →</a></span></span> to catch up, to have the big redemption, is what makes the next small step feel worthless — and so nothing gets done.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-what-actually-moves-you-forward">What Actually Moves You Forward</h2>
+<p>The way out isn't to try harder to catch up. It's to <strong>drop the entire construction</strong>.</p>
+<p>"Fallen behind" is a thought. "Catching up" is a thought. "Redemption" is a thought. None of it is the actual situation in front of you.</p>
+<p>The actual situation is simple: if you want to get in shape, the gym is what's next. If you want to get into medical school, the application is what's next. The path forward is identical whether you're "behind" or not — the only difference is the mental weight you're carrying while walking it.</p>
+<blockquote>
+<p>"Action can only be taken in the present. Moving forward may never let me catch up — but I don't need to catch up. All I really need to do to become unstuck is to move forward."</p>
+</blockquote>
+<p>Letting go of the catching-up frame doesn't mean lowering your ambitions. It means releasing the comparison, the emotional debt, and the need for a triumphant narrative — so that the next step actually feels like something worth taking.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-common-pitfalls">Common Pitfalls</h2>
+<ul>
+<li>
+<p><strong>Mistaking the emotion for logic.</strong> When your mind presents a list of reasons you're behind, it <em>feels</em> like you're being honest with yourself. You're not — you're watching a curated highlight reel of other people's lives while your own failures get magnified.</p>
+</li>
+<li>
+<p><strong>Thinking <span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">The internal mental state of holding a thought steady at the center of your mind — not a feeling, a behavior, or a special fire, but simply the capacity to keep one thought present without it being displaced.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span> will come before action.</strong> The catching-up frame keeps you waiting for a surge of energy or clarity that's "big enough" for the task. It rarely comes. The step comes first.</p>
+</li>
+<li>
+<p><strong>Confusing letting go of catching up with giving up.</strong> Dropping the redemption fantasy doesn't mean accepting stagnation. It means removing the mental load that's making every step feel pointless.</p>
+</li>
+<li>
+<p><strong>Trying to logic your way out of the feeling.</strong> Because the emotion came first, arguing with the evidence your mind assembled won't help much. Someone telling you "there are other fish in the sea" when you feel unlovable doesn't land — the feeling has to be addressed, not just the reasoning.</p>
+</li>
+<li>
+<p><strong>Using distraction as relief.</strong> Every time you bury the discomfort in entertainment or <span class="gl" tabindex="0">avoidance<span class="gl-pop" role="tooltip"><span class="gl-def">Avoidance is the largely subconscious impulse to move away from a negative emotion or the situation that triggers it, rather than moving toward something positive.</span><a class="gl-more" href="../glossary.html#glossary-avoidance">Full definition →</a></span></span>, the <span class="gl" tabindex="0">Samskara<span class="gl-pop" role="tooltip"><span class="gl-def">A samskara is a ball of undigested emotional energy from past experiences that gets stored in the mind and automatically activates in present situations, distorting your perception of what&#x27;s actually happening.</span><a class="gl-more" href="../glossary.html#glossary-samskara">Full definition →</a></span></span> gets reinforced rather than resolved. The relief is real but temporary, and the emotional residue compounds.</p>
+</li>
+</ul>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-action-items-exercises">Action Items &amp; Exercises</h2>
+<ol>
+<li>
+<p><strong>Catch the Frankenstein composite.</strong> When you notice yourself feeling behind, write down the specific people you're comparing yourself to and what, exactly, you're comparing. Then deliberately write down one real struggle or flaw each of those people has that your mind was ignoring.</p>
+</li>
+<li>
+<p><strong>Separate the action from the frame.</strong> Ask yourself: "What is the actual next step, independent of whether I'm behind or not?" Write it down as a plain action — not "catch up on my fitness" but "go for a 20-minute walk today." Strip the comparison out of the task.</p>
+</li>
+<li>
+<p><strong>Notice the redemption fantasy.</strong> When you feel the pull to set an enormous compensatory goal (top school, massive achievement, total transformation), pause and ask: "Is this goal scaled to what I actually want, or is it scaled to how ashamed I feel?" You don't have to abandon ambition — just be honest about what's driving its size.</p>
+</li>
+<li>
+<p><strong>Do the next step anyway — without evaluating it against the gap.</strong> After taking one small action, resist the urge to immediately measure it against how far you still have to go. The only question worth asking is: "Did I move forward today?"</p>
+</li>
+<li>
+<p><strong>Sit with the buried emotion instead of burying it further.</strong> When the feeling of being behind surfaces, try not to immediately distract yourself. Sit with it for a few minutes. Notice it as a feeling, not as a factual report about your life. This is how <span class="gl" tabindex="0">Samskaras<span class="gl-pop" role="tooltip"><span class="gl-def">A samskara is a ball of undigested emotional energy from past experiences that gets stored in the mind and automatically activates in present situations, distorting your perception of what&#x27;s actually happening.</span><a class="gl-more" href="../glossary.html#glossary-samskara">Full definition →</a></span></span> lose their grip over time — not by being argued away, but by being felt and released rather than suppressed.</p>
+</li>
+</ol>
+</section></article>
+    </div>
+  </div>
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      
+      <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
 <p>- One source of feeling depressed is the persistent feeling of falling behind. And I see this way too often, that people are feeling like they&#x27;ve fallen behind and everyone else is kind of moving on with their life and here I am, kind of stuck, unable to catch up. And so in order to understand and overcome the sense of falling behind, we&#x27;re gonna start by sort of exploring where it comes from, then we&#x27;re gonna look at how it manifests in the mind, then we&#x27;re gonna take a look at what our mind normally tries to do to fix it. And finally, we&#x27;ll show you guys a different way to overcome this sensation.</p>
 <p>So to begin with, the sense of falling behind starts with something that I usually call the problem of escalating impossibility. So this is best illustrated if you think about procrastinating before a test. So let&#x27;s say that I have a test that&#x27;s a month away and I kind of look at my syllabus and I say, okay, I need to study one hour a day for the rest of the month and I&#x27;ll be fine, one hour a day for one month and I&#x27;m gonna get an A on the test, no problem. And so is that what we actually do? Absolutely not. A couple of days go by, we&#x27;re definitely not gonna study because our mind is telling us, &quot;Hey, I have plenty of time, I just need to study one hour a day, we have 27 days left, no big deal, we&#x27;re good.&quot;</p>
 <p>And then a week goes by and now you start to have this little thought in the back of your mind, hey, maybe I should start studying, actually a week has gone by and I haven&#x27;t even cracked the books, not even once. I&#x27;m gonna have to study about maybe 1.5 hours a day but that&#x27;s still super manageable. I can do that every single day. And then as that thought crawls up in the back of your mind, you actually try to push it away, right? So we start to distract ourselves by maybe playing video games or watching TV or whatever. In the back of your mind, your thought is there as you watch each episode, binge-watching, oh, maybe I should start studying now, maybe I should start studying now.</p>
@@ -57,15 +189,21 @@ try {
 <p>So the <span class="gl" tabindex="0">desire<span class="gl-pop" role="tooltip"><span class="gl-def">One of the four classical Hindu goals of life, Kama is the pursuit of pleasure, desire, and sensory enjoyment — including but not limited to sexuality and lust.</span><a class="gl-more" href="../glossary.html#glossary-kama">Full definition →</a></span></span> to catch up is actually what keeps us stuck. And if you really wanna move forward, you have to let that go, you have to let go of the entire construction. Because what does it mean to have fallen behind? It&#x27;s a construct of the mind. What does it mean to catch up? It&#x27;s a construct of the mind. What does it mean to have triumph and redemption? It&#x27;s all thoughts in my head. If I meet my friend next year at the Christmas party, it&#x27;s just a conversation I&#x27;m gonna have. If I&#x27;m in medical school, I&#x27;m in medical school. If I&#x27;ve caught up, I&#x27;ve caught up. If I haven&#x27;t, whatever, it&#x27;s all the same.</p>
 <p>If I&#x27;m a medical student, I&#x27;m a medical student. Reality is one thing and we just layer a construct on top of it. So the way to move forward is to let go of catching up. The way to move forward is to recognize that action can only be taken in the present and moving forward may never let me catch up, but I don&#x27;t need to catch up. All I really need to do to become unstuck is to move forward. And so the problem of falling behind, the <span class="gl" tabindex="0">Samskara<span class="gl-pop" role="tooltip"><span class="gl-def">A samskara is a ball of undigested emotional energy from past experiences that gets stored in the mind and automatically activates in present situations, distorting your perception of what&#x27;s actually happening.</span><a class="gl-more" href="../glossary.html#glossary-samskara">Full definition →</a></span></span> of falling behind is something that people struggle with a lot. And my hope is that by understanding how it&#x27;s born, how it manifests, how our mind tries to deal with it, we can actually take a slightly different approach, we can unplug that entire mental construction and start to actually do something that moves our life in the right direction.</p>
 </section></article>
+    </div>
   </div>
+  
 
-  <p class="meta">Transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">Depression<span class="gl-pop" role="tooltip"><span class="gl-def">A disruption in mood and functioning that exists on a spectrum — not a single, uniform illness.</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span> → Common Manifestations of <span class="gl" tabindex="0">Depression<span class="gl-pop" role="tooltip"><span class="gl-def">A disruption in mood and functioning that exists on a spectrum — not a single, uniform illness.</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span>). Captions auto-generated.</p>
+  <p class="meta">Medium summary + transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">Depression<span class="gl-pop" role="tooltip"><span class="gl-def">A disruption in mood and functioning that exists on a spectrum — not a single, uniform illness.</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span> → Common Manifestations of <span class="gl" tabindex="0">Depression<span class="gl-pop" role="tooltip"><span class="gl-def">A disruption in mood and functioning that exists on a spectrum — not a single, uniform illness.</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span>). Captions auto-generated; summary by claude-sonnet-4-6.</p>
 </div>
 
 <script>
 (function () {
   var root = document.documentElement;
-  var tb = document.querySelector('.theme-toggle');
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'medium');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
   var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
   tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
@@ -73,6 +211,9 @@ try {
   function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
   var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+  function navigateTo(id){ var el=id&&document.getElementById(id); if(!el)return; var v=el.closest('.view'); if(v)setView(v.getAttribute('data-view')); el.scrollIntoView(); }
+  window.addEventListener('hashchange', function(){ navigateTo(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash) navigateTo(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>
 <script>

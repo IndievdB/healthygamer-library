@@ -9,7 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-} catch (e) {}
+  document.documentElement.setAttribute('data-view', 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -31,9 +32,116 @@ try {
     <span class="speakers-note">12:53 min</span>
   </p>
 
-  <div class="doc">
+  
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">1,517w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">2,597w</span></button>
     
-    <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
+  </div>
+  
+
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#summary-summary">Summary</a></li>
+<li><a href="#summary-the-two-traps-fighting-and-feeding">The Two Traps: Fighting and Feeding</a></li>
+<li><a href="#summary-a-case-study-in-feeding-the-beast">A Case Study in Feeding the Beast</a></li>
+<li><a href="#summary-why-reassurance-seeking-backfires">Why Reassurance-Seeking Backfires</a></li>
+<li><a href="#summary-the-third-option-acknowledgment-without-action">The Third Option: Acknowledgment Without Action</a></li>
+<li><a href="#summary-the-minds-hunger-is-always-there">The Mind's Hunger Is Always There</a></li>
+<li><a href="#summary-common-pitfalls">Common Pitfalls</a></li>
+<li><a href="#summary-action-items-exercises">Action Items &amp; Exercises</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="summary-summary">Summary</h2>
+<p><strong>TL;DR — <span class="gl" tabindex="0">Anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> grows when you feed it. The only lasting path through is learning to acknowledge it without either fighting it or giving in.</strong></p>
+<p>Most people try one of two strategies with <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span>: suppress it or surrender to it. Both backfire. Fighting anxious thoughts tends to make them louder and more insistent. Giving in — avoiding the situation, checking the phone, taking the reassurance — relieves the feeling briefly but trains the brain to need relief more often and more urgently. The actual solution is a third option that most people never try: sitting with the <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> and acknowledging it without acting on it.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-the-two-traps-fighting-and-feeding">The Two Traps: Fighting and Feeding</h2>
+<p>When an anxious thought shows up, the gut reaction is to push it away. That works exactly as well as trying not to think about a pink elephant — the thought comes back, usually stronger.</p>
+<p>The other instinct is to do whatever makes the feeling stop. Avoid the scary situation. Check the texts. Seek the reassurance. This works beautifully in the short term, which is precisely the problem. Every time a behavior reduces <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span>, the brain logs that behavior as useful and reinforces it. The relief you feel is positive reinforcement — the same mechanism that makes a dog keep coming back to whoever fed it last.</p>
+<blockquote>
+<p>"Every time that we give in to <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> it actually grows a little bit stronger. And just like a dog it becomes hungrier and actually needs more food."</p>
+</blockquote>
+<p>Over time, the behavior you used to calm yourself down becomes compulsive. You don't choose it anymore; you <em>need</em> it. And the threshold for needing it keeps dropping.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-a-case-study-in-feeding-the-beast">A Case Study in Feeding the Beast</h2>
+<p>Consider a woman who had been cheated on by a previous partner and later moved in with a kind, trustworthy new boyfriend. A small, understandable doubt crept in: <em>what if he's doing something shady?</em></p>
+<p>At first she suppressed it. Then one night she opened his phone, found nothing wrong, and felt immediate relief. That relief was the first feeding. A few days later the thought returned — and this time she didn't wait as long before checking. Over weeks it became part of her nightly routine, as automatic as brushing her teeth.</p>
+<p>When her boyfriend eventually caught her, she fought the urge hard for months. But then she met one of his coworkers at a happy hour and noticed chemistry between them. The <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> came roaring back. She resumed checking — more carefully this time, cleverly avoiding messages marked as unread.</p>
+<p>The outcome was worse than before. Even benign texts between him and his coworker started looking suspicious. The more she checked, the more paranoid she became; the more paranoid she became, the more she needed to check. Checking was supposed to produce certainty; instead it produced a hunger for more certainty.</p>
+<blockquote>
+<p>"She was positively reinforcing the behavior that reduces <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> by giving into it."</p>
+</blockquote>
+<p>There is also a subtler cost. Every time she checked the phone to <em>know for sure</em>, she was quietly eroding trust. Trust is not the state of having 100% certainty. It is the willingness to <em>not</em> have 100% certainty — to extend faith into the gap. Each check was practice in the opposite of trust.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-why-reassurance-seeking-backfires">Why Reassurance-Seeking Backfires</h2>
+<p>This pattern isn't unique to relationship <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span>. Think about anxiolytic medications — drugs that chemically reduce <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span>. If every time you feel anxious you take a pill that makes the feeling stop, you are reinforcing the idea that the only way to manage <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> is an external chemical fix. The <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> itself gets stronger because the brain learns it will be "answered."</p>
+<p>Checking texts, avoiding social situations, asking a friend to confirm you're not a bad person, Googling symptoms at 2 a.m. — these are all forms of the same loop. The specific behavior is different, but the reinforcement structure is identical. You teach your brain that the anxious feeling is a valid signal that demands a response, and the brain obliges by sending that signal more often.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-the-third-option-acknowledgment-without-action">The Third Option: Acknowledgment Without Action</h2>
+<p>The solution is not to white-knuckle your way through <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> (fighting) or to let the anxious behavior take over (feeding). It is to notice the <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> openly and sit with it.</p>
+<p>This is harder than it sounds because acknowledging <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> is often confused with acting on it. They are not the same thing. Acknowledgment means you say — to yourself, or out loud to someone you trust — <em>"I'm feeling anxious, and I want to check the phone."</em> You name it. You don't pretend it isn't there. And then you don't check.</p>
+<p>In the case above, her boyfriend became a partner in this process. When she felt the urge, she would tell him directly. He would offer to hand over the phone. She would usually say no. Sometimes she said yes — and that was okay too. The key was that the <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> was no longer a secret monster being fed in the dark. It was a named, acknowledged feeling that she sat with rather than acted on.</p>
+<blockquote>
+<p>"The more that we acknowledge <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span>, we don't give into it, but we also don't fight it, the weaker it becomes."</p>
+</blockquote>
+<p>The feeling doesn't vanish overnight. It recedes gradually, the way a fire shrinks when you stop feeding it. Eventually it lives quietly under the surface — still occasionally present, but no longer in control.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-the-minds-hunger-is-always-there">The Mind's Hunger Is Always There</h2>
+<p>There's a useful illustration of this built into the talk itself: the moment a story is left unfinished, your mind creates a small, real hunger to know what happened. You can feel it if you pay attention. It's not dramatic — just a low-level pull, a need for closure.</p>
+<p>Here's what's interesting: the moment you <em>notice</em> that hunger and name it as such, it softens a little. It doesn't disappear, but <span class="gl" tabindex="0">awareness<span class="gl-pop" role="tooltip"><span class="gl-def">The capacity to accurately receive and process information about what is happening — in your environment, your body, or your mind — so that your brain can respond appropriately.</span><a class="gl-more" href="../glossary.html#glossary-awareness">Full definition →</a></span></span> alone reduces its grip. That's the same mechanism at work with <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span>. Bringing a feeling into conscious view — saying "there's that hunger again" — interrupts the automatic loop between feeling and behavior.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-common-pitfalls">Common Pitfalls</h2>
+<p><strong>Mistaking suppression for strength.</strong> Refusing to acknowledge <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> because you don't want to "give in" is still a form of <span class="gl" tabindex="0">avoidance<span class="gl-pop" role="tooltip"><span class="gl-def">Avoidance is the largely subconscious impulse to move away from a negative emotion or the situation that triggers it, rather than moving toward something positive.</span><a class="gl-more" href="../glossary.html#glossary-avoidance">Full definition →</a></span></span>. It's just <span class="gl" tabindex="0">avoidance<span class="gl-pop" role="tooltip"><span class="gl-def">Avoidance is the largely subconscious impulse to move away from a negative emotion or the situation that triggers it, rather than moving toward something positive.</span><a class="gl-more" href="../glossary.html#glossary-avoidance">Full definition →</a></span></span> that feels virtuous. Suppression and surrender are two sides of the same coin; neither actually reduces the <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> over time.</p>
+<p><strong>Treating temporary relief as evidence of a solution.</strong> Checking the texts works. It just works in the same way a painkiller works on a broken leg: the pain decreases, but nothing heals. When something reliably makes you feel better in the short run, it's worth asking whether it's making things worse in the long run.</p>
+<p><strong>Believing acknowledgment is the same as giving in.</strong> Saying "I feel anxious and I want to avoid this situation" is not the same as avoiding the situation. The acknowledgment is the therapy. The <span class="gl" tabindex="0">avoidance<span class="gl-pop" role="tooltip"><span class="gl-def">Avoidance is the largely subconscious impulse to move away from a negative emotion or the situation that triggers it, rather than moving toward something positive.</span><a class="gl-more" href="../glossary.html#glossary-avoidance">Full definition →</a></span></span> is the problem.</p>
+<p><strong>Trying to fix <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> with certainty.</strong> <span class="gl" tabindex="0">Anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> about relationships, health, the future — these often push people toward gathering more information, seeking more confirmation. But certainty is not actually available for most of the things we are anxious about. Chasing it teaches the brain that uncertainty is intolerable, which makes everything harder.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-action-items-exercises">Action Items &amp; Exercises</h2>
+<ol>
+<li>
+<p><strong>Name the feeling before acting.</strong> The next time you feel an anxious urge — to check something, avoid something, ask for reassurance — pause and say (internally or aloud) exactly what you're feeling. "I'm anxious. I want to check." Just naming it, then waiting a few minutes, is a complete practice session.</p>
+</li>
+<li>
+<p><strong>Trace your reassurance behaviors.</strong> Write down the things you do regularly to reduce <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span>. Phone checks, avoidances, searches, asking people "am I okay?" Look at how the behavior has changed over time — has it increased in frequency? Do you need more of it than you used to? This tells you whether you've been feeding the beast.</p>
+</li>
+<li>
+<p><strong>Sit with the feeling for a set amount of time.</strong> When the urge to act hits, set a short timer — even two or three minutes. You're not committing to never addressing the <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span>. You're just not acting on it <em>right now</em>. Notice what happens to the intensity of the feeling while the timer runs.</p>
+</li>
+<li>
+<p><strong>Bring a trusted person into the loop.</strong> If there's someone you trust, practice saying the anxious thought out loud to them without asking them to resolve it. "I'm feeling really paranoid right now and I want to check X" is different from "please tell me I have nothing to worry about." The first builds <span class="gl" tabindex="0">tolerance<span class="gl-pop" role="tooltip"><span class="gl-def">The use of a chemical (alcohol, opioids, cannabis, caffeine, etc.) that produces neurological effects your brain then adapts to — leading to tolerance, withdrawal, and, potentially, addiction.</span><a class="gl-more" href="../glossary.html#glossary-substance-use">Full definition →</a></span></span>; the second is just asking someone else to feed the beast for you.</p>
+</li>
+<li>
+<p><strong>Notice the hunger in small, low-stakes moments.</strong> Pay attention to minor versions of this — the pull to find out how a story ends, to check if someone texted back, to look up a trivial answer. Each one is a small, safe opportunity to practice noticing the hunger without immediately satisfying it. These small reps build the capacity for the harder situations.</p>
+</li>
+</ol>
+</section></article>
+    </div>
+  </div>
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      
+      <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
 <p>- The big challenge with <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> is that you can&#x27;t beat it and you can&#x27;t give into it. So, we&#x27;ve looked at a little bit at how when you try to fight the <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> within you how it actually increases the tension in the mind and makes the <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> worse. And at the opposite end of the spectrum you may think, and a lot of people actually do do this, that the best way to deal with <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> is just to give into it, right? If I have anxious thoughts about let&#x27;s say avoiding a particular situation, and I just avoid the situation, then my <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> kind of goes away. But it turns out that if you give into <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> it actually just grows even stronger.</p>
 <p>And this is an interesting part of the mind is that if you reinforce a certain thought process, just like if you feed let&#x27;s say a dog, what happens to the dog that you feed, it grows. So, every time that we give in to <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> it actually grows a little bit stronger. And just like a dog it becomes hungrier and actually needs more food. So, I&#x27;d love to share with you all a story of a patient that I worked with that kind of illustrates this point. I was working with a young woman who came to me during a divorce. She&#x27;d been married for a couple of years. And it turned out that her husband had been unfaithful.</p>
 <p>So she was kind of going through the process of divorce. So we kind of worked through some of that <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span>. Then she kinda got back on her feet, started dating again, actually found a really fantastic guy. Things were going really well, so she sort of moved in with him. And that&#x27;s when some of these anxieties started kind of popping up in her head. So she started to think in the back of her mind, you know, just a tiny little tickle, just a little thought. She liked this new guy who was fantastic, nothing like her old husband. But still there was this little niggling doubt in the back of her mind.</p>
@@ -57,15 +165,21 @@ try {
 <p>And he&#x27;d be like, cool, do you need the phone? And she&#x27;s like, no, I&#x27;m okay. So, the more that we acknowledge <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span>, we don&#x27;t give into it, but we also don&#x27;t fight it, the weaker it becomes. And once it becomes like it sort of lives underneath the surface. So, really, what we want to do when it comes to <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> is to recognize that if we try to fight it and squash it down it&#x27;s gonna come roaring back. If we give into it what it&#x27;s actually gonna do is feed the beast because we&#x27;re positively reinforcing the behavior that reduces our <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> by giving into it. We don&#x27;t want to reinforce those kinds of behaviors.</p>
 <p>Instead, what we want to do is learn how to sit with our <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span>, learn how to acknowledge it. And if you can learn how to sit with it and not give into it, it&#x27;ll actually start to melt away. And that&#x27;s gonna be a far more permanent solution to <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span>.</p>
 </section></article>
+    </div>
   </div>
+  
 
-  <p class="meta">Transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">Anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> → <span class="gl" tabindex="0">Anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> & Behavior). Captions auto-generated.</p>
+  <p class="meta">Medium summary + transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">Anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> → <span class="gl" tabindex="0">Anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response to new, unfamiliar, or high-stakes situations — one that actually helps you perform.</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> & Behavior). Captions auto-generated; summary by claude-sonnet-4-6.</p>
 </div>
 
 <script>
 (function () {
   var root = document.documentElement;
-  var tb = document.querySelector('.theme-toggle');
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'medium');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
   var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
   tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
@@ -73,6 +187,9 @@ try {
   function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
   var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+  function navigateTo(id){ var el=id&&document.getElementById(id); if(!el)return; var v=el.closest('.view'); if(v)setView(v.getAttribute('data-view')); el.scrollIntoView(); }
+  window.addEventListener('hashchange', function(){ navigateTo(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash) navigateTo(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>
 <script>

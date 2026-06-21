@@ -9,7 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-} catch (e) {}
+  document.documentElement.setAttribute('data-view', 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -31,9 +32,175 @@ try {
     <span class="speakers-note">19:54 min</span>
   </p>
 
-  <div class="doc">
+  
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">1,516w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">3,365w</span></button>
     
-    <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
+  </div>
+  
+
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#summary-summary">Summary</a></li>
+<li><a href="#summary-the-five-layers-of-a-human-being">The Five Layers of a Human Being</a></li>
+<li><a href="#summary-how-depression-lives-in-each-layer">How Depression Lives in Each Layer</a></li>
+<li><a href="#summary-why-treating-only-one-layer-falls-short">Why Treating Only One Layer Falls Short</a></li>
+<li><a href="#summary-practical-interventions-layer-by-layer">Practical Interventions, Layer by Layer</a></li>
+<li><a href="#summary-common-pitfalls">Common Pitfalls</a></li>
+<li><a href="#summary-action-items-exercises">Action Items &amp; Exercises</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="summary-summary">Summary</h2>
+<p><strong>TL;DR — <span class="gl" tabindex="0">Depression<span class="gl-pop" role="tooltip"><span class="gl-def">A disruption in mood and functioning that exists on a spectrum — not a single, uniform illness.</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span> isn't one thing happening in one place; it's a disruption across five distinct layers of the self, and lasting recovery requires addressing all of them.</strong></p>
+<p>Most people understand <span class="gl" tabindex="0">depression<span class="gl-pop" role="tooltip"><span class="gl-def">A disruption in mood and functioning that exists on a spectrum — not a single, uniform illness.</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span> as either a brain chemistry problem (fix it with medication) or a psychological problem (fix it with therapy). That framing forces a false choice. A more complete picture — drawn from a framework yogis in India developed thousands of years ago called <strong>Panchakosha theory</strong> — shows that <span class="gl" tabindex="0">depression<span class="gl-pop" role="tooltip"><span class="gl-def">A disruption in mood and functioning that exists on a spectrum — not a single, uniform illness.</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span> operates simultaneously on five different levels of a person. Once you see those levels clearly, you can build a genuinely comprehensive plan instead of hoping one tool does all the work.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-the-five-layers-of-a-human-being">The Five Layers of a Human Being</h2>
+<p><strong>Panchakosha</strong> (Sanskrit: <em>pancha</em> = five, <em>kosha</em> = sheath or covering) holds that every human being is composed of five nested layers:</p>
+<ol>
+<li><strong>Annamaya kosha — the physical body.</strong> The tangible, biological you: tissues, organs, neurochemistry.</li>
+<li><strong>Pranamaya kosha — the energetic body.</strong> Your vital life energy (called <em><span class="gl" tabindex="0">prana<span class="gl-pop" role="tooltip"><span class="gl-def">Your basic unit of life force energy — the vital animating force that keeps you alive, known as qi in the Chinese system.</span><a class="gl-more" href="../glossary.html#glossary-prana">Full definition →</a></span></span></em> in India, <em>chi</em> in China). This is the dimension a doctor can't capture in a blood test, yet everyone recognizes it — the difference between a day when you feel alive and a day when you feel completely drained.</li>
+<li><strong>Manomaya kosha — the emotional body.</strong> The felt experience of emotions: sadness, joy, anger, <span class="gl" tabindex="0">shame<span class="gl-pop" role="tooltip"><span class="gl-def">The emotion triggered by a perceived gap between where you are and where you think you should be.</span><a class="gl-more" href="../glossary.html#glossary-shame">Full definition →</a></span></span>.</li>
+<li><strong>Vijnanamaya kosha — the intellectual body.</strong> Critical thinking, analysis, understanding — and crucially, <strong><span class="gl" tabindex="0">identity<span class="gl-pop" role="tooltip"><span class="gl-def">A stable sense of who you are, built from the narrative integration of emotionally salient experiences — not a fixed trait you possess, but a story you construct by stringing together the moments in your life that…</span><a class="gl-more" href="../glossary.html#glossary-identity">Full definition →</a></span></span></strong>. The story you hold about who you are lives here.</li>
+<li><strong>Anandamaya kosha — the spiritual body.</strong> The dimension that transcends the other four. This is where <strong>meaning and purpose</strong> live — the sense that your existence matters and is pointed somewhere.</li>
+</ol>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-how-depression-lives-in-each-layer">How Depression Lives in Each Layer</h2>
+<p><span class="gl" tabindex="0">Depression<span class="gl-pop" role="tooltip"><span class="gl-def">A disruption in mood and functioning that exists on a spectrum — not a single, uniform illness.</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span> doesn't pick one layer and leave the rest alone. It shows up everywhere:</p>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>How <span class="gl" tabindex="0">depression<span class="gl-pop" role="tooltip"><span class="gl-def">A disruption in mood and functioning that exists on a spectrum — not a single, uniform illness.</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span> appears</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Physical</td>
+<td>Neurochemical imbalance (e.g., low <span class="gl" tabindex="0">serotonin<span class="gl-pop" role="tooltip"><span class="gl-def">A neurotransmitter associated with contentment and peace — distinct from dopamine&#x27;s excitement and pleasure — whose levels are clinically linked to depression and anxiety.</span><a class="gl-more" href="../glossary.html#glossary-serotonin">Full definition →</a></span></span>); low energy; disrupted <span class="gl" tabindex="0">sleep<span class="gl-pop" role="tooltip"><span class="gl-def">Sleep is the period during which the brain converts short-term memories stored in the hippocampus into stable long-term memories — a process called memory consolidation.</span><a class="gl-more" href="../glossary.html#glossary-sleep">Full definition →</a></span></span> and appetite</td>
+</tr>
+<tr>
+<td>Energetic</td>
+<td>Sluggish or blocked <span class="gl" tabindex="0">prana<span class="gl-pop" role="tooltip"><span class="gl-def">Your basic unit of life force energy — the vital animating force that keeps you alive, known as qi in the Chinese system.</span><a class="gl-more" href="../glossary.html#glossary-prana">Full definition →</a></span></span>/chi — the "can't get out of bed" heaviness that blood work won't explain</td>
+</tr>
+<tr>
+<td>Emotional</td>
+<td>Persistent sadness, guilt, <span class="gl" tabindex="0">shame<span class="gl-pop" role="tooltip"><span class="gl-def">The emotion triggered by a perceived gap between where you are and where you think you should be.</span><a class="gl-more" href="../glossary.html#glossary-shame">Full definition →</a></span></span>, mood crashes</td>
+</tr>
+<tr>
+<td>Intellectual</td>
+<td>A constructed <strong>negative <span class="gl" tabindex="0">identity<span class="gl-pop" role="tooltip"><span class="gl-def">A stable sense of who you are, built from the narrative integration of emotionally salient experiences — not a fixed trait you possess, but a story you construct by stringing together the moments in your life that…</span><a class="gl-more" href="../glossary.html#glossary-identity">Full definition →</a></span></span></strong> — "I am a failure," "I have no value" — which then generates more emotion</td>
+</tr>
+<tr>
+<td>Spiritual</td>
+<td>Loss of meaning, directionlessness, the feeling that life isn't worth living even when externally everything looks fine</td>
+</tr>
+</tbody>
+</table>
+<p>The <span class="gl" tabindex="0">identity<span class="gl-pop" role="tooltip"><span class="gl-def">A stable sense of who you are, built from the narrative integration of emotionally salient experiences — not a fixed trait you possess, but a story you construct by stringing together the moments in your life that…</span><a class="gl-more" href="../glossary.html#glossary-identity">Full definition →</a></span></span> piece in the intellectual layer is worth pausing on. The belief <em>I am a worthless person</em> isn't purely an emotion — it's a cognitive construction, an idea the mind holds as fact. Emotions grow out of it, but the root is intellectual. That distinction matters for how you treat it.</p>
+<blockquote>
+<p>"Even if you suffer from physical problems, like low energy, and even if you feel sad, if you have a wonderful purpose for existence, if you have something that's driving you forward — that flame kindling in your belly — you can actually overcome <span class="gl" tabindex="0">depression<span class="gl-pop" role="tooltip"><span class="gl-def">A disruption in mood and functioning that exists on a spectrum — not a single, uniform illness.</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span>."</p>
+</blockquote>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-why-treating-only-one-layer-falls-short">Why Treating Only One Layer Falls Short</h2>
+<p>Antidepressant medication works on the physical layer. It can genuinely reduce symptoms — but it leaves the energetic, emotional, intellectual, and spiritual layers completely untouched. That's not a reason to avoid medication; it's a reason not to stop there.</p>
+<p>The same logic runs in reverse. Pure talk therapy may reshape your emotional and intellectual layers while your physical body stays depleted — low vitamin D, poor diet, no movement — and your sense of purpose remains absent. Progress stalls.</p>
+<p><strong>Sustained remission, or anything close to a cure, tends to happen when all five layers are addressed together.</strong></p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-practical-interventions-layer-by-layer">Practical Interventions, Layer by Layer</h2>
+<h3 id="summary-physical-layer">Physical layer</h3>
+<ul>
+<li><strong>Medication or herbal support</strong> when neurochemical imbalance is present</li>
+<li><strong>Diet</strong> — what you eat affects your gut microbiome, and gut bacteria produce neurotransmitters that are deficient in <span class="gl" tabindex="0">depression<span class="gl-pop" role="tooltip"><span class="gl-def">A disruption in mood and functioning that exists on a spectrum — not a single, uniform illness.</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span></li>
+<li><strong>Sunlight and vitamin D</strong> — deficiency is strongly linked to <span class="gl" tabindex="0">depression<span class="gl-pop" role="tooltip"><span class="gl-def">A disruption in mood and functioning that exists on a spectrum — not a single, uniform illness.</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span> and is one of the first things worth checking</li>
+</ul>
+<h3 id="summary-energetic-layer">Energetic layer</h3>
+<ul>
+<li><strong>Yoga</strong> — not as a flexibility or fitness practice, but as an <em>energetic</em> practice designed specifically to move and balance <span class="gl" tabindex="0">prana<span class="gl-pop" role="tooltip"><span class="gl-def">Your basic unit of life force energy — the vital animating force that keeps you alive, known as qi in the Chinese system.</span><a class="gl-more" href="../glossary.html#glossary-prana">Full definition →</a></span></span></li>
+<li><strong><span class="gl" tabindex="0">Pranayama<span class="gl-pop" role="tooltip"><span class="gl-def">Pranayama is the yogic practice of deliberate breath control used to regulate prana — the body&#x27;s vital energy — and directly influence the nervous system.</span><a class="gl-more" href="../glossary.html#glossary-pranayama">Full definition →</a></span></span></strong> (breathwork) — directly regulates life energy</li>
+<li><strong>Tai chi / qi gong</strong> — other traditions' equivalents</li>
+</ul>
+<blockquote>
+<p>"Yoga actually isn't a physical practice. It's an energetic practice. The yogis developed all of these postures, and when we turn ourselves into a human pretzel, it has nothing to do with our physical body and everything to do with how it stimulates our energy flow."</p>
+</blockquote>
+<p>This is why clinical studies show yoga statistically outperforming regular exercise for <span class="gl" tabindex="0">depression<span class="gl-pop" role="tooltip"><span class="gl-def">A disruption in mood and functioning that exists on a spectrum — not a single, uniform illness.</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span>, even though exercise is physically more intense — yoga was designed with the energetic layer in mind.</p>
+<h3 id="summary-emotional-layer">Emotional layer</h3>
+<ul>
+<li><strong>Psychotherapy</strong> (especially psychodynamic approaches that create emotional breakthroughs)</li>
+<li><strong>Journaling</strong></li>
+<li><strong>Spending time in nature</strong></li>
+<li><strong>Connection with friends</strong> — genuine emotional sharing, not just distraction</li>
+</ul>
+<h3 id="summary-intellectual-layer">Intellectual layer</h3>
+<ul>
+<li><strong><span class="gl" tabindex="0">CBT<span class="gl-pop" role="tooltip"><span class="gl-def">A structured, results-focused form of psychotherapy that works by breaking a problem — say, procrastination or social anxiety — down into its three components: thoughts, emotions, and behaviors, then targeting each one…</span><a class="gl-more" href="../glossary.html#glossary-cognitive-behavioral-therapy-cbt">Full definition →</a></span></span> and related therapies</strong> — work on the relationship between thoughts, beliefs, and behaviors; help you recognize patterns</li>
+<li><strong>Reading and contemplation</strong> — books like <em>Meditations</em> by Marcus Aurelius have genuinely shifted how people see the world</li>
+<li><strong><span class="gl" tabindex="0">Meditation<span class="gl-pop" role="tooltip"><span class="gl-def">Meditation is the practice of focusing consciousness completely — until thinking itself falls away and you exist in a state of pure awareness with no mental activity.</span><a class="gl-more" href="../glossary.html#glossary-meditation">Full definition →</a></span></span></strong> (as a practice of observing thought patterns and loosening fixed identities)</li>
+<li><strong>Coaching</strong> — structured examination of the stories and identities you carry</li>
+</ul>
+<h3 id="summary-spiritual-layer">Spiritual layer</h3>
+<ul>
+<li><strong><span class="gl" tabindex="0">Meditation<span class="gl-pop" role="tooltip"><span class="gl-def">Meditation is the practice of focusing consciousness completely — until thinking itself falls away and you exist in a state of pure awareness with no mental activity.</span><a class="gl-more" href="../glossary.html#glossary-meditation">Full definition →</a></span></span></strong> (here as a practice for reconnecting with the deepest layer of self)</li>
+<li><strong>Finding <span class="gl" tabindex="0">dharma<span class="gl-pop" role="tooltip"><span class="gl-def">Dharma is your duty or responsibility in life — not a grand cosmic purpose, but the ongoing attitude of doing right by yourself and the people around you.</span><a class="gl-more" href="../glossary.html#glossary-dharma">Full definition →</a></span></span></strong> — your sense of <span class="gl" tabindex="0">duty<span class="gl-pop" role="tooltip"><span class="gl-def">Dharma is your duty or responsibility in life — not a grand cosmic purpose, but the ongoing attitude of doing right by yourself and the people around you.</span><a class="gl-more" href="../glossary.html#glossary-dharma">Full definition →</a></span></span>, your reason to exist, the thing that makes getting up in the morning feel like it means something</li>
+</ul>
+<p>The spiritual layer is arguably the hardest to work on and arguably the most important. Many people who walk into a psychiatrist's office aren't clinically depressed in the neurochemical sense at all — they have good careers, good relationships — and yet life feels hollow. No medication and no amount of therapy fully resolves that, because the problem isn't in those layers. It's a spiritual problem requiring a spiritual answer.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-common-pitfalls">Common Pitfalls</h2>
+<p><strong>Treating <span class="gl" tabindex="0">depression<span class="gl-pop" role="tooltip"><span class="gl-def">A disruption in mood and functioning that exists on a spectrum — not a single, uniform illness.</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span> as a single-cause problem.</strong> Grabbing only the biological explanation (or only the psychological one) and running with it produces incomplete treatment. Both camps are right — they're just each describing one layer.</p>
+<p><strong>Expecting medication to do everything.</strong> Medication can be a genuinely important part of recovery, but it is a physical-layer intervention. Stopping at medication leaves four layers unaddressed.</p>
+<p><strong>Skipping the energetic layer entirely.</strong> Most Western treatment plans don't include yoga, <span class="gl" tabindex="0">pranayama<span class="gl-pop" role="tooltip"><span class="gl-def">Pranayama is the yogic practice of deliberate breath control used to regulate prana — the body&#x27;s vital energy — and directly influence the nervous system.</span><a class="gl-more" href="../glossary.html#glossary-pranayama">Full definition →</a></span></span>, or qi gong at all. The evidence that these practices outperform purely physical exercise for <span class="gl" tabindex="0">depression<span class="gl-pop" role="tooltip"><span class="gl-def">A disruption in mood and functioning that exists on a spectrum — not a single, uniform illness.</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span> is real, and ignoring them means missing one of the most direct levers available.</p>
+<p><strong>Confusing emotions with <span class="gl" tabindex="0">identity<span class="gl-pop" role="tooltip"><span class="gl-def">A stable sense of who you are, built from the narrative integration of emotionally salient experiences — not a fixed trait you possess, but a story you construct by stringing together the moments in your life that…</span><a class="gl-more" href="../glossary.html#glossary-identity">Full definition →</a></span></span>.</strong> Feeling sad is different from believing <em>I am a broken person</em>. The belief is an intellectual construction and needs to be challenged at the intellectual layer — <span class="gl" tabindex="0">CBT<span class="gl-pop" role="tooltip"><span class="gl-def">A structured, results-focused form of psychotherapy that works by breaking a problem — say, procrastination or social anxiety — down into its three components: thoughts, emotions, and behaviors, then targeting each one…</span><a class="gl-more" href="../glossary.html#glossary-cognitive-behavioral-therapy-cbt">Full definition →</a></span></span>, coaching, contemplation — not just processed emotionally.</p>
+<p><strong>Treating the spiritual layer as optional or "woo."</strong> A person who lacks purpose will keep cycling back into <span class="gl" tabindex="0">depression<span class="gl-pop" role="tooltip"><span class="gl-def">A disruption in mood and functioning that exists on a spectrum — not a single, uniform illness.</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span> regardless of how well the other four layers are managed. Meaning isn't a luxury; it's load-bearing.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-action-items-exercises">Action Items &amp; Exercises</h2>
+<ol>
+<li>
+<p><strong>Do a layer-by-layer self-audit.</strong> Sit quietly and ask: Where is my <span class="gl" tabindex="0">depression<span class="gl-pop" role="tooltip"><span class="gl-def">A disruption in mood and functioning that exists on a spectrum — not a single, uniform illness.</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span> most alive right now? Is it mostly physical exhaustion? Emotional numbness? A story I tell myself about my worth? A hollow feeling that nothing matters? Identifying which layers are most disrupted tells you where to focus first.</p>
+</li>
+<li>
+<p><strong>Get your vitamin D level checked.</strong> This is a simple blood test. Deficiency is common and directly linked to <span class="gl" tabindex="0">depression<span class="gl-pop" role="tooltip"><span class="gl-def">A disruption in mood and functioning that exists on a spectrum — not a single, uniform illness.</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span> — and it's one of the easiest physical-layer problems to correct.</p>
+</li>
+<li>
+<p><strong>Add a yoga or <span class="gl" tabindex="0">pranayama<span class="gl-pop" role="tooltip"><span class="gl-def">Pranayama is the yogic practice of deliberate breath control used to regulate prana — the body&#x27;s vital energy — and directly influence the nervous system.</span><a class="gl-more" href="../glossary.html#glossary-pranayama">Full definition →</a></span></span> practice — not as exercise, but as an energy practice.</strong> Even 15–20 minutes of a basic yoga sequence or breathwork session daily works the energetic layer in a way that cardio alone does not. Look for beginner <span class="gl" tabindex="0">pranayama<span class="gl-pop" role="tooltip"><span class="gl-def">Pranayama is the yogic practice of deliberate breath control used to regulate prana — the body&#x27;s vital energy — and directly influence the nervous system.</span><a class="gl-more" href="../glossary.html#glossary-pranayama">Full definition →</a></span></span> tutorials if you're starting from zero.</p>
+</li>
+<li>
+<p><strong>Pick one emotional-layer outlet and use it consistently.</strong> This could be weekly therapy, a daily journaling <span class="gl" tabindex="0">habit<span class="gl-pop" role="tooltip"><span class="gl-def">Automatic behavior that operates without motivation, willpower, or conscious thought — you simply do it.</span><a class="gl-more" href="../glossary.html#glossary-habit">Full definition →</a></span></span>, or a regular honest conversation with a friend. The key is consistency — emotions need ongoing processing, not just crisis-mode release.</p>
+</li>
+<li>
+<p><strong>Examine the <span class="gl" tabindex="0">identity<span class="gl-pop" role="tooltip"><span class="gl-def">A stable sense of who you are, built from the narrative integration of emotionally salient experiences — not a fixed trait you possess, but a story you construct by stringing together the moments in your life that…</span><a class="gl-more" href="../glossary.html#glossary-identity">Full definition →</a></span></span> claims underneath your emotions.</strong> When you notice feelings of worthlessness or failure, try to write out the <em>belief</em> underneath: "I believe I am ___." Then ask: Is this a fact, or is it a story? <span class="gl" tabindex="0">CBT<span class="gl-pop" role="tooltip"><span class="gl-def">A structured, results-focused form of psychotherapy that works by breaking a problem — say, procrastination or social anxiety — down into its three components: thoughts, emotions, and behaviors, then targeting each one…</span><a class="gl-more" href="../glossary.html#glossary-cognitive-behavioral-therapy-cbt">Full definition →</a></span></span> workbooks, coaching, or a therapist trained in <span class="gl" tabindex="0">CBT<span class="gl-pop" role="tooltip"><span class="gl-def">A structured, results-focused form of psychotherapy that works by breaking a problem — say, procrastination or social anxiety — down into its three components: thoughts, emotions, and behaviors, then targeting each one…</span><a class="gl-more" href="../glossary.html#glossary-cognitive-behavioral-therapy-cbt">Full definition →</a></span></span> can help you dismantle these constructions systematically.</p>
+</li>
+<li>
+<p><strong>Spend time deliberately on the question of purpose.</strong> This doesn't have to be grand. Start by asking: What would make today feel like it mattered? Over time, let that expand into: What kind of contribution do I want my life to make? Journaling, <span class="gl" tabindex="0">meditation<span class="gl-pop" role="tooltip"><span class="gl-def">Meditation is the practice of focusing consciousness completely — until thinking itself falls away and you exist in a state of pure awareness with no mental activity.</span><a class="gl-more" href="../glossary.html#glossary-meditation">Full definition →</a></span></span>, and exploring concepts like <em><span class="gl" tabindex="0">dharma<span class="gl-pop" role="tooltip"><span class="gl-def">Dharma is your duty or responsibility in life — not a grand cosmic purpose, but the ongoing attitude of doing right by yourself and the people around you.</span><a class="gl-more" href="../glossary.html#glossary-dharma">Full definition →</a></span></span></em> (your particular <span class="gl" tabindex="0">duty<span class="gl-pop" role="tooltip"><span class="gl-def">Dharma is your duty or responsibility in life — not a grand cosmic purpose, but the ongoing attitude of doing right by yourself and the people around you.</span><a class="gl-more" href="../glossary.html#glossary-dharma">Full definition →</a></span></span> or path) are doorways into this layer.</p>
+</li>
+<li>
+<p><strong>Build a plan that touches all five layers.</strong> Even modest actions on each layer — a dietary change, a breathwork practice, a therapy appointment, a book that challenges your worldview, ten minutes of <span class="gl" tabindex="0">meditation<span class="gl-pop" role="tooltip"><span class="gl-def">Meditation is the practice of focusing consciousness completely — until thinking itself falls away and you exist in a state of pure awareness with no mental activity.</span><a class="gl-more" href="../glossary.html#glossary-meditation">Full definition →</a></span></span> — compound. The goal isn't perfection on any single layer; it's movement on all of them simultaneously.</p>
+</li>
+</ol>
+</section></article>
+    </div>
+  </div>
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      
+      <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
 <p>- So one of the really confusing things about <span class="gl" tabindex="0">depression<span class="gl-pop" role="tooltip"><span class="gl-def">A disruption in mood and functioning that exists on a spectrum — not a single, uniform illness.</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span> is trying to figure out where exactly it comes from. Is it a psychological problem? Because that&#x27;s the way we kind of treat it when we go to a therapist&#x27;s office and we talk about our feelings. Or is it something like a neurochemistry imbalance, where our <span class="gl" tabindex="0">serotonin<span class="gl-pop" role="tooltip"><span class="gl-def">A neurotransmitter associated with contentment and peace — distinct from dopamine&#x27;s excitement and pleasure — whose levels are clinically linked to depression and anxiety.</span><a class="gl-more" href="../glossary.html#glossary-serotonin">Full definition →</a></span></span> levels are kind of low? So all we really need to do is take a pill to kind of balance out our brain chemistry. And so it&#x27;s kind of confusing, because which of these is it? And there are different sources of information that will tell us that, &quot;Oh, <span class="gl" tabindex="0">depression<span class="gl-pop" role="tooltip"><span class="gl-def">A disruption in mood and functioning that exists on a spectrum — not a single, uniform illness.</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span> comes from negative experiences from your past,&quot; or, &quot;<span class="gl" tabindex="0">Depression<span class="gl-pop" role="tooltip"><span class="gl-def">A disruption in mood and functioning that exists on a spectrum — not a single, uniform illness.</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span> comes from certain circuits of our brain that become hyperactive.&quot;</p>
 <p>So which is it? Is it past events or is it neurochemistry imbalances? And this is where I&#x27;d love to share with you guys an awesome perspective on <span class="gl" tabindex="0">depression<span class="gl-pop" role="tooltip"><span class="gl-def">A disruption in mood and functioning that exists on a spectrum — not a single, uniform illness.</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span> that was actually developed by yogis in India thousands of years ago. So a long time ago in India, yogis were sort of trying to figure out how this stuff works. And one of the key central questions they had is, what makes up a human being, what is a person? And so they would sit down, and they would kind of close their eyes, and they would meditate, and they&#x27;d really pay attention to all of the dimensions of themselves. And what they came up with is something called Panchakosha theory.</p>
 <p>And pancha is the Sanskrit word for five. And kosha is the Sanskrit word for sheath or covering. So essentially, what the yogis found was that all human beings are composed of five different layers. And this is definitely a situation where we&#x27;ll kind of map things out so they&#x27;re easy to follow. So the first layer of a person is the physical layer, which is also known as the annamaya kosha.</p>
@@ -65,15 +232,21 @@ try {
 <p>They have good careers, they have good relationships, but something seems to be missing, and life just doesn&#x27;t have the joy that they were really expecting. And so if we think about how to deal with that kind of <span class="gl" tabindex="0">depression<span class="gl-pop" role="tooltip"><span class="gl-def">A disruption in mood and functioning that exists on a spectrum — not a single, uniform illness.</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span>, it&#x27;s absolutely a spiritual approach. And that approach involves finding your <span class="gl" tabindex="0">dharma<span class="gl-pop" role="tooltip"><span class="gl-def">Dharma is your duty or responsibility in life — not a grand cosmic purpose, but the ongoing attitude of doing right by yourself and the people around you.</span><a class="gl-more" href="../glossary.html#glossary-dharma">Full definition →</a></span></span>, finding your <span class="gl" tabindex="0">duty<span class="gl-pop" role="tooltip"><span class="gl-def">Dharma is your duty or responsibility in life — not a grand cosmic purpose, but the ongoing attitude of doing right by yourself and the people around you.</span><a class="gl-more" href="../glossary.html#glossary-dharma">Full definition →</a></span></span>, finding your reason to exist in the world today. And as we start to walk that journey, life will start to become more fulfilling, more enjoyable. And so I hope that this perspective on <span class="gl" tabindex="0">depression<span class="gl-pop" role="tooltip"><span class="gl-def">A disruption in mood and functioning that exists on a spectrum — not a single, uniform illness.</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span> will equip you to think about, what does <span class="gl" tabindex="0">depression<span class="gl-pop" role="tooltip"><span class="gl-def">A disruption in mood and functioning that exists on a spectrum — not a single, uniform illness.</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span> feel like in my life? What are the layers that I need to work on the most?</p>
 <p>And if you really want to get a handle on <span class="gl" tabindex="0">depression<span class="gl-pop" role="tooltip"><span class="gl-def">A disruption in mood and functioning that exists on a spectrum — not a single, uniform illness.</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span>, you have to start with this good diagnostic approach, so you can come up with a really targeted plan to no longer be depressed.</p>
 </section></article>
+    </div>
   </div>
+  
 
-  <p class="meta">Transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">Depression<span class="gl-pop" role="tooltip"><span class="gl-def">A disruption in mood and functioning that exists on a spectrum — not a single, uniform illness.</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span> → Meditative Perspectives on <span class="gl" tabindex="0">Depression<span class="gl-pop" role="tooltip"><span class="gl-def">A disruption in mood and functioning that exists on a spectrum — not a single, uniform illness.</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span>). Captions auto-generated.</p>
+  <p class="meta">Medium summary + transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">Depression<span class="gl-pop" role="tooltip"><span class="gl-def">A disruption in mood and functioning that exists on a spectrum — not a single, uniform illness.</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span> → Meditative Perspectives on <span class="gl" tabindex="0">Depression<span class="gl-pop" role="tooltip"><span class="gl-def">A disruption in mood and functioning that exists on a spectrum — not a single, uniform illness.</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span>). Captions auto-generated; summary by claude-sonnet-4-6.</p>
 </div>
 
 <script>
 (function () {
   var root = document.documentElement;
-  var tb = document.querySelector('.theme-toggle');
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'medium');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
   var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
   tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
@@ -81,6 +254,9 @@ try {
   function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
   var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+  function navigateTo(id){ var el=id&&document.getElementById(id); if(!el)return; var v=el.closest('.view'); if(v)setView(v.getAttribute('data-view')); el.scrollIntoView(); }
+  window.addEventListener('hashchange', function(){ navigateTo(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash) navigateTo(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>
 <script>

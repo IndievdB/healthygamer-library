@@ -9,7 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-} catch (e) {}
+  document.documentElement.setAttribute('data-view', 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -31,9 +32,128 @@ try {
     <span class="speakers-note">17:36 min</span>
   </p>
 
-  <div class="doc">
+  
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">1,555w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">3,467w</span></button>
     
-    <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
+  </div>
+  
+
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#summary-summary">Summary</a></li>
+<li><a href="#summary-why-trauma-stays-in-the-present">Why Trauma Stays in the Present</a></li>
+<li><a href="#summary-what-a-narrative-actually-does">What a Narrative Actually Does</a></li>
+<li><a href="#summary-emotion-is-not-optional">Emotion Is Not Optional</a></li>
+<li><a href="#summary-why-trauma-fights-back-against-narrative">Why Trauma Fights Back Against Narrative</a></li>
+<li><a href="#summary-finding-your-organizing-framework">Finding Your Organizing Framework</a></li>
+<li><a href="#summary-common-pitfalls">Common Pitfalls</a></li>
+<li><a href="#summary-action-items-exercises">Action Items &amp; Exercises</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="summary-summary">Summary</h2>
+<p><strong>TL;DR — <span class="gl" tabindex="0">Trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> doesn't feel like the past because, neurologically speaking, it <em>isn't</em> the past yet. Forming a narrative is the mechanism that literally moves <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> from the present back into memory.</strong></p>
+<p>Some people say that the worst thing that ever happened to them — an opiate <span class="gl" tabindex="0">addiction<span class="gl-pop" role="tooltip"><span class="gl-def">The use of a chemical (alcohol, opioids, cannabis, caffeine, etc.) that produces neurological effects your brain then adapts to — leading to tolerance, withdrawal, and, potentially, addiction.</span><a class="gl-more" href="../glossary.html#glossary-substance-use">Full definition →</a></span></span>, a cancer diagnosis — was also the best thing. Others who went through the same experience say it ruined their life. The difference isn't willpower or attitude. It's whether they've been able to build a narrative around the experience. Understanding why narrative works requires a short detour into neuroscience, and once you see it, the path forward becomes much clearer.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-why-trauma-stays-in-the-present">Why Trauma Stays in the Present</h2>
+<p>The surprise finding in <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> neuroscience is this: when people haven't moved past a traumatic experience, the most active region of their brain is not the <strong><span class="gl" tabindex="0">hippocampus<span class="gl-pop" role="tooltip"><span class="gl-def">The brain structure responsible for memory consolidation — taking information from short-term storage and transferring it into long-term understanding.</span><a class="gl-more" href="../glossary.html#glossary-hippocampus">Full definition →</a></span></span></strong> (where memories are stored) — it's the <strong>posterior cingulate cortex (PCC)</strong>.</p>
+<p>Here's why that matters:</p>
+<ul>
+<li>The <strong><span class="gl" tabindex="0">hippocampus<span class="gl-pop" role="tooltip"><span class="gl-def">The brain structure responsible for memory consolidation — taking information from short-term storage and transferring it into long-term understanding.</span><a class="gl-more" href="../glossary.html#glossary-hippocampus">Full definition →</a></span></span></strong> is where past experiences live. Damage it and you lose the ability to form or retrieve memories.</li>
+<li>The <strong>posterior cingulate cortex</strong> is where your brain integrates your current circumstances, your <span class="gl" tabindex="0">sense of identity<span class="gl-pop" role="tooltip"><span class="gl-def">A stable sense of who you are, built from the narrative integration of emotionally salient experiences — not a fixed trait you possess, but a story you construct by stringing together the moments in your life that…</span><a class="gl-more" href="../glossary.html#glossary-identity">Full definition →</a></span></span>, and what you need to do <em>right now</em>. It's the part that kicks in when you miss a flight and have to figure out rebooking, calling people, and tracking your bags — all at once. Crucially, damage to the PCC results in a coma. It is the seat of your present-moment consciousness.</li>
+</ul>
+<p>When <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> hasn't been processed, the brain is still running the traumatic event through the PCC — still trying to figure out what to do about it, still treating it as an active crisis happening <em>now</em>. This is why people describe feeling frozen in time, or why something that happened years ago still shapes how they feel and what they expect from the future. It's not metaphor. The brain is literally keeping the <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> in the present tense.</p>
+<p>The good news: studies tracking people through <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> treatment show that as they heal, activity visibly shifts from the PCC over to the <span class="gl" tabindex="0">hippocampus<span class="gl-pop" role="tooltip"><span class="gl-def">The brain structure responsible for memory consolidation — taking information from short-term storage and transferring it into long-term understanding.</span><a class="gl-more" href="../glossary.html#glossary-hippocampus">Full definition →</a></span></span>. The event becomes a memory — something that happened, back there, not something still happening. This is what it means to actually move past <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span>, in a neurological sense.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-what-a-narrative-actually-does">What a Narrative Actually Does</h2>
+<p>A narrative is not just a story. It has a specific psychological structure: <strong>multiple events organized in a temporal sequence</strong>, with <strong>emotional activation</strong> tied to that sequence.</p>
+<p>When your brain builds a narrative, it must acknowledge that certain events happened <em>before</em> other events. That temporal ordering is the mechanism. You cannot string together "first this, then this, then this" without implicitly placing earlier events in the past. The act of constructing the sequence is what begins moving those events from the PCC — the present — into the <span class="gl" tabindex="0">hippocampus<span class="gl-pop" role="tooltip"><span class="gl-def">The brain structure responsible for memory consolidation — taking information from short-term storage and transferring it into long-term understanding.</span><a class="gl-more" href="../glossary.html#glossary-hippocampus">Full definition →</a></span></span> — memory.</p>
+<p>Consider a patient who spent over a decade addicted to opiates. He eventually got clean, confronted all the underlying problems the opiates had been masking, and became a writer — channeling the raw emotional experience of hopelessness and powerlessness into dystopian fiction that made him successful. His statement that "opiates were the best thing that ever happened to me" wasn't denial or toxic positivity. His brain had genuinely reorganized the experience: <em>this happened, it led to this, which led to this, which is who I am now.</em> The <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> had been placed in the past.</p>
+<p>The structure of that story — a problem, steps through it, an outcome — is exactly what a narrative is.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-emotion-is-not-optional">Emotion Is Not Optional</h2>
+<p>Here's the part people often miss: telling the story in a flat, detached way doesn't work. Emotional activation is a required ingredient.</p>
+<blockquote>
+<p>"You can talk about something, but if you're mentally neutral about it, if you're not really emotionally engaged with what you talk about, then there's really like no healing that goes on."</p>
+</blockquote>
+<p>Something about re-experiencing the emotion <em>while</em> recalling the event is what allows the brain to process and file it away. This shows up in multiple therapeutic modalities:</p>
+<ul>
+<li>In <strong>psychotherapy</strong>, moments of catharsis — where strong feelings surface during a story and then get metabolized — are understood as the actual mechanism of healing, not a side effect.</li>
+<li>In <strong>EMDR</strong>, you recall a traumatic memory while simultaneously tracking a moving object (like a therapist's finger). This modulates the emotional intensity so it doesn't overwhelm you, while still keeping you emotionally present enough for processing to occur.</li>
+<li>In <strong>narrative exercises</strong> like writing the story of your relationship with a substance, the power comes from the emotional rawness of speaking your truth out loud, not from intellectual analysis.</li>
+</ul>
+<p>The emotion doesn't have to be tears. It can be <span class="gl" tabindex="0">shame<span class="gl-pop" role="tooltip"><span class="gl-def">The emotion triggered by a perceived gap between where you are and where you think you should be.</span><a class="gl-more" href="../glossary.html#glossary-shame">Full definition →</a></span></span>, guilt, or anger. If someone you love was harmed, allowing yourself to feel and acknowledge the fury toward whoever caused that harm can be a genuine part of healing — not something to suppress.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-why-trauma-fights-back-against-narrative">Why Trauma Fights Back Against Narrative</h2>
+<p>There's a painful irony here: the very experience of <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> makes it harder to form the narrative you need in order to heal.</p>
+<p>When <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> hits, the brain adapts by numbing emotional experience. Emotions become overwhelming and get avoided. The brain learns to suppress them as a protective measure. But that same suppression blocks the emotional activation that narrative requires. So:</p>
+<ul>
+<li>You need to re-engage emotionally to form a healing narrative.</li>
+<li><span class="gl" tabindex="0">Trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> has trained your brain to avoid doing exactly that.</li>
+</ul>
+<p>This is why people often can't just "decide to move on" through willpower alone, and why structured support — therapy, treatment programs, intentional writing, <span class="gl" tabindex="0">community<span class="gl-pop" role="tooltip"><span class="gl-def">A Sanskrit term meaning community, sangha refers to the group of people — or beings — whose shared orientation supports your spiritual or personal growth.</span><a class="gl-more" href="../glossary.html#glossary-sangha">Full definition →</a></span></span> — can matter so much. The process needs help to get started.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-finding-your-organizing-framework">Finding Your Organizing Framework</h2>
+<p>Narrative doesn't have to come from therapy or a 12-step program. Human beings have developed many systems for organizing the story of a life:</p>
+<ul>
+<li><strong>Religious or spiritual frameworks</strong> — the idea that events were destined, that suffering has meaning within a larger plan, that <span class="gl" tabindex="0">karma<span class="gl-pop" role="tooltip"><span class="gl-def">The fundamental principle that every action has a cause and every cause produces an effect — nothing more, nothing less.</span><a class="gl-more" href="../glossary.html#glossary-karma">Full definition →</a></span></span> links causes to consequences</li>
+<li><strong>Philosophical frameworks</strong> — ideas about chance, entropy, meaning-making in an indifferent universe</li>
+<li><strong>Psychological and neuroscientific frameworks</strong> — like the model described here</li>
+</ul>
+<p>None of these is declared right or wrong. What matters is whether they give you a <strong>set of organizing principles</strong> that lets you connect events into a coherent sequence and engage emotionally with what happened. Different people need different tools. The goal is the same: take disparate, overwhelming experiences and weave them into a story with a before, a during, and an after — one where you are the person who lived through it, rather than someone still trapped inside it.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-common-pitfalls">Common Pitfalls</h2>
+<p><strong>Confusing intellectual recall with emotional processing.</strong> You can rehearse your <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> story in clinical detail without any healing happening. If you're narrating from behind glass — detached, neutral, just reporting facts — the brain doesn't move the experience into memory. The emotion has to be there.</p>
+<p><strong>Thinking you need to frame <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> as a "gift."</strong> The writer who called his <span class="gl" tabindex="0">addiction<span class="gl-pop" role="tooltip"><span class="gl-def">The use of a chemical (alcohol, opioids, cannabis, caffeine, etc.) that produces neurological effects your brain then adapts to — leading to tolerance, withdrawal, and, potentially, addiction.</span><a class="gl-more" href="../glossary.html#glossary-substance-use">Full definition →</a></span></span> the best thing that happened to him arrived at that frame <em>after</em> years of real work. Forcing a positive reframe too early, before emotional processing has occurred, is bypassing the work, not doing it.</p>
+<p><strong>Waiting until you feel ready to engage emotionally.</strong> If <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> has numbed your emotions, you may wait indefinitely. The numbness is a symptom, not a sign that you should delay. This is where working with a therapist or a structured process can help you gently re-enter the emotional experience in a safe context.</p>
+<p><strong>Treating the narrative as a one-time event.</strong> A single journaling session or one therapy appointment rarely completes the process. Narrative is built over time, revisited, and refined.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-action-items-exercises">Action Items &amp; Exercises</h2>
+<ol>
+<li>
+<p><strong>Write the story of your relationship with the difficult thing.</strong> Don't start with "what went wrong." Start from the very beginning — when did this thing (a substance, a relationship, a period of your life) first enter your life, and what did it do <em>for</em> you at the time? Follow the story forward chronologically, including the positive chapters before the painful ones.</p>
+</li>
+<li>
+<p><strong>Notice where you're still using present-tense language about past events.</strong> Pay attention to when you say "this <em>is</em> ruining my life" versus "this <em>ruined</em> a chapter of my life." The language reflects which brain region is running the show. Gently practicing past-tense framing — not as denial, but as accuracy — can support the shift.</p>
+</li>
+<li>
+<p><strong>Don't skip the anger.</strong> When writing or talking through your story, actively check whether you're suppressing anger, guilt, or <span class="gl" tabindex="0">shame<span class="gl-pop" role="tooltip"><span class="gl-def">The emotion triggered by a perceived gap between where you are and where you think you should be.</span><a class="gl-more" href="../glossary.html#glossary-shame">Full definition →</a></span></span> as "inappropriate." These emotions are not obstacles to processing — they are the fuel of it. Name them explicitly in your narrative.</p>
+</li>
+<li>
+<p><strong>Find your organizing framework.</strong> Ask yourself: what system of understanding — religious, spiritual, philosophical, psychological — actually resonates with you? You don't need to borrow someone else's. But you do need <em>something</em> that lets you make sense of why things happen and how events connect. Spend time with that question.</p>
+</li>
+<li>
+<p><strong>If solo narrative work stalls, seek a structured context.</strong> EMDR, <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span>-focused therapy, or even a structured group (like a 30-day program's narrative exercise) can help initiate the emotional activation that <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> has made hard to access alone. The goal is the same; the scaffolding just provides support.</p>
+</li>
+</ol>
+</section></article>
+    </div>
+  </div>
+  
+  <div class="view" data-view="transcript">
+    <div class="doc">
+      
+      <article class="summary transcript"><section class="sec sec-a"><h2 id="transcript-top">Transcript</h2>
 <p>Now we are going to talk a little bit about the importance of developing a narrative to help you move past <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span>. So when I was a medical student, there were some really weird things that my patients used to say. So I remember one of my patients once told me that cancer was the best thing that ever happened to them. And this was like really confusing for me. I was a second year medical student at the time and I was like, I don&#x27;t know what this person is saying. And then other people would say even weirder things like, oh yeah, like my crippling opiate <span class="gl" tabindex="0">addiction<span class="gl-pop" role="tooltip"><span class="gl-def">The use of a chemical (alcohol, opioids, cannabis, caffeine, etc.) that produces neurological effects your brain then adapts to — leading to tolerance, withdrawal, and, potentially, addiction.</span><a class="gl-more" href="../glossary.html#glossary-substance-use">Full definition →</a></span></span> was the best thing that ever happened to me.</p>
 <p>And this kind of like confused me even more because I thought of things like cancer and being addicted to heroin as bad things. And then I started to become a psychiatrist, right, because that was so fascinating that I had to learn more. And then I sort of... it&#x27;s interesting because you&#x27;d expect once you start to like learn psychiatry, right? Then like I&#x27;m like, oh my God, like now I&#x27;m going to learn about the testament to the human spirit and how opiate <span class="gl" tabindex="0">addiction<span class="gl-pop" role="tooltip"><span class="gl-def">The use of a chemical (alcohol, opioids, cannabis, caffeine, etc.) that produces neurological effects your brain then adapts to — leading to tolerance, withdrawal, and, potentially, addiction.</span><a class="gl-more" href="../glossary.html#glossary-substance-use">Full definition →</a></span></span> is like actually turns us into amazing strong human beings. But I actually saw like the exact opposite. I saw crippling opiate <span class="gl" tabindex="0">addiction<span class="gl-pop" role="tooltip"><span class="gl-def">The use of a chemical (alcohol, opioids, cannabis, caffeine, etc.) that produces neurological effects your brain then adapts to — leading to tolerance, withdrawal, and, potentially, addiction.</span><a class="gl-more" href="../glossary.html#glossary-substance-use">Full definition →</a></span></span>, people struggling with alcohol, people destroying their lives.</p>
 <p>And when I talked to these people who were actively addicted to opiates, they weren&#x27;t saying this is the best thing that happened to their life. This was saying... they were saying that this is ruining my life. It has ruined my wonderful life that I used to have is now gone because of this opiate <span class="gl" tabindex="0">addiction<span class="gl-pop" role="tooltip"><span class="gl-def">The use of a chemical (alcohol, opioids, cannabis, caffeine, etc.) that produces neurological effects your brain then adapts to — leading to tolerance, withdrawal, and, potentially, addiction.</span><a class="gl-more" href="../glossary.html#glossary-substance-use">Full definition →</a></span></span>. So I was really wondering about this. Like how is it that one person can say that an opiate <span class="gl" tabindex="0">addiction<span class="gl-pop" role="tooltip"><span class="gl-def">The use of a chemical (alcohol, opioids, cannabis, caffeine, etc.) that produces neurological effects your brain then adapts to — leading to tolerance, withdrawal, and, potentially, addiction.</span><a class="gl-more" href="../glossary.html#glossary-substance-use">Full definition →</a></span></span> is the best thing that happened to them? And another person can say opiate <span class="gl" tabindex="0">addiction<span class="gl-pop" role="tooltip"><span class="gl-def">The use of a chemical (alcohol, opioids, cannabis, caffeine, etc.) that produces neurological effects your brain then adapts to — leading to tolerance, withdrawal, and, potentially, addiction.</span><a class="gl-more" href="../glossary.html#glossary-substance-use">Full definition →</a></span></span> is the worst thing that happened to them. And the second... the latter kind of makes sense, right? This is where the importance of narrative really starts to come in.</p>
@@ -64,15 +184,21 @@ try {
 <p>It&#x27;s kind of whatever floats your boat there. The key thing is that there are some systems of <span class="gl" tabindex="0">knowledge<span class="gl-pop" role="tooltip"><span class="gl-def">Vidya is objective, transmissible information — the kind of knowledge that can be written in a textbook, proven to another person, or exchanged between minds.</span><a class="gl-more" href="../glossary.html#glossary-vidya">Full definition →</a></span></span> that human beings have developed, whether you want to call this philosophy, religion, spirituality, or even psychology and neuroscience. But these are organizing principles that we can use to explain and understand what the hell is happening in life. And you need to find some kind of system that works for you, whether it&#x27;s religion, totally fine, or it&#x27;s a non-religious form of spirituality, also totally fine. Whether you want to go completely into psychology, neuroscience, and psychiatry, that&#x27;s also okay.</p>
 <p>But we as human beings, in order to form a narrative, need some kind of organizing principle that then allows us to connect events and then experience that sort of emotional energy, that emotional processing that comes with them. And this appears to be the process that if you go through, you will take the <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> that you are living in the present and put it behind you.</p>
 </section></article>
+    </div>
   </div>
+  
 
-  <p class="meta">Transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">Trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> → <span class="gl" tabindex="0">Identity<span class="gl-pop" role="tooltip"><span class="gl-def">A stable sense of who you are, built from the narrative integration of emotionally salient experiences — not a fixed trait you possess, but a story you construct by stringing together the moments in your life that…</span><a class="gl-more" href="../glossary.html#glossary-identity">Full definition →</a></span></span> & <span class="gl" tabindex="0">Samskaras<span class="gl-pop" role="tooltip"><span class="gl-def">A samskara is a ball of undigested emotional energy from past experiences that gets stored in the mind and automatically activates in present situations, distorting your perception of what&#x27;s actually happening.</span><a class="gl-more" href="../glossary.html#glossary-samskara">Full definition →</a></span></span>). Captions auto-generated.</p>
+  <p class="meta">Medium summary + transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">Trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is the experience of an overwhelming emotional event — one where there is simply too much emotion to process in a single moment, forcing the mind to handle the aftermath in waves.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> → <span class="gl" tabindex="0">Identity<span class="gl-pop" role="tooltip"><span class="gl-def">A stable sense of who you are, built from the narrative integration of emotionally salient experiences — not a fixed trait you possess, but a story you construct by stringing together the moments in your life that…</span><a class="gl-more" href="../glossary.html#glossary-identity">Full definition →</a></span></span> & <span class="gl" tabindex="0">Samskaras<span class="gl-pop" role="tooltip"><span class="gl-def">A samskara is a ball of undigested emotional energy from past experiences that gets stored in the mind and automatically activates in present situations, distorting your perception of what&#x27;s actually happening.</span><a class="gl-more" href="../glossary.html#glossary-samskara">Full definition →</a></span></span>). Captions auto-generated; summary by claude-sonnet-4-6.</p>
 </div>
 
 <script>
 (function () {
   var root = document.documentElement;
-  var tb = document.querySelector('.theme-toggle');
+  function setView(v){ root.setAttribute('data-view', v);
+    document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
+  setView(root.getAttribute('data-view') || 'medium');
+  document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
+  var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
   var dark=false; try{dark=localStorage.getItem('theme')==='dark';}catch(e){} setTheme(dark);
   tb.addEventListener('click', function(){ var d=!root.classList.contains('dark'); setTheme(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){} });
@@ -80,6 +206,9 @@ try {
   function setFont(f){ root.classList.toggle('sans', f==='sans'); fb.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.font===f?'true':'false');}); }
   var sf='serif'; try{ if(localStorage.getItem('readingFont')==='sans') sf='sans'; }catch(e){} setFont(sf);
   fb.forEach(function(b){ b.addEventListener('click', function(){ setFont(b.dataset.font); try{localStorage.setItem('readingFont',b.dataset.font);}catch(e){} }); });
+  function navigateTo(id){ var el=id&&document.getElementById(id); if(!el)return; var v=el.closest('.view'); if(v)setView(v.getAttribute('data-view')); el.scrollIntoView(); }
+  window.addEventListener('hashchange', function(){ navigateTo(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash) navigateTo(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>
 <script>
