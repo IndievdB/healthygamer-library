@@ -9,8 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-  document.documentElement.setAttribute('data-view', 'transcript');
-} catch (e) { document.documentElement.setAttribute('data-view', 'transcript'); }
+  document.documentElement.setAttribute('data-view', 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -33,7 +33,45 @@ try {
   </p>
 
   
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">353w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">885w</span></button>
+    
+  </div>
+  
 
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#summary-summary">Summary</a></li>
+<li><a href="#summary-action-items">Action Items</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="summary-summary">Summary</h2>
+<p><strong>TL;DR — When dating goes badly, your mind jumps to "there's something wrong with me." That conclusion feels logical but actually makes things worse, and there's a more useful way to process setbacks.</strong></p>
+<p>When things repeatedly don't work out — no second dates, people losing interest, connections that never go anywhere — you become the common denominator, and the mind naturally draws an <strong><span class="gl" tabindex="0">identity<span class="gl-pop" role="tooltip"><span class="gl-def">A narrative you construct by stringing together emotionally salient experiences — the moments in your life that carried the most emotional charge — into a coherent story of who you are.</span><a class="gl-more" href="../glossary.html#glossary-identity">Full definition →</a></span></span>-based conclusion</strong>: <em>I'm ugly, I'm unlovable, I'm just not enough.</em> This feels rational, but it's a trap.</p>
+<p>Two things are worth remembering. First, other people's lack of interest has just as much to do with <em>them</em> as it does with you. Someone working through their own sexuality, their own baggage, their own chaos is a real and common factor that has nothing to do with your worth. Second, for any specific situation — they didn't text back, they went quiet — there are genuinely a thousand other explanations. <strong><span class="gl" tabindex="0">Cognitive flexibility<span class="gl-pop" role="tooltip"><span class="gl-def">The ability to update your thinking — to let go of an existing belief and genuinely adopt a new one when the evidence calls for it.</span><a class="gl-more" href="../glossary.html#glossary-cognitive-flexibility">Full definition →</a></span></span></strong> means holding those alternatives rather than defaulting to a verdict about your <span class="gl" tabindex="0">identity<span class="gl-pop" role="tooltip"><span class="gl-def">A narrative you construct by stringing together emotionally salient experiences — the moments in your life that carried the most emotional charge — into a coherent story of who you are.</span><a class="gl-more" href="../glossary.html#glossary-identity">Full definition →</a></span></span>.</p>
+<p>That said, flexibility isn't denial. If a pattern keeps showing up, it does need to be addressed. The key is <em>how</em> you frame it. An <span class="gl" tabindex="0">identity<span class="gl-pop" role="tooltip"><span class="gl-def">A narrative you construct by stringing together emotionally salient experiences — the moments in your life that carried the most emotional charge — into a coherent story of who you are.</span><a class="gl-more" href="../glossary.html#glossary-identity">Full definition →</a></span></span>-based conclusion ("I'm unlovable") is not actionable — you can't do anything with it. A <strong>circumstance- or action-based conclusion</strong> ("maybe I could respond to people differently," "maybe my texting style is off-putting") gives you something concrete to work on.</p>
+<blockquote>
+<p>Instead of making an <span class="gl" tabindex="0">identity<span class="gl-pop" role="tooltip"><span class="gl-def">A narrative you construct by stringing together emotionally salient experiences — the moments in your life that carried the most emotional charge — into a coherent story of who you are.</span><a class="gl-more" href="../glossary.html#glossary-identity">Full definition →</a></span></span>-based conclusion, focus on circumstance-based or action-based solutions. That's what actually sets you up to succeed.</p>
+</blockquote>
+<p>Think of it like losing at a video game. "I suck" tells you nothing. Reviewing <em>what</em> went wrong and trying something different next time is how you actually improve.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-action-items">Action Items</h2>
+<ol>
+<li>When a dating setback hits, write down at least three alternative explanations that have nothing to do with your worth as a person.</li>
+<li>If a pattern is recurring, name the specific <em>behavior or circumstance</em> involved — not a trait — and ask what you could try differently next time.</li>
+<li>Treat each dating experience like a game you're learning, not a referendum on who you are.</li>
+</ol>
+</section></article>
+    </div>
+  </div>
   
   <div class="view" data-view="transcript">
     <div class="doc">
@@ -47,7 +85,7 @@ try {
   </div>
   
 
-  <p class="meta">Transcript of a Dr. K's Guide lesson (Love, Sex & Relationships → Breakups & Recovery). Captions auto-generated.</p>
+  <p class="meta">Medium summary + transcript of a Dr. K's Guide lesson (Love, Sex & Relationships → Breakups & Recovery). Captions auto-generated; summary by claude-sonnet-4-6.</p>
 </div>
 
 <script>
@@ -55,7 +93,7 @@ try {
   var root = document.documentElement;
   function setView(v){ root.setAttribute('data-view', v);
     document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
-  setView(root.getAttribute('data-view') || 'transcript');
+  setView(root.getAttribute('data-view') || 'medium');
   document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
   var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }

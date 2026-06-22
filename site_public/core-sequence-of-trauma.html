@@ -9,8 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-  document.documentElement.setAttribute('data-view', 'transcript');
-} catch (e) { document.documentElement.setAttribute('data-view', 'transcript'); }
+  document.documentElement.setAttribute('data-view', 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -33,7 +33,45 @@ try {
   </p>
 
   
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">512w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">1,947w</span></button>
+    
+  </div>
+  
 
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#summary-summary">Summary</a></li>
+<li><a href="#summary-the-core-sequence">The Core Sequence</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="summary-summary">Summary</h2>
+<p><strong>TL;DR — <span class="gl" tabindex="0">Trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is what happens when an experience generates more emotion than you can process in a single moment — the overwhelm itself is the defining feature, not just the event.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> isn't a single wound; it's a cascade of adaptations that reshapes your physiology, emotions, thinking, <span class="gl" tabindex="0">identity<span class="gl-pop" role="tooltip"><span class="gl-def">A narrative you construct by stringing together emotionally salient experiences — the moments in your life that carried the most emotional charge — into a coherent story of who you are.</span><a class="gl-more" href="../glossary.html#glossary-identity">Full definition →</a></span></span>, and relationships one step at a time.</strong></p>
+<p>What gets called <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is what happens when an experience generates more emotion than you can process in a single moment — the overwhelm itself is the defining feature, not just the event.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> doesn't require a battlefield or a single catastrophic event. The same pattern of symptoms first observed in shell-shocked soldiers after World War I turned up later in prisoners of war, then in Romanian orphans who were severely neglected, and eventually in people who grew up with alcoholic parents, controlling "tiger" parents, or simply unstable home lives. The common thread isn't the specific event — it's the <em>environment</em> it creates.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-the-core-sequence">The Core Sequence</h2>
+<p><strong>Step 1 — Coercive control or neglect.</strong> When an outside force (a prison guard, a controlling parent, an unpredictable drunk) determines whether you're safe or in danger, your own wants become irrelevant. You stop living from the inside out and start living <em>reactively</em>, scanning constantly for what that external force needs from you.</p>
+<p><strong>Step 2 — Physiologic rewiring.</strong> Growing up in that environment literally rewires your danger-detection system to be hypersensitive. Small cues — a slight change in someone's tone, a hint of dissatisfaction on a partner's face — trip the alarm. Your body runs on elevated adrenaline and <span class="gl" tabindex="0">cortisol<span class="gl-pop" role="tooltip"><span class="gl-def">A stress hormone released by the body during prolonged threat — not the immediate adrenaline spike, but the slower, longer-burning signal meant to keep you alive for the 24–48 hours after a dangerous encounter.</span><a class="gl-more" href="../glossary.html#glossary-cortisol">Full definition →</a></span></span> as a baseline. Even genuinely safe situations feel threatening.</p>
+<p><strong>Step 3 — Overwhelmingly negative emotional experience.</strong> Because the alarm fires constantly, life fills with <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response in which the brain prepares you for high-stakes or unfamiliar situations — triggering the sympathetic nervous system, releasing adrenaline and cortisol, and narrowing your attention onto…</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> and fear. There's a striking example of this: if a partner is 90% at peace after an argument but 10% still resentful, the traumatized person homes in on that 10% and effectively ignores the rest.</p>
+<p><strong>Step 4 — Numbness and <span class="gl" tabindex="0">dissociation<span class="gl-pop" role="tooltip"><span class="gl-def">Dissociation is a state in which you become unplugged from the world around you — analytically aware of what&#x27;s happening, but unable to connect with it emotionally.</span><a class="gl-more" href="../glossary.html#glossary-dissociation">Full definition →</a></span></span>.</strong> You can't fix the source of the fear, so the brain does the next best thing: it turns the feelings off. This starts as deliberate thought suppression ("I just won't think about it"), hardens into emotional numbness, and in severe cases becomes full <span class="gl" tabindex="0">dissociation<span class="gl-pop" role="tooltip"><span class="gl-def">Dissociation is a state in which you become unplugged from the world around you — analytically aware of what&#x27;s happening, but unable to connect with it emotionally.</span><a class="gl-more" href="../glossary.html#glossary-dissociation">Full definition →</a></span></span>.</p>
+<p><strong>Step 5 — Distorted cognitions.</strong> Operating under chronic stress and numbness, you underperform — <span class="gl" tabindex="0">sleep<span class="gl-pop" role="tooltip"><span class="gl-def">Sleep is the brain&#x27;s primary maintenance window — the period during which short-term memories stored in the hippocampus (your RAM) get written into long-term memory (your hard drive).</span><a class="gl-more" href="../glossary.html#glossary-sleep">Full definition →</a></span></span> suffers, focus breaks down, social risks feel impossible. You rack up failures and draw a reasonable-seeming but false conclusion: <em>this is just how life is for me.</em></p>
+<p><strong>Step 6 — Damaged <span class="gl" tabindex="0">identity<span class="gl-pop" role="tooltip"><span class="gl-def">A narrative you construct by stringing together emotionally salient experiences — the moments in your life that carried the most emotional charge — into a coherent story of who you are.</span><a class="gl-more" href="../glossary.html#glossary-identity">Full definition →</a></span></span>.</strong> Those conclusions solidify into a self-concept. Bad at tests, bad at friendships, bad at relationships — the only unifying explanation the mind lands on is <em>I am the problem.</em> A belief about who you are gets locked in.</p>
+<p><strong>Step 7 — Relationship dysfunction.</strong> Once the <span class="gl" tabindex="0">identity<span class="gl-pop" role="tooltip"><span class="gl-def">A narrative you construct by stringing together emotionally salient experiences — the moments in your life that carried the most emotional charge — into a coherent story of who you are.</span><a class="gl-more" href="../glossary.html#glossary-identity">Full definition →</a></span></span> is "I'm fundamentally flawed," healthy relationships become nearly impossible to sustain, because every relationship is built partly on what you believe you are.</p>
+<blockquote>
+<p>"We have no medications that cure <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is what happens when an experience generates more emotion than you can process in a single moment — the overwhelm itself is the defining feature, not just the event.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> because it's not one thing. It's a whole cascade of adaptations. And once we adapt in this way, we need to actually un-adapt in each of those ways."</p>
+</blockquote>
+<p>This is also why the sequence matters practically: it's a <em>roadmap for what needs to be undone</em>. Each layer — the hyperactive nervous system, the numbness, the distorted thinking, the broken self-image — requires its own work. Treating only one layer leaves the others intact.</p>
+</section></article>
+    </div>
+  </div>
   
   <div class="view" data-view="transcript">
     <div class="doc">
@@ -61,7 +99,7 @@ try {
   </div>
   
 
-  <p class="meta">Transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">Trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is what happens when an experience generates more emotion than you can process in a single moment — the overwhelm itself is the defining feature, not just the event.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> → Core <span class="gl" tabindex="0">Knowledge<span class="gl-pop" role="tooltip"><span class="gl-def">Vidya is the Sanskrit term for objective, transmissible information — the kind of knowledge that can be written in a book, verified by multiple people, and passed from one person to another without loss.</span><a class="gl-more" href="../glossary.html#glossary-vidya">Full definition →</a></span></span>: Starter Path). Captions auto-generated.</p>
+  <p class="meta">Medium summary + transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">Trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is what happens when an experience generates more emotion than you can process in a single moment — the overwhelm itself is the defining feature, not just the event.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> → Core <span class="gl" tabindex="0">Knowledge<span class="gl-pop" role="tooltip"><span class="gl-def">Vidya is the Sanskrit term for objective, transmissible information — the kind of knowledge that can be written in a book, verified by multiple people, and passed from one person to another without loss.</span><a class="gl-more" href="../glossary.html#glossary-vidya">Full definition →</a></span></span>: Starter Path). Captions auto-generated; summary by claude-sonnet-4-6.</p>
 </div>
 
 <script>
@@ -69,7 +107,7 @@ try {
   var root = document.documentElement;
   function setView(v){ root.setAttribute('data-view', v);
     document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
-  setView(root.getAttribute('data-view') || 'transcript');
+  setView(root.getAttribute('data-view') || 'medium');
   document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
   var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }

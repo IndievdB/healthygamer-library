@@ -9,8 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-  document.documentElement.setAttribute('data-view', 'transcript');
-} catch (e) { document.documentElement.setAttribute('data-view', 'transcript'); }
+  document.documentElement.setAttribute('data-view', 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -33,7 +33,56 @@ try {
   </p>
 
   
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">546w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">1,928w</span></button>
+    
+  </div>
+  
 
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#summary-summary">Summary</a></li>
+<li><a href="#summary-the-four-features-of-a-good-goal">The Four Features of a Good Goal</a></li>
+<li><a href="#summary-action-items">Action Items</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="summary-summary">Summary</h2>
+<p><strong>TL;DR —</strong> A goal is only as good as its structure and its source. To actually follow through, your goal needs to come from the right place, be something you can act on and measure, stay within your control, and start small enough to build momentum.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-the-four-features-of-a-good-goal">The Four Features of a Good Goal</h2>
+<p><strong>1. Check the intent first.</strong>
+Before anything else, ask <em>why</em> you want this goal. Goals born from a "should" — things that are logically sensible but don't really move you — are easy to abandon the moment the cost gets high. Goals rooted in <strong><span class="gl" tabindex="0">duty<span class="gl-pop" role="tooltip"><span class="gl-def">Dharma is the Sanskrit word for duty or responsibility — specifically, the obligations you choose to adopt for yourself, not the ones society imposes on you without your consent.</span><a class="gl-more" href="../glossary.html#glossary-dharma">Full definition →</a></span></span>, <span class="gl" tabindex="0">values<span class="gl-pop" role="tooltip"><span class="gl-def">Values are the things that, when you move toward them, make you feel genuinely fulfilled — not just pleased or validated, but deeply satisfied.</span><a class="gl-more" href="../glossary.html#glossary-values">Full definition →</a></span></span>, or deep personal meaning</strong> carry you through the hard parts. A person who "should" get healthy may still skip the gym; a person who wants to live long enough to walk their child down the aisle will find a way to wake up early. If your goal feels hollow, do some introspection: can you connect it to something you genuinely care about?</p>
+<p><strong>2. Make it actionable — use verbs, not nouns.</strong>
+"Get in shape," "find purpose," and "retire early" aren't things you can actually <em>do</em>. You can't measure how much purpose you've found. What you <em>can</em> do is walk two miles, spend 30 minutes at the gym, or practice an instrument for 45 minutes. Reframe every abstract goal into a concrete, repeatable action — something that is either done or not done on any given day.</p>
+<p><strong>3. Keep it within your control.</strong>
+If the goal depends on someone else's decision — a boss promoting you, a potential partner choosing you — you can do everything right and still "fail." That tanks future <span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">Motivation is not a feeling, a desire, or a behavior — it is the ability to hold one thought steadily in your mind for a prolonged period of time.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span> even when you genuinely earned pride in your effort. Structure the goal around what <em>you</em> do, not what others decide, so your results actually reinforce your behavior.</p>
+<p><strong>4. Apply the 25% Rule.</strong>
+Start from where you actually are, not where you wish you were. Take your target, cut it to 25%, then cut <em>that</em> in half. If the eventual aim is 50 push-ups a day and you can currently do zero, don't start at 50 — or even 12. Start at 2, then 4, then 6. This isn't about lowering ambition; it's about making early success possible so momentum builds rather than collapses.</p>
+<blockquote>
+<p>"If you really want to accomplish what you put your mind to, it's very important that it's <em>your</em> mind that's setting the target."</p>
+</blockquote>
+<p>Goals get planted in us from all directions — parents, society, culture. Many of them aren't actually yours. The framework above only works if the goal it's applied to is something you genuinely want or feel genuinely obligated to pursue.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-action-items">Action Items</h2>
+<ol>
+<li><strong>Audit the intent.</strong> For each goal you're carrying, ask whether it comes from a genuine value or <span class="gl" tabindex="0">duty<span class="gl-pop" role="tooltip"><span class="gl-def">Dharma is the Sanskrit word for duty or responsibility — specifically, the obligations you choose to adopt for yourself, not the ones society imposes on you without your consent.</span><a class="gl-more" href="../glossary.html#glossary-dharma">Full definition →</a></span></span>, or from external pressure. If it's the latter, either find a deeper personal reason for it or consider dropping it.</li>
+<li><strong>Rewrite it as a verb.</strong> Turn the abstract noun ("get fit") into a specific, daily action ("do X push-ups," "walk Y miles").</li>
+<li><strong>Strip out dependencies.</strong> Restate the goal so it only measures what <em>you</em> do, not what others decide.</li>
+<li><strong>Find your 25%.</strong> Take your target, cut it to a quarter, cut that in half, and start there this week.</li>
+</ol>
+</section></article>
+    </div>
+  </div>
   
   <div class="view" data-view="transcript">
     <div class="doc">
@@ -60,7 +109,7 @@ try {
   </div>
   
 
-  <p class="meta">Transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by disordered attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> → Goal Setting & <span class="gl" tabindex="0">Motivation<span class="gl-pop" role="tooltip"><span class="gl-def">Motivation is not a feeling, a desire, or a behavior — it is the ability to hold one thought steadily in your mind for a prolonged period of time.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span>). Captions auto-generated.</p>
+  <p class="meta">Medium summary + transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by disordered attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> → Goal Setting & <span class="gl" tabindex="0">Motivation<span class="gl-pop" role="tooltip"><span class="gl-def">Motivation is not a feeling, a desire, or a behavior — it is the ability to hold one thought steadily in your mind for a prolonged period of time.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span>). Captions auto-generated; summary by claude-sonnet-4-6.</p>
 </div>
 
 <script>
@@ -68,7 +117,7 @@ try {
   var root = document.documentElement;
   function setView(v){ root.setAttribute('data-view', v);
     document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
-  setView(root.getAttribute('data-view') || 'transcript');
+  setView(root.getAttribute('data-view') || 'medium');
   document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
   var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }

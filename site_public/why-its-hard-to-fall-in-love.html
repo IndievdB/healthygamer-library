@@ -9,8 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-  document.documentElement.setAttribute('data-view', 'transcript');
-} catch (e) { document.documentElement.setAttribute('data-view', 'transcript'); }
+  document.documentElement.setAttribute('data-view', 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -33,7 +33,34 @@ try {
   </p>
 
   
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">225w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">775w</span></button>
+    
+  </div>
+  
 
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#summary-summary">Summary</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="summary-summary">Summary</h2>
+<p><strong>TL;DR — Romantic and social disconnection is a widespread, worsening trend — not a personal failing — and the mainstream advice meant to fix it is largely useless.</strong></p>
+<p>The numbers tell a clear story. The median age of marriage has shifted from 24/21 (men/women) in 1975 to 31/28 today. Sexlessness among young men has gone from roughly one in five to one in three — and likely higher since the pandemic. Friendships have thinned out too: the share of people with fewer than four friends has nearly doubled, and time spent with friends has dropped from about an hour a day to around twenty minutes. This is a systemic shift, not an individual failure.</p>
+<p>The cruel irony is that information about relationships has never been more abundant, yet outcomes keep getting worse. Most of what circulates — how often to text, who should pay, what to wear — isn't grounded in evidence. Volume of advice and quality of advice are very different things.</p>
+<blockquote>
+<p>"All the information out there sucks."</p>
+</blockquote>
+<p>What actually separates people who navigate this successfully from those who don't comes down largely to <strong>attitude</strong> — specifically, whether you've quietly given up before you've even tried. The only thing fully in your control is the effort you put in, and if you've already decided it's hopeless, that becomes a self-fulfilling prophecy.</p>
+</section></article>
+    </div>
+  </div>
   
   <div class="view" data-view="transcript">
     <div class="doc">
@@ -45,7 +72,7 @@ try {
   </div>
   
 
-  <p class="meta">Transcript of a Dr. K's Guide lesson (Love, Sex & Relationships → Why Dating Feels So Hard Today). Captions auto-generated.</p>
+  <p class="meta">Medium summary + transcript of a Dr. K's Guide lesson (Love, Sex & Relationships → Why Dating Feels So Hard Today). Captions auto-generated; summary by claude-sonnet-4-6.</p>
 </div>
 
 <script>
@@ -53,7 +80,7 @@ try {
   var root = document.documentElement;
   function setView(v){ root.setAttribute('data-view', v);
     document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
-  setView(root.getAttribute('data-view') || 'transcript');
+  setView(root.getAttribute('data-view') || 'medium');
   document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
   var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }

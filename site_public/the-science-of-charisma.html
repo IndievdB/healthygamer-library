@@ -9,8 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-  document.documentElement.setAttribute('data-view', 'transcript');
-} catch (e) { document.documentElement.setAttribute('data-view', 'transcript'); }
+  document.documentElement.setAttribute('data-view', 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -33,7 +33,49 @@ try {
   </p>
 
   
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">405w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">1,495w</span></button>
+    
+  </div>
+  
 
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#summary-summary">Summary</a></li>
+<li><a href="#summary-the-three-elements">The Three Elements</a></li>
+<li><a href="#summary-action-items">Action Items</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="summary-summary">Summary</h2>
+<p><strong>TL;DR — Charisma is far less about looks than most people assume; the three most modifiable factors are having a clear vision, being able to handle adversity, and articulating your thoughts well.</strong></p>
+<p>Physical appearance ranks sixth among the contributors to charisma. Five things matter more, and three of them are genuinely within your control.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-the-three-elements">The Three Elements</h2>
+<p><strong>Vision</strong> doesn't mean having a five-year plan. It means having a sense of direction. People are naturally drawn to attach themselves to someone who knows where they're headed — it lets others imagine how their own life could fit with yours. You don't need to have everything figured out, but you do need to know what you're moving toward.</p>
+<p><strong>Handling adversity</strong> is what makes someone dependable. In a long-term relationship, the person you want by your side is the one you can count on when things go wrong. Demonstrating that you can face difficulty without crumbling signals that you're someone worth building a life with.</p>
+<p><strong>Articulation</strong> is the most underrated of the three. Being able to put your thoughts clearly into words signals thoughtfulness, intelligence, and competence. Parroting social media lines does the opposite — it tells people you haven't actually worked through your own thinking. The same is true of <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is what happens when an experience generates more emotion than you can process in a single moment — the overwhelm itself is the defining feature, not just the event.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span>-dumping: unloading hopelessness doesn't just drain the other person, it actively signals that you've checked out.</p>
+<p>The difference isn't in the facts of your situation — it's in how you frame them. Compare <em>"AI is taking everyone's jobs and there's nothing I can do"</em> with <em>"I'm researching which fields are most resilient to AI and thinking about switching my focus."</em> Same world, completely different signal about who you are.</p>
+<p>Clear thinking leads to clear speech. If you haven't worked out what you actually believe, you'll reach for borrowed phrases instead. Practice helps — the same way rehearsing for an interview sharpens your answers, deliberately putting your thoughts into words before high-stakes conversations makes a real difference.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-action-items">Action Items</h2>
+<ol>
+<li>Spend time identifying what you genuinely want from life — not a detailed plan, just a direction you can name and speak to.</li>
+<li>Reflect on a current challenge you're facing and work out your honest, constructive take on it before it comes up in conversation.</li>
+<li>Practice articulating both of the above out loud — to a friend, in a mock conversation, or even in a journal — until the words come naturally.</li>
+</ol>
+</section></article>
+    </div>
+  </div>
   
   <div class="view" data-view="transcript">
     <div class="doc">
@@ -50,7 +92,7 @@ try {
   </div>
   
 
-  <p class="meta">Transcript of a Dr. K's Guide lesson (Love, Sex & Relationships → Attraction & Early Dating Skills). Captions auto-generated.</p>
+  <p class="meta">Medium summary + transcript of a Dr. K's Guide lesson (Love, Sex & Relationships → Attraction & Early Dating Skills). Captions auto-generated; summary by claude-sonnet-4-6.</p>
 </div>
 
 <script>
@@ -58,7 +100,7 @@ try {
   var root = document.documentElement;
   function setView(v){ root.setAttribute('data-view', v);
     document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
-  setView(root.getAttribute('data-view') || 'transcript');
+  setView(root.getAttribute('data-view') || 'medium');
   document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
   var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }

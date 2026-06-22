@@ -9,8 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-  document.documentElement.setAttribute('data-view', 'transcript');
-} catch (e) { document.documentElement.setAttribute('data-view', 'transcript'); }
+  document.documentElement.setAttribute('data-view', 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -33,7 +33,54 @@ try {
   </p>
 
   
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">503w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">1,704w</span></button>
+    
+  </div>
+  
 
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#summary-summary">Summary</a></li>
+<li><a href="#summary-the-three-fundamental-movements-of-the-mind">The Three Fundamental Movements of the Mind</a></li>
+<li><a href="#summary-action-items">Action Items</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="summary-summary">Summary</h2>
+<p><strong>TL;DR — <span class="gl" tabindex="0">Motivation<span class="gl-pop" role="tooltip"><span class="gl-def">Motivation is not a feeling, a desire, or a behavior — it is the ability to hold one thought steadily in your mind for a prolonged period of time.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span> isn't about willpower or discipline; it's about your ability to hold a specific thought in your mind over time. And that ability is a trainable skill nobody ever taught you.</strong></p>
+<p><span class="gl" tabindex="0">Motivation<span class="gl-pop" role="tooltip"><span class="gl-def">Motivation is not a feeling, a desire, or a behavior — it is the ability to hold one thought steadily in your mind for a prolonged period of time.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span> is essentially sustained attention. The people who stick to their diets, their workouts, their goals — they're not fundamentally different from you. They're just spending more time actually thinking about those goals. When a New Year's resolution fades, what changes isn't your character; it's how often the resolution occupies your mind. The same logic works in reverse: if you're trying to game less but you're thinking about the game first thing in the morning and last thing at night, the pull toward it will be overwhelming.</p>
+<p>The problem is that nobody teaches us how to concentrate. We're told to "apply ourselves" and to "sit down and study," but the instruction stops there. Staring blankly at a textbook isn't studying — it's just sitting. Your mind wanders, you pull it back for one paragraph, it wanders again. That cycle isn't a character flaw; it's what happens when you've never been shown the actual mechanics of focus.</p>
+<p>There's a bitter irony here: society is extraordinarily sophisticated at <em>shaping your thoughts from the outside</em> — advertising, content algorithms, recommendation feeds. These systems are built on a deep science of directing human attention. But no one turns that <span class="gl" tabindex="0">knowledge<span class="gl-pop" role="tooltip"><span class="gl-def">Vidya is the Sanskrit term for objective, transmissible information — the kind of knowledge that can be written in a book, verified by multiple people, and passed from one person to another without loss.</span><a class="gl-more" href="../glossary.html#glossary-vidya">Full definition →</a></span></span> inward and teaches you how to direct your own attention. You're left on autopilot while highly optimized external forces compete for control of your mind.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-the-three-fundamental-movements-of-the-mind">The Three Fundamental Movements of the Mind</h2>
+<p>Just as an arm has a finite set of movements (flexion, extension, rotation), the mind has three core movements involved in <span class="gl" tabindex="0">concentration<span class="gl-pop" role="tooltip"><span class="gl-def">The active, deliberate practice of fixing your attention on a single point — distinct from meditation as a state, Dharana is the technique, the verb, the thing you actually do.</span><a class="gl-more" href="../glossary.html#glossary-dharana">Full definition →</a></span></span>:</p>
+<ol>
+<li><strong>Directing</strong> — pointing your mind toward something deliberately ("focus on this")</li>
+<li><strong>Dropping</strong> — releasing a thought so your mind is free to move elsewhere</li>
+<li><strong>Holding</strong> — keeping your mind on the chosen object once it's there</li>
+</ol>
+<p>The whole process of studying, or doing any focused work, is just these three things in sequence: drop what you were thinking about, direct your attention to the task, hold it there. It's roughly like training a dog — stop, come, sit.</p>
+<p>These movements are <strong>trainable</strong>. Practicing them is like doing reps at the gym: repetition builds the faculty itself, so over time your mind actually does what you tell it to do instead of running off on its own.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-action-items">Action Items</h2>
+<ol>
+<li><strong>Notice which movement is failing you.</strong> When you lose focus, ask: did I fail to drop the distraction, fail to redirect, or fail to hold? Naming the specific breakdown is the first step to fixing it.</li>
+<li><strong>Practice the three movements deliberately</strong> — <span class="gl" tabindex="0">meditation<span class="gl-pop" role="tooltip"><span class="gl-def">A practice of focused attention aimed at reaching a state of consciousness outside the thinking mind — where anxiety, desire, hope, attachment, and sadness simply cannot exist.</span><a class="gl-more" href="../glossary.html#glossary-meditation">Full definition →</a></span></span> is the most direct training tool (treating each breath-return as one rep of drop → direct → hold).</li>
+<li><strong>Audit what's occupying your mind passively.</strong> If a behavior you want to reduce dominates your thoughts morning and night, reducing that mental exposure is as important as changing the behavior itself.</li>
+</ol>
+</section></article>
+    </div>
+  </div>
   
   <div class="view" data-view="transcript">
     <div class="doc">
@@ -58,7 +105,7 @@ try {
   </div>
   
 
-  <p class="meta">Transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by disordered attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> → Spiritual Perspectives on Thought). Captions auto-generated.</p>
+  <p class="meta">Medium summary + transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by disordered attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> → Spiritual Perspectives on Thought). Captions auto-generated; summary by claude-sonnet-4-6.</p>
 </div>
 
 <script>
@@ -66,7 +113,7 @@ try {
   var root = document.documentElement;
   function setView(v){ root.setAttribute('data-view', v);
     document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
-  setView(root.getAttribute('data-view') || 'transcript');
+  setView(root.getAttribute('data-view') || 'medium');
   document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
   var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }

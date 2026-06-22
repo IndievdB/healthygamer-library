@@ -9,8 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-  document.documentElement.setAttribute('data-view', 'transcript');
-} catch (e) { document.documentElement.setAttribute('data-view', 'transcript'); }
+  document.documentElement.setAttribute('data-view', 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -33,7 +33,50 @@ try {
   </p>
 
   
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">430w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">1,970w</span></button>
+    
+  </div>
+  
 
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#summary-summary">Summary</a></li>
+<li><a href="#summary-action-items">Action Items</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="summary-summary">Summary</h2>
+<p><strong>TL;DR — Overwhelm isn't caused by not caring enough; it's caused by caring too much. The perfectionism that comes with high stakes makes it nearly impossible to compromise, and compromise is exactly what getting started requires.</strong></p>
+<p>When tasks pile up — or a deadline approaches — <span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">Motivation is not a feeling, a desire, or a behavior — it is the ability to hold one thought steadily in your mind for a prolonged period of time.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span> naturally rises. But there's a tipping point. Cross it, and <span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">Motivation is not a feeling, a desire, or a behavior — it is the ability to hold one thought steadily in your mind for a prolonged period of time.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span> flips into paralysis. At that point, the <span class="gl" tabindex="0">frontal lobes<span class="gl-pop" role="tooltip"><span class="gl-def">The brain&#x27;s master controller — the region responsible for planning, impulse control, directing attention, organization, and what we collectively call maturity.</span><a class="gl-more" href="../glossary.html#glossary-frontal-lobes">Full definition →</a></span></span> (responsible for planning and sequencing tasks) are simply overloaded. The pile has grown too large to know where to begin.</p>
+<p>There's also a psychological layer on top of the neuroscience: you only feel overwhelmed by things that <em>matter</em> to you. Nobody freezes up over the arrangement of ice cubes in their glass. The more something matters, the more it needs to be done <em>right</em> — and the harder it becomes to take an imperfect first step. Perfectionism and overwhelm are the same thing wearing different clothes.</p>
+<blockquote>
+<p>"It's paradoxically because we care so much about it that it's so hard to get started."</p>
+</blockquote>
+<p>The trap is assuming that caring more should produce more <span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">Motivation is not a feeling, a desire, or a behavior — it is the ability to hold one thought steadily in your mind for a prolonged period of time.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span>. Sometimes it does — up to a point. But once you're in the overwhelmed zone, pushing harder or reminding yourself how important something is actually makes the paralysis worse, not better.</p>
+<p>Two things actually help:</p>
+<ul>
+<li><strong>Break the task down</strong> so your <span class="gl" tabindex="0">frontal lobes<span class="gl-pop" role="tooltip"><span class="gl-def">The brain&#x27;s master controller — the region responsible for planning, impulse control, directing attention, organization, and what we collectively call maturity.</span><a class="gl-more" href="../glossary.html#glossary-frontal-lobes">Full definition →</a></span></span> can plan and execute it in pieces rather than staring at one impossible whole.</li>
+<li><strong>Appease the perfectionist</strong> with a partial commitment. Tell yourself you'll write the email but not send it. Write the letter but not mail it. Start the draft with no obligation to submit it. This trick works because the part of you that's frozen isn't afraid of <em>doing the thing</em> — it's afraid of doing it <em>wrong</em>. A draft doesn't count as wrong yet.</li>
+</ul>
+<p>Most people say the hardest part is getting started. The goal isn't to go the full distance in one move — it's to take the first step by lowering the stakes just enough to make a compromise possible.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-action-items">Action Items</h2>
+<ol>
+<li><strong>Chunk the task.</strong> Break whatever is overwhelming you into the smallest possible next action — one step your brain can actually plan.</li>
+<li><strong>Make a partial commitment.</strong> Frame your first attempt as a draft, a rehearsal, or a private version you don't have to show anyone. Remove the finality that's keeping you frozen.</li>
+<li><strong>Don't try to care less — just start smaller.</strong> The caring is fine. What needs to change is the all-or-nothing framing that makes any imperfect start feel like failure.</li>
+</ol>
+</section></article>
+    </div>
+  </div>
   
   <div class="view" data-view="transcript">
     <div class="doc">
@@ -60,7 +103,7 @@ try {
   </div>
   
 
-  <p class="meta">Transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by disordered attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> → Goal Setting & <span class="gl" tabindex="0">Motivation<span class="gl-pop" role="tooltip"><span class="gl-def">Motivation is not a feeling, a desire, or a behavior — it is the ability to hold one thought steadily in your mind for a prolonged period of time.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span>). Captions auto-generated.</p>
+  <p class="meta">Medium summary + transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by disordered attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> → Goal Setting & <span class="gl" tabindex="0">Motivation<span class="gl-pop" role="tooltip"><span class="gl-def">Motivation is not a feeling, a desire, or a behavior — it is the ability to hold one thought steadily in your mind for a prolonged period of time.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span>). Captions auto-generated; summary by claude-sonnet-4-6.</p>
 </div>
 
 <script>
@@ -68,7 +111,7 @@ try {
   var root = document.documentElement;
   function setView(v){ root.setAttribute('data-view', v);
     document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
-  setView(root.getAttribute('data-view') || 'transcript');
+  setView(root.getAttribute('data-view') || 'medium');
   document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
   var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }

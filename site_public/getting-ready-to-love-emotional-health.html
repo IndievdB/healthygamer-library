@@ -9,8 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-  document.documentElement.setAttribute('data-view', 'transcript');
-} catch (e) { document.documentElement.setAttribute('data-view', 'transcript'); }
+  document.documentElement.setAttribute('data-view', 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -33,7 +33,54 @@ try {
   </p>
 
   
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">516w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">1,919w</span></button>
+    
+  </div>
+  
 
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#summary-summary">Summary</a></li>
+<li><a href="#summary-three-emotional-regulation-skills">Three Emotional Regulation Skills</a></li>
+<li><a href="#summary-action-items">Action Items</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="summary-summary">Summary</h2>
+<p><strong>TL;DR — The dating world burns people out, and the natural adaptations your mind forms to protect you from that pain are the very things that make love harder to find.</strong></p>
+<p>Every time you get ghosted, rejected, or hurt, your brain tries to protect you by telling you to invest less next time — stay aloof, keep your distance. That feels like self-preservation, but it's actually self-sabotage. The more calloused you become, the weaker your ability to form real connection gets. The solution isn't to stop feeling; it's to get better at managing what you feel.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-three-emotional-regulation-skills">Three Emotional Regulation Skills</h2>
+<p><strong>1. Name your emotions.</strong>
+The brain's emotional center (the <span class="gl" tabindex="0">limbic system<span class="gl-pop" role="tooltip"><span class="gl-def">A network of interconnected brain regions that together form your emotional circuit — not a single structure, but several anatomical chunks working together.</span><a class="gl-more" href="../glossary.html#glossary-limbic-system">Full definition →</a></span></span>) and the part that produces language (the linguistic cortex) are separate systems. When you try to put words to what you're feeling, the linguistic cortex literally dampens the signal from the emotional center — the volume of the feeling drops just from labeling it. You also understand it better, and understanding gives you power over it.</p>
+<p><strong>2. Cultivate additional emotions.</strong>
+After a breakup, your brain will default to a single, overwhelming negative story — <em>I'm unlovable, I wasted three years, I'm an idiot</em>. That unidimensional reaction is the real gaslighting; it crowds out everything else. The antidote is deliberately adding emotions that are also true. Yes, the relationship ended badly — and you had real good times, and you learned what you want, and you grew. This isn't toxic positivity; it's accuracy.</p>
+<p>This works in reverse too. When you're flooded with positive emotion — falling hard for someone — it's worth cultivating a little caution. Positive emotion can drive just as many relationship disasters as negative emotion can.</p>
+<p><strong>3. Don't let emotions control your behavior.</strong>
+Feeling an emotion and acting on it are two different things. Emotions evolved to give you <strong>information</strong> and <strong><span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">Motivation is not a feeling, a desire, or a behavior — it is the ability to hold one thought steadily in your mind for a prolonged period of time.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span></strong>, not commands. When a strong emotion is pushing you toward a drastic action (breaking up, cutting someone off, getting back together), pause and ask: <em>What is this emotion telling me? What problem is it pointing to?</em> The anger that makes you want to break up might actually be pointing to a solvable problem. Address the problem; you may not need the drastic action at all.</p>
+<blockquote>
+<p>"Just because I'm entitled to feel angry does not mean that the behavior that the anger is driving me towards is a good or healthy behavior."</p>
+</blockquote>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-action-items">Action Items</h2>
+<ol>
+<li>The next time you're hurt by something in dating, stop and name the specific emotion — not just "bad" but <em>disappointed</em>, <em>embarrassed</em>, <em>lonely</em>. Notice whether the intensity shifts slightly once you've labeled it.</li>
+<li>After any negative dating experience, consciously list at least one thing that is also true that your initial reaction is ignoring (something learned, something good that happened, a reason for reasonable hope).</li>
+<li>When a strong emotion is pushing you toward a big decision, write down two things before acting: what information is this emotion giving me, and what is it motivating me toward? Then decide whether the action it's pushing you toward actually solves the underlying issue.</li>
+</ol>
+</section></article>
+    </div>
+  </div>
   
   <div class="view" data-view="transcript">
     <div class="doc">
@@ -49,7 +96,7 @@ try {
   </div>
   
 
-  <p class="meta">Transcript of a Dr. K's Guide lesson (Love, Sex & Relationships → Choosing the Right Partner). Captions auto-generated.</p>
+  <p class="meta">Medium summary + transcript of a Dr. K's Guide lesson (Love, Sex & Relationships → Choosing the Right Partner). Captions auto-generated; summary by claude-sonnet-4-6.</p>
 </div>
 
 <script>
@@ -57,7 +104,7 @@ try {
   var root = document.documentElement;
   function setView(v){ root.setAttribute('data-view', v);
     document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
-  setView(root.getAttribute('data-view') || 'transcript');
+  setView(root.getAttribute('data-view') || 'medium');
   document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
   var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }

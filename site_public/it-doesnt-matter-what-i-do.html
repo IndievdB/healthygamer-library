@@ -9,8 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-  document.documentElement.setAttribute('data-view', 'transcript');
-} catch (e) { document.documentElement.setAttribute('data-view', 'transcript'); }
+  document.documentElement.setAttribute('data-view', 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -33,7 +33,50 @@ try {
   </p>
 
   
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">445w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">1,376w</span></button>
+    
+  </div>
+  
 
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#summary-summary">Summary</a></li>
+<li><a href="#summary-action-items">Action Items</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="summary-summary">Summary</h2>
+<p><strong>TL;DR — The belief that nothing will work for you isn't a conclusion drawn from failure; it's a feeling of hopelessness you carried <em>into</em> your attempts, which then made failure more likely.</strong></p>
+<p>The <strong><span class="gl" tabindex="0">nocebo effect<span class="gl-pop" role="tooltip"><span class="gl-def">The nocebo effect is the mirror image of the placebo effect: if you believe something isn&#x27;t going to work, it doesn&#x27;t work.</span><a class="gl-more" href="../glossary.html#glossary-nocebo-effect">Full definition →</a></span></span></strong> is the clinical mirror image of the placebo effect: when a patient doesn't believe a treatment will work, its effectiveness is genuinely reduced — even if the treatment has a real biological effect. This isn't just a medical curiosity. The same mechanism operates in everyday life. Go into a job interview convinced you won't get hired, and that belief shapes your tone, body language, and the <span class="gl" tabindex="0">confidence<span class="gl-pop" role="tooltip"><span class="gl-def">Self-esteem is the internal sense of accepting yourself as you are — not a score you earn by comparing favorably against others.</span><a class="gl-more" href="../glossary.html#glossary-self-esteem">Full definition →</a></span></span> you project. The interviewer picks up on it. The belief becomes the outcome.</p>
+<p>What makes this pattern so hard to escape is that failure seems to <em>confirm</em> the original fear. Each setback adds another data point, the doubt deepens, <span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">Motivation is not a feeling, a desire, or a behavior — it is the ability to hold one thought steadily in your mind for a prolonged period of time.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span> collapses, and the cycle tightens. But there's a flaw in that logic worth examining closely: the hopelessness usually came <em>first</em>. Most people who feel this way didn't lose faith after ten failures — they doubted themselves before attempt number one. The failures fed a belief that was already there.</p>
+<p>This pattern is rooted in a <strong><span class="gl" tabindex="0">samskara<span class="gl-pop" role="tooltip"><span class="gl-def">A samskara is a ball of undigested emotional energy from the past that lingers in the unconscious mind and automatically shapes how you think, feel, and respond to situations in the present.</span><a class="gl-more" href="../glossary.html#glossary-samskara">Full definition →</a></span></span></strong> — a mental groove carved by an underlying emotion like powerlessness or hopelessness. The groove deepens with each reinforcing experience, but its origin predates the evidence your mind will point to.</p>
+<p>Two things break the cycle:</p>
+<ul>
+<li><strong>Catch the thought in the moment.</strong> When your mind says <em>don't bother</em>, notice it — and notice it isn't necessarily true.</li>
+<li><strong>Ask yourself honestly: when did you actually give up hope?</strong> Don't accept the first answer ("I failed ten times"). Push past it. Chances are the seed of hopelessness preceded your first attempt entirely.</li>
+</ul>
+<blockquote>
+<p>Instead of this being your destiny of failure, what you start to realize is your success or failure actually depends on your <span class="gl" tabindex="0">confidence<span class="gl-pop" role="tooltip"><span class="gl-def">Self-esteem is the internal sense of accepting yourself as you are — not a score you earn by comparing favorably against others.</span><a class="gl-more" href="../glossary.html#glossary-self-esteem">Full definition →</a></span></span> and nothing else.</p>
+</blockquote>
+<p>Finding that original moment matters because it reframes everything. Failure stops looking like proof that you're broken and starts looking like a predictable result of going in without <span class="gl" tabindex="0">confidence<span class="gl-pop" role="tooltip"><span class="gl-def">Self-esteem is the internal sense of accepting yourself as you are — not a score you earn by comparing favorably against others.</span><a class="gl-more" href="../glossary.html#glossary-self-esteem">Full definition →</a></span></span>. That's not destiny — it's a variable you can actually change.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-action-items">Action Items</h2>
+<ol>
+<li><strong>Notice the thought without obeying it.</strong> When "it doesn't matter what I do" surfaces, treat it as a thought to observe, not a fact to act on.</li>
+<li><strong>Trace the hopelessness backward.</strong> Ask when you <em>actually</em> stopped believing — and keep questioning until you get past "because I failed" to whatever came before the first attempt.</li>
+<li><strong>Emotionally process that origin point.</strong> Sit with the feeling rather than the narrative. Digesting the original emotion reduces the energy that keeps the pattern running.</li>
+</ol>
+</section></article>
+    </div>
+  </div>
   
   <div class="view" data-view="transcript">
     <div class="doc">
@@ -56,7 +99,7 @@ try {
   </div>
   
 
-  <p class="meta">Transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by disordered attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> → <span class="gl" tabindex="0">Samskaras<span class="gl-pop" role="tooltip"><span class="gl-def">A samskara is a ball of undigested emotional energy from the past that lingers in the unconscious mind and automatically shapes how you think, feel, and respond to situations in the present.</span><a class="gl-more" href="../glossary.html#glossary-samskara">Full definition →</a></span></span> & <span class="gl" tabindex="0">Motivation<span class="gl-pop" role="tooltip"><span class="gl-def">Motivation is not a feeling, a desire, or a behavior — it is the ability to hold one thought steadily in your mind for a prolonged period of time.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span>). Captions auto-generated.</p>
+  <p class="meta">Medium summary + transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by disordered attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> → <span class="gl" tabindex="0">Samskaras<span class="gl-pop" role="tooltip"><span class="gl-def">A samskara is a ball of undigested emotional energy from the past that lingers in the unconscious mind and automatically shapes how you think, feel, and respond to situations in the present.</span><a class="gl-more" href="../glossary.html#glossary-samskara">Full definition →</a></span></span> & <span class="gl" tabindex="0">Motivation<span class="gl-pop" role="tooltip"><span class="gl-def">Motivation is not a feeling, a desire, or a behavior — it is the ability to hold one thought steadily in your mind for a prolonged period of time.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span>). Captions auto-generated; summary by claude-sonnet-4-6.</p>
 </div>
 
 <script>
@@ -64,7 +107,7 @@ try {
   var root = document.documentElement;
   function setView(v){ root.setAttribute('data-view', v);
     document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
-  setView(root.getAttribute('data-view') || 'transcript');
+  setView(root.getAttribute('data-view') || 'medium');
   document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
   var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }

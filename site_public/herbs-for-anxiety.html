@@ -9,8 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-  document.documentElement.setAttribute('data-view', 'transcript');
-} catch (e) { document.documentElement.setAttribute('data-view', 'transcript'); }
+  document.documentElement.setAttribute('data-view', 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -33,7 +33,61 @@ try {
   </p>
 
   
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">478w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">1,545w</span></button>
+    
+  </div>
+  
 
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#summary-summary">Summary</a></li>
+<li><a href="#summary-the-herbs-and-what-the-evidence-says">The Herbs and What the Evidence Says</a></li>
+<li><a href="#summary-a-note-on-expectations">A Note on Expectations</a></li>
+<li><a href="#summary-action-items">Action Items</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="summary-summary">Summary</h2>
+<p><strong>TL;DR — Several herbs have genuine, research-backed effects on <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response in which the brain prepares you for high-stakes or unfamiliar situations — triggering the sympathetic nervous system, releasing adrenaline and cortisol, and narrowing your attention onto…</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span>, but they work best as one part of a broader plan rather than a standalone cure.</strong></p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-the-herbs-and-what-the-evidence-says">The Herbs and What the Evidence Says</h2>
+<p><strong>Brahmi</strong> (from Ayurveda) has randomized controlled trial support showing reduced <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response in which the brain prepares you for high-stakes or unfamiliar situations — triggering the sympathetic nervous system, releasing adrenaline and cortisol, and narrowing your attention onto…</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> over 12 weeks. It also has antidepressant and antioxidant properties, and promotes nerve growth (<strong>nootropic</strong> effects). It works across multiple neurotransmitter systems — <span class="gl" tabindex="0">dopamine<span class="gl-pop" role="tooltip"><span class="gl-def">A neurotransmitter the brain uses primarily to reinforce behavior, drive motivation, and generate craving — not, as commonly assumed, simply to produce pleasure.</span><a class="gl-more" href="../glossary.html#glossary-dopamine">Full definition →</a></span></span>, <span class="gl" tabindex="0">serotonin<span class="gl-pop" role="tooltip"><span class="gl-def">A neurotransmitter responsible for contentment and peace — distinct from the excitement and pleasure driven by dopamine — and for regulating your brain&#x27;s perception of how hard something is to do.</span><a class="gl-more" href="../glossary.html#glossary-serotonin">Full definition →</a></span></span>, acetylcholine, and noradrenaline.</p>
+<p><strong>Gotu kola</strong> has shown reductions in <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response in which the brain prepares you for high-stakes or unfamiliar situations — triggering the sympathetic nervous system, releasing adrenaline and cortisol, and narrowing your attention onto…</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> and <span class="gl" tabindex="0">depression<span class="gl-pop" role="tooltip"><span class="gl-def">A state of persistently low mood that goes beyond a normal emotional response to difficulty — it becomes clinical when symptoms last at least two weeks, impair functioning, and include at least five of nine recognized…</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span> in smaller studies, including measurably lowering the startle response (a marker of baseline neurological <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response in which the brain prepares you for high-stakes or unfamiliar situations — triggering the sympathetic nervous system, releasing adrenaline and cortisol, and narrowing your attention onto…</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span>). Evidence is promising but lacks large RCTs. It likely works via <strong>GABA</strong>, the same inhibitory neurotransmitter targeted by benzodiazepines like Xanax.</p>
+<p><strong>Galphimia</strong>, from Mexican and Central American traditions, has gone head-to-head against pharmaceutical anti-<span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response in which the brain prepares you for high-stakes or unfamiliar situations — triggering the sympathetic nervous system, releasing adrenaline and cortisol, and narrowing your attention onto…</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> medications — and performed comparably. It works through the <span class="gl" tabindex="0">serotonin<span class="gl-pop" role="tooltip"><span class="gl-def">A neurotransmitter responsible for contentment and peace — distinct from the excitement and pleasure driven by dopamine — and for regulating your brain&#x27;s perception of how hard something is to do.</span><a class="gl-more" href="../glossary.html#glossary-serotonin">Full definition →</a></span></span> system, similar to <span class="gl" tabindex="0">SSRIs<span class="gl-pop" role="tooltip"><span class="gl-def">A neurotransmitter responsible for contentment and peace — distinct from the excitement and pleasure driven by dopamine — and for regulating your brain&#x27;s perception of how hard something is to do.</span><a class="gl-more" href="../glossary.html#glossary-serotonin">Full definition →</a></span></span>.</p>
+<p><strong>Chamomile</strong> has RCT support for statistically significant <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response in which the brain prepares you for high-stakes or unfamiliar situations — triggering the sympathetic nervous system, releasing adrenaline and cortisol, and narrowing your attention onto…</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> reduction. The effect is real but modest and appears short-term. Like gotu kola, it likely works through GABA modulation — essentially a mild, natural benzodiazepine-like effect.</p>
+<p><strong>Passion flower</strong> is unique: it's been studied specifically as a pre-procedure anxiolytic (think dental surgery prep), where it performed comparably to midazolam and nitrous oxide. The leading theory is that it sensitizes GABA receptors rather than directly increasing GABA signaling.</p>
+<p><strong>Kava</strong> has the strongest evidence of the group — backed by a <strong>Cochrane Review</strong> (a high-<span class="gl" tabindex="0">confidence<span class="gl-pop" role="tooltip"><span class="gl-def">Self-esteem is the internal sense of accepting yourself as you are — not a score you earn by comparing favorably against others.</span><a class="gl-more" href="../glossary.html#glossary-self-esteem">Full definition →</a></span></span> meta-analysis across 20+ studies) showing a meaningful effect size for <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response in which the brain prepares you for high-stakes or unfamiliar situations — triggering the sympathetic nervous system, releasing adrenaline and cortisol, and narrowing your attention onto…</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> reduction. One caution: rare, usually mild and reversible <strong>hepatotoxicity</strong> (liver stress), so it warrants monitoring.</p>
+<p><strong>Ginkgo biloba</strong> is included as a cautionary example. Despite being widely marketed as a cognitive enhancer, there is only one modest study suggesting any effect on <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response in which the brain prepares you for high-stakes or unfamiliar situations — triggering the sympathetic nervous system, releasing adrenaline and cortisol, and narrowing your attention onto…</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span>. The lesson: marketing and evidence are not the same thing. Check the data before adding anything to your routine.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-a-note-on-expectations">A Note on Expectations</h2>
+<blockquote>
+<p>"Just because they're natural and work doesn't necessarily mean they're safe."</p>
+</blockquote>
+<p>No single herb eliminates <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response in which the brain prepares you for high-stakes or unfamiliar situations — triggering the sympathetic nervous system, releasing adrenaline and cortisol, and narrowing your attention onto…</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span>. These work best folded into a comprehensive approach that includes good diet, <span class="gl" tabindex="0">meditation<span class="gl-pop" role="tooltip"><span class="gl-def">A practice of focused attention aimed at reaching a state of consciousness outside the thinking mind — where anxiety, desire, hope, attachment, and sadness simply cannot exist.</span><a class="gl-more" href="../glossary.html#glossary-meditation">Full definition →</a></span></span>, mind-body practices, and where appropriate, therapy or pharmaceutical support. The goal is a plan, not a pill.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-action-items">Action Items</h2>
+<ol>
+<li>If you're considering an herb, look at the quality of evidence behind it specifically — not just general buzz or marketing claims.</li>
+<li>Start with herbs that have the strongest research support (brahmi, kava, galphimia) before reaching for widely advertised ones with thin evidence (like ginkgo).</li>
+<li>If trying kava, be aware of the liver safety consideration and discuss it with a doctor, especially with regular use.</li>
+<li>Frame any herbal supplement as one piece of a broader <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response in which the brain prepares you for high-stakes or unfamiliar situations — triggering the sympathetic nervous system, releasing adrenaline and cortisol, and narrowing your attention onto…</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> management plan, not a replacement for other evidence-based approaches.</li>
+<li>Consult a doctor before starting — especially if you're already on medication, since many of these act on the same neurotransmitter systems as pharmaceuticals.</li>
+</ol>
+</section></article>
+    </div>
+  </div>
   
   <div class="view" data-view="transcript">
     <div class="doc">
@@ -57,7 +111,7 @@ try {
   </div>
   
 
-  <p class="meta">Transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">Anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response in which the brain prepares you for high-stakes or unfamiliar situations — triggering the sympathetic nervous system, releasing adrenaline and cortisol, and narrowing your attention onto…</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> → <span class="gl" tabindex="0">Anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response in which the brain prepares you for high-stakes or unfamiliar situations — triggering the sympathetic nervous system, releasing adrenaline and cortisol, and narrowing your attention onto…</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> & Ayurveda). Captions auto-generated.</p>
+  <p class="meta">Medium summary + transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">Anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response in which the brain prepares you for high-stakes or unfamiliar situations — triggering the sympathetic nervous system, releasing adrenaline and cortisol, and narrowing your attention onto…</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> → <span class="gl" tabindex="0">Anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response in which the brain prepares you for high-stakes or unfamiliar situations — triggering the sympathetic nervous system, releasing adrenaline and cortisol, and narrowing your attention onto…</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> & Ayurveda). Captions auto-generated; summary by claude-sonnet-4-6.</p>
 </div>
 
 <script>
@@ -65,7 +119,7 @@ try {
   var root = document.documentElement;
   function setView(v){ root.setAttribute('data-view', v);
     document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
-  setView(root.getAttribute('data-view') || 'transcript');
+  setView(root.getAttribute('data-view') || 'medium');
   document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
   var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }

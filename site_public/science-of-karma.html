@@ -9,8 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-  document.documentElement.setAttribute('data-view', 'transcript');
-} catch (e) { document.documentElement.setAttribute('data-view', 'transcript'); }
+  document.documentElement.setAttribute('data-view', 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -33,7 +33,35 @@ try {
   </p>
 
   
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">297w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">1,159w</span></button>
+    
+  </div>
+  
 
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#summary-summary">Summary</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="summary-summary">Summary</h2>
+<p><strong>TL;DR — <span class="gl" tabindex="0">Karma<span class="gl-pop" role="tooltip"><span class="gl-def">Karma is the principle that all effects have causes and all causes produce effects — nothing more, nothing less.</span><a class="gl-more" href="../glossary.html#glossary-karma">Full definition →</a></span></span> isn't mystical fate; it's simply the principle of cause and effect applied to every dimension of life, including ones that are hard to trace.</strong></p>
+<p>At its core, <span class="gl" tabindex="0">karma<span class="gl-pop" role="tooltip"><span class="gl-def">Karma is the principle that all effects have causes and all causes produce effects — nothing more, nothing less.</span><a class="gl-more" href="../glossary.html#glossary-karma">Full definition →</a></span></span> is just cause and effect. Every effect has a cause, and every cause produces an effect. That's it. The reason it feels mystical is that the chain of causes is often invisible or operates on timescales or levels of abstraction we don't naturally track.</p>
+<p>Some examples are easy to see: studying hard raises your GPA, a good GPA opens doors. Other links in the chain took longer for humans to work out — genetics explains why traits you were "born with" were actually shaped by causes that predate your birth (your parents' genes). <span class="gl" tabindex="0">Attachment theory<span class="gl-pop" role="tooltip"><span class="gl-def">A framework for understanding how early caregiving experiences shape the way people form bonds, relate to others, and navigate the world throughout life.</span><a class="gl-more" href="../glossary.html#glossary-attachment-theory">Full definition →</a></span></span> explains how your early caregiving environment shapes how you form relationships decades later. These once seemed like fate or destiny; now they're legible cause-and-effect chains.</p>
+<blockquote>
+<p><span class="gl" tabindex="0">Karma<span class="gl-pop" role="tooltip"><span class="gl-def">Karma is the principle that all effects have causes and all causes produce effects — nothing more, nothing less.</span><a class="gl-more" href="../glossary.html#glossary-karma">Full definition →</a></span></span> isn't something that is so mystical — it just becomes difficult once we start abstracting things out.</p>
+</blockquote>
+<p>The hopeful part is that understanding <span class="gl" tabindex="0">karma<span class="gl-pop" role="tooltip"><span class="gl-def">Karma is the principle that all effects have causes and all causes produce effects — nothing more, nothing less.</span><a class="gl-more" href="../glossary.html#glossary-karma">Full definition →</a></span></span> as cause and effect means your situation isn't fixed. If a cause produced an effect you don't want, new causes can produce new effects. Psychiatry has identified, for instance, what it actually takes to move from anxious <span class="gl" tabindex="0">attachment<span class="gl-pop" role="tooltip"><span class="gl-def">A framework for understanding how early caregiving experiences shape the way people form bonds, relate to others, and navigate the world throughout life.</span><a class="gl-more" href="../glossary.html#glossary-attachment-theory">Full definition →</a></span></span> to secure <span class="gl" tabindex="0">attachment<span class="gl-pop" role="tooltip"><span class="gl-def">A framework for understanding how early caregiving experiences shape the way people form bonds, relate to others, and navigate the world throughout life.</span><a class="gl-more" href="../glossary.html#glossary-attachment-theory">Full definition →</a></span></span> — the path exists, even if it isn't obvious.</p>
+<p>The harder cases — who you fall in love with, random accidents, whether you get robbed — are where the causal chains become genuinely difficult to trace. This is where ancient frameworks worked out principles that science hasn't fully caught up to yet. The key thing to sit with is the question of whether cause and effect ever truly stops applying, even when you can't see the mechanism.</p>
+</section></article>
+    </div>
+  </div>
   
   <div class="view" data-view="transcript">
     <div class="doc">
@@ -54,7 +82,7 @@ try {
   </div>
   
 
-  <p class="meta">Transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">Trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is what happens when an experience generates more emotion than you can process in a single moment — the overwhelm itself is the defining feature, not just the event.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> → Spiritual Perspectives on <span class="gl" tabindex="0">Trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is what happens when an experience generates more emotion than you can process in a single moment — the overwhelm itself is the defining feature, not just the event.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span>). Captions auto-generated.</p>
+  <p class="meta">Medium summary + transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">Trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is what happens when an experience generates more emotion than you can process in a single moment — the overwhelm itself is the defining feature, not just the event.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> → Spiritual Perspectives on <span class="gl" tabindex="0">Trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is what happens when an experience generates more emotion than you can process in a single moment — the overwhelm itself is the defining feature, not just the event.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span>). Captions auto-generated; summary by claude-sonnet-4-6.</p>
 </div>
 
 <script>
@@ -62,7 +90,7 @@ try {
   var root = document.documentElement;
   function setView(v){ root.setAttribute('data-view', v);
     document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
-  setView(root.getAttribute('data-view') || 'transcript');
+  setView(root.getAttribute('data-view') || 'medium');
   document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
   var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }

@@ -9,8 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-  document.documentElement.setAttribute('data-view', 'transcript');
-} catch (e) { document.documentElement.setAttribute('data-view', 'transcript'); }
+  document.documentElement.setAttribute('data-view', 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -33,7 +33,65 @@ try {
   </p>
 
   
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">545w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">1,884w</span></button>
+    
+  </div>
+  
 
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#summary-summary">Summary</a></li>
+<li><a href="#summary-mood-lability-vs-bipolar-disorder">Mood Lability vs. Bipolar Disorder</a></li>
+<li><a href="#summary-the-bipolar-spectrum">The Bipolar Spectrum</a></li>
+<li><a href="#summary-a-few-clinically-important-points">A Few Clinically Important Points</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="summary-summary">Summary</h2>
+<p><strong>TL;DR — Bipolar disorder is a specific, relatively rare condition defined by prolonged mood episodes lasting weeks or months — not the rapid emotional swings most people mean when they use the word "bipolar."</strong></p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-mood-lability-vs-bipolar-disorder">Mood Lability vs. Bipolar Disorder</h2>
+<p>The word "bipolar" gets thrown around casually to describe anyone whose mood shifts quickly — a kid who gets angry when interrupted, a partner who seems hot and cold. What that actually describes is <strong>mood lability</strong>: rapid mood fluctuations that can happen within minutes or hours. Mood lability is common and shows up frequently in <span class="gl" tabindex="0">personality disorders<span class="gl-pop" role="tooltip"><span class="gl-def">A personality disorder is a fundamental alteration in the way you perceive, internally react to, and behave in the world — not something that occasionally happens to you, but the way you are.</span><a class="gl-more" href="../glossary.html#glossary-personality-disorders">Full definition →</a></span></span>, but it is not bipolar disorder.</p>
+<p>True <strong>bipolar disorder</strong> involves distinct mood episodes that last for <em>weeks or months</em> at a time. The depressive episodes look identical to <span class="gl" tabindex="0">Major Depressive Disorder<span class="gl-pop" role="tooltip"><span class="gl-def">A state of persistently low mood that goes beyond a normal emotional response to difficulty — it becomes clinical when symptoms last at least two weeks, impair functioning, and include at least five of nine recognized…</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span> — low mood, loss of interest, changes in <span class="gl" tabindex="0">sleep<span class="gl-pop" role="tooltip"><span class="gl-def">Sleep is the brain&#x27;s primary maintenance window — the period during which short-term memories stored in the hippocampus (your RAM) get written into long-term memory (your hard drive).</span><a class="gl-more" href="../glossary.html#glossary-sleep">Full definition →</a></span></span> and appetite, poor <span class="gl" tabindex="0">concentration<span class="gl-pop" role="tooltip"><span class="gl-def">The active, deliberate practice of fixing your attention on a single point — distinct from meditation as a state, Dharana is the technique, the verb, the thing you actually do.</span><a class="gl-more" href="../glossary.html#glossary-dharana">Full definition →</a></span></span>, low energy, sometimes suicidal thinking. What separates bipolar disorder is the addition of <strong>manic or hypomanic episodes</strong>.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-the-bipolar-spectrum">The Bipolar Spectrum</h2>
+<p><strong>Bipolar I</strong> requires at least one full manic episode. Mania means an elevated mood lasting at least four days, paired with:
+- Drastically reduced need for <span class="gl" tabindex="0">sleep<span class="gl-pop" role="tooltip"><span class="gl-def">Sleep is the brain&#x27;s primary maintenance window — the period during which short-term memories stored in the hippocampus (your RAM) get written into long-term memory (your hard drive).</span><a class="gl-more" href="../glossary.html#glossary-sleep">Full definition →</a></span></span> with no loss of energy (people may go days without sleeping and still feel fine)
+- Inflated <span class="gl" tabindex="0">self-esteem<span class="gl-pop" role="tooltip"><span class="gl-def">Self-esteem is the internal sense of accepting yourself as you are — not a score you earn by comparing favorably against others.</span><a class="gl-more" href="../glossary.html#glossary-self-esteem">Full definition →</a></span></span> or <span class="gl" tabindex="0">grandiosity<span class="gl-pop" role="tooltip"><span class="gl-def">A feature of personality (how you interact with the world) rather than identity (how you see yourself) — meaning a narcissist&#x27;s self-perception is often the exact opposite of their outward behavior: they genuinely…</span><a class="gl-more" href="../glossary.html#glossary-narcissism">Full definition →</a></span></span>
+- Pressured speech — rapid, relentless talking that makes normal conversation nearly impossible
+- Flight of ideas — the mind leaps from topic to topic in ways that are hard to follow
+- Distractibility — attention pulled constantly by external stimuli
+- Increased goal-directed activity, often grand new projects
+- High-risk behavior: spending sprees, gambling, impulsive investing, sexual risk-taking</p>
+<p>One manic episode is enough for a Bipolar I diagnosis, even if depressive episodes are far more frequent.</p>
+<p><strong>Bipolar II</strong> involves <strong>hypomania</strong> instead of full mania — a toned-down version. People in a hypomanic episode still <span class="gl" tabindex="0">sleep<span class="gl-pop" role="tooltip"><span class="gl-def">Sleep is the brain&#x27;s primary maintenance window — the period during which short-term memories stored in the hippocampus (your RAM) get written into long-term memory (your hard drive).</span><a class="gl-more" href="../glossary.html#glossary-sleep">Full definition →</a></span></span> less and have elevated energy, but their thinking stays coherent enough to be genuinely productive. Many patients with Bipolar II resist treatment precisely because hypomania feels like a superpower: intense focus, creative output, minimal need for <span class="gl" tabindex="0">sleep<span class="gl-pop" role="tooltip"><span class="gl-def">Sleep is the brain&#x27;s primary maintenance window — the period during which short-term memories stored in the hippocampus (your RAM) get written into long-term memory (your hard drive).</span><a class="gl-more" href="../glossary.html#glossary-sleep">Full definition →</a></span></span>. The problem is that the productivity high is almost always followed by months of <span class="gl" tabindex="0">depression<span class="gl-pop" role="tooltip"><span class="gl-def">A state of persistently low mood that goes beyond a normal emotional response to difficulty — it becomes clinical when symptoms last at least two weeks, impair functioning, and include at least five of nine recognized…</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span>. Effective treatment can restore a stable version of that positive energy without the crash.</p>
+<p><strong>Cyclothymia</strong> sits at the milder end of the spectrum — moods that cycle between mild <span class="gl" tabindex="0">depression<span class="gl-pop" role="tooltip"><span class="gl-def">A state of persistently low mood that goes beyond a normal emotional response to difficulty — it becomes clinical when symptoms last at least two weeks, impair functioning, and include at least five of nine recognized…</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span> and hypomania over days rather than hours, but haven't yet reached full manic or major depressive severity.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-a-few-clinically-important-points">A Few Clinically Important Points</h2>
+<ul>
+<li>Only about <strong>1% of the population</strong> actually has bipolar disorder. If someone has a first-degree relative with the condition, their risk rises roughly tenfold — but that still means a 90% chance of not developing it.</li>
+<li><strong>Antidepressants can trigger mania</strong> in someone with undiagnosed bipolar disorder. This is why a thorough evaluation matters before starting treatment for what looks like ordinary <span class="gl" tabindex="0">depression<span class="gl-pop" role="tooltip"><span class="gl-def">A state of persistently low mood that goes beyond a normal emotional response to difficulty — it becomes clinical when symptoms last at least two weeks, impair functioning, and include at least five of nine recognized…</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span>.</li>
+<li><strong>Stimulant use</strong> (recreational or prescription misuse) can mimic mania, so a clean diagnosis generally requires being off substances.</li>
+</ul>
+<blockquote>
+<p>"Even though you kind of have a couple of weeks of high productivity, you pay the price with months of <span class="gl" tabindex="0">depression<span class="gl-pop" role="tooltip"><span class="gl-def">A state of persistently low mood that goes beyond a normal emotional response to difficulty — it becomes clinical when symptoms last at least two weeks, impair functioning, and include at least five of nine recognized…</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span> afterward."</p>
+</blockquote>
+<p>The right treatment for bipolar disorder isn't about suppressing energy — it's about keeping the positive, productive cycle without the devastating cost that follows an unchecked episode.</p>
+</section></article>
+    </div>
+  </div>
   
   <div class="view" data-view="transcript">
     <div class="doc">
@@ -61,7 +119,7 @@ try {
   </div>
   
 
-  <p class="meta">Transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">Depression<span class="gl-pop" role="tooltip"><span class="gl-def">A state of persistently low mood that goes beyond a normal emotional response to difficulty — it becomes clinical when symptoms last at least two weeks, impair functioning, and include at least five of nine recognized…</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span> → Clinical Track). Captions auto-generated.</p>
+  <p class="meta">Medium summary + transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">Depression<span class="gl-pop" role="tooltip"><span class="gl-def">A state of persistently low mood that goes beyond a normal emotional response to difficulty — it becomes clinical when symptoms last at least two weeks, impair functioning, and include at least five of nine recognized…</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span> → Clinical Track). Captions auto-generated; summary by claude-sonnet-4-6.</p>
 </div>
 
 <script>
@@ -69,7 +127,7 @@ try {
   var root = document.documentElement;
   function setView(v){ root.setAttribute('data-view', v);
     document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
-  setView(root.getAttribute('data-view') || 'transcript');
+  setView(root.getAttribute('data-view') || 'medium');
   document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
   var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }

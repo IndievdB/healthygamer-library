@@ -9,8 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-  document.documentElement.setAttribute('data-view', 'transcript');
-} catch (e) { document.documentElement.setAttribute('data-view', 'transcript'); }
+  document.documentElement.setAttribute('data-view', 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -33,7 +33,30 @@ try {
   </p>
 
   
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">167w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">250w</span></button>
+    
+  </div>
+  
 
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#summary-summary">Summary</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="summary-summary">Summary</h2>
+<p><strong>TL;DR —</strong> Modern dating and relationships are genuinely harder than they used to be, and most people struggling with them aren't broken — they're missing foundational <span class="gl" tabindex="0">knowledge<span class="gl-pop" role="tooltip"><span class="gl-def">Vidya is the Sanskrit term for objective, transmissible information — the kind of knowledge that can be written in a book, verified by multiple people, and passed from one person to another without loss.</span><a class="gl-more" href="../glossary.html#glossary-vidya">Full definition →</a></span></span> that used to be absorbed naturally.</p>
+<p>Screens, texting, social media, and pornography have quietly reshaped how people connect, and the old instincts many people relied on no longer map cleanly onto the current landscape. Whether you've never been on a date, keep getting ghosted after a few good ones, or are years into a relationship and watching the spark fade, the gap is usually the same: no one taught you the actual mechanics of human connection.</p>
+<p>The core areas worth building deliberately are how people genuinely connect with each other, how physical and sexual relationships develop in a healthy way, how to communicate, and how to work through problems when they come up. Understanding all of these phases at once — rather than stumbling through them one by one — is what helps people stop feeling hopelessly behind.</p>
+</section></article>
+    </div>
+  </div>
   
   <div class="view" data-view="transcript">
     <div class="doc">
@@ -45,7 +68,7 @@ try {
   </div>
   
 
-  <p class="meta">Transcript of a Dr. K's Guide lesson (Love, Sex & Relationships → Why Dating Feels So Hard Today). Captions auto-generated.</p>
+  <p class="meta">Medium summary + transcript of a Dr. K's Guide lesson (Love, Sex & Relationships → Why Dating Feels So Hard Today). Captions auto-generated; summary by claude-sonnet-4-6.</p>
 </div>
 
 <script>
@@ -53,7 +76,7 @@ try {
   var root = document.documentElement;
   function setView(v){ root.setAttribute('data-view', v);
     document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
-  setView(root.getAttribute('data-view') || 'transcript');
+  setView(root.getAttribute('data-view') || 'medium');
   document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
   var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
@@ -87,5 +110,6 @@ try {
   });
 })();
 </script>
+<script src="../gl.js" defer></script>
 </body>
 </html>

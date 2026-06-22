@@ -9,8 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-  document.documentElement.setAttribute('data-view', 'transcript');
-} catch (e) { document.documentElement.setAttribute('data-view', 'transcript'); }
+  document.documentElement.setAttribute('data-view', 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -33,7 +33,61 @@ try {
   </p>
 
   
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">497w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">1,852w</span></button>
+    
+  </div>
+  
 
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#summary-summary">Summary</a></li>
+<li><a href="#summary-what-actually-gets-you-picked">What Actually Gets You Picked</a></li>
+<li><a href="#summary-on-rules-and-connection">On Rules and Connection</a></li>
+<li><a href="#summary-action-items">Action Items</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="summary-summary">Summary</h2>
+<p><strong>TL;DR — Dating apps are a flawed but statistically real path to partnership; optimizing your profile and focusing on timeless connection skills matters far more than gaming the app's rules.</strong></p>
+<p>Dating apps are genuinely how most couples now meet — since 2013, more married couples found each other online than any other way, and relationships that start on apps don't appear to be shorter or lower quality than those that start in person. So they're worth taking seriously.</p>
+<p>The catch is that roughly half the people on apps aren't actually there to find a partner. They're there for ego boosts, entertainment, emotional coping, or other psychological needs. This is why the experience so often feels hollow. There's also an inverse relationship between how much you <em>want</em> a relationship and how satisfying you find the apps — the people who enjoy Tinder most are the ones who aren't really looking. Apps also measurably worsen <span class="gl" tabindex="0">depression<span class="gl-pop" role="tooltip"><span class="gl-def">A state of persistently low mood that goes beyond a normal emotional response to difficulty — it becomes clinical when symptoms last at least two weeks, impair functioning, and include at least five of nine recognized…</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span> and <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response in which the brain prepares you for high-stakes or unfamiliar situations — triggering the sympathetic nervous system, releasing adrenaline and cortisol, and narrowing your attention onto…</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span>, especially if you already have vulnerabilities in <span class="gl" tabindex="0">self-esteem<span class="gl-pop" role="tooltip"><span class="gl-def">Self-esteem is the internal sense of accepting yourself as you are — not a score you earn by comparing favorably against others.</span><a class="gl-more" href="../glossary.html#glossary-self-esteem">Full definition →</a></span></span> or mood.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-what-actually-gets-you-picked">What Actually Gets You Picked</h2>
+<p>A profile creates a gut reaction, and that gut reaction is about more than looks. Four things drive it:</p>
+<ul>
+<li><strong>Physical attractiveness</strong> — yes, it matters; optimize your appearance, clothes, hair, and photos.</li>
+<li><strong>Robustness</strong> — signals of health (active lifestyle, energy in photos) are independently attractive even at average attractiveness levels.</li>
+<li><strong>Emotional stability</strong> — a profile that radiates disengagement or bitterness is a bigger repellent than plain looks. Many people who blame their singleness on appearance are actually being turned away by the energy they project.</li>
+<li><strong>Sense of purpose</strong> — having visible direction in your life is consistently attractive to both men and women.</li>
+</ul>
+<p>Men and women do weight some things differently (men slightly more on physical health signals, women slightly more on resource stability), but what they share in common far outweighs those differences.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-on-rules-and-connection">On Rules and Connection</h2>
+<p>Forget debating whether to double-text. Nobody agrees on the rules because people are genuinely different. What has always worked — and still does — is basic: <strong>flirt, pay attention to the specific person in front of you, and communicate well</strong>. Those fundamentals predict relationship success far better than any tactical rule does.</p>
+<p>One practical corollary: don't write someone off for having a bad day. Holding that standard makes it much harder to connect with anyone.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-action-items">Action Items</h2>
+<ol>
+<li>Before improving your photos, audit your profile for emotional tone — remove anything that signals checked-out or bitter energy.</li>
+<li>Add visible indicators of health and purpose: activities, goals, something that shows you're moving toward something in life.</li>
+<li>Drop the rules checklist. Instead, pay close attention to how the specific person you're talking to responds, and adjust accordingly.</li>
+<li>If apps are making you feel worse, recognize that this is a documented effect — not evidence that something is uniquely wrong with you — and consider whether your current mental health makes this the right time to be on them.</li>
+</ol>
+</section></article>
+    </div>
+  </div>
   
   <div class="view" data-view="transcript">
     <div class="doc">
@@ -49,7 +103,7 @@ try {
   </div>
   
 
-  <p class="meta">Transcript of a Dr. K's Guide lesson (Love, Sex & Relationships → Finding & Meeting Potential Partners). Captions auto-generated.</p>
+  <p class="meta">Medium summary + transcript of a Dr. K's Guide lesson (Love, Sex & Relationships → Finding & Meeting Potential Partners). Captions auto-generated; summary by claude-sonnet-4-6.</p>
 </div>
 
 <script>
@@ -57,7 +111,7 @@ try {
   var root = document.documentElement;
   function setView(v){ root.setAttribute('data-view', v);
     document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
-  setView(root.getAttribute('data-view') || 'transcript');
+  setView(root.getAttribute('data-view') || 'medium');
   document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
   var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }

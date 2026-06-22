@@ -9,8 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-  document.documentElement.setAttribute('data-view', 'transcript');
-} catch (e) { document.documentElement.setAttribute('data-view', 'transcript'); }
+  document.documentElement.setAttribute('data-view', 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -33,7 +33,42 @@ try {
   </p>
 
   
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">371w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">1,296w</span></button>
+    
+  </div>
+  
 
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#summary-summary">Summary</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="summary-summary">Summary</h2>
+<p><strong>TL;DR — Generalized <span class="gl" tabindex="0">Anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response in which the brain prepares you for high-stakes or unfamiliar situations — triggering the sympathetic nervous system, releasing adrenaline and cortisol, and narrowing your attention onto…</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> Disorder (GAD) is a persistent, wide-ranging worry that outlasts its triggers, drains your energy, and spills into your body — and it's treatable.</strong></p>
+<p>GAD affects about 3% of people at any given time, and around 9% will experience it at some point in their lives. Women are roughly twice as likely to develop it as men. The clearest early signal is simple: if someone asks whether you're a worrier, you immediately know what that means — whereas most people don't particularly identify with the label.</p>
+<p>What makes GAD distinct from ordinary stress isn't just intensity — it's the pattern:</p>
+<ul>
+<li><strong>Out-of-proportion worry.</strong> The <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response in which the brain prepares you for high-stakes or unfamiliar situations — triggering the sympathetic nervous system, releasing adrenaline and cortisol, and narrowing your attention onto…</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> is far worse than circumstances justify, and other people often tell you that you're overreacting, but you can't switch it off.</li>
+<li><strong>More bad days than good, for months.</strong> The clinical threshold is worry that occurs more often than not for at least six months.</li>
+<li><strong>No clear trigger needed.</strong> Someone without GAD worries the night before an exam. Someone with GAD wakes up on a Saturday vacation morning convinced, for no concrete reason, that they might get expelled from school.</li>
+<li><strong>A roaming, restless mind.</strong> If you manage to calm yourself about one thing, your mind doesn't rest — it hunts for the next thing to worry about.</li>
+<li><strong>Physical symptoms.</strong> The worry isn't just mental. It manifests as muscle tension, soreness (especially in the neck and shoulders), GI problems (cramps, nausea, diarrhea), fatigue, and disrupted <span class="gl" tabindex="0">sleep<span class="gl-pop" role="tooltip"><span class="gl-def">Sleep is the brain&#x27;s primary maintenance window — the period during which short-term memories stored in the hippocampus (your RAM) get written into long-term memory (your hard drive).</span><a class="gl-more" href="../glossary.html#glossary-sleep">Full definition →</a></span></span>. The <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response in which the brain prepares you for high-stakes or unfamiliar situations — triggering the sympathetic nervous system, releasing adrenaline and cortisol, and narrowing your attention onto…</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> literally burns through your energy.</li>
+</ul>
+<blockquote>
+<p>"Everyone gets stressed out about things, but even the people who are stressed out seem to be fine in a few hours or the next day — whereas your stress makes you pretty miserable for days or even weeks at a time."</p>
+</blockquote>
+<p>The worry may have started with a real event, but the key sign is that it <strong>sticks around long after the event is over.</strong> That stickiness — <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response in which the brain prepares you for high-stakes or unfamiliar situations — triggering the sympathetic nervous system, releasing adrenaline and cortisol, and narrowing your attention onto…</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> that doesn't resolve when the situation resolves — is a hallmark of GAD rather than normal stress.</p>
+<p>The important takeaway: you don't have to live this way. Effective treatment exists, so if this pattern resonates, getting a proper clinical evaluation is a worthwhile next step.</p>
+</section></article>
+    </div>
+  </div>
   
   <div class="view" data-view="transcript">
     <div class="doc">
@@ -55,7 +90,7 @@ try {
   </div>
   
 
-  <p class="meta">Transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">Anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response in which the brain prepares you for high-stakes or unfamiliar situations — triggering the sympathetic nervous system, releasing adrenaline and cortisol, and narrowing your attention onto…</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> → Clinical Track). Captions auto-generated.</p>
+  <p class="meta">Medium summary + transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">Anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response in which the brain prepares you for high-stakes or unfamiliar situations — triggering the sympathetic nervous system, releasing adrenaline and cortisol, and narrowing your attention onto…</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> → Clinical Track). Captions auto-generated; summary by claude-sonnet-4-6.</p>
 </div>
 
 <script>
@@ -63,7 +98,7 @@ try {
   var root = document.documentElement;
   function setView(v){ root.setAttribute('data-view', v);
     document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
-  setView(root.getAttribute('data-view') || 'transcript');
+  setView(root.getAttribute('data-view') || 'medium');
   document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
   var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }

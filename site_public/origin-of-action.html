@@ -9,8 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-  document.documentElement.setAttribute('data-view', 'transcript');
-} catch (e) { document.documentElement.setAttribute('data-view', 'transcript'); }
+  document.documentElement.setAttribute('data-view', 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -33,7 +33,36 @@ try {
   </p>
 
   
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">295w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">955w</span></button>
+    
+  </div>
+  
 
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#summary-summary">Summary</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="summary-summary">Summary</h2>
+<p><strong>TL;DR — Most productivity advice focuses on actions and outcomes, but actions originate from thoughts. To change what you do, you have to work at the level of the mind itself.</strong></p>
+<p>There are three sources of action: <strong>reflexes</strong> (instinctual, hardwired — a newborn dog swimming, an infant swallowing), <strong>habits</strong> (actions repeated until they run on autopilot), and <strong>thought-driven action</strong>. That third category covers most of what you consciously choose to do — what you eat, what you watch, how you spend your time. The action starts as a thought.</p>
+<p>This isn't a new idea. Ancient yogic traditions built their entire practice around it. The familiar apocryphal quote captures it well:</p>
+<blockquote>
+<p>"Watch your thoughts. They become your words. Watch your words. They become your actions. Watch your actions. They become your habits. Watch your habits. They become your character. Watch your character. It becomes your destiny."</p>
+</blockquote>
+<p>The problem is that modern society is structured around the <em>outputs</em>, not the origins. We measure grades instead of understanding, track the appearance of fitness instead of actual health — the dental care aisle is packed with whitening toothpaste and nearly empty of floss. We're obsessed with the fruit and flowers of the tree while ignoring the roots and the seed.</p>
+<p>The same blind spot shows up in personal productivity. People try to force better behavior — more discipline, better habits, optimized routines — without ever training the mind that generates the behavior in the first place. We learn finance, science, mathematics, but nobody teaches us the mental equivalent of push-ups: how to actually strengthen the mind as an organ.</p>
+<p>That's where <strong><span class="gl" tabindex="0">concentration<span class="gl-pop" role="tooltip"><span class="gl-def">The active, deliberate practice of fixing your attention on a single point — distinct from meditation as a state, Dharana is the technique, the verb, the thing you actually do.</span><a class="gl-more" href="../glossary.html#glossary-dharana">Full definition →</a></span></span> (<span class="gl" tabindex="0">Dharana<span class="gl-pop" role="tooltip"><span class="gl-def">The active, deliberate practice of fixing your attention on a single point — distinct from meditation as a state, Dharana is the technique, the verb, the thing you actually do.</span><a class="gl-more" href="../glossary.html#glossary-dharana">Full definition →</a></span></span>)</strong> comes in — it's the foundational skill for working at the level where action begins, rather than chasing the outputs after the fact.</p>
+</section></article>
+    </div>
+  </div>
   
   <div class="view" data-view="transcript">
     <div class="doc">
@@ -53,7 +82,7 @@ try {
   </div>
   
 
-  <p class="meta">Transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by disordered attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> → Spiritual Perspectives on Thought). Captions auto-generated.</p>
+  <p class="meta">Medium summary + transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by disordered attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> → Spiritual Perspectives on Thought). Captions auto-generated; summary by claude-sonnet-4-6.</p>
 </div>
 
 <script>
@@ -61,7 +90,7 @@ try {
   var root = document.documentElement;
   function setView(v){ root.setAttribute('data-view', v);
     document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
-  setView(root.getAttribute('data-view') || 'transcript');
+  setView(root.getAttribute('data-view') || 'medium');
   document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
   var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }

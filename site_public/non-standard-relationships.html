@@ -9,8 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-  document.documentElement.setAttribute('data-view', 'transcript');
-} catch (e) { document.documentElement.setAttribute('data-view', 'transcript'); }
+  document.documentElement.setAttribute('data-view', 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -33,7 +33,64 @@ try {
   </p>
 
   
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">540w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">1,957w</span></button>
+    
+  </div>
+  
 
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#summary-summary">Summary</a></li>
+<li><a href="#summary-situationships">Situationships</a></li>
+<li><a href="#summary-polyamory">Polyamory</a></li>
+<li><a href="#summary-the-friend-zone">The Friend Zone</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="summary-summary">Summary</h2>
+<p><strong>TL;DR — Whether it's a situationship, polyamory, or the friend zone, the common thread is that avoiding honest communication makes all of them worse, not easier.</strong></p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-situationships">Situationships</h2>
+<p>The people most likely to enter a situationship are those focused on career or financial goals who also have a high sex drive — essentially people who don't have the bandwidth for a full relationship. The irony is that the thing they're trying to avoid — communication — is exactly what makes these arrangements actually work.</p>
+<p>Research on successful situationships points to a handful of upfront conversations most people dread having:</p>
+<ul>
+<li><strong>Negotiation from the start</strong>: What is this, and what isn't it? What does each person want?</li>
+<li><strong>Sexual boundaries</strong>: Exclusivity, contraception, safety.</li>
+<li><strong>Honest intentions</strong>: If one person secretly wants a romantic relationship, hiding that tends to poison things.</li>
+<li><strong>Logistics</strong>: How often do you contact each other? Is this secret or not?</li>
+<li><strong>An exit plan</strong>: Under what conditions does this end? If one of you starts dating someone else, what happens?</li>
+</ul>
+<p>Situationships also carry a built-in biological risk: the same behaviors that build emotional connection in a full relationship — spending the night, physical closeness, regular contact — trigger the same bonding mechanisms here. <span class="gl" tabindex="0">Oxytocin<span class="gl-pop" role="tooltip"><span class="gl-def">A hormone that mediates emotional bonding between people — sometimes called the &quot;hugging hormone&quot; or &quot;cuddling hormone&quot; — oxytocin is released through physical contact, particularly non-sexual touch like cuddling…</span><a class="gl-more" href="../glossary.html#glossary-oxytocin">Full definition →</a></span></span> doesn't check the terms of your arrangement. Catching feelings is common, and trying to suppress them once they arrive usually makes things worse. The only path through is, again, talking about it.</p>
+<blockquote>
+<p>The very thing that people are trying to avoid is what makes them successful.</p>
+</blockquote>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-polyamory">Polyamory</h2>
+<p>About 4% of people are currently in polyamorous relationships, but around 20% have tried it and left. That gap matters: studies measuring happiness in polyamory only capture people who are <em>still in it</em>, not the ones who dropped out. So the finding that polyamorous and monogamous people report similar happiness levels should be read with that in mind.</p>
+<p>One genuine upside the research does point to: multiple partners can distribute the weight of a relationship. Emotional needs, sexual needs, practical support — these don't all have to fall on one person.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-the-friend-zone">The Friend Zone</h2>
+<p>People who get chronically friend-zoned are usually following the wrong formula. Fearing rejection, they avoid sending explicit romantic signals and instead pile on nice gestures — airport pickups, favors, gifts — hoping to gradually earn the other person's affection. The problem is that being liked and being found <em>attractive</em> are not the same thing. Over time the investment grows, resentment builds, and that toxicity moves things further in the wrong direction.</p>
+<p>The better move is to say something. Not a grand confession that drops an emotional burden on the other person, but something honest and low-pressure:</p>
+<blockquote>
+<p>"I know we've been friends for a while, but I'm starting to have some romantic feelings about you — I'm thinking about you in a different way."</p>
+</blockquote>
+<p>Frame it as something the friendship can figure out together, then ask directly whether they'd want to explore it. If the answer is no, the hardest but most important step is to actually move on. Staying in the friend zone while carrying those feelings doesn't just hurt — it occupies the mental and emotional space where someone who <em>is</em> interested could otherwise exist.</p>
+</section></article>
+    </div>
+  </div>
   
   <div class="view" data-view="transcript">
     <div class="doc">
@@ -49,7 +106,7 @@ try {
   </div>
   
 
-  <p class="meta">Transcript of a Dr. K's Guide lesson (Love, Sex & Relationships → Building and Maintaining Relationships). Captions auto-generated.</p>
+  <p class="meta">Medium summary + transcript of a Dr. K's Guide lesson (Love, Sex & Relationships → Building and Maintaining Relationships). Captions auto-generated; summary by claude-sonnet-4-6.</p>
 </div>
 
 <script>
@@ -57,7 +114,7 @@ try {
   var root = document.documentElement;
   function setView(v){ root.setAttribute('data-view', v);
     document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
-  setView(root.getAttribute('data-view') || 'transcript');
+  setView(root.getAttribute('data-view') || 'medium');
   document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
   var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }

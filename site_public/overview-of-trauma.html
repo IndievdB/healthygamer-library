@@ -9,8 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-  document.documentElement.setAttribute('data-view', 'transcript');
-} catch (e) { document.documentElement.setAttribute('data-view', 'transcript'); }
+  document.documentElement.setAttribute('data-view', 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -33,7 +33,38 @@ try {
   </p>
 
   
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">332w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">1,182w</span></button>
+    
+  </div>
+  
 
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#summary-summary">Summary</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="summary-summary">Summary</h2>
+<p><strong>TL;DR — <span class="gl" tabindex="0">Trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is what happens when an experience generates more emotion than you can process in a single moment — the overwhelm itself is the defining feature, not just the event.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> isn't a malfunction; it's an adaptation your brain and body made to survive something hard. That survival strategy is what later creates problems.</strong></p>
+<p>Most psychiatric and self-help frameworks treat suffering as something broken that needs fixing. <span class="gl" tabindex="0">Trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is what happens when an experience generates more emotion than you can process in a single moment — the overwhelm itself is the defining feature, not just the event.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> doesn't fit that model. When something damaging happens to you, your brain doesn't break — it <em>adapts</em>. It learns a lesson designed to keep you alive in that specific situation. The trouble is that the lesson sticks long after the situation is gone, and what protected you then quietly sabotages you now.</p>
+<p>This reframe matters because it changes how you relate to your own patterns. Chronic <span class="gl" tabindex="0">depression<span class="gl-pop" role="tooltip"><span class="gl-def">A state of persistently low mood that goes beyond a normal emotional response to difficulty — it becomes clinical when symptoms last at least two weeks, impair functioning, and include at least five of nine recognized…</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span>, procrastination, emptiness, inability to take risks, relationship cycles you can't seem to escape, perfectionism, lack of <span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">Motivation is not a feeling, a desire, or a behavior — it is the ability to hold one thought steadily in your mind for a prolonged period of time.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span>, <span class="gl" tabindex="0">addiction<span class="gl-pop" role="tooltip"><span class="gl-def">Substance use refers to the consumption of a substance — alcohol, opioids, caffeine, cannabis, and others — that triggers a neurological response your brain then adapts to over time.</span><a class="gl-more" href="../glossary.html#glossary-substance-use">Full definition →</a></span></span> — these aren't character flaws or random disorders. Many have their roots in earlier traumatic adaptation. <span class="gl" tabindex="0">Trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is what happens when an experience generates more emotion than you can process in a single moment — the overwhelm itself is the defining feature, not just the event.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> is, in that sense, a <strong>great chameleon</strong>: it shows up wearing the costume of <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by disordered attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span>, mood disorders, panic attacks, and problems that don't even have a clinical name.</p>
+<blockquote>
+<p>"<span class="gl" tabindex="0">Trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is what happens when an experience generates more emotion than you can process in a single moment — the overwhelm itself is the defining feature, not just the event.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> isn't something going wrong. <span class="gl" tabindex="0">Trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is what happens when an experience generates more emotion than you can process in a single moment — the overwhelm itself is the defining feature, not just the event.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> is your body, brain, and mind's attempt to survive a negative experience."</p>
+</blockquote>
+<p><strong>Adverse Childhood Experiences (ACEs)</strong> — things like parental divorce, bullying, or frequently moving — are far more common than most people assume. Research shows roughly 60% of people have experienced at least one. The more of these experiences someone has, the more likely they are to struggle across all of the domains above. That means the population dealing with <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is what happens when an experience generates more emotion than you can process in a single moment — the overwhelm itself is the defining feature, not just the event.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span>-rooted difficulties is vast, and most of them have never framed their struggles that way.</p>
+<p>Two broad categories of experience can produce these adaptations:
+- <strong>Childhood environments</strong> that are abusive, neglectful, or highly controlling
+- <strong>Adult experiences</strong> — either prolonged exposure to similar environments or single severe traumatic events</p>
+<p>Understanding <em>how</em> these experiences shape a person — the core sequence by which adaptation turns into a lasting pattern — is the foundation for intentionally rewiring toward who you actually want to be.</p>
+</section></article>
+    </div>
+  </div>
   
   <div class="view" data-view="transcript">
     <div class="doc">
@@ -54,7 +85,7 @@ try {
   </div>
   
 
-  <p class="meta">Transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">Trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is what happens when an experience generates more emotion than you can process in a single moment — the overwhelm itself is the defining feature, not just the event.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> → Core <span class="gl" tabindex="0">Knowledge<span class="gl-pop" role="tooltip"><span class="gl-def">Vidya is the Sanskrit term for objective, transmissible information — the kind of knowledge that can be written in a book, verified by multiple people, and passed from one person to another without loss.</span><a class="gl-more" href="../glossary.html#glossary-vidya">Full definition →</a></span></span>: Starter Path). Captions auto-generated.</p>
+  <p class="meta">Medium summary + transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">Trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is what happens when an experience generates more emotion than you can process in a single moment — the overwhelm itself is the defining feature, not just the event.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> → Core <span class="gl" tabindex="0">Knowledge<span class="gl-pop" role="tooltip"><span class="gl-def">Vidya is the Sanskrit term for objective, transmissible information — the kind of knowledge that can be written in a book, verified by multiple people, and passed from one person to another without loss.</span><a class="gl-more" href="../glossary.html#glossary-vidya">Full definition →</a></span></span>: Starter Path). Captions auto-generated; summary by claude-sonnet-4-6.</p>
 </div>
 
 <script>
@@ -62,7 +93,7 @@ try {
   var root = document.documentElement;
   function setView(v){ root.setAttribute('data-view', v);
     document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
-  setView(root.getAttribute('data-view') || 'transcript');
+  setView(root.getAttribute('data-view') || 'medium');
   document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
   var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }

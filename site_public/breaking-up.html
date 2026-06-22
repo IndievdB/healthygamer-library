@@ -9,8 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-  document.documentElement.setAttribute('data-view', 'transcript');
-} catch (e) { document.documentElement.setAttribute('data-view', 'transcript'); }
+  document.documentElement.setAttribute('data-view', 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -33,7 +33,72 @@ try {
   </p>
 
   
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">496w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">1,077w</span></button>
+    
+  </div>
+  
 
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#summary-summary">Summary</a></li>
+<li><a href="#summary-feel-it-fully">Feel It Fully</a></li>
+<li><a href="#summary-create-closure-yourself">Create Closure Yourself</a></li>
+<li><a href="#summary-grieve-the-future-not-just-the-person">Grieve the Future, Not Just the Person</a></li>
+<li><a href="#summary-limit-contact">Limit Contact</a></li>
+<li><a href="#summary-action-items">Action Items</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="summary-summary">Summary</h2>
+<p><strong>TL;DR — Most people heal poorly from breakups not because the pain is too great, but because they avoid feeling it and skip the rituals that signal an ending.</strong></p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-feel-it-fully">Feel It Fully</h2>
+<p>Research on <span class="gl" tabindex="0">trauma<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is what happens when an experience generates more emotion than you can process in a single moment — the overwhelm itself is the defining feature, not just the event.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> shows that the intensity of negative emotion is <em>inversely</em> correlated with developing <span class="gl" tabindex="0">PTSD<span class="gl-pop" role="tooltip"><span class="gl-def">Trauma is what happens when an experience generates more emotion than you can process in a single moment — the overwhelm itself is the defining feature, not just the event.</span><a class="gl-more" href="../glossary.html#glossary-trauma">Full definition →</a></span></span> — meaning people who feel the pain deeply are the ones who actually heal. When you run from the feeling through alcohol, weed, or distraction, you're more likely to get stuck with it long-term. Give yourself a week or two to just let the emotions come without numbing them.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-create-closure-yourself">Create Closure Yourself</h2>
+<p>You don't need the other person to get closure. When someone dies, there's no conversation to be had — yet funerals, eulogies, and communal grieving still help people move on. The same principle applies to breakups. Rituals that physically mark the ending work: returning each other's belongings, burning photos, or having a deliberate farewell conversation if that's possible. These acts send a clear signal to your brain that this chapter is finished.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-grieve-the-future-not-just-the-person">Grieve the Future, Not Just the Person</h2>
+<p>A relationship doesn't just involve someone you love — it involves a version of yourself and an entire imagined future. People who stay frozen for years after a breakup are almost always holding onto the life they pictured, not just the person. To actually move on, ask yourself:</p>
+<ul>
+<li>Who was I when this relationship started, and who am I now?</li>
+<li>How did I change over the course of it?</li>
+<li>What future did I picture with this person, and what does its absence mean for my life going forward?</li>
+</ul>
+<p>That last question is the hard one, but answering it is what lets you start building a new picture instead of ruminating on the one that vanished.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-limit-contact">Limit Contact</h2>
+<blockquote>
+<p>As long as we are persisting in those communication patterns, in those habits, it's hard to really get this person out of our life — and more importantly, it's hard to create space for the next person.</p>
+</blockquote>
+<p>You don't have to block anyone. But the patterns of texting, calling, and checking in that formed during the relationship don't dissolve automatically. If your cognition, emotions, and coping are still wired to this person, you'll keep getting pulled back into the cycle of breaking up and getting back together. Deliberately reducing contact breaks that wiring.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-action-items">Action Items</h2>
+<ol>
+<li><strong>Let yourself feel it</strong> — don't suppress with substances or distraction for at least one to two weeks after the breakup.</li>
+<li><strong>Perform a closing ritual</strong> — return belongings, hold a conversation, burn old photos, or do whatever concretely marks "this is over" for you.</li>
+<li><strong>Answer the grief questions</strong> — journal or reflect on who you were, who you are now, and what the lost future means for your life ahead.</li>
+<li><strong>Scale back contact</strong> — reduce the habitual communication patterns from the relationship, even if you don't cut things off completely.</li>
+</ol>
+</section></article>
+    </div>
+  </div>
   
   <div class="view" data-view="transcript">
     <div class="doc">
@@ -47,7 +112,7 @@ try {
   </div>
   
 
-  <p class="meta">Transcript of a Dr. K's Guide lesson (Love, Sex & Relationships → Breakups & Recovery). Captions auto-generated.</p>
+  <p class="meta">Medium summary + transcript of a Dr. K's Guide lesson (Love, Sex & Relationships → Breakups & Recovery). Captions auto-generated; summary by claude-sonnet-4-6.</p>
 </div>
 
 <script>
@@ -55,7 +120,7 @@ try {
   var root = document.documentElement;
   function setView(v){ root.setAttribute('data-view', v);
     document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
-  setView(root.getAttribute('data-view') || 'transcript');
+  setView(root.getAttribute('data-view') || 'medium');
   document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
   var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }

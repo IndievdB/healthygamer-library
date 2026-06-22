@@ -9,8 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-  document.documentElement.setAttribute('data-view', 'transcript');
-} catch (e) { document.documentElement.setAttribute('data-view', 'transcript'); }
+  document.documentElement.setAttribute('data-view', 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -33,7 +33,45 @@ try {
   </p>
 
   
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">392w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">1,068w</span></button>
+    
+  </div>
+  
 
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#summary-summary">Summary</a></li>
+<li><a href="#summary-action-items">Action Items</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="summary-summary">Summary</h2>
+<p><strong>TL;DR — <span class="gl" tabindex="0">Social anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response in which the brain prepares you for high-stakes or unfamiliar situations — triggering the sympathetic nervous system, releasing adrenaline and cortisol, and narrowing your attention onto…</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> is often a skill problem, not a character flaw. The social-processing circuits in your brain rust from disuse, and the fix is simple (though uncomfortable): more real-world socializing.</strong></p>
+<p>There are two distinct things that get called "<span class="gl" tabindex="0">social anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response in which the brain prepares you for high-stakes or unfamiliar situations — triggering the sympathetic nervous system, releasing adrenaline and cortisol, and narrowing your attention onto…</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span>." One is <strong><span class="gl" tabindex="0">social anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response in which the brain prepares you for high-stakes or unfamiliar situations — triggering the sympathetic nervous system, releasing adrenaline and cortisol, and narrowing your attention onto…</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> disorder</strong>, a diagnosable condition that responds to clinical treatment. The other is the widespread, low-grade <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response in which the brain prepares you for high-stakes or unfamiliar situations — triggering the sympathetic nervous system, releasing adrenaline and cortisol, and narrowing your attention onto…</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> almost everyone now feels in social situations — a direct consequence of spending so much time behind screens instead of with people.</p>
+<p>Your brain is packed with circuitry dedicated to social interaction: reading body language, interpreting tone, catching a subtle eye-roll, sensing when someone isn't really laughing at your joke. These circuits don't just help you connect — they <em>reassure</em> you. When they're working, they're constantly feeding you information that calms <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response in which the brain prepares you for high-stakes or unfamiliar situations — triggering the sympathetic nervous system, releasing adrenaline and cortisol, and narrowing your attention onto…</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> ("they're smiling, this is fine"). But like a language you stop speaking, they rust when you stop using them. Heavy texting and DM-based communication simply don't exercise them.</p>
+<p>When those circuits go quiet, the brain fills the gap with <strong>mental calculation</strong> — the frantic internal monologue of <span class="gl" tabindex="0">social anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response in which the brain prepares you for high-stakes or unfamiliar situations — triggering the sympathetic nervous system, releasing adrenaline and cortisol, and narrowing your attention onto…</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span>. <em>Do they like me? Should I bring up that point now? Did that land?</em> The problem is that overthinking pulls your attention inward, which shuts off your empathic circuits even further, which gives you even less reassuring information, which makes you retreat further into your head. It's a self-reinforcing loop.</p>
+<blockquote>
+<p>The fastest way to learn Go is to lose your first 100 games as quickly as possible.</p>
+</blockquote>
+<p>The same logic applies here. The goal isn't to engineer a perfect social interaction — it's to accumulate reps. Put yourself in a hundred social situations and give your brain the time it needs to wake back up. It will be uncomfortable. That discomfort isn't a sign something is wrong; it's the circuits warming up.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-action-items">Action Items</h2>
+<ol>
+<li><strong>Accept that the first stretch will feel bad.</strong> Discomfort in social situations right now is expected — it's not evidence that you're broken or that the interaction is going badly.</li>
+<li><strong>Prioritize in-person interaction.</strong> Texting and DMs don't exercise the circuits you need. Seek out face-to-face contact, even low-stakes versions (a class, a regular coffee shop, a local club).</li>
+<li><strong>Aim for volume, not perfection.</strong> Give yourself permission to have awkward or unremarkable interactions. The point is reps, not results.</li>
+</ol>
+</section></article>
+    </div>
+  </div>
   
   <div class="view" data-view="transcript">
     <div class="doc">
@@ -49,7 +87,7 @@ try {
   </div>
   
 
-  <p class="meta">Transcript of a Dr. K's Guide lesson (Love, Sex & Relationships → Finding & Meeting Potential Partners). Captions auto-generated.</p>
+  <p class="meta">Medium summary + transcript of a Dr. K's Guide lesson (Love, Sex & Relationships → Finding & Meeting Potential Partners). Captions auto-generated; summary by claude-sonnet-4-6.</p>
 </div>
 
 <script>
@@ -57,7 +95,7 @@ try {
   var root = document.documentElement;
   function setView(v){ root.setAttribute('data-view', v);
     document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
-  setView(root.getAttribute('data-view') || 'transcript');
+  setView(root.getAttribute('data-view') || 'medium');
   document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
   var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }

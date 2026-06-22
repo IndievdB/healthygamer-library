@@ -9,8 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-  document.documentElement.setAttribute('data-view', 'transcript');
-} catch (e) { document.documentElement.setAttribute('data-view', 'transcript'); }
+  document.documentElement.setAttribute('data-view', 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -33,7 +33,48 @@ try {
   </p>
 
   
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">447w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">1,952w</span></button>
+    
+  </div>
+  
 
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#summary-summary">Summary</a></li>
+<li><a href="#summary-action-items">Action Items</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="summary-summary">Summary</h2>
+<p><strong>TL;DR — Negative emotions aren't malfunctions; they're adaptive signals that protected you at some point. The problem isn't the emotion itself, but when it gets rigid and starts running your life long after the original threat is gone.</strong></p>
+<p>Negative emotions are evolutionarily conserved — every human experiences them, which means they must be doing something useful. The clearest way to see this is through dissatisfaction. A musician who couldn't shake the feeling that her music wasn't good enough eventually realized that dissatisfaction <em>was</em> the compass — proof that she could hear the gap between where she was and where she wanted to be. The negative feeling wasn't the enemy; it was the guide.</p>
+<p>The trouble starts when these protective emotional responses calcify. Think of <strong>scar tissue</strong>: it forms to protect a wound, but it's less flexible than healthy tissue and can restrict movement long after the wound has healed. The mind works the same way. A childhood experience of embarrassment might wire you to always conform — useful for avoiding bullying at ten, harmful when it leads you into a career that doesn't fit at thirty. These hardened patterns are what's called <strong><span class="gl" tabindex="0">samskaras<span class="gl-pop" role="tooltip"><span class="gl-def">A samskara is a ball of undigested emotional energy from the past that lingers in the unconscious mind and automatically shapes how you think, feel, and respond to situations in the present.</span><a class="gl-more" href="../glossary.html#glossary-samskara">Full definition →</a></span></span></strong> — balls of emotional energy that were once adaptive but have become maladaptive.</p>
+<p>Compounding this is a key quirk of the mind: <strong>it prefers the familiar over the good</strong>. This is why people stay in relationships that look obviously harmful from the outside. It's not stupidity — it's that the mind has built a model of the world from past pain, and the known discomfort feels safer than an unknown that might be even worse.</p>
+<blockquote>
+<p>The mind doesn't do something stupid. What that means is that there's something even more powerful — a really strong gravity — keeping them there.</p>
+</blockquote>
+<p>Working through these patterns involves three steps:
+1. <strong>Isolate them</strong> — learn to spot the complex as it's operating in real time.
+2. <strong>Understand their function</strong> — recognize that the emotion stuck around because it's actually doing something for you, and address the underlying need it's protecting.
+3. <strong>Go back to the origin</strong> — revisit where the pattern formed and work to revise the belief about the world that the original experience created.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-action-items">Action Items</h2>
+<ol>
+<li>When a negative emotion keeps recurring, ask: <em>what is this protecting me from?</em> Treat it as information, not noise.</li>
+<li>Notice where "familiar" is winning over "good" in your life — relationships, habits, career choices — and ask what worst-case scenario your mind is trying to avoid.</li>
+<li>Trace a current painful pattern back to its earliest version. What did you learn about the world at that moment, and is that belief still accurate?</li>
+</ol>
+</section></article>
+    </div>
+  </div>
   
   <div class="view" data-view="transcript">
     <div class="doc">
@@ -60,7 +101,7 @@ try {
   </div>
   
 
-  <p class="meta">Transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">Depression<span class="gl-pop" role="tooltip"><span class="gl-def">A state of persistently low mood that goes beyond a normal emotional response to difficulty — it becomes clinical when symptoms last at least two weeks, impair functioning, and include at least five of nine recognized…</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span> → Scientific Perspectives on <span class="gl" tabindex="0">Depression<span class="gl-pop" role="tooltip"><span class="gl-def">A state of persistently low mood that goes beyond a normal emotional response to difficulty — it becomes clinical when symptoms last at least two weeks, impair functioning, and include at least five of nine recognized…</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span>). Captions auto-generated.</p>
+  <p class="meta">Medium summary + transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">Depression<span class="gl-pop" role="tooltip"><span class="gl-def">A state of persistently low mood that goes beyond a normal emotional response to difficulty — it becomes clinical when symptoms last at least two weeks, impair functioning, and include at least five of nine recognized…</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span> → Scientific Perspectives on <span class="gl" tabindex="0">Depression<span class="gl-pop" role="tooltip"><span class="gl-def">A state of persistently low mood that goes beyond a normal emotional response to difficulty — it becomes clinical when symptoms last at least two weeks, impair functioning, and include at least five of nine recognized…</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span>). Captions auto-generated; summary by claude-sonnet-4-6.</p>
 </div>
 
 <script>
@@ -68,7 +109,7 @@ try {
   var root = document.documentElement;
   function setView(v){ root.setAttribute('data-view', v);
     document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
-  setView(root.getAttribute('data-view') || 'transcript');
+  setView(root.getAttribute('data-view') || 'medium');
   document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
   var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }

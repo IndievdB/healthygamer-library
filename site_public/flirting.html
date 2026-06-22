@@ -9,8 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-  document.documentElement.setAttribute('data-view', 'transcript');
-} catch (e) { document.documentElement.setAttribute('data-view', 'transcript'); }
+  document.documentElement.setAttribute('data-view', 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -33,7 +33,47 @@ try {
   </p>
 
   
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">433w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">1,794w</span></button>
+    
+  </div>
+  
 
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#summary-summary">Summary</a></li>
+<li><a href="#summary-action-items">Action Items</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="summary-summary">Summary</h2>
+<p><strong>TL;DR — Flirting is intentionally ambiguous by design, and its "high miss rate" isn't a failure — it's the whole point.</strong></p>
+<p>Flirting is poorly understood, partly because people assume that if someone doesn't pick up on their signals, they're doing it wrong. But research on this is clarifying: observers watching videotaped interactions can correctly identify <em>non</em>-flirting about 84% of the time, yet they only detect actual flirting about 30% of the time. That gap isn't a bug — it's the feature.</p>
+<p>The purpose of flirting is <strong>plausible deniability</strong>. It's a way to communicate romantic interest without making a commitment or forcing the other person into an uncomfortable position. Think of it as a <strong>potential space</strong> — a term from the psychoanalytic thinker Winnicott — where something <em>could</em> develop, but neither person has to declare what it is yet. You send an ambiguous signal with a soft romantic undertone. The other person can respond in kind, play along, or let it pass. Nobody's on the hook. That safety is what lets attraction actually grow, because people need to feel relaxed and uncharged before they open up romantically. Coming on too strong — the "ick" — does the opposite: it puts pressure on someone before they're ready and pushes them away.</p>
+<p><strong>Humor is central to flirting</strong> for a deeper reason than it might seem. Making someone laugh requires:
+- Actually paying attention to them (the opposite of being socially oblivious)
+- Reading them accurately enough to know what will land
+- A degree of empathy and intelligence</p>
+<p>Making someone laugh, in other words, is one of the clearest signals you can send that you <em>get</em> them — which is exactly what people look for in a partner.</p>
+<p>Flirting also doesn't require sexual intent. It's fundamentally a form of <strong>play</strong>, and you can engage in it — warmly, connectively — without any romantic agenda at all.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-action-items">Action Items</h2>
+<ol>
+<li><strong>Lower the bar for "missed signals."</strong> If someone doesn't pick up on your flirting, that's normal and expected — don't interpret it as rejection or as doing it wrong.</li>
+<li><strong>Start with playfulness, not innuendo.</strong> Practice witty, lighthearted banter in everyday social interactions. General playfulness is the core skill; the romantic layer comes naturally on top of it.</li>
+<li><strong>Send soft signals, then wait.</strong> Give the other person space to respond before sending another. Escalating too fast or too loudly is what creates the ick.</li>
+<li><strong>Use humor as your primary tool.</strong> Focus on making the specific person in front of you laugh — not performing for the room. That attentiveness is itself attractive.</li>
+</ol>
+</section></article>
+    </div>
+  </div>
   
   <div class="view" data-view="transcript">
     <div class="doc">
@@ -50,7 +90,7 @@ try {
   </div>
   
 
-  <p class="meta">Transcript of a Dr. K's Guide lesson (Love, Sex & Relationships → Attraction & Early Dating Skills). Captions auto-generated.</p>
+  <p class="meta">Medium summary + transcript of a Dr. K's Guide lesson (Love, Sex & Relationships → Attraction & Early Dating Skills). Captions auto-generated; summary by claude-sonnet-4-6.</p>
 </div>
 
 <script>
@@ -58,7 +98,7 @@ try {
   var root = document.documentElement;
   function setView(v){ root.setAttribute('data-view', v);
     document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
-  setView(root.getAttribute('data-view') || 'transcript');
+  setView(root.getAttribute('data-view') || 'medium');
   document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
   var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }

@@ -9,8 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-  document.documentElement.setAttribute('data-view', 'transcript');
-} catch (e) { document.documentElement.setAttribute('data-view', 'transcript'); }
+  document.documentElement.setAttribute('data-view', 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -33,7 +33,65 @@ try {
   </p>
 
   
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">472w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">1,978w</span></button>
+    
+  </div>
+  
 
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#summary-summary">Summary</a></li>
+<li><a href="#summary-the-brain-regions-involved">The Brain Regions Involved</a></li>
+<li><a href="#summary-why-stimulants-work-and-why-thats-not-paradoxical">Why Stimulants Work (and Why That's Not Paradoxical)</a></li>
+<li><a href="#summary-matching-symptoms-to-brain-regions">Matching Symptoms to Brain Regions</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="summary-summary">Summary</h2>
+<p><strong>TL;DR — <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by disordered attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> isn't one thing; it's a set of brain-based vulnerabilities that map to specific regions, and knowing which region is underperforming tells you exactly what to do about it.</strong></p>
+<p><span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by disordered attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> is a syndrome, meaning it's a constellation of symptoms — not every person with it has the same profile. That's clinically important because the right intervention depends on <em>which</em> vulnerabilities a particular person actually has.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-the-brain-regions-involved">The Brain Regions Involved</h2>
+<p><strong><span class="gl" tabindex="0">Amygdala<span class="gl-pop" role="tooltip"><span class="gl-def">The brain&#x27;s negative emotional center — the region that generates fear, anxiety, and survival-oriented stress responses.</span><a class="gl-more" href="../glossary.html#glossary-amygdala">Full definition →</a></span></span> and Insula</strong> — both tend to be smaller in volume in <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by disordered attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> brains. Counter-intuitively, smaller doesn't mean less emotional; much of brain tissue's job is <em>inhibition</em>, so less tissue often means more emotional reactivity and less filtering.</p>
+<p><strong><span class="gl" tabindex="0">Nucleus Accumbens<span class="gl-pop" role="tooltip"><span class="gl-def">The brain region at the center of your dopaminergic circuitry — the part that generates motivation and drives behavior through dopamine signaling.</span><a class="gl-more" href="../glossary.html#glossary-nucleus-accumbens">Full definition →</a></span></span></strong> — the core of the <span class="gl" tabindex="0">dopamine<span class="gl-pop" role="tooltip"><span class="gl-def">A neurotransmitter the brain uses primarily to reinforce behavior, drive motivation, and generate craving — not, as commonly assumed, simply to produce pleasure.</span><a class="gl-more" href="../glossary.html#glossary-dopamine">Full definition →</a></span></span> reward circuit; governs what motivates behavior and produces the feeling of reward. In <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by disordered attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span>, the <span class="gl" tabindex="0">Amygdala<span class="gl-pop" role="tooltip"><span class="gl-def">The brain&#x27;s negative emotional center — the region that generates fear, anxiety, and survival-oriented stress responses.</span><a class="gl-more" href="../glossary.html#glossary-amygdala">Full definition →</a></span></span> and Insula have <em>stronger-than-typical</em> connections to the <span class="gl" tabindex="0">Nucleus Accumbens<span class="gl-pop" role="tooltip"><span class="gl-def">The brain region at the center of your dopaminergic circuitry — the part that generates motivation and drives behavior through dopamine signaling.</span><a class="gl-more" href="../glossary.html#glossary-nucleus-accumbens">Full definition →</a></span></span>. The practical result: emotions translate into behavior much more directly and quickly than in a neurotypical brain. This is a key source of <span class="gl" tabindex="0">impulsivity<span class="gl-pop" role="tooltip"><span class="gl-def">The brain&#x27;s ability to pause, evaluate, and override an urge before acting on it — and in ADHD, this capacity is significantly weakened.</span><a class="gl-more" href="../glossary.html#glossary-impulse-control">Full definition →</a></span></span> — not a character flaw, but a wiring pattern.</p>
+<p><strong><span class="gl" tabindex="0">Prefrontal Cortex<span class="gl-pop" role="tooltip"><span class="gl-def">The brain&#x27;s master controller — the region responsible for planning, impulse control, directing attention, organization, and what we collectively call maturity.</span><a class="gl-more" href="../glossary.html#glossary-frontal-lobes">Full definition →</a></span></span> (PFC)</strong> — handles planning and execution of complex, abstract tasks (breaking a goal into ordered steps). Think of it as the brain's project manager.</p>
+<p><strong>Orbitofrontal Cortex</strong> — regulates emotions and decision-making; it's the part that stops you from yelling at your boss even when you really want to.</p>
+<p><strong>Dorsolateral PFC (DLPFC)</strong> — weighs options, pros and cons, risks and alternatives. <span class="gl" tabindex="0">Counterfactual thinking<span class="gl-pop" role="tooltip"><span class="gl-def">The brain&#x27;s habit of mentally replaying a past event and generating &quot;what if&quot; alternatives — things that are factually not what happened.</span><a class="gl-more" href="../glossary.html#glossary-counterfactual-thinking">Full definition →</a></span></span> ("what if I did this instead?") lives here.</p>
+<p><strong>Anterior Cingulate Cortex (ACC)</strong> — the highway connecting the PFC to the emotional and reward circuits. In <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by disordered attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span>, this connection is weaker, which is why the frontal "brakes" have less grip over impulses and feelings.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-why-stimulants-work-and-why-thats-not-paradoxical">Why Stimulants Work (and Why That's Not Paradoxical)</h2>
+<p>It seems strange that a stimulant calms a racing <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by disordered attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> mind. The reason: stimulant medications <em>stimulate the frontal cortex</em>, strengthening the brain's braking system rather than speeding up the whole engine. The chaos doesn't come from too little stimulation overall — it comes from weak top-down control. Stimulants fix the brakes, not the accelerator.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-matching-symptoms-to-brain-regions">Matching Symptoms to Brain Regions</h2>
+<p>Once you know which region is the weak link, you can target it directly:</p>
+<ul>
+<li><strong>Disorganization / poor planning</strong> → <span class="gl" tabindex="0">frontal lobe<span class="gl-pop" role="tooltip"><span class="gl-def">The brain&#x27;s master controller — the region responsible for planning, impulse control, directing attention, organization, and what we collectively call maturity.</span><a class="gl-more" href="../glossary.html#glossary-frontal-lobes">Full definition →</a></span></span> weakness</li>
+<li><strong><span class="gl" tabindex="0">Emotional dysregulation<span class="gl-pop" role="tooltip"><span class="gl-def">The failure of your brain&#x27;s emotional control systems to reliably identify and modify emotional states in ways that support adaptive, goal-directed behavior.</span><a class="gl-more" href="../glossary.html#glossary-emotional-dysregulation">Full definition →</a></span></span></strong> → weak ACC connection + overactive <span class="gl" tabindex="0">Amygdala<span class="gl-pop" role="tooltip"><span class="gl-def">The brain&#x27;s negative emotional center — the region that generates fear, anxiety, and survival-oriented stress responses.</span><a class="gl-more" href="../glossary.html#glossary-amygdala">Full definition →</a></span></span>/Insula</li>
+<li><strong><span class="gl" tabindex="0">Impulsivity<span class="gl-pop" role="tooltip"><span class="gl-def">The brain&#x27;s ability to pause, evaluate, and override an urge before acting on it — and in ADHD, this capacity is significantly weakened.</span><a class="gl-more" href="../glossary.html#glossary-impulse-control">Full definition →</a></span></span></strong> → <span class="gl" tabindex="0">Amygdala<span class="gl-pop" role="tooltip"><span class="gl-def">The brain&#x27;s negative emotional center — the region that generates fear, anxiety, and survival-oriented stress responses.</span><a class="gl-more" href="../glossary.html#glossary-amygdala">Full definition →</a></span></span>/Insula over-driving the <span class="gl" tabindex="0">Nucleus Accumbens<span class="gl-pop" role="tooltip"><span class="gl-def">The brain region at the center of your dopaminergic circuitry — the part that generates motivation and drives behavior through dopamine signaling.</span><a class="gl-more" href="../glossary.html#glossary-nucleus-accumbens">Full definition →</a></span></span></li>
+</ul>
+<p>This also explains why some people (~10–25%) grow out of <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by disordered attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span>: their <span class="gl" tabindex="0">frontal lobes<span class="gl-pop" role="tooltip"><span class="gl-def">The brain&#x27;s master controller — the region responsible for planning, impulse control, directing attention, organization, and what we collectively call maturity.</span><a class="gl-more" href="../glossary.html#glossary-frontal-lobes">Full definition →</a></span></span> were just developing on a slower timeline. By their 30s, the braking system has caught up.</p>
+<p>It also explains why <span class="gl" tabindex="0">meditation<span class="gl-pop" role="tooltip"><span class="gl-def">A practice of focused attention aimed at reaching a state of consciousness outside the thinking mind — where anxiety, desire, hope, attachment, and sadness simply cannot exist.</span><a class="gl-more" href="../glossary.html#glossary-meditation">Full definition →</a></span></span> isn't one-size-fits-all for <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by disordered attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span>. Different practices target different regions:</p>
+<ul>
+<li><strong>Focus/<span class="gl" tabindex="0">concentration<span class="gl-pop" role="tooltip"><span class="gl-def">The active, deliberate practice of fixing your attention on a single point — distinct from meditation as a state, Dharana is the technique, the verb, the thing you actually do.</span><a class="gl-more" href="../glossary.html#glossary-dharana">Full definition →</a></span></span> practices</strong> → strengthen frontal control</li>
+<li><strong>Impulse-control practices</strong> → train the ACC pathway</li>
+<li><strong><span class="gl" tabindex="0">Acceptance<span class="gl-pop" role="tooltip"><span class="gl-def">Acceptance is the clear-eyed acknowledgment of your present circumstances — not a surrender to them, but the necessary starting point for doing anything about them.</span><a class="gl-more" href="../glossary.html#glossary-acceptance">Full definition →</a></span></span>/emotional <span class="gl" tabindex="0">tolerance<span class="gl-pop" role="tooltip"><span class="gl-def">Substance use refers to the consumption of a substance — alcohol, opioids, caffeine, cannabis, and others — that triggers a neurological response your brain then adapts to over time.</span><a class="gl-more" href="../glossary.html#glossary-substance-use">Full definition →</a></span></span> practices</strong> → reduce <span class="gl" tabindex="0">Amygdala<span class="gl-pop" role="tooltip"><span class="gl-def">The brain&#x27;s negative emotional center — the region that generates fear, anxiety, and survival-oriented stress responses.</span><a class="gl-more" href="../glossary.html#glossary-amygdala">Full definition →</a></span></span>-driven reactivity</li>
+</ul>
+<p>Knowing your specific vulnerability lets you pick the right tool.</p>
+</section></article>
+    </div>
+  </div>
   
   <div class="view" data-view="transcript">
     <div class="doc">
@@ -60,7 +118,7 @@ try {
   </div>
   
 
-  <p class="meta">Transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by disordered attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> → Clinical Track). Captions auto-generated.</p>
+  <p class="meta">Medium summary + transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by disordered attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> → Clinical Track). Captions auto-generated; summary by claude-sonnet-4-6.</p>
 </div>
 
 <script>
@@ -68,7 +126,7 @@ try {
   var root = document.documentElement;
   function setView(v){ root.setAttribute('data-view', v);
     document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
-  setView(root.getAttribute('data-view') || 'transcript');
+  setView(root.getAttribute('data-view') || 'medium');
   document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
   var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }

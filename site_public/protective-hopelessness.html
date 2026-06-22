@@ -9,8 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-  document.documentElement.setAttribute('data-view', 'transcript');
-} catch (e) { document.documentElement.setAttribute('data-view', 'transcript'); }
+  document.documentElement.setAttribute('data-view', 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -33,7 +33,47 @@ try {
   </p>
 
   
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">452w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">1,980w</span></button>
+    
+  </div>
+  
 
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#summary-summary">Summary</a></li>
+<li><a href="#summary-action-items">Action Items</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="summary-summary">Summary</h2>
+<p><strong>TL;DR — Hopelessness isn't a character flaw or a symptom to fix; it's a shield your mind built to protect you from the pain of failure. Understanding that changes how you work with it.</strong></p>
+<p>When you feel stuck — knowing exactly what you should do but unable to make yourself do it — the real obstacle usually isn't laziness or lack of <span class="gl" tabindex="0">motivation<span class="gl-pop" role="tooltip"><span class="gl-def">Motivation is not a feeling, a desire, or a behavior — it is the ability to hold one thought steadily in your mind for a prolonged period of time.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span>. It's <strong>protective hopelessness</strong>: a psychological defense where, as long as you don't hope for anything, you don't try, and as long as you don't try, you can't truly fail. Hypothetical failure (staying in limbo) feels safer than real failure (actually going for it and falling short). The hopelessness isn't the problem — it <em>is</em> the solution your mind landed on, usually after some past moment where you gave something your all and got hurt badly.</p>
+<p>Here's where it gets counterintuitive: even <em>success</em> can make things worse. When you finally take a step forward, your mind doesn't say "good job." It says <em>look at how far behind you are, look at how pathetic this small step is, you should have started years ago.</em> Success strips away the comfortable story — "I'm just unlucky, I'm lazy, it's not my fault" — and replaces it with something more confronting: the actual distance between where you are and where you want to be. So the person who finally enrolls in <span class="gl" tabindex="0">community<span class="gl-pop" role="tooltip"><span class="gl-def">The Sanskrit word for community, sangha refers to the group of people who support your spiritual or meditative practice — and according to the yogic tradition, it is considered vital to sustaining that practice at all.</span><a class="gl-more" href="../glossary.html#glossary-sangha">Full definition →</a></span></span> college at 25 feels <em>worse</em> after getting in, not better, because now they have to reckon with being a sophomore when they expected to be a doctor by now.</p>
+<p>This creates a trap:
+- <strong>Don't try</strong> → stuck in limbo, but safe
+- <strong>Try and fail</strong> → real, concrete pain
+- <strong>Try and succeed</strong> → your mind punishes you anyway for not being far enough along</p>
+<blockquote>
+<p>"It's damned if you do and damned if you don't — and that's why protective hopelessness plagues so many people."</p>
+</blockquote>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-action-items">Action Items</h2>
+<ol>
+<li><strong>Name which trap you're in.</strong> When you wake up and can't make yourself move, pause and ask: is what's stopping me the fear of real failure? Or is it that when I do take a step, my mind tells me it isn't enough?</li>
+<li><strong>Anticipate the mental punishment before it hits.</strong> If your obstacle is the "not enough" voice, prepare for it <em>before</em> you act — tell yourself, <em>I'm going to do two pushups, and my mind is going to tell me it's pathetic, and I'm going to do them anyway.</em></li>
+<li><strong>Act in spite of what your mind tells you, not in response to it.</strong> The goal isn't to silence the voice or wait until it stops. It's to see the trap coming and move through it anyway.</li>
+</ol>
+</section></article>
+    </div>
+  </div>
   
   <div class="view" data-view="transcript">
     <div class="doc">
@@ -61,7 +101,7 @@ try {
   </div>
   
 
-  <p class="meta">Transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">Depression<span class="gl-pop" role="tooltip"><span class="gl-def">A state of persistently low mood that goes beyond a normal emotional response to difficulty — it becomes clinical when symptoms last at least two weeks, impair functioning, and include at least five of nine recognized…</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span> → Common Manifestations of <span class="gl" tabindex="0">Depression<span class="gl-pop" role="tooltip"><span class="gl-def">A state of persistently low mood that goes beyond a normal emotional response to difficulty — it becomes clinical when symptoms last at least two weeks, impair functioning, and include at least five of nine recognized…</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span>). Captions auto-generated.</p>
+  <p class="meta">Medium summary + transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">Depression<span class="gl-pop" role="tooltip"><span class="gl-def">A state of persistently low mood that goes beyond a normal emotional response to difficulty — it becomes clinical when symptoms last at least two weeks, impair functioning, and include at least five of nine recognized…</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span> → Common Manifestations of <span class="gl" tabindex="0">Depression<span class="gl-pop" role="tooltip"><span class="gl-def">A state of persistently low mood that goes beyond a normal emotional response to difficulty — it becomes clinical when symptoms last at least two weeks, impair functioning, and include at least five of nine recognized…</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span>). Captions auto-generated; summary by claude-sonnet-4-6.</p>
 </div>
 
 <script>
@@ -69,7 +109,7 @@ try {
   var root = document.documentElement;
   function setView(v){ root.setAttribute('data-view', v);
     document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
-  setView(root.getAttribute('data-view') || 'transcript');
+  setView(root.getAttribute('data-view') || 'medium');
   document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
   var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }

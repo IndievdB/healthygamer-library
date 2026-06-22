@@ -9,8 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-  document.documentElement.setAttribute('data-view', 'transcript');
-} catch (e) { document.documentElement.setAttribute('data-view', 'transcript'); }
+  document.documentElement.setAttribute('data-view', 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -33,7 +33,47 @@ try {
   </p>
 
   
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">479w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">1,843w</span></button>
+    
+  </div>
+  
 
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#summary-summary">Summary</a></li>
+<li><a href="#summary-the-main-conditions-that-cause-depression">The Main Conditions That Cause Depression</a></li>
+<li><a href="#summary-why-this-matters-for-you">Why This Matters for You</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="summary-summary">Summary</h2>
+<p><strong>TL;DR — <span class="gl" tabindex="0">Depression<span class="gl-pop" role="tooltip"><span class="gl-def">A state of persistently low mood that goes beyond a normal emotional response to difficulty — it becomes clinical when symptoms last at least two weeks, impair functioning, and include at least five of nine recognized…</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span> is a symptom, not a single diagnosis, and knowing which condition is actually driving it makes a real difference in how you treat it.</strong></p>
+<p>When you feel depressed, that feeling is the starting point, not the answer. Just like a fever can come from a dozen different causes — some trivial, some serious — a depressive episode can arise from several distinct conditions that require very different approaches. This is what <span class="gl" tabindex="0">differential diagnosis<span class="gl-pop" role="tooltip"><span class="gl-def">The practice of holding multiple possible explanations for a symptom open at the same time — rather than jumping to the first one that fits — before arriving at a diagnosis.</span><a class="gl-more" href="../glossary.html#glossary-differential-diagnosis">Full definition →</a></span></span> means: resisting the urge to jump to the first explanation and instead asking <em>which</em> of the possible causes fits best.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-the-main-conditions-that-cause-depression">The Main Conditions That Cause Depression</h2>
+<p><strong><span class="gl" tabindex="0">Major depressive disorder<span class="gl-pop" role="tooltip"><span class="gl-def">A state of persistently low mood that goes beyond a normal emotional response to difficulty — it becomes clinical when symptoms last at least two weeks, impair functioning, and include at least five of nine recognized…</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span> (unipolar <span class="gl" tabindex="0">depression<span class="gl-pop" role="tooltip"><span class="gl-def">A state of persistently low mood that goes beyond a normal emotional response to difficulty — it becomes clinical when symptoms last at least two weeks, impair functioning, and include at least five of nine recognized…</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span>)</strong> — Episodes of intense low mood lasting weeks to a year, followed by a return to baseline. The pattern is episodic: bad stretches interrupted by periods of feeling normal. Responds well to antidepressants.</p>
+<p><strong>Bipolar disorder</strong> — Like major <span class="gl" tabindex="0">depression<span class="gl-pop" role="tooltip"><span class="gl-def">A state of persistently low mood that goes beyond a normal emotional response to difficulty — it becomes clinical when symptoms last at least two weeks, impair functioning, and include at least five of nine recognized…</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span>, but with the added dimension of abnormally elevated mood (mania or hypomania). The elevated periods can feel productive and good, which is part of what makes it hard to spot. After the high, a depressive crash usually follows and can last months. Needs different medication than unipolar <span class="gl" tabindex="0">depression<span class="gl-pop" role="tooltip"><span class="gl-def">A state of persistently low mood that goes beyond a normal emotional response to difficulty — it becomes clinical when symptoms last at least two weeks, impair functioning, and include at least five of nine recognized…</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span>.</p>
+<p><strong>Dysthymia</strong> — A persistent, low-grade <span class="gl" tabindex="0">depression<span class="gl-pop" role="tooltip"><span class="gl-def">A state of persistently low mood that goes beyond a normal emotional response to difficulty — it becomes clinical when symptoms last at least two weeks, impair functioning, and include at least five of nine recognized…</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span> that doesn't lift the way episodic <span class="gl" tabindex="0">depression<span class="gl-pop" role="tooltip"><span class="gl-def">A state of persistently low mood that goes beyond a normal emotional response to difficulty — it becomes clinical when symptoms last at least two weeks, impair functioning, and include at least five of nine recognized…</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span> does. People aren't necessarily in crisis, but they feel flat or down for years at a time. Antidepressants largely don't help here. This condition maps closely onto what contemplative traditions call <em>dukkha</em> — a background dissatisfaction with existence — and responds better to <span class="gl" tabindex="0">meditation<span class="gl-pop" role="tooltip"><span class="gl-def">A practice of focused attention aimed at reaching a state of consciousness outside the thinking mind — where anxiety, desire, hope, attachment, and sadness simply cannot exist.</span><a class="gl-more" href="../glossary.html#glossary-meditation">Full definition →</a></span></span>, <span class="gl" tabindex="0">mindfulness<span class="gl-pop" role="tooltip"><span class="gl-def">Non-judgmental, present-moment awareness — specifically, the capacity to create a gap between the self and the mind, observing thoughts and sensations without being swept up in them.</span><a class="gl-more" href="../glossary.html#glossary-mindfulness">Full definition →</a></span></span>, and existential or spiritual approaches.</p>
+<p><strong><span class="gl" tabindex="0">Personality disorders<span class="gl-pop" role="tooltip"><span class="gl-def">A personality disorder is a fundamental alteration in the way you perceive, internally react to, and behave in the world — not something that occasionally happens to you, but the way you are.</span><a class="gl-more" href="../glossary.html#glossary-personality-disorders">Full definition →</a></span></span> (e.g., <span class="gl" tabindex="0">borderline personality disorder<span class="gl-pop" role="tooltip"><span class="gl-def">A pervasive pattern of instability across relationships, self-image, and emotions — rooted not in random reactivity but in a constant, underlying state of emotional pain.</span><a class="gl-more" href="../glossary.html#glossary-borderline-personality-disorder">Full definition →</a></span></span>)</strong> — These aren't episodes that come and go; they reflect how someone's brain got wired during development, often shaped by early adverse experiences. In BPD, the sense of self is almost entirely external — how you feel about yourself rises and falls with how other people treat you, creating wild emotional swings. Because this is a structural feature of the personality rather than a passing neurochemical imbalance, standard <span class="gl" tabindex="0">depression<span class="gl-pop" role="tooltip"><span class="gl-def">A state of persistently low mood that goes beyond a normal emotional response to difficulty — it becomes clinical when symptoms last at least two weeks, impair functioning, and include at least five of nine recognized…</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span> treatments often miss the mark. The good news: the brain can be rewired. Dialectical behavior therapy, which has a strong <span class="gl" tabindex="0">mindfulness<span class="gl-pop" role="tooltip"><span class="gl-def">Non-judgmental, present-moment awareness — specifically, the capacity to create a gap between the self and the mind, observing thoughts and sensations without being swept up in them.</span><a class="gl-more" href="../glossary.html#glossary-mindfulness">Full definition →</a></span></span> component, has solid evidence for BPD, and <span class="gl" tabindex="0">mindfulness<span class="gl-pop" role="tooltip"><span class="gl-def">Non-judgmental, present-moment awareness — specifically, the capacity to create a gap between the self and the mind, observing thoughts and sensations without being swept up in them.</span><a class="gl-more" href="../glossary.html#glossary-mindfulness">Full definition →</a></span></span> itself demonstrably changes brain structure.</p>
+
+</section>
+<section class="sec sec-a">
+<h2 id="summary-why-this-matters-for-you">Why This Matters for You</h2>
+<p>Medication that works beautifully for <span class="gl" tabindex="0">major depressive disorder<span class="gl-pop" role="tooltip"><span class="gl-def">A state of persistently low mood that goes beyond a normal emotional response to difficulty — it becomes clinical when symptoms last at least two weeks, impair functioning, and include at least five of nine recognized…</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span> may do nothing for dysthymia or BPD. Treating bipolar disorder with antidepressants alone can actually destabilize mood. The more clearly you can observe your own pattern — is your low mood episodic or constant? does it swing into unusual highs? does it track tightly with how people around you are treating you? — the more useful information you bring to any clinician, and the better equipped you are to advocate for the right treatment.</p>
+<blockquote>
+<p>The best outcomes come from educated patients, and you are ultimately going to be the most important part of your treatment.</p>
+</blockquote>
+</section></article>
+    </div>
+  </div>
   
   <div class="view" data-view="transcript">
     <div class="doc">
@@ -60,7 +100,7 @@ try {
   </div>
   
 
-  <p class="meta">Transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">Depression<span class="gl-pop" role="tooltip"><span class="gl-def">A state of persistently low mood that goes beyond a normal emotional response to difficulty — it becomes clinical when symptoms last at least two weeks, impair functioning, and include at least five of nine recognized…</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span> → Clinical Track). Captions auto-generated.</p>
+  <p class="meta">Medium summary + transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">Depression<span class="gl-pop" role="tooltip"><span class="gl-def">A state of persistently low mood that goes beyond a normal emotional response to difficulty — it becomes clinical when symptoms last at least two weeks, impair functioning, and include at least five of nine recognized…</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span> → Clinical Track). Captions auto-generated; summary by claude-sonnet-4-6.</p>
 </div>
 
 <script>
@@ -68,7 +108,7 @@ try {
   var root = document.documentElement;
   function setView(v){ root.setAttribute('data-view', v);
     document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
-  setView(root.getAttribute('data-view') || 'transcript');
+  setView(root.getAttribute('data-view') || 'medium');
   document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
   var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }

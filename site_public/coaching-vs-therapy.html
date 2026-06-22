@@ -9,8 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-  document.documentElement.setAttribute('data-view', 'transcript');
-} catch (e) { document.documentElement.setAttribute('data-view', 'transcript'); }
+  document.documentElement.setAttribute('data-view', 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -33,7 +33,35 @@ try {
   </p>
 
   
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">280w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">820w</span></button>
+    
+  </div>
+  
 
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#summary-summary">Summary</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="summary-summary">Summary</h2>
+<p><strong>TL;DR — Therapy and coaching aren't competing options; they address different problems. Therapy treats mental illness, coaching helps you build a life you actually want.</strong></p>
+<p>The training behind each reflects this divide. Clinical training — psychiatry, psychology — is built around diagnosing and treating conditions like <span class="gl" tabindex="0">depression<span class="gl-pop" role="tooltip"><span class="gl-def">A state of persistently low mood that goes beyond a normal emotional response to difficulty — it becomes clinical when symptoms last at least two weeks, impair functioning, and include at least five of nine recognized…</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span>, <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response in which the brain prepares you for high-stakes or unfamiliar situations — triggering the sympathetic nervous system, releasing adrenaline and cortisol, and narrowing your attention onto…</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span>, and <span class="gl" tabindex="0">addiction<span class="gl-pop" role="tooltip"><span class="gl-def">Substance use refers to the consumption of a substance — alcohol, opioids, caffeine, cannabis, and others — that triggers a neurological response your brain then adapts to over time.</span><a class="gl-more" href="../glossary.html#glossary-substance-use">Full definition →</a></span></span>. Coaching isn't about treating anything. It's about self-understanding and removing whatever is quietly blocking you from living the way you want to.</p>
+<p>A useful way to feel the difference: there's a gap between being <strong>depressed</strong> and being <strong>unhappy</strong>. <span class="gl" tabindex="0">Depression<span class="gl-pop" role="tooltip"><span class="gl-def">A state of persistently low mood that goes beyond a normal emotional response to difficulty — it becomes clinical when symptoms last at least two weeks, impair functioning, and include at least five of nine recognized…</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span> is a clinical condition with specific criteria — disrupted <span class="gl" tabindex="0">sleep<span class="gl-pop" role="tooltip"><span class="gl-def">Sleep is the brain&#x27;s primary maintenance window — the period during which short-term memories stored in the hippocampus (your RAM) get written into long-term memory (your hard drive).</span><a class="gl-more" href="../glossary.html#glossary-sleep">Full definition →</a></span></span>, persistent low mood, loss of function. Unhappiness is something else. You can clear every clinical threshold and still feel like something's off. Therapy is the right tool for the first problem; coaching is the right tool for the second.</p>
+<blockquote>
+<p>"I don't think you're depressed. I think you're unhappy — and there's a huge difference between the two."</p>
+</blockquote>
+<p>Coaching works by surfacing the real obstacle. Someone might say they're "just lazy" about a goal that genuinely matters to them, but dig a little and it turns out they work demanding hours and aren't lazy at all. The actual blocker is something else — something that requires honest self-examination to find. That's the work coaching does: not fixing a disorder, but helping you understand yourself well enough to move forward.</p>
+<p>The two aren't mutually exclusive. It's common to need both, and sometimes people shift from one to the other as their needs change — starting with therapy to address a clinical condition, then moving into coaching once that's resolved and the real work becomes building something rather than fixing something.</p>
+</section></article>
+    </div>
+  </div>
   
   <div class="view" data-view="transcript">
     <div class="doc">
@@ -51,7 +79,7 @@ try {
   </div>
   
 
-  <p class="meta">Transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">Anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response in which the brain prepares you for high-stakes or unfamiliar situations — triggering the sympathetic nervous system, releasing adrenaline and cortisol, and narrowing your attention onto…</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> → <span class="gl" tabindex="0">Anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response in which the brain prepares you for high-stakes or unfamiliar situations — triggering the sympathetic nervous system, releasing adrenaline and cortisol, and narrowing your attention onto…</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> & Behavior). Captions auto-generated.</p>
+  <p class="meta">Medium summary + transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">Anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response in which the brain prepares you for high-stakes or unfamiliar situations — triggering the sympathetic nervous system, releasing adrenaline and cortisol, and narrowing your attention onto…</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> → <span class="gl" tabindex="0">Anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response in which the brain prepares you for high-stakes or unfamiliar situations — triggering the sympathetic nervous system, releasing adrenaline and cortisol, and narrowing your attention onto…</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> & Behavior). Captions auto-generated; summary by claude-sonnet-4-6.</p>
 </div>
 
 <script>
@@ -59,7 +87,7 @@ try {
   var root = document.documentElement;
   function setView(v){ root.setAttribute('data-view', v);
     document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
-  setView(root.getAttribute('data-view') || 'transcript');
+  setView(root.getAttribute('data-view') || 'medium');
   document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
   var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }

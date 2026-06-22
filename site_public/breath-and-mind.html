@@ -9,8 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-  document.documentElement.setAttribute('data-view', 'transcript');
-} catch (e) { document.documentElement.setAttribute('data-view', 'transcript'); }
+  document.documentElement.setAttribute('data-view', 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -33,7 +33,39 @@ try {
   </p>
 
   
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">318w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">1,384w</span></button>
+    
+  </div>
+  
 
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#summary-summary">Summary</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="summary-summary">Summary</h2>
+<p><strong>TL;DR — Breathing and mental state influence each other in both directions, which means you can deliberately change how you feel by changing how you breathe.</strong></p>
+<p>Most people know that emotions affect breathing — fear makes you gasp, calm makes you breathe slowly, <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response in which the brain prepares you for high-stakes or unfamiliar situations — triggering the sympathetic nervous system, releasing adrenaline and cortisol, and narrowing your attention onto…</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> causes hyperventilation. What's less obvious is that the reverse is equally true. When researchers had people breathe air with 7.5% CO2 (mimicking hyperventilation), it reliably induced physiological and psychological changes consistent with <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response in which the brain prepares you for high-stakes or unfamiliar situations — triggering the sympathetic nervous system, releasing adrenaline and cortisol, and narrowing your attention onto…</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span>. The most controlled way to make a person anxious in a lab is simply to change what they breathe. That's a strong signal that the relationship runs both ways.</p>
+<p>This bidirectional pattern shows up throughout the body. Two systems rarely have a one-way relationship — there's almost always a feedback loop, like the brain triggering hunger and the stretched stomach signaling fullness back to the brain.</p>
+<p>Breath itself has two key dimensions: <strong>rate</strong> (fast vs. slow) and <strong>depth</strong> (shallow vs. deep). Different emotional states map onto different combinations:</p>
+<ul>
+<li><strong>Anxious</strong> — fast and shallow</li>
+<li><strong>Angry</strong> — fast and deep</li>
+<li><strong>Calm</strong> — slow and deep</li>
+<li><strong>Normal/resting</strong> — relatively slow and moderately shallow</li>
+</ul>
+<p>A related finding from facial-expression research makes the same point from a different angle: research assistants who spent their days practicing angry faces became genuinely irritable and snappy; those practicing fearful faces grew more anxious; those practicing happy faces stayed more upbeat. The body doesn't cleanly separate "performance" from "experience."</p>
+<p>Ancient systems like <strong><span class="gl" tabindex="0">pranayama<span class="gl-pop" role="tooltip"><span class="gl-def">Pranayama is the yogic practice of deliberate breath control, used to regulate prana (life energy) and directly shift the state of your nervous system.</span><a class="gl-more" href="../glossary.html#glossary-pranayama">Full definition →</a></span></span></strong> (yogic breathing) and <strong>qi gong</strong> were built on exactly this insight — that specific breathing patterns cultivate specific states of mind. When someone came to a yogi seeking peace or mental control, the first thing they were taught wasn't philosophy or <span class="gl" tabindex="0">meditation<span class="gl-pop" role="tooltip"><span class="gl-def">A practice of focused attention aimed at reaching a state of consciousness outside the thinking mind — where anxiety, desire, hope, attachment, and sadness simply cannot exist.</span><a class="gl-more" href="../glossary.html#glossary-meditation">Full definition →</a></span></span>; it was how to breathe. Techniques that look like <span class="gl" tabindex="0">meditation<span class="gl-pop" role="tooltip"><span class="gl-def">A practice of focused attention aimed at reaching a state of consciousness outside the thinking mind — where anxiety, desire, hope, attachment, and sadness simply cannot exist.</span><a class="gl-more" href="../glossary.html#glossary-meditation">Full definition →</a></span></span> are often, at their core, structured breathing practices designed to produce a target mental state, including directly countering <span class="gl" tabindex="0">anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response in which the brain prepares you for high-stakes or unfamiliar situations — triggering the sympathetic nervous system, releasing adrenaline and cortisol, and narrowing your attention onto…</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span>.</p>
+</section></article>
+    </div>
+  </div>
   
   <div class="view" data-view="transcript">
     <div class="doc">
@@ -58,7 +90,7 @@ try {
   </div>
   
 
-  <p class="meta">Transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">Anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response in which the brain prepares you for high-stakes or unfamiliar situations — triggering the sympathetic nervous system, releasing adrenaline and cortisol, and narrowing your attention onto…</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> → Science of <span class="gl" tabindex="0">Anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response in which the brain prepares you for high-stakes or unfamiliar situations — triggering the sympathetic nervous system, releasing adrenaline and cortisol, and narrowing your attention onto…</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span>). Captions auto-generated.</p>
+  <p class="meta">Medium summary + transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">Anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response in which the brain prepares you for high-stakes or unfamiliar situations — triggering the sympathetic nervous system, releasing adrenaline and cortisol, and narrowing your attention onto…</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span> → Science of <span class="gl" tabindex="0">Anxiety<span class="gl-pop" role="tooltip"><span class="gl-def">A normal physiological response in which the brain prepares you for high-stakes or unfamiliar situations — triggering the sympathetic nervous system, releasing adrenaline and cortisol, and narrowing your attention onto…</span><a class="gl-more" href="../glossary.html#glossary-anxiety">Full definition →</a></span></span>). Captions auto-generated; summary by claude-sonnet-4-6.</p>
 </div>
 
 <script>
@@ -66,7 +98,7 @@ try {
   var root = document.documentElement;
   function setView(v){ root.setAttribute('data-view', v);
     document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
-  setView(root.getAttribute('data-view') || 'transcript');
+  setView(root.getAttribute('data-view') || 'medium');
   document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
   var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }

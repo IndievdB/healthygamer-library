@@ -9,8 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-  document.documentElement.setAttribute('data-view', 'transcript');
-} catch (e) { document.documentElement.setAttribute('data-view', 'transcript'); }
+  document.documentElement.setAttribute('data-view', 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -33,7 +33,40 @@ try {
   </p>
 
   
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">354w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">891w</span></button>
+    
+  </div>
+  
 
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#summary-summary">Summary</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="summary-summary">Summary</h2>
+<p><strong>TL;DR — <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by disordered attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> doesn't directly cause <span class="gl" tabindex="0">depression<span class="gl-pop" role="tooltip"><span class="gl-def">A state of persistently low mood that goes beyond a normal emotional response to difficulty — it becomes clinical when symptoms last at least two weeks, impair functioning, and include at least five of nine recognized…</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span>; it sets off a chain of social and emotional failures that, over years, harden into a deep sense of being fundamentally broken.</strong></p>
+<p>The path from <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by disordered attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> to <span class="gl" tabindex="0">depression<span class="gl-pop" role="tooltip"><span class="gl-def">A state of persistently low mood that goes beyond a normal emotional response to difficulty — it becomes clinical when symptoms last at least two weeks, impair functioning, and include at least five of nine recognized…</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span> runs through three compounding problems:</p>
+<ul>
+<li><strong>Academic underachievement.</strong> Inattention and <span class="gl" tabindex="0">impulsivity<span class="gl-pop" role="tooltip"><span class="gl-def">The brain&#x27;s ability to pause, evaluate, and override an urge before acting on it — and in ADHD, this capacity is significantly weakened.</span><a class="gl-more" href="../glossary.html#glossary-impulse-control">Full definition →</a></span></span> make school harder, producing worse grades — not from lack of intelligence, but from a real inability to focus that nobody recognizes as something that needs to be <em>taught</em>.</li>
+<li><strong>Discordant relationships.</strong> Kids with <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by disordered attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> struggle to participate socially the way their peers do. Research has found they are less likely to be invited to birthday parties — a small-sounding detail with a crushing real-world effect when Monday morning arrives and everyone is talking about an event you weren't part of.</li>
+<li><strong><span class="gl" tabindex="0">Emotional dysregulation<span class="gl-pop" role="tooltip"><span class="gl-def">The failure of your brain&#x27;s emotional control systems to reliably identify and modify emotional states in ways that support adaptive, goal-directed behavior.</span><a class="gl-more" href="../glossary.html#glossary-emotional-dysregulation">Full definition →</a></span></span>.</strong> Emotions hit harder and spill into behavior more readily, making already strained social situations worse and leaving certain feelings unresolved for years.</li>
+</ul>
+<p>Together, these three things erode <strong><span class="gl" tabindex="0">self-esteem<span class="gl-pop" role="tooltip"><span class="gl-def">Self-esteem is the internal sense of accepting yourself as you are — not a score you earn by comparing favorably against others.</span><a class="gl-more" href="../glossary.html#glossary-self-esteem">Full definition →</a></span></span></strong>. The child notices that everyone else can do something — focus, make friends, get invited places — that they simply cannot. Adults around them respond with "you just need to apply yourself," which lands as confirmation that the problem is a personal moral failing, not a neurological one. Nobody teaches them <em>how</em> to focus, because it's assumed everyone already knows.</p>
+<blockquote>
+<p>What was born as a seed of <span class="gl" tabindex="0">shame<span class="gl-pop" role="tooltip"><span class="gl-def">A painful emotion triggered by the gap between where you are and where you think you should be — essentially, I am not what I should be.</span><a class="gl-more" href="../glossary.html#glossary-shame">Full definition →</a></span></span> becomes a tree, and then a gigantic tree — and it bears fruit and grows more trees.</p>
+</blockquote>
+<p>That seed, planted around age six, compounds across adolescence. Missing the gifted program, missing the parties, missing the emotional tools — each gap feeds the next. By adulthood, the result looks like classic <span class="gl" tabindex="0">depression<span class="gl-pop" role="tooltip"><span class="gl-def">A state of persistently low mood that goes beyond a normal emotional response to difficulty — it becomes clinical when symptoms last at least two weeks, impair functioning, and include at least five of nine recognized…</span><a class="gl-more" href="../glossary.html#glossary-depression">Full definition →</a></span></span>: hopelessness, powerlessness, low self-worth. The origin wasn't a mood disorder. It was a slow accumulation of evidence, collected by the child themselves, that something is fundamentally wrong with them.</p>
+<p>Understanding this chain matters because it points to where intervention can actually help: catching the <span class="gl" tabindex="0">shame<span class="gl-pop" role="tooltip"><span class="gl-def">A painful emotion triggered by the gap between where you are and where you think you should be — essentially, I am not what I should be.</span><a class="gl-more" href="../glossary.html#glossary-shame">Full definition →</a></span></span> narrative early, explicitly teaching focus and <span class="gl" tabindex="0">emotional regulation<span class="gl-pop" role="tooltip"><span class="gl-def">The ability to identify and modify emotional states in ways that promote adaptive, goal-directed behavior.</span><a class="gl-more" href="../glossary.html#glossary-emotional-regulation">Full definition →</a></span></span> skills (rather than assuming they're innate), and making sure kids with <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by disordered attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> aren't quietly excluded from the social fabric of childhood.</p>
+</section></article>
+    </div>
+  </div>
   
   <div class="view" data-view="transcript">
     <div class="doc">
@@ -52,7 +85,7 @@ try {
   </div>
   
 
-  <p class="meta">Transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by disordered attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> → <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by disordered attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> Comorbidities). Captions auto-generated.</p>
+  <p class="meta">Medium summary + transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by disordered attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> → <span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by disordered attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> Comorbidities). Captions auto-generated; summary by claude-sonnet-4-6.</p>
 </div>
 
 <script>
@@ -60,7 +93,7 @@ try {
   var root = document.documentElement;
   function setView(v){ root.setAttribute('data-view', v);
     document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
-  setView(root.getAttribute('data-view') || 'transcript');
+  setView(root.getAttribute('data-view') || 'medium');
   document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
   var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }

@@ -9,8 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-  document.documentElement.setAttribute('data-view', 'transcript');
-} catch (e) { document.documentElement.setAttribute('data-view', 'transcript'); }
+  document.documentElement.setAttribute('data-view', 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -33,7 +33,40 @@ try {
   </p>
 
   
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">345w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">1,709w</span></button>
+    
+  </div>
+  
 
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#summary-summary">Summary</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="summary-summary">Summary</h2>
+<p><strong>TL;DR — The more time you feel you've wasted, the more paralyzed you become about spending what's left — and that paralysis wastes even more time.</strong></p>
+<p>When you feel behind, your mind starts treating future time as precious and scarce. You tell yourself you can't afford another mistake, so you wait until you're certain the next move is the right one. But certainty never arrives, and the waiting itself costs you exactly the time you were trying to protect. The 23-year-old who couldn't pick a major spent an entire year making zero progress — not despite caring about his time, but <em>because</em> he cared too much.</p>
+<p>This is the paradox: people who feel ahead can afford to be wrong, so they try things. People who feel behind need a guarantee before they act, so they don't try anything at all.</p>
+<p>The mental trap works like this: your mind doesn't separate past losses from future decisions. If you've "wasted" five years and you make one more wrong move, your brain registers that as six years lost — a number so aversive it freezes you. But those five years are already gone regardless of what you do next. The only real choice is between <em>possibly making the wrong move</em> and <em>definitely making no move</em>. Paralysis isn't the safe option; it's just a slower version of the same loss.</p>
+<blockquote>
+<p>The more behind we actually fall, the more careful we are about how we spend our time.</p>
+</blockquote>
+<p>The way out has three steps:</p>
+<ol>
+<li><strong>Notice the pattern in the moment.</strong> When you catch yourself thinking "I have to get this exactly right," recognize that thought as the trap itself, not as wisdom.</li>
+<li><strong>Mourn the lost time honestly.</strong> Nothing you do today will recover what's already gone. The fantasy that a perfect decision now can "make up" for the past is what keeps you stuck.</li>
+<li><strong>Start from the present.</strong> Those years are gone. What do you actually need to do <em>today</em>? The past stops controlling your future the moment you stop trying to fix it.</li>
+</ol>
+</section></article>
+    </div>
+  </div>
   
   <div class="view" data-view="transcript">
     <div class="doc">
@@ -58,7 +91,7 @@ try {
   </div>
   
 
-  <p class="meta">Transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by disordered attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> → <span class="gl" tabindex="0">Samskaras<span class="gl-pop" role="tooltip"><span class="gl-def">A samskara is a ball of undigested emotional energy from the past that lingers in the unconscious mind and automatically shapes how you think, feel, and respond to situations in the present.</span><a class="gl-more" href="../glossary.html#glossary-samskara">Full definition →</a></span></span> & <span class="gl" tabindex="0">Motivation<span class="gl-pop" role="tooltip"><span class="gl-def">Motivation is not a feeling, a desire, or a behavior — it is the ability to hold one thought steadily in your mind for a prolonged period of time.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span>). Captions auto-generated.</p>
+  <p class="meta">Medium summary + transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">ADHD<span class="gl-pop" role="tooltip"><span class="gl-def">A neurodevelopmental condition defined not by an inability to focus, but by disordered attention — meaning you lack control over where your attention goes, in both directions.</span><a class="gl-more" href="../glossary.html#glossary-adhd">Full definition →</a></span></span> → <span class="gl" tabindex="0">Samskaras<span class="gl-pop" role="tooltip"><span class="gl-def">A samskara is a ball of undigested emotional energy from the past that lingers in the unconscious mind and automatically shapes how you think, feel, and respond to situations in the present.</span><a class="gl-more" href="../glossary.html#glossary-samskara">Full definition →</a></span></span> & <span class="gl" tabindex="0">Motivation<span class="gl-pop" role="tooltip"><span class="gl-def">Motivation is not a feeling, a desire, or a behavior — it is the ability to hold one thought steadily in your mind for a prolonged period of time.</span><a class="gl-more" href="../glossary.html#glossary-motivation">Full definition →</a></span></span>). Captions auto-generated; summary by claude-sonnet-4-6.</p>
 </div>
 
 <script>
@@ -66,7 +99,7 @@ try {
   var root = document.documentElement;
   function setView(v){ root.setAttribute('data-view', v);
     document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
-  setView(root.getAttribute('data-view') || 'transcript');
+  setView(root.getAttribute('data-view') || 'medium');
   document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
   var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }

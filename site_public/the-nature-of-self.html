@@ -9,8 +9,8 @@
 try {
   if (localStorage.getItem('readingFont') === 'sans') document.documentElement.classList.add('sans');
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
-  document.documentElement.setAttribute('data-view', 'transcript');
-} catch (e) { document.documentElement.setAttribute('data-view', 'transcript'); }
+  document.documentElement.setAttribute('data-view', 'medium');
+} catch (e) { document.documentElement.setAttribute('data-view', 'medium'); }
 </script>
 </head>
 <body>
@@ -33,7 +33,45 @@ try {
   </p>
 
   
+  <div class="view-toggle" role="group" aria-label="View">
+    <button data-view="medium">Summary<span class="wc">468w</span></button>
+    <button data-view="transcript">Transcript<span class="wc">1,187w</span></button>
+    
+  </div>
+  
 
+  
+  <div class="view" data-view="medium">
+    <div class="doc">
+      <nav class="toc"><p class="toc-title">On this page</p><div class="toc">
+<ul>
+<li><a href="#summary-summary">Summary</a></li>
+<li><a href="#summary-action-items">Action Items</a></li>
+</ul>
+</div>
+</nav>
+      <article class="summary"><section class="sec sec-a">
+<h2 id="summary-summary">Summary</h2>
+<p><strong>TL;DR —</strong> Most suffering comes from mistaking your ego — your job, your roles, your social metrics — for who you actually are. Your real self is the witnessing <span class="gl" tabindex="0">awareness<span class="gl-pop" role="tooltip"><span class="gl-def">The capacity to accurately receive and interpret information — about your environment, your body, your emotions, and your own mental processes — so that your brain can respond appropriately.</span><a class="gl-more" href="../glossary.html#glossary-awareness">Full definition →</a></span></span> underneath all of it, and grounding yourself there is what produces lasting contentment.</p>
+<p>The yogic tradition approached the question "who am I?" systematically, ruling out candidates one by one. The body changes, and you can even lose a limb and still be <em>you</em>. Emotions fluctuate — anger, sadness, joy — yet something constant remains. Roles and identities (doctor, parent, daughter) come and go over a lifetime, yet the sense of <em>you-ness</em> threads through all of them. Because these things all change, none of them can be the real you.</p>
+<p>In the absence of knowing what we truly are, the mind fills the gap with a <strong>false self</strong> — the ego, the <span class="gl" tabindex="0">identity<span class="gl-pop" role="tooltip"><span class="gl-def">A narrative you construct by stringing together emotionally salient experiences — the moments in your life that carried the most emotional charge — into a coherent story of who you are.</span><a class="gl-more" href="../glossary.html#glossary-identity">Full definition →</a></span></span>, the resume. The problem with building your sense of self on resume items isn't that they're bad things; it's that they <em>always</em> produce suffering eventually. An investment banker lands their dream role and soon wants the next promotion. Someone gets 10,000 likes and monitors whether the next post does better or worse. The ego's logic is comparative and insatiable — there's always someone with more money, more recognition, more approval.</p>
+<blockquote>
+<p>"No matter how many different things that we identify with, they always end up causing us suffering."</p>
+</blockquote>
+<p>What stays constant through every fluctuation — every emotion, every role, every success and failure — is the capacity to <strong>witness</strong> it all. There is an <em>experiencer</em> in you that observes sadness, watches pride rise and fall, and remains present through everything. That witnessing <span class="gl" tabindex="0">awareness<span class="gl-pop" role="tooltip"><span class="gl-def">The capacity to accurately receive and interpret information — about your environment, your body, your emotions, and your own mental processes — so that your brain can respond appropriately.</span><a class="gl-more" href="../glossary.html#glossary-awareness">Full definition →</a></span></span> is what the yogis identified as the true self.</p>
+<p>Grounding yourself in the <strong>witnessing self</strong> doesn't flatten life or eliminate negative emotions. It shifts your relationship to them. A compelling movie isn't one where everything goes right — the trials are part of what makes it worth watching. When you're anchored in the observer rather than caught up in the ego's scorekeeping, the ups and downs of life become something closer to an engaging story than a series of threats to your worth.</p>
+
+</section>
+<section class="sec sec-b">
+<h2 id="summary-action-items">Action Items</h2>
+<ol>
+<li><strong>Notice the next time you feel hurt by a fluctuation</strong> — fewer likes, a missed promotion, a role you've lost — and ask: <em>who is noticing this feeling?</em> That noticing capacity is the self the yogis are pointing to.</li>
+<li><strong>Audit your <span class="gl" tabindex="0">identity<span class="gl-pop" role="tooltip"><span class="gl-def">A narrative you construct by stringing together emotionally salient experiences — the moments in your life that carried the most emotional charge — into a coherent story of who you are.</span><a class="gl-more" href="../glossary.html#glossary-identity">Full definition →</a></span></span> statements.</strong> When you answer "who are you?" mentally, flag anything that lives on a resume. Recognize those as attributes <em>you have</em>, not what you <em>are</em>.</li>
+<li><strong>Practice the witnessing stance in small moments.</strong> When an emotion arises, try observing it ("there is anger here") rather than fusing with it ("I am angry"). The gap between experiencer and experience is the practice.</li>
+</ol>
+</section></article>
+    </div>
+  </div>
   
   <div class="view" data-view="transcript">
     <div class="doc">
@@ -54,7 +92,7 @@ try {
   </div>
   
 
-  <p class="meta">Transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">Meditation<span class="gl-pop" role="tooltip"><span class="gl-def">A practice of focused attention aimed at reaching a state of consciousness outside the thinking mind — where anxiety, desire, hope, attachment, and sadness simply cannot exist.</span><a class="gl-more" href="../glossary.html#glossary-meditation">Full definition →</a></span></span> → Atman Padha (Path of Self)). Captions auto-generated.</p>
+  <p class="meta">Medium summary + transcript of a Dr. K's Guide lesson (<span class="gl" tabindex="0">Meditation<span class="gl-pop" role="tooltip"><span class="gl-def">A practice of focused attention aimed at reaching a state of consciousness outside the thinking mind — where anxiety, desire, hope, attachment, and sadness simply cannot exist.</span><a class="gl-more" href="../glossary.html#glossary-meditation">Full definition →</a></span></span> → Atman Padha (Path of Self)). Captions auto-generated; summary by claude-sonnet-4-6.</p>
 </div>
 
 <script>
@@ -62,7 +100,7 @@ try {
   var root = document.documentElement;
   function setView(v){ root.setAttribute('data-view', v);
     document.querySelectorAll('.view-toggle button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===v?'true':'false'); }); }
-  setView(root.getAttribute('data-view') || 'transcript');
+  setView(root.getAttribute('data-view') || 'medium');
   document.querySelectorAll('.view-toggle button').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); try{localStorage.setItem('pubview', b.dataset.view);}catch(e){} window.scrollTo({top:0}); }); });
   var tb=document.querySelector('.theme-toggle');
   function setTheme(d){ root.classList.toggle('dark', d); tb.textContent = d ? '☀ Light' : '☾ Dark'; }
